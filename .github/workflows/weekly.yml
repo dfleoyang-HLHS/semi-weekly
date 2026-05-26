@@ -1,19 +1,22 @@
-name: Weekly Semi Report
+name: Weekly Semi Report (Free)
 
 on:
   schedule:
-    # 每週一台北時間 06:00 (UTC 週日 22:00)
     - cron: '0 22 * * 0'
-  workflow_dispatch:  # 允許手動觸發
+  workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
 jobs:
-  generate:
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      week_tag: ${{ steps.weekinfo.outputs.week_tag }}
+      news_count: ${{ steps.weekinfo.outputs.news_count }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,34 +27,57 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install feedparser pyyaml anthropic requests
+        run: pip install feedparser pyyaml requests
 
       - name: Fetch news
         run: python scripts/fetch_news.py
 
-      - name: Generate draft (Claude API)
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/generate_draft.py
+      - name: Prepare Claude prompt
+        run: python scripts/prepare_prompt.py
 
       - name: Build index
         run: python scripts/build_index.py
 
-      - name: Commit draft
+      - name: Get week info
+        id: weekinfo
+        run: |
+          WEEK_TAG=$(date +%Y-W%V)
+          NEWS_COUNT=$(python -c "import json; print(json.load(open('data/raw_news.json'))['total'])")
+          echo "week_tag=$WEEK_TAG" >> $GITHUB_OUTPUT
+          echo "news_count=$NEWS_COUNT" >> $GITHUB_OUTPUT
+
+      - name: Commit prompt and data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add posts/ data/
+          git add data/
           if git diff --staged --quiet; then
-            echo "無新內容,跳過 commit"
+            echo "無新內容"
           else
-            git commit -m "🤖 Weekly draft $(date +%Y-W%V)"
+            git commit -m "🤖 Weekly prompt $(date +%Y-W%V)"
             git push
           fi
 
+      - name: Create issue to notify user
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const weekTag = '${{ steps.weekinfo.outputs.week_tag }}';
+            const newsCount = '${{ steps.weekinfo.outputs.news_count }}';
+            const repo = context.repo;
+            const promptUrl = `https://github.com/${repo.owner}/${repo.repo}/blob/main/data/weekly_prompt.md`;
+            const body = `## 📰 本週 (${weekTag}) 週報素材已準備好\n\n**抓取 ${newsCount} 則相關新聞**\n\n### 三步驟發布\n\n**1️⃣ 開啟提示包** 👉 [點這裡](${promptUrl})\n\n點右上 **Raw** 按鈕 → 全選 (Ctrl+A) → 複製\n\n**2️⃣ 貼到 Claude Pro**\n\n開啟 https://claude.ai → 新對話 → 貼上 → 送出\n\n**3️⃣ 上傳週報**\n\n- 點 \`posts/\` → Add file → Create new file\n- 檔名: \`${weekTag}-semi-weekly.md\`\n- 貼上週報內容 → Commit\n\n完成後請關閉此 issue。`;
+
+            await github.rest.issues.create({
+              owner: repo.owner,
+              repo: repo.repo,
+              title: `📝 ${weekTag} 週報待撰寫 (${newsCount} 則新聞)`,
+              body: body,
+              labels: ['weekly-report']
+            });
+
   deploy:
-    needs: generate
+    needs: prepare
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -60,15 +86,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
