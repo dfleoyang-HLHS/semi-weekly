@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<!-- 使用 marked.js 解析 Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div id="article-meta"></div>
+  <article class="article-content" id="article-body">載入中…</article>
+</main>
+
+<footer>
+  <div class="container">
+    <p>每週一自動更新 · GitHub Pages 部署</p>
+  </div>
+</footer>
+
+<script>
+async function loadArticle() {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('slug');
+  if (!slug) {
+    document.getElementById('article-body').innerHTML = '<p>缺少文章參數</p>';
+    return;
+  }
+
+  try {
+    // 從 db.json 找到對應文章 metadata
+    const db = await (await fetch('data/db.json')).json();
+    const article = db.articles.find(a => a.slug === slug);
+    if (!article) {
+      document.getElementById('article-body').innerHTML = '<p>找不到文章</p>';
+      return;
+    }
+
+    // 載入原始 Markdown
+    const md = await (await fetch(`posts/${article.filename}`)).text();
+    // 移除 front matter
+    const body = md.replace(/^---[\s\S]*?---\s*/, '');
+
+    document.title = article.title + ' - 半導體週報';
+    document.getElementById('article-meta').innerHTML = `
+      <div style="color:var(--text-dim); font-size:14px; margin-bottom:24px;">
+        📅 ${article.date} · ${article.week || ''} ·
+        ${(article.regions || []).join(' / ')}
+        ${(article.companies || []).length ? '<br>🏢 ' + article.companies.join(' · ') : ''}
+      </div>
+    `;
+    document.getElementById('article-body').innerHTML = marked.parse(body);
+  } catch (err) {
+    document.getElementById('article-body').innerHTML =
+      '<p style="color:var(--danger)">載入失敗:' + err.message + '</p>';
+  }
+}
+
+loadArticle();
+</script>
+</body>
+</html>

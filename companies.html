@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公司列表 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html" class="active">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>所有公司 (依提及次數排序)</h2>
+    <div id="all-companies" class="hot-companies" style="margin-top:24px;">載入中…</div>
+  </section>
+
+  <section style="margin-top:48px;" id="company-detail" hidden>
+    <h2 id="detail-title"></h2>
+    <div id="detail-articles"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><p>每週一自動更新</p></div>
+</footer>
+
+<script>
+let companies = [];
+let db = null;
+
+async function loadAll() {
+  [companies, db] = await Promise.all([
+    fetch('data/companies.json').then(r => r.json()),
+    fetch('data/db.json').then(r => r.json()),
+  ]);
+
+  const params = new URLSearchParams(window.location.search);
+  const target = params.get('name');
+  if (target) {
+    showCompanyDetail(target);
+  }
+  renderCompanies();
+}
+
+function renderCompanies() {
+  document.getElementById('all-companies').innerHTML = `
+    <div id="company-cloud">
+      ${companies.map(c => `
+        <a href="?name=${encodeURIComponent(c.name)}" class="company-tag">
+          ${c.name} <span class="count">${c.count}</span>
+        </a>
+      `).join('')}
+    </div>
+  `;
+}
+
+function showCompanyDetail(name) {
+  const c = companies.find(x => x.name === name);
+  if (!c) return;
+
+  document.getElementById('detail-title').textContent = `🏢 ${name} (${c.count} 篇)`;
+  const articles = c.articles
+    .map(slug => db.articles.find(a => a.slug === slug))
+    .filter(Boolean);
+
+  document.getElementById('detail-articles').innerHTML = `
+    <div id="article-list">
+      ${articles.map(a => `
+        <article class="article-card">
+          ${a.week ? `<span class="week-badge">${a.week}</span>` : ''}
+          <h3><a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
+          <div class="meta">📅 ${a.date}</div>
+          <div class="summary">${a.summary}</div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+  document.getElementById('company-detail').hidden = false;
+  document.getElementById('company-detail').scrollIntoView({behavior:'smooth'});
+}
+
+loadAll();
+</script>
+</body>
+</html>

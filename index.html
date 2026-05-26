@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半導體 + AI 供應鏈週報</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <p class="tagline">每週固定追蹤美、台、日、韓、陸、歐六大區域產業動態</p>
+    <nav>
+      <a href="index.html" class="active">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- 最新一篇 (大圖卡) -->
+  <section id="latest" class="latest-card">
+    <h2>本週重點報告</h2>
+    <div id="latest-content">載入中…</div>
+  </section>
+
+  <!-- 公司熱度雲 -->
+  <section class="hot-companies">
+    <h2>近期熱門公司</h2>
+    <div id="company-cloud">載入中…</div>
+  </section>
+
+  <!-- 過往報告列表 -->
+  <section class="archive">
+    <h2>歷史報告</h2>
+    <div class="filters">
+      <input type="text" id="search-input" placeholder="🔍 搜尋標題、公司、關鍵字…">
+      <select id="region-filter">
+        <option value="">全部區域</option>
+        <option>美國</option>
+        <option>台灣</option>
+        <option>日本</option>
+        <option>韓國</option>
+        <option>中國大陸</option>
+        <option>歐洲</option>
+      </select>
+    </div>
+    <div id="article-list">載入中…</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>每週一自動更新 · GitHub Pages 部署 · <a href="https://github.com/" target="_blank">原始碼</a></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
