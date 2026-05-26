@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>區域 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.region-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.region-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; transition: all 0.2s; }
+.region-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.region-flag { font-size: 32px; margin-bottom: 8px; }
+.region-name { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.region-count { font-size: 13px; color: var(--text-dim); }
+.region-card.active { border-color: var(--accent); background: rgba(94, 234, 212, 0.05); }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html" class="active">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section>
+    <h2>📍 依區域瀏覽</h2>
+    <div class="region-grid" id="region-grid">載入中…</div>
+  </section>
+  <section id="region-detail" hidden>
+    <h2 id="detail-title"></h2>
+    <div id="detail-articles" style="margin-top:20px;"></div>
+  </section>
+</main>
+<footer><div class="container"><p>每週一自動更新</p></div></footer>
+<script>
+const FLAGS = {'美國':'🇺🇸','台灣':'🇹🇼','日本':'🇯🇵','韓國':'🇰🇷','中國大陸':'🇨🇳','歐洲':'🇪🇺'};
+let regions = [], db = null;
+async function loadAll() {
+  [regions, db] = await Promise.all([
+    fetch('data/regions.json').then(r => r.json()),
+    fetch('data/db.json').then(r => r.json()),
+  ]);
+  renderRegions();
+  const params = new URLSearchParams(window.location.search);
+  const target = params.get('name');
+  if (target) showRegionDetail(target);
+}
+function renderRegions() {
+  document.getElementById('region-grid').innerHTML = regions.map(r => `
+    <div class="region-card" data-region="${r.name}">
+      <div class="region-flag">${FLAGS[r.name] || '🌐'}</div>
+      <div class="region-name">${r.name}</div>
+      <div class="region-count">${r.count} 篇報告</div>
+    </div>`).join('');
+  document.querySelectorAll('.region-card').forEach(el => {
+    el.addEventListener('click', () => showRegionDetail(el.dataset.region));
+  });
+}
+function showRegionDetail(name) {
+  const r = regions.find(x => x.name === name);
+  if (!r) return;
+  document.querySelectorAll('.region-card').forEach(el => {
+    el.classList.toggle('active', el.dataset.region === name);
+  });
+  const articles = r.articles.map(slug => db.articles.find(a => a.slug === slug)).filter(Boolean);
+  document.getElementById('detail-title').textContent = `${FLAGS[name] || '🌐'} ${name} (${r.count} 篇)`;
+  document.getElementById('detail-articles').innerHTML = articles.map(a => `
+    <article class="article-card" style="margin-bottom:16px;">
+      ${a.week ? `<span class="week-badge">${a.week}</span>` : ''}
+      <h3><a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
+      <div class="meta">📅 ${a.date}</div>
+      <div class="summary">${a.summary}</div>
+    </article>`).join('');
+  document.getElementById('region-detail').hidden = false;
+  document.getElementById('region-detail').scrollIntoView({behavior:'smooth'});
+}
+loadAll();
+</script>
+</body>
+</html>
