@@ -46,15 +46,15 @@ jobs:
           echo "week_tag=$WEEK_TAG" >> $GITHUB_OUTPUT
           echo "news_count=$NEWS_COUNT" >> $GITHUB_OUTPUT
 
-      - name: Commit prompt and data
+     - name: Commit prompt and data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           if git diff --staged --quiet; then
-            echo "無新內容"
+            echo "No changes"
           else
-            git commit -m "🤖 Weekly prompt $(date +%Y-W%V)"
+            git commit -m "Weekly prompt $(date +%Y-W%V)"
             git push
           fi
 
