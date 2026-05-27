@@ -51,7 +51,7 @@ def build_index():
     tags_map = defaultdict(list)
     regions_map = defaultdict(list)
 
-    for md_file in sorted(POSTS_DIR.glob("*.md")):
+    for md_file in sorted(POSTS_DIR.rglob("*.md")):
         # 跳過草稿
         if md_file.name.startswith("draft-"):
             continue
@@ -65,9 +65,10 @@ def build_index():
             continue
 
         slug = md_file.stem
+        rel_path = md_file.relative_to(POSTS_DIR).as_posix()
         article = {
             "slug": slug,
-            "filename": md_file.name,
+            "filename": rel_path,
             "title": meta.get("title", slug),
             "date": str(meta.get("date", "")),
             "week": meta.get("week", ""),
