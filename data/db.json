@@ -1,7 +1,53 @@
 {
-  "generated_at": "2026-05-27T02:09:30.105661",
+  "generated_at": "2026-05-27T02:22:30.164063",
   "total": 2,
   "articles": [
+    {
+      "slug": "2026-W22-semi-weekly",
+      "filename": "2026-W22-semi-weekly.md",
+      "title": "半導體 + AI 供應鏈週報 (2026-W22)",
+      "date": "2026-05-27",
+      "week": "2026-W22",
+      "category": "週報",
+      "regions": [
+        "美國",
+        "台灣",
+        "日本",
+        "韓國",
+        "中國大陸",
+        "歐洲"
+      ],
+      "companies": [
+        "TSMC",
+        "ASE",
+        "KYEC",
+        "PTI",
+        "Amkor",
+        "NVIDIA",
+        "Broadcom",
+        "AMD",
+        "SK Hynix",
+        "Samsung",
+        "Ibiden",
+        "Ajinomoto",
+        "JCET",
+        "BESI",
+        "ASML",
+        "Applied Materials"
+      ],
+      "tags": [
+        "CoWoS",
+        "HBM4",
+        "AI 晶片",
+        "先進封裝",
+        "混合鍵合",
+        "CoWoP",
+        "ABF 載板"
+      ],
+      "summary": "TSMC 公布 CoWoS 良率突破 98%、2026 年底擴至 12.7 萬片/月,輝達鎖定逾 50% 產能。SK Hynix 創 72% 營益率紀錄。BESI 混合鍵合訂單創新高,ASML 跨入後段封裝。",
+      "cover_image": "",
+      "word_count": 4842
+    },
     {
       "slug": "2026-W21-cowos-weekly",
       "filename": "2026-W21-cowos-weekly.md",
@@ -50,52 +96,6 @@
       "summary": "整理六大區域 CoWoS 供應鏈現況:台積電產能 2026 年底擴至 13 萬片/月仍短缺逾 20%,NVIDIA 鎖定 60% 產能;SK Hynix 與 BESI Q1 創歷史紀錄。",
       "cover_image": "",
       "word_count": 1840
-    },
-    {
-      "slug": "2026-W22-semi-weekly",
-      "filename": "2026-W22-semi-weekly.md",
-      "title": "半導體 + AI 供應鏈週報 (2026-W22)",
-      "date": "2026-05-26",
-      "week": "2026-W22",
-      "category": "週報",
-      "regions": [
-        "美國",
-        "台灣",
-        "日本",
-        "韓國",
-        "中國大陸",
-        "歐洲"
-      ],
-      "companies": [
-        "TSMC",
-        "ASE",
-        "KYEC",
-        "PTI",
-        "Amkor",
-        "NVIDIA",
-        "Broadcom",
-        "AMD",
-        "SK Hynix",
-        "Samsung",
-        "Ibiden",
-        "Ajinomoto",
-        "JCET",
-        "BESI",
-        "ASML",
-        "Applied Materials"
-      ],
-      "tags": [
-        "CoWoS",
-        "HBM4",
-        "AI 晶片",
-        "先進封裝",
-        "混合鍵合",
-        "CoWoP",
-        "ABF 載板"
-      ],
-      "summary": "TSMC 公布 CoWoS 良率突破 98%、2026 年底擴至 12.7 萬片/月,輝達鎖定逾 50% 產能。SK Hynix 創 72% 營益率紀錄。BESI 混合鍵合訂單創新高,ASML 跨入後段封裝。",
-      "cover_image": "",
-      "word_count": 4842
     }
   ]
 }
