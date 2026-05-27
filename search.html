@@ -5,63 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>搜尋 - 半導體週報</title>
 <link rel="stylesheet" href="assets/style.css">
-<style>
-.search-box {
-  margin: 24px 0;
-}
-.search-box input {
-  width: 100%;
-  padding: 14px 18px;
-  background: var(--bg-card);
-  border: 2px solid var(--border);
-  border-radius: 10px;
-  color: var(--text);
-  font-size: 16px;
-}
-.search-box input:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-.search-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-.search-filters select {
-  padding: 10px 14px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  color: var(--text);
-  font-size: 14px;
-}
-.result-count {
-  color: var(--text-dim);
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-.tag-cloud .tag {
-  padding: 4px 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  font-size: 13px;
-  color: var(--text-dim);
-  cursor: pointer;
-}
-.tag-cloud .tag:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-</style>
 <script src="assets/theme.js"></script>
+<style>
+.search-box { margin: 24px 0; }
+.search-box input { width: 100%; padding: 14px 18px; background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; color: var(--text); font-size: 16px; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+.search-filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.search-filters select { padding: 10px 14px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 14px; }
+.result-count { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.tag-cloud .tag { padding: 4px 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; font-size: 13px; color: var(--text-dim); cursor: pointer; }
+.tag-cloud .tag:hover { border-color: var(--accent); color: var(--accent); }
+</style>
 </head>
 <body>
 
@@ -77,6 +32,7 @@
       <a href="companies.html">公司</a>
       <a href="regions.html">區域</a>
       <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
       <a href="search.html" class="active">搜尋</a>
     </nav>
   </div>
@@ -85,44 +41,30 @@
 <main class="container">
   <section>
     <h2>🔍 搜尋週報</h2>
-
     <div class="search-box">
-      <input type="text" id="search-input"
-        placeholder="輸入關鍵字、公司名稱、技術名詞 (如: NVIDIA, CoWoS, HBM4)...">
+      <input type="text" id="search-input" placeholder="輸入關鍵字、公司名稱、技術名詞 (如: NVIDIA, CoWoS, HBM4)...">
     </div>
-
     <div class="search-filters">
       <select id="region-filter">
         <option value="">📍 全部區域</option>
-        <option>美國</option>
-        <option>台灣</option>
-        <option>日本</option>
-        <option>韓國</option>
-        <option>中國大陸</option>
-        <option>歐洲</option>
+        <option>美國</option><option>台灣</option><option>日本</option>
+        <option>韓國</option><option>中國大陸</option><option>歐洲</option>
       </select>
-      <select id="year-filter">
-        <option value="">📅 全部年份</option>
-      </select>
+      <select id="year-filter"><option value="">📅 全部年份</option></select>
     </div>
-
     <div>
       <h3 style="font-size:14px; color:var(--text-dim); margin-bottom:12px;">熱門標籤</h3>
       <div class="tag-cloud" id="tag-cloud">載入中…</div>
     </div>
-
     <div class="result-count" id="result-count"></div>
     <div id="article-list">載入中…</div>
   </section>
 </main>
 
-<footer>
-  <div class="container"><p>每週一自動更新</p></div>
-</footer>
+<footer><div class="container"><p>每週一(週報) · 週三五(快訊)自動更新</p></div></footer>
 
 <script>
-let allArticles = [];
-let allTags = [];
+let allArticles = [], allTags = [];
 
 async function loadData() {
   try {
@@ -132,8 +74,6 @@ async function loadData() {
     ]);
     allArticles = db.articles || [];
     allTags = tags || [];
-
-    // 自動產生年份篩選
     const years = [...new Set(allArticles.map(a => (a.date || '').slice(0,4)).filter(Boolean))];
     const yearSelect = document.getElementById('year-filter');
     years.sort().reverse().forEach(y => {
@@ -141,21 +81,16 @@ async function loadData() {
       opt.value = y; opt.textContent = y;
       yearSelect.appendChild(opt);
     });
-
     renderTagCloud();
     applyFilters();
   } catch (err) {
-    document.getElementById('article-list').innerHTML =
-      '<p style="color:var(--danger)">載入失敗</p>';
+    document.getElementById('article-list').innerHTML = '<p style="color:var(--danger)">載入失敗</p>';
   }
 }
 
 function renderTagCloud() {
   const top = allTags.slice(0, 20);
-  document.getElementById('tag-cloud').innerHTML = top.map(t => `
-    <span class="tag" data-tag="${t.name}">#${t.name}</span>
-  `).join('');
-
+  document.getElementById('tag-cloud').innerHTML = top.map(t => `<span class="tag" data-tag="${t.name}">#${t.name}</span>`).join('');
   document.querySelectorAll('.tag-cloud .tag').forEach(el => {
     el.addEventListener('click', () => {
       document.getElementById('search-input').value = el.dataset.tag;
@@ -168,42 +103,28 @@ function applyFilters() {
   const q = document.getElementById('search-input').value.toLowerCase().trim();
   const region = document.getElementById('region-filter').value;
   const year = document.getElementById('year-filter').value;
-
   const filtered = allArticles.filter(a => {
-    const haystack = [
-      a.title, a.summary,
-      ...(a.tags || []), ...(a.companies || []),
-    ].join(' ').toLowerCase();
+    const haystack = [a.title, a.summary, ...(a.tags || []), ...(a.companies || [])].join(' ').toLowerCase();
     const matchText = !q || haystack.includes(q);
     const matchRegion = !region || (a.regions || []).includes(region);
     const matchYear = !year || (a.date || '').startsWith(year);
     return matchText && matchRegion && matchYear;
   });
-
-  document.getElementById('result-count').textContent =
-    `找到 ${filtered.length} 篇報告`;
+  document.getElementById('result-count').textContent = `找到 ${filtered.length} 篇報告`;
   renderArticleList(filtered);
 }
 
 function renderArticleList(articles) {
   const el = document.getElementById('article-list');
-  if (!articles.length) {
-    el.innerHTML = '<p style="color:var(--text-dim)">沒有符合的文章</p>';
-    return;
-  }
+  if (!articles.length) { el.innerHTML = '<p style="color:var(--text-dim)">沒有符合的文章</p>'; return; }
   el.innerHTML = articles.map(a => `
     <article class="article-card" style="margin-bottom:16px;">
       ${a.week ? `<span class="week-badge">${a.week}</span>` : ''}
       <h3><a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
       <div class="meta">📅 ${a.date} · ${(a.regions || []).join(' / ')}</div>
       <div class="summary">${a.summary}</div>
-      ${(a.tags || []).length ? `
-        <div class="tags">
-          ${a.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
-        </div>
-      ` : ''}
-    </article>
-  `).join('');
+      ${(a.tags || []).length ? `<div class="tags">${a.tags.map(t => `<span class="tag">#${t}</span>`).join('')}</div>` : ''}
+    </article>`).join('');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
