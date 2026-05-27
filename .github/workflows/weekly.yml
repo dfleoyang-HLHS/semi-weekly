@@ -1,9 +1,20 @@
-name: Weekly Semi Report Free
+name: Semi Weekly and Briefs
 
 on:
   schedule:
-    - cron: '0 22 * * 0,2,4'
+    - cron: '0 22 * * 0'
+    - cron: '0 22 * * 2,4'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'mode'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - weekly
+          - brief
 
 permissions:
   contents: write
@@ -14,87 +25,29 @@ permissions:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    outputs:
-      week_tag: ${{ steps.weekinfo.outputs.week_tag }}
-      news_count: ${{ steps.weekinfo.outputs.news_count }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install feedparser pyyaml requests
-
-      - name: Fetch news
-        run: python scripts/fetch_news.py
-
-      - name: Prepare Claude prompt
-        run: python scripts/prepare_prompt.py
-
-      - name: Build index
-        run: python scripts/build_index.py
-
-      - name: Get week info
-        id: weekinfo
-        run: |
-          WEEK_TAG=$(date +%Y-W%V)
-          NEWS_COUNT=$(python -c "import json; print(json.load(open('data/raw_news.json'))['total'])")
-          echo "week_tag=$WEEK_TAG" >> $GITHUB_OUTPUT
-          echo "news_count=$NEWS_COUNT" >> $GITHUB_OUTPUT
-
-      - name: Commit prompt and data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if git diff --staged --quiet; then
-            echo "No changes"
-          else
-            git commit -m "Weekly prompt $(date +%Y-W%V)"
-            for i in 1 2 3 4 5; do
-              git pull --rebase origin main && git push && break
-              echo "Push retry $i/5"
-              sleep 5
-            done
-          fi
-
-      - name: Create issue
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const weekTag = '${{ steps.weekinfo.outputs.week_tag }}';
-            const newsCount = '${{ steps.weekinfo.outputs.news_count }}';
-            const repo = context.repo;
-            const promptUrl = `https://github.com/${repo.owner}/${repo.repo}/blob/main/data/weekly_prompt.md`;
-            const body = `## 本週 (${weekTag}) 週報素材已準備好\n\n抓取 ${newsCount} 則新聞\n\n### 三步驟\n\n1. 開啟 [weekly_prompt.md](${promptUrl}) 點 Raw 全選複製\n2. 貼到 https://claude.ai\n3. 把回覆存成 posts/${weekTag}-semi-weekly.md\n\n完成後請關閉此 issue。`;
-            await github.rest.issues.create({
-              owner: repo.owner,
-              repo: repo.repo,
-              title: `${weekTag} 週報待撰寫 (${newsCount} 則新聞)`,
-              body: body,
-              labels: ['weekly-report']
-            });
-
-  deploy:
-    needs: prepare
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          ref: main
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          python-version: '3.11'
+      - run: pip install feedparser pyyaml requests
+      - name: Detect mode
+        id: detect
+        run: |
+          DOW=$(date +%u)
+          INPUT_MODE="${{ inputs.mode }}"
+          if [ "$INPUT_MODE" = "weekly" ]; then MODE="weekly"
+          elif [ "$INPUT_MODE" = "brief" ]; then MODE="brief"
+          elif [ "$DOW" = "1" ]; then MODE="weekly"
+          else MODE="brief"; fi
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+          echo "week_tag=$(date +%Y-W%V)" >> $GITHUB_OUTPUT
+      - run: python scripts/fetch_news.py
+      - name: Run prepare
+        run: |
+          if [ "${{ steps.detect.outputs.mode }}" = "weekly" ]; then
+            python scripts/prepare_prompt.py
+          else
+            python scripts/generate_news_brief.py
+          fi
+      - run: python scripts/build_index.py
