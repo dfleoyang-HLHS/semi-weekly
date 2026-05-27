@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>文章 - 半導體週報</title>
 <link rel="stylesheet" href="assets/style.css">
-<!-- 使用 marked.js 解析 Markdown -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="assets/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -23,6 +22,7 @@
       <a href="companies.html">公司</a>
       <a href="regions.html">區域</a>
       <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
       <a href="search.html">搜尋</a>
     </nav>
   </div>
@@ -35,7 +35,7 @@
 
 <footer>
   <div class="container">
-    <p>每週一自動更新 · GitHub Pages 部署</p>
+    <p>每週一(週報) · 週三五(快訊)自動更新</p>
   </div>
 </footer>
 
@@ -49,7 +49,6 @@ async function loadArticle() {
   }
 
   try {
-    // 從 db.json 找到對應文章 metadata
     const db = await (await fetch('data/db.json')).json();
     const article = db.articles.find(a => a.slug === slug);
     if (!article) {
@@ -57,9 +56,7 @@ async function loadArticle() {
       return;
     }
 
-    // 載入原始 Markdown
     const md = await (await fetch(`posts/${article.filename}`)).text();
-    // 移除 front matter
     const body = md.replace(/^---[\s\S]*?---\s*/, '');
 
     document.title = article.title + ' - 半導體週報';
