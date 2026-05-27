@@ -3,22 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>時間軸 - 半導體週報</title>
+<title>搜尋 - 半導體週報</title>
 <link rel="stylesheet" href="assets/style.css">
 <style>
-.timeline { position: relative; padding: 20px 0; margin-top: 20px; }
-.timeline::before { content: ''; position: absolute; left: 80px; top: 0; bottom: 0; width: 2px; background: var(--border); }
-.timeline-item { position: relative; padding-left: 120px; margin-bottom: 32px; }
-.timeline-item::before { content: ''; position: absolute; left: 73px; top: 8px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg); }
-.timeline-date { position: absolute; left: 0; top: 4px; width: 60px; text-align: right; font-size: 13px; color: var(--text-dim); font-weight: 600; }
-.timeline-week { display: inline-block; padding: 2px 8px; background: rgba(94, 234, 212, 0.1); color: var(--accent); border-radius: 4px; font-size: 12px; margin-bottom: 6px; }
-.timeline-title { font-size: 17px; margin-bottom: 6px; }
-.timeline-title a { color: var(--text); }
-.timeline-title a:hover { color: var(--accent); }
-.timeline-summary { color: var(--text-dim); font-size: 14px; line-height: 1.6; }
+.search-box {
+  margin: 24px 0;
+}
+.search-box input {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 16px;
+}
+.search-box input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.search-filters select {
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+}
+.result-count {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.tag-cloud .tag {
+  padding: 4px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 13px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.tag-cloud .tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 </style>
 </head>
 <body>
+
 <header class="hero">
   <div class="container">
     <h1>半導體 + AI 供應鏈週報</h1>
@@ -26,47 +71,142 @@
       <a href="index.html">首頁</a>
       <a href="companies.html">公司</a>
       <a href="regions.html">區域</a>
-      <a href="timeline.html" class="active">時間軸</a>
-      <a href="search.html">搜尋</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="search.html" class="active">搜尋</a>
     </nav>
   </div>
 </header>
+
 <main class="container">
   <section>
-    <h2>📅 報告時間軸</h2>
-    <p style="color:var(--text-dim); margin-bottom:24px;">依時間順序檢視所有週報,追蹤產業脈動。</p>
-    <div class="timeline" id="timeline">載入中…</div>
+    <h2>🔍 搜尋週報</h2>
+
+    <div class="search-box">
+      <input type="text" id="search-input"
+        placeholder="輸入關鍵字、公司名稱、技術名詞 (如: NVIDIA, CoWoS, HBM4)...">
+    </div>
+
+    <div class="search-filters">
+      <select id="region-filter">
+        <option value="">📍 全部區域</option>
+        <option>美國</option>
+        <option>台灣</option>
+        <option>日本</option>
+        <option>韓國</option>
+        <option>中國大陸</option>
+        <option>歐洲</option>
+      </select>
+      <select id="year-filter">
+        <option value="">📅 全部年份</option>
+      </select>
+    </div>
+
+    <div>
+      <h3 style="font-size:14px; color:var(--text-dim); margin-bottom:12px;">熱門標籤</h3>
+      <div class="tag-cloud" id="tag-cloud">載入中…</div>
+    </div>
+
+    <div class="result-count" id="result-count"></div>
+    <div id="article-list">載入中…</div>
   </section>
 </main>
-<footer><div class="container"><p>每週一自動更新</p></div></footer>
+
+<footer>
+  <div class="container"><p>每週一自動更新</p></div>
+</footer>
+
 <script>
-async function loadTimeline() {
+let allArticles = [];
+let allTags = [];
+
+async function loadData() {
   try {
-    const db = await (await fetch('data/db.json')).json();
-    const articles = db.articles || [];
-    if (!articles.length) {
-      document.getElementById('timeline').innerHTML = '<p style="color:var(--text-dim)">尚無報告</p>';
-      return;
-    }
-    const html = articles.map(a => {
-      const dateStr = a.date || '';
-      const monthDay = dateStr.length >= 10 ? `${parseInt(dateStr.slice(5,7))}/${parseInt(dateStr.slice(8,10))}` : dateStr;
-      return `
-        <div class="timeline-item">
-          <div class="timeline-date">${monthDay}</div>
-          ${a.week ? `<span class="timeline-week">${a.week}</span>` : ''}
-          <h3 class="timeline-title">
-            <a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a>
-          </h3>
-          <div class="timeline-summary">${a.summary}</div>
-        </div>`;
-    }).join('');
-    document.getElementById('timeline').innerHTML = html;
+    const [db, tags] = await Promise.all([
+      fetch('data/db.json').then(r => r.json()),
+      fetch('data/tags.json').then(r => r.json()),
+    ]);
+    allArticles = db.articles || [];
+    allTags = tags || [];
+
+    // 自動產生年份篩選
+    const years = [...new Set(allArticles.map(a => (a.date || '').slice(0,4)).filter(Boolean))];
+    const yearSelect = document.getElementById('year-filter');
+    years.sort().reverse().forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = y; opt.textContent = y;
+      yearSelect.appendChild(opt);
+    });
+
+    renderTagCloud();
+    applyFilters();
   } catch (err) {
-    document.getElementById('timeline').innerHTML = '<p style="color:var(--danger)">載入失敗</p>';
+    document.getElementById('article-list').innerHTML =
+      '<p style="color:var(--danger)">載入失敗</p>';
   }
 }
-loadTimeline();
+
+function renderTagCloud() {
+  const top = allTags.slice(0, 20);
+  document.getElementById('tag-cloud').innerHTML = top.map(t => `
+    <span class="tag" data-tag="${t.name}">#${t.name}</span>
+  `).join('');
+
+  document.querySelectorAll('.tag-cloud .tag').forEach(el => {
+    el.addEventListener('click', () => {
+      document.getElementById('search-input').value = el.dataset.tag;
+      applyFilters();
+    });
+  });
+}
+
+function applyFilters() {
+  const q = document.getElementById('search-input').value.toLowerCase().trim();
+  const region = document.getElementById('region-filter').value;
+  const year = document.getElementById('year-filter').value;
+
+  const filtered = allArticles.filter(a => {
+    const haystack = [
+      a.title, a.summary,
+      ...(a.tags || []), ...(a.companies || []),
+    ].join(' ').toLowerCase();
+    const matchText = !q || haystack.includes(q);
+    const matchRegion = !region || (a.regions || []).includes(region);
+    const matchYear = !year || (a.date || '').startsWith(year);
+    return matchText && matchRegion && matchYear;
+  });
+
+  document.getElementById('result-count').textContent =
+    `找到 ${filtered.length} 篇報告`;
+  renderArticleList(filtered);
+}
+
+function renderArticleList(articles) {
+  const el = document.getElementById('article-list');
+  if (!articles.length) {
+    el.innerHTML = '<p style="color:var(--text-dim)">沒有符合的文章</p>';
+    return;
+  }
+  el.innerHTML = articles.map(a => `
+    <article class="article-card" style="margin-bottom:16px;">
+      ${a.week ? `<span class="week-badge">${a.week}</span>` : ''}
+      <h3><a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
+      <div class="meta">📅 ${a.date} · ${(a.regions || []).join(' / ')}</div>
+      <div class="summary">${a.summary}</div>
+      ${(a.tags || []).length ? `
+        <div class="tags">
+          ${a.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
+        </div>
+      ` : ''}
+    </article>
+  `).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadData();
+  document.getElementById('search-input').addEventListener('input', applyFilters);
+  document.getElementById('region-filter').addEventListener('change', applyFilters);
+  document.getElementById('year-filter').addEventListener('change', applyFilters);
+});
 </script>
 </body>
 </html>
