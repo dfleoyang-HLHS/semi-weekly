@@ -1,23 +1,34 @@
 [
   {
     "name": "CoWoS",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "先進封裝",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "AI 晶片",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "混合鍵合",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
@@ -28,17 +39,31 @@
     ]
   },
   {
-    "name": "混合鍵合",
+    "name": "CoPoS",
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
     ]
   },
   {
-    "name": "CoPoS",
+    "name": "HBM4",
     "count": 1,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "CoWoP",
+    "count": 1,
+    "articles": [
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "ABF 載板",
+    "count": 1,
+    "articles": [
+      "2026-W22-semi-weekly"
     ]
   }
 ]

@@ -1,12 +1,14 @@
 # 本週新聞摘要 (2026-W22)
 
-**抓取時間**: 2026-05-27T02:00:30.254404+00:00
-**總篇數**: 61 則
+**抓取時間**: 2026-05-27T02:09:29.997537+00:00
+**總篇數**: 62 則
 
 ---
 
-## TechNews 科技新報 (12 則)
+## TechNews 科技新報 (13 則)
 
+- [川普投顧唱多＋瑞銀狂升目標價  美光飆、族群嗨](https://finance.technews.tw/2026/05/27/trump-advisor-bullish-call-ubs-drastically-raises-target-price-micron-soars-sector-energized/)
+  - 📅 2026-05-27
 - [輝達淘汰逾 20 年 GeForce 控制台，核心功能全面整合至 NVIDIA App](https://technews.tw/2026/05/27/nvidia-has-retired-its-geforce-control-panel-app-after-20-years/)
   - 📅 2026-05-27
 - [美光股價盤中飆漲 18%，市值首破 1 兆美元](https://finance.technews.tw/2026/05/27/micron-joins-1-trillion-club-as-ai-race-powers-memory-chip-boom/)
@@ -30,6 +32,57 @@
 - [黃仁勳：企業裁員卻以導入 AI 為藉口，是太懶惰且毫無道理](https://technews.tw/2026/05/26/companies-that-use-the-introduction-of-ai-as-an-excuse-to-lay-off-employees-are-lazy-and-make-no-sense/)
   - 📅 2026-05-26
 - [黃仁勳指沒能源沒經濟成長，經部：AI 用電已超前部署](https://technews.tw/2026/05/26/taiwan-ai-power-demand-already-prioritized-for-deployment/)
+  - 📅 2026-05-26
+
+## DigiTimes Asia (24 則)
+
+- [Copper crunch hits components cost amid AI demand surge](https://www.digitimes.com/news/a20260526PD212/copper-demand-component-2026-materials.html)
+  - 📅 2026-05-27
+- [Broadcom and Taiwan's chipmakers ride ASIC wave](https://www.digitimes.com/news/a20260527PD215/asic-chipmakers-broadcom-taiwan-demand.html)
+  - 📅 2026-05-27
+- [Transcend to spotlight AI-ready enterprise SSDs and DDR5 memory at COMPUTEX 2026](https://www.digitimes.com/news/a20260527PD204/transcend-ddr5-2026-data-camera.html)
+  - 📅 2026-05-27
+- [Sercomm to showcase enterprise edge AI servers, security and power solutions at COMPUTEX 2026](https://www.digitimes.com/news/a20260527PD202/sercomm-2026-security-management-edge.html)
+  - 📅 2026-05-27
+- [China Electric outlines AI-driven digital transformation to lift 2026 profits](https://www.digitimes.com/news/a20260527PD203/china-electric-2026-digital-transformation-profit-revenue.html)
+  - 📅 2026-05-27
+- [AI infrastructure spending lifts Taiwan electronics sector outlook](https://www.digitimes.com/news/a20260527PD210/taiwan-infrastructure-electronics-cloud-demand.html)
+  - 📅 2026-05-27
+- [Covestro highlights material solutions for AI data centers and embodied intelligence at COMPUTEX 2026](https://www.digitimes.com/news/a20260527PD201/2026-data-materials-polycarbonate-robotics.html)
+  - 📅 2026-05-27
+- [Xiaomi outlines AI-first roadmap as MiMo tokens and Miclaw shape product strategy](https://www.digitimes.com/news/a20260527VL201/xiaomi-revenue-ai-training-llm-autonomous-driving-robotics-2026.html)
+  - 📅 2026-05-27
+- [Aixtron wins orders from Lumentum for G10-AsP systems to expand InP production](https://www.digitimes.com/news/a20260527PR201/aixtron-laser-mocvd-demand-production.html)
+  - 📅 2026-05-27
+- [Taiwan optoelectronics materials maker Wah Hong targets high-end PCB and chip packaging demand](https://www.digitimes.com/news/a20260526PD230/wah-hong-optoelectronics-materials-demand-pcb.html)
+  - 📅 2026-05-26
+- [SK Hynix seeks to embed cooling inside HBM to beat the heat](https://www.digitimes.com/news/a20260526VL211/sk-hynix-technology-hbm-cooling-chips.html)
+  - 📅 2026-05-26
+- [TSMC and Micron's fabs expanding; how do Samsung and SK Hynix's bonus systems come into play?](https://www.digitimes.com/news/a20260526PD238/samsung-labor-performance-micron-sk-hynix-2026.html)
+  - 📅 2026-05-26
+- [Huawei Tau Law series 2: Advanced packaging, AI interconnects, EDA lead the way](https://www.digitimes.com/news/a20260526VL204/huawei-packaging-eda-demand-3d.html)
+  - 📅 2026-05-26
+- [PCB drill bit maker Topoint raises NT$600 million, brings in PCB giants as strategic investors](https://www.digitimes.com/news/a20260526PD239/pcb-topoint-private-placement-gce-unimicron.html)
+  - 📅 2026-05-26
+- [Taiwan's quiet fix for GPS-denied drones and satellites](https://www.digitimes.com/news/a20260526VL206/startup-gps-taiwan-technology.html)
+  - 📅 2026-05-26
+- [TSMC CEO to address bonus backlash in person as Jensen Huang's visit puts Taiwan chipmaker in spotlight](https://www.digitimes.com/news/a20260527PD200/tsmc-taiwan-chairman-semiconductor-industry-online.html)
+  - 📅 2026-05-26
+- [Let there be limits&mdash;Pope Leo invokes scripture on AI's moral peril, Anthropic in tow](https://www.digitimes.com/news/a20260526VL210/anthropic-claude.html)
+  - 📅 2026-05-26
+- [LED maker Ennostar pivots to optical interconnects after high-value shift agin traction](https://www.digitimes.com/news/a20260526PD235/ennostar-communications-revenue-chairman-paul-peng.html)
+  - 📅 2026-05-26
+- [Alchip: ASIC growth may outpace the broader GPU market](https://www.digitimes.com/news/a20260526PD231/alchip-asic-market-gpu-growth.html)
+  - 📅 2026-05-26
+- [Nvidia and Marvell CEOs to share Computex stage&mdash; How US$2 billion turned rivals into partners](https://www.digitimes.com/news/a20260526VL208/nvidia-marvell-computex-investment-ceo.html)
+  - 📅 2026-05-26
+- [The US$16.5 Billion Bet: How Co-Packaged Optics Will Rewire AI's Backbone by 2030](https://www.digitimes.com/news/a20260521RS400/bandwidth-cpo-silicon-photonics-infrastructure.html?chid=2)
+  - 📅 2026-05-26
+- [Chiplet boom puts Taiwan's InPsytech and its AI connectivity IPs in the spotlight](https://www.digitimes.com/news/a20260526PD221/inpsytech-onfi-ucie-ip-subsidiary.html)
+  - 📅 2026-05-26
+- [Wonderful Hi-Tech sees rising demand from low-orbit satellites and AI data centers](https://www.digitimes.com/news/a20260526PD229/wonderful-hi-tech-cables-data-demand.html)
+  - 📅 2026-05-26
+- [Samsung's reported 900-layer V-NAND prototype puts NAND race with YMTC in focus](https://www.digitimes.com/news/a20260526VL207/samsung-v-nand-nand-ymtc-technology.html)
   - 📅 2026-05-26
 
 ## DigiTimes 中文 (21 則)
@@ -75,57 +128,6 @@
 - [SK海力士發表新一代iHBM技術　解決AI半導體發熱難題](https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756552_ZU04SGD06AOQXR1R3C984)
   - 📅 2026-05-26
 - [英特爾18A良率攀升與美系業者護體　三星晶圓代工搶客壓力增](https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756474_CA35TGI268HWRM50HRO06)
-  - 📅 2026-05-26
-
-## DigiTimes Asia (24 則)
-
-- [Taiwan optoelectronics materials maker Wah Hong targets high-end PCB and chip packaging demand](https://www.digitimes.com/news/a20260526PD230/wah-hong-optoelectronics-materials-demand-pcb.html)
-  - 📅 2026-05-26
-- [SK Hynix seeks to embed cooling inside HBM to beat the heat](https://www.digitimes.com/news/a20260526VL211/sk-hynix-technology-hbm-cooling-chips.html)
-  - 📅 2026-05-26
-- [TSMC and Micron's fabs expanding; how do Samsung and SK Hynix's bonus systems come into play?](https://www.digitimes.com/news/a20260526PD238/samsung-labor-performance-micron-sk-hynix-2026.html)
-  - 📅 2026-05-26
-- [Huawei Tau Law series 2: Advanced packaging, AI interconnects, EDA lead the way](https://www.digitimes.com/news/a20260526VL204/huawei-packaging-eda-demand-3d.html)
-  - 📅 2026-05-26
-- [PCB drill bit maker Topoint raises NT$600 million, brings in PCB giants as strategic investors](https://www.digitimes.com/news/a20260526PD239/pcb-topoint-private-placement-gce-unimicron.html)
-  - 📅 2026-05-26
-- [Taiwan's quiet fix for GPS-denied drones and satellites](https://www.digitimes.com/news/a20260526VL206/startup-gps-taiwan-technology.html)
-  - 📅 2026-05-26
-- [TSMC CEO to address bonus backlash in person as Jensen Huang's visit puts Taiwan chipmaker in spotlight](https://www.digitimes.com/news/a20260527PD200/tsmc-taiwan-chairman-semiconductor-industry-online.html)
-  - 📅 2026-05-26
-- [Let there be limits&mdash;Pope Leo invokes scripture on AI's moral peril, Anthropic in tow](https://www.digitimes.com/news/a20260526VL210/anthropic-claude.html)
-  - 📅 2026-05-26
-- [LED maker Ennostar pivots to optical interconnects after high-value shift agin traction](https://www.digitimes.com/news/a20260526PD235/ennostar-communications-revenue-chairman-paul-peng.html)
-  - 📅 2026-05-26
-- [Alchip: ASIC growth may outpace the broader GPU market](https://www.digitimes.com/news/a20260526PD231/alchip-asic-market-gpu-growth.html)
-  - 📅 2026-05-26
-- [Nvidia and Marvell CEOs to share Computex stage&mdash; How US$2 billion turned rivals into partners](https://www.digitimes.com/news/a20260526VL208/nvidia-marvell-computex-investment-ceo.html)
-  - 📅 2026-05-26
-- [The US$16.5 Billion Bet: How Co-Packaged Optics Will Rewire AI's Backbone by 2030](https://www.digitimes.com/news/a20260521RS400/bandwidth-cpo-silicon-photonics-infrastructure.html?chid=2)
-  - 📅 2026-05-26
-- [Chiplet boom puts Taiwan's InPsytech and its AI connectivity IPs in the spotlight](https://www.digitimes.com/news/a20260526PD221/inpsytech-onfi-ucie-ip-subsidiary.html)
-  - 📅 2026-05-26
-- [Wonderful Hi-Tech sees rising demand from low-orbit satellites and AI data centers](https://www.digitimes.com/news/a20260526PD229/wonderful-hi-tech-cables-data-demand.html)
-  - 📅 2026-05-26
-- [Samsung's reported 900-layer V-NAND prototype puts NAND race with YMTC in focus](https://www.digitimes.com/news/a20260526VL207/samsung-v-nand-nand-ymtc-technology.html)
-  - 📅 2026-05-26
-- [Wiwynn expands US capacity as AI server boom strains power and supply chains](https://www.digitimes.com/news/a20260525VL214/wiwynn-ai-server-power-supply-capacity-expansion.html)
-  - 📅 2026-05-26
-- [AMD and Nvidia deepen investments in Taiwan semiconductor ecosystem](https://www.digitimes.com/news/a20260526PD228/amd-nvidia-ai-chip-capacity-taiwan.html)
-  - 📅 2026-05-26
-- [Win Semiconductors bets on optical and satellite communications growth](https://www.digitimes.com/news/a20260526PD226/win-semi-satellite-communications-growth-communications-satellite-demand.html)
-  - 📅 2026-05-26
-- [Samsung's P4 HBM push could worsen DRAM crunch in 2027](https://www.digitimes.com/news/a20260526VL205/samsung-hbm-dram-2027-capacity.html)
-  - 📅 2026-05-26
-- [Intel's Rio Rancho fab becomes test case for AI-era chip packaging](https://www.digitimes.com/news/a20260526PD225/intel-packaging-advanced-process-technology-cpo.html)
-  - 📅 2026-05-26
-- [GlobalWafers rolls out phased GaN capacity expansion to ease supply crunch](https://www.digitimes.com/news/a20260526PD218/globalwafers-gan-sic-demand-12-inch.html)
-  - 📅 2026-05-26
-- [Huawei eyes AI storage breakthrough with DoB packaging, 245TB SSD roadmap](https://www.digitimes.com/news/a20260526PD220/huawei-data-storage-ssd-packaging-roadmap-2030.html)
-  - 📅 2026-05-26
-- [ASML expands Taiwan hiring and operations to meet advanced chip demand](https://www.digitimes.com/news/a20260526PD200/asml-taiwan-demand-expansion-president.html)
-  - 📅 2026-05-26
-- [Kian-Shen reports 2025 revenue decline but eyes growth in electric bus chassis and sustainable transport](https://www.digitimes.com/news/a20260526PD224/chassis-revenue-electric-bus-growth-2025.html)
   - 📅 2026-05-26
 
 ## SemiWiki (4 則)

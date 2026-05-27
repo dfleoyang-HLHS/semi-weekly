@@ -1,51 +1,114 @@
 [
   {
     "name": "TSMC",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "ASE",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "KYEC",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "PTI",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "AMD",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
     "name": "Amkor",
-    "count": 1,
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "SK Hynix",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "Samsung",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "Ibiden",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "Ajinomoto",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "JCET",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "BESI",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "ASML",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly"
     ]
   },
   {
@@ -57,27 +120,6 @@
   },
   {
     "name": "Micron",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "SK Hynix",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "Samsung",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "Ibiden",
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
@@ -98,35 +140,7 @@
     ]
   },
   {
-    "name": "Ajinomoto",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "JCET",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
     "name": "TFME",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "BESI",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "ASML",
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
@@ -137,6 +151,20 @@
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
+    ]
+  },
+  {
+    "name": "Broadcom",
+    "count": 1,
+    "articles": [
+      "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "Applied Materials",
+    "count": 1,
+    "articles": [
+      "2026-W22-semi-weekly"
     ]
   }
 ]
