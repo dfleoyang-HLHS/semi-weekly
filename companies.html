@@ -11,16 +11,17 @@
 
 <header class="hero">
   <div class="container">
-  <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
-   <span class="icon-sun">☀️</span>
-   <span class="icon-moon">🌙</span>
-  </button>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
     <h1>半導體 + AI 供應鏈週報</h1>
     <nav>
       <a href="index.html">首頁</a>
       <a href="companies.html" class="active">公司</a>
       <a href="regions.html">區域</a>
       <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
       <a href="search.html">搜尋</a>
     </nav>
   </div>
@@ -38,49 +39,34 @@
   </section>
 </main>
 
-<footer>
-  <div class="container"><p>每週一自動更新</p></div>
-</footer>
+<footer><div class="container"><p>每週一(週報) · 週三五(快訊)自動更新</p></div></footer>
 
 <script>
-let companies = [];
-let db = null;
+let companies = [], db = null;
 
 async function loadAll() {
   [companies, db] = await Promise.all([
     fetch('data/companies.json').then(r => r.json()),
     fetch('data/db.json').then(r => r.json()),
   ]);
-
   const params = new URLSearchParams(window.location.search);
   const target = params.get('name');
-  if (target) {
-    showCompanyDetail(target);
-  }
+  if (target) showCompanyDetail(target);
   renderCompanies();
 }
 
 function renderCompanies() {
   document.getElementById('all-companies').innerHTML = `
     <div id="company-cloud">
-      ${companies.map(c => `
-        <a href="?name=${encodeURIComponent(c.name)}" class="company-tag">
-          ${c.name} <span class="count">${c.count}</span>
-        </a>
-      `).join('')}
-    </div>
-  `;
+      ${companies.map(c => `<a href="?name=${encodeURIComponent(c.name)}" class="company-tag">${c.name} <span class="count">${c.count}</span></a>`).join('')}
+    </div>`;
 }
 
 function showCompanyDetail(name) {
   const c = companies.find(x => x.name === name);
   if (!c) return;
-
   document.getElementById('detail-title').textContent = `🏢 ${name} (${c.count} 篇)`;
-  const articles = c.articles
-    .map(slug => db.articles.find(a => a.slug === slug))
-    .filter(Boolean);
-
+  const articles = c.articles.map(slug => db.articles.find(a => a.slug === slug)).filter(Boolean);
   document.getElementById('detail-articles').innerHTML = `
     <div id="article-list">
       ${articles.map(a => `
@@ -89,10 +75,8 @@ function showCompanyDetail(name) {
           <h3><a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
           <div class="meta">📅 ${a.date}</div>
           <div class="summary">${a.summary}</div>
-        </article>
-      `).join('')}
-    </div>
-  `;
+        </article>`).join('')}
+    </div>`;
   document.getElementById('company-detail').hidden = false;
   document.getElementById('company-detail').scrollIntoView({behavior:'smooth'});
 }
