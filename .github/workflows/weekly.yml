@@ -1,4 +1,4 @@
-name: Weekly Semi Report (Free)
+name: Weekly Semi Report Free
 
 on:
   schedule:
@@ -46,7 +46,7 @@ jobs:
           echo "week_tag=$WEEK_TAG" >> $GITHUB_OUTPUT
           echo "news_count=$NEWS_COUNT" >> $GITHUB_OUTPUT
 
-     - name: Commit prompt and data
+      - name: Commit prompt and data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,10 +55,14 @@ jobs:
             echo "No changes"
           else
             git commit -m "Weekly prompt $(date +%Y-W%V)"
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"
+              sleep 5
+            done
           fi
 
-      - name: Create issue to notify user
+      - name: Create issue
         uses: actions/github-script@v7
         with:
           script: |
@@ -66,12 +70,11 @@ jobs:
             const newsCount = '${{ steps.weekinfo.outputs.news_count }}';
             const repo = context.repo;
             const promptUrl = `https://github.com/${repo.owner}/${repo.repo}/blob/main/data/weekly_prompt.md`;
-            const body = `## 📰 本週 (${weekTag}) 週報素材已準備好\n\n**抓取 ${newsCount} 則相關新聞**\n\n### 三步驟發布\n\n**1️⃣ 開啟提示包** 👉 [點這裡](${promptUrl})\n\n點右上 **Raw** 按鈕 → 全選 (Ctrl+A) → 複製\n\n**2️⃣ 貼到 Claude Pro**\n\n開啟 https://claude.ai → 新對話 → 貼上 → 送出\n\n**3️⃣ 上傳週報**\n\n- 點 \`posts/\` → Add file → Create new file\n- 檔名: \`${weekTag}-semi-weekly.md\`\n- 貼上週報內容 → Commit\n\n完成後請關閉此 issue。`;
-
+            const body = `## 本週 (${weekTag}) 週報素材已準備好\n\n抓取 ${newsCount} 則新聞\n\n### 三步驟\n\n1. 開啟 [weekly_prompt.md](${promptUrl}) 點 Raw 全選複製\n2. 貼到 https://claude.ai\n3. 把回覆存成 posts/${weekTag}-semi-weekly.md\n\n完成後請關閉此 issue。`;
             await github.rest.issues.create({
               owner: repo.owner,
               repo: repo.repo,
-              title: `📝 ${weekTag} 週報待撰寫 (${newsCount} 則新聞)`,
+              title: `${weekTag} 週報待撰寫 (${newsCount} 則新聞)`,
               body: body,
               labels: ['weekly-report']
             });
