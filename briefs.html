@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新聞快訊 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.brief-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-warm);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  transition: all 0.2s;
+}
+.brief-card:hover {
+  border-color: var(--accent-warm);
+  transform: translateX(2px);
+}
+.brief-date {
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--accent-warm);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.brief-title { font-size: 17px; margin-bottom: 6px; }
+.brief-title a { color: var(--text); }
+.brief-title a:hover { color: var(--accent-warm); }
+.brief-meta { color: var(--text-dim); font-size: 13px; }
+.intro {
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  color: var(--text-dim);
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="briefs.html" class="active">快訊</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>📰 每週快訊</h2>
+    <div class="intro">
+      <strong>每週三、五自動產出</strong>,整理過去 2 天的半導體與 AI 供應鏈新聞,無需人工撰寫。深度產業分析請見 <a href="index.html">每週一發布的週報</a>。
+    </div>
+    <div id="brief-list">載入中…</div>
+  </section>
+</main>
+
+<footer><div class="container"><p>每週一(週報) · 週三五(快訊)自動更新</p></div></footer>
+
+<script>
+async function loadBriefs() {
+  try {
+    const db = await (await fetch('data/db.json')).json();
+    const briefs = (db.articles || []).filter(a => a.category === '新聞快訊');
+
+    if (!briefs.length) {
+      document.getElementById('brief-list').innerHTML =
+        '<p style="color:var(--text-dim)">尚無快訊 (週三/週五自動產出)</p>';
+      return;
+    }
+
+    document.getElementById('brief-list').innerHTML = briefs.map(a => `
+      <article class="brief-card">
+        <span class="brief-date">📅 ${a.date}</span>
+        <h3 class="brief-title">
+          <a href="article.html?slug=${encodeURIComponent(a.slug)}">${a.title}</a>
+        </h3>
+        <div class="brief-meta">
+          ${(a.companies || []).slice(0,5).map(c => `🏢 ${c}`).join(' · ')}
+          ${(a.companies || []).length > 5 ? `(+${a.companies.length - 5})` : ''}
+        </div>
+      </article>
+    `).join('');
+  } catch (err) {
+    document.getElementById('brief-list').innerHTML =
+      '<p style="color:var(--danger)">載入失敗</p>';
+    console.error(err);
+  }
+}
+
+loadBriefs();
+</script>
+</body>
+</html>
