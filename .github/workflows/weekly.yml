@@ -5,16 +5,6 @@ on:
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
   workflow_dispatch:
-    inputs:
-      mode:
-        description: 'mode'
-        required: true
-        default: 'auto'
-        type: choice
-        options:
-          - auto
-          - weekly
-          - brief
 
 permissions:
   contents: write
@@ -26,28 +16,85 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install feedparser pyyaml requests
+
+      - name: Install dependencies
+        run: pip install feedparser pyyaml requests
+
       - name: Detect mode
         id: detect
         run: |
           DOW=$(date +%u)
-          INPUT_MODE="${{ inputs.mode }}"
-          if [ "$INPUT_MODE" = "weekly" ]; then MODE="weekly"
-          elif [ "$INPUT_MODE" = "brief" ]; then MODE="brief"
-          elif [ "$DOW" = "1" ]; then MODE="weekly"
-          else MODE="brief"; fi
+          if [ "$DOW" = "1" ]; then
+            MODE="weekly"
+          else
+            MODE="brief"
+          fi
           echo "mode=$MODE" >> $GITHUB_OUTPUT
           echo "week_tag=$(date +%Y-W%V)" >> $GITHUB_OUTPUT
-      - run: python scripts/fetch_news.py
-      - name: Run prepare
+          echo "date_tag=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Fetch news
+        run: python scripts/fetch_news.py
+
+      - name: Generate weekly prompt
+        if: steps.detect.outputs.mode == 'weekly'
+        run: python scripts/prepare_prompt.py
+
+      - name: Generate news brief
+        if: steps.detect.outputs.mode == 'brief'
         run: |
-          if [ "${{ steps.detect.outputs.mode }}" = "weekly" ]; then
-            python scripts/prepare_prompt.py
-          else
+          if [ -f scripts/generate_news_brief.py ]; then
             python scripts/generate_news_brief.py
+          else
+            echo "WARNING: brief script not found"
           fi
-      - run: python scripts/build_index.py
+
+      - name: Build index
+        run: python scripts/build_index.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ posts/
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Auto update ${{ steps.detect.outputs.date_tag }}"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"
+              sleep 5
+            done
+          fi
+
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
