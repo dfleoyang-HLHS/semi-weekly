@@ -1,11 +1,11 @@
-# 本週週報生成提示 (2026-W22)
+# 本週週報生成提示 (2026-W23)
 
 > 📋 **使用方式**:
 > 1. 全選此檔案內容 (Ctrl+A) 並複製 (Ctrl+C)
 > 2. 打開 https://claude.ai
 > 3. 開新對話,貼上 (Ctrl+V) → 送出
 > 4. Claude 回覆完整週報後,複製內容
-> 5. 在 `posts/` 建立新檔案 `2026-W22-semi-weekly.md`
+> 5. 在 `posts/` 建立新檔案 `2026-W23-semi-weekly.md`
 > 6. 貼上週報內容並 commit
 
 ---
@@ -32,8 +32,8 @@
 ## 目前資訊
 
 - 年份: 2026
-- 週次: W22
-- 日期: 2026-05-27
+- 週次: W23
+- 日期: 2026-06-01
 
 ---
 
@@ -153,393 +153,488 @@ cover_image: ""
 
 ---
 
-## 本週相關新聞 (64 則)
+## 本週相關新聞 (82 則)
 
-### [1] 美光市值突破1兆美元　AI狂潮下新晶片巨獸強勢崛起
+### [1] Eight PC brands commit to Nvidia-MediaTek RTX Spark as AI agent laptops take shape for fall
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL212/rtx-nvidia-pc-ceo-taipei.html
+- 摘要: Nvidia CEO Jensen Huang unveiled RTX Spark at Computex Taipei this morning, announcing a new superchip designed to power a generation of Windows laptops and compact desktops built around on-device AI agents. The announcement, made at GTC Taipei on May 31, comes as Computex 2026 opens in Taipei with AI hardware dominating the show floor. Devices from major PC manufacturers are expected to ship this fall.
+
+### [2] 英特爾前進印度建先進基板廠　補齊印度半導體缺口
 - 來源: DigiTimes 中文
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756659_08T5V1C06P8R4P8PF87SJ
-- 摘要: 美光（Micron）市值在過去一年飆升約840%，市值也首度突破1兆美元大關，成為受益於人工智慧（AI）轉向AI代理的新一代晶片製造商之一。瑞銀（UBS）預估美光市值將達到約1.8兆美元，若達到這一水準，美光市值將
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757199_GQT0BCL3L6QMJD8TNUL1N
+- 摘要: 印度政府日前宣布，英特爾（Intel）與3DGS這兩家美國企業將在奧里薩邦（Odisha）投資約33億美元，於Bhubaneswar-Khurda地區興建先進封裝玻璃核心基板（Glass Core Substrate）與高密度互連基板（HDI
 
-### [2] 工控放量、TPU轉型加速　泓格半導體客戶續擴單
-- 來源: DigiTimes 中文
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756658_MGW74LTG4YU0649RBF9Y4
-- 摘要: 工業電腦（IPC）業者泓格科技5月26日舉辦法人說明會，泓格指出，2026年營運布局以兩條主軸推進，一是深化半導體設備控制器業務，持續承接來自半導體設備客戶的量測與控制模組訂單；二是加速醫療級熱塑性聚氨酯
+### [3] Top memory maker executives gather in Taiwan in preparation for Computex 2026
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD225/memory-chips-computex-2026-taiwan-nvidia-samsung-sk-hynix.html
+- 摘要: After Nvidia CEO Jensen Huang wrapped up his "trillion-dollar banquet" for Taiwan AI supply-chain giants, GTC Taipei is set to become a highlight of Computex 2026. Nvidia will also host its first "South Korean partners night" in Taiwan.
 
-### [3] 川普投顧唱多＋瑞銀狂升目標價  美光飆、族群嗨
+### [4] GTC Taipei》黃仁勳：有用的 AI 已經到來，Vera Rubin 已經進入全面量產
 - 來源: TechNews 科技新報
-- 日期: 2026-05-27
-- 連結: https://finance.technews.tw/2026/05/27/trump-advisor-bullish-call-ubs-drastically-raises-target-price-micron-soars-sector-energized/
-- 摘要: 瑞銀（UBS）將目標價一口氣從 535 美元調高三倍以上至 1,625 美元、寫下華爾街最高價，再加上美國總統 [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/vera-rubin-has-entered-full-scale-mass-production/
+- 摘要: 輝達（NVIDIA）執行長黃仁勳在 GTC Taipei 大會的開幕演講時宣告，「有用的 AI 已經到來」，A [&#8230;]
 
-### [4] Copper crunch hits components cost amid AI demand surge
+### [5] GTC Taipei預見AI趨勢　李宏毅：AI正改變產業對人才的定義
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757239_ETR1P9FJ4VHRW486SYTOO
+- 摘要: NVIDIA GTC Taipei首日登場，一早會場外聽眾大排長龍，顯見NVIDIA執行長黃仁勳及AI趨勢熱潮不減。此次演講同樣延續2026年3月在美國的GTC模式，安排台積電共同營運長米玉傑、聯發科副董事長蔡力行、華碩
+
+### [6] GTC Taipei首日暖場開講　米玉傑揭台積電AI產能全開
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757222_CO23B1E01FW7C73H0LWIU
+- 摘要: NVIDIA GTC Taipei首日於6月1日登場，執行長黃仁勳主題演講一票難求，一登場開講即秀出眾所期待的台灣供應鏈背板。有趣的是，黃仁勳特別點出幾家供應鏈，並非伺服器，而是黃仁勳來台美食地圖，如Fruit Lady
+
+### [7] Nvidia expects AI boom to keep supply tight beyond 2027
 - 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260526PD212/copper-demand-component-2026-materials.html
-- 摘要: Tight upstream copper concentrate supply has kept prices high despite rising exchange inventories, squeezing margins for electronics companies and prompting suppliers to pass costs on and cut low-margin output &mdash; developments that could push component prices higher worldwide as AI-driven demand accelerates consumption and firms stockpile materials across the manufacturing and infrastructure sectors.
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD212/nvidia-2027-growth-demand-intel.html
+- 摘要: Nvidia chief executive Jensen Huang said the artificial intelligence industry is entering a rapid growth phase that could keep revenue rising sharply into 2027, while supply-chain bottlenecks are likely to persist as demand continues to outstrip capacity.
 
-### [5] Broadcom and Taiwan's chipmakers ride ASIC wave
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD215/asic-chipmakers-broadcom-taiwan-demand.html
-- 摘要: The world's largest chip designers are steadily growing more bullish on the future of cloud artificial intelligence (AI) chips known as ASICs (application-specific integrated circuits) &mdash; a market increasingly seen as the next major battleground in the global AI boom.
+### [8] 亞灣超算姚延宗：GPU部署非企業落地第一步　AI導入先釐清應用場景
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757217_D3I1VICV2UVRGW6OXJ0DP
+- 摘要: 亞灣超算執行長姚延宗6月1日出席NVIDIA GTC Taipei科技大咖會前對談時表示，過去企業談到導入AI時，外界多半會將焦點放在GPU，實際上，GPU並非所有企業都能直接操作的資源，多半仍集中於少數新創或AI
 
-### [6] Transcend to spotlight AI-ready enterprise SSDs and DDR5 memory at COMPUTEX 2026
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD204/transcend-ddr5-2026-data-camera.html
-- 摘要: Transcend announced it will exhibit enterprise solid-state drives, DDR5 7200 memory, and embedded camera modules at COMPUTEX 2026 in the Storage and Management Solutions area, saying the showcase will demonstrate integrated capabilities in AI computing storage, high-speed transmission, and reliable data processing. The firm highlighted that as AI expands to endpoint applications, performance and stability have become baseline requirements for hardware suppliers.
-
-### [7] 輝達淘汰逾 20 年 GeForce 控制台，核心功能全面整合至 NVIDIA App
+### [9] 美國禁令逼出新解方！中國科技巨頭轉向押注 ASIC，力拚全自製 AI 晶片體系
 - 來源: TechNews 科技新報
-- 日期: 2026-05-27
-- 連結: https://technews.tw/2026/05/27/nvidia-has-retired-its-geforce-control-panel-app-after-20-years/
-- 摘要: 輝達（NVIDIA）於 5 月 26 日宣布，已正式讓使用超過 20 年的經典 GeForce Control [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/how-us-export-curbs-are-forcing-china-to-redesign-its-ai-chip-industry/
+- 摘要: 在美國持續收緊先進半導體出口管制之下，中國人工智慧晶片產業正加速調整發展路線，尋求建立更具自給能力的矽晶片生態 [&#8230;]
 
-### [8] Sercomm to showcase enterprise edge AI servers, security and power solutions at COMPUTEX 2026
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD202/sercomm-2026-security-management-edge.html
-- 摘要: Sercomm announced it will exhibit at COMPUTEX 2026 to present enterprise edge AI technologies designed to accelerate AI deployment across edge environments and enhance power management. The networking equipment maker said it will highlight SR-series Open Compute Project servers, an Edge SCM edge security management module, AI camera vision solutions, and high-efficiency power products in its booth demonstration.
-
-### [9] China Electric outlines AI-driven digital transformation to lift 2026 profits
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD203/china-electric-2026-digital-transformation-profit-revenue.html
-- 摘要: China Electric Manufacturing Corporation said at its May 26 shareholders meeting that first-quarter 2026 revenue was flat while gross margin rose to 38%, and it planned a phased digital transformation in the second half of 2026 to drive significant net profit growth versus 2025. The firm announced it would deploy cloud computing, Internet of Things, and artificial intelligence technologies, integrated with its existing enterprise resource planning system, to improve operational efficiency and at
-
-### [10] AI infrastructure spending lifts Taiwan electronics sector outlook
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD210/taiwan-infrastructure-electronics-cloud-demand.html
-- 摘要: Cloud providers' large-scale investments in AI infrastructure have strengthened demand for Taiwan's electronics supply chain, boosting optimism among local manufacturers, according to a Taiwan Institute of Economic Research (TIER) survey. The survey noted that nearly 40% of Taiwan's electronics and machinery makers were optimistic about business conditions over the next six months as cloud service providers planned massive capital outlays in 2026 to meet surging AI compute needs.
-
-### [11] 高通攜字節跳動切入AI ASIC　挑戰NVIDIA資料中心市場
+### [10] SK海力士清州廠再遭祝融　氫氟酸洩漏3,600人緊急疏散、7人送醫
 - 來源: DigiTimes 中文
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756646_05C7FW853ZGZP47Y09UW4
-- 摘要: 高通（Qualcomm）傳出已與TikTok母公司字節跳動（ByteDance）達成合作協議，將供應用於人工智慧（AI）資料中心的ASIC晶片，象徵高通正加速由智慧型手機處理器市場跨入AI基礎設施領域，也顯示中國大型網路
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757219_7PC1D4D72KIGI789IPQKA
+- 摘要: SK海力士（SK Hynix）南韓清州廠區於2026年6月1日上午發生火警，M15及M15X工廠內全體3,600名員工遭緊急疏散撤離。值得注意的是，不到一週前，SK海力士清州M11工廠亦曾因半導體設備異常產生火花，導致員
 
-### [12] Covestro highlights material solutions for AI data centers and embodied intelligence at COMPUTEX 2026
+### [11] AI spillover puts CPUs and ASICs on Computex stage
 - 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PD201/2026-data-materials-polycarbonate-robotics.html
-- 摘要: Covestro showcased a portfolio of engineering plastics and thermoplastic polyurethane materials at COMPUTEX 2026 aimed at supporting AI computing, embodied intelligence, and networking devices, executives said. The supplier presented applications spanning AI data centers, high-performance computing servers, semiconductor manufacturing, robotics, and consumer electronics to address rising performance and supply-chain demands.
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD207/ai-asic-cpu-demand-intel-nvidia-computex-2026.html
+- 摘要: Computex 2026 will open under the theme "AI Together," with attention shifting beyond Nvidia's training-focused hardware to AI computing, robotics, smart mobility, and next-generation technologies. The event is likely to highlight a wider set of suppliers as AI moves deeper into inference, edge applications, and custom chips.
 
-### [13] Xiaomi outlines AI-first roadmap as MiMo tokens and Miclaw shape product strategy
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527VL201/xiaomi-revenue-ai-training-llm-autonomous-driving-robotics-2026.html
-- 摘要: Xiaomi placed AI at the center of its first quarter 2026 strategy, saying it will "take the agent as the core" of a new OS approach and pushing its MiMo model and token plans to drive product adoption and monetization across phones, cars, IoT, and robotics.
-
-### [14] 黃仁勳傳6月在台宴請SK、三星　南韓半導體與AI領袖齊聚一堂
+### [12] 台達電張訓海：AI資料中心競爭不只看晶片　電力與散熱整合是關鍵
 - 來源: DigiTimes 中文
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756645_8GI5M6UX5U9LY142883HE
-- 摘要: 消息傳出，NVIDIA執行長黃仁勳預計將在NVIDIA GTC Taipei 2026開幕首日，會晤包含SK集團（SK Group）會長崔泰源、三星電子（Samsung Electronics）副會長全永鉉，以及南韓半導體、AI、機器人等相關
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757211_T2N3HVVJ0ZVMCM23QUQ3V
+- 摘要: 台達電子總裁暨營運長張訓海6月1日出席NVIDIA GTC Taipei科技大咖會前對談時，就AI資料中心能源基礎建設與智慧製造轉型分享台達電的布局思路與最新進展。張訓海強調，台達電在電源領域的深厚積累並非近年才
 
-### [15] Aixtron wins orders from Lumentum for G10-AsP systems to expand InP production
-- 來源: DigiTimes Asia
-- 日期: 2026-05-27
-- 連結: https://www.digitimes.com/news/a20260527PR201/aixtron-laser-mocvd-demand-production.html
-- 摘要: Aixtron has received multiple orders from Lumentum for its G10-AsP MOCVD systems, a move that could boost global production of indium phosphide (InP) lasers and detectors for 800G and beyond. The deal underscores growing demand for high-speed optical interconnects in AI data centers and signals capacity expansion in photonics manufacturing worldwide.
+### [13] NVIDIA攜手Arm再戰Windows市場　微軟老將回顧相似歷史
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757190_0AJ2YX9P8ET16U1FRNRRQ
+- 摘要: 隨著微軟（Microsoft）與NVIDIA正緊鑼密鼓準備新一波Arm架構NB，市場再度點燃對全新PC時代的期待。然而，微軟前Windows部門總裁Steven Sinofsky在此時溫馨提醒，這場看似顛覆產業的科技狂熱，早在十多
 
-### [16] 美光股價盤中飆漲 18%，市值首破 1 兆美元
+### [14] 台積製程成本低、降規版本更靈活　高通Snapdragon恐再度壓制三星Exynos 2700
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757210_CWX3AHZG0D71VO1X335EE
+- 摘要: 市場頻頻傳出，三星電子（Samsung Electronics）有望在下一代旗艦手機Galaxy S27系列的行動應用處理器（AP）中，降低依賴高通（Qualcomm）Snapdragon平台，將自家Exynos 2700的佔比拉升至50%。然而據最
+
+### [15] GTC Taipei》黃仁勳演講感謝台灣合作夥伴，多家美食愛店也登上名單令人莞爾
 - 來源: TechNews 科技新報
-- 日期: 2026-05-27
-- 連結: https://finance.technews.tw/2026/05/27/micron-joins-1-trillion-club-as-ai-race-powers-memory-chip-boom/
-- 摘要: 人工智慧（AI）熱潮推升記憶體晶片需求下，美國最大記憶體晶片製造商美光科技（Micron Technology [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/the-speech-thanked-the-taiwanese-partners/
+- 摘要: 輝達（NVIDIA）執行長黃仁勳 1 日在  GTC Taipei 大會的開幕演講上，開場時感性地表示「回家真 [&#8230;]
 
-### [17] 專訪》AI 與半導體進入升級戰，安葆補上電力後勤關鍵拼圖
+### [16] Exclusive: TSMC SoIC deepens AI chipmaker lock-in while Huawei hits process wall
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD223/huawei-tsmc-digitimes-soic-3d.html
+- 摘要: The global semiconductor industry is at an inflection point, split between those who can still shrink transistors and those who can no longer do so. US export controls and the denial of EUV lithography equipment have effectively capped China's front-end chip manufacturing at older process nodes, while Taiwan's TSMC extends its lead by layering chips vertically in three dimensions &mdash; a technique known as 3D stacking &mdash; binding the world's top AI chip designers ever more tightly to its e
+
+### [17] US moves to block Nvidia AI chips from reaching Chinese firms overseas
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL206/nvidia-chips-usa-china-export-restrictions-guidance.html
+- 摘要: <p class="P1">The US Commerce Department has moved to close a potential export-control loophole that may have allowed Chinese technology companies to obtain advanced AI chips, including Nvidia's Blackwell processors, through subsidiaries outside China, according to <em>Reuters</em>.
+
+### [18] NVIDIA、Google等全面助陣　日美5年豪擲10億美元共築AI創世紀任務
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757180_NP628D117EVRGQ1LXC56R
+- 摘要: 日本政府正式參與美國川普政府（Trump administration）以AI推動科學研究的國家專案「創世紀任務」（Genesis Mission）。日美兩國政府未來5年將合計投入10億美元，用於AI共同開發等戰略項目。日經新聞
+
+### [19] 鴻海Genesis專案落地見效　AI製造產能效能、異常分析雙雙提升50%
+- 來源: DigiTimes 中文
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757205_8RL1B8AU1AB8MJ47V2ATP
+- 摘要: 鴻海園區營運長暨AI軟體事業群負責人楊秋瑾，6月1日出席NVIDIA GTC Taipei科技大咖會前對談時分享了鴻海將生成式AI與代理型AI（Agentic AI）導入智慧製造與工廠營運的實際成果。楊秋瑾透露，就目前已有可
+
+### [20] Nvidia courts Korea's industrial giants ahead of Computex
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD226/nvidia-taipei-jensen-huang-samsung-supply-chain.html
+- 摘要: Nvidia chief executive Jensen Huang's pre-Computex meetings in Taipei are drawing close attention from South Korean companies seeking a bigger role in the global AI supply chain. With demand for AI infrastructure rising, their interest reflects how the next phase of AI development could shape worldwide competition, partnerships, and technology access.
+
+### [21] 黃仁勳本週訪韓  LG 集團集體噴發 LG 電子飆近 30%
 - 來源: TechNews 科技新報
-- 日期: 2026-05-27
-- 連結: https://technews.tw/2026/05/27/ai-energy-solution-am-power/
-- 摘要: AI 資料中心、半導體廠與算力中心同步擴建，全球備援電力設備全面進入缺貨潮，交期甚至排到 2030 年。安葆電 [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://finance.technews.tw/2026/06/01/jensen-huang-south-korea-visit-sparks-lg-group-surge-lg-electronics-soars-30-percent/
+- 摘要: 市場看好韓國 LG 集團與 AI 晶片龍頭 NVIDIA 在物理 AI（Physical AI）及機器人領域擴 [&#8230;]
 
-### [18] Taiwan optoelectronics materials maker Wah Hong targets high-end PCB and chip packaging demand
+### [22] MediaTek touts One MediaTek strategy, upbeat on ASIC ASPs
 - 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD230/wah-hong-optoelectronics-materials-demand-pcb.html
-- 摘要: <p class="P1">AI, low-carbon sustainability, smart cities, and advanced displays are set to drive the global optoelectronics industry in 2026, shifting demand away from traditional consumer electronics panels and toward higher-value applications, including Micro LED, Mini LED, e-paper, and optical communications.
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD218/mediatek-asic-business-data.html
+- 摘要: MediaTek held a media event ahead of Computex, with several top executives taking part as the company highlighted progress in AI data centers and its broader "One MediaTek" strategy. The event opened with Rahul Sandil, newly appointed general manager of global marketing and communications, followed by speeches from president and COO Joe Chen, corporate vice president of the data center and compute business group Vince Hu, and vice president and general manager of the auto business Mike Chang.
 
-### [19] SK Hynix seeks to embed cooling inside HBM to beat the heat
+### [23] Taiwan gains partial US Section 232 relief, seeks tariff-free semiconductor quotas
 - 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL211/sk-hynix-technology-hbm-cooling-chips.html
-- 摘要: SK Hynix has unveiled a new high-bandwidth memory technology designed to reduce heat buildup in next-generation AI systems, as rising computing density turns thermal management into a more critical front for HBM suppliers.
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD224/taiwan-semiconductors-exports-production-manufacturing.html
+- 摘要: Taiwan has secured preferential treatment under US Section 232 tariffs for most exports other than semiconductors after months of negotiations with Washington, but uncertainty remains over proposed semiconductor measures. With chips accounting for the bulk of Taiwan's exports to the US, Taipei is seeking tariff-free quotas and company-specific exemptions before any new duties are imposed.
 
-### [20] TSMC and Micron's fabs expanding; how do Samsung and SK Hynix's bonus systems come into play?
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD238/samsung-labor-performance-micron-sk-hynix-2026.html
-- 摘要: Samsung Electronics' 2026 tentative labor-management agreement is expected to pass after already surpassing an 86% voting participation rate within just three days. While the agreement has temporarily eased concerns over potential strikes, South Korea's semiconductor industry is increasingly worried that the newly expanded performance bonus structure, which guarantees employees a fixed percentage of business performance, could negatively impact the country's long-term semiconductor competitivene
-
-### [21] Huawei Tau Law series 2: Advanced packaging, AI interconnects, EDA lead the way
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL204/huawei-packaging-eda-demand-3d.html
-- 摘要: Huawei's Tau Law proposal is rapidly redirecting attention across China's semiconductor industry away from pure lithography competition and toward advanced packaging, 3D stacking, optical interconnects, and system-level architecture design.
-
-### [22] PCB drill bit maker Topoint raises NT$600 million, brings in PCB giants as strategic investors
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD239/pcb-topoint-private-placement-gce-unimicron.html
-- 摘要: Printed circuit board (PCB) drill bit manufacturer Topoint Technology approved a private placement of unsecured convertible corporate bonds with a maximum issuance amount of NT$600 million (approx. US$19.10 million) at its shareholders' meeting on May 26. The company also welcomed Unimicron Technology, Gold Circuit Electronics (GCE), and Zhen Ding Technology Group (ZDT) as strategic investors.
-
-### [23] Taiwan's quiet fix for GPS-denied drones and satellites
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL206/startup-gps-taiwan-technology.html
-- 摘要: At the Plug and Play May Summit in Sunnyvale, a Taiwanese startup called Aegiverse quietly made its case to US defense and aerospace investors &mdash; not with flashy slides or moonshot promises, but with a 16-year track record and a business model built to last.
-
-### [24] TSMC CEO to address bonus backlash in person as Jensen Huang's visit puts Taiwan chipmaker in spotlight
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260527PD200/tsmc-taiwan-chairman-semiconductor-industry-online.html
-- 摘要: Taiwan Semiconductor Manufacturing Company (TSMC) is scheduled to hold a company-wide communication meeting on the morning of May 27, during which chairman C.C. Wei is expected to address employees in person over the growing backlash surrounding reports that the company will cut employee bonuses by 15%.
-
-### [25] NEPCON OSAKA 2026 觀察：AI 推動日本電子製造鏈升級
+### [24] 蘇姿丰勉勵 MIT 畢業生：挑戰最難的問題，不要當只會用 AI 的人
 - 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://technews.tw/2026/05/27/ai-drives-upgrades-across-japan-electronics-manufacturing-supply-chain/
-- 摘要: AI Server 帶來的技術拉動已不再侷限於 GPU、HBM 與整機代工，而是進一步外溢至 PCB、封裝基板 [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/amd-ceo-lisa-su-gives-mit-commencement-address/
+- 摘要: AMD 執行長蘇姿丰 5 月 29 日於麻省理工學院（MIT）畢業典禮發表致詞，回顧自己 MIT 求學時透過實 [&#8230;]
 
-### [26] 瑞銀調升美光三倍目標價引爆股價大漲近 20%，市值破兆預期台股將受激勵
+### [25] Analysis: Huawei's Tau Law reframes the AI chip race &mdash;Nvidia's compute moat and TSMC's node lead
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL203/huawei-tsmc-nvidia-manufacturing-chips.html
+- 摘要: Huawei's Tau Law is being framed in China as a new semiconductor principle, but its strategic value may lie beyond catching TSMC in process nodes. The real question is whether Huawei can combine LogicFolding, optical interconnects, and system-level scaling to reduce China's reliance on Nvidia.
+
+### [26] MediaTek highlights supply chain advantage, says focus with Nvidia is product cooperation
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260531PD201/mediatek-supply-chain-nvidia-taiwan-2026.html
+- 摘要: MediaTek held a pre-Computex 2026 media event in Taipei, Taiwan, on May 29, after which president and COO Joe Chen and CFO and co-COO David Ku spoke with reporters. Ku shared his views on supply chain capacity planning as well as a range of capital market-related issues.
+
+### [27] AI 發威欣興今年拚創高，股價站穩千元
 - 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://finance.technews.tw/2026/05/27/a-foreign-investment-report-raising-microns-target-price-by-3-times-triggered-a-surge-in-its-stock-price-of-over-20/
-- 摘要: 受惠於人工智慧（AI）對記憶體晶片的無盡需求，美國記憶體大廠美光科技（Micron）股價單日一度飆漲超過 21 [&#8230;]
+- 日期: 2026-06-01
+- 連結: https://finance.technews.tw/2026/06/01/unimicron-shares-hold-firm-above-1000/
+- 摘要: 受惠人工智慧（AI）需求持續升溫，名列「輝達背板股」的 PCB 暨載板大廠欣興股價近期站穩千元關卡。欣興看好， [&#8230;]
 
-### [27] 每日椽真：CPU卡關更甚記憶體缺料 | 宇樹機器人衝刺IPO前夕 | 黃仁勳擔心台灣供電？
+### [28] Actron moves into AI servers and power infrastructure after securing 70%+ global share in auto LLD/ULLD diodes
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260528PD220/actron-automotive-ic-demand-infrastructure-growth.html
+- 摘要: Taiwan-based Actron Technology expects stronger growth in its automotive semiconductor business as demand for its high-efficiency diode products has exceeded expectations amid tightening global emissions standards and resilient hybrid vehicle demand.
+
+### [29] SoftBank plans up to EUR75 billion AI data center buildout in France, anchoring Europe's infrastructure
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL201/france-data-center-infrastructure-europe-investment.html
+- 摘要: SoftBank Group said it will invest as much as EUR75 billion (US$87.43 billion) to develop 5GW of AI data center capacity in France, a move that would make the country one of its largest AI infrastructure bases in Europe. The first phase targets 3.1GW in the Hauts-de-France region by 2031.
+
+### [30] NVIDIA GTC》台灣產業鏈將 AI 落地實現於智慧工廠，帶動全球產能效率提升
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/taiwans-supply-chain-is-implementing-ai-in-smart-factories/
+- 摘要: AI 技術正從數位世界走向實體應用，帶動全球產業典範轉移。在 NVIDIA GTC 的座談會上，聯發科技副董事 [&#8230;]
+
+### [31] 軟銀強攻歐洲算力版圖　赴法國建5GW AI基建
 - 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756631_KTE51MDU4QT73Q0O8ODWH
-- 摘要: 三星電子（Samsung Electronics）與SK海力士（SK Hynix）雖主導全球記憶體晶片市場，但近日有分析指出，兩者在車用記憶體市場上大幅落後美光（Micron）。英特爾（Intel）18A製程的晶圓代工良率快速攀升，與南韓三星電子（Samsung
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757170_4SL03J7F8LAGH8LBWRQW4
+- 摘要: 軟銀集團（SoftBank Group；SBG）宣布，計劃在法國打造大型AI資料中心，最高將投入750億歐元（約870億美元），總電量達5 GW。這將是該公司在歐洲規模最大的AI基礎設施投資。在計畫的第一階段中，預計將在
 
-### [28] 賦能下一代資料中心 英特爾乙太網控制器E830
+### [32] 黃仁勳COMPUTEX 2026前夜會韓企　南韓供應鏈搶搭AI教父旋風
 - 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756626_UHX7GMDY1I4S1H7U88H8Z
-- 摘要: 在數位轉型深化、資料量持續激增的背景下，資料中心網路的效能、靈活性與安全性直接決定業務運行效率與發展潛力。英特爾乙太網控制器
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757189_Z770UM1R95YJ2187BDIW6
+- 摘要: COMPUTEX 2026開幕前夕，NVIDIA執行長黃仁勳在台北的公開行程與會面，成為南韓企業界高度關注焦點。隨著人工智慧（AI）基礎建設需求持續擴張，南韓半導體、汽車、電子與網路平台業者，正積極尋求與
 
-### [29] 聯發科、博通ASIC成長拚「連續倍增」　產能上限漸解鎖
+### [33] MiniMax's A-share move could widen funding options for China's AI model companies
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL200/china-ai-funding-stock-market-revenue.html
+- 摘要: MiniMax has started preparations to sell yuan-denominated shares on China's stock market, a step that could give onshore investors exposure to AI model companies beyond chipmakers and extend the company's listing presence beyond Hong Kong.
+
+### [34] NVIDIA GTC》從代理式 AI 走向實體 AI ，台灣產業鏈系統轉型時代
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://finance.technews.tw/2026/06/01/from-agent-based-ai-to-entity-based-ai-a-new-era-of-transformation-for-taiwans-industrial-chain/
+- 摘要: AI技術正從數位世界走向實體應用，帶動全球產業典範轉移。在NVIDIA GTC的座談會上，聯發科技副董事長暨執 [&#8230;]
+
+### [35] 戴爾、宏碁搶攻入門NB市場　首批NVIDIA處理器Windows PC本週亮相
 - 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756581_KMT4865L90J6AT0XT7R2O
-- 摘要: 各大IC設計業者針對雲端特用晶片（ASIC）接下來的成長表現，這段時間可以說是持續上修，不僅美系的博通（Broadcom）穩定地站穩市場龍頭，台系的聯發科、世芯、創意等，都準備從2026年開始迎接主力專案放量的挹注。更值得關注的是，對於2027
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757174_L2G2E0UG6OOKET5F3OMBL
+- 摘要: NVIDIA與微軟（Microsoft）傳將分別於本週台北COMPUTEX 2026與Build開發者大會期間，揭曉首批採用NVIDIA處理器的Windows PC，驅動Windows陣營在AI PC架構上正式邁向多元化。與此同時，包括戴爾
 
-### [30] Google TPU算力外租挑戰GPU霸權　黑石搶入AI產業鏈核心
+### [36] 英特爾 COMPUTEX 四大平台齊發，從掌機到資料中心全面布局
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/intel-computex-four-area-exhibit/
+- 摘要: 根據 Wccftech 報導，Intel 將於 Computex 2026 展示多項新產品布局，涵蓋掌上型遊戲 [&#8230;]
+
+### [37] Weekly news roundup: Nvidia CEO hosts trillion-dollar dinner; TSMC CEO to address bonus backlash in person
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601VL204/digitimes-asia-weekly-news-roundup-nvidia-tsmc-2026.html
+- 摘要: Below are the most-read<em> DIGITIMES Asia</em> stories from the week of May 25-31, 2026:
+
+### [38] 中國爆海外狂掃NVIDIA Blackwell　美國商務部出手急堵漏洞
 - 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756445_35E3AS1T50ZPFK4EN8AYX
-- 摘要: Google日前宣布與資產管理巨擘黑石集團（Blackstone）合作，在美國成立全新人工智慧（AI）雲端基礎設施公司，將結合Google自研張量處理器（TPU）、資料中心容量、網路與營運能力，推出運算即服務（Compute-as-a-Service；CaaS）平台，直接切入AI算力市場，也象徵Google
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757179_O8U2LBBX6LTJCELHBVEVA
+- 摘要: 美國商務部5月31日採取行動，堵住可能允許向海外中國企業出口人工智慧（AI）晶片的潛在漏洞，避免如NVIDIA Blackwell等高階AI晶片經此漏洞流向中國企業。這凸顯儘管美國大力限制中國企業獲得開發關鍵AI能力
 
-### [31] 科技1分鐘：DayOne
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756634_HA37XTCS2D4Q2F59I8OLJ
-- 摘要: DayOne總部位於新加坡，2022年成立，是一家專注大型AI資料中心的基礎設施業者，前身為萬國數據（GDS
+### [39] Taiwan AI boom lifts server ODM valuations and pushes suppliers to chase higher margins
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD205/servers-odm-demand-growth-taiwan-2026.html
+- 摘要: The AI boom is lifting valuations across Taiwan's system integration supply chain, while downstream vendors accelerate operations as the island's "electronic six giants" gain more influence. Industry executives say the focus is shifting from whether share prices look expensive to whether companies have solid fundamentals and an indispensable role in the sector.
 
-### [32] 三星SDC獨供法拉利Luce 4款OLED　業界首創多層儀錶板設計曝光
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756530_MCS6J71Q2Z9TRZ1946YXL
-- 摘要: 三星顯示器（Samsung Display；SDC）日前宣布，將獨家為法拉利（Ferrari）首款純電跑車Luce供應4款OLED面板。此為兩家公司自2023年宣布合作以來，歷時3年首度問世的成果，業界因此高度關注雙方未來是否將進一步深化合作。綜合韓媒ET News、ZDNet
+### [40] NVIDIA GTC》台灣供應鏈高度整合，在 AI 革命扮演無可取代關鍵角色
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/taiwans-highly-integrated-supply-chain-plays-an-irreplaceable-key-role-in-the-ai-%e2%80%8b%e2%80%8brevolution/
+- 摘要: AI 浪潮席捲全球，帶動伺服器與半導體需求呈現爆炸性成長。在 NVIDIA GTC 的座談會上，台積電執行副總 [&#8230;]
 
-### [33] 光聖轉投資合聖搶攻美系CPO商機　「高芯數」再為下半年營運增色
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756571_0Q64HCG88Z4EQU0XBHBG8
-- 摘要: 受惠於美系雲端大廠持續擴建資料中心，高芯數產品需求暢旺，光聖總經理張英華表示，AI帶來高成長趨勢至少將一路看好至2029年，而光聖的訂單能見度已看至2026年底，隨著更高規格13
+### [41] MediaTek eyes AI glasses, PCs, and home servers as computing shifts beyond the cloud
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD208/mediatek-smart-glasses-servers-chips.html
+- 摘要: MediaTek said it expects artificial intelligence (AI) to move from centralized cloud systems into consumer devices, home servers, and new products such as AI glasses. The shift could reshape global demand for chips, data privacy, and device design, as companies race to build the next wave of AI hardware.
 
-### [34] COMPUTEX 2026首設機器人專區　台廠生態系全陣容集結
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756572_RIC6LP1P6QUC5M3R9LUO1
-- 摘要: 2026年初NVIDIA、超微（AMD）在CES 2026交鋒，雙方同時將機器人端上桌，而COMPUTEX
+### [42] Asus ready to compete as Apple expands into budget laptop market
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260531PD200/notebook-market-asus-chairman-jonney-shih-apple.html
+- 摘要: Asustek Computer (Asus) chairman Jonney Shih outlined the company's artificial intelligence (AI) strategy roadmap and also commented on whether Apple's entry-level MacBook Neo could challenge the mainstream Windows notebook market at a company shareholders meeting on May 29.
 
-### [35] 五角大廈資助跨世代技術電池研發　盼突破中國壟斷局面
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756563_9IY6JSXX54NLEJ47QT7QU
-- 摘要: 為了反制中國在電動車（EV）、AI資料中心、軍事武器設備以及幾乎所有尖端領域所使用的電池主導地位，美國五角大廈正傾力資助一項跨代躍進的顛覆性電池研發計畫。據The Information報導，當前全球超過55%
+### [43] Taiwan Mobile says D2C satellite services not urgent priority as AI drives data-center and power concerns
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD204/twm-taiwan-telecom-business-communications.html
+- 摘要: Taiwan Mobile told shareholders on May 29 that direct-to-cell satellite services are not an urgent need for Taiwan and that the satellite-to-phone business model still requires proof, while the company outlined priorities around AI infrastructure, power-supply risks, and data-center expansion. Executives said continuing terrestrial base-station buildout limits direct-to-cell (D2C) utility for everyday use, and that direct satellite links are more suited to emergency communications and wartime sc
 
-### [36] 科技1分鐘：晶粒間互連（D2D Interconnects）
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756630_YTZ58EH740WS6MLPREVEE
-- 摘要: 半導體製程逐漸面臨物理極限，使得多個晶片封裝在一起的小晶片（Chiplet）設計成為一大趨勢，而晶粒間互連（D2D Interconnects）技術從中扮演重要角色。晶粒間互連（D2D
+### [44] Wistron invests in quantum computing and small satellites to power AI-era growth
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD202/wistron-quantum-computing-growth-technology-launch.html
+- 摘要: Wistron said it has been building capabilities in quantum computing and satellite technology as potential growth engines in the AI era, announcing the purchase of a 32-qubit quantum computer and plans to run an internal project that integrates the device with conventional computing systems. The firm also said its first in-house experimental CubeSat is scheduled to launch into low-Earth orbit in late June. That work on a national communications satellite manufacturing industrialization platform, 
 
-### [37] AI基建軍備競賽延燒　台灣電子業約4成看好後市
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756533_9C94JDR14FC9OE22FI6YC
-- 摘要: 為維持AI技術與資料中心基礎設施的領先地位，各雲端巨頭持續加碼投資，2026年全球四大雲端服務供應商（CSP）合計資本支出可能高達近7,250億美元，其中亞馬遜（Amazon）要投資2
+### [45] 美祭新指引堵出口限令漏洞！要求中企海外子公司採購 AI 晶片，須先申請許可
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/bis-new-ai-chip-rule/
+- 摘要: 美商務部工業與安全局（BIS）發布最新指引指出，凡是向總部位於中國的企業在海外設立的子公司出口先進 AI 晶片 [&#8230;]
 
-### [38] 三星押注創新策略　Galaxy Z Rollable專利曝光、加速商用化
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756470_65C3UYLT8B0661LM8M8PD
-- 摘要: 為奪回全球智慧型手機市場主導權，三星電子（Samsung Electronics）祭出「創新規格」作為搶攻市場的關鍵策略。分析認為，在DRAM、NAND Flash價格上漲導致成本負擔加重的背景下，三星擬透過高階創新產品提升獲利能力。根據韓媒Financial News引述南韓業界消息指出，三星捲軸式（Rollable）手機&
+### [46] Skymizer launches HTX301 decode-first accelerator to bring large-model inference on-premises
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD201/skymizer-accelerator-gpu-taiwan-2026.html
+- 摘要: Skymizer said it unveiled HTX301, a decode-first accelerator chip for on-premises AI inference, at COMPUTEX 2026, to shift large-model serving away from cloud GPU racks and onto single PCIe cards that enterprises can run in their own environments. The firm announced a partnership with Taiwan's Institute for Information Industry to upgrade Taiwan's AI industry from edge AI to enterprise on-prem AI, and executives framed the product as aimed at regulated, low-latency settings such as hospitals, ba
 
-### [39] 三星自研HBM SDK鞏固垂直整合優勢　卡位客製化HBM市場
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756404_0ZR57NKSL2PQJ95U99I08
-- 摘要: 消息指出，透過記憶體與晶圓代工的垂直整合，已在高頻寬記憶體（HBM）市場持續領跑的三星電子（Samsung
+### [47] WPG says AI era will reward supply-chain ecosystems over individual firms
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD206/wpg-ai-nvidia-supply-chain-taiwan.html
+- 摘要: As Computex opens this week, Nvidia CEO Jensen Huang has arrived in Taiwan early to meet supply-chain partners. For global readers, the message from local industry leaders is clear: in the AI boom, competitiveness is increasingly shaped by coordinated ecosystems rather than individual companies.
 
-### [40] 韜定律凸顯先進封裝戰略地位　中國封測產業迎升級契機
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756522_HHD4ZJ9M3QXB171R6HYHD
-- 摘要: 華為近期由半導體業務部總裁何庭波正式提出「韜（&tau;）定律」，試圖以「時間微縮（Time
+### [48] Ion Electronic Materials ramps Miaoli plant to mass production of high-end specialty gases
+- 來源: DigiTimes Asia
+- 日期: 2026-06-01
+- 連結: https://www.digitimes.com/news/a20260601PD200/ion-plant-high-end-production-revenue.html
+- 摘要: Ion Electronic Materials announced that its Tongluo plant in Miaoli has completed construction of Phase 1 and Phase 2 and is entering a mass-production stage for new products and a fluorine-based cleaning gas filling line, the firm said after its shareholders meeting on the 29th. The company said the planned filling line will be one of only two in Taiwan and will create the world's largest single-site implant gas production capacity, aimed at meeting demand from advanced semiconductor and displa
 
-### [41] 中美太空算力競賽白熱化　SpaceX與中國同步布局軌道AI平台
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756508_ZQG4Y6821YTRIX78LVCOC
-- 摘要: 自1957年蘇聯發射首顆人造衛星後，大國之間在太空領域的競爭就不曾停歇，如今中美兩國正將過往象徵性的競爭，轉化為實質的數位基礎設施布局，致力於建置由衛星、網路與運算系統交織而成的太空運算平台。據南華早報（SCMP）報導，在這場新興的科技競賽中，即將進行歷史性IPO的SpaceX已成為核心要角，其規劃的太空資料中心正大幅拉
+### [49] Axios：首款採輝達處理器 Windows 電腦預計台北亮相
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/first-windows-pcs-powered-by-nvidia-chips-to-debut-next-week/
+- 摘要: 美國新聞媒體 Axios 5 月 31 日引述消息人士報導，人工智慧（AI）晶片公司輝達（Nvidia）與微軟 [&#8230;]
 
-### [42] 三星鬆綁ChatGPT、Claude等外部AI限制　6月起DX部門率先導入
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756585_0XK6WXSN752VZK6L6NWWS
-- 摘要: 三星電子（Samsung Electronics）宣布將正式允許DX部門員工在公司內部使用ChatGPT、Gemini、Claude等外部生成式AI服務。業界認為，三星此舉旨在透過拓展AI應用範圍，將其應用於產品規劃、開發、行銷和海外業務響應等領域，進而提升其裝置體驗（Device
+### [50] 軟銀擬砸 14 兆日圓、在法國興建 AI 資料中心
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/softbank-group-and-sesterce-to-develop-1-gw-ai-data-center-in-bosquel-france/
+- 摘要: 日本科技巨頭軟銀集團（Softbank Group）計劃砸下 14 兆日圓，在法國興建 AI 資料中心，將成為 [&#8230;]
 
-### [43] 美光吃下車用記憶體過半市場　南韓雙雄AI光環下的劣勢
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756564_37I68TTN5Z8MBZ5GMI2DJ
-- 摘要: 三星電子（Samsung Electronics）與SK海力士（SK
+### [51] NVIDIA GTC Taipei 今日登場，黃仁勳主題演講直播看這裡
+- 來源: TechNews 科技新報
+- 日期: 2026-06-01
+- 連結: https://technews.tw/2026/06/01/nvidia-gtc-taipei-2026-keynote/
+- 摘要: NVIDIA 執行長黃仁勳這次來台超過一週，除與供應鏈會面外，最重要將是親自為 GTC Taipei 2026 [&#8230;]
 
-### [44] 華立跨足晶圓廠標準氣體　董座證實半導體、PCB逐季反映成本
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756578_E9P4NRKV84N5KW7XRN99R
-- 摘要: 半導體先進製程帶動高階電子材料需求，高科技材料設備供應商華立表示，正式跨足晶圓廠所需標準氣體等投資，隨著台南物流中心2026年下半即將啟用，將挹注未來成長動能。近期中東戰爭推高石化等原物料價格上漲，華立董事長張尊賢也證實，將逐季反映半導體和PCB產品價格，已與客戶協調轉嫁成本。在AI伺服器、高階晶圓代工及先進封裝材料需求
+### [52] AI infrastructure hits copper limits, foundries lock down silicon photonics capacity through 2028
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260527VL206/copper-cpo-silicon-capacity-infrastructure.html
+- 摘要: Generative AI is moving at a speed scaling past critical computation thresholds, initiating a shift from a "chip-centric to an interconnect-centric" architecture era. The physical limitations of legacy copper cabling have created a severe, industry-wide obstacle that is disrupting financial and operational roadmaps, prompting companies to lock down silicon photonics foundry capacity through 2028.
 
-### [45] SK海力士發表新一代iHBM技術　解決AI半導體發熱難題
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756552_ZU04SGD06AOQXR1R3C984
-- 摘要: 三星電子（Samsung Electronics）勞資雙方薪資協議仍待結果之際，SK海力士（SK
+### [53] E Ink sees AI power crunch driving city, outdoor growth
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260528PD227/e-ink-growth-e-paper-display-2026.html
+- 摘要: E Ink Holdings held its annual shareholders' meeting on May 27, 2026, and passed all proposals. Chairman Johnson Lee said the global tech industry is rapidly entering a new stage in which energy efficiency has become the core competitive edge, and that the sector is shifting from pursuing process shrink and performance gains to optimizing energy acquisition and use. As global demands for energy saving and carbon reduction grow stricter, Lee said this trend will accelerate the adoption of e-paper
 
-### [46] 英特爾18A良率攀升與美系業者護體　三星晶圓代工搶客壓力增
-- 來源: DigiTimes 中文
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756474_CA35TGI268HWRM50HRO06
-- 摘要: 英特爾（Intel）18A製程的晶圓代工良率快速攀升，與南韓三星電子（Samsung Electronics）爭搶大客戶的競爭可能更為激烈。特別是在美國川普政府（Trump
+### [54] India roundup: EMS providers face margin pressure as Anthropic steps up local hiring
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529VL204/india-roundup-anthropic-electronics-expansion.html
+- 摘要: <p class="P1">India's technology ecosystem is seeing parallel expansion across AI software adoption, electronics manufacturing, and semiconductor investment. Anthropic is scaling its India leadership to capture enterprise demand, while manufacturers move into higher-margin products. At the same time, Wi-Fi 7 production and fresh chip funding highlight deepening industrial capability across the ecosystem.
 
-### [47] Trusted Convergence Governance: Preserving Admissibility Integrity Across Heterogeneous Semiconductor Systems
+### [55] Thinking Electronic sees tighter capacity and AI orders push 2026 momentum
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD213/thinking-electronic-thinking-capacity-growth-2026.html
+- 摘要: Thinking Electronics' outlook points to broader implications for global supply chains, as rising demand for protection components, AI data-center equipment, and electric vehicles tightens capacity across Asia. The Taiwan-based maker is also seeking to offset higher material costs, a trend that could affect pricing and sourcing for customers worldwide.
+
+### [56] Interview: Sharp CEO taps Foxconn ecosystem for brand revival
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD223/sharp-ceo-foxconn-brand-development.html
+- 摘要: Sharp President and CEO Tetsuji Kawamura said the company has eased some long-standing management pressures, but its main challenge now is to expand its brand, develop new businesses, and accelerate globalization simultaneously. He outlined the strategy in an interview with <em>DIGITIMES</em>.
+
+### [57] Column: As token costs collapse, AI infrastructure splits into five layers
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD221/ai-inference-demand-data-infrastructure-efficiency.html
+- 摘要: Falling inference prices and tightening data regulations are pushing AI compute beyond the hyperscale data center &mdash; reshaping infrastructure decisions for enterprises, governments, and device makers worldwide
+
+### [58] 分析師郭明錤：N1X 裝置出貨估兩年千萬台，瞄準裝置端 AI 算力的重度用戶
+- 來源: TechNews 科技新報
+- 日期: 2026-05-31
+- 連結: https://technews.tw/2026/06/01/nvidia-n1x-processor-for-windows-pc/
+- 摘要: NVIDIA 執行長黃仁勳的 GTC Taipei 主題演講 1 日上午舉行，傳聞中攜手聯發科打造的 N1X  [&#8230;]
+
+### [59] South Korea's ETRI maps three-part plan to scale physical AI and robot sovereignty
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD209/mobile+telecom-adoption-data-telecom-service-infrastructure-development-meta-robot.html
+- 摘要: South Korea's Electronics and Telecommunications Research Institute (ETRI) unveiled a medium- to long-term strategy to advance physical AI and robot intelligence at its 50th anniversary forum, proposing three core initiatives to strengthen national competitiveness as global tech firms accelerate investment. Executives and industry participants gathered to discuss a K-physical AI approach centered on Meta RFM sovereignty, robot data governance, and an ecosystem for self-growing AI robots.
+
+### [60] AWSC targets optical comms growth by 2027
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD212/data-2027-demand-communications-awsc.html
+- 摘要: AI data centers are driving increased demand for faster transmission worldwide, prompting compound semiconductor foundries to shift toward optical communications. Advanced Wireless Semiconductor Company said the segment is emerging as a major growth engine, with early products under customer testing and more meaningful results expected in 2027 as adoption broadens.
+
+### [61] AuthenX targets CPO bottlenecks with detachable metalens FAU
+- 來源: DigiTimes Asia
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com/news/a20260529PD204/production-12-inch-commercial-wafer-silicon.html
+- 摘要: AuthenX is preparing to showcase a detachable 2D fiber-array unit at COMPUTEX 2026, as the Taiwanese optical-communications company seeks to address packaging and alignment challenges in co-packaged optics.
+
+### [62] CEO Interview with Vivek Vishwakarma of ThirdAI Automation
 - 來源: SemiWiki
-- 日期: 2026-05-26
-- 連結: https://semiwiki.com/3dic/369582-trusted-convergence-governance-preserving-admissibility-integrity-across-heterogeneous-semiconductor-systems/
-- 摘要: <p>As semiconductor systems evolve toward heterogeneous integration, chiplets, 2.5D and 3D packaging, distributed observability, runtime adaptation, Fleet Learning, and lifecycle convergence governance, the industry is entering a fundamentally new operational reality.</p>
-<p>Convergence decisions are no longer driven only&#8230; <a class="read-more" href="https://semiwiki.com/3dic/369582-trusted-convergence-governance-preserving-admissibility-integrity-across-heterogeneous-semiconductor-systems/
+- 日期: 2026-05-31
+- 連結: https://semiwiki.com/ceo-interviews/369591-ceo-interview-with-vivek-vishwakarma-of-thirdai-automation/
+- 摘要: <p>Vivek Vishwakarma is an entrepreneur, investor, and technologist leading ThirdAI Automation, an industrial AI company that accelerates troubleshooting and reporting through automated root-cause analysis. A former technologist at Intel with 10+ patents and 300+ research citations, he speaks on the intersection of advanced&#8230; <a class="read-more" href="https://semiwiki.com/ceo-interviews/369591-ceo-interview-with-vivek-vishwakarma-of-thirdai-automation/">Read More </a></p>
+<p>The post <a hr
 
-### [48] Are You Ready for Spec-Driven Verification?
-- 來源: SemiWiki
-- 日期: 2026-05-26
-- 連結: https://semiwiki.com/artificial-intelligence/369520-are-you-ready-for-spec-driven-verification/
-- 摘要: <p>Quick recap: verification is checking that your implementation of a design <strong><em>matches the in-house</em></strong> <strong><em>design/test specification</em></strong>. In contrast, validation means checking that the implementation matches <strong><em>design intent as defined by a</em></strong> <strong><em>customer specification, use cases, etc</em></strong>. Let’s focus on verification; for simplicity I’ll use “design&#8230; <a class="read-more" href="https://semiwiki.com/artificial-in
+### [63] 麗臺於COMPUTEX 2026推出終極AI工作站 打造高彈性AI解決方案
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757011_5BD1YPRW01NOCI25OTQL6
+- 摘要: 隨著企業導入AI應用持續升溫，對在地運算能力與資料安全的需求同步提升。麗臺科技（Leadtek）將於 COMPUTEX 2026展出「終極桌邊AI超級電腦」（Ultimate Deskside AI Supercomputer），主打將資料中心
 
-### [49] 全球電子協會成立政策委員會，台積電、Jabil 等為創始會員
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://finance.technews.tw/2026/05/26/global-electronics-association-gepc/
-- 摘要: 全球電子協會（Global Electronics Association）宣布成立「政策委員會」（Globa [&#8230;]
+### [64] NVIDIA黃仁勳廣邀韓系大咖「在台一聚」　記憶體巨頭參戰COMPUTEX
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757057_V2H1ZGKD4JJHG48L4D4LD
+- 摘要: 隨著NVIDIA執行長黃仁勳宴請台系AI供應鏈大廠舉辦「兆元宴」甫落幕，GTC Taipei則將為COMPUTEX 2026大展掀起高潮，NVIDIA也將首度在台舉辦「韓國伙伴之夜」。其中，提前搭乘專機到訪的SK集團會長崔
 
-### [50] Let there be limits&mdash;Pope Leo invokes scripture on AI's moral peril, Anthropic in tow
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL210/anthropic-claude.html
-- 摘要: Pope Leo XIV released a major document on May 25, warning about the dangers of AI, from autonomous weapons to what he claims is its relation to "new forms of slavery" arising from the industry. An unexpected attendee of the pope's Vatican event announcing the document's release was Anthropic co-founder Chris Olah, a presence that signals the AI developer's relationship with the Catholic Church as it seeks to bolster its image as an AI company concerned with ethics.
+### [65] GPU功率飆升催化800VDC革命　四大關鍵挑戰牽動滲透速度
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756977_65N8ZNYP8GEI7Y6DKA882
+- 摘要: 資料中心電力架構正站在歷史性的轉捩點。隨著GPU機架功率密度朝600 kW等級躍升，以物理規律為驅動的800 VDC直流配電革命，已從超大規模雲端業者的內部實驗，演變為整個產業無法迴避的系統性重構。尤其這場變
 
-### [51] LED maker Ennostar pivots to optical interconnects after high-value shift agin traction
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD235/ennostar-communications-revenue-chairman-paul-peng.html
-- 摘要: Ennostar Holdings' transformation has begun to show clear results, with chairman Paul Peng saying the company's "3+1" strategy is taking shape, as higher-value applications now account for more than half of revenue. Despite continued uncertainty in the global environment, Peng remains cautiously optimistic about the second half of 2026 and expects the company to maintain relatively strong performance.
+### [66] 科技1分鐘：面板廠憑舊設備翻身　卡位FOPLP戰場
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757079_VJD19NPO6CSKGZLX2MY02
+- 摘要: AI晶片尺寸持續放大，傳統封裝方式面臨面積與成本挑戰，逐步轉向「以方代圓」的扇出型面板級封裝（FOPLP）。由於大尺寸玻璃基板，有利於FOPLP生產效率，先進封裝也因而成為面板廠舊設備轉型的重要出口。而
 
-### [52] Alchip: ASIC growth may outpace the broader GPU market
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD231/alchip-asic-market-gpu-growth.html
-- 摘要: For the past three years, graphics processing units, or GPUs, have dominated the artificial intelligence boom. But Johnny Shen, chairman of Alchip Technologies, believes the next phase of the market may belong to something more specialized.
+### [67] 科技1分鐘：固態氧化物燃料電池（SOFC）
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757080_R331VDXW71JNDY10RMMUX
+- 摘要: 固態氧化物燃料電池（Solid Oxide Fuel Cell；SOFC）因具備高效率、低噪音與可分散部署等特性，近年逐漸成為資料中心、工業場域與分散式能源系統的重要電力選項。SOFC以電化學反應直接將燃料轉換為電力
 
-### [53] Nvidia and Marvell CEOs to share Computex stage&mdash; How US$2 billion turned rivals into partners
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL208/nvidia-marvell-computex-investment-ceo.html
-- 摘要: When Nvidia quietly wrote a US$2 billion check to Marvell Technology earlier this year, it was less a financial bet than a strategic maneuver &mdash; one that converted a potential rival into a committed partner. Now, for the first time since that deal was struck, the two companies' CEOs will share a stage.
+### [68] Anthropic官方融資聲明藏玄機　三星有望獲晶圓代工訂單？
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757037_JM21KRH1299OQL84P7UP8
+- 摘要: Anthropic近日完成新一輪650億美元的融資，三星電子（Samsung Electronics）亦參與其中。分析指出，三星此次投資不僅大幅提升供應先進高頻寬記憶體（HBM）的可能性，更將Anthropic納入晶圓代工客戶奠定基
 
-### [54] The US$16.5 Billion Bet: How Co-Packaged Optics Will Rewire AI's Backbone by 2030
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260521RS400/bandwidth-cpo-silicon-photonics-infrastructure.html?chid=2
-- 摘要: Mastering the 140%+ CAGR of CPO Semiconductor Revenue Explosion
+### [69] Nikon半導體ArF設備有意打價格戰　成本優勢對決ASML
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757033_ZF5LCE594DBRQ922DBGWS
+- 摘要: Nikon在半導體曝光設備市場，面對在曝光設備市佔率超過8成的荷蘭ASML，將以更低價格提供產品，以搶奪客戶。日經新聞（Nikkei）報導，2026年4月就任Nikon的社長大村泰弘表示，在主力產品ArF曝光設備方面，正
 
-### [55] 00631L 曝台積電權重落差！決議增持權值股現貨「貼近指數兩倍報酬」
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://finance.technews.tw/2026/05/26/weight-gap/
-- 摘要: 元大台灣 50 正 2（00631L） 今日宣布，為持續貼近臺灣 50 指數單日正向 2 倍報酬目標，針對台積 [&#8230;]
+### [70] AI光環外溢　CPU、ASIC躍上COMPUTEX主舞台
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754135_HFS2M9VK2C2IJV6CJAC25
+- 摘要: COMPUTEX 2026登場，展覽主軸定為「AI Together」，聚焦在AI運算、機器人與智慧移動、次世代技術等。值得留意的是，有別於前2年焦點集中在NVIDIA與AI訓練所需要的運算架構，2026年除了GPU依舊是焦點
 
-### [56] 三星半導體員工天上掉餡餅，還有韓國半導體廊道地產業者被砸到
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://finance.technews.tw/2026/05/26/samsung-semiconductor-employees-get-a-windfall/
-- 摘要: 韓國媒體報導，三星電子（Samsung Electronics）為半導體部門員工推出全新的薪酬與福利方案，龐大 [&#8230;]
+### [71] 【動物農莊】CoWoS搶不到？　SK海力士、英特爾傳聯手2.5D封裝新局
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000755393_VBT2N61WLTT38S29RBBH2
+- 摘要: 台積電的CoWoS 2.5D封裝技術，因AI半導體需求爆發而陷入嚴峻供應短缺，全球大型科技企業的AI加速器出貨因此受阻，急需尋找替代方案。有鑑於此，SK海力士（SK Hynix）據悉正積極與英特爾（Intel）展開合作
 
-### [57] 美光 Fab 6 投產 LPDDR4 / DDR4，不影響 DDR4 供給短缺格局
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://finance.technews.tw/2026/05/26/micron-fab-6-begins-production-of-1%ce%b1-nm-lpddr4-and-ddr4/
-- 摘要: 美光近日宣布美國維吉尼亞州 Fab 6 開始投產 1α 奈米 LPDDR4 和 DDR4，主要供應汽車、國防航 [&#8230;]
+### [72] 富士電機參戰資料中心液冷市場　噴射式冷卻機6月開賣
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756519_7AE6QY6M0S1EKALP824B6
+- 摘要: 日本已有多家廠商布局資料中心液冷系統，例如日立製作所（Hitachi）、三菱電機（Mitsubishi Electric）以及Carrier Japan（原Toshiba Carrier）。現在富士電機（Fuji Electric）也加入戰局，將從2026年6月起
 
-### [58] AMD Zen 7 傳採台積電 A14，AI 時代 CPU 要跟 GPU 搶主角？
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://technews.tw/2026/05/26/amd-zen-7-tsmc-a14%ef%bc%8cai-cpu/
-- 摘要: 當市場焦點仍集中在輝達 GPU 與 AI 加速器時，AMD 下一代 Zen 7 架構卻透露出另一個方向：AI  [&#8230;]
+### [73] 英特爾EMIB、Foveros先贏回面子　AI東風巧成晶圓代工致勝計
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756976_5DLL56G763Z41774M3PWU
+- 摘要: 英特爾（Intel）前任執行長Pat Gelsinger於2021年宣布進軍晶圓代工業務後，外界焦點集中在英特爾能否在最先進的半導體製程節點保持競爭力，乃至於何時能超越台積電。5年過去，如今關鍵不在於Gelsinger下台與
 
-### [59] Chiplet boom puts Taiwan's InPsytech and its AI connectivity IPs in the spotlight
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD221/inpsytech-onfi-ucie-ip-subsidiary.html
-- 摘要: As the global semiconductor industry pivots toward chiplet-based designs &mdash; where multiple smaller chips are packaged together rather than built as a single monolithic die &mdash; the specialized intellectual property that makes those chips communicate reliably has become critical infrastructure. InPsytech, a Taiwanese IP design firm and subsidiary of Egis Technology, has staked its business on exactly that.
+### [74] 柔佛資料中心熱度不減　馬來西亞斥資108億美元升級電網
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756946_RW48WXO35AZ2GW5HPFQ5Q
+- 摘要: 馬來西亞是科技業者資料中心建設首選地點，為滿足用電需求，馬來西亞國家能源公司（Tenaga Nasional Berhad；TNB）表示將投入430億令吉（108億美元）翻新電網。據馬新社（Bernama）及南洋商報報導，國能電網
 
-### [60] 黃仁勳：企業裁員卻以導入 AI 為藉口，是太懶惰且毫無道理
-- 來源: TechNews 科技新報
-- 日期: 2026-05-26
-- 連結: https://technews.tw/2026/05/26/companies-that-use-the-introduction-of-ai-as-an-excuse-to-lay-off-employees-are-lazy-and-make-no-sense/
-- 摘要: 隨著人工智慧（AI）技術的快速發展，全球許多企業紛紛將近期的人力縮編歸咎於 AI 的導入。然而，輝達（Nvid [&#8230;]
+### [75] 三星傳罕見點名增產半導體用HCl　PKC因應擴大Cl2產能50%
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756904_CBK883CO1AVFO13NAPCTL
+- 摘要: 傳為因應三星電子（Samsung Electronics）要求，南韓化學材料企業PKC（前稱白光產業，Paik Kwang Industral Co Ltd）將把全北特別自治道的群山工廠半導體用高純度氯氣（Cl2）產能擴大50%。據韓媒Theelec
 
-### [61] Wonderful Hi-Tech sees rising demand from low-orbit satellites and AI data centers
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526PD229/wonderful-hi-tech-cables-data-demand.html
-- 摘要: At its annual shareholders' meeting on May 25, Ringo Chang, chairman of Wonderful Hi-Tech, said the cable and connectivity supplier expects revenue growth to resume in 2026, with profit growth outpacing sales expansion.
+### [76] 大聯大葉福海：生態系競爭取代單打獨鬥　抱團才能壯大優勢
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757059_3HW1EBAD4FYCFWLZ6H9MC
+- 摘要: 年度科技盛會COMPUTEX登場前夕，NVIDIA執行長黃仁勳提前抵台拜訪供應鏈合作夥伴。IC通路商大聯大副董事長葉福海表示，整體協同能力已成為AI快速變化時代下的關鍵，未來競爭不再是單一企業之間的競爭，而
 
-### [62] Samsung's reported 900-layer V-NAND prototype puts NAND race with YMTC in focus
-- 來源: DigiTimes Asia
-- 日期: 2026-05-26
-- 連結: https://www.digitimes.com/news/a20260526VL207/samsung-v-nand-nand-ymtc-technology.html
-- 摘要: The race to dominate next-generation NAND flash memory has long been measured in layers &mdash; and Samsung Electronics appears to be pulling ahead. The South Korean chipmaker has reportedly developed a 900-layer-class V-NAND prototype, a significant leap that brings the memory industry closer to the 1,000-layer threshold as chipmakers intensify efforts to pack more storage into smaller chips while cutting power consumption.
+### [77] 【漫圖秒懂】OpenAI星門計畫挑戰來襲　轉求第三方算力協助
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000755098_0W7LUZD3LRSDV37ZR8PD9
+- 摘要: OpenAI原先宏大的5,000億美元星門計畫（Stargate）正經歷轉型，從合資自建資料中心轉向更具彈性的第三方租賃。據外媒報導，由於法規與高昂的能源成本，OpenAI已停止英國與挪威等地的擴張，部分棄置站點甚至由
 
-### [63] TSMC Powers Up: 408,000 Batteries Get a Safety Intelligence Upgrade
-- 來源: SemiWiki
-- 日期: 2026-05-25
-- 連結: https://semiwiki.com/semiconductor-manufacturers/tsmc/369345-tsmc-powers-up-408000-batteries-get-a-safety-intelligence-upgrade/
-- 摘要: <p>As semiconductor manufacturing becomes increasingly dependent on uninterrupted power and energy efficiency, battery reliability has emerged as a critical operational issue for advanced fabs. Taiwan Semiconductor Manufacturing Company, better known as TSMC, is addressing this challenge through an ambitious global initiative&#8230; <a class="read-more" href="https://semiwiki.com/semiconductor-manufacturers/tsmc/369345-tsmc-powers-up-408000-batteries-get-a-safety-intelligence-upgrade/">Read More
+### [78] 簡山傑接掌欣興直面「兩大考題」　內求資源重整、外破缺料瓶頸
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757032_EW61BP0T2QQIZI3OW63XL
+- 摘要: IC載板大廠欣興完成董事全面改選，新任董事長簡山傑正式接掌大局，帶領欣興迎向AI需求浪潮下的PCB產業新局。由母公司聯電轉任欣興董座，簡山傑分享，過去3個月多時間，除了從半導體跨入PCB產業，有不少專業知
 
-### [64] Library Characterization gets a Boost from AI
-- 來源: SemiWiki
-- 日期: 2026-05-25
-- 連結: https://semiwiki.com/eda/369561-library-characterization-gets-a-boost-from-ai/
-- 摘要: <p align="left" class="western">The semiconductor industry creates increasingly complex SoC and chiplets using lots of IP and all of that IP needs to be characterized at the cell level. As we design with 3nm and 2nm nodes, the sheer volume of data required for accurate static timing analysis (STA) is greatly increasing. Modern design flows rely on characterized&#8230; <a class="read-more" href="https://semiwiki.com/eda/369561-library-characterization-gets-a-boost-from-ai/">Read More </a></p>
-<p>
+### [79] 聯發科「One Mediatek戰略」告捷　對ASIC業務ASP表現信心十足
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757006_1XB1SR96LZZ9AI787IXWU
+- 摘要: 聯發科在COMPUTEX展前舉辦媒體活動，多位公司一級主管皆有參與，包括新上任的企業行銷傳播本部總經理Rahul Sandil擔任開場，總經理暨營運長陳冠州、資深副總經理暨數據中心與運算事業群總經理VinceHu以及
+
+### [80] 先進封裝從台積獨大轉向產業協同　矽光子巧扮成熟製程翻身契機
+- 來源: DigiTimes 中文
+- 日期: 2026-05-31
+- 連結: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756973_SUL85R3N8Q19C72YRI2KM
+- 摘要: NVIDIA執行長黃仁勳多次對台積電漲價，明確表態力挺，強調台積電為全球最好的公司，其先進製程與供應鏈服務非常困難且極具價值，並表示NVIDIA會全力支持台積電在晶圓與先進封裝上的報價調漲。但為了滿足快速
 
 
 ---
