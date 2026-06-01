@@ -96,4 +96,337 @@
   border-radius: 2px;
 }
 .sc-loading {
-  text-ali
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+.sc-error {
+  background: var(--bg-card);
+  border-left: 3px solid #f87171;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: #f87171;
+  margin-bottom: 16px;
+}
+:root[data-theme="light"] .tier-fill-up { fill: #EEEDFE; stroke: #534AB7; stroke-width: 0.5; }
+:root[data-theme="light"] .tier-fill-mid { fill: #E1F5EE; stroke: #1D9E75; stroke-width: 0.5; }
+:root[data-theme="light"] .tier-fill-down { fill: #FAECE7; stroke: #D85A30; stroke-width: 0.5; }
+.tier-fill-up { fill: #3C3489; stroke: #AFA9EC; stroke-width: 0.5; }
+.tier-fill-mid { fill: #085041; stroke: #5DCAA5; stroke-width: 0.5; }
+.tier-fill-down { fill: #712B13; stroke: #F0997B; stroke-width: 0.5; }
+:root[data-theme="light"] .node-text-up { fill: #3C3489; }
+:root[data-theme="light"] .node-text-mid { fill: #085041; }
+:root[data-theme="light"] .node-text-down { fill: #712B13; }
+.node-text-up { fill: #CECBF6; }
+.node-text-mid { fill: #9FE1CB; }
+.node-text-down { fill: #F5C4B3; }
+:root[data-theme="light"] .subtitle-up { fill: #534AB7; }
+:root[data-theme="light"] .subtitle-mid { fill: #0F6E56; }
+:root[data-theme="light"] .subtitle-down { fill: #993C1D; }
+.subtitle-up { fill: #AFA9EC; }
+.subtitle-mid { fill: #5DCAA5; }
+.subtitle-down { fill: #F0997B; }
+:root[data-theme="light"] .tier-text-up { fill: #534AB7; }
+:root[data-theme="light"] .tier-text-mid { fill: #0F6E56; }
+:root[data-theme="light"] .tier-text-down { fill: #993C1D; }
+.tier-text-up { fill: #CECBF6; }
+.tier-text-mid { fill: #9FE1CB; }
+.tier-text-down { fill: #F5C4B3; }
+.sc-helper-text { fill: var(--text-dim); }
+:root[data-theme="light"] .sc-helper-text { fill: #64748b; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
+      <a href="supplychain.html" class="active">供應鏈</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="sc-section">
+    <h2 style="font-size:22px; margin-bottom:12px;">🏭 動態供應鏈關係圖</h2>
+    <div class="sc-intro">
+      切換不同週次,觀察供應鏈隨產業動態演變。每週新增公司、新增關係、或關係性質改變(合作→競爭),都會反映在這張圖上。<strong>箭頭方向 = 供應流向</strong>(上游材料 → 中游製造 → 下游 IC 設計)。
+    </div>
+
+    <div class="sc-controls">
+      <label for="week-select">📅 週次</label>
+      <select id="week-select" onchange="loadWeek(this.value)"></select>
+      <div class="sc-week-info" id="week-info"></div>
+    </div>
+
+    <div class="sc-legend">
+      <div class="sc-legend-item"><span class="sc-line" style="background:#1D9E75"></span>合作</div>
+      <div class="sc-legend-item"><span class="sc-line" style="background:#185FA5"></span>結盟</div>
+      <div class="sc-legend-item"><span class="sc-line" style="background:#BA7517"></span>競爭</div>
+      <div class="sc-legend-item"><span class="sc-line" style="background:#A32D2D"></span>敵對</div>
+      <div class="sc-legend-item"><span class="sc-line" style="background:#7F77DD"></span>供應</div>
+    </div>
+
+    <div class="sc-highlights" id="highlights-box" style="display:none;">
+      <h4>📌 本週重點</h4>
+      <ul id="highlights-list"></ul>
+    </div>
+
+    <div class="sc-svg-wrap">
+      <div id="svg-container" class="sc-loading">載入中…</div>
+    </div>
+  </section>
+
+  <section class="sc-section">
+    <h2 style="font-size:22px; margin-bottom:12px;">📊 關係類型說明</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+
+      <div class="article-card">
+        <h3 style="color:#1D9E75; margin-bottom:8px;">🟢 合作 (Cooperation)</h3>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.7;">
+          明確的買賣或共同開發關係,例如 <strong>NVIDIA → TSMC</strong>(CoWoS 訂單)、<strong>AMD → 日月光</strong>(Venice CPU 委外)。
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h3 style="color:#185FA5; margin-bottom:8px;">🔵 結盟 (Alliance)</h3>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.7;">
+          策略級長期合作,涉及股權或產能保證,例如 <strong>TSMC ↔ ASE</strong> 委外結盟、<strong>BESI ↔ AMAT</strong>(持股 9%)。
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h3 style="color:#BA7517; margin-bottom:8px;">🟡 競爭 (Competition)</h3>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.7;">
+          在同一市場爭奪份額,例如 <strong>NVIDIA ↔ AMD</strong>(AI GPU)、<strong>SK Hynix ↔ Samsung</strong>(HBM4)。
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h3 style="color:#A32D2D; margin-bottom:8px;">🔴 敵對 (Hostility)</h3>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.7;">
+          地緣政治或制裁衝突,例如 <strong>TSMC ↔ 中國設備</strong>(2 奈米禁用)、<strong>NVIDIA H20 出口限制</strong>。
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h3 style="color:#7F77DD; margin-bottom:8px;">🟣 供應 (Supply)</h3>
+        <p style="color:var(--text-dim); font-size:14px; line-height:1.7;">
+          材料或元件單向供應,例如 <strong>Ajinomoto → Ibiden</strong>(ABF 樹脂)、<strong>SK Hynix → NVIDIA</strong>(HBM)。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>每週一(週報) · 週三五(快訊)自動更新</p>
+  </div>
+</footer>
+
+<script>
+const REL_COLORS = {
+  cooperation: { color: "#1D9E75", dash: "" },
+  alliance:    { color: "#185FA5", dash: "6 3" },
+  competition: { color: "#BA7517", dash: "" },
+  hostility:   { color: "#A32D2D", dash: "3 3" },
+  supply:      { color: "#7F77DD", dash: "" }
+};
+
+const TIER_LAYOUT = {
+  up:   { y: 50,  height: 140, fillClass: "tier-fill-up",   textClass: "tier-text-up",   nodeText: "node-text-up",   subText: "subtitle-up",   label: "上游 · 材料與設備" },
+  mid:  { y: 220, height: 140, fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  label: "中游 · 晶圓代工與封測" },
+  down: { y: 390, height: 140, fillClass: "tier-fill-down", textClass: "tier-text-down", nodeText: "node-text-down", subText: "subtitle-down", label: "下游 · IC 設計與系統廠" }
+};
+
+let nodePositions = {};
+
+async function init() {
+  try {
+    const idx = await (await fetch("data/supplychain-index.json")).json();
+    const select = document.getElementById("week-select");
+    idx.weeks.forEach(w => {
+      const opt = document.createElement("option");
+      opt.value = w.file;
+      opt.textContent = `${w.week} (${w.date})`;
+      opt.dataset.week = w.week;
+      opt.dataset.title = w.title;
+      select.appendChild(opt);
+    });
+    if (idx.weeks.length) {
+      const latestFile = idx.weeks[0].file;
+      select.value = latestFile;
+      await loadWeek(latestFile);
+    } else {
+      document.getElementById("svg-container").innerHTML =
+        '<div class="sc-error">尚無供應鏈資料</div>';
+    }
+  } catch (err) {
+    document.getElementById("svg-container").innerHTML =
+      `<div class="sc-error">載入索引失敗: ${err.message}</div>`;
+  }
+}
+
+async function loadWeek(filename) {
+  try {
+    document.getElementById("svg-container").innerHTML = '<div class="sc-loading">載入中…</div>';
+    const data = await (await fetch("data/" + filename)).json();
+    renderHighlights(data);
+    renderInfo(data);
+    renderSVG(data);
+  } catch (err) {
+    document.getElementById("svg-container").innerHTML =
+      `<div class="sc-error">載入失敗: ${err.message}</div>`;
+  }
+}
+
+function renderInfo(data) {
+  document.getElementById("week-info").innerHTML =
+    `<strong>${data.title || ""}</strong> · ${data.nodes.length} 家公司 · ${data.edges.length} 條關係`;
+}
+
+function renderHighlights(data) {
+  const box = document.getElementById("highlights-box");
+  const list = document.getElementById("highlights-list");
+  if (!data.highlights || !data.highlights.length) {
+    box.style.display = "none";
+    return;
+  }
+  box.style.display = "block";
+  list.innerHTML = data.highlights.map(h => `<li>${h}</li>`).join("");
+}
+
+function layoutNodes(nodes) {
+  const positions = {};
+  const tierWidth = 600;
+  const tierStartX = 40;
+  const padding = 12;
+
+  for (const tier of ["up", "mid", "down"]) {
+    const tierNodes = nodes.filter(n => n.tier === tier);
+    if (!tierNodes.length) continue;
+
+    const cols = Math.min(4, Math.ceil(Math.sqrt(tierNodes.length * 1.5)));
+    const colWidth = (tierWidth - padding * (cols - 1)) / cols;
+    const nodeHeight = 44;
+    const rowGap = 8;
+    const tierInfo = TIER_LAYOUT[tier];
+    const innerTopY = tierInfo.y + 50;
+
+    tierNodes.forEach((n, i) => {
+      const col = i % cols;
+      const row = Math.floor(i / cols);
+      const x = tierStartX + col * (colWidth + padding);
+      const y = innerTopY + row * (nodeHeight + rowGap);
+      positions[n.id] = {
+        x: x, y: y, width: colWidth, height: nodeHeight,
+        cx: x + colWidth / 2, cy: y + nodeHeight / 2,
+        tier: tier, node: n
+      };
+    });
+  }
+  return positions;
+}
+
+function calcSvgHeight(positions) {
+  let maxY = 0;
+  Object.values(positions).forEach(p => {
+    if (p.y + p.height > maxY) maxY = p.y + p.height;
+  });
+  return Math.max(580, maxY + 50);
+}
+
+function renderSVG(data) {
+  nodePositions = layoutNodes(data.nodes);
+  const svgHeight = calcSvgHeight(nodePositions);
+
+  let svg = `<svg viewBox="0 0 680 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
+  svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
+
+  svg += `<text x="340" y="28" text-anchor="middle" font-size="16" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
+
+  for (const tier of ["up", "mid", "down"]) {
+    const info = TIER_LAYOUT[tier];
+    const tierNodes = data.nodes.filter(n => n.tier === tier);
+    if (!tierNodes.length) continue;
+
+    const cols = Math.min(4, Math.ceil(Math.sqrt(tierNodes.length * 1.5)));
+    const rows = Math.ceil(tierNodes.length / cols);
+    const tierHeight = Math.max(140, 50 + rows * 52);
+
+    svg += `<rect x="40" y="${info.y}" width="600" height="${tierHeight}" rx="14" class="${info.fillClass}"/>`;
+    svg += `<text x="60" y="${info.y + 28}" font-size="14" font-weight="500" class="${info.textClass}">${info.label}</text>`;
+  }
+
+  data.edges.forEach(e => {
+    const from = nodePositions[e.from];
+    const to = nodePositions[e.to];
+    if (!from || !to) return;
+
+    const rel = REL_COLORS[e.type] || REL_COLORS.cooperation;
+    const dashAttr = rel.dash ? `stroke-dasharray="${rel.dash}"` : "";
+    const marker = e.type === "competition" || e.type === "hostility" ? "" : `marker-end="url(#arrow)"`;
+
+    const x1 = from.cx;
+    const x2 = to.cx;
+
+    let actualY1, actualY2;
+    if (from.tier === to.tier) {
+      actualY1 = from.cy;
+      actualY2 = to.cy;
+    } else {
+      const fromTierIdx = ["up", "mid", "down"].indexOf(from.tier);
+      const toTierIdx = ["up", "mid", "down"].indexOf(to.tier);
+      if (toTierIdx > fromTierIdx) {
+        actualY1 = from.y + from.height;
+        actualY2 = to.y;
+      } else {
+        actualY1 = from.y;
+        actualY2 = to.y + to.height;
+      }
+    }
+
+    svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="1.8" ${dashAttr} ${marker} opacity="0.7"/>`;
+  });
+
+  Object.entries(nodePositions).forEach(([id, p]) => {
+    const tierInfo = TIER_LAYOUT[p.tier];
+    const node = p.node;
+    svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.fillClass}"/>`;
+
+    if (node.sub) {
+      svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+      svg += `<text x="${p.cx}" y="${p.y + 33}" text-anchor="middle" dominant-baseline="central" font-size="10" class="${tierInfo.subText}">${node.sub}</text>`;
+    } else {
+      svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+    }
+  });
+
+  svg += `<text x="340" y="${svgHeight - 12}" text-anchor="middle" font-size="11" class="sc-helper-text">${data.nodes.length} 家公司 · ${data.edges.length} 條關係 · ${data.date}</text>`;
+  svg += `</svg>`;
+
+  document.getElementById("svg-container").innerHTML = svg;
+  document.getElementById("svg-container").className = "";
+}
+
+init();
+</script>
+</body>
+</html>
