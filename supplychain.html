@@ -19,20 +19,14 @@
   line-height: 1.7;
 }
 .sc-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 14px 16px;
   margin-bottom: 16px;
 }
-.sc-controls label {
-  font-size: 13px;
-  color: var(--text-dim);
-}
+.sc-controls label { font-size: 13px; color: var(--text-dim); }
 .sc-controls select {
   padding: 8px 12px;
   background: var(--bg-elevated);
@@ -42,11 +36,7 @@
   font-size: 14px;
   cursor: pointer;
 }
-.sc-week-info {
-  margin-left: auto;
-  font-size: 13px;
-  color: var(--text-dim);
-}
+.sc-week-info { margin-left: auto; font-size: 13px; color: var(--text-dim); }
 .sc-svg-wrap {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -64,50 +54,28 @@
   padding: 16px 20px;
   margin-bottom: 24px;
 }
-.sc-highlights h4 {
-  font-size: 14px;
-  color: var(--accent-warm);
-  margin-bottom: 10px;
-}
+.sc-highlights h4 { font-size: 14px; color: var(--accent-warm); margin-bottom: 10px; }
 .sc-highlights ul {
-  margin: 0;
-  padding-left: 22px;
-  font-size: 13px;
-  line-height: 1.8;
-  color: var(--text-dim);
+  margin: 0; padding-left: 22px; font-size: 13px;
+  line-height: 1.8; color: var(--text-dim);
 }
 .sc-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  display: flex; flex-wrap: wrap; gap: 16px;
   padding: 12px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
   margin-bottom: 16px;
-  font-size: 13px;
-  color: var(--text-dim);
+  font-size: 13px; color: var(--text-dim);
 }
 .sc-legend-item { display: flex; align-items: center; gap: 6px; }
-.sc-line {
-  display: inline-block;
-  width: 24px;
-  height: 3px;
-  border-radius: 2px;
-}
-.sc-loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text-dim);
-  font-size: 14px;
-}
+.sc-line { display: inline-block; width: 24px; height: 3px; border-radius: 2px; }
+.sc-loading { text-align: center; padding: 60px 20px; color: var(--text-dim); font-size: 14px; }
 .sc-error {
   background: var(--bg-card);
   border-left: 3px solid #f87171;
-  padding: 16px 20px;
-  border-radius: 8px;
-  color: #f87171;
-  margin-bottom: 16px;
+  padding: 16px 20px; border-radius: 8px;
+  color: #f87171; margin-bottom: 16px;
 }
 :root[data-theme="light"] .tier-fill-up { fill: #EEEDFE; stroke: #534AB7; stroke-width: 0.5; }
 :root[data-theme="light"] .tier-fill-mid { fill: #E1F5EE; stroke: #1D9E75; stroke-width: 0.5; }
@@ -135,6 +103,21 @@
 .tier-text-down { fill: #F5C4B3; }
 .sc-helper-text { fill: var(--text-dim); }
 :root[data-theme="light"] .sc-helper-text { fill: #64748b; }
+.core-stroke {
+  stroke-width: 2px !important;
+}
+:root[data-theme="light"] .core-fill-up { fill: #CECBF6; stroke: #3C3489; }
+:root[data-theme="light"] .core-fill-mid { fill: #9FE1CB; stroke: #085041; }
+:root[data-theme="light"] .core-fill-down { fill: #F5C4B3; stroke: #712B13; }
+.core-fill-up { fill: #534AB7; stroke: #CECBF6; }
+.core-fill-mid { fill: #1D9E75; stroke: #9FE1CB; }
+.core-fill-down { fill: #D85A30; stroke: #F5C4B3; }
+:root[data-theme="light"] .core-text-up { fill: #26215C; font-weight: 700; }
+:root[data-theme="light"] .core-text-mid { fill: #04342C; font-weight: 700; }
+:root[data-theme="light"] .core-text-down { fill: #4A1B0C; font-weight: 700; }
+.core-text-up { fill: #FFFFFF; font-weight: 700; }
+.core-text-mid { fill: #FFFFFF; font-weight: 700; }
+.core-text-down { fill: #FFFFFF; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -163,7 +146,7 @@
   <section class="sc-section">
     <h2 style="font-size:22px; margin-bottom:12px;">🏭 動態供應鏈關係圖</h2>
     <div class="sc-intro">
-      切換不同週次,觀察供應鏈隨產業動態演變。每週新增公司、新增關係、或關係性質改變(合作→競爭),都會反映在這張圖上。<strong>箭頭方向 = 供應流向</strong>(上游材料 → 中游製造 → 下游 IC 設計)。
+      切換不同週次,觀察供應鏈隨產業動態演變。<strong>核心公司</strong>(連線最多者)居中加大顯示,次要公司圍繞兩側。箭頭方向 = 供應流向(上游材料 → 中游製造 → 下游 IC 設計)。
     </div>
 
     <div class="sc-controls">
@@ -178,6 +161,7 @@
       <div class="sc-legend-item"><span class="sc-line" style="background:#BA7517"></span>競爭</div>
       <div class="sc-legend-item"><span class="sc-line" style="background:#A32D2D"></span>敵對</div>
       <div class="sc-legend-item"><span class="sc-line" style="background:#7F77DD"></span>供應</div>
+      <div class="sc-legend-item" style="margin-left:auto;">⭐ = 核心公司(連線最多)</div>
     </div>
 
     <div class="sc-highlights" id="highlights-box" style="display:none;">
@@ -251,9 +235,9 @@ const REL_COLORS = {
 };
 
 const TIER_LAYOUT = {
-  up:   { y: 50,  height: 140, fillClass: "tier-fill-up",   textClass: "tier-text-up",   nodeText: "node-text-up",   subText: "subtitle-up",   label: "上游 · 材料與設備" },
-  mid:  { y: 220, height: 140, fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  label: "中游 · 晶圓代工與封測" },
-  down: { y: 390, height: 140, fillClass: "tier-fill-down", textClass: "tier-text-down", nodeText: "node-text-down", subText: "subtitle-down", label: "下游 · IC 設計與系統廠" }
+  up:   { y: 50,  fillClass: "tier-fill-up",   textClass: "tier-text-up",   nodeText: "node-text-up",   subText: "subtitle-up",   coreFill: "core-fill-up",   coreText: "core-text-up",   label: "上游 · 材料與設備" },
+  mid:  { y: 0,   fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  coreFill: "core-fill-mid",  coreText: "core-text-mid",  label: "中游 · 晶圓代工與封測" },
+  down: { y: 0,   fillClass: "tier-fill-down", textClass: "tier-text-down", nodeText: "node-text-down", subText: "subtitle-down", coreFill: "core-fill-down", coreText: "core-text-down", label: "下游 · IC 設計與系統廠" }
 };
 
 let nodePositions = {};
@@ -266,8 +250,6 @@ async function init() {
       const opt = document.createElement("option");
       opt.value = w.file;
       opt.textContent = `${w.week} (${w.date})`;
-      opt.dataset.week = w.week;
-      opt.dataset.title = w.title;
       select.appendChild(opt);
     });
     if (idx.weeks.length) {
@@ -313,67 +295,154 @@ function renderHighlights(data) {
   list.innerHTML = data.highlights.map(h => `<li>${h}</li>`).join("");
 }
 
-function layoutNodes(nodes) {
-  const positions = {};
-  const tierWidth = 600;
-  const tierStartX = 40;
-  const padding = 12;
-
-  for (const tier of ["up", "mid", "down"]) {
-    const tierNodes = nodes.filter(n => n.tier === tier);
-    if (!tierNodes.length) continue;
-
-    const cols = Math.min(4, Math.ceil(Math.sqrt(tierNodes.length * 1.5)));
-    const colWidth = (tierWidth - padding * (cols - 1)) / cols;
-    const nodeHeight = 44;
-    const rowGap = 8;
-    const tierInfo = TIER_LAYOUT[tier];
-    const innerTopY = tierInfo.y + 50;
-
-    tierNodes.forEach((n, i) => {
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-      const x = tierStartX + col * (colWidth + padding);
-      const y = innerTopY + row * (nodeHeight + rowGap);
-      positions[n.id] = {
-        x: x, y: y, width: colWidth, height: nodeHeight,
-        cx: x + colWidth / 2, cy: y + nodeHeight / 2,
-        tier: tier, node: n
-      };
-    });
-  }
-  return positions;
+function calcConnectionCount(nodes, edges) {
+  const count = {};
+  nodes.forEach(n => count[n.id] = 0);
+  edges.forEach(e => {
+    if (count[e.from] !== undefined) count[e.from]++;
+    if (count[e.to] !== undefined) count[e.to]++;
+  });
+  return count;
 }
 
-function calcSvgHeight(positions) {
-  let maxY = 0;
-  Object.values(positions).forEach(p => {
-    if (p.y + p.height > maxY) maxY = p.y + p.height;
+function findCoreNodes(tierNodes, connectionCount) {
+  if (!tierNodes.length) return [];
+  const sorted = [...tierNodes].sort((a, b) => {
+    if (a.core && !b.core) return -1;
+    if (!a.core && b.core) return 1;
+    return (connectionCount[b.id] || 0) - (connectionCount[a.id] || 0);
   });
-  return Math.max(580, maxY + 50);
+  return sorted;
+}
+
+function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
+  const positions = {};
+  if (!tierNodes.length) return { positions, tierHeight: 100 };
+
+  const sorted = findCoreNodes(tierNodes, connectionCount);
+  const coreNode = sorted[0];
+  const others = sorted.slice(1);
+
+  const tierStartX = 60;
+  const tierWidth = 560;
+  const centerX = tierStartX + tierWidth / 2;
+
+  const coreWidth = 180;
+  const coreHeight = 60;
+  const nodeWidth = 120;
+  const nodeHeight = 44;
+  const gap = 10;
+
+  const coreX = centerX - coreWidth / 2;
+  const coreY = tierY + 50;
+
+  positions[coreNode.id] = {
+    x: coreX, y: coreY, width: coreWidth, height: coreHeight,
+    cx: centerX, cy: coreY + coreHeight / 2,
+    tier: tierKey, node: coreNode, isCore: true
+  };
+
+  const leftLimit = coreX - gap;
+  const rightStart = coreX + coreWidth + gap;
+  const rightLimit = tierStartX + tierWidth;
+
+  const maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
+
+  let leftCount = 0;
+  let rightCount = 0;
+  others.forEach((n, i) => {
+    if (i % 2 === 0) leftCount++;
+    else rightCount++;
+  });
+
+  const leftRows = Math.ceil(leftCount / maxPerSide);
+  const rightRows = Math.ceil(rightCount / maxPerSide);
+  const maxRows = Math.max(1, leftRows, rightRows);
+  const rowHeight = nodeHeight + 8;
+
+  const sideBlockHeight = maxRows * rowHeight - 8;
+  const sideStartY = coreY + (coreHeight - sideBlockHeight) / 2;
+
+  let leftIdx = 0, rightIdx = 0;
+  others.forEach((n, i) => {
+    const side = (i % 2 === 0) ? "left" : "right";
+    let row, col, x, y;
+
+    if (side === "left") {
+      row = Math.floor(leftIdx / maxPerSide);
+      col = leftIdx % maxPerSide;
+      x = leftLimit - (col + 1) * nodeWidth - col * gap;
+      y = sideStartY + row * rowHeight;
+      leftIdx++;
+    } else {
+      row = Math.floor(rightIdx / maxPerSide);
+      col = rightIdx % maxPerSide;
+      x = rightStart + col * (nodeWidth + gap);
+      y = sideStartY + row * rowHeight;
+      rightIdx++;
+    }
+
+    positions[n.id] = {
+      x: x, y: y, width: nodeWidth, height: nodeHeight,
+      cx: x + nodeWidth / 2, cy: y + nodeHeight / 2,
+      tier: tierKey, node: n, isCore: false
+    };
+  });
+
+  let maxBottom = coreY + coreHeight;
+  Object.values(positions).forEach(p => {
+    if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
+  });
+  const tierHeight = (maxBottom - tierY) + 30;
+
+  return { positions, tierHeight };
 }
 
 function renderSVG(data) {
-  nodePositions = layoutNodes(data.nodes);
-  const svgHeight = calcSvgHeight(nodePositions);
+  const connectionCount = calcConnectionCount(data.nodes, data.edges);
+  const upNodes = data.nodes.filter(n => n.tier === "up");
+  const midNodes = data.nodes.filter(n => n.tier === "mid");
+  const downNodes = data.nodes.filter(n => n.tier === "down");
+
+  let cursorY = 50;
+  const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
+  const upY = cursorY;
+  const upHeight = Math.max(140, upLayout.tierHeight);
+  cursorY += upHeight + 30;
+
+  const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
+  const midY = cursorY;
+  const midHeight = Math.max(140, midLayout.tierHeight);
+  cursorY += midHeight + 30;
+
+  const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
+  const downY = cursorY;
+  const downHeight = Math.max(140, downLayout.tierHeight);
+  cursorY += downHeight + 50;
+
+  nodePositions = {
+    ...upLayout.positions,
+    ...midLayout.positions,
+    ...downLayout.positions
+  };
+
+  const svgHeight = cursorY;
+  const tierRects = [
+    { tier: "up", y: upY, height: upHeight },
+    { tier: "mid", y: midY, height: midHeight },
+    { tier: "down", y: downY, height: downHeight }
+  ];
 
   let svg = `<svg viewBox="0 0 680 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
   svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
 
   svg += `<text x="340" y="28" text-anchor="middle" font-size="16" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
-  for (const tier of ["up", "mid", "down"]) {
-    const info = TIER_LAYOUT[tier];
-    const tierNodes = data.nodes.filter(n => n.tier === tier);
-    if (!tierNodes.length) continue;
-
-    const cols = Math.min(4, Math.ceil(Math.sqrt(tierNodes.length * 1.5)));
-    const rows = Math.ceil(tierNodes.length / cols);
-    const tierHeight = Math.max(140, 50 + rows * 52);
-
-    svg += `<rect x="40" y="${info.y}" width="600" height="${tierHeight}" rx="14" class="${info.fillClass}"/>`;
-    svg += `<text x="60" y="${info.y + 28}" font-size="14" font-weight="500" class="${info.textClass}">${info.label}</text>`;
-  }
+  tierRects.forEach(t => {
+    const info = TIER_LAYOUT[t.tier];
+    svg += `<rect x="40" y="${t.y}" width="600" height="${t.height}" rx="14" class="${info.fillClass}"/>`;
+    svg += `<text x="60" y="${t.y + 28}" font-size="14" font-weight="500" class="${info.textClass}">${info.label}</text>`;
+  });
 
   data.edges.forEach(e => {
     const from = nodePositions[e.from];
@@ -403,19 +472,32 @@ function renderSVG(data) {
       }
     }
 
-    svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="1.8" ${dashAttr} ${marker} opacity="0.7"/>`;
+    const opacity = (from.isCore || to.isCore) ? "0.85" : "0.55";
+    const strokeWidth = (from.isCore || to.isCore) ? "2" : "1.5";
+    svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="${strokeWidth}" ${dashAttr} ${marker} opacity="${opacity}"/>`;
   });
 
   Object.entries(nodePositions).forEach(([id, p]) => {
     const tierInfo = TIER_LAYOUT[p.tier];
     const node = p.node;
-    svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.fillClass}"/>`;
 
-    if (node.sub) {
-      svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-      svg += `<text x="${p.cx}" y="${p.y + 33}" text-anchor="middle" dominant-baseline="central" font-size="10" class="${tierInfo.subText}">${node.sub}</text>`;
+    if (p.isCore) {
+      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="8" class="${tierInfo.coreFill} core-stroke"/>`;
+      const labelText = "⭐ " + node.label;
+      if (node.sub) {
+        svg += `<text x="${p.cx}" y="${p.y + 24}" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 44}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
+      } else {
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+      }
     } else {
-      svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.fillClass}"/>`;
+      if (node.sub) {
+        svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 33}" text-anchor="middle" dominant-baseline="central" font-size="10" class="${tierInfo.subText}">${node.sub}</text>`;
+      } else {
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+      }
     }
   });
 
