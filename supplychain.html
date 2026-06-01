@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>供應鏈關係圖 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme.js"></script>
+<style>
+.sc-section { margin-bottom: 40px; }
+.sc-intro {
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.sc-svg-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.sc-svg-wrap svg { width: 100%; height: auto; display: block; }
+.sc-caption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+.sc-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.sc-legend-item { display: flex; align-items: center; gap: 6px; }
+.sc-line {
+  display: inline-block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+}
+.tier-text-up { fill: #534AB7; }
+.tier-text-mid { fill: #0F6E56; }
+.tier-text-down { fill: #993C1D; }
+:root[data-theme="light"] .tier-fill-up { fill: #EEEDFE; stroke: #534AB7; }
+:root[data-theme="light"] .tier-fill-mid { fill: #E1F5EE; stroke: #1D9E75; }
+:root[data-theme="light"] .tier-fill-down { fill: #FAECE7; stroke: #D85A30; }
+.tier-fill-up { fill: #3C3489; stroke: #AFA9EC; }
+.tier-fill-mid { fill: #085041; stroke: #5DCAA5; }
+.tier-fill-down { fill: #712B13; stroke: #F0997B; }
+:root[data-theme="light"] .tier-fill-up,
+:root[data-theme="light"] .tier-fill-mid,
+:root[data-theme="light"] .tier-fill-down { stroke-width: 0.5; }
+:root[data-theme="light"] .node-text-up { fill: #3C3489; }
+:root[data-theme="light"] .node-text-mid { fill: #085041; }
+:root[data-theme="light"] .node-text-down { fill: #712B13; }
+.node-text-up { fill: #CECBF6; }
+.node-text-mid { fill: #9FE1CB; }
+.node-text-down { fill: #F5C4B3; }
+:root[data-theme="light"] .subtitle-up { fill: #534AB7; }
+:root[data-theme="light"] .subtitle-mid { fill: #0F6E56; }
+:root[data-theme="light"] .subtitle-down { fill: #993C1D; }
+.subtitle-up { fill: #AFA9EC; }
+.subtitle-mid { fill: #5DCAA5; }
+.subtitle-down { fill: #F0997B; }
+.sc-helper-text { fill: var(--text-dim); }
+:root[data-theme="light"] .sc-helper-text { fill: #64748b; }
+.sc-arrow-stroke { stroke: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
+      <a href="supplychain.html" class="active">供應鏈</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="sc-section">
+    <h2 style="font-size:22px; margin-bottom:12px;">🏭 上中下游產業流程</h2>
+    <div class="sc-intro">
+      <strong>CoWoS 先進封裝供應鏈</strong>由三層構成:上游材料設備(日歐廠商主導)、中游晶圓代工與封測(台韓美中)、下游 IC 設計與系統廠(美國為主)。箭頭表示供應流向,從原料一路傳遞到終端 AI 伺服器。
+    </div>
+
+    <div class="sc-svg-wrap">
+      <svg viewBox="0 0 680 580" role="img" aria-label="上中下游產業流程圖">
+        <defs>
+          <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+        </defs>
+
+        <text x="340" y="28" text-anchor="middle" font-size="16" font-weight="500" class="sc-helper-text">CoWoS / AI 供應鏈上中下游</text>
+
+        <rect x="40" y="50" width="600" height="140" rx="14" class="tier-fill-up"/>
+        <text x="60" y="78" font-size="14" font-weight="500" class="tier-text-up">上游 · 材料與設備</text>
+
+        <rect x="60" y="92" width="130" height="38" rx="6" class="tier-fill-up"/>
+        <text x="125" y="115" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" class="node-text-up">Ajinomoto</text>
+        <rect x="200" y="92" width="130" height="38" rx="6" class="tier-fill-up"/>
+        <text x="265" y="115" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" class="node-text-up">Ibiden</text>
+        <rect x="340" y="92" width="130" height="38" rx="6" class="tier-fill-up"/>
+        <text x="405" y="115" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" class="node-text-up">ASML</text>
+        <rect x="480" y="92" width="140" height="38" rx="6" class="tier-fill-up"/>
+        <text x="550" y="115" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" class="node-text-up">BESI</text>
+
+        <rect x="60" y="140" width="130" height="38" rx="6" class="tier-fill-up"/>
+        <text x="125
