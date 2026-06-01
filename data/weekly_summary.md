@@ -1,12 +1,14 @@
 # 本週新聞摘要 (2026-W23)
 
-**抓取時間**: 2026-06-01T10:43:04.801494+00:00
-**總篇數**: 97 則
+**抓取時間**: 2026-06-01T11:13:19.653268+00:00
+**總篇數**: 98 則
 
 ---
 
-## TechNews 科技新報 (11 則)
+## TechNews 科技新報 (12 則)
 
+- [能率領投 AI 城市大腦，鑫蘊林科入列輝達 GTC 背板](https://technews.tw/2026/06/01/nvidia-rtx-spark-vs-qualcomm/)
+  - 📅 2026-06-01
 - [黃仁勳 GTC 宣告啟動 AI 代理新時代，感謝台灣供應鏈](https://technews.tw/2026/06/01/jensen-huang-gtc-announces-launch-new-era-ai-agents-thanks-taiwan-supply-chain/)
   - 📅 2026-06-01
 - [樂觀看輝達進軍 Arm PC！高通：歡迎加入大家庭](https://technews.tw/2026/06/01/quslcomm-computex-2026-qa/)
