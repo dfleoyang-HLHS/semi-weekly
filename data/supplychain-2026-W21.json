@@ -1,0 +1,58 @@
+{
+  "week": "2026-W21",
+  "title": "CoWoS 先進封裝供應鏈全球摘要",
+  "date": "2026-05-19",
+  "summary": "TSMC CoWoS 良率達 95%,2026 年底月產能上看 10-13 萬片,NVIDIA 鎖定逾半產能。HBM 需求爆發,SK Hynix 與 Samsung 競爭白熱化。",
+  "highlights": [
+    "TSMC CoWoS 2026 年底月產能上看 13 萬片",
+    "NVIDIA Blackwell 平台帶動,鎖定逾 50% 產能",
+    "Broadcom 鎖定 24 萬片,排第二大客戶",
+    "ABF 基板交期 38 週,瓶頸延續至 2026 年中",
+    "SK Hynix HBM 全年產能售罄"
+  ],
+  "nodes": [
+    { "id": "Ajinomoto", "tier": "up", "label": "Ajinomoto", "sub": "ABF 樹脂膜", "region": "JP" },
+    { "id": "Ibiden", "tier": "up", "label": "Ibiden", "sub": "ABF 載板", "region": "JP" },
+    { "id": "Shinko", "tier": "up", "label": "Shinko", "sub": "載板", "region": "JP" },
+    { "id": "ASML", "tier": "up", "label": "ASML", "sub": "EUV 設備", "region": "EU" },
+    { "id": "BESI", "tier": "up", "label": "BESI", "sub": "混合鍵合", "region": "EU" },
+    { "id": "AMAT", "tier": "up", "label": "Applied Materials", "sub": "設備", "region": "US" },
+    { "id": "Unimicron", "tier": "up", "label": "欣興 南電 景碩", "sub": "台廠載板", "region": "TW" },
+
+    { "id": "TSMC", "tier": "mid", "label": "TSMC 台積電", "sub": "CoWoS 龍頭", "region": "TW" },
+    { "id": "ASE", "tier": "mid", "label": "ASE 日月光", "sub": "先進封測", "region": "TW" },
+    { "id": "Amkor", "tier": "mid", "label": "Amkor", "sub": "海外封測", "region": "US" },
+    { "id": "KYEC", "tier": "mid", "label": "京元電 力成", "sub": "測試與封裝", "region": "TW" },
+    { "id": "SKHynix", "tier": "mid", "label": "SK Hynix", "sub": "HBM 龍頭", "region": "KR" },
+    { "id": "Samsung", "tier": "mid", "label": "Samsung", "sub": "HBM 製造", "region": "KR" },
+    { "id": "JCET", "tier": "mid", "label": "JCET TFME SMIC", "sub": "陸廠封測", "region": "CN" },
+
+    { "id": "NVIDIA", "tier": "down", "label": "NVIDIA", "sub": "AI GPU 龍頭", "region": "US" },
+    { "id": "AMD", "tier": "down", "label": "AMD", "sub": "GPU CPU", "region": "US" },
+    { "id": "Broadcom", "tier": "down", "label": "Broadcom", "sub": "客製 ASIC", "region": "US" },
+    { "id": "Intel", "tier": "down", "label": "Intel", "sub": "EMIB 自有封裝", "region": "US" }
+  ],
+  "edges": [
+    { "from": "Ajinomoto", "to": "Ibiden", "type": "supply", "label": "ABF 樹脂" },
+    { "from": "Ajinomoto", "to": "Shinko", "type": "supply", "label": "ABF 樹脂" },
+    { "from": "Ibiden", "to": "TSMC", "type": "supply", "label": "載板" },
+    { "from": "Shinko", "to": "TSMC", "type": "supply", "label": "載板" },
+    { "from": "ASML", "to": "TSMC", "type": "supply", "label": "EUV" },
+    { "from": "AMAT", "to": "BESI", "type": "alliance", "label": "持股 9%" },
+
+    { "from": "TSMC", "to": "ASE", "type": "alliance", "label": "委外結盟" },
+    { "from": "TSMC", "to": "Amkor", "type": "alliance", "label": "委外結盟" },
+    { "from": "ASE", "to": "Amkor", "type": "competition", "label": "封測競爭" },
+    { "from": "SKHynix", "to": "Samsung", "type": "competition", "label": "HBM 競爭" },
+
+    { "from": "NVIDIA", "to": "TSMC", "type": "cooperation", "label": "CoWoS 50%" },
+    { "from": "Broadcom", "to": "TSMC", "type": "cooperation", "label": "24 萬片" },
+    { "from": "AMD", "to": "TSMC", "type": "cooperation", "label": "GPU 訂單" },
+    { "from": "Intel", "to": "TSMC", "type": "competition", "label": "封裝競爭" },
+    { "from": "NVIDIA", "to": "AMD", "type": "competition", "label": "AI GPU 競爭" },
+    { "from": "Broadcom", "to": "Intel", "type": "competition", "label": "ASIC 競爭" },
+
+    { "from": "SKHynix", "to": "NVIDIA", "type": "supply", "label": "HBM3E" },
+    { "from": "Samsung", "to": "NVIDIA", "type": "supply", "label": "HBM3E" }
+  ]
+}
