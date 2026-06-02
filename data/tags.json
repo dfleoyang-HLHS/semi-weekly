@@ -1,5 +1,32 @@
 [
   {
+    "name": "新聞快訊",
+    "count": 3,
+    "articles": [
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief"
+    ]
+  },
+  {
+    "name": "半導體",
+    "count": 3,
+    "articles": [
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief"
+    ]
+  },
+  {
+    "name": "AI 供應鏈",
+    "count": 3,
+    "articles": [
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief"
+    ]
+  },
+  {
     "name": "CoWoS",
     "count": 2,
     "articles": [
@@ -29,30 +56,6 @@
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly"
-    ]
-  },
-  {
-    "name": "新聞快訊",
-    "count": 2,
-    "articles": [
-      "2026-05-28-brief",
-      "2026-05-31-brief"
-    ]
-  },
-  {
-    "name": "半導體",
-    "count": 2,
-    "articles": [
-      "2026-05-28-brief",
-      "2026-05-31-brief"
-    ]
-  },
-  {
-    "name": "AI 供應鏈",
-    "count": 2,
-    "articles": [
-      "2026-05-28-brief",
-      "2026-05-31-brief"
     ]
   },
   {
