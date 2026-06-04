@@ -1,87 +1,95 @@
 [
   {
     "name": "TSMC",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "ASE",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "PTI",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "SK Hynix",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "Intel",
-    "count": 4,
+    "count": 5,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
     "name": "AMD",
-    "count": 3,
+    "count": 4,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
-      "2026-06-02-brief"
+      "2026-06-02-brief",
+      "2026-06-04-brief"
     ]
   },
   {
@@ -109,6 +117,15 @@
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-31-brief"
+    ]
+  },
+  {
+    "name": "Broadcom",
+    "count": 3,
+    "articles": [
+      "2026-W22-semi-weekly",
+      "2026-05-28-brief",
+      "2026-06-04-brief"
     ]
   },
   {
@@ -149,14 +166,6 @@
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly"
-    ]
-  },
-  {
-    "name": "Broadcom",
-    "count": 2,
-    "articles": [
-      "2026-W22-semi-weekly",
-      "2026-05-28-brief"
     ]
   },
   {
