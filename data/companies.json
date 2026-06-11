@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -10,12 +10,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "ASE",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -24,12 +25,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "PTI",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -38,12 +40,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -52,12 +55,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "SK Hynix",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -66,12 +70,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -80,12 +85,13 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "Intel",
-    "count": 7,
+    "count": 8,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-05-28-brief",
@@ -93,30 +99,33 @@
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "AMD",
-    "count": 6,
+    "count": 7,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
     "name": "Broadcom",
-    "count": 5,
+    "count": 6,
     "articles": [
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
-      "2026-06-09-brief"
+      "2026-06-09-brief",
+      "2026-06-11-brief"
     ]
   },
   {
@@ -127,6 +136,15 @@
       "2026-05-31-brief",
       "2026-06-02-brief",
       "2026-06-09-brief"
+    ]
+  },
+  {
+    "name": "KYEC",
+    "count": 3,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-06-11-brief"
     ]
   },
   {
@@ -154,14 +172,6 @@
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-05-31-brief"
-    ]
-  },
-  {
-    "name": "KYEC",
-    "count": 2,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly"
     ]
   },
   {
