@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-06-28T23:02:56.516975",
-  "total": 16,
+  "generated_at": "2026-06-30T23:16:41.425380",
+  "total": 17,
   "articles": [
+    {
+      "slug": "2026-06-30-brief",
+      "filename": "news/2026-06-30-brief.md",
+      "title": "新聞快訊 (2026-06-30 週二)",
+      "date": "2026-06-30",
+      "week": "2026-W27",
+      "category": "新聞快訊",
+      "regions": [
+        "美國",
+        "台灣",
+        "韓國",
+        "日本",
+        "中國大陸"
+      ],
+      "companies": [
+        "Samsung",
+        "ASE",
+        "NVIDIA",
+        "PTI",
+        "Intel",
+        "SK Hynix",
+        "TSMC",
+        "AMD",
+        "Micron"
+      ],
+      "tags": [
+        "新聞快訊",
+        "半導體",
+        "AI 供應鏈"
+      ],
+      "summary": "本日抓取 75 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "cover_image": "",
+      "word_count": 24007
+    },
     {
       "slug": "2026-06-28-brief",
       "filename": "news/2026-06-28-brief.md",
