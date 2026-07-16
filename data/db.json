@@ -1,7 +1,43 @@
 {
-  "generated_at": "2026-07-14T22:58:54.473909",
-  "total": 23,
+  "generated_at": "2026-07-16T22:59:47.206296",
+  "total": 24,
   "articles": [
+    {
+      "slug": "2026-07-16-brief",
+      "filename": "news/2026-07-16-brief.md",
+      "title": "新聞快訊 (2026-07-16 週四)",
+      "date": "2026-07-16",
+      "week": "2026-W29",
+      "category": "新聞快訊",
+      "regions": [
+        "中國大陸",
+        "日本",
+        "美國",
+        "歐洲",
+        "台灣",
+        "韓國"
+      ],
+      "companies": [
+        "TSMC",
+        "ASE",
+        "NVIDIA",
+        "PTI",
+        "Intel",
+        "Samsung",
+        "Broadcom",
+        "ASML",
+        "SK Hynix",
+        "AMD"
+      ],
+      "tags": [
+        "新聞快訊",
+        "半導體",
+        "AI 供應鏈"
+      ],
+      "summary": "本日抓取 96 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "cover_image": "",
+      "word_count": 30717
+    },
     {
       "slug": "2026-07-14-brief",
       "filename": "news/2026-07-14-brief.md",
