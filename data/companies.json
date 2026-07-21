@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -27,12 +27,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "ASE",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -58,12 +59,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "PTI",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -89,12 +91,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -120,12 +123,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "SK Hynix",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -151,12 +155,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 25,
+    "count": 26,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -182,12 +187,13 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
     "name": "Intel",
-    "count": 24,
+    "count": 25,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-05-28-brief",
@@ -212,7 +218,31 @@
       "2026-07-12-brief",
       "2026-07-14-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
+    ]
+  },
+  {
+    "name": "Micron",
+    "count": 17,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-05-31-brief",
+      "2026-06-02-brief",
+      "2026-06-09-brief",
+      "2026-06-14-brief",
+      "2026-06-21-brief",
+      "2026-06-23-brief",
+      "2026-06-25-brief",
+      "2026-06-28-brief",
+      "2026-06-30-brief",
+      "2026-07-02-brief",
+      "2026-07-05-brief",
+      "2026-07-07-brief",
+      "2026-07-09-brief",
+      "2026-07-12-brief",
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
@@ -238,28 +268,6 @@
     ]
   },
   {
-    "name": "Micron",
-    "count": 16,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-05-31-brief",
-      "2026-06-02-brief",
-      "2026-06-09-brief",
-      "2026-06-14-brief",
-      "2026-06-21-brief",
-      "2026-06-23-brief",
-      "2026-06-25-brief",
-      "2026-06-28-brief",
-      "2026-06-30-brief",
-      "2026-07-02-brief",
-      "2026-07-05-brief",
-      "2026-07-07-brief",
-      "2026-07-09-brief",
-      "2026-07-12-brief",
-      "2026-07-19-brief"
-    ]
-  },
-  {
     "name": "Broadcom",
     "count": 14,
     "articles": [
@@ -281,7 +289,7 @@
   },
   {
     "name": "ASML",
-    "count": 11,
+    "count": 12,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -293,7 +301,8 @@
       "2026-07-05-brief",
       "2026-07-09-brief",
       "2026-07-16-brief",
-      "2026-07-19-brief"
+      "2026-07-19-brief",
+      "2026-07-21-brief"
     ]
   },
   {
@@ -347,19 +356,20 @@
     ]
   },
   {
+    "name": "SMIC",
+    "count": 3,
+    "articles": [
+      "2026-06-18-brief",
+      "2026-06-23-brief",
+      "2026-07-21-brief"
+    ]
+  },
+  {
     "name": "BESI",
     "count": 2,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly"
-    ]
-  },
-  {
-    "name": "SMIC",
-    "count": 2,
-    "articles": [
-      "2026-06-18-brief",
-      "2026-06-23-brief"
     ]
   },
   {
