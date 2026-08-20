@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 38,
+    "count": 39,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -40,12 +40,13 @@
       "2026-08-11-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
     "name": "ASE",
-    "count": 38,
+    "count": 39,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -84,12 +85,13 @@
       "2026-08-11-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
     "name": "PTI",
-    "count": 38,
+    "count": 39,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -128,12 +130,13 @@
       "2026-08-11-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 38,
+    "count": 39,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -172,11 +175,101 @@
       "2026-08-11-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
     "name": "Samsung",
+    "count": 39,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief",
+      "2026-06-04-brief",
+      "2026-06-07-brief",
+      "2026-06-09-brief",
+      "2026-06-11-brief",
+      "2026-06-14-brief",
+      "2026-06-16-brief",
+      "2026-06-18-brief",
+      "2026-06-21-brief",
+      "2026-06-23-brief",
+      "2026-06-25-brief",
+      "2026-06-28-brief",
+      "2026-06-30-brief",
+      "2026-07-02-brief",
+      "2026-07-05-brief",
+      "2026-07-07-brief",
+      "2026-07-09-brief",
+      "2026-07-12-brief",
+      "2026-07-14-brief",
+      "2026-07-16-brief",
+      "2026-07-19-brief",
+      "2026-07-21-brief",
+      "2026-07-23-brief",
+      "2026-07-26-brief",
+      "2026-07-28-brief",
+      "2026-07-30-brief",
+      "2026-08-02-brief",
+      "2026-08-04-brief",
+      "2026-08-07-brief",
+      "2026-08-09-brief",
+      "2026-08-11-brief",
+      "2026-08-13-brief",
+      "2026-08-16-brief",
+      "2026-08-18-brief",
+      "2026-08-20-brief"
+    ]
+  },
+  {
+    "name": "Intel",
+    "count": 38,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief",
+      "2026-06-04-brief",
+      "2026-06-07-brief",
+      "2026-06-09-brief",
+      "2026-06-11-brief",
+      "2026-06-14-brief",
+      "2026-06-16-brief",
+      "2026-06-18-brief",
+      "2026-06-21-brief",
+      "2026-06-23-brief",
+      "2026-06-25-brief",
+      "2026-06-28-brief",
+      "2026-06-30-brief",
+      "2026-07-02-brief",
+      "2026-07-05-brief",
+      "2026-07-07-brief",
+      "2026-07-09-brief",
+      "2026-07-12-brief",
+      "2026-07-14-brief",
+      "2026-07-16-brief",
+      "2026-07-19-brief",
+      "2026-07-21-brief",
+      "2026-07-23-brief",
+      "2026-07-26-brief",
+      "2026-07-28-brief",
+      "2026-07-30-brief",
+      "2026-08-02-brief",
+      "2026-08-04-brief",
+      "2026-08-07-brief",
+      "2026-08-09-brief",
+      "2026-08-11-brief",
+      "2026-08-13-brief",
+      "2026-08-16-brief",
+      "2026-08-18-brief",
+      "2026-08-20-brief"
+    ]
+  },
+  {
+    "name": "SK Hynix",
     "count": 38,
     "articles": [
       "2026-W21-cowos-weekly",
@@ -209,100 +302,14 @@
       "2026-07-26-brief",
       "2026-07-28-brief",
       "2026-07-30-brief",
-      "2026-08-02-brief",
       "2026-08-04-brief",
       "2026-08-07-brief",
       "2026-08-09-brief",
       "2026-08-11-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
-    ]
-  },
-  {
-    "name": "Intel",
-    "count": 37,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-05-28-brief",
-      "2026-05-31-brief",
-      "2026-06-02-brief",
-      "2026-06-04-brief",
-      "2026-06-07-brief",
-      "2026-06-09-brief",
-      "2026-06-11-brief",
-      "2026-06-14-brief",
-      "2026-06-16-brief",
-      "2026-06-18-brief",
-      "2026-06-21-brief",
-      "2026-06-23-brief",
-      "2026-06-25-brief",
-      "2026-06-28-brief",
-      "2026-06-30-brief",
-      "2026-07-02-brief",
-      "2026-07-05-brief",
-      "2026-07-07-brief",
-      "2026-07-09-brief",
-      "2026-07-12-brief",
-      "2026-07-14-brief",
-      "2026-07-16-brief",
-      "2026-07-19-brief",
-      "2026-07-21-brief",
-      "2026-07-23-brief",
-      "2026-07-26-brief",
-      "2026-07-28-brief",
-      "2026-07-30-brief",
-      "2026-08-02-brief",
-      "2026-08-04-brief",
-      "2026-08-07-brief",
-      "2026-08-09-brief",
-      "2026-08-11-brief",
-      "2026-08-13-brief",
-      "2026-08-16-brief",
-      "2026-08-18-brief"
-    ]
-  },
-  {
-    "name": "SK Hynix",
-    "count": 37,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly",
-      "2026-05-28-brief",
-      "2026-05-31-brief",
-      "2026-06-02-brief",
-      "2026-06-04-brief",
-      "2026-06-07-brief",
-      "2026-06-09-brief",
-      "2026-06-11-brief",
-      "2026-06-14-brief",
-      "2026-06-16-brief",
-      "2026-06-18-brief",
-      "2026-06-21-brief",
-      "2026-06-23-brief",
-      "2026-06-25-brief",
-      "2026-06-28-brief",
-      "2026-06-30-brief",
-      "2026-07-02-brief",
-      "2026-07-05-brief",
-      "2026-07-07-brief",
-      "2026-07-09-brief",
-      "2026-07-12-brief",
-      "2026-07-14-brief",
-      "2026-07-16-brief",
-      "2026-07-19-brief",
-      "2026-07-21-brief",
-      "2026-07-23-brief",
-      "2026-07-26-brief",
-      "2026-07-28-brief",
-      "2026-07-30-brief",
-      "2026-08-04-brief",
-      "2026-08-07-brief",
-      "2026-08-09-brief",
-      "2026-08-11-brief",
-      "2026-08-13-brief",
-      "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
@@ -367,7 +374,7 @@
   },
   {
     "name": "Broadcom",
-    "count": 19,
+    "count": 20,
     "articles": [
       "2026-W22-semi-weekly",
       "2026-05-28-brief",
@@ -387,7 +394,8 @@
       "2026-07-30-brief",
       "2026-08-13-brief",
       "2026-08-16-brief",
-      "2026-08-18-brief"
+      "2026-08-18-brief",
+      "2026-08-20-brief"
     ]
   },
   {
@@ -425,6 +433,18 @@
     ]
   },
   {
+    "name": "JCET",
+    "count": 6,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-06-07-brief",
+      "2026-06-28-brief",
+      "2026-08-07-brief",
+      "2026-08-20-brief"
+    ]
+  },
+  {
     "name": "SMIC",
     "count": 6,
     "articles": [
@@ -437,6 +457,17 @@
     ]
   },
   {
+    "name": "KYEC",
+    "count": 5,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-06-11-brief",
+      "2026-07-14-brief",
+      "2026-08-20-brief"
+    ]
+  },
+  {
     "name": "Ajinomoto",
     "count": 5,
     "articles": [
@@ -445,27 +476,6 @@
       "2026-05-31-brief",
       "2026-08-09-brief",
       "2026-08-18-brief"
-    ]
-  },
-  {
-    "name": "JCET",
-    "count": 5,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly",
-      "2026-06-07-brief",
-      "2026-06-28-brief",
-      "2026-08-07-brief"
-    ]
-  },
-  {
-    "name": "KYEC",
-    "count": 4,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly",
-      "2026-06-11-brief",
-      "2026-07-14-brief"
     ]
   },
   {
