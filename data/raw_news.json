@@ -1,350 +1,476 @@
 {
-  "fetched_at": "2026-09-06T23:32:33.224207+00:00",
+  "fetched_at": "2026-09-08T23:56:17.150677+00:00",
   "days_back": 7,
-  "total": 49,
+  "total": 67,
   "items": [
     {
-      "source": "DigiTimes 中文",
-      "title": "（獨家）台積電「餘電」問題有解？　台電沙盒3.0計畫10月上路",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767420_UL157XT61H6BAQ104804I",
-      "summary": "因應國際淨零趨勢，科技大廠積極制定RE目標，台積電宣示將於2030年達成RE60，並於2040年達成RE100。對於半導體廠而言，不再只是面臨再生能源「夠不夠用」的挑戰，還存在「綠電匹配」的問題、即企業購買的綠",
-      "published": "2026-09-06T19:00:00+00:00"
+      "source": "TechNews 科技新報",
+      "title": "High NA EUV》台積電聯手 ASML 開發 12 吋光罩，解決 High NA EUV 曝光減半瓶頸",
+      "link": "https://finance.technews.tw/2026/09/09/tsmc-and-asml-collaborate-to-develop-12-inch-photomasks/",
+      "summary": "半導體業界迎接重大技術變革！為了讓最新一代微影設備能夠順利印製出人工智慧（AI）產業中面積最大的晶片，微影設備 [&#8230;]",
+      "published": "2026-09-08T22:00:46+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "High NA EUV》台積電 2030 年起導入 High-NA EUV 技術，A10 製程預期成首發受矚目",
+      "link": "https://finance.technews.tw/2026/09/09/tsmc-will-begin-implementing-high-na-euv-technology-starting-in-2030/",
+      "summary": "雖然這幾年來，晶圓代工龍頭台積電一直極力避免公開評論其採用高數值孔徑極紫外光（High-NA EUV）顯影技術 [&#8230;]",
+      "published": "2026-09-08T22:00:13+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "High NA EUV》台積電攜手 ASML 推進 High-NA EUV，台灣供應鏈完成卡位將進而受惠",
+      "link": "https://finance.technews.tw/2026/09/09/tsmc-and-asml-advance-high-na-euv/",
+      "summary": "隨著全球半導體先進製程持續微縮，高數值孔徑極紫外光（High-NA EUV）微影技術的導入時程已成為產業關鍵風 [&#8230;]",
+      "published": "2026-09-08T22:00:11+00:00"
     },
     {
       "source": "DigiTimes 中文",
-      "title": "AI資料中心蓋不動了？　美國陷民意、缺電與融資三重瓶頸",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766447_DLO34UXK5R220660VXOTQ",
-      "summary": "美國人工智慧（AI）競賽正從晶片與大型語言模型（LLM）之爭，轉向更現實的基礎建設考驗。過去幾年，超大規模雲端業者（Hyperscalers）與科技公司大舉興建資料中心，試圖搶佔算力與AI服務市場；但如今，美國新",
-      "published": "2026-09-06T18:58:57+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【動物農莊】鴿們聊南韓、中國Mini LED市佔　只差0.1個百分點？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767217_3601501T2REPT86RCVC2Z",
-      "summary": "全球Mini LED電視市場再度洗牌。根據Omdia資料，三星電子（Samsung Electronics）2026年第2季以28.2%出貨市佔率重返全球第一，超越TCL的23.3%與海信的17.2%；加上樂金電子（LG Electronics）12.4%，南",
-      "published": "2026-09-06T18:53:38+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "康寧瞄準AI兩大關卡　玻璃基板解決翹曲、光學材料助攻高速傳輸",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767363_U3V2V5UQ74YS2Z29RVMBQ",
-      "summary": "AI晶片持續朝高算力、大尺寸及高頻寬方向發展，先進封裝與高速資料傳輸成為AI基礎建設面臨的兩大關鍵挑戰，美商康寧（Corning）正積極擴大玻璃材料在先進封裝、玻璃基板及光通訊領域的應用，並與產業夥伴共同",
-      "published": "2026-09-06T18:48:17+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Starman新品瞄準光互連1.6T升級潮　GoPro跨界結盟押注美國製造",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767301_I8J2L5821XUFW20K5E0U2",
-      "summary": "運動相機GoPro與光電公司Starman Optical的合併案，表面上是一家陷入困境的運動相機公司與光電業者的跨界交易，但從產業角度觀察，更值得關注的是背後快速成長的人工智慧（AI）光通訊市場。隨著生成式AI",
-      "published": "2026-09-06T18:44:44+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "曼谷資料中心爆燃料儲存疑慮　泰國啟動監管與法律程序",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767349_HAH25OUM5HLL6Q8EVMQJ1",
-      "summary": "泰國政府對曼谷資料中心進行安全稽查後發現，有業者非法儲存大量燃料。泰國民族報（The Nation）報導，泰國議員在國會提出曼谷資料中心安全問題，包括大量的燃料儲存，以及建築安全、環境保護等疑慮。能源部長",
-      "published": "2026-09-06T18:44:40+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【漫圖秒懂】突破美方封鎖？　長鑫傳小量生產HBM3E",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767203_Y313H1QULCYV3Y4HF311L",
-      "summary": "面對美國出口管制，The Information傳出長鑫科技已啟動第五代高頻寬記憶體（HBM3E）小量生產，為中國本土AI處理器突圍關鍵限制。長鑫HBM3E規格雖僅落後三星電子（Samsung Electronics）、SK海力士",
-      "published": "2026-09-06T18:35:44+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "人形機器人規模化先過3關　意法揭製造業先行、模組拚降本",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767439_EMQ5YVUE2CY8NPLT24FDG",
-      "summary": "意法半導體（STM）近日在台舉行記者會，暢談永續以及AI資料中心、機器人等議題，此次特別針對人形機器人提出看法，認為該應用的第一個戰場仍是製造業，而目前需要突破的挑戰，包括手部技術、邊緣判斷力與整機成",
-      "published": "2026-09-06T18:30:16+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "美國明暗示南韓加碼投資　IC出口額超越台灣「關稅協議」恐生變",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767465_V993ST5L7VGVZG4Q8FSXF",
-      "summary": "美國商務部長Howard Lutnick日前再度暗指三星電子（Samsung Electronics）、SK海力士（SK Hynix）等南韓半導體企業應增加對美投資，使南韓政府面臨更大壓力。當美國擬以關稅作為施壓手段、要求半導體企業",
-      "published": "2026-09-06T18:27:30+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【動物農莊】追趕ASML有多難？　中國半導體微影技術實力大拆解",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767208_RW41C3181LYXJ97JN4CWY",
-      "summary": "面對美國主導的先進設備出口管制，中國正全力推動半導體設備國產化。瑞銀（UBS）報告指出，中國預期在未來2~5年內能量產浸潤式DUV微影設備。在更關鍵EUV技術上，中國專利水準僅相當於ASML在2004年的研",
-      "published": "2026-09-06T18:26:47+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【Amy & Dr. Chip】Anthropic把Claude帶進三星晶片設計流程",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767357_1SI2GKUX6S4T896K09V3S",
-      "summary": "Anthropic正加速搶攻南韓企業AI轉型市場，旗下Claude模型已進入三星電子（Samsung Electronics）半導體設計業務進行測試，顯示生成式AI應用正逐步延伸至高度專業的晶片設計流程。據韓媒報導，三星研究人員",
-      "published": "2026-09-06T18:26:45+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "NVIDIA如AI供應鏈「中央銀行」　鎖定供應鏈最難複製的競爭壁壘",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767084_AF71SXNB7CP8005TWD7I7",
-      "summary": "美國創投巨頭a16近期發布的Podcast節目，知名投資人Gavin Baker與a16z合夥人David George展開細談。Baker認為，NVIDIA執行長黃仁勳採「垂直整合但橫向開放」的戰略，構建了深厚的護城河。NVIDIA透過垂直",
-      "published": "2026-09-06T18:26:24+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "打入蘋果供應鏈5年　京東方iPhone OLED佔比降至14%",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767468_VG65JYKV5NDDOS9K77F7V",
-      "summary": "中國面板業者京東方的蘋果（Apple）iPhone用OLED供應版圖持續萎縮，2026年第1季佔比已降至約14%。隨著京東方低溫多晶氧化物（LTPO）面板良率問題拖累出貨，韓廠三星顯示器（Samsung Display；SDC）",
-      "published": "2026-09-06T18:26:18+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "面板技術延伸AI半導體　群創、友達低調現蹤SEMICON鋒頭仍健",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767424_0B43MKQX3D5RNT355RYKI",
-      "summary": "AI帶動先進封裝與高速光互連需求升溫，面板雙虎加速將既有製程與技術延伸至半導體領域，積極卡位AI供應鏈，雖然沒有在SEMICON Taiwan 2026中設立大面積攤位，但群創與友達分別展示RDL First、Chip Last平",
-      "published": "2026-09-06T18:25:07+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "力守AI科技島地位　政府2027年五箭齊發",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767442_8FR3YW1I58OZUW15JLLE6",
-      "summary": "受惠於AI晶片製造、先進封裝、記憶體供不應求，有機構預估2026年台灣半導體產業總產值將達2,091億美元，成長22.7%。行政院發布2027年施政計畫，宣示要力守AI科技島地位，並使包括半導體在內的五大信賴產業的發",
-      "published": "2026-09-06T18:21:33+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "SST市場年複合成長32%　海內外「三路人馬」搶卡位",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767446_SPO5H3J0365CXL7MVTUEA",
-      "summary": "隨AI伺服器算力與單櫃功率密度持續攀升，傳統54V直流供電架構面臨電流過大、銅材用量及傳輸損耗增加等瓶頸，促使新一代AI資料中心電力架構逐步朝800V高壓直流（HVDC）發展。相較既有由中壓交流經變壓器、不",
-      "published": "2026-09-06T18:16:55+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Elon Musk想自造燃氣渦輪機葉片　AI供應鏈跨入關鍵能源零件供應",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767330_D1P22L5B4OTRWVLMFX2BK",
-      "summary": "Elon Musk在8月30日時透過於X宣布，將自行生產燃氣渦輪機所需的渦輪葉片（blades）與導流葉片（vanes），盼將提供AI資料中心電力來源的燃氣渦輪機部署時程最多提前18個月。葉片與導流葉片位於渦輪機高速與高",
-      "published": "2026-09-06T18:16:43+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "樂金「韓版博通」起步受挫　SK海力士否認討論eSSD控制器委託",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767404_ZZP3FNAA1GO6QW379UOL4",
-      "summary": "SK海力士（SK Hynix）與樂金電子（LG Electronics）原本推動的次世代企業級固態硬碟（eSSD）控制器設計合作傳生變，2026年7月起討論由樂金承接部分eSSD控制器後端實體設計（backend physical design",
-      "published": "2026-09-06T18:11:20+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "SK海力士傳將提前南韓光州半導體投資　與龍仁聚落雙線並進",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767355_6HN4FV194S8SS86918EFP",
-      "summary": "SK海力士（SK Hynix）正加大對光州西南圈半導體生產基地的投資力道。韓媒最新消息指出，SK海力士內部正評估將龍仁半導體聚落、光州投資改為「雙軌並行」策略，可能不再等龍仁投資推進到一定程度後才接續光州",
-      "published": "2026-09-06T18:10:58+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星赴美建廠「有錢沒人蓋」？　美國製造業回流陷人力荒",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767325_OFP46Z831R8TSP6N5BMDM",
-      "summary": "近來，美國以重振製造業為目標，要求各國企業進一步擴大對美投資，目前南韓企業赴美投資的浪潮已迅速擴大至半導體、電池、汽車及鋼鐵等產業。然而，隨著南韓企業陸續在美國興建生產基地，業界也傳出不同聲音指出",
-      "published": "2026-09-06T18:10:40+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "SDC攜手南韓地方政府　投入67兆韓元擴產新一代顯示器",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767321_D2Q4FD0D19R9HJ2E5PLE4",
-      "summary": "三星顯示器（Samsung Display；SDC）與南韓忠清南道簽署投資備忘錄，將以忠清南道的牙山為中心，分階段建置OLED與新一代顯示器產線，總投資規模達67兆韓元（約496億美元）。根據韓媒Theelec報導，SDC",
-      "published": "2026-09-06T18:08:44+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星HBM擴大供應、長鑫存儲崛起　全球記憶體版圖出現新變化",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767461_HHO31Q4M7K7SQA0331XV2",
-      "summary": "全球高頻寬記憶體（HBM）市場競爭升溫，三星電子（Samsung Electronics）市佔率單季大增12個百分點至33%，迅速逼近仍以50%居冠的SK海力士（SK Hynix）。根據韓媒ET News、首爾經濟等報導，市調機構",
-      "published": "2026-09-06T18:07:21+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "從賣電廠到自己營運　OCI押注德州AI用電潮",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767422_KOP3ZOUV3Q0J1L1FBN41F",
-      "summary": "人工智慧（AI）資料中心掀起美國新一波電力爭奪戰，也開始改變再生能源開發商的商業模式。南韓OCI控股（OCI Holdings）宣布，旗下美國子公司OCI Energy與以色列能源企業Arava Power共同開發的SunRoper大",
-      "published": "2026-09-06T18:06:50+00:00"
+      "title": "每日椽真：台灣新創生態系指數陡升 | 華為麒麟重生、小米接力陪跑 | ASML執行長同日背書兩種說法",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767848_DH49P4GR3BZVUC9AXSFP3",
+      "summary": "NVIDIA的Vera Rubin蓄勢待發，即使尚未放量，伺服器ODM廠8月營運依舊亮眼，業者表示，不論H系列或GB系列需求依舊強勁，雖然Vera",
+      "published": "2026-09-08T21:56:31+00:00"
     },
     {
       "source": "SemiWiki",
-      "title": "Comparing Advanced Packaging from TSMC, Intel Foundry, and Samsung Foundry",
-      "link": "https://semiwiki.com/3dic/372087-comparing-advanced-packaging-from-tsmc-intel-foundry-and-samsung-foundry/",
-      "summary": "<p class=\"isSelectedEnd\">Advanced semiconductor packaging has become essential to improving computing performance as conventional transistor scaling grows more difficult and expensive. Instead of manufacturing an entire processor as one large monolithic die, chipmakers can divide it into smaller <a href=\"https://semiwiki.com/wikis/industry-wikis/chiplets-wiki/\">chiplets</a> and combine logic, memory, input/output&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/3dic/372087-comparing-advanc",
-      "published": "2026-09-06T17:00:24+00:00"
+      "title": "HBM’s Second Act: When Memory Starts Thinking",
+      "link": "https://semiwiki.com/events/372843-372843/",
+      "summary": "<p>Samsung’s <a href=\"https://hc2026.hotchips.org/\">Hot Chips 2026</a> presentation, “HBM Base Die: How HBM Will Evolve Using Advanced Logic Processes,” argues that the base die beneath a High Bandwidth Memory stack is about to become far more than a communications layer. Traditionally, an HBM base die mainly connects stacked DRAM dies to a GPU, TPU, or other processor and &#8230; <a class=\"read-more\" href=\"https://semiwiki.com/events/372843-372843/\">Read More </a></p>\n<p>The post <a href=\"https",
+      "published": "2026-09-08T21:00:55+00:00"
     },
     {
-      "source": "TechNews 科技新報",
-      "title": "DeepSeek 重金採購 16 萬顆華為晶片，內蒙古建大規模 AI 叢集",
-      "link": "https://technews.tw/2026/09/06/deepseek-prepares-major-huawei-ai-chip-order-for-new-data-center/",
-      "summary": "今年 7 月，DeepSeek 執行長因大膽宣稱 NVIDIA 於中國自掘墳墓而掀起波瀾。數週之後，DeepS [&#8230;]",
-      "published": "2026-09-06T07:49:14+00:00"
+      "source": "DigiTimes 中文",
+      "title": "深化全球布局 產發署聯手半導體業者 以國際人才策略搶攻全球版圖",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765977_PI5LI9J96TR04P8X46N0H",
+      "summary": "畢業季來臨，也宣告半導體產業年度人才爭奪戰正式展開。台灣少子化的趨勢伴隨著人工智慧浪潮帶動算力需求持續攀升，半導體業者的徵才規模逐年擴大，缺工問題愈來愈嚴重，延攬國際優秀人才成為企業為了維持競爭優勢而勢在必行的重要策略。多年來，封裝測試龍頭日月光與全球主要記憶體製造商美光，均積極參與經濟部產業發展署推動的「半導體國際連結創新",
+      "published": "2026-09-08T19:04:10+00:00"
     },
     {
-      "source": "TechNews 科技新報",
-      "title": "欣興董座簡山傑揭 AI 供應鏈隱憂：載板產能告急，攜客戶十度赴日催料",
-      "link": "https://technews.tw/2026/09/06/unimicron-visits-suppliers-more-than-10-times-to-expand-capacity/",
-      "summary": "AI 算力需求狂飆，全球半導體供應鏈的瓶頸正從晶圓製造、先進封裝一路往上游蔓延。欣興新任董事長簡山傑上任後首度 [&#8230;]",
-      "published": "2026-09-06T01:00:38+00:00"
+      "source": "DigiTimes 中文",
+      "title": "（專訪）中國沃格光電TGV備戰光通訊、先進封裝　2027先攻NPO量產",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767786_J1082J907GP4H172WO3DP",
+      "summary": "AI推動先進封裝與光通訊快速發展，玻璃基板技術由顯示面板延伸至半導體產業，中國沃格光電近年轉型跨入半導體領域，並具備玻璃通孔（TGV）月產能達1萬片（510&times;515mm面板級尺寸）的量產能力，已在",
+      "published": "2026-09-08T19:00:00+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "I-Chiun eyes Nvidia Vera Rubin supply chain as thermal business nears half of sales",
-      "link": "https://www.digitimes.com/news/a20260903PD226/i-chiun-business-nvidia-supply-chain-rubin.html",
-      "summary": "I-Chiun Precision Industry is accelerating its shift from LED lead frames into high-end thermal solutions, with thermal products now accounting for 40-45% of revenue. The company expects the share to exceed 50% as early as the second half of 2026 or in 2027 and to rise above 60% over the medium to long term.",
-      "published": "2026-09-05T23:46:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "澳洲Firmus與OpenAI簽約　提供馬來西亞資料中心算力",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767836_6IY7LJ2I4P8B8D5XCW3PA",
+      "summary": "澳洲人工智慧（AI）基礎設施業者Firmus宣布與OpenAI達成「多年協議」，OpenAI將使用Firmus位於馬來西亞的兩處資料中心算力。Firmus原本是比特幣挖礦業者，後成功轉型為資料中心服務業者，不僅在澳洲相當活",
+      "published": "2026-09-08T18:55:33+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "TEL sees AI-driven packaging, memory demand reshaping Taiwan strategy",
-      "link": "https://www.digitimes.com/news/a20260903PD215/tokyo-electron-taiwan-packaging-demand-development.html",
-      "summary": "Tokyo Electron's Taiwan president said AI is pushing semiconductor demand into new areas, with advanced packaging, DRAM, high-bandwidth memory, and NAND flash all gaining momentum. He said Taiwan remains central to the industry's supply chain, and TEL plans to deepen local technology, service, and research ties.",
-      "published": "2026-09-05T23:46:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "（專訪）Resonac揭PLP五大技術挑戰　先攻510x515mm試產線落地",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767794_NPY8DDOU8HZ6NJ5M4KUV0",
+      "summary": "先進封裝正重塑半導體價值鏈，材料創新成為技術突破關鍵。隨著大尺寸面板級封裝（PLP）技術興起，日本Resonac半導體材料事業技術長（CTO）阿部秀則（Hidenori",
+      "published": "2026-09-08T18:47:07+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "TWM, SYSTEX debut at smart building expo",
-      "link": "https://www.digitimes.com/news/a20260903PD237/twm-management-systex-data-2026.html",
-      "summary": "Taiwan Mobile announced that it is participating for the first time with Systex in the \"2026 Build for NextGen &ndash; International Sustainable Intelligent Building &amp; Intelligent Materials Expo,\" where the two companies are jointly showcasing three smart and sustainable operations-management solutions: an AI digital twin smart management platform, ESG and energy integration services, and the Smart Building 360 smart building operations management platform.",
-      "published": "2026-09-05T22:15:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "德國汽修需求創新高　維修廠生意旺卻信心下滑？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767833_UFM9904F2HJ29C45ZF7RY",
+      "summary": "德國汽車維修產業正陷入矛盾局面。隨著車輛平均車齡持續攀升，維修需求也同步增加，帶動維修廠業務旺盛、產能利用率創下新高，但業界對未來的信心卻開始下滑。據Wolk & Nikolic After Sales Intelligence數據顯示，2026年第2季德國汽車維修廠，包括原廠授權維修廠及第三方獨立維修廠，平均產能利用率升至93.",
+      "published": "2026-09-08T18:46:15+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Tongtai doubles semiconductor orders on AI data-center demand",
-      "link": "https://www.digitimes.com/news/a20260903PD230/demand-tongtai-equipment-expansion-packaging.html",
-      "summary": "Facing rapid demand expansion across the semiconductor and AI industries, Tongtai Group (TT Group) has aggressively promoted an import-substitution and localization strategy in recent years. The group is extending its traditional machine tool expertise into hard and brittle material processing, advanced packaging, and smart manufacturing production-line solutions required for semiconductor fabrication.",
-      "published": "2026-09-05T21:19:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "【動物農莊】NVIDIA串聯AI投資網　SB Energy與OpenAI資金三角關係",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767471_SAE3K7VD8PSD88082BSBY",
+      "summary": "NVIDIA作為AI資料中心GPU最大供應商，同時投資軟銀集團（SoftBankGroup）旗下AI基礎設施公司SB Energy與OpenAI，並為OpenAI在SB Energy的租賃提供高達1,050億美元的信用保證。SB",
+      "published": "2026-09-08T18:43:58+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Taiwan thermal supplier I-Chiun launches AI chip cooling venture targeting US$19.2B liquid-cooling market",
-      "link": "https://www.digitimes.com/news/a20260903PD239/taiwan-cooling-i-chiun-ai-chip-market.html",
-      "summary": "I-Chiun Precision Industry and Taiwan's Industrial Technology Research Institute (ITRI) have established Huizhi Advanced, the country's first startup focused on AI chip thermal design, targeting a global liquid-cooling market expected to reach US$19.2 billion by 2030.",
-      "published": "2026-09-05T21:16:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "三星SDS攜手OpenAI、Anthropic　AI事業擴及機器人轉型",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767784_ITV6BTNB9EKPJP32BQDDM",
+      "summary": "三星SDS（Samsung SDS）日前舉行REAL Summit 2026，提出「多維度AI Full Stack」戰略，將AI服務從企業IT與雲端導入，延伸至企業AI代理、AI資安及實體AI（Physical",
+      "published": "2026-09-08T18:42:42+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Podcast highlights: SoIC vs CoWoS, HBM5 hybrid bonding, and EMIB-T's yield problem",
-      "link": "https://www.digitimes.com/news/a20260904PD233/packaging-digitimes-expansion-2026-sram.html",
-      "summary": "In a podcast, DIGITIMES analyst Luke Lin said hybrid bonding is drawing fresh attention at SEMICON Taiwan 2026 and could become a key driver of advanced packaging capacity expansion in 2027 to 2028.",
-      "published": "2026-09-05T20:17:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "泰國暫停49個資料中心建設案　強調不是要「關上投資大門」",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767835_60N94NSV21HRVM6DK9BVE",
+      "summary": "泰國政府暫停49個資料中心建設案，但強調並不是要關上投資大門。據彭博（Bloomberg）報導，和世界上許多國家一樣，泰國民眾擔憂資料中心建設帶來的能源與環境問題。泰國日前成立資料中心監督委員會，並召開首次會議，著手制定資料中心監管框架。泰國國家經濟和社會發展委員會表示，暫停資料中心建設，就是為了讓政府有時間制定新的規範",
+      "published": "2026-09-08T18:39:35+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "G20 AI agenda: US champions light-touch regulation while data center backlash, China rivalry intensify",
-      "link": "https://www.digitimes.com/news/a20260903PD233/g20-regulation-data-ceo-technology.html",
-      "summary": "The G20 Innovation Ministerial was held in North Carolina, US, from September 1 to 2, with artificial intelligence (AI) taking center stage. The US urged governments to pursue a light-touch regulatory approach, while officials and technology executives also addressed data centers and copyright rules governing AI training data. The following are the key takeaways from the meeting.",
-      "published": "2026-09-05T18:16:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "AI資料中心選址減碳效益有限　意法半導體：機櫃電源設計決勝負",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767778_IDY6OE1D8JS03M719V1QM",
+      "summary": "意法半導體（STM）先前在台舉辦的記者會中，針對AI與永續發展兩者該如何平衡提出看法。意法表示，AI資料中心的碳排放該如何控制，大部分取決於機櫃內部設計，而非單純將資料中心蓋在某個綠電使用比率高的國家即可解決。事實上，一座電源機櫃裡有數百顆電源供應器，只要單顆效率無最佳化，下游多出來的排放就可能超過上游因電網乾淨省下的量",
+      "published": "2026-09-08T18:35:54+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Trumpf CTO says advanced packaging reshapes semiconductor equipment race",
-      "link": "https://www.digitimes.com/news/a20260903PD238/packaging-equipment-demand-technology-semiconductor-industry.html",
-      "summary": "AI and high-performance computing (HPC) demand is changing the semiconductor industry's technology and investment priorities. As chip power consumption, computing density, and data transfer requirements rise rapidly, competition is no longer limited to front-end process scaling; 3D stacking, advanced packaging, high-density interconnects, thermal management, and memory technologies are also becoming more important.",
-      "published": "2026-09-05T16:15:00+00:00"
+      "source": "DigiTimes 中文",
+      "title": "蔚華TGV檢測20分鐘掃完全片　台積玻璃基板檢測報告出自他手",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767852_PKX9D5FU49OEHW3H6XRL0",
+      "summary": "先進封裝朝高密度堆疊發展，玻璃通孔（TGV）與矽穿孔（TSV）檢測需求升溫，玻璃基板（Glass Core）也逐步從技術驗證走向量產。蔚華董事長秦家騏表示，蔚華以非線性光學技術切入先進封裝檢測，TGV孔徑已突破至4微米（&micro;m），3&micro",
+      "published": "2026-09-08T18:32:19+00:00"
     },
     {
-      "source": "TechNews 科技新報",
-      "title": "解析黃仁勳七大領導魅力，獲得輝達全體員工近乎 99% 壓倒性支持",
-      "link": "https://finance.technews.tw/2026/09/05/analyzing-the-seven-leadership-charisma-of-jensen-huang-of-nvidia/",
-      "summary": "美國知名求職招聘網站 Glassdoor 公布「2026 年最佳 CEO 50 人」名單，輝達（NVIDIA） [&#8230;]",
-      "published": "2026-09-05T08:45:57+00:00"
+      "source": "DigiTimes 中文",
+      "title": "PC市場「量縮價漲」加劇　品牌廠加速轉向高階AI PC",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767761_K9E65HA57N3E6Q0LTEZD7",
+      "summary": "隨著人工智慧（AI）資料中心持續大舉搶進高頻寬記憶體（HBM）與伺服器DRAM，在產能排擠下，對PC市場造成外溢效應。記憶體供應吃緊、漲價，不僅推高PC整體製造成本，也迫使PC業者重新調整產品組合，在出貨",
+      "published": "2026-09-08T18:30:51+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Samsung, SK chiefs to meet Nvidia's Huang in New York amid US investment pressure",
-      "link": "https://www.digitimes.com/news/a20260904PD232/samsung-investment-nvidia-sk-group-sk-hynix.html?chid=10",
-      "summary": "Samsung Electronics Chairman Jay Y. Lee and SK Group Chairman Tae-won Chey are traveling to New York at the end of September 2026 to meet Nvidia CEO Jensen Huang again as Washington presses South Korean companies to expand US investment. The planned trip is drawing market attention because Samsung Electronics and SK Hynix are already pursuing large-scale spending in the US and could discuss further business ties on the sidelines of the event.",
-      "published": "2026-09-05T00:03:20+00:00"
+      "source": "DigiTimes 中文",
+      "title": "觀察：箝制反催中國造芯熱　華為麒麟重生、小米接力陪跑",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767742_Q556HO0T5PEUOJ1YA36P4",
+      "summary": "2020年9月，華為手機業務曾迎來一記重擊。當時美國收緊對華為的晶片管制，台積電在9月中旬停止向華為出貨；當時華為消費者業務執行長余承東更直言，9月15日後，台積電將無法再替華為製造手機晶片。麒麟9000因此被視為華為高階手機晶片的一個重要分水嶺。6年後，同樣在9月，華為不只重新推出全新麒麟晶片，還多了一起投入自研晶片的小",
+      "published": "2026-09-08T18:20:11+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Taiwan semiconductor output targets NT$8 trillion",
-      "link": "https://www.digitimes.com/news/a20260904PD237/taiwan-semiconductors-equipment-development-moea-taipei.html",
-      "summary": "As Semicon Taiwan kicked off at the Taipei Nangang Exhibition Center, the Ministry of Economic Affairs (MOEA) announced that, based on forecasts compiled from multiple research institutions, Taiwan's semiconductor industry output could top NT$8 trillion (approx. US$252.6 billion) in 2026. Advanced equipment and materials, historically local industry weak points, are also making remarkable gains, with domestic equipment output projected to reach NT$270 billion (US$8.5 billion).",
-      "published": "2026-09-04T23:57:23+00:00"
+      "source": "DigiTimes 中文",
+      "title": "瑞昱雲端AI鴨子划水有成　ASIC專案、SSD控制晶片成關鍵利器",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767779_JSI81MPK6OEIZZLWXBQXC",
+      "summary": "瑞昱董事長邱順建本週獲頒工研院院士，難得公開現身的他接受採訪時指出，瑞昱現在也有特用晶片（ASIC）專案相關業務進帳，且已開始往3奈米的產品拓展。雖然目前ASIC業務規模未如聯發科那麼大，但未來一定會隨著專案的數量逐步成長。而瑞昱若再加上先前確定打進NVIDIA供應鏈的SSD控制晶片，以及針對乙太網、光通訊的技術研發",
+      "published": "2026-09-08T18:19:14+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Topco targets optical comms, cooling as copper gives way",
-      "link": "https://www.digitimes.com/news/a20260904PD235/topco-copper-cooling-ai-chip-transmission.html",
-      "summary": "System integration remains a key hurdle as the AI chip industry pushes for higher power efficiency and faster transmission speeds, drawing intense attention to when short-reach optical communications between racks and chips will enter practical use. Industry players say the maturity of system integration is still the main consideration for commercialization.",
-      "published": "2026-09-04T23:57:07+00:00"
+      "source": "DigiTimes 中文",
+      "title": "蘋果折疊機市佔率可望躍居全球第2　初期產能成搶市變數",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767841_KRB7MC7R582QAH02N2N7N",
+      "summary": "蘋果（Apple）首款折疊式手機尚未登場，折疊機市場版圖已面臨重整。根據最新市調報告預估，蘋果2026年進場後可望以25%市佔率躍居全球第2，僅次於三星電子（Samsung Electronics）。不過，蘋果折疊機初期日產",
+      "published": "2026-09-08T18:19:09+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "TSMC's 3D packaging roadmap: engineering AI chips to think like the human brain",
-      "link": "https://www.digitimes.com/news/a20260903VL229/tsmc-roadmap-silicon-packaging-cowos.html",
-      "summary": "TSMC is steering the future of artificial intelligence toward high-density three-dimensional advanced packaging designed to mimic the architectural connectivity of the human brain, as traditional two-dimensional silicon scaling approaches its physical limits, a top TSMC executive said at SEMICON Taiwan 2026.",
-      "published": "2026-09-04T23:56:30+00:00"
+      "source": "DigiTimes 中文",
+      "title": "美國爆發資料中心抗議潮　科技公司轉向海外看上澳洲",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767782_VRJ87SCZ7GN86K3GPAWK0",
+      "summary": "美國近日掀起一波反對資料中心興建的抗議潮，科技業者開始將目光轉向海外，降低風險，首選之一就是澳洲。據彭博（Bloomberg）報導，澳洲資料中心開發與營運業者AirTrunk表示，在過去6~8個月的時間，Google",
+      "published": "2026-09-08T18:17:37+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Interview: China Tier 1 supplier Jingwei Hirain shares lessons from EV race",
-      "link": "https://www.digitimes.com/news/a20260831PD211/supplier-tier-1-automakers-development-market.html",
-      "summary": "\"Demo is not a product,\" Jingwei Hirain president Chengjian Fan told DIGITIMES in an interview, arguing that China's new-energy vehicle industry has learned hard lessons as fast-moving startups, deep in-house development, and tougher supplier scrutiny reshape the market. He said software demand has increased more than tenfold compared with the internal combustion engine era, while the fastest mass-production delivery cycle in China has been as short as 12 months.",
-      "published": "2026-09-04T23:56:03+00:00"
+      "source": "DigiTimes 中文",
+      "title": "三星OLED電視出貨急追樂金　中國LCD低價進逼南韓雙雄激戰高階市場",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767612_HVF54RGL2Z3WFD1HDDTWB",
+      "summary": "市場預測，三星電子（Samsung Electronics）於2026年的OLED電視出貨量預計較2025年增加約16%，與樂金電子（LG Electronics）的出貨量差距更可望縮小。隨著中國企業以LCD電視為主，加強低價大量供貨攻勢，三星與樂金之間的OLED電視競爭也日益升溫。據韓媒ET",
+      "published": "2026-09-08T18:14:01+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Samsung SDI nears solid-state battery mass production, eyes China supply chain",
-      "link": "https://www.digitimes.com/news/a20260904PD225/samsung-sdi-production-supply-chain-solid-state-battery-2027.html",
-      "summary": "Reports that Samsung SDI's procurement team recently visited the Chinese production facilities of battery material maker Tinci Materials have drawn significant attention within China's industry. As Samsung SDI prepares to initiate mass production of all-solid-state batteries in the second half of 2027, its supply chain strategy and upcoming moves are rapidly becoming a major focal point in the Chinese market.",
-      "published": "2026-09-04T23:54:56+00:00"
+      "source": "DigiTimes 中文",
+      "title": "AI伺服器ODM長短料失衡　部分料件缺口達15~20%",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767795_P9C8RN40881THA6L28WKV",
+      "summary": "NVIDIA的Vera Rubin蓄勢待發，即使尚未放量，伺服器ODM廠8月營運依舊亮眼，業者表示，不論H系列或GB系列需求依舊強勁，雖然Vera Rubin放量時間將落在2027年，然對下半年伺服器出貨，依舊看旺，不過長短料",
+      "published": "2026-09-08T18:11:36+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "SiPh, optical lens demand ignite laser race",
-      "link": "https://www.digitimes.com/news/a20260904PD221/laser-siph-photonics-demand-taiwan.html",
-      "summary": "Silicon photonics (SiPh) is emerging as a core theme at SEMICON Taiwan 2026, and while the sector is still in an early, fast-growing stage, production-line investments are already under way. As optical makers move into co-packaged optics (CPO), the source and capability of laser equipment are becoming critical to whether they can secure market share.",
-      "published": "2026-09-04T23:54:36+00:00"
+      "source": "DigiTimes 中文",
+      "title": "AI資料中心商機外溢　輸配電、光纜廠擴產迎需求",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767383_DTC45PK473DH1G4237COS",
+      "summary": "俗話說，一人得道、雞犬升天，現在則是AI得道、通訊配電升天，AI不僅帶動相關的半導體與伺服器廠商成長，大量AI資料中心建案的輸配電、空調、通訊需求，也讓電機與零組件廠跟著沾光。市場質疑AI泡沫，廠商訂單源",
+      "published": "2026-09-08T18:10:43+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Google TPU splits training, inference as CPU becomes next focus",
-      "link": "https://www.digitimes.com/news/a20260904PD217/google-training-tpu-cpu-chips.html",
-      "summary": "As AI model training, inference, and AI agent workloads continue to grow, AI accelerators are increasingly being optimized for different tasks. Amin Vahdat, Google's senior vice president and chief technologist for AI and infrastructure, said at SEMICON Taiwan 2026 that if a specific workload reaches sufficient scale and investment in custom chips is economically viable, Google could develop additional dedicated chips for different computing needs.",
-      "published": "2026-09-04T23:54:21+00:00"
+      "source": "DigiTimes 中文",
+      "title": "三星電機玻璃基板量產恐再延　傳台積TGV驗證延遲、擬放緩投資",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767769_0XB64IUI7W8QVV8DBFRDI",
+      "summary": "消息傳出，由於提交台積電的玻璃鑽孔（TGV）模組可靠性評估進度不如預期，三星電機（Semco）玻璃基板量產進度可能再延後。有相關人士稱，三星電機計劃放慢玻璃基板相關投資腳步，優先將資源投入ABF載板等需求明確、能創造更多利潤的事業領域。據韓媒Dealsite引述業界消息，三星電機近期為接受TGV模組可靠性驗證，向台積電",
+      "published": "2026-09-08T18:09:47+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Micron looks to lock in Taiwanese construction capacity with long-term deals",
-      "link": "https://www.digitimes.com/news/a20260904PD215/micron-construction-capacity-dram-manufacturing-taiwan.html",
-      "summary": "The global rush to build semiconductor fabs is creating a historic opportunity for Taiwan's construction and facility engineering supply chain, and Micron Technology is looking to move away from awarding work project by project in favor of long-term agreements and reserved capacity with a small group of trusted partners.",
-      "published": "2026-09-04T23:53:55+00:00"
+      "source": "DigiTimes 中文",
+      "title": "AI基建競爭由Rack走向Grid　Flex砸44億美元補強800V電力版圖",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767740_U4E6LLQ75NEQ1LL6QABW2",
+      "summary": "AI伺服器算力與機櫃功率密度持續攀升，資料中心產業競爭邊界也正由伺服器、機櫃進一步向電力與散熱基礎設施延伸。電子製造服務大廠偉創力（Flex）日前宣布，以44億美元收購美國電力轉換設備商EPC",
+      "published": "2026-09-08T18:07:55+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Commentary: China builds three-pronged memory strategy around CXMT, YMTC, XMC",
-      "link": "https://www.digitimes.com/news/a20260904PD211/china-3d-nand-cxmt-xmc-ymtc.html",
-      "summary": "China's memory industry is shifting from a single-champion model towards a three-pronged structure. ChangXin Memory Technologies (CXMT) is building its position in DRAM, Yangtze Memory Technologies (YMTC) in 3D NAND, while Wuhan Xinxin Semiconductor Manufacturing (XMC) is concentrating its next phase on NOR Flash, 3D integration and optoelectronics.",
-      "published": "2026-09-04T23:53:40+00:00"
+      "source": "DigiTimes 中文",
+      "title": "三星晶圓代工DSP體系「去蕪存菁」　合作夥伴減至11家",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767754_VWV8RY7H4JXLP05AE3U6V",
+      "summary": "三星電子（Samsung Electronics）晶圓代工合作夥伴策略可能出現轉向，目前DSP陣容從原本的13家縮減至11家。外界解讀，三星不再積極擴張合作網路，而是鎖定能把客戶與專案轉化為實際訂單的夥伴。根據韓媒ET",
+      "published": "2026-09-08T18:07:40+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Jmem Tek's PQC security chip nears mass production",
-      "link": "https://www.digitimes.com/news/a20260904PD206/jmem-technology-security-hardware-ic-design-startup.html",
-      "summary": "Taiwanese IC design startup Jmem Tek showcased its in-house physical unclonable function (PUF) and post-quantum cryptography (PQC) hardware security technologies at SEMICON Taiwan 2026, as it pushes to build a hardware root of trust at the chip level for next-generation AI and smart devices facing quantum-era cybersecurity threats.",
-      "published": "2026-09-04T23:53:03+00:00"
+      "source": "DigiTimes 中文",
+      "title": "上銀卡位南韓Semes混合鍵合設備　供應單軸定位平台在地化發酵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767670_FX751UXS8VQDEBLWKW0I0",
+      "summary": "傳動元件大廠上銀在半導體領域除了積極擴張共同封裝光學（CPO）事業，也瞄準南韓新一代記憶體設備供應鏈，目前已與三星電子（Samsung Electronics）半導體設備子公司Semes簽訂供應合約，供應可應用於混合鍵合（Hybrid Bonding）的單軸定位平台（Single-axis",
+      "published": "2026-09-08T18:07:33+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Taiwan satellite ground equipment output grows 13%, nears NT$300B",
-      "link": "https://www.digitimes.com/news/a20260904PD205/taiwan-equipment-communications-development-growth.html",
-      "summary": "<p class=\"P1\">Taiwan's satellite ground equipment industry posted 13% year-over-year growth in 2025 as local firms push deeper into the low-Earth orbit satellite supply chain, with industry output reaching NT$277.1 billion (approx. US$8.74 billion) and the market edging toward NT$300 billion in the next few years. Companies including Auden Techno, Compal Electronics, Rapidtek, and Arcadyan Technology are accelerating commercialization efforts.",
-      "published": "2026-09-04T23:52:48+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Adata expands AI business with TRUSTA, Industrial brands",
-      "link": "https://www.digitimes.com/news/a20260904PD202/business-ddr5-r-dimm-infrastructure-data.html",
-      "summary": "ADATA Technology said it will integrate the products, technologies and solutions of its TRUSTA and ADATA Industrial brands to target enterprise servers, edge computing, system integration, smart homes, mobile devices and wearables. This comes as AI infrastructure, edge computing and smart systems accelerate. The memory module maker aims to expand AI and intelligent application opportunities by focusing on business use cases.",
-      "published": "2026-09-04T23:52:05+00:00"
+      "source": "DigiTimes 中文",
+      "title": "TCS投資74億美元進軍AI資料中心　印度海德拉巴建1GW園區",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000767651_KHH59TWZ6M9ZO0016P7PM",
+      "summary": "印度塔塔顧問服務（TCS）宣布，旗下HyperVault已經購置土地，預計將在印度南部建設資料中心。據路透（Reuters）及彭博（Bloomberg）報導，TCS提交給交易所的文件顯示，HyperVault已經在特倫甘納邦海得拉巴（Hyderabad,",
+      "published": "2026-09-08T18:06:12+00:00"
     },
     {
       "source": "SemiWiki",
-      "title": "The $9.5 Billion Design IP Market: Shifting Boundaries, Arm’s Monopoly, and the RISC-V Response",
-      "link": "https://semiwiki.com/ip/373010-the-9-5-billion-design-ip-market-shifting-boundaries-arms-monopoly-and-the-risc-v-response/",
-      "summary": "<p>While semiconductor design intellectual property (IP) is a $9.45 billion market, it acts as the absolute architectural bottleneck for the entire global semiconductor value chain. The choices made at the IP layer today dictate the cost, power, and security of a downstream technology economy rapidly marching toward a trillion&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/ip/373010-the-9-5-billion-design-ip-market-shifting-boundaries-arms-monopoly-and-the-risc-v-response/\">Read More </a",
-      "published": "2026-09-04T13:00:09+00:00"
+      "title": "NVIDIA Vera: Rebuilding the CPU for Agentic AI",
+      "link": "https://semiwiki.com/events/372854-nvidia-vera-rebuilding-the-cpu-for-agentic-ai/",
+      "summary": "<p><strong><em>Source: Jonathon Evans and Polychronis Xekalakis, “NVIDIA Vera CPU,” <a href=\"https://hc2026.hotchips.org/\">Hot Chips 2026</a>. Performance figures are NVIDIA claims, and several results were based on preproduction or unofficial testing.</em></strong></p>\n<p>NVIDIA’s Vera CPU is a server processor designed specifically for agentic AI, where language models repeatedly observe, reason,&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/events/372854-nvidia-vera-rebuilding-the-cp",
+      "published": "2026-09-08T17:00:20+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "ASML 第二座大型工業園區動土因應擴產需求，預計 2029 年落成啟用",
+      "link": "https://finance.technews.tw/2026/09/08/asml-breaks-ground-on-its-second-large-scale-industrial-park-to-meet-expansion-needs/",
+      "summary": "全球半導體曝光機大廠艾司摩爾（ASML）於 2026 年 9 月 8 日，在荷蘭埃因霍溫的「北智慧港工業園區（ [&#8230;]",
+      "published": "2026-09-08T12:15:44+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "客戶現階段即可運用 High NA EUV，英特爾和 ASML 已製造超過一百萬片晶圓",
+      "link": "https://finance.technews.tw/2026/09/08/intel-and-asml-have-manufactured-more-than-one-million-wafers/",
+      "summary": "英特爾晶圓代工（Intel Foundry）和ASML迄今已製造超過一百萬片晶圓，協助客戶現階段即可運用Hig [&#8230;]",
+      "published": "2026-09-08T12:00:35+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "AI 熱潮推升韓國電力需求，路透：需增建 20 座核反應爐",
+      "link": "https://technews.tw/2026/09/08/ai-boom-boosts-south-korea-power-demand-reuters-20-new-nuclear-reactors-needed/",
+      "summary": "韓國氣候能源環境部長金星煥指出，受晶片製造大廠三星電子和 SK 海力士擴大產能及新建人工智慧（AI）資料中心等 [&#8230;]",
+      "published": "2026-09-08T10:00:08+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "安葆 8 月營收 6.79 億元、年增 67.7%，進入傳統旺季",
+      "link": "https://finance.technews.tw/2026/09/08/ample-august-revenue-679m-up-67-7-h2-peak-season/",
+      "summary": "半導體與 AI 資料中心電力基建需求持續升溫，系統整合廠安葆 8 月營收達 6.79 億元，較去年同期 4.0 [&#8230;]",
+      "published": "2026-09-08T09:35:22+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "US chip tariffs raise stakes for Samsung, SK Hynix's US memory plans",
+      "link": "https://www.digitimes.com/news/a20260907VL214/samsung-investment-sk-hynix-production-policy.html",
+      "summary": "South Korea and the US are discussing semiconductor investments in the US as part of broader bilateral negotiations, bringing US chip tariff policy closer to the investment decisions facing Samsung Electronics and SK Hynix.",
+      "published": "2026-09-08T08:30:05+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "PCB maker Zhen Ding tops US$634M August revenue on AI server, optical module demand",
+      "link": "https://www.digitimes.com/news/a20260908PD224/pcb-zhen-ding-revenue-demand-ai-server.html",
+      "summary": "PCB maker Zhen Ding Technology (ZDT) said business momentum is accelerating as demand strengthens during the traditional peak season. In addition to continued stocking for new mobile communications products, combined revenue from servers, optical modules, and IC substrates more than tripled from a year earlier, with growth accelerating further and lifting August revenue above NT$20 billion (&asymp;US$634 million).",
+      "published": "2026-09-08T08:01:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Xiaomi debuts 18 fold to challenge Huawei and Samsung in wide-screen foldable race",
+      "link": "https://www.digitimes.com/news/a20260908VL214/foldable-xiaomi-flagship-huawei-samsung.html",
+      "summary": "The flagship foldable market has reached a pivotal turning point as tech giants abandon tall, narrow cover screens in favor of wider aspect ratios and custom processing hardware. Xiaomi's newly launched Xiaomi 18 Fold brings direct competition to top-tier rivals such as the Huawei Pura X Max and Samsung Galaxy Z Fold 8, while setting the stage for Apple's anticipated entry into the category later this week. For prospective buyers evaluating these premium devices, the ultimate purchasing decision",
+      "published": "2026-09-08T07:51:16+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung speeds silicon photonics test plan with TSMC-vetted probe vendors",
+      "link": "https://www.digitimes.com/news/a20260908PD221/samsung-silicon-photonics-probe-testing.html",
+      "summary": "Samsung Electronics has moved to accelerate its silicon photonics push by using the same test partners selected by Taiwan Semiconductor Manufacturing Co. for key validation work, according to <em>The Elec</em>. The effort is aimed at completing wafer-level testing for photonic integrated circuits, or PICs, by 2026 and preparing for silicon photonics foundry services planned for 2027.",
+      "published": "2026-09-08T07:06:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung boosts Galaxy A series output as rivals cut lower-end phones",
+      "link": "https://www.digitimes.com/news/a20260908PD225/samsung-production-galaxy-2026-shipments.html",
+      "summary": "Samsung Electronics has moved to expand production of mid- to low-end smartphones from August to November 2026, according to South Korean media <em>Maeil Business Newspaper</em>. The plan comes as rising memory chip prices are forcing other handset makers to pull back on lower-margin models, and Samsung is looking to use the shift to gain more smartphone market share.",
+      "published": "2026-09-08T07:00:42+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "ASML lines up Intel, TSMC and Samsung behind 12-inch masks &mdash; TSMC alone sets a timeline",
+      "link": "https://www.digitimes.com/news/a20260908VL208/tsmc-asml-12-inch-production-6-inch.html",
+      "summary": "ASML issued joint statements with Intel Foundry, TSMC and Samsung Electronics on September 8, converging the three leading-edge chipmakers on a transition from the semiconductor industry's decades-old 6-inch photomask to a larger 12-inch format for High NA EUV lithography. Only TSMC attached a schedule to it.",
+      "published": "2026-09-08T06:16:21+00:00"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "High-NA EUV Moves From Experiment to Manufacturing",
+      "link": "https://semiwiki.com/semiconductor-manufacturers/intel/373350-high-na-euv-moves-from-experiment-to-manufacturing/",
+      "summary": "<p class=\"isSelectedEnd\">Intel Foundry and ASML say high-numerical-aperture extreme-ultraviolet lithography has crossed an important boundary: it is no longer only a development tool, but a production technology. At the <a href=\"https://spie.org/conferences-and-exhibitions/photomask-technology-and-extreme-ultraviolet-lithography\">SPIE Photomask Technology and Extreme Ultraviolet Lithography conference</a>, the companies reported that Intel has processed &#8230; <a class=\"read-more\" href=\"https:/",
+      "published": "2026-09-08T06:00:59+00:00"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "ASML and TSMC’s 12-Inch Photomask Initiative: Technical Significance",
+      "link": "https://semiwiki.com/semiconductor-manufacturers/tsmc/373405-asml-and-tsmcs-12-inch-photomask-initiative-technical-significance/",
+      "summary": "<p>ASML and TSMC’s proposed shift from 6-inch to 12-inch photomasks is an attempt to redesign a critical but often overlooked part of advanced semiconductor manufacturing. Photomasks are precision plates carrying the circuit patterns projected by a lithography scanner onto a silicon wafer. In extreme-ultraviolet lithography,&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/semiconductor-manufacturers/tsmc/373405-asml-and-tsmcs-12-inch-photomask-initiative-technical-significance/\">Read More",
+      "published": "2026-09-08T06:00:28+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "CPO testing faces hurdles from Insertion 1 to 4, with '100% testing' expected to accelerate in 2027",
+      "link": "https://www.digitimes.com/news/a20260908PD215/cpo-testing-optics-2027.html",
+      "summary": "Co-packaged optics (CPO) has officially entered the mass-production deployment stage, but the critical testing processes responsible for safeguarding yield continue to face different challenges across Insertion 1 through Insertion 4.",
+      "published": "2026-09-08T05:57:23+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Nvidia reportedly shifts Rubin Ultra toward 8-high HBM as memory costs rise",
+      "link": "https://www.digitimes.com/news/a20260908VL207/nvidia-rubin-hbm-capacity-bandwidth.html",
+      "summary": "<p class=\"P1\">Nvidia is reportedly shifting its Rubin Ultra AI accelerator toward an eight-high high-bandwidth memory (HBM) configuration, down from an earlier 12-high design, as rising memory costs put greater emphasis on bandwidth efficiency and overall system economics.",
+      "published": "2026-09-08T04:50:52+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Kinko revenue climbs monthly, August sales jump 107%",
+      "link": "https://www.digitimes.com/news/a20260908PD220/revenue-2026-2025-sales-growth.html",
+      "summary": "Kinko announced its consolidated revenue for August 2026 on September 8, reaching NT$557 million, up 6.2% from NT$524 million in July and surging 106.8% from NT$269 million(US$17.58 million) a year earlier. It marked the company's largest year-on-year monthly revenue increase so far in 2026.",
+      "published": "2026-09-08T04:14:44+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Intel CPU prices reportedly rising 10% again as Qualcomm and MediaTek target IPC and IoT gaps",
+      "link": "https://www.digitimes.com/news/a20260908PD210/intel-cpu-pc-ipc-iot.html",
+      "summary": "Intel's PC CPU prices have continued to rise since the end of 2025, and supply chain sources said the company is expected to raise them by another 10%. Its low-margin small-core line is likely heading toward end-of-life (EOL) as CEO Lip-Bu Tan reshapes the business to cut low-margin products and lift overall profitability.",
+      "published": "2026-09-08T04:13:05+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Renewable power shortage puts Taiwan's chip cluster under scrutiny",
+      "link": "https://www.digitimes.com/news/a20260908PD218/taiwan-re100-infrastructure-electricity-renewable-energy.html",
+      "summary": "As semiconductor and AI infrastructure expansions elevate Taiwan's strategic profile on the global stage, mandates for a \"green chip\" supply chain are intensifying pressure on major manufacturers to scale up renewable energy adoption. An investigation by RE100 reveals that Taiwanese enterprises face prohibitive green power costs and severe supply constraints, leaving the island ill-equipped to satisfy its rapidly expanding industrial power demand.",
+      "published": "2026-09-08T04:10:04+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "CIOE 2026 opens in Shenzhen: 5,000 exhibitors chase the AI-driven optics boom",
+      "link": "https://www.digitimes.com/news/a20260908PD217/2026-shenzhen-communications-optoelectronics-optics.html",
+      "summary": "The 27th China International Optoelectronic Exposition (CIOE 2026) will run September 9-11 in Shenzhen, bringing together more than 5,000 exhibitors from over 30 countries and regions as AI infrastructure, high-speed optical communications and AR/VR applications reshape the optoelectronics industry.",
+      "published": "2026-09-08T04:06:03+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung allocates more than half of 4nm foundry capacity to HBM4",
+      "link": "https://www.digitimes.com/news/a20260908VL205/samsung-hbm4-capacity-4nm-hbm.html",
+      "summary": "Samsung Electronics is allocating more than half of its 4nm foundry capacity to base dies for sixth-generation high-bandwidth memory (HBM4) as it accelerates shipments to major AI chip customers. The share is estimated at 50&ndash;60% as of August, according to <em>ZDNet Korea</em>.",
+      "published": "2026-09-08T03:56:38+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Chicony targets 2027 robot startup shipments as notebook sales soften",
+      "link": "https://www.digitimes.com/news/a20260908PD208/chicony-2026-startup-robot-revenue.html",
+      "summary": "Chicony Electronics said August 2026 revenue came under pressure as higher raw-material costs and shortages of key semiconductor components slowed customer orders, with notebook shipments weakening in particular. The Taiwan-based supplier also said it had secured an exclusive position in the supply chain of a well-known U.S. robotics startup, with shipments expected to begin in 2027.",
+      "published": "2026-09-08T03:37:27+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "ViTrox rides AI demand, expands Taiwan push as Malaysia semiconductor base grows",
+      "link": "https://www.digitimes.com/news/a20260907VL216/taiwan-demand-inspection-equipment-packaging.html",
+      "summary": "After several years away from SEMICON Taiwan, Malaysia-based inspection equipment maker ViTrox returned to the show this year and has already confirmed plans to exhibit again next year, signaling a renewed push into a market where AI and advanced packaging are raising the stakes for equipment suppliers.",
+      "published": "2026-09-08T03:05:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Taiwan panel capacity shifts push TV brands to stock up as LCD price declines slow",
+      "link": "https://www.digitimes.com/news/a20260908PD214/panel-tv-price-lcd-tv-panel-capacity.html",
+      "summary": "The global LCD TV panel market is gradually moving toward supply-demand balance as activity recovers across the supply chain, with price declines expected to ease in September. The improvement reflects a pickup in third-quarter demand, along with market expectations that Chinese panel makers could cut production around China's National Day holiday in early October.",
+      "published": "2026-09-08T02:33:14+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Huawei Kirin 9050 Pro puts LogicFolding to the test with 55% density gain, 66% lower NPU power",
+      "link": "https://www.digitimes.com/news/a20260908VL200/huawei-kirin-npu-transistor-performance.html",
+      "summary": "Huawei's Kirin 9050 Pro is the first commercial test of its Tau Scaling Law, with the company claiming a 55% increase in transistor density at the same process node while cutting NPU, GPU and CPU performance-core power by 66%, 58% and 41%, respectively.",
+      "published": "2026-09-08T02:05:02+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Privacy displays become a premium smartphone battleground as Huawei brings one to a foldable",
+      "link": "https://www.digitimes.com/news/a20260908VL201/huawei-samsung-display-design-foldable.html",
+      "summary": "<p class=\"P1\">Huawei's Mate XT 2 combines an inward-folding tri-fold design with a built-in hardware privacy display, bringing two concepts already prominent in Samsung's premium smartphones into one device. The overlap reflects a broader shift in foldables toward screen protection, privacy and everyday usability.",
+      "published": "2026-09-08T02:00:59+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Adata, Team Group post record August revenue as memory module makers build inventory for 2027",
+      "link": "https://www.digitimes.com/news/a20260907PD242/adata-team-group-memory-module-inventory-revenue-2027.html",
+      "summary": "Major Taiwanese memory module manufacturers saw revenue remain at high levels in August 2026, as memory prices continued to rise. Adata Technology and Team Group both posted record-high single-month revenue in August. Industry players believe demand will continue to be strong in the artificial intelligence (AI) market, with prices expected to continue rising in the third quarter. As supply is anticipated to tighten further in 2027, inventory management and market positioning will become critical",
+      "published": "2026-09-08T01:42:12+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "TSMC's co-COO left ITRI in 1987 for a startup foundry &mdash; ITRI just named him a laureate",
+      "link": "https://www.digitimes.com/news/a20260907PD239/tsmc-manufacturing-itri-taiwan-development.html",
+      "summary": "TSMC Executive Vice President and Co-Chief Operating Officer Y.P. Chin was named an Industrial Technology Research Institute (ITRI) Laureate on September 7, marking another milestone in a semiconductor career spanning nearly four decades.",
+      "published": "2026-09-08T01:21:15+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Nvidia underwrites its own demand; that may be harder to copy than its chips",
+      "link": "https://www.digitimes.com/news/a20260907PD214/nvidia-financing-supply-chain-chips-capacity.html",
+      "summary": "Venture capital firm a16z recently hosted investor Gavin Baker and a16z partner David George for a discussion on Nvidia's competitive position. Baker argued that CEO Jensen Huang has built a formidable moat around a strategy of being \"vertically integrated but horizontally open.\"",
+      "published": "2026-09-08T01:16:36+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "SK Hynix weighs Gwangju investment as Yongin buildout continues",
+      "link": "https://www.digitimes.com/news/a20260907VL209/sk-hynix-investment-equipment-infrastructure-development.html",
+      "summary": "SK Hynix is considering accelerating investment in South Korea's planned Gwangju semiconductor cluster so that development proceeds alongside its ongoing Yongin buildout, rather than waiting for Yongin to advance further, according to <em>Dealsite</em>, citing industry sources. The potential overlap is raising a key question for semiconductor equipment suppliers: whether Gwangju will generate additional orders or absorb some spending previously expected for later stages of Yongin.",
+      "published": "2026-09-07T23:53:20+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Corning targets AI bottlenecks with glass substrates, optics for high-speed data transmission",
+      "link": "https://www.digitimes.com/news/a20260907PD227/corning-data-transmission-optics-packaging.html",
+      "summary": "As AI processors advance toward higher compute density, larger package footprints, and increased bandwidth demands, advanced packaging and high-speed data transmission have emerged as critical bottlenecks for AI infrastructure. Corning is expanding the deployment of advanced glass solutions across packaging, glass substrates, and optical communications, while partnering with ecosystem players to qualify next-generation glass substrates and through-glass via (TGV) technologies.",
+      "published": "2026-09-07T23:51:13+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "SST market grows 32% as global players race to secure position",
+      "link": "https://www.digitimes.com/news/a20260907PD229/ai-server-market-data-center-infrastructure-data.html",
+      "summary": "As AI server computing power and per-rack power density continue to rise, traditional 54VDC power architectures are hitting bottlenecks such as excessive current, higher copper usage, and greater transmission losses. This is pushing next-generation AI data center power designs toward 800V high-voltage direct current (HVDC).",
+      "published": "2026-09-07T23:50:38+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Taiwan and Saxony start building the talent pipeline behind TSMC's German fab",
+      "link": "https://www.digitimes.com/news/a20260907PD238/tsmc-germany-taiwan-fab-investment.html",
+      "summary": "TSMC's investment in a fab in Germany's Free State of Saxony has drawn close attention from across Europe. Eva Ins Obergfell, Rector of Leipzig University, one of Germany's leading universities, recently visited Taiwan and toured National Taiwan University and National Tsing Hua University, among others, to explore ideas for research cooperation. Experts said Taiwan and Germany had opportunities to build long-term partnerships in quantum sensing technology, semiconductor materials processes and ",
+      "published": "2026-09-07T23:50:17+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Acer Asia units post double-digit growth on strong AI orders",
+      "link": "https://www.digitimes.com/news/a20260907PD225/acer-growth-asia-revenue-altos-computing.html",
+      "summary": "Acer's Asia operations posted double-digit revenue growth at three subsidiaries in the first half of 2026, led by Altos Computing, Acerpure, and Highpoint Service Network. Altos is seeing particularly strong demand for AI servers, prompting Acer's president of Pan-Asia Pacific operations Andrew Hou to say the unit will need to double its headcount to meet customer demand.",
+      "published": "2026-09-07T23:49:15+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "FitTech shifts from LED to optical communications, eyes InP relief",
+      "link": "https://www.digitimes.com/news/a20260907PD222/communications-inp-testing-market-2026.html",
+      "summary": "FitTech is pivoting away from the crowded LED market into optical communications, with outsourced chip testing and sorting orders set to rise month by month from the third quarter as a shortage of indium phosphide (InP) materials that had constrained shipments in the first half of 2026 gradually eases. The company said it has already secured outsourced orders from at least two major customers, while downstream customers have recently raised their 2027 order outlook.",
+      "published": "2026-09-07T23:48:05+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Black Sesame, Horizon Robotics unveil China's smart driving chip race",
+      "link": "https://www.digitimes.com/news/a20260907PD220/horizon-robotics-market-revenue-2026-black-sesame-technologies.html",
+      "summary": "<p class=\"P1\">China's intelligent driving market continues to surge, with Black Sesame Technologies and Horizon Robotics both reporting solid top-line revenue growth for the first half of 2026. Highlighting the rapid commercialization curve, Horizon Robotics announced on September 3 that cumulative mass production of its Journey series smart driving processors surpassed 15 million units&mdash;signaling that competition in China's automotive IC sector is shifting from raw computing battles to lar",
+      "published": "2026-09-07T23:43:33+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Innolux, AUO take display technology into AI chips with FOPLP, glass substrates, Micro LED CPO",
+      "link": "https://www.digitimes.com/news/a20260907PD215/innolux-display-auo-cpo-foplp.html",
+      "summary": "AI demand is accelerating advanced packaging and high-speed optical interconnect development, pushing Taiwan display makers Innolux and AUO deeper into the semiconductor supply chain.",
+      "published": "2026-09-07T23:42:23+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "AI demand gives Aspeed visibility into 2027 as supply constraints ease",
+      "link": "https://www.digitimes.com/news/a20260907PD204/2027-demand-2026-chairman-growth.html",
+      "summary": "Aspeed chairman Chris Lin said the company's order visibility has now extended into 2027, with 2027 backlog already exceeding expected full-year 2026 revenue for the first time. He added that easing supply-chain bottlenecks should support sequential growth in the second half of 2026 and stronger pricing from the fourth quarter onward.",
+      "published": "2026-09-07T23:39:25+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Taiwan sets out 2027 plan to reinforce AI, chip leadership",
+      "link": "https://www.digitimes.com/news/a20260907PD201/taiwan-ai-chip-2027-technology-packaging.html",
+      "summary": "Taiwan plans to deepen its role in global technology supply chains as demand for AI chips, advanced packaging, and memory tightens worldwide. A new policy agenda aims to bolster semiconductor output, expand AI deployment, and strengthen resilience in industries that affect manufacturers, investors, and consumers across regions.",
+      "published": "2026-09-07T23:37:07+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "SK Hynix reportedly ends LG eSSD talks as ASICLAND deal expands",
+      "link": "https://www.digitimes.com/news/a20260907VL218/sk-hynix-design-lg-outsourcing-lg-electronics.html",
+      "summary": "SK Hynix reportedly ended talks with LG Electronics over outsourcing part of the backend design for a next-generation enterprise SSD (eSSD) controller, but the memory maker told <em>DIGITIMES</em> that it had not discussed commissioning eSSD controller design work.",
+      "published": "2026-09-07T09:51:01+00:00"
     }
   ]
 }
