@@ -329,12 +329,11 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
 
   const isDownTier = (tierKey === 'down');
   const coreWidth = isDownTier ? 140 : 150;
-  const coreHeight = isDownTier ? 44 : 48;
+  const coreHeight = isDownTier ? 54 : 58;  // 核心方塊高度加大 10px
   const nodeWidth = isDownTier ? 88 : 96;
-  const nodeHeight = isDownTier ? 34 : 36;
+  const nodeHeight = isDownTier ? 44 : 46; // 一般方塊高度由原本的 34~36px 加大至 44~46px (增加10px)
   const gap = 6;
 
-  // 動態判定欄數 (1 欄 / 2 欄 / 3 欄)
   let maxPerSide = 1; 
   if (others.length > 8) {
     maxPerSide = 3;
@@ -342,12 +341,9 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     maxPerSide = 2;
   }
 
-  // 設定頂部基礎起點偏移量
   let topOffsetY = 50;
-
-  // 【新增需求】：若為下游且兩側公司總數 > 8（開啓 3 欄時），起始位置向下加 100px
   if (isDownTier && others.length > 8) {
-    topOffsetY += 75;
+    topOffsetY += 100;
   }
 
   const coreX = centerX - coreWidth / 2;
@@ -372,9 +368,9 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftRows = Math.ceil(leftCount / maxPerSide);
   const rightRows = Math.ceil(rightCount / maxPerSide);
   const maxRows = Math.max(1, leftRows, rightRows);
-  const rowHeight = nodeHeight + 4; 
+  const rowHeight = nodeHeight + 6; // 行距稍微調整，避免重疊
 
-  const sideBlockHeight = maxRows * rowHeight - 4;
+  const sideBlockHeight = maxRows * rowHeight - 6;
   const sideStartY = coreY + (coreHeight - sideBlockHeight) / 2;
 
   let leftIdx = 0, rightIdx = 0;
@@ -492,6 +488,7 @@ function renderSVG(data) {
     svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="${strokeWidth}" ${dashAttr} ${marker} opacity="${opacity}"/>`;
   });
 
+  // 繪製節點文字（包含自動換行與對中對齊邏輯）
   Object.entries(nodePositions).forEach(([id, p]) => {
     const tierInfo = TIER_LAYOUT[p.tier];
     const node = p.node;
@@ -500,16 +497,36 @@ function renderSVG(data) {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.coreFill} core-stroke"/>`;
       const labelText = "⭐ " + node.label;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.7)}" text-anchor="middle" dominant-baseline="central" font-size="9.5" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
+        // 判讀第二行文字長度，若 > 10 個字自動拆兩行
+        if (node.sub.length > 10) {
+          const midIdx = Math.ceil(node.sub.length / 2);
+          const line1 = node.sub.substring(0, midIdx);
+          const line2 = node.sub.substring(midIdx);
+          svg += `<text x="${p.cx}" y="${p.y + 16}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + 32}" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${line1}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + 44}" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${line2}</text>`;
+        } else {
+          svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.7)}" text-anchor="middle" dominant-baseline="central" font-size="9.5" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
+        }
       } else {
         svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
       }
     } else {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="5" class="${tierInfo.fillClass}"/>`;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.72)}" text-anchor="middle" dominant-baseline="central" font-size="8.5" class="${tierInfo.subText}">${node.sub}</text>`;
+        // 一般公司副標題：若超過 9 個字元，自動對半切開並置中繪製兩行
+        if (node.sub.length > 9) {
+          const midIdx = Math.ceil(node.sub.length / 2);
+          const line1 = node.sub.substring(0, midIdx);
+          const line2 = node.sub.substring(midIdx);
+          svg += `<text x="${p.cx}" y="${p.y + 12}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + 25}" text-anchor="middle" dominant-baseline="central" font-size="8" class="${tierInfo.subText}">${line1}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + 36}" text-anchor="middle" dominant-baseline="central" font-size="8" class="${tierInfo.subText}">${line2}</text>`;
+        } else {
+          svg += `<text x="${p.cx}" y="${p.y + 14}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+          svg += `<text x="${p.cx}" y="${p.y + 30}" text-anchor="middle" dominant-baseline="central" font-size="8.5" class="${tierInfo.subText}">${node.sub}</text>`;
+        }
       } else {
         svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
       }
