@@ -1,13 +1,21 @@
 {
-  "latest": "2026-W22",
+  "latest": "2026-W33",
   "weeks": [
+    {
+      "week": "2026-W33",
+      "date": "2026-08-15",
+      "title": "AI 伺服器輪動白熱化 · Rubin 全面量產、HBM4 出貨",
+      "file": "supplychain-2026-W33.json",
+      "node_count": 30,
+      "edge_count": 47
+    },
     {
       "week": "2026-W22",
       "date": "2026-05-26",
       "title": "AI 軍備競賽全面升級 · HBM4 量產在即",
       "file": "supplychain-2026-W22.json",
       "node_count": 23,
-      "edge_count": 28
+      "edge_count": 29
     },
     {
       "week": "2026-W21",
