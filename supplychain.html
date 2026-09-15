@@ -324,9 +324,8 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  // 左側邊界設定為 160px，獨占留給「上/中/下游」標題
   const tierStartX = 160;
-  const centerX = 25 + 710 / 2; // 核心公司完美置中 (x=380 附近)
+  const centerX = 25 + 710 / 2;
 
   const isDownTier = (tierKey === 'down');
   const coreWidth = isDownTier ? 140 : 150;
@@ -335,9 +334,24 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const nodeHeight = isDownTier ? 34 : 36;
   const gap = 6;
 
+  // 動態判定欄數 (1 欄 / 2 欄 / 3 欄)
+  let maxPerSide = 1; 
+  if (others.length > 8) {
+    maxPerSide = 3;
+  } else if (others.length > 6) {
+    maxPerSide = 2;
+  }
+
+  // 設定頂部基礎起點偏移量
+  let topOffsetY = 50;
+
+  // 【新增需求】：若為下游且兩側公司總數 > 8（開啓 3 欄時），起始位置向下加 100px
+  if (isDownTier && others.length > 8) {
+    topOffsetY += 100;
+  }
+
   const coreX = centerX - coreWidth / 2;
-  // 公司節點往下移 50px，完全遠離頂部標題區域
-  const coreY = tierY + 50;
+  const coreY = tierY + topOffsetY;
 
   positions[coreNode.id] = {
     x: coreX, y: coreY, width: coreWidth, height: coreHeight,
@@ -347,19 +361,6 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
 
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
-
-  // ==========================================
-  // 【新欄位規則】：依據除核心外的公司數量動態決定單側欄數
-  // 1. 公司數 <= 6：單側 1 欄
-  // 2. 公司數 > 6 且 <= 8：單側 2 欄
-  // 3. 公司數 > 8：單側 3 欄
-  // ==========================================
-  let maxPerSide = 1; 
-  if (others.length > 8) {
-    maxPerSide = 3;
-  } else if (others.length > 6) {
-    maxPerSide = 2;
-  }
 
   let leftCount = 0;
   let rightCount = 0;
@@ -402,13 +403,11 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     };
   });
 
-  // 計算該層級所有公司節點的最底部位置
   let maxBottom = coreY + coreHeight;
   Object.values(positions).forEach(p => {
     if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
   });
 
-  // 加上 35px 充足留白，確保下邊框完整打包所有公司
   const tierHeight = (maxBottom - tierY) + 35;
   return { positions, tierHeight };
 }
