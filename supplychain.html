@@ -324,15 +324,15 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  const tierStartX = 60;
-  const tierWidth = 560;
+  const tierStartX = 20;
+  const tierWidth = 640;
   const centerX = tierStartX + tierWidth / 2;
 
   const coreWidth = 180;
-  const coreHeight = 60;
-  const nodeWidth = 120;
-  const nodeHeight = 44;
-  const gap = 10;
+  const coreHeight = 50;
+  const nodeWidth = 100;
+  const nodeHeight = 36;
+  const gap = 6;
 
   const coreX = centerX - coreWidth / 2;
   const coreY = tierY + 50;
@@ -359,7 +359,7 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftRows = Math.ceil(leftCount / maxPerSide);
   const rightRows = Math.ceil(rightCount / maxPerSide);
   const maxRows = Math.max(1, leftRows, rightRows);
-  const rowHeight = nodeHeight + 8;
+  const rowHeight = nodeHeight + 4;
 
   const sideBlockHeight = maxRows * rowHeight - 8;
   const sideStartY = coreY + (coreHeight - sideBlockHeight) / 2;
@@ -409,17 +409,17 @@ function renderSVG(data) {
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
   const upHeight = Math.max(140, upLayout.tierHeight);
-  cursorY += upHeight + 30;
+  cursorY += upHeight + 15;
 
   const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
   const midY = cursorY;
   const midHeight = Math.max(140, midLayout.tierHeight);
-  cursorY += midHeight + 30;
+  cursorY += midHeight + 15;
 
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
   const downHeight = Math.max(140, downLayout.tierHeight);
-  cursorY += downHeight + 50;
+  cursorY += downHeight + 15;
 
   nodePositions = {
     ...upLayout.positions,
@@ -434,15 +434,15 @@ function renderSVG(data) {
     { tier: "down", y: downY, height: downHeight }
   ];
 
-  let svg = `<svg viewBox="0 0 680 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
+  let svg = `<svg viewBox="0 0 7200 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
   svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
 
-  svg += `<text x="340" y="28" text-anchor="middle" font-size="16" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
+  svg += `<text x="340" y="28" text-anchor="middle" font-size="16" font-weight="680" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
     svg += `<rect x="40" y="${t.y}" width="600" height="${t.height}" rx="14" class="${info.fillClass}"/>`;
-    svg += `<text x="60" y="${t.y + 28}" font-size="14" font-weight="500" class="${info.textClass}">${info.label}</text>`;
+    svg += `<text x="60" y="${t.y + 28}" font-size="14" font-weight="680" class="${info.textClass}">${info.label}</text>`;
   });
 
   data.edges.forEach(e => {
