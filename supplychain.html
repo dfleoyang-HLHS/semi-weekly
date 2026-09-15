@@ -237,7 +237,7 @@ const REL_COLORS = {
 
 const TIER_LAYOUT = {
   up:   { y: 50,  fillClass: "tier-fill-up",   textClass: "tier-text-up",   nodeText: "node-text-up",   subText: "subtitle-up",   coreFill: "core-fill-up",   coreText: "core-text-up",   label: "上游 · 材料與設備" },
-  mid:  { y: 0,   fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  coreFill: "core-fill-down", coreText: "core-text-mid",  label: "中游 · 晶圓代工與封測" },
+  mid:  { y: 0,   fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  coreFill: "core-fill-mid",  coreText: "core-text-mid",  label: "中游 · 晶圓代工與封測" },
   down: { y: 0,   fillClass: "tier-fill-down", textClass: "tier-text-down", nodeText: "node-text-down", subText: "subtitle-down", coreFill: "core-fill-down", coreText: "core-text-down", label: "下游 · IC 設計與系統廠" }
 };
 
@@ -328,16 +328,16 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const tierWidth = 710;
   const centerX = tierStartX + tierWidth / 2;
 
-  // 【方式 3】：針對下游 (down) 自動啟用緊縮的獨立尺寸
   const isDownTier = (tierKey === 'down');
   const coreWidth = isDownTier ? 140 : 150;
   const coreHeight = isDownTier ? 44 : 48;
-  const nodeWidth = isDownTier ? 90 : 100;   // 下游寬度縮減為 90px
-  const nodeHeight = isDownTier ? 34 : 36;  // 下游高度縮減為 34px
-  const gap = isDownTier ? 6 : 8;            // 下游間距縮減為 6px
+  const nodeWidth = isDownTier ? 90 : 100;
+  const nodeHeight = isDownTier ? 34 : 36;
+  const gap = isDownTier ? 6 : 8;
 
   const coreX = centerX - coreWidth / 2;
-  const coreY = tierY + 40;
+  // 【重要修正】：核心公司向下移動 50px，預留頂部 50px 給「上/中/下游標題」獨佔空間
+  const coreY = tierY + 50;
 
   positions[coreNode.id] = {
     x: coreX, y: coreY, width: coreWidth, height: coreHeight,
@@ -348,7 +348,6 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
 
-  // 【方式 1】：若該區塊廠商數大於 10 家 (例如下游 14 家)，單側自動開啓雙欄 (maxPerSide = 2)
   let maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
   if (tierNodes.length > 10) {
     maxPerSide = 2;
@@ -377,6 +376,7 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     if (side === "left") {
       row = Math.floor(leftIdx / maxPerSide);
       col = leftIdx % maxPerSide;
+      // 【修正】：左側欄位由外向中心對齊，絕不重疊核心節點與標題
       x = leftLimit - (col + 1) * nodeWidth - col * gap;
       y = sideStartY + row * rowHeight;
       leftIdx++;
@@ -400,7 +400,7 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
   });
 
-  const tierHeight = (maxBottom - tierY) + 16;
+  const tierHeight = (maxBottom - tierY) + 20;
   return { positions, tierHeight };
 }
 
@@ -414,20 +414,17 @@ function renderSVG(data) {
   
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
-  const upHeight = Math.max(100, upLayout.tierHeight);
-  cursorY += upHeight + 16;
+  const upHeight = Math.max(120, upLayout.tierHeight);
+  cursorY += upHeight + 20;
 
   const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
   const midY = cursorY;
-  const midHeight = Math.max(100, midLayout.tierHeight);
-  cursorY += midHeight + 16;
+  const midHeight = Math.max(120, midLayout.tierHeight);
+  cursorY += midHeight + 20;
 
-  // 【方式 2】：為下游提供更大的最小預留高度 (180px) 與額外垂直緩衝 (+20px)
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
   const downHeight = Math.max(180, downLayout.tierHeight + 20); 
-  
-  // 【方式 2】：將畫布最底部的留白加大至 45px，防止底部文字被切到
   cursorY += downHeight + 45; 
 
   nodePositions = {
@@ -448,10 +445,11 @@ function renderSVG(data) {
 
   svg += `<text x="380" y="22" text-anchor="middle" font-size="15" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
+  // 【重要修正】：標題獨立繪製在 t.y + 26 上方區域，避開所有下方節點
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
     svg += `<rect x="15" y="${t.y}" width="730" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
-    svg += `<text x="30" y="${t.y + 22}" font-size="13" font-weight="500" class="${info.textClass}">${info.label}</text>`;
+    svg += `<text x="30" y="${t.y + 26}" font-size="14" font-weight="700" class="${info.textClass}">${info.label}</text>`;
   });
 
   data.edges.forEach(e => {
