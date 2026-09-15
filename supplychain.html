@@ -343,11 +343,11 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   }
 
   // 設定頂部基礎起點偏移量
-  let topOffsetY = 50;
+  let topOffsetY = 40;
 
   // 【新增需求】：若為下游且兩側公司總數 > 8（開啓 3 欄時），起始位置向下加 100px
   if (isDownTier && others.length > 8) {
-    topOffsetY += 100;
+    topOffsetY += 60;
   }
 
   const coreX = centerX - coreWidth / 2;
