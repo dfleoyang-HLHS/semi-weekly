@@ -237,7 +237,7 @@ const REL_COLORS = {
 
 const TIER_LAYOUT = {
   up:   { y: 50,  fillClass: "tier-fill-up",   textClass: "tier-text-up",   nodeText: "node-text-up",   subText: "subtitle-up",   coreFill: "core-fill-up",   coreText: "core-text-up",   label: "上游 · 材料與設備" },
-  mid:  { y: 0,   fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  coreFill: "core-fill-mid",  coreText: "core-text-mid",  label: "中游 · 晶圓代工與封測" },
+  mid:  { y: 0,   fillClass: "tier-fill-mid",  textClass: "tier-text-mid",  nodeText: "node-text-mid",  subText: "subtitle-mid",  coreFill: "core-fill-down", coreText: "core-text-mid",  label: "中游 · 晶圓代工與封測" },
   down: { y: 0,   fillClass: "tier-fill-down", textClass: "tier-text-down", nodeText: "node-text-down", subText: "subtitle-down", coreFill: "core-fill-down", coreText: "core-text-down", label: "下游 · IC 設計與系統廠" }
 };
 
@@ -324,20 +324,20 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  // 【方案一修改】：拉大橫向繪製寬度與邊界
   const tierStartX = 25;
   const tierWidth = 710;
   const centerX = tierStartX + tierWidth / 2;
 
-  // 【方案一與二修改】：微縮節點寬度與高度、縮減間距與行距
-  const coreWidth = 150;     // 原 180
-  const coreHeight = 48;     // 原 60
-  const nodeWidth = 100;     // 原 120
-  const nodeHeight = 36;     // 原 44
-  const gap = 8;             // 原 10
+  // 【方式 3】：針對下游 (down) 自動啟用緊縮的獨立尺寸
+  const isDownTier = (tierKey === 'down');
+  const coreWidth = isDownTier ? 140 : 150;
+  const coreHeight = isDownTier ? 44 : 48;
+  const nodeWidth = isDownTier ? 90 : 100;   // 下游寬度縮減為 90px
+  const nodeHeight = isDownTier ? 34 : 36;  // 下游高度縮減為 34px
+  const gap = isDownTier ? 6 : 8;            // 下游間距縮減為 6px
 
   const coreX = centerX - coreWidth / 2;
-  const coreY = tierY + 40;  // 頂部邊界緊縮 (原 +50)
+  const coreY = tierY + 40;
 
   positions[coreNode.id] = {
     x: coreX, y: coreY, width: coreWidth, height: coreHeight,
@@ -348,8 +348,11 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
 
-  // 自動計算單側每行可容納的最大數量
-  const maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
+  // 【方式 1】：若該區塊廠商數大於 10 家 (例如下游 14 家)，單側自動開啓雙欄 (maxPerSide = 2)
+  let maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
+  if (tierNodes.length > 10) {
+    maxPerSide = 2;
+  }
 
   let leftCount = 0;
   let rightCount = 0;
@@ -361,8 +364,6 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftRows = Math.ceil(leftCount / maxPerSide);
   const rightRows = Math.ceil(rightCount / maxPerSide);
   const maxRows = Math.max(1, leftRows, rightRows);
-  
-  // 【方案二修改】：將行高差距縮小（高 36px + 4px 間距）
   const rowHeight = nodeHeight + 4; 
 
   const sideBlockHeight = maxRows * rowHeight - 4;
@@ -398,10 +399,8 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   Object.values(positions).forEach(p => {
     if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
   });
-  
-  // 【方案二修改】：下方留白 padding 緊縮至 16px (原 +30)
-  const tierHeight = (maxBottom - tierY) + 16;
 
+  const tierHeight = (maxBottom - tierY) + 16;
   return { positions, tierHeight };
 }
 
@@ -411,9 +410,8 @@ function renderSVG(data) {
   const midNodes = data.nodes.filter(n => n.tier === "mid");
   const downNodes = data.nodes.filter(n => n.tier === "down");
 
-  let cursorY = 40; // 頂部標題與背景框距離緊縮
+  let cursorY = 40;
   
-  // 【方案二修改】：層級與層級之間的垂直間距從 30~50 壓縮至 16~24
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
   const upHeight = Math.max(100, upLayout.tierHeight);
@@ -424,10 +422,13 @@ function renderSVG(data) {
   const midHeight = Math.max(100, midLayout.tierHeight);
   cursorY += midHeight + 16;
 
+  // 【方式 2】：為下游提供更大的最小預留高度 (180px) 與額外垂直緩衝 (+20px)
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
-  const downHeight = Math.max(100, downLayout.tierHeight);
-  cursorY += downHeight + 24;
+  const downHeight = Math.max(180, downLayout.tierHeight + 20); 
+  
+  // 【方式 2】：將畫布最底部的留白加大至 45px，防止底部文字被切到
+  cursorY += downHeight + 45; 
 
   nodePositions = {
     ...upLayout.positions,
@@ -442,13 +443,11 @@ function renderSVG(data) {
     { tier: "down", y: downY, height: downHeight }
   ];
 
-  // 【方案一修改】：寬度由 680 放寬至 760，中心點位於 380
   let svg = `<svg viewBox="0 0 760 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
   svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
 
   svg += `<text x="380" y="22" text-anchor="middle" font-size="15" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
-  // 【方案一修改】：背景框寬度由 600 拉大至 730
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
     svg += `<rect x="15" y="${t.y}" width="730" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
@@ -496,23 +495,23 @@ function renderSVG(data) {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.coreFill} core-stroke"/>`;
       const labelText = "⭐ " + node.label;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + 34}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.7)}" text-anchor="middle" dominant-baseline="central" font-size="9.5" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
       }
     } else {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="5" class="${tierInfo.fillClass}"/>`;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + 13}" text-anchor="middle" dominant-baseline="central" font-size="10.5" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + 26}" text-anchor="middle" dominant-baseline="central" font-size="9" class="${tierInfo.subText}">${node.sub}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.72)}" text-anchor="middle" dominant-baseline="central" font-size="8.5" class="${tierInfo.subText}">${node.sub}</text>`;
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="10.5" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
       }
     }
   });
 
-  svg += `<text x="380" y="${svgHeight - 8}" text-anchor="middle" font-size="10.5" class="sc-helper-text">${data.nodes.length} 家公司 · ${data.edges.length} 條關係 · ${data.date}</text>`;
+  svg += `<text x="380" y="${svgHeight - 12}" text-anchor="middle" font-size="10.5" class="sc-helper-text">${data.nodes.length} 家公司 · ${data.edges.length} 條關係 · ${data.date}</text>`;
   svg += `</svg>`;
 
   document.getElementById("svg-container").innerHTML = svg;
