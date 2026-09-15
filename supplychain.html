@@ -324,8 +324,8 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  const tierStartX = 25;
-  const tierWidth = 710;
+  const tierStartX = 160;
+  const tierWidth = 710-135;
   const centerX = tierStartX + tierWidth / 2;
 
   const isDownTier = (tierKey === 'down');
@@ -414,17 +414,17 @@ function renderSVG(data) {
   
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
-  const upHeight = Math.max(120, upLayout.tierHeight);
+  const upHeight = Math.max(130, upLayout.tierHeight);
   cursorY += upHeight + 20;
 
   const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
   const midY = cursorY;
-  const midHeight = Math.max(120, midLayout.tierHeight);
+  const midHeight = Math.max(130, midLayout.tierHeight);
   cursorY += midHeight + 20;
 
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
-  const downHeight = Math.max(180, downLayout.tierHeight + 20); 
+  const downHeight = Math.max(260, downLayout.tierHeight + 20); 
   cursorY += downHeight + 45; 
 
   nodePositions = {
