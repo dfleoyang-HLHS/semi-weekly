@@ -318,24 +318,26 @@ function findCoreNodes(tierNodes, connectionCount) {
 
 function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const positions = {};
-  if (!tierNodes.length) return { positions, tierHeight: 100 };
+  if (!tierNodes.length) return { positions, tierHeight: 80 };
 
   const sorted = findCoreNodes(tierNodes, connectionCount);
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  const tierStartX = 20;
-  const tierWidth = 640;
+  // 【方案一修改】：拉大橫向繪製寬度與邊界
+  const tierStartX = 25;
+  const tierWidth = 710;
   const centerX = tierStartX + tierWidth / 2;
 
-  const coreWidth = 180;
-  const coreHeight = 50;
-  const nodeWidth = 100;
-  const nodeHeight = 36;
-  const gap = 6;
+  // 【方案一與二修改】：微縮節點寬度與高度、縮減間距與行距
+  const coreWidth = 150;     // 原 180
+  const coreHeight = 48;     // 原 60
+  const nodeWidth = 100;     // 原 120
+  const nodeHeight = 36;     // 原 44
+  const gap = 8;             // 原 10
 
   const coreX = centerX - coreWidth / 2;
-  const coreY = tierY + 50;
+  const coreY = tierY + 40;  // 頂部邊界緊縮 (原 +50)
 
   positions[coreNode.id] = {
     x: coreX, y: coreY, width: coreWidth, height: coreHeight,
@@ -345,8 +347,8 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
 
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
-  const rightLimit = tierStartX + tierWidth;
 
+  // 自動計算單側每行可容納的最大數量
   const maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
 
   let leftCount = 0;
@@ -359,9 +361,11 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftRows = Math.ceil(leftCount / maxPerSide);
   const rightRows = Math.ceil(rightCount / maxPerSide);
   const maxRows = Math.max(1, leftRows, rightRows);
-  const rowHeight = nodeHeight + 4;
+  
+  // 【方案二修改】：將行高差距縮小（高 36px + 4px 間距）
+  const rowHeight = nodeHeight + 4; 
 
-  const sideBlockHeight = maxRows * rowHeight - 8;
+  const sideBlockHeight = maxRows * rowHeight - 4;
   const sideStartY = coreY + (coreHeight - sideBlockHeight) / 2;
 
   let leftIdx = 0, rightIdx = 0;
@@ -394,7 +398,9 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   Object.values(positions).forEach(p => {
     if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
   });
-  const tierHeight = (maxBottom - tierY) + 30;
+  
+  // 【方案二修改】：下方留白 padding 緊縮至 16px (原 +30)
+  const tierHeight = (maxBottom - tierY) + 16;
 
   return { positions, tierHeight };
 }
@@ -405,21 +411,23 @@ function renderSVG(data) {
   const midNodes = data.nodes.filter(n => n.tier === "mid");
   const downNodes = data.nodes.filter(n => n.tier === "down");
 
-  let cursorY = 50;
+  let cursorY = 40; // 頂部標題與背景框距離緊縮
+  
+  // 【方案二修改】：層級與層級之間的垂直間距從 30~50 壓縮至 16~24
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
-  const upHeight = Math.max(140, upLayout.tierHeight);
-  cursorY += upHeight + 15;
+  const upHeight = Math.max(100, upLayout.tierHeight);
+  cursorY += upHeight + 16;
 
   const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
   const midY = cursorY;
-  const midHeight = Math.max(140, midLayout.tierHeight);
-  cursorY += midHeight + 15;
+  const midHeight = Math.max(100, midLayout.tierHeight);
+  cursorY += midHeight + 16;
 
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
-  const downHeight = Math.max(140, downLayout.tierHeight);
-  cursorY += downHeight + 15;
+  const downHeight = Math.max(100, downLayout.tierHeight);
+  cursorY += downHeight + 24;
 
   nodePositions = {
     ...upLayout.positions,
@@ -434,15 +442,17 @@ function renderSVG(data) {
     { tier: "down", y: downY, height: downHeight }
   ];
 
-  let svg = `<svg viewBox="0 0 7200 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
+  // 【方案一修改】：寬度由 680 放寬至 760，中心點位於 380
+  let svg = `<svg viewBox="0 0 760 ${svgHeight}" role="img" aria-label="供應鏈關係圖">`;
   svg += `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>`;
 
-  svg += `<text x="340" y="28" text-anchor="middle" font-size="16" font-weight="680" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
+  svg += `<text x="380" y="22" text-anchor="middle" font-size="15" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
+  // 【方案一修改】：背景框寬度由 600 拉大至 730
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
-    svg += `<rect x="40" y="${t.y}" width="600" height="${t.height}" rx="14" class="${info.fillClass}"/>`;
-    svg += `<text x="60" y="${t.y + 28}" font-size="14" font-weight="680" class="${info.textClass}">${info.label}</text>`;
+    svg += `<rect x="15" y="${t.y}" width="730" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
+    svg += `<text x="30" y="${t.y + 22}" font-size="13" font-weight="500" class="${info.textClass}">${info.label}</text>`;
   });
 
   data.edges.forEach(e => {
@@ -483,26 +493,26 @@ function renderSVG(data) {
     const node = p.node;
 
     if (p.isCore) {
-      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="8" class="${tierInfo.coreFill} core-stroke"/>`;
+      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.coreFill} core-stroke"/>`;
       const labelText = "⭐ " + node.label;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + 24}" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + 44}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 34}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
       }
     } else {
-      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.fillClass}"/>`;
+      svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="5" class="${tierInfo.fillClass}"/>`;
       if (node.sub) {
-        svg += `<text x="${p.cx}" y="${p.y + 18}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-        svg += `<text x="${p.cx}" y="${p.y + 33}" text-anchor="middle" dominant-baseline="central" font-size="10" class="${tierInfo.subText}">${node.sub}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 13}" text-anchor="middle" dominant-baseline="central" font-size="10.5" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        svg += `<text x="${p.cx}" y="${p.y + 26}" text-anchor="middle" dominant-baseline="central" font-size="9" class="${tierInfo.subText}">${node.sub}</text>`;
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="10.5" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
       }
     }
   });
 
-  svg += `<text x="340" y="${svgHeight - 12}" text-anchor="middle" font-size="11" class="sc-helper-text">${data.nodes.length} 家公司 · ${data.edges.length} 條關係 · ${data.date}</text>`;
+  svg += `<text x="380" y="${svgHeight - 8}" text-anchor="middle" font-size="10.5" class="sc-helper-text">${data.nodes.length} 家公司 · ${data.edges.length} 條關係 · ${data.date}</text>`;
   svg += `</svg>`;
 
   document.getElementById("svg-container").innerHTML = svg;
