@@ -138,6 +138,17 @@
   margin-top: 8px;
   font-style: italic;
 }
+
+.us-no-data {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 20px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--text-dim);
+  font-size: 14px;
+}
 </style>
 </head>
 <body>
@@ -170,7 +181,7 @@
   </div>
 
   <div class="us-filter">
-    <button class="us-filter-btn active" data-filter="all">全部 (12)</button>
+    <button class="us-filter-btn active" data-filter="all" id="btn-all">全部</button>
     <button class="us-filter-btn" data-filter="a">🏆 A 級 龍頭</button>
     <button class="us-filter-btn" data-filter="b">🥈 B 級 挑戰者</button>
     <button class="us-filter-btn" data-filter="c">🥉 C 級 穩健</button>
@@ -328,54 +339,93 @@ const STOCKS = [
   }
 ];
 
+// 安全防護：對 HTML 特殊字元進行轉義
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 function renderStocks(filter) {
   const grid = document.getElementById('us-grid');
+  
   const filtered = STOCKS.filter(s => {
     if (filter === 'all') return true;
     if (['a','b','c','d'].includes(filter)) return s.level === filter;
     return s.category === filter;
   });
 
+  // 如果過濾結果為空，顯示提示訊息
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="us-no-data">🔍 暫無符合條件的股票資料</div>`;
+    return;
+  }
+
   grid.innerHTML = filtered.map(s => `
     <div class="us-card">
       <div class="us-card-header">
         <div>
-          <div class="us-name">${s.name}</div>
-          <div class="us-ticker">${s.ticker}</div>
+          <div class="us-name">${escapeHtml(s.name)}</div>
+          <div class="us-ticker">${escapeHtml(s.ticker)}</div>
         </div>
-        <span class="us-badge badge-${s.level}">${s.level.toUpperCase()} 級</span>
+        <span class="us-badge badge-${escapeHtml(s.level)}">${escapeHtml(s.level.toUpperCase())} 級</span>
       </div>
       <div class="us-metrics">
-        ${Object.entries(s.metrics).map(([k, v]) => `
-          <div class="us-metric">
-            <div class="us-metric-label">${k}</div>
-            <div class="us-metric-value ${v.includes('+') ? 'up' : v.includes('-') ? 'down' : ''}">${v}</div>
-          </div>
-        `).join('')}
+        ${Object.entries(s.metrics).map(([k, v]) => {
+          // 修正正負號顏色判斷：僅匹配第一個字元為 + 或 -（避免把 15-17% 的連字符誤判為跌）
+          let statusClass = '';
+          if (v.startsWith('+')) statusClass = 'up';
+          else if (v.startsWith('-')) statusClass = 'down';
+
+          return `
+            <div class="us-metric">
+              <div class="us-metric-label">${escapeHtml(k)}</div>
+              <div class="us-metric-value ${statusClass}">${escapeHtml(v)}</div>
+            </div>
+          `;
+        }).join('')}
       </div>
       <div class="us-news">
         <div class="us-news-title">📰 近期重點</div>
         <ul style="margin: 0; padding-left: 18px;">
-          ${s.news.map(n => `<li>${n}</li>`).join('')}
+          ${s.news.map(n => `<li>${escapeHtml(n)}</li>`).join('')}
         </ul>
         <div class="us-tags">
-          ${s.tags.map(t => `<span class="us-tag">${t}</span>`).join('')}
+          ${s.tags.map(t => `<span class="us-tag">${escapeHtml(t)}</span>`).join('')}
         </div>
       </div>
       <div class="us-updated">更新於 2026-08-15</div>
     </div>
   `).join('');
-
-  document.querySelectorAll('.us-filter-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.filter === filter);
-  });
 }
 
-document.querySelectorAll('.us-filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => renderStocks(btn.dataset.filter));
-});
+document.addEventListener('DOMContentLoaded', () => {
+  // 動態顯示全部資料的數量
+  const btnAll = document.getElementById('btn-all');
+  if (btnAll) {
+    btnAll.textContent = `全部 (${STOCKS.length})`;
+  }
 
-renderStocks('all');
+  const buttons = document.querySelectorAll('.us-filter-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // 切換按鈕高亮狀態
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // 渲染對應卡片
+      renderStocks(filter);
+    });
+  });
+
+  // 預設渲染全部
+  renderStocks('all');
+});
 </script>
 </body>
 </html>
