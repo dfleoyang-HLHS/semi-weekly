@@ -324,19 +324,19 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
+  // 左側邊界設定為 160px，獨占留給「上/中/下游」標題
   const tierStartX = 160;
-  const tierWidth = 710-135;
-  const centerX = tierStartX + tierWidth / 2;
+  const centerX = 25 + 710 / 2; // 核心公司完美置中 (x=380 附近)
 
   const isDownTier = (tierKey === 'down');
   const coreWidth = isDownTier ? 140 : 150;
   const coreHeight = isDownTier ? 44 : 48;
-  const nodeWidth = isDownTier ? 90 : 100;
+  const nodeWidth = isDownTier ? 88 : 96;
   const nodeHeight = isDownTier ? 34 : 36;
-  const gap = isDownTier ? 6 : 8;
+  const gap = 6;
 
   const coreX = centerX - coreWidth / 2;
-  // 【重要修正】：核心公司向下移動 50px，預留頂部 50px 給「上/中/下游標題」獨佔空間
+  // 公司節點往下移 50px，完全遠離頂部標題區域
   const coreY = tierY + 50;
 
   positions[coreNode.id] = {
@@ -348,8 +348,16 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
 
-  let maxPerSide = Math.max(1, Math.floor((leftLimit - tierStartX) / (nodeWidth + gap)));
-  if (tierNodes.length > 10) {
+  // ==========================================
+  // 【新欄位規則】：依據除核心外的公司數量動態決定單側欄數
+  // 1. 公司數 <= 6：單側 1 欄
+  // 2. 公司數 > 6 且 <= 8：單側 2 欄
+  // 3. 公司數 > 8：單側 3 欄
+  // ==========================================
+  let maxPerSide = 1; 
+  if (others.length > 8) {
+    maxPerSide = 3;
+  } else if (others.length > 6) {
     maxPerSide = 2;
   }
 
@@ -376,7 +384,6 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     if (side === "left") {
       row = Math.floor(leftIdx / maxPerSide);
       col = leftIdx % maxPerSide;
-      // 【修正】：左側欄位由外向中心對齊，絕不重疊核心節點與標題
       x = leftLimit - (col + 1) * nodeWidth - col * gap;
       y = sideStartY + row * rowHeight;
       leftIdx++;
@@ -395,12 +402,14 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
     };
   });
 
+  // 計算該層級所有公司節點的最底部位置
   let maxBottom = coreY + coreHeight;
   Object.values(positions).forEach(p => {
     if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
   });
 
-  const tierHeight = (maxBottom - tierY) + 20;
+  // 加上 35px 充足留白，確保下邊框完整打包所有公司
+  const tierHeight = (maxBottom - tierY) + 35;
   return { positions, tierHeight };
 }
 
@@ -414,18 +423,18 @@ function renderSVG(data) {
   
   const upLayout = layoutTier(upNodes, connectionCount, cursorY, "up");
   const upY = cursorY;
-  const upHeight = Math.max(130, upLayout.tierHeight);
+  const upHeight = Math.max(120, upLayout.tierHeight);
   cursorY += upHeight + 20;
 
   const midLayout = layoutTier(midNodes, connectionCount, cursorY, "mid");
   const midY = cursorY;
-  const midHeight = Math.max(130, midLayout.tierHeight);
+  const midHeight = Math.max(120, midLayout.tierHeight);
   cursorY += midHeight + 20;
 
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
-  const downHeight = Math.max(260, downLayout.tierHeight + 20); 
-  cursorY += downHeight + 45; 
+  const downHeight = Math.max(180, downLayout.tierHeight); 
+  cursorY += downHeight + 40; 
 
   nodePositions = {
     ...upLayout.positions,
@@ -445,11 +454,10 @@ function renderSVG(data) {
 
   svg += `<text x="380" y="22" text-anchor="middle" font-size="15" font-weight="500" class="sc-helper-text">${data.week} · ${data.title || ""}</text>`;
 
-  // 【重要修正】：標題獨立繪製在 t.y + 26 上方區域，避開所有下方節點
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
     svg += `<rect x="15" y="${t.y}" width="730" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
-    svg += `<text x="30" y="${t.y + 26}" font-size="14" font-weight="700" class="${info.textClass}">${info.label}</text>`;
+    svg += `<text x="30" y="${t.y + 28}" font-size="14" font-weight="700" class="${info.textClass}" pointer-events="none">${info.label}</text>`;
   });
 
   data.edges.forEach(e => {
