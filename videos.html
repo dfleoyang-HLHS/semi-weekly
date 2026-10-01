@@ -159,8 +159,12 @@ function render() {
   }).join("") : `<div class="v-empty">沒有符合條件的節目</div>`;
 
   const ex = (DATA.extras || []).filter(x => state.channel === "all" || x.channel === state.channel);
-  document.getElementById("extras").innerHTML = ex.length && !state.company ? `<div class="v-block"><h3>🎧 其他節目 (Podcast 等)</h3><ul class="v-list">${ex.map(x =>
+  const exList = (title, items) => items.length ? `<div class="v-block"><h3>${title}</h3><ul class="v-list">${items.map(x =>
     `<li><a href="${ytUrl(x.id)}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a><span class="tag">${esc(x.published)}</span></li>`).join("")}</ul></div>` : "";
+  const exShown = state.company ? ex.filter(x => x.companies.some(c => c.code === state.company)) : ex;
+  document.getElementById("extras").innerHTML =
+    exList("⭐ 其他精華短片", exShown.filter(x => x.kind === "clip")) +
+    exList("🎧 Podcast", exShown.filter(x => x.kind === "podcast"));
 }
 
 async function init() {

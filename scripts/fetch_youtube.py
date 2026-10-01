@@ -201,14 +201,20 @@ def build_episodes(videos, cfg):
         else:
             ep["parts"].append(v)
         ep["guests"] = list(dict.fromkeys(ep["guests"] + v["guests"]))
-    # 精華短片:來賓出現在某集,且發布日為該集當天或之後 2 天內
+    # 精華短片:來賓 (feat. 標示,或來賓姓名出現在標題中) 屬於某集,且發布日為該集當天或之後 3 天內
+    orphans = []
     for v in videos:
         if v["channel"] != cfg["name"] or v["kind"] != "clip":
             continue
-        cands = [e for d, e in eps.items() if set(v["guests"]) & set(e["guests"])
-                 and 0 <= (datetime.fromisoformat(v["published"]) - datetime.fromisoformat(d)).days <= 2]
+        def match(e):
+            names = set(e["guests"]) - {cfg.get("host")}
+            return bool(set(v["guests"]) & names) or any(n and n in v["title"] for n in names)
+        cands = [e for d, e in eps.items() if match(e)
+                 and 0 <= (datetime.fromisoformat(v["published"]) - datetime.fromisoformat(d)).days <= 3]
         if cands:
             max(cands, key=lambda e: e["date"])["clips"].append(v)
+        else:
+            orphans.append(v)  # 無法確定屬於哪一集 (如只用暱稱),另列於「其他精華短片」
     out = []
     for ep in eps.values():
         ep["parts"].sort(key=lambda p: p["part"] or 0)
@@ -224,8 +230,8 @@ def build_episodes(videos, cfg):
         ep["guests"] = [g for g in ep["guests"] if g != host]
         ep["host"] = host
         out.append(ep)
-    others = [v for v in videos if v["channel"] == cfg["name"] and v["kind"] == "podcast"]
-    return sorted(out, key=lambda e: e["date"], reverse=True), others
+    others = [v for v in videos if v["channel"] == cfg["name"] and v["kind"] == "podcast"] + orphans
+    return sorted(out, key=lambda e: e["date"], reverse=True), sorted(others, key=lambda v: v["published"], reverse=True)
 
 
 def main():
