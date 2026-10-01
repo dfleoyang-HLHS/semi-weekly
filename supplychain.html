@@ -316,6 +316,9 @@ function findCoreNodes(tierNodes, connectionCount) {
   return sorted;
 }
 
+// 大區塊 (tier) 的幾何設定:上、中、下游共用同一套規則
+const TIER_BOX = { x: 15, width: 730, padX: 12, titleH: 44, padBottom: 14 };
+
 function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const positions = {};
   if (!tierNodes.length) return { positions, tierHeight: 80 };
@@ -324,30 +327,37 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
   const coreNode = sorted[0];
   const others = sorted.slice(1);
 
-  const tierStartX = 160;
-  const centerX = 25 + 710 / 2;
-
   const isDownTier = (tierKey === 'down');
   const coreWidth = isDownTier ? 140 : 150;
-  const coreHeight = isDownTier ? 54 : 58;  // 核心方塊高度加大 10px
-  const nodeWidth = isDownTier ? 88 : 96;
-  const nodeHeight = isDownTier ? 44 : 46; // 一般方塊高度由原本的 34~36px 加大至 44~46px (增加10px)
+  const coreHeight = isDownTier ? 54 : 58;
+  const nodeHeight = isDownTier ? 44 : 46;
+  const maxNodeWidth = isDownTier ? 88 : 96;
   const gap = 6;
 
-  let maxPerSide = 1; 
-  if (others.length > 8) {
-    maxPerSide = 3;
-  } else if (others.length > 6) {
-    maxPerSide = 2;
-  }
+  // 可用的內容範圍 (扣除左右內距與標題列)
+  const innerLeft = TIER_BOX.x + TIER_BOX.padX;
+  const innerRight = TIER_BOX.x + TIER_BOX.width - TIER_BOX.padX;
+  const contentTop = tierY + TIER_BOX.titleH;
+  const centerX = (innerLeft + innerRight) / 2;
 
-  let topOffsetY = 50;
-  if (isDownTier && others.length > 8) {
-    topOffsetY += 100;
-  }
+  let maxPerSide = 1;
+  if (others.length > 8) maxPerSide = 3;
+  else if (others.length > 6) maxPerSide = 2;
 
+  // 小方塊寬度依每側可用寬度計算,保證不超出大區塊左右邊界
+  const sideWidth = (innerRight - innerLeft - coreWidth) / 2 - gap;
+  const nodeWidth = Math.min(maxNodeWidth, Math.floor((sideWidth - (maxPerSide - 1) * gap) / maxPerSide));
+
+  const leftCount = Math.ceil(others.length / 2);
+  const rightCount = Math.floor(others.length / 2);
+  const maxRows = Math.max(1, Math.ceil(leftCount / maxPerSide), Math.ceil(rightCount / maxPerSide));
+  const rowHeight = nodeHeight + gap;
+  const sideBlockHeight = maxRows * rowHeight - gap;
+
+  // 由標題下方開始排列;核心方塊在兩側方塊群的垂直中央
+  const sideStartY = contentTop + Math.max(0, (coreHeight - sideBlockHeight) / 2);
   const coreX = centerX - coreWidth / 2;
-  const coreY = tierY + topOffsetY;
+  const coreY = contentTop + Math.max(0, (sideBlockHeight - coreHeight) / 2);
 
   positions[coreNode.id] = {
     x: coreX, y: coreY, width: coreWidth, height: coreHeight,
@@ -357,43 +367,21 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
 
   const leftLimit = coreX - gap;
   const rightStart = coreX + coreWidth + gap;
-
-  let leftCount = 0;
-  let rightCount = 0;
-  others.forEach((n, i) => {
-    if (i % 2 === 0) leftCount++;
-    else rightCount++;
-  });
-
-  const leftRows = Math.ceil(leftCount / maxPerSide);
-  const rightRows = Math.ceil(rightCount / maxPerSide);
-  const maxRows = Math.max(1, leftRows, rightRows);
-  const rowHeight = nodeHeight + 6; // 行距稍微調整，避免重疊
-
-  const sideBlockHeight = maxRows * rowHeight - 6;
-  const sideStartY = coreY + (coreHeight - sideBlockHeight) / 2;
-
   let leftIdx = 0, rightIdx = 0;
   others.forEach((n, i) => {
-    const side = (i % 2 === 0) ? "left" : "right";
-    let row, col, x, y;
-
-    if (side === "left") {
-      row = Math.floor(leftIdx / maxPerSide);
-      col = leftIdx % maxPerSide;
+    let x, idx;
+    if (i % 2 === 0) {
+      idx = leftIdx++;
+      const col = idx % maxPerSide;
       x = leftLimit - (col + 1) * nodeWidth - col * gap;
-      y = sideStartY + row * rowHeight;
-      leftIdx++;
     } else {
-      row = Math.floor(rightIdx / maxPerSide);
-      col = rightIdx % maxPerSide;
+      idx = rightIdx++;
+      const col = idx % maxPerSide;
       x = rightStart + col * (nodeWidth + gap);
-      y = sideStartY + row * rowHeight;
-      rightIdx++;
     }
-
+    const y = sideStartY + Math.floor(idx / maxPerSide) * rowHeight;
     positions[n.id] = {
-      x: x, y: y, width: nodeWidth, height: nodeHeight,
+      x, y, width: nodeWidth, height: nodeHeight,
       cx: x + nodeWidth / 2, cy: y + nodeHeight / 2,
       tier: tierKey, node: n, isCore: false
     };
@@ -401,11 +389,34 @@ function layoutTier(tierNodes, connectionCount, tierY, tierKey) {
 
   let maxBottom = coreY + coreHeight;
   Object.values(positions).forEach(p => {
-    if (p.y + p.height > maxBottom) maxBottom = p.y + p.height;
+    maxBottom = Math.max(maxBottom, p.y + p.height);
   });
 
-  const tierHeight = (maxBottom - tierY) + 35;
+  const tierHeight = (maxBottom - tierY) + TIER_BOX.padBottom;
   return { positions, tierHeight };
+}
+
+// 估算文字寬度 (中日韓全形字 ≈ 1em,其他 ≈ 0.58em),超出可用寬度時縮小字級
+function fitFontSize(text, maxWidth, baseSize, minSize = 6.5) {
+  let em = 0;
+  for (const ch of String(text)) em += /[\u2E80-\uFFEF]/.test(ch) ? 1 : 0.58;
+  if (!em) return baseSize;
+  return Math.max(minSize, Math.min(baseSize, maxWidth / em));
+}
+
+// 副標題切成兩行:優先在空白或「·」處斷行,避免把詞切開
+function splitSub(text) {
+  const mid = text.length / 2;
+  let best = -1;
+  [...text].forEach((ch, i) => {
+    if ((ch === " " || ch === "·") && (best < 0 || Math.abs(i - mid) < Math.abs(best - mid))) best = i;
+  });
+  if (best > 0 && Math.abs(best - mid) <= text.length / 4) {
+    const clean = s => s.replace(/^[\s·]+|[\s·]+$/g, "");
+    return [clean(text.slice(0, best)), clean(text.slice(best + 1))];
+  }
+  const idx = Math.ceil(mid);
+  return [text.slice(0, idx), text.slice(idx)];
 }
 
 function renderSVG(data) {
@@ -428,7 +439,7 @@ function renderSVG(data) {
 
   const downLayout = layoutTier(downNodes, connectionCount, cursorY, "down");
   const downY = cursorY;
-  const downHeight = Math.max(180, downLayout.tierHeight); 
+  const downHeight = Math.max(120, downLayout.tierHeight);
   cursorY += downHeight + 40; 
 
   nodePositions = {
@@ -451,8 +462,8 @@ function renderSVG(data) {
 
   tierRects.forEach(t => {
     const info = TIER_LAYOUT[t.tier];
-    svg += `<rect x="15" y="${t.y}" width="730" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
-    svg += `<text x="30" y="${t.y + 28}" font-size="14" font-weight="700" class="${info.textClass}" pointer-events="none">${info.label}</text>`;
+    svg += `<rect x="${TIER_BOX.x}" y="${t.y}" width="${TIER_BOX.width}" height="${t.height}" rx="12" class="${info.fillClass}"/>`;
+    svg += `<text x="${TIER_BOX.x + 15}" y="${t.y + 28}" font-size="14" font-weight="700" class="${info.textClass}" pointer-events="none">${info.label}</text>`;
   });
 
   data.edges.forEach(e => {
@@ -488,47 +499,45 @@ function renderSVG(data) {
     svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="${strokeWidth}" ${dashAttr} ${marker} opacity="${opacity}"/>`;
   });
 
-  // 繪製節點文字（包含自動換行與對中對齊邏輯）
-  Object.entries(nodePositions).forEach(([id, p]) => {
+  // 繪製節點與文字:字級依方框寬度自動縮放,文字不超出方框
+  const textEl = (x, y, size, weight, cls, text, extra = "") =>
+    `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central" font-size="${size.toFixed(1)}" font-weight="${weight}" class="${cls}" ${extra}>${text}</text>`;
+
+  Object.values(nodePositions).forEach(p => {
     const tierInfo = TIER_LAYOUT[p.tier];
     const node = p.node;
+    const maxW = p.width - 8;
 
     if (p.isCore) {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="6" class="${tierInfo.coreFill} core-stroke"/>`;
       const labelText = "⭐ " + node.label;
-      if (node.sub) {
-        // 判讀第二行文字長度，若 > 10 個字自動拆兩行
-        if (node.sub.length > 10) {
-          const midIdx = Math.ceil(node.sub.length / 2);
-          const line1 = node.sub.substring(0, midIdx);
-          const line2 = node.sub.substring(midIdx);
-          svg += `<text x="${p.cx}" y="${p.y + 16}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + 32}" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${line1}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + 44}" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${line2}</text>`;
-        } else {
-          svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.35)}" text-anchor="middle" dominant-baseline="central" font-size="11.5" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + (p.height * 0.7)}" text-anchor="middle" dominant-baseline="central" font-size="9.5" font-weight="500" class="${tierInfo.coreText}" opacity="0.85">${node.sub}</text>`;
-        }
+      const labelSize = fitFontSize(labelText, maxW, 11.5);
+      if (!node.sub) {
+        svg += textEl(p.cx, p.cy, labelSize, 700, tierInfo.coreText, labelText);
+      } else if (fitFontSize(node.sub, maxW, 9.5) >= 9) {
+        svg += textEl(p.cx, p.y + p.height * 0.35, labelSize, 700, tierInfo.coreText, labelText);
+        svg += textEl(p.cx, p.y + p.height * 0.7, fitFontSize(node.sub, maxW, 9.5), 500, tierInfo.coreText, node.sub, 'opacity="0.85"');
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" class="${tierInfo.coreText}">${labelText}</text>`;
+        const [l1, l2] = splitSub(node.sub);
+        const subSize = Math.min(fitFontSize(l1, maxW, 9), fitFontSize(l2, maxW, 9));
+        svg += textEl(p.cx, p.y + 16, labelSize, 700, tierInfo.coreText, labelText);
+        svg += textEl(p.cx, p.y + 32, subSize, 500, tierInfo.coreText, l1, 'opacity="0.85"');
+        svg += textEl(p.cx, p.y + 44, subSize, 500, tierInfo.coreText, l2, 'opacity="0.85"');
       }
     } else {
       svg += `<rect x="${p.x}" y="${p.y}" width="${p.width}" height="${p.height}" rx="5" class="${tierInfo.fillClass}"/>`;
-      if (node.sub) {
-        // 一般公司副標題：若超過 9 個字元，自動對半切開並置中繪製兩行
-        if (node.sub.length > 9) {
-          const midIdx = Math.ceil(node.sub.length / 2);
-          const line1 = node.sub.substring(0, midIdx);
-          const line2 = node.sub.substring(midIdx);
-          svg += `<text x="${p.cx}" y="${p.y + 12}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + 25}" text-anchor="middle" dominant-baseline="central" font-size="8" class="${tierInfo.subText}">${line1}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + 36}" text-anchor="middle" dominant-baseline="central" font-size="8" class="${tierInfo.subText}">${line2}</text>`;
-        } else {
-          svg += `<text x="${p.cx}" y="${p.y + 14}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
-          svg += `<text x="${p.cx}" y="${p.y + 30}" text-anchor="middle" dominant-baseline="central" font-size="8.5" class="${tierInfo.subText}">${node.sub}</text>`;
-        }
+      const labelSize = fitFontSize(node.label, maxW, 10);
+      if (!node.sub) {
+        svg += textEl(p.cx, p.cy, labelSize, 500, tierInfo.nodeText, node.label);
+      } else if (fitFontSize(node.sub, maxW, 8.5) >= 8) {
+        svg += textEl(p.cx, p.y + 14, labelSize, 500, tierInfo.nodeText, node.label);
+        svg += textEl(p.cx, p.y + 30, fitFontSize(node.sub, maxW, 8.5), 400, tierInfo.subText, node.sub);
       } else {
-        svg += `<text x="${p.cx}" y="${p.cy}" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" class="${tierInfo.nodeText}">${node.label}</text>`;
+        const [l1, l2] = splitSub(node.sub);
+        const subSize = Math.min(fitFontSize(l1, maxW, 8), fitFontSize(l2, maxW, 8));
+        svg += textEl(p.cx, p.y + 12, labelSize, 500, tierInfo.nodeText, node.label);
+        svg += textEl(p.cx, p.y + 25, subSize, 400, tierInfo.subText, l1);
+        svg += textEl(p.cx, p.y + 36, subSize, 400, tierInfo.subText, l2);
       }
     }
   });
