@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-01T16:13:53+08:00",
+ "updated_at": "2026-10-01T16:16:23+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -967,6 +967,66 @@
    ],
    "clips": [
     {
+     "id": "KriFQuwJleo",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "艾綸分析師親授！嘉晶連續漲停還能追？一招教你避開高檔套牢陷阱",
+     "published": "2026-09-24",
+     "show_date": "2026-09-24",
+     "guests": [],
+     "chapters": [],
+     "hashtags": [
+      "兆華艾綸說"
+     ],
+     "companies": [
+      {
+       "name": "嘉晶",
+       "code": "3016",
+       "market": "上市"
+      }
+     ],
+     "part": null
+    },
+    {
+     "id": "vytHS1EevsY",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "產業隊長張捷親授！做人要熱情、做股票要冷血！壞股票直接砍掉別留戀",
+     "published": "2026-09-24",
+     "show_date": "2026-09-24",
+     "guests": [],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null
+    },
+    {
+     "id": "mbD3uR4TK6Q",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "股期雙分析師紀緯明親授！Meta大會爆發！AI眼鏡這規格升級讓台廠賺翻 🚀",
+     "published": "2026-09-24",
+     "show_date": "2026-09-24",
+     "guests": [],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null
+    },
+    {
+     "id": "RceilRou_FI",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "K線之神朱家泓親授！大盤爆量800點竟是起漲點？三招避開追高陷阱",
+     "published": "2026-09-24",
+     "show_date": "2026-09-24",
+     "guests": [],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null
+    },
+    {
      "id": "yVDXFFDv7sY",
      "channel": "理財達人秀",
      "kind": "clip",
@@ -1087,14 +1147,14 @@
      "count": 2
     },
     {
-     "name": "京元電子",
-     "code": "2449",
-     "market": "上市",
-     "count": 1
-    },
-    {
      "name": "嘉晶",
      "code": "3016",
+     "market": "上市",
+     "count": 2
+    },
+    {
+     "name": "京元電子",
+     "code": "2449",
      "market": "上市",
      "count": 1
     },
@@ -2186,6 +2246,60 @@
     "升息",
     "兆華與股惑仔"
    ],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "ZwhlZbF1IP4",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "冠軍操盤手親授！本益比只剩8倍？4400億訂單接到手軟的翻倍黑馬 🚀",
+   "published": "2026-09-24",
+   "show_date": "2026-09-24",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [
+    "兆華艾綸說"
+   ],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "9mAtgClClJs",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "鍾大膽親授！股市小白買這檔「明年股利狂發3塊」🔥淨值甜爆千萬別買貴！💸",
+   "published": "2026-09-19",
+   "show_date": "2026-09-19",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "Lm839L7Ts_0",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "鍾大膽警告！央行大放水開通了🩸中秋節前這天「撿便宜」直接賺翻倍！🚀",
+   "published": "2026-09-19",
+   "show_date": "2026-09-19",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "0s-cOT4tLp4",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "🚀 股市凱哥爆料！黃仁勳狂喊銷量翻倍🔥這幾檔「AI黑科技」漲停鎖死別追錯！💸",
+   "published": "2026-09-19",
+   "show_date": "2026-09-19",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
    "companies": [],
    "part": null
   }
