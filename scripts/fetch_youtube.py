@@ -44,8 +44,8 @@ TW_ALIAS = {"發哥": "聯發科", "台積": "台積電", "日月光": "日月�
             "華邦": "華邦電", "南亞科技": "南亞科", "世芯": "世芯-KY", "矽力": "矽力*-KY",
             "臻鼎": "臻鼎-KY", "緯穎科技": "緯穎", "華星光通": "華星光",
             "創意電子": "創意", "創見資訊": "創見"}  # 「創意」「創見」是常用詞,只認全名
-# 名稱出現在這些詞中時不算 (如「努力成為」不是力成)
-NOT_COMPANY = {"力成": ["努力成"], "聯電": ["聯電腦"]}
+# 名稱前一個字是這些字時不算公司 (如「算力成本」「努力成為」「能力成長」都不是力成)
+NOT_AFTER = {"力成": set("算能努實動壓電火人效權魅潛活財物精勞體腦心視聽算推助算張磁引應毅耐魄") }
 US_ALIAS = {
     "NVDA": ["輝達", "NVIDIA", "Nvidia"], "AMD": ["超微", "AMD"], "INTC": ["英特爾", "Intel"],
     "MU": ["美光", "Micron"], "AVGO": ["博通", "Broadcom"], "AAPL": ["蘋果", "Apple"],
@@ -107,7 +107,7 @@ def find_companies(text, matchers):
                 continue
             if any(taken[s:e]):
                 continue
-            if any(text[max(0, s - 3):e + 3].find(w) >= 0 and w.find(key) >= 0 for w in NOT_COMPANY.get(key, [])):
+            if s > 0 and text[s - 1] in NOT_AFTER.get(key, ()):
                 continue
             for i in range(s, e):
                 taken[i] = True
@@ -162,7 +162,7 @@ def parse_video(v, cfg, matchers):
     m = re.search(r"(\d{4})\.(\d{2})\.(\d{2})", title)
     show_date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else published
     part = re.search(r"part\s*(\d)", title, re.IGNORECASE)
-    series = re.match(r"^【\s*([^】]+?)\s*】", title)
+    series = re.search(r"【\s*([^】]+?)\s*】", title)  # 系列名稱可能在開頭或結尾 (如【早晨財經速解讀】)
     if cfg.get("format") == "single":
         kind = "single"
     elif cfg.get("podcast_mark") and cfg["podcast_mark"] in title:
@@ -188,7 +188,8 @@ def parse_video(v, cfg, matchers):
     topic = clean_title
     if cfg.get("format") == "single":
         q = re.search(r"『\s*(.+?)\s*』", clean_title)  # 又上財經:主題在『』內,其餘為課程宣傳
-        topic = q.group(1) if q else re.sub(r"^【[^】]+】\s*", "", clean_title).split("|")[0].split("｜")[0].strip()
+        topic = q.group(1) if q else re.sub(r"【[^】]*】", "", clean_title).split("|")[0].split("｜")[0].strip()
+        topic = re.sub(r"^\d{4}/\d{1,2}/\d{1,2}\s*(\([一二三四五六日]\))?\s*", "", topic)  # 去掉開頭日期
         if topic.count("「") != topic.count("」"):
             topic = topic.replace("「", "").replace("」", "")
     text = " ".join([title, " ".join(c["topic"] for c in chapters), " ".join(hashtags)])
