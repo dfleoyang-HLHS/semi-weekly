@@ -36,17 +36,15 @@ semi-weekly/
     └── weekly.yml          # 每週一自動執行
 ```
 
-## 每週工作流程
+## 每週工作流程 (台灣時間)
 
-**自動部分 (每週一 06:00 自動執行):**
-1. GitHub Actions 觸發 `fetch_news.py`,抓取過去 7 天的 RSS 來源
-2. 呼叫 Claude API 生成初稿 (`generate_draft.py`)
-3. 草稿存到 `posts/draft-YYYY-WNN.md`,等待人工審閱
+| 時間 | 動作 | 是否需人工 |
+|---|---|---|
+| 週一 06:00 | 抓新聞 → Claude 產生週報 + 供應鏈圖 → 開 Pull Request | 審閱後按 Merge |
+| Merge 後 | 重建索引 (含 `supplychain-index.json`) → 部署 GitHub Pages | 否 |
+| 週三、五 06:00 | 抓新聞 → 產生快訊 → 部署 | 否 |
 
-**人工部分 (每週一早上花 30 分鐘):**
-1. 開啟 draft,確認內容、補上財報數字與圖表
-2. 改名為正式檔名 (移除 `draft-` 前綴)
-3. `git commit && git push` → GitHub Actions 自動重建索引並部署
+詳細操作見 `usage.MD`。需在 repo Secrets 設定 `ANTHROPIC_API_KEY`。
 
 ## 部署
 

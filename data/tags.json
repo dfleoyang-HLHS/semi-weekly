@@ -177,15 +177,16 @@
     ]
   },
   {
-    "name": "CoWoS",
-    "count": 2,
+    "name": "先進封裝",
+    "count": 3,
     "articles": [
       "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly"
+      "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly"
     ]
   },
   {
-    "name": "先進封裝",
+    "name": "CoWoS",
     "count": 2,
     "articles": [
       "2026-W21-cowos-weekly",
@@ -201,6 +202,14 @@
     ]
   },
   {
+    "name": "HBM",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
     "name": "混合鍵合",
     "count": 2,
     "articles": [
@@ -209,10 +218,11 @@
     ]
   },
   {
-    "name": "HBM",
-    "count": 1,
+    "name": "ABF 載板",
+    "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly"
+      "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly"
     ]
   },
   {
@@ -237,10 +247,38 @@
     ]
   },
   {
-    "name": "ABF 載板",
+    "name": "記憶體超級循環",
     "count": 1,
     "articles": [
-      "2026-W22-semi-weekly"
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "ASIC",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "玻璃基板",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "AI 代理",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "專利訴訟",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
     ]
   }
 ]

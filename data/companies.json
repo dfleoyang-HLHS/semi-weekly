@@ -1,10 +1,11 @@
 [
   {
     "name": "TSMC",
-    "count": 55,
+    "count": 56,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -62,10 +63,135 @@
   },
   {
     "name": "ASE",
-    "count": 55,
+    "count": 56,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief",
+      "2026-06-04-brief",
+      "2026-06-07-brief",
+      "2026-06-09-brief",
+      "2026-06-11-brief",
+      "2026-06-14-brief",
+      "2026-06-16-brief",
+      "2026-06-18-brief",
+      "2026-06-21-brief",
+      "2026-06-23-brief",
+      "2026-06-25-brief",
+      "2026-06-28-brief",
+      "2026-06-30-brief",
+      "2026-07-02-brief",
+      "2026-07-05-brief",
+      "2026-07-07-brief",
+      "2026-07-09-brief",
+      "2026-07-12-brief",
+      "2026-07-14-brief",
+      "2026-07-16-brief",
+      "2026-07-19-brief",
+      "2026-07-21-brief",
+      "2026-07-23-brief",
+      "2026-07-26-brief",
+      "2026-07-28-brief",
+      "2026-07-30-brief",
+      "2026-08-02-brief",
+      "2026-08-04-brief",
+      "2026-08-07-brief",
+      "2026-08-09-brief",
+      "2026-08-11-brief",
+      "2026-08-13-brief",
+      "2026-08-16-brief",
+      "2026-08-18-brief",
+      "2026-08-20-brief",
+      "2026-08-23-brief",
+      "2026-08-25-brief",
+      "2026-08-28-brief",
+      "2026-09-01-brief",
+      "2026-09-03-brief",
+      "2026-09-06-brief",
+      "2026-09-08-brief",
+      "2026-09-10-brief",
+      "2026-09-13-brief",
+      "2026-09-15-brief",
+      "2026-09-16-brief",
+      "2026-09-17-brief",
+      "2026-09-20-brief",
+      "2026-09-23-brief",
+      "2026-09-25-brief",
+      "2026-09-30-brief"
+    ]
+  },
+  {
+    "name": "NVIDIA",
+    "count": 56,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
+      "2026-05-28-brief",
+      "2026-05-31-brief",
+      "2026-06-02-brief",
+      "2026-06-04-brief",
+      "2026-06-07-brief",
+      "2026-06-09-brief",
+      "2026-06-11-brief",
+      "2026-06-14-brief",
+      "2026-06-16-brief",
+      "2026-06-18-brief",
+      "2026-06-21-brief",
+      "2026-06-23-brief",
+      "2026-06-25-brief",
+      "2026-06-28-brief",
+      "2026-06-30-brief",
+      "2026-07-02-brief",
+      "2026-07-05-brief",
+      "2026-07-07-brief",
+      "2026-07-09-brief",
+      "2026-07-12-brief",
+      "2026-07-14-brief",
+      "2026-07-16-brief",
+      "2026-07-19-brief",
+      "2026-07-21-brief",
+      "2026-07-23-brief",
+      "2026-07-26-brief",
+      "2026-07-28-brief",
+      "2026-07-30-brief",
+      "2026-08-02-brief",
+      "2026-08-04-brief",
+      "2026-08-07-brief",
+      "2026-08-09-brief",
+      "2026-08-11-brief",
+      "2026-08-13-brief",
+      "2026-08-16-brief",
+      "2026-08-18-brief",
+      "2026-08-20-brief",
+      "2026-08-23-brief",
+      "2026-08-25-brief",
+      "2026-08-28-brief",
+      "2026-09-01-brief",
+      "2026-09-03-brief",
+      "2026-09-06-brief",
+      "2026-09-08-brief",
+      "2026-09-10-brief",
+      "2026-09-13-brief",
+      "2026-09-15-brief",
+      "2026-09-16-brief",
+      "2026-09-17-brief",
+      "2026-09-20-brief",
+      "2026-09-23-brief",
+      "2026-09-25-brief",
+      "2026-09-30-brief"
+    ]
+  },
+  {
+    "name": "Samsung",
+    "count": 56,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -183,133 +309,12 @@
     ]
   },
   {
-    "name": "NVIDIA",
-    "count": 55,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly",
-      "2026-05-28-brief",
-      "2026-05-31-brief",
-      "2026-06-02-brief",
-      "2026-06-04-brief",
-      "2026-06-07-brief",
-      "2026-06-09-brief",
-      "2026-06-11-brief",
-      "2026-06-14-brief",
-      "2026-06-16-brief",
-      "2026-06-18-brief",
-      "2026-06-21-brief",
-      "2026-06-23-brief",
-      "2026-06-25-brief",
-      "2026-06-28-brief",
-      "2026-06-30-brief",
-      "2026-07-02-brief",
-      "2026-07-05-brief",
-      "2026-07-07-brief",
-      "2026-07-09-brief",
-      "2026-07-12-brief",
-      "2026-07-14-brief",
-      "2026-07-16-brief",
-      "2026-07-19-brief",
-      "2026-07-21-brief",
-      "2026-07-23-brief",
-      "2026-07-26-brief",
-      "2026-07-28-brief",
-      "2026-07-30-brief",
-      "2026-08-02-brief",
-      "2026-08-04-brief",
-      "2026-08-07-brief",
-      "2026-08-09-brief",
-      "2026-08-11-brief",
-      "2026-08-13-brief",
-      "2026-08-16-brief",
-      "2026-08-18-brief",
-      "2026-08-20-brief",
-      "2026-08-23-brief",
-      "2026-08-25-brief",
-      "2026-08-28-brief",
-      "2026-09-01-brief",
-      "2026-09-03-brief",
-      "2026-09-06-brief",
-      "2026-09-08-brief",
-      "2026-09-10-brief",
-      "2026-09-13-brief",
-      "2026-09-15-brief",
-      "2026-09-16-brief",
-      "2026-09-17-brief",
-      "2026-09-20-brief",
-      "2026-09-23-brief",
-      "2026-09-25-brief",
-      "2026-09-30-brief"
-    ]
-  },
-  {
-    "name": "Samsung",
-    "count": 55,
-    "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly",
-      "2026-05-28-brief",
-      "2026-05-31-brief",
-      "2026-06-02-brief",
-      "2026-06-04-brief",
-      "2026-06-07-brief",
-      "2026-06-09-brief",
-      "2026-06-11-brief",
-      "2026-06-14-brief",
-      "2026-06-16-brief",
-      "2026-06-18-brief",
-      "2026-06-21-brief",
-      "2026-06-23-brief",
-      "2026-06-25-brief",
-      "2026-06-28-brief",
-      "2026-06-30-brief",
-      "2026-07-02-brief",
-      "2026-07-05-brief",
-      "2026-07-07-brief",
-      "2026-07-09-brief",
-      "2026-07-12-brief",
-      "2026-07-14-brief",
-      "2026-07-16-brief",
-      "2026-07-19-brief",
-      "2026-07-21-brief",
-      "2026-07-23-brief",
-      "2026-07-26-brief",
-      "2026-07-28-brief",
-      "2026-07-30-brief",
-      "2026-08-02-brief",
-      "2026-08-04-brief",
-      "2026-08-07-brief",
-      "2026-08-09-brief",
-      "2026-08-11-brief",
-      "2026-08-13-brief",
-      "2026-08-16-brief",
-      "2026-08-18-brief",
-      "2026-08-20-brief",
-      "2026-08-23-brief",
-      "2026-08-25-brief",
-      "2026-08-28-brief",
-      "2026-09-01-brief",
-      "2026-09-03-brief",
-      "2026-09-06-brief",
-      "2026-09-08-brief",
-      "2026-09-10-brief",
-      "2026-09-13-brief",
-      "2026-09-15-brief",
-      "2026-09-16-brief",
-      "2026-09-17-brief",
-      "2026-09-20-brief",
-      "2026-09-23-brief",
-      "2026-09-25-brief",
-      "2026-09-30-brief"
-    ]
-  },
-  {
     "name": "SK Hynix",
-    "count": 54,
+    "count": 55,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -366,9 +371,10 @@
   },
   {
     "name": "Intel",
-    "count": 53,
+    "count": 54,
     "articles": [
       "2026-W21-cowos-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -425,9 +431,10 @@
   },
   {
     "name": "Micron",
-    "count": 36,
+    "count": 37,
     "articles": [
       "2026-W21-cowos-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-31-brief",
       "2026-06-02-brief",
       "2026-06-09-brief",
@@ -467,10 +474,11 @@
   },
   {
     "name": "AMD",
-    "count": 29,
+    "count": 30,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
@@ -502,9 +510,10 @@
   },
   {
     "name": "Broadcom",
-    "count": 29,
+    "count": 30,
     "articles": [
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-05-28-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
@@ -595,10 +604,11 @@
   },
   {
     "name": "JCET",
-    "count": 7,
+    "count": 8,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W40-semi-weekly",
       "2026-06-07-brief",
       "2026-06-28-brief",
       "2026-08-07-brief",
@@ -649,6 +659,14 @@
     ]
   },
   {
+    "name": "TFME",
+    "count": 2,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
     "name": "BESI",
     "count": 2,
     "articles": [
@@ -658,13 +676,6 @@
   },
   {
     "name": "Resonac",
-    "count": 1,
-    "articles": [
-      "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "TFME",
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
@@ -682,6 +693,55 @@
     "count": 1,
     "articles": [
       "2026-W22-semi-weekly"
+    ]
+  },
+  {
+    "name": "Google",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "Unimicron",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "MediaTek",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "Huawei",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "HPE",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "AWS",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
+    ]
+  },
+  {
+    "name": "Netlist",
+    "count": 1,
+    "articles": [
+      "2026-W40-semi-weekly"
     ]
   }
 ]

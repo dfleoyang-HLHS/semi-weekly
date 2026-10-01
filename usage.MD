@@ -8,16 +8,24 @@
 - Claude Pro: https://claude.ai
 - NotebookLM (Podcast): https://notebooklm.google.com
 
-## 每週一 — 撰寫週報(15-20 分鐘)
+## 每週一 — 審閱週報(約 5 分鐘)
 
-1. 早上開啟 Issues,看到「2026-WXX 週報待撰寫」
-2. 點進去,複製 weekly_prompt.md 內容(點 Raw → Ctrl+A → Ctrl+C)
-3. 開 Claude Pro 新對話,貼上,送出
-4. 等 1-2 分鐘,複製 Claude 完整回覆
-5. 進 repo 的 posts/ 資料夾,Add file → Create new file
-6. 檔名:2026-WXX-semi-weekly.md
-7. 貼上內容,Commit
-8. 關閉 Issue
+週一 06:00 Claude 會自動產生「週報 + 供應鏈圖」並開一個 Pull Request,GitHub 會寄通知信。
+
+1. 開啟 https://github.com/dfleoyang-HLHS/semi-weekly/pulls ,點「📝 2026-WXX 週報待審」
+2. 點 Files changed 檢查週報 (`posts/…-semi-weekly.md`) 與供應鏈圖 (`data/supplychain-….json`)
+3. 要修改:在該檔案右上角「…」→ Edit file,改完 Commit 到同一個分支
+4. 確認無誤 → 按 **Merge pull request** → 約 2 分鐘後網站自動更新 (週報、供應鏈圖、索引一起上線)
+5. 不想發佈 → Close pull request
+
+### 一次性設定(只需做一次)
+- 到 https://console.anthropic.com 申請 API Key (Claude Pro 訂閱不能用於 API,需另外儲值)
+- repo → Settings → Secrets and variables → Actions → New secret,名稱 `ANTHROPIC_API_KEY`
+- repo → Settings → Actions → General → Workflow permissions:勾選「Read and write」與「Allow GitHub Actions to create and approve pull requests」
+
+### 手動補跑
+- Actions → Semi Weekly and Briefs → Run workflow → mode 選 `weekly` 或 `brief`
+- 若 API 失敗,`data/weekly_prompt.md` 仍會產生,可照舊貼到 Claude Pro 手動撰寫
 
 ## 每週三、五 — 確認快訊自動產出
 
@@ -41,9 +49,9 @@
 - 點失敗的執行,看 prepare 或 deploy 哪一步 ❌
 - 看錯誤訊息,通常是網路暫時失敗,過幾小時手動重跑
 
-### 想加新公司到供應鏈圖?
-- 編輯 supplychain.html,在對應層級加新的 <rect> + <text>
-- 加連線:用 <line> 或 <path>
+### 想調整供應鏈圖?
+- 每週由 Claude 以上一期為基礎自動增修 `data/supplychain-YYYY-WNN.json`,在 PR 中審閱
+- 手動修改:直接編輯該週 JSON 的 nodes / edges;週次索引 `supplychain-index.json` 會自動重建
 
 ## 系統架構
 

@@ -1,65 +1,72 @@
 name: Semi Weekly and Briefs
 
+# 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
 on:
   schedule:
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
+  push:
+    branches: [main]
   workflow_dispatch:
+    inputs:
+      mode:
+        description: '執行模式 (auto = 依台灣時間星期幾判斷)'
+        type: choice
+        options: [auto, weekly, brief]
+        default: auto
 
 permissions:
   contents: write
-  issues: write
+  pull-requests: write
   pages: write
   id-token: write
 
+concurrency:
+  group: semi-weekly-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Taipei
+
 jobs:
-  prepare:
+  detect:
     runs-on: ubuntu-latest
+    # 機器人自己推的 commit 不重跑 (GITHUB_TOKEN 推送本來就不會觸發,此為保險)
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
+    outputs:
+      mode: ${{ steps.detect.outputs.mode }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install feedparser pyyaml requests
-
-      - name: Detect mode
-        id: detect
+      - id: detect
         run: |
-          DOW=$(date +%u)
-          if [ "$DOW" = "1" ]; then
+          if [ "${{ github.event_name }}" = "push" ]; then
+            MODE="publish"
+          elif [ -n "${{ inputs.mode }}" ] && [ "${{ inputs.mode }}" != "auto" ]; then
+            MODE="${{ inputs.mode }}"
+          elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
+            MODE="weekly"
+          elif [ "$(date +%u)" = "1" ]; then
             MODE="weekly"
           else
             MODE="brief"
           fi
+          echo "台灣時間 $(date '+%F %a %T') → mode=$MODE"
           echo "mode=$MODE" >> $GITHUB_OUTPUT
-          echo "week_tag=$(date +%Y-W%V)" >> $GITHUB_OUTPUT
-          echo "date_tag=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
-      - name: Fetch news
-        run: python scripts/fetch_news.py
-
-      - name: Generate weekly prompt
-        if: steps.detect.outputs.mode == 'weekly'
-        run: python scripts/prepare_prompt.py
-
-      - name: Generate news brief
-        if: steps.detect.outputs.mode == 'brief'
-        run: |
-          if [ -f scripts/generate_news_brief.py ]; then
-            python scripts/generate_news_brief.py
-          else
-            echo "WARNING: brief script not found"
-          fi
-
-      - name: Build index
-        run: python scripts/build_index.py
-
-      - name: Commit changes
+  # ── 週三、五:快訊,直接發佈 ──────────────────────────────
+  brief:
+    needs: detect
+    if: needs.detect.outputs.mode == 'brief'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser pyyaml requests
+      - run: python scripts/fetch_news.py
+      - run: python scripts/generate_news_brief.py
+      - run: python scripts/build_index.py
+      - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -67,34 +74,99 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto update ${{ steps.detect.outputs.date_tag }}"
+            git commit -m "快訊 $(date +%F)"
             for i in 1 2 3 4 5; do
               git pull --rebase origin main && git push && break
-              echo "Push retry $i/5"
-              sleep 5
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
+
+  # ── 週一:Claude 產生週報 + 供應鏈圖,開 PR 等人工 Merge ──────
+  weekly:
+    needs: detect
+    if: needs.detect.outputs.mode == 'weekly'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser pyyaml requests anthropic
+      - run: python scripts/fetch_news.py
+      - name: Generate weekly report and supply chain graph
+        id: draft
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_draft.py
+      # 備援:保留可手動貼到 Claude 的提示包
+      - run: python scripts/prepare_prompt.py
+      - name: Create pull request
+        if: steps.draft.outputs.week_tag != ''
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: weekly/${{ steps.draft.outputs.week_tag }}
+          # 只放內容檔;db.json / supplychain-index.json 等索引在 merge 後由 publish 重建,避免與快訊衝突
+          add-paths: |
+            posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md
+            data/supplychain-${{ steps.draft.outputs.week_tag }}.json
+          commit-message: "週報 ${{ steps.draft.outputs.week_tag }} (AI 草稿)"
+          title: "📝 ${{ steps.draft.outputs.week_tag }} 週報待審:${{ steps.draft.outputs.title }}"
+          body: |
+            Claude 已自動產生本週週報與供應鏈圖,請審閱後 **Merge** 即會自動發佈到網站。
+
+            - 週報:`posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md`
+            - 供應鏈圖:`data/supplychain-${{ steps.draft.outputs.week_tag }}.json`
+
+            審閱重點:
+            - [ ] 數字與事實是否正確 (對照文末參考來源)
+            - [ ] 供應鏈圖新增/刪除的公司與關係是否合理
+            - [ ] 需要修改可直接在 PR 的 Files changed 頁面編輯 (… → Edit file)
+
+            不要發佈就直接 Close 這個 PR。
+          labels: weekly-report
+          delete-branch: true
+
+  # ── PR merge (或任何推到 main) 後:重建索引 ───────────────────
+  publish:
+    needs: detect
+    if: needs.detect.outputs.mode == 'publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml
+      - run: python scripts/build_index.py
+      - name: Commit index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "重建索引"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
             done
           fi
 
   deploy:
-    needs: prepare
+    needs: [detect, brief, publish]
+    if: >-
+      always() &&
+      (needs.brief.result == 'success' || needs.publish.result == 'success')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: main
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4

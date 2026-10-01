@@ -7,6 +7,7 @@ build_index.py
   - data/companies.json (依公司聚合)
   - data/tags.json      (標籤雲)
   - data/regions.json   (依區域聚合)
+  - data/supplychain-index.json (掃描 data/supplychain-*.json)
 """
 
 import os
@@ -143,5 +144,31 @@ def build_index():
     print(f"   區域數: {len(regions)}")
 
 
+def build_supplychain_index():
+    """掃描 data/supplychain-YYYY-WNN.json,重建供應鏈週次索引 (新到舊)"""
+    weeks = []
+    for f in DATA_DIR.glob("supplychain-*-W*.json"):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            print(f"⚠️  跳過 (JSON 錯誤): {f.name} {e}")
+            continue
+        weeks.append({
+            "week": d.get("week", f.stem.replace("supplychain-", "")),
+            "date": str(d.get("date", "")),
+            "title": d.get("title", ""),
+            "file": f.name,
+            "node_count": len(d.get("nodes", [])),
+            "edge_count": len(d.get("edges", [])),
+        })
+    weeks.sort(key=lambda w: w["week"], reverse=True)
+    index = {"latest": weeks[0]["week"] if weeks else "", "weeks": weeks}
+    (DATA_DIR / "supplychain-index.json").write_text(
+        json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"   供應鏈週次: {len(weeks)} (最新 {index['latest']})")
+
+
 if __name__ == "__main__":
     build_index()
+    build_supplychain_index()
