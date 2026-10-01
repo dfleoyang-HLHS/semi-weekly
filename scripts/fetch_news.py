@@ -57,6 +57,8 @@ KEYWORDS = [
     "Ibiden", "Shinko", "Resonac", "Ajinomoto",
     "JCET", "長電科技", "TFME", "通富微電", "SMIC", "中芯",
     "BESI", "ASML", "Applied Materials",
+    "Marvell", "邁威爾", "Meta", "Tesla", "特斯拉", "Acer", "宏碁", "Winbond", "華邦",
+    "UMC", "聯電", "華星光", "尖點",
     # 應用
     "AI chip", "AI 晶片", "GPU", "TPU", "ASIC",
     "data center", "資料中心", "Rubin", "Blackwell",
@@ -64,9 +66,10 @@ KEYWORDS = [
 
 
 def is_relevant(entry):
-    """檢查標題或摘要是否包含關鍵字"""
-    text = (entry.get("title", "") + " " + entry.get("summary", "")).lower()
-    return any(kw.lower() in text for kw in KEYWORDS)
+    """檢查標題或摘要是否包含關鍵字 (英文以完整單字比對,避免 base→ASE、metal→Meta 誤判)"""
+    from generate_news_brief import keyword_in
+    text = entry.get("title", "") + " " + entry.get("summary", "")
+    return any(keyword_in(kw, text) for kw in KEYWORDS)
 
 
 def parse_date(entry):

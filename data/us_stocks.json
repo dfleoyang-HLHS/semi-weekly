@@ -242,26 +242,120 @@
       "updated_on": "2026-10-01"
     },
     {
-      "name": "Apple / Google / Meta",
-      "ticker": "AAPL/GOOG/META",
+      "name": "Apple",
+      "ticker": "AAPL",
       "level": "a",
       "category": "server",
       "metrics": {
-        "類型": "雲端+終端",
-        "自研晶片": "TPU/MTIA/M系列",
-        "AI 資本支出": "續增",
-        "2027 展望": "更高"
+        "A20 Pro 晶片": "台積電 2nm",
+        "首款折疊機": "iPhone Duo",
+        "企業 AI 伺服器": "傳採 M8 Ultra",
+        "2026 iPhone OLED": "約 2.6 億片"
       },
       "news": [
-        "Meta 與 Firmus 簽約,租用東南亞 AI 算力",
-        "Google 與 Marvell 簽客製晶片協議,TPU 夥伴擴大",
-        "Amazon、Alphabet、Meta 上調 2026 年資本支出",
-        "Google 啟動 Suncatcher,首度把 TPU 送上太空"
+        "首款折疊機 iPhone Duo 上市,採用螢幕下鏡頭",
+        "iPhone Duo、18 Pro 系列搭載台積電 2 奈米 A20 Pro",
+        "傳開發搭載 M8 Ultra 的企業級 AI 伺服器,重返伺服器市場",
+        "法院文件顯示 Apple Intelligence 整合 ChatGPT 採用率偏低"
       ],
       "tags": [
-        "雲端巨頭",
-        "自研 ASIC",
+        "iPhone",
+        "自研晶片",
         "TSMC 客戶"
+      ],
+      "updated_on": "2026-10-01"
+    },
+    {
+      "name": "Google",
+      "ticker": "GOOGL",
+      "level": "a",
+      "category": "server",
+      "metrics": {
+        "TPU 系統規模": "擴至 100 萬顆",
+        "TPU 設計夥伴": "Broadcom、聯發科、Marvell",
+        "Suncatcher": "TPU 首度上太空",
+        "2026 資本支出": "上調"
+      },
+      "news": [
+        "啟動 Suncatcher 計畫,首度把 TPU 送上近地軌道",
+        "SEMICON Taiwan:TPU 系統擴至百萬顆晶片,電力成瓶頸",
+        "與 Marvell 簽客製晶片協議,TPU 夥伴擴大",
+        "遭 Netlist 列入 HBM 專利訴訟被告"
+      ],
+      "tags": [
+        "TPU",
+        "雲端",
+        "自研 ASIC"
+      ],
+      "updated_on": "2026-10-01"
+    },
+    {
+      "name": "Meta",
+      "ticker": "META",
+      "level": "a",
+      "category": "server",
+      "metrics": {
+        "AI 代理 Muse": "上線兩週登榜首",
+        "自研 AI 晶片": "1H27 部署",
+        "晶片代工": "台積電",
+        "眼鏡產品線": "$249 – $1,299.99"
+      },
+      "news": [
+        "AI 代理 Muse 上線約兩週登上 App 排行榜首,帶動 CPU 需求",
+        "新一代自研 AI 晶片傳 1H27 部署,由台積電製造",
+        "與 Firmus 簽約,租用東南亞 AI 算力",
+        "Connect 2026 推出 249 至 1,299.99 美元眼鏡產品線"
+      ],
+      "tags": [
+        "自研 ASIC",
+        "AI 代理",
+        "智慧眼鏡"
+      ],
+      "updated_on": "2026-10-01"
+    },
+    {
+      "name": "Marvell",
+      "ticker": "MRVL",
+      "level": "b",
+      "category": "chip",
+      "metrics": {
+        "Q2 FY27 營收": "$2.74B (+37%)",
+        "資料中心佔比": "79%",
+        "FY27 營收展望": "約 $12B",
+        "FY28 營收展望": "約 $18B"
+      },
+      "news": [
+        "Q2 FY27 營收 27.4 億美元創新高、年增 37%",
+        "連續兩季上調展望:FY27 約 120 億、FY28 約 180 億美元",
+        "與 Google 簽客製晶片協議,切入 TPU 生態系",
+        "CTO:功耗與密度瓶頸推動 CPO 光互連採用"
+      ],
+      "tags": [
+        "客製 ASIC",
+        "光互連",
+        "資料中心"
+      ],
+      "updated_on": "2026-10-01"
+    },
+    {
+      "name": "Tesla",
+      "ticker": "TSLA",
+      "level": "b",
+      "category": "server",
+      "metrics": {
+        "AI5 晶片": "三星泰勒廠 2nm 試產",
+        "Optimus Gen 3": "目標售價約 $20,000"
+      },
+      "news": [
+        "三星泰勒廠傳啟動 Tesla AI5 晶片 2 奈米試產",
+        "Optimus 第三代傳赴寧波稽核中國供應商,目標售價約 2 萬美元",
+        "三星泰勒廠 2 奈米產能傳被 Tesla、Broadcom、Arm 訂滿",
+        "和碩傳獲 Tesla AI 伺服器訂單"
+      ],
+      "tags": [
+        "AI 晶片",
+        "人形機器人",
+        "自駕"
       ],
       "updated_on": "2026-10-01"
     },

@@ -29,7 +29,7 @@ WATCHLIST = {
     "NVDA": "NVIDIA", "AVGO": "Broadcom", "AMD": "AMD", "SMCI": "Super Micro",
     "INTC": "Intel", "AMAT": "Applied Materials", "MU": "Micron", "AMKR": "Amkor",
     "DELL": "Dell Technologies", "HPE": "HPE", "AAPL": "Apple", "GOOGL": "Alphabet",
-    "META": "Meta", "LRCX": "Lam Research",
+    "META": "Meta", "LRCX": "Lam Research", "MRVL": "Marvell", "TSLA": "Tesla",
 }
 
 # Finnhub 基本財務指標欄位 → 輸出欄位 (報酬為 %)
@@ -108,7 +108,8 @@ def main():
         sys.exit("❌ 所有股票都抓取失敗,不更新檔案")
 
     # 非交易日 (美國國定假日等):最新交易日與上次相同,不寫檔、不 commit、不部署
-    if max(dates) == old.get("as_of") and "--force" not in sys.argv:
+    new_symbols = set(stocks) - set(old.get("stocks", {}))  # 新加入追蹤的股票要立即寫入
+    if max(dates) == old.get("as_of") and not new_symbols and "--force" not in sys.argv:
         print(f"ℹ️  最新交易日仍為 {max(dates)},今日非交易日或資料未更新,略過")
         return
 

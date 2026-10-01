@@ -43,12 +43,21 @@ COMPANY_KEYWORDS = {
     "BESI": ["BESI", "Besi"],
     "ASML": ["ASML"],
     "AT&S": ["AT&S", "AT＆S"],
+    "Marvell": ["Marvell", "邁威爾"],
+    "Meta": ["Meta"],
+    "Tesla": ["Tesla", "特斯拉"],
+    "UMC": ["UMC", "聯電"],
+    "Winbond": ["Winbond", "華邦電", "華邦"],
+    "Acer": ["Acer", "宏碁"],
+    "LuxNet": ["華星光"],
+    "Topoint": ["尖點"],
 }
 
 # 關鍵字 → 區域
 REGION_KEYWORDS = {
-    "台灣": ["台積", "日月光", "京元", "力成", "欣興", "南電", "景碩", "台灣", "Taiwan", "TSMC"],
-    "美國": ["NVIDIA", "輝達", "AMD", "Intel", "Amkor", "Broadcom", "Apple", "Micron",
+    "台灣": ["台積", "日月光", "京元", "力成", "欣興", "南電", "景碩", "台灣", "Taiwan", "TSMC",
+            "聯電", "華邦", "宏碁", "Acer", "華星光", "尖點"],
+    "美國": ["NVIDIA", "輝達", "AMD", "Intel", "Amkor", "Broadcom", "Apple", "Micron", "Marvell", "Meta", "Tesla",
             "美國", "USA", "Arizona", "亞利桑那"],
     "韓國": ["SK Hynix", "Samsung", "海力士", "三星", "韓國", "Korea"],
     "日本": ["Ibiden", "Shinko", "Resonac", "Ajinomoto", "日本", "Japan", "Sony"],

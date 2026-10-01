@@ -16,6 +16,7 @@ fetch_tw_prices.py
 用法:
   python scripts/fetch_tw_prices.py                    # 抓最新一個交易日 (每日排程)
   python scripts/fetch_tw_prices.py --backfill 13      # 補建最近 13 個月的歷史收盤價 (首次使用)
+  python scripts/fetch_tw_prices.py --backfill 13 --only 4979,8021   # 只補建指定代號 (新增公司時)
 """
 
 import json
@@ -39,6 +40,7 @@ WATCHLIST = {
     "3037": ("欣興", "上市"), "2308": ("台達電", "上市"),
     "2317": ("鴻海", "上市"), "2382": ("廣達", "上市"), "3231": ("緯創", "上市"),
     "6669": ("緯穎", "上市"), "4938": ("和碩", "上市"), "2357": ("華碩", "上市"),
+    "2344": ("華邦電", "上市"), "4979": ("華星光", "上櫃"), "8021": ("尖點", "上市"), "2353": ("宏碁", "上市"),
 }
 
 TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
@@ -164,7 +166,10 @@ def main():
         for _ in range(months):
             firsts.append(date(y, m, 1))
             y, m = (y, m - 1) if m > 1 else (y - 1, 12)
+        only = set(sys.argv[sys.argv.index("--only") + 1].split(",")) if "--only" in sys.argv else None
         for code, (name, market) in WATCHLIST.items():
+            if only and code not in only:
+                continue
             got = 0
             for first in reversed(firsts):
                 try:
@@ -176,9 +181,18 @@ def main():
                 time.sleep(3.5)  # 證交所限制請求頻率 (約每 5 秒 3 次)
             print(f"  {code} {name}: 補建 {got} 個交易日", flush=True)
 
-    latest = fetch_latest()
+    try:
+        latest = fetch_latest()
+    except Exception as e:  # 最新收盤抓取失敗時,仍保留已補建的歷史 (不讓補建白做)
+        print(f"  ⚠️  最新收盤抓取失敗,僅使用歷史資料:{e}", flush=True)
+        latest = {}
     for code, (d, c) in latest.items():
         add_history(history, code, [(d, c)])
+    # 月資料 API 有時比每日 API 早公布當天收盤;以每日 API 的最新日期為準,避免各檔日期不一致
+    if latest:
+        cutoff = max(d for d, _ in latest.values())
+        for code in history:
+            history[code] = [r for r in history[code] if r[0] <= cutoff]
     missing = [c for c in WATCHLIST if c not in latest]
 
     stocks = {code: s for code in WATCHLIST if (s := compute(code, history.get(code, [])))}
