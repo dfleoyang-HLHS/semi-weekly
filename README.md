@@ -28,6 +28,7 @@ semi-weekly/
 │   ├── fetch_news.py       # 抓取 RSS 與新聞來源
 │   ├── archive_news.py     # 新聞併入永久資料庫
 │   ├── fetch_us_prices.py  # 美股盤後報價 (Finnhub)
+│   ├── fetch_tw_prices.py  # 台股盤後報價 (證交所、櫃買中心開放資料)
 │   ├── generate_draft.py   # 呼叫 Claude API 生成草稿
 │   ├── new_post.py         # 手動建立新文章模板
 │   └── weekly_template.md  # 週報固定模板
@@ -48,6 +49,7 @@ semi-weekly/
 | Merge 後 | 重建索引 (含 `supplychain-index.json`) → 部署 GitHub Pages | 否 |
 | 週三、五 06:00 | 抓新聞 → 產生快訊 → 部署 | 否 |
 | 週二~六 06:30 | 美股收盤後抓取報價 → 部署 | 否 |
+| 週一~五 16:00 | 台股收盤後抓取報價 → 部署 | 否 |
 
 詳細操作見 `usage.MD`。需在 repo Secrets 設定 `ANTHROPIC_API_KEY`。
 

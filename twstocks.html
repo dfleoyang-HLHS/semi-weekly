@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>美股 AI 供應鏈追蹤 - 半導體週報</title>
+<title>台股 AI 供應鏈追蹤 - 半導體週報</title>
 <link rel="stylesheet" href="assets/style.css">
 <script src="assets/theme.js"></script>
 <style>
@@ -84,6 +84,12 @@
 .badge-b { background: rgba(24, 95, 165, 0.15); color: #3b82f6; }
 .badge-c { background: rgba(186, 117, 23, 0.15); color: #f59e0b; }
 .badge-d { background: rgba(163, 45, 45, 0.15); color: #ef4444; }
+.badge-foundry   { background: rgba(29, 158, 117, 0.15); color: #10b981; }
+.badge-osat      { background: rgba(24, 95, 165, 0.15); color: #3b82f6; }
+.badge-design    { background: rgba(127, 119, 221, 0.18); color: #8b80f0; }
+.badge-memory    { background: rgba(186, 117, 23, 0.15); color: #f59e0b; }
+.badge-component { background: rgba(216, 90, 48, 0.15); color: #f97316; }
+.badge-server    { background: rgba(100, 116, 139, 0.18); color: #94a3b8; }
 
 .us-metrics {
   display: grid;
@@ -98,8 +104,9 @@
 }
 .us-metric-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
 .us-metric-value { font-size: 15px; font-weight: 600; color: var(--text); margin-top: 2px; }
-.us-metric-value.up { color: #10b981; }
-.us-metric-value.down { color: #ef4444; }
+/* 台股習慣:漲紅、跌綠 */
+.us-metric-value.up { color: #ef4444; }
+.us-metric-value.down { color: #10b981; }
 
 /* 盤後股價列 (data/us_prices.json,每個交易日自動更新) */
 .us-quote { background: var(--bg-elevated); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
@@ -113,8 +120,8 @@
 .us-quote-range { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
 .us-quote a { color: inherit; text-decoration: none; }
 .us-quote a:hover .us-quote-sym { color: var(--accent); }
-.q-up { color: #10b981; }
-.q-down { color: #ef4444; }
+.q-up { color: #ef4444; }
+.q-down { color: #10b981; }
 .us-tape { margin-bottom: 20px; min-height: 46px; }
 
 .us-news {
@@ -183,8 +190,8 @@
       <a href="timeline.html">時間軸</a>
       <a href="briefs.html">快訊</a>
       <a href="supplychain.html">供應鏈</a>
-      <a href="usstocks.html" class="active">美股追蹤</a>
-      <a href="twstocks.html">台股追蹤</a>
+      <a href="usstocks.html">美股追蹤</a>
+      <a href="twstocks.html" class="active">台股追蹤</a>
       <a href="search.html">搜尋</a>
     </nav>
   </div>
@@ -193,8 +200,8 @@
 <main class="container">
 
   <div class="us-hero">
-    <h2>🇺🇸 美股 AI 供應鏈追蹤表</h2>
-    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof"></span><span id="stocks-asof"></span></p>
+    <h2>🇹🇼 台股 AI 供應鏈追蹤表</h2>
+    <p>以週報與新聞中出現的關鍵台灣公司為主,依供應鏈位置分類,含每日收盤行情、營運重點與新聞動態 (漲紅跌綠)。<span id="price-asof"></span><span id="stocks-asof"></span></p>
   </div>
 
   <!-- TradingView 官方跑馬燈報價小工具 (即時走勢;點選可開啟 TradingView) -->
@@ -202,19 +209,18 @@
 
   <div class="us-filter">
     <button class="us-filter-btn active" data-filter="all" id="btn-all">全部</button>
-    <button class="us-filter-btn" data-filter="a">🏆 A 級 龍頭</button>
-    <button class="us-filter-btn" data-filter="b">🥈 B 級 挑戰者</button>
-    <button class="us-filter-btn" data-filter="c">🥉 C 級 穩健</button>
-    <button class="us-filter-btn" data-filter="d">📉 D 級 修復中</button>
-    <button class="us-filter-btn" data-filter="chip">晶片設計</button>
-    <button class="us-filter-btn" data-filter="server">系統廠</button>
-    <button class="us-filter-btn" data-filter="equipment">設備 · 記憶體</button>
+    <button class="us-filter-btn" data-filter="foundry">晶圓代工</button>
+    <button class="us-filter-btn" data-filter="osat">封測</button>
+    <button class="us-filter-btn" data-filter="design">IC 設計</button>
+    <button class="us-filter-btn" data-filter="memory">記憶體</button>
+    <button class="us-filter-btn" data-filter="component">載板 · 零組件</button>
+    <button class="us-filter-btn" data-filter="server">伺服器 · 代工</button>
   </div>
 
   <div class="us-grid" id="us-grid"></div>
 
   <div style="margin-top: 32px; padding: 16px 20px; background: var(--bg-card); border-left: 3px solid var(--accent-warm); border-radius: 8px; color: var(--text-dim); font-size: 13px; line-height: 1.7;">
-    <strong>⚠️ 提醒</strong>:所有股價與財報數字為新聞公開資料,僅供產業分析參考,非投資建議。實際交易請以券商即時報價與公司正式公告為準。
+    <strong>⚠️ 提醒</strong>:股價來自臺灣證券交易所、證券櫃檯買賣中心公開資料 (報酬率與 52 週區間已還原除權 / 分割,現金除息未還原),營運數字取自新聞,僅供產業分析參考,非投資建議。實際交易請以券商即時報價與公司正式公告為準。
   </div>
 
 </main>
@@ -226,7 +232,7 @@
 </footer>
 
 <script>
-// 公司卡片資料 (財報指標、近期重點、標籤):data/us_stocks.json,每週一隨週報由 Claude 依新聞更新
+// 公司卡片資料 (營運指標、近期重點、標籤):data/tw_stocks.json,每週一隨週報由 Claude 依新聞更新
 let STOCKS = [];
 let STOCKS_UPDATED = "";
 
@@ -240,18 +246,17 @@ function escapeHtml(str) {
     .replace(/'/g, "&#039;");
 }
 
-// ── 盤後股價 (data/us_prices.json,GitHub Actions 每個交易日收盤後由 Finnhub 抓取) ──
+// ── 盤後股價 (data/tw_prices.json,GitHub Actions 每個交易日收盤後由證交所、櫃買中心開放資料抓取) ──
 let PRICES = null;
-const STALE_METRICS = ["股價", "YTD"];  // 有自動股價時,隱藏手寫且已過時的欄位
-const SYMBOL_ALIAS = { GOOG: "GOOGL" };
-const TV_SYMBOLS = {
-  NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", AMD: "NASDAQ:AMD", SMCI: "NASDAQ:SMCI",
-  INTC: "NASDAQ:INTC", AMAT: "NASDAQ:AMAT", MU: "NASDAQ:MU", AMKR: "NASDAQ:AMKR",
-  DELL: "NYSE:DELL", HPE: "NYSE:HPE", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL",
-  META: "NASDAQ:META", LRCX: "NASDAQ:LRCX"
+const STALE_METRICS = [];
+const CATEGORY_NAME = { foundry: "晶圓代工", osat: "封測", design: "IC 設計", memory: "記憶體", component: "載板 · 零組件", server: "伺服器 · 代工" };
+// TradingView 代號:上市 TWSE:代號、上櫃 TPEX:代號
+const tvSymbol = code => {
+  const s = STOCKS.find(x => x.ticker === code);
+  return `${s && s.market === "上櫃" ? "TPEX" : "TWSE"}:${code}`;
 };
 
-const cardSymbols = s => s.ticker.split("/").map(t => SYMBOL_ALIAS[t.trim()] || t.trim());
+const cardSymbols = s => [s.ticker];
 const hasQuotes = s => !!PRICES && cardSymbols(s).some(t => PRICES.stocks[t]);
 const fmtPct = v => v == null ? "–" : `${v > 0 ? "+" : ""}${v.toFixed(2)}%`;
 const pctClass = v => v == null || v === 0 ? "" : (v > 0 ? "q-up" : "q-down");
@@ -260,35 +265,35 @@ function renderQuote(sym) {
   const q = PRICES && PRICES.stocks[sym];
   if (!q) return "";
   const ret = (label, v) => `<span>${label} <b class="${pctClass(v)}">${fmtPct(v)}</b></span>`;
-  const tvUrl = `https://www.tradingview.com/symbols/${(TV_SYMBOLS[sym] || sym).replace(":", "-")}/`;
+  const tvUrl = `https://www.tradingview.com/symbols/${tvSymbol(sym).replace(":", "-")}/`;
   return `
     <div class="us-quote">
       <div class="us-quote-main">
         <a href="${tvUrl}" target="_blank" rel="noopener noreferrer" title="在 TradingView 開啟 ${escapeHtml(sym)}"><span class="us-quote-sym">${escapeHtml(sym)} ↗</span></a>
-        <span class="us-quote-price">$${q.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+        <span class="us-quote-price">NT$${q.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
         <span class="us-quote-chg ${pctClass(q.change_pct)}">${q.change != null ? (q.change > 0 ? "+" : "") + q.change.toFixed(2) : ""} (${fmtPct(q.change_pct)})</span>
       </div>
       <div class="us-quote-rets">${ret("5日", q.ret_5d)}${ret("本月", q.ret_mtd)}${ret("13週", q.ret_13w)}${ret("今年", q.ret_ytd)}</div>
-      ${q.low_52w != null && q.high_52w != null ? `<div class="us-quote-range">52 週區間 $${q.low_52w} – $${q.high_52w}${q.stale ? " · ⚠️ 本次未更新" : ""}</div>` : ""}
+      ${q.low_52w != null && q.high_52w != null ? `<div class="us-quote-range">52 週區間 NT$${q.low_52w.toLocaleString("en-US")} – NT$${q.high_52w.toLocaleString("en-US")}${q.adjusted ? ` · 已還原除權/分割 (${escapeHtml(q.adjusted.map(a => a.split(" ")[0]).join("、"))})` : ""}${q.stale ? " · ⚠️ 本次未更新" : ""}</div>` : ""}
     </div>`;
 }
 
 async function loadStocks() {
-  const res = await fetch("data/us_stocks.json", { cache: "no-store" });
+  const res = await fetch("data/tw_stocks.json", { cache: "no-store" });
   const data = await res.json();
   STOCKS = data.stocks || [];
   STOCKS_UPDATED = data.updated_at || "";
   document.getElementById("stocks-asof").innerHTML =
-    `財報指標與近期重點更新至 <strong>${escapeHtml(STOCKS_UPDATED)}</strong>。`;
+    `營運指標與近期重點更新至 <strong>${escapeHtml(STOCKS_UPDATED)}</strong>。`;
 }
 
 async function loadPrices() {
   try {
-    const res = await fetch("data/us_prices.json", { cache: "no-store" });
+    const res = await fetch("data/tw_prices.json", { cache: "no-store" });
     if (!res.ok) return;
     PRICES = await res.json();
     document.getElementById("price-asof").innerHTML =
-      `股價為 <strong>${escapeHtml(PRICES.as_of)}</strong> 美股收盤 (資料來源:${escapeHtml(PRICES.source)})。`;
+      `股價為 <strong>${escapeHtml(PRICES.as_of)}</strong> 台股收盤 (資料來源:${escapeHtml(PRICES.source)})。`;
   } catch (e) {
     PRICES = null;  // 沒有股價檔時維持原本的手寫內容
   }
@@ -302,7 +307,7 @@ function loadTradingViewTape() {
   script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
   script.async = true;
   script.innerHTML = JSON.stringify({
-    symbols: STOCKS.flatMap(cardSymbols).map(t => ({ proName: TV_SYMBOLS[t] || t, title: t })),
+    symbols: STOCKS.map(s => ({ proName: tvSymbol(s.ticker), title: s.name })),
     showSymbolLogo: true, isTransparent: true, displayMode: "adaptive",
     colorTheme: theme, locale: "zh_TW"
   });
@@ -314,7 +319,6 @@ function renderStocks(filter) {
   
   const filtered = STOCKS.filter(s => {
     if (filter === 'all') return true;
-    if (['a','b','c','d'].includes(filter)) return s.level === filter;
     return s.category === filter;
   });
 
@@ -329,9 +333,9 @@ function renderStocks(filter) {
       <div class="us-card-header">
         <div>
           <div class="us-name">${escapeHtml(s.name)}</div>
-          <div class="us-ticker">${escapeHtml(s.ticker)}</div>
+          <div class="us-ticker">${escapeHtml(s.ticker)} · ${escapeHtml(s.market)}</div>
         </div>
-        <span class="us-badge badge-${escapeHtml(s.level)}">${escapeHtml(s.level.toUpperCase())} 級</span>
+        <span class="us-badge badge-${escapeHtml(s.category)}">${escapeHtml(CATEGORY_NAME[s.category] || s.category)}</span>
       </div>
       ${cardSymbols(s).map(renderQuote).join('')}
       <div class="us-metrics">
@@ -367,7 +371,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     await loadStocks();
   } catch (e) {
-    document.getElementById('us-grid').innerHTML = `<div class="us-no-data">無法載入公司資料 (data/us_stocks.json)</div>`;
+    document.getElementById('us-grid').innerHTML = `<div class="us-no-data">無法載入公司資料 (data/tw_stocks.json)</div>`;
     return;
   }
 

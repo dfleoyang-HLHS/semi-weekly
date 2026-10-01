@@ -2,11 +2,13 @@ name: Semi Weekly and Briefs
 
 # 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
 #              週一~五 22:30 = 美股收盤後 (台灣週二~六 06:30,美股報價)
+#              週一~五 08:00 = 台股收盤後 (台灣週一~五 16:00,台股報價)
 on:
   schedule:
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
     - cron: '30 22 * * 1-5'
+    - cron: '0 8 * * 1-5'
   push:
     branches: [main]
   workflow_dispatch:
@@ -14,7 +16,7 @@ on:
       mode:
         description: '執行模式 (auto = 依台灣時間星期幾判斷)'
         type: choice
-        options: [auto, weekly, brief, prices]
+        options: [auto, weekly, brief, prices, twprices]
         default: auto
 
 permissions:
@@ -46,6 +48,8 @@ jobs:
             MODE="${{ inputs.mode }}"
           elif [ "${{ github.event.schedule }}" = "30 22 * * 1-5" ]; then
             MODE="prices"
+          elif [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
+            MODE="twprices"
           elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
             MODE="weekly"
           elif [ "$(date +%u)" = "1" ]; then
@@ -129,6 +133,7 @@ jobs:
             posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md
             data/supplychain-${{ steps.draft.outputs.week_tag }}.json
             data/us_stocks.json
+            data/tw_stocks.json
           commit-message: "週報 ${{ steps.draft.outputs.week_tag }} (AI 草稿)"
           title: "📝 ${{ steps.draft.outputs.week_tag }} 週報待審:${{ steps.draft.outputs.title }}"
           body: |
@@ -136,12 +141,12 @@ jobs:
 
             - 週報:`posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md`
             - 供應鏈圖:`data/supplychain-${{ steps.draft.outputs.week_tag }}.json`
-            - 美股追蹤卡片 (財報指標、近期重點):`data/us_stocks.json` (本週無更新則不會出現在變更中)
+            - 美股 / 台股追蹤卡片 (指標、近期重點):`data/us_stocks.json`、`data/tw_stocks.json` (本週無更新則不會出現在變更中)
 
             審閱重點:
             - [ ] 數字與事實是否正確 (對照文末參考來源)
             - [ ] 供應鏈圖新增/刪除的公司與關係是否合理
-            - [ ] 美股卡片的財報數字是否與新聞一致
+            - [ ] 美股 / 台股卡片的數字是否與新聞一致
             - [ ] 需要修改可直接在 PR 的 Files changed 頁面編輯 (… → Edit file)
 
             不要發佈就直接 Close 這個 PR。
@@ -175,6 +180,31 @@ jobs:
             done
           fi
 
+  # ── 台股收盤後:抓取台股追蹤公司的收盤價 (證交所、櫃買中心開放資料),直接發佈 ──
+  twprices:
+    needs: detect
+    if: needs.detect.outputs.mode == 'twprices'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch Taiwan stock prices
+        run: python scripts/fetch_tw_prices.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tw_prices.json
+          if ! git diff --staged --quiet; then
+            git commit -m "台股報價 $(date +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
+
   # ── PR merge (或任何推到 main) 後:重建索引 ───────────────────
   publish:
     needs: detect
@@ -201,10 +231,10 @@ jobs:
           fi
 
   deploy:
-    needs: [detect, brief, publish, prices]
+    needs: [detect, brief, publish, prices, twprices]
     if: >-
       always() &&
-      (needs.brief.result == 'success' || needs.publish.result == 'success' || needs.prices.result == 'success')
+      (needs.brief.result == 'success' || needs.publish.result == 'success' || needs.prices.result == 'success' || needs.twprices.result == 'success')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

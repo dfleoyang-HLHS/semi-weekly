@@ -48,6 +48,14 @@
 - 財報指標與近期重點:存在 `data/us_stocks.json`,每週一隨週報由 Claude 依本週新聞更新 (只更新有新資訊的公司),放在週報 PR 中一起審閱
 - 新增追蹤公司:同時修改 `scripts/fetch_us_prices.py` 的 WATCHLIST、`data/us_stocks.json` 與 `usstocks.html` 的 TV_SYMBOLS
 
+## 台股報價 (每個交易日盤後自動更新)
+
+- 台股收盤後 (台灣時間週一~五 16:00) 自動抓取「台股追蹤」18 檔收盤價,存到 `data/tw_prices.json` 並累積每日收盤價
+- 資料來源:臺灣證券交易所、證券櫃檯買賣中心官方開放資料,免金鑰;報酬率未還原除權息
+- 營運指標與近期重點:`data/tw_stocks.json`,每週一隨週報由 Claude 依新聞更新,放在週報 PR 中一起審閱
+- 手動補跑:Actions → Run workflow → mode 選 `twprices`
+- 新增追蹤公司:修改 `scripts/fetch_tw_prices.py` 的 WATCHLIST 與 `data/tw_stocks.json`,再執行 `python scripts/fetch_tw_prices.py --backfill 13` 補建歷史
+
 ## 新聞資料庫
 
 每次抓新聞 (週一、三、五) 都會自動併入永久資料庫,不會因新聞過期而遺失:
