@@ -106,6 +106,9 @@
 .core-stroke {
   stroke-width: 2px !important;
 }
+/* 深色模式:結盟 (#185FA5)、敵對 (#A32D2D) 文字在深底上太暗,改用同色系亮色 (連線顏色不變) */
+:root[data-theme="dark"] [style*="color:#185FA5"] { color: #60a5fa !important; }
+:root[data-theme="dark"] [style*="color:#A32D2D"] { color: #f87171 !important; }
 /* 供應鏈關係分析 */
 .an-overview {
   background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent);

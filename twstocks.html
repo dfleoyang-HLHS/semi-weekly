@@ -123,6 +123,16 @@
 .q-up { color: #ef4444; }
 .q-down { color: #10b981; }
 .us-tape { margin-bottom: 20px; min-height: 46px; }
+/* 淺色模式:加深綠、紅、各標籤字色,維持在淺底上的可讀性 (對比 ≥ 4.5) */
+:root[data-theme="light"] .q-down, :root[data-theme="light"] .us-metric-value.down { color: #047857; }
+:root[data-theme="light"] .q-up, :root[data-theme="light"] .us-metric-value.up { color: #dc2626; }
+:root[data-theme="light"] .badge-a, :root[data-theme="light"] .badge-foundry { color: #047857; }
+:root[data-theme="light"] .badge-b, :root[data-theme="light"] .badge-osat { color: #1d4ed8; }
+:root[data-theme="light"] .badge-c, :root[data-theme="light"] .badge-memory { color: #b45309; }
+:root[data-theme="light"] .badge-d { color: #b91c1c; }
+:root[data-theme="light"] .badge-design { color: #5b4fd6; }
+:root[data-theme="light"] .badge-component { color: #c2410c; }
+:root[data-theme="light"] .badge-server { color: #475569; }
 /* 台股跑馬燈:TradingView 小工具不提供證交所上市股報價,改用官方收盤資料自行呈現 */
 .tw-tape { overflow: hidden; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
 .tw-tape-track { display: inline-flex; white-space: nowrap; animation: tw-scroll 60s linear infinite; }
