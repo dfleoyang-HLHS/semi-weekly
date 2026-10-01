@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-01T16:31:26+08:00",
+ "updated_at": "2026-10-01T16:37:31+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -34,6 +34,14 @@
    "include": "又上財經\\s*#",
    "require": "闕又上",
    "note": "僅收錄闕又上主講的【又上財經】系列;生活漫談、其他講師節目不收錄"
+  },
+  {
+   "name": "游庭皓",
+   "channel_id": "UC0lbAQVpenvfA2QqzsRtL_g",
+   "url": "https://www.youtube.com/@yutinghaofinance",
+   "publisher": "游庭皓的財經皓角",
+   "host": "游庭皓",
+   "format": "single"
   }
  ],
  "episodes": [
@@ -2693,6 +2701,664 @@
    "series": "又上財經#379",
    "companies": [],
    "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-10-01",
+   "full": {
+    "id": "FsIraI_ezPI",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/10/1(四)美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?【早晨財經速解讀】",
+    "topic": "美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?",
+    "raw_title": "2026/10/1(四)美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-10-01",
+    "show_date": "2026-10-01",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "01:30",
+      "topic": "8月PCE"
+     },
+     {
+      "time": "05:00",
+      "topic": "利率衝擊"
+     },
+     {
+      "time": "07:30",
+      "topic": "羅素反應"
+     },
+     {
+      "time": "11:30",
+      "topic": "資本支出"
+     },
+     {
+      "time": "15:00",
+      "topic": "算力成本"
+     },
+     {
+      "time": "17:00",
+      "topic": "安全機制"
+     },
+     {
+      "time": "20:10",
+      "topic": "費半反應"
+     },
+     {
+      "time": "22:00",
+      "topic": "美光財報"
+     },
+     {
+      "time": "23:40",
+      "topic": "AI外溢"
+     },
+     {
+      "time": "28:20",
+      "topic": "美台股追蹤"
+     },
+     {
+      "time": "31:45",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "美光",
+      "code": "MU",
+      "market": "美股"
+     }
+    ],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?",
+   "series": "早晨財經速解讀",
+   "companies": [
+    {
+     "name": "美光",
+     "code": "MU",
+     "market": "美股",
+     "count": 1
+    }
+   ],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-30",
+   "full": {
+    "id": "eHz1_TGAo4I",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/30(三)利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?【早晨財經速解讀】",
+    "topic": "利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?",
+    "raw_title": "2026/9/30(三)利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-30",
+    "show_date": "2026-09-30",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "01:00",
+      "topic": "債市恐慌"
+     },
+     {
+      "time": "03:50",
+      "topic": "股市分化"
+     },
+     {
+      "time": "06:00",
+      "topic": "2000年分化"
+     },
+     {
+      "time": "08:00",
+      "topic": "產業分化"
+     },
+     {
+      "time": "11:50",
+      "topic": "2026分化"
+     },
+     {
+      "time": "14:30",
+      "topic": "Antropicc上市"
+     },
+     {
+      "time": "17:00",
+      "topic": "債券搶錢潮"
+     },
+     {
+      "time": "21:00",
+      "topic": "發債有多快"
+     },
+     {
+      "time": "22:30",
+      "topic": "巨頭進度"
+     },
+     {
+      "time": "25:00",
+      "topic": "AI時代"
+     },
+     {
+      "time": "27:00",
+      "topic": "AI沉癮"
+     },
+     {
+      "time": "29:10",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-29",
+   "full": {
+    "id": "wBb7G4Ifd34",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/29(二)10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?【早晨財經速解讀】",
+    "topic": "10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?",
+    "raw_title": "2026/9/29(二)10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-29",
+    "show_date": "2026-09-29",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "01:50",
+      "topic": "資產績效"
+     },
+     {
+      "time": "04:50",
+      "topic": "估值影響"
+     },
+     {
+      "time": "09:00",
+      "topic": "通膨外溢"
+     },
+     {
+      "time": "12:20",
+      "topic": "殖利率倒掛"
+     },
+     {
+      "time": "15:00",
+      "topic": "美債標售"
+     },
+     {
+      "time": "18:30",
+      "topic": "民調衝擊"
+     },
+     {
+      "time": "23:00",
+      "topic": "利率衝擊"
+     },
+     {
+      "time": "27:00",
+      "topic": "川習會"
+     },
+     {
+      "time": "31:00",
+      "topic": "關稅外部成本"
+     },
+     {
+      "time": "34:20",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-28",
+   "full": {
+    "id": "dknQKeMAkvU",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊",
+    "topic": "導讀 國家為什麼會失敗/自由的窄廊",
+    "raw_title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊",
+    "series": "",
+    "published": "2026-09-28",
+    "show_date": "2026-09-28",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "導讀 國家為什麼會失敗/自由的窄廊",
+   "series": "",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-24",
+   "full": {
+    "id": "TVKacGhmAm4",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/24(四) 台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?【早晨財經速解讀】",
+    "topic": "台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?",
+    "raw_title": "2026/9/24(四) 台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-24",
+    "show_date": "2026-09-24",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "台灣經濟"
+     },
+     {
+      "time": "05:00",
+      "topic": "產業競爭"
+     },
+     {
+      "time": "09:00",
+      "topic": "市場資金"
+     },
+     {
+      "time": "15:00",
+      "topic": "人均產出"
+     },
+     {
+      "time": "19:00",
+      "topic": "薪資追趕"
+     },
+     {
+      "time": "22:00",
+      "topic": "購買力"
+     },
+     {
+      "time": "25:00",
+      "topic": "政府稅收"
+     },
+     {
+      "time": "28:00",
+      "topic": "缺工挑戰"
+     },
+     {
+      "time": "31:50",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-23",
+   "full": {
+    "id": "Xlj2cBFC7_s",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/23(三)5%殖利率也擋不住FOMO？AI狂潮推那指再創新高【早晨財經速解讀】",
+    "topic": "5%殖利率也擋不住FOMO？AI狂潮推那指再創新高",
+    "raw_title": "2026/9/23(三)5%殖利率也擋不住FOMO？AI狂潮推那指再創新高【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-23",
+    "show_date": "2026-09-23",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "03:00",
+      "topic": "美股追蹤"
+     },
+     {
+      "time": "05:40",
+      "topic": "Meta"
+     },
+     {
+      "time": "10:00",
+      "topic": "FOMO"
+     },
+     {
+      "time": "14:00",
+      "topic": "輝達版圖"
+     },
+     {
+      "time": "16:30",
+      "topic": "融資遊戲"
+     },
+     {
+      "time": "18:30",
+      "topic": "AI陷阱"
+     },
+     {
+      "time": "21:30",
+      "topic": "美伊問題"
+     },
+     {
+      "time": "23:40",
+      "topic": "利空衝擊"
+     },
+     {
+      "time": "25:20",
+      "topic": "川習會議題"
+     },
+     {
+      "time": "30:10",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "Meta",
+      "code": "META",
+      "market": "美股"
+     },
+     {
+      "name": "輝達",
+      "code": "NVDA",
+      "market": "美股"
+     }
+    ],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "5%殖利率也擋不住FOMO？AI狂潮推那指再創新高",
+   "series": "早晨財經速解讀",
+   "companies": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "美股",
+     "count": 1
+    },
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股",
+     "count": 1
+    }
+   ],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-22",
+   "full": {
+    "id": "U4RH_CPe3GQ",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/22(二)那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？【早晨財經速解讀】",
+    "topic": "那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？",
+    "raw_title": "2026/9/22(二)那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-22",
+    "show_date": "2026-09-22",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "01:30",
+      "topic": "廣度惡化"
+     },
+     {
+      "time": "05:00",
+      "topic": "美股追蹤"
+     },
+     {
+      "time": "10:00",
+      "topic": "巨頭輪動"
+     },
+     {
+      "time": "15:00",
+      "topic": "融資挑戰"
+     },
+     {
+      "time": "18:00",
+      "topic": "資料中心逆風"
+     },
+     {
+      "time": "23:00",
+      "topic": "期中選舉"
+     },
+     {
+      "time": "27:00",
+      "topic": "選後格局"
+     },
+     {
+      "time": "30:00",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-21",
+   "full": {
+    "id": "EJdsmRgakkU",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/21(一)美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?【早晨財經速解讀】",
+    "topic": "美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?",
+    "raw_title": "2026/9/21(一)美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-21",
+    "show_date": "2026-09-21",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "03:00",
+      "topic": "美股關卡"
+     },
+     {
+      "time": "08:00",
+      "topic": "川習會前瞻"
+     },
+     {
+      "time": "13:00",
+      "topic": "能源議題"
+     },
+     {
+      "time": "16:00",
+      "topic": "稀土議題"
+     },
+     {
+      "time": "17:30",
+      "topic": "無人機議題"
+     },
+     {
+      "time": "20:00",
+      "topic": "設廠議題"
+     },
+     {
+      "time": "24:00",
+      "topic": "緩步脫鉤"
+     },
+     {
+      "time": "26:15",
+      "topic": "對外關稅"
+     },
+     {
+      "time": "29:30",
+      "topic": "順勢而為"
+     },
+     {
+      "time": "31:00",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-09-18",
+   "full": {
+    "id": "Ulz539c38mw",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
+    "topic": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
+    "raw_title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-09-18",
+    "show_date": "2026-09-18",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "01:50",
+      "topic": "凍漲利率"
+     },
+     {
+      "time": "05:30",
+      "topic": "通膨低估"
+     },
+     {
+      "time": "08:00",
+      "topic": "通膨外溢"
+     },
+     {
+      "time": "10:30",
+      "topic": "貨幣政策偏緊"
+     },
+     {
+      "time": "15:30",
+      "topic": "房市管制放鬆"
+     },
+     {
+      "time": "18:20",
+      "topic": "房市轉折"
+     },
+     {
+      "time": "23:00",
+      "topic": "央行考量"
+     },
+     {
+      "time": "25:40",
+      "topic": "現實考量"
+     },
+     {
+      "time": "27:45",
+      "topic": "新富時代"
+     },
+     {
+      "time": "30:00",
+      "topic": "楊流來了"
+     },
+     {
+      "time": "31:40",
+      "topic": "世界為什麼越來越分裂"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
+   "series": "早晨財經速解讀",
+   "companies": [],
+   "hashtags": []
   }
  ],
  "extras": [
@@ -5015,6 +5681,527 @@
    "show_date": "2026-09-18",
    "guests": [],
    "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "FsIraI_ezPI",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/10/1(四)美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?【早晨財經速解讀】",
+   "topic": "美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?",
+   "raw_title": "2026/10/1(四)美股詭異行情!債市拉警報 基本面卻上修?八成個股下跌 AI能撐多久?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-10-01",
+   "show_date": "2026-10-01",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "01:30",
+     "topic": "8月PCE"
+    },
+    {
+     "time": "05:00",
+     "topic": "利率衝擊"
+    },
+    {
+     "time": "07:30",
+     "topic": "羅素反應"
+    },
+    {
+     "time": "11:30",
+     "topic": "資本支出"
+    },
+    {
+     "time": "15:00",
+     "topic": "算力成本"
+    },
+    {
+     "time": "17:00",
+     "topic": "安全機制"
+    },
+    {
+     "time": "20:10",
+     "topic": "費半反應"
+    },
+    {
+     "time": "22:00",
+     "topic": "美光財報"
+    },
+    {
+     "time": "23:40",
+     "topic": "AI外溢"
+    },
+    {
+     "time": "28:20",
+     "topic": "美台股追蹤"
+    },
+    {
+     "time": "31:45",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "美光",
+     "code": "MU",
+     "market": "美股"
+    }
+   ],
+   "part": null
+  },
+  {
+   "id": "eHz1_TGAo4I",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/30(三)利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?【早晨財經速解讀】",
+   "topic": "利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?",
+   "raw_title": "2026/9/30(三)利率越漲 美股越不跌？數兆美元豪賭 AI驗收期到了嗎?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-30",
+   "show_date": "2026-09-30",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "01:00",
+     "topic": "債市恐慌"
+    },
+    {
+     "time": "03:50",
+     "topic": "股市分化"
+    },
+    {
+     "time": "06:00",
+     "topic": "2000年分化"
+    },
+    {
+     "time": "08:00",
+     "topic": "產業分化"
+    },
+    {
+     "time": "11:50",
+     "topic": "2026分化"
+    },
+    {
+     "time": "14:30",
+     "topic": "Antropicc上市"
+    },
+    {
+     "time": "17:00",
+     "topic": "債券搶錢潮"
+    },
+    {
+     "time": "21:00",
+     "topic": "發債有多快"
+    },
+    {
+     "time": "22:30",
+     "topic": "巨頭進度"
+    },
+    {
+     "time": "25:00",
+     "topic": "AI時代"
+    },
+    {
+     "time": "27:00",
+     "topic": "AI沉癮"
+    },
+    {
+     "time": "29:10",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "wBb7G4Ifd34",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/29(二)10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?【早晨財經速解讀】",
+   "topic": "10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?",
+   "raw_title": "2026/9/29(二)10年美債殖利率 升破5.2%!債市會把股市 拖下水嗎?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-29",
+   "show_date": "2026-09-29",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "01:50",
+     "topic": "資產績效"
+    },
+    {
+     "time": "04:50",
+     "topic": "估值影響"
+    },
+    {
+     "time": "09:00",
+     "topic": "通膨外溢"
+    },
+    {
+     "time": "12:20",
+     "topic": "殖利率倒掛"
+    },
+    {
+     "time": "15:00",
+     "topic": "美債標售"
+    },
+    {
+     "time": "18:30",
+     "topic": "民調衝擊"
+    },
+    {
+     "time": "23:00",
+     "topic": "利率衝擊"
+    },
+    {
+     "time": "27:00",
+     "topic": "川習會"
+    },
+    {
+     "time": "31:00",
+     "topic": "關稅外部成本"
+    },
+    {
+     "time": "34:20",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "dknQKeMAkvU",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊",
+   "topic": "導讀 國家為什麼會失敗/自由的窄廊",
+   "raw_title": "2026/9/28(一) 導讀 國家為什麼會失敗/自由的窄廊",
+   "series": "",
+   "published": "2026-09-28",
+   "show_date": "2026-09-28",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "TVKacGhmAm4",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/24(四) 台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?【早晨財經速解讀】",
+   "topic": "台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?",
+   "raw_title": "2026/9/24(四) 台灣富到流油!為何大家喊窮?AI爆發下一步 去哪找人?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-24",
+   "show_date": "2026-09-24",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "台灣經濟"
+    },
+    {
+     "time": "05:00",
+     "topic": "產業競爭"
+    },
+    {
+     "time": "09:00",
+     "topic": "市場資金"
+    },
+    {
+     "time": "15:00",
+     "topic": "人均產出"
+    },
+    {
+     "time": "19:00",
+     "topic": "薪資追趕"
+    },
+    {
+     "time": "22:00",
+     "topic": "購買力"
+    },
+    {
+     "time": "25:00",
+     "topic": "政府稅收"
+    },
+    {
+     "time": "28:00",
+     "topic": "缺工挑戰"
+    },
+    {
+     "time": "31:50",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "Xlj2cBFC7_s",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/23(三)5%殖利率也擋不住FOMO？AI狂潮推那指再創新高【早晨財經速解讀】",
+   "topic": "5%殖利率也擋不住FOMO？AI狂潮推那指再創新高",
+   "raw_title": "2026/9/23(三)5%殖利率也擋不住FOMO？AI狂潮推那指再創新高【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-23",
+   "show_date": "2026-09-23",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "03:00",
+     "topic": "美股追蹤"
+    },
+    {
+     "time": "05:40",
+     "topic": "Meta"
+    },
+    {
+     "time": "10:00",
+     "topic": "FOMO"
+    },
+    {
+     "time": "14:00",
+     "topic": "輝達版圖"
+    },
+    {
+     "time": "16:30",
+     "topic": "融資遊戲"
+    },
+    {
+     "time": "18:30",
+     "topic": "AI陷阱"
+    },
+    {
+     "time": "21:30",
+     "topic": "美伊問題"
+    },
+    {
+     "time": "23:40",
+     "topic": "利空衝擊"
+    },
+    {
+     "time": "25:20",
+     "topic": "川習會議題"
+    },
+    {
+     "time": "30:10",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "美股"
+    },
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股"
+    }
+   ],
+   "part": null
+  },
+  {
+   "id": "U4RH_CPe3GQ",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/22(二)那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？【早晨財經速解讀】",
+   "topic": "那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？",
+   "raw_title": "2026/9/22(二)那指創新高!個股沒跟上?美股重新押注AI 不怕高利率了？【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-22",
+   "show_date": "2026-09-22",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "01:30",
+     "topic": "廣度惡化"
+    },
+    {
+     "time": "05:00",
+     "topic": "美股追蹤"
+    },
+    {
+     "time": "10:00",
+     "topic": "巨頭輪動"
+    },
+    {
+     "time": "15:00",
+     "topic": "融資挑戰"
+    },
+    {
+     "time": "18:00",
+     "topic": "資料中心逆風"
+    },
+    {
+     "time": "23:00",
+     "topic": "期中選舉"
+    },
+    {
+     "time": "27:00",
+     "topic": "選後格局"
+    },
+    {
+     "time": "30:00",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "EJdsmRgakkU",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/21(一)美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?【早晨財經速解讀】",
+   "topic": "美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?",
+   "raw_title": "2026/9/21(一)美股最危險組合:油價100美元+美債5% 川習會登場 利多還有戲?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-21",
+   "show_date": "2026-09-21",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "03:00",
+     "topic": "美股關卡"
+    },
+    {
+     "time": "08:00",
+     "topic": "川習會前瞻"
+    },
+    {
+     "time": "13:00",
+     "topic": "能源議題"
+    },
+    {
+     "time": "16:00",
+     "topic": "稀土議題"
+    },
+    {
+     "time": "17:30",
+     "topic": "無人機議題"
+    },
+    {
+     "time": "20:00",
+     "topic": "設廠議題"
+    },
+    {
+     "time": "24:00",
+     "topic": "緩步脫鉤"
+    },
+    {
+     "time": "26:15",
+     "topic": "對外關稅"
+    },
+    {
+     "time": "29:30",
+     "topic": "順勢而為"
+    },
+    {
+     "time": "31:00",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null
+  },
+  {
+   "id": "Ulz539c38mw",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
+   "topic": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
+   "raw_title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-09-18",
+   "show_date": "2026-09-18",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "01:50",
+     "topic": "凍漲利率"
+    },
+    {
+     "time": "05:30",
+     "topic": "通膨低估"
+    },
+    {
+     "time": "08:00",
+     "topic": "通膨外溢"
+    },
+    {
+     "time": "10:30",
+     "topic": "貨幣政策偏緊"
+    },
+    {
+     "time": "15:30",
+     "topic": "房市管制放鬆"
+    },
+    {
+     "time": "18:20",
+     "topic": "房市轉折"
+    },
+    {
+     "time": "23:00",
+     "topic": "央行考量"
+    },
+    {
+     "time": "25:40",
+     "topic": "現實考量"
+    },
+    {
+     "time": "27:45",
+     "topic": "新富時代"
+    },
+    {
+     "time": "30:00",
+     "topic": "楊流來了"
+    },
+    {
+     "time": "31:40",
+     "topic": "世界為什麼越來越分裂"
+    }
+   ],
    "hashtags": [],
    "companies": [],
    "part": null
