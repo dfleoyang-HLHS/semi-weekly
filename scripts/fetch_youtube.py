@@ -36,13 +36,16 @@ API = "https://www.googleapis.com/youtube/v3"
 # ── 公司辨識 ──────────────────────────────────────────────
 # 兩字簡稱常與一般詞彙重疊 (如 統一、幸福),只採用下列科技 / AI 供應鏈相關公司
 TW_SHORT_OK = set("""聯電 鴻海 廣達 緯創 和碩 華碩 宏碁 友達 群創 彩晶 凌巨 欣興 南電 景碩 力成 技嘉 微星 仁寶 光寶 國巨
-華通 健鼎 奇鋐 雙鴻 精測 穩懋 宏捷 聯詠 瑞昱 創意 信驊 祥碩 譜瑞 旺宏 威剛 群聯 十銓 創見 家登 弘塑 辛耘 萬潤 均豪 志聖
+華通 健鼎 奇鋐 雙鴻 精測 穩懋 宏捷 聯詠 瑞昱 信驊 祥碩 譜瑞 旺宏 威剛 群聯 十銓 家登 弘塑 辛耘 萬潤 均豪 志聖
 牧德 尖點 聯茂 台燿 嘉澤 川湖 勤誠 營邦 貿聯 信邦 光聖 上詮 聯亞 眾達 前鼎 合晶 漢磊 嘉晶 鈺創 智原 力旺 神盾 義隆 原相
 敦泰 天鈺 致新 茂達 立積 頎邦 南茂 矽格 欣銓 菱生 超豐 晶技 台郡 定穎 金居 銘異 緯穎 宇隆 致茂 京元 健策 宏達電""".split())
 # 暱稱 / 常用全名 → 官方簡稱
 TW_ALIAS = {"發哥": "聯發科", "台積": "台積電", "日月光": "日月光投控", "世界先進": "世界", "京元電": "京元電子",
             "華邦": "華邦電", "南亞科技": "南亞科", "世芯": "世芯-KY", "矽力": "矽力*-KY",
-            "臻鼎": "臻鼎-KY", "緯穎科技": "緯穎", "華星光通": "華星光"}
+            "臻鼎": "臻鼎-KY", "緯穎科技": "緯穎", "華星光通": "華星光",
+            "創意電子": "創意", "創見資訊": "創見"}  # 「創意」「創見」是常用詞,只認全名
+# 名稱出現在這些詞中時不算 (如「努力成為」不是力成)
+NOT_COMPANY = {"力成": ["努力成"], "聯電": ["聯電腦"]}
 US_ALIAS = {
     "NVDA": ["輝達", "NVIDIA", "Nvidia"], "AMD": ["超微", "AMD"], "INTC": ["英特爾", "Intel"],
     "MU": ["美光", "Micron"], "AVGO": ["博通", "Broadcom"], "AAPL": ["蘋果", "Apple"],
@@ -104,6 +107,8 @@ def find_companies(text, matchers):
                 continue
             if any(taken[s:e]):
                 continue
+            if any(text[max(0, s - 3):e + 3].find(w) >= 0 and w.find(key) >= 0 for w in NOT_COMPANY.get(key, [])):
+                continue
             for i in range(s, e):
                 taken[i] = True
             found[code] = {"name": name, "code": code, "market": market}
@@ -157,7 +162,10 @@ def parse_video(v, cfg, matchers):
     m = re.search(r"(\d{4})\.(\d{2})\.(\d{2})", title)
     show_date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else published
     part = re.search(r"part\s*(\d)", title, re.IGNORECASE)
-    if cfg.get("podcast_mark") and cfg["podcast_mark"] in title:
+    series = re.match(r"^【\s*([^】]+?)\s*】", title)
+    if cfg.get("format") == "single":
+        kind = "single"
+    elif cfg.get("podcast_mark") and cfg["podcast_mark"] in title:
         kind = "podcast"
     elif part:
         kind = "part"
@@ -176,10 +184,17 @@ def parse_video(v, cfg, matchers):
                 re.findall(r"^\(?(\d{1,2}:\d{2}(?::\d{2})?)\)?\s+(.+)$", desc, re.MULTILINE)]
     hashtags = [h for h in re.findall(r"#([^\s#]+)", desc + " " + title)
                 if h not in cfg.get("ignore_tags", []) and not re.fullmatch(r"\d[\dA-Z]*", h)]  # 去掉 ETF 代號 (如 00416A)
-    clean_title = re.sub(r"\s*#\S+", "", title).replace("👑", "").strip()
+    clean_title = re.sub(r"\s+#[^\s#\d]\S*", "", title).replace("👑", "").strip()  # 去掉主題標籤,保留集數 (如 #380)
+    topic = clean_title
+    if cfg.get("format") == "single":
+        q = re.search(r"『\s*(.+?)\s*』", clean_title)  # 又上財經:主題在『』內,其餘為課程宣傳
+        topic = q.group(1) if q else re.sub(r"^【[^】]+】\s*", "", clean_title).split("|")[0].split("｜")[0].strip()
+        if topic.count("「") != topic.count("」"):
+            topic = topic.replace("「", "").replace("」", "")
     text = " ".join([title, " ".join(c["topic"] for c in chapters), " ".join(hashtags)])
     return {
-        "id": v["id"], "channel": cfg["name"], "kind": kind, "title": clean_title,
+        "id": v["id"], "channel": cfg["name"], "kind": kind, "title": clean_title, "topic": topic, "raw_title": title,
+        "series": series.group(1).replace(" ", "") if series else "",
         "published": published, "show_date": show_date,
         "guests": [g for g in dict.fromkeys(guests) if g],
         "chapters": chapters, "hashtags": list(dict.fromkeys(hashtags)),
@@ -189,7 +204,22 @@ def parse_video(v, cfg, matchers):
 
 
 def build_episodes(videos, cfg):
-    """完整版 / 分段 / 精華短片 依節目日期與來賓歸為同一集"""
+    """完整版 / 分段 / 精華短片 依節目日期與來賓歸為同一集;單支影片型頻道則每支影片即一集"""
+    if cfg.get("format") == "single":
+        out = []
+        for v in videos:
+            if v["channel"] != cfg["name"]:
+                continue
+            raw = v.get("raw_title", v["title"])
+            if cfg.get("include") and not re.search(cfg["include"], raw):
+                continue
+            if cfg.get("require") and cfg["require"] not in raw:
+                continue
+            out.append({"channel": cfg["name"], "format": "single", "date": v["published"], "full": v,
+                        "parts": [], "clips": [], "guests": [], "host": cfg.get("host"),
+                        "title": v["topic"], "series": v["series"],
+                        "companies": [{**c, "count": 1} for c in v["companies"]], "hashtags": v["hashtags"]})
+        return sorted(out, key=lambda e: e["date"], reverse=True), []
     eps = {}
     for v in sorted(videos, key=lambda x: x["published"]):
         if v["channel"] != cfg["name"] or v["kind"] not in ("full", "part"):

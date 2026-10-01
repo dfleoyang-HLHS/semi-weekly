@@ -79,7 +79,7 @@
 <main class="container">
   <div class="v-hero">
     <h2>🎬 影音觀點</h2>
-    <p>整理財經節目在 YouTube 公開的影片:每集的主題章節、來賓與提到的公司,並連回原影片。<span id="v-asof"></span></p>
+    <p>整理財經節目與分析師在 YouTube 公開的影片:主題、章節、來賓與提到的公司,並連回原影片。<span id="v-asof"></span></p>
   </div>
 
   <div class="v-block">
@@ -135,13 +135,14 @@ function render() {
   document.getElementById("episodes").innerHTML = eps.length ? eps.map(e => {
     const main = e.full || e.parts[0];
     const chapters = (e.full && e.full.chapters.length) ? e.full.chapters : [];
-    const people = [e.host && `主持:${esc(e.host)}`, e.guests.length && `來賓:${e.guests.map(esc).join("、")}`].filter(Boolean).join(" · ");
+    const single = e.format === "single";
+    const people = [e.host && `${single ? "講者" : "主持"}:${esc(e.host)}`, e.guests.length && `來賓:${e.guests.map(esc).join("、")}`].filter(Boolean).join(" · ");
     return `<article class="v-ep">
       <div class="v-ep-head">
         <a href="${ytUrl(main.id)}" target="_blank" rel="noopener noreferrer">
           <img class="v-thumb" src="https://i.ytimg.com/vi/${encodeURIComponent(main.id)}/mqdefault.jpg" alt="${esc(main.title)}" loading="lazy"></a>
         <div>
-          <div class="v-meta"><span class="v-badge">${esc(e.channel)}</span>${esc(e.date)}${e.full ? " · 完整版" : ""}</div>
+          <div class="v-meta"><span class="v-badge">${esc(e.channel)}</span>${esc(e.date)}${single ? (e.series ? ` · ${esc(e.series)}` : "") : (e.full ? " · 完整版" : "")}</div>
           <h3 class="v-title"><a href="${ytUrl(main.id)}" target="_blank" rel="noopener noreferrer" title="${esc(e.title)}">${esc(e.title.replace(/｜.*$/, "").replace(/^【[^】]+】/, ""))}</a></h3>
           <div class="v-people">${people}</div>
           <div class="v-companies">${e.companies.map(c => companyChip(c, false, false)).join("")}</div>

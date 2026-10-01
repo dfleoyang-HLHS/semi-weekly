@@ -8,7 +8,29 @@
       "host": "李兆華",
       "episode_mark": "【理財達人秀】",
       "podcast_mark": "【兆華與股惑仔】",
-      "ignore_tags": ["理財達人秀", "小股本"]
+      "ignore_tags": [
+        "理財達人秀",
+        "小股本"
+      ]
+    },
+    {
+      "name": "孫慶龍",
+      "channel_id": "UCJthBchDkrwSJKeJGymEJ0Q",
+      "url": "https://www.youtube.com/@ShunChingLung",
+      "publisher": "孫慶龍之財報魔法師",
+      "host": "孫慶龍",
+      "format": "single"
+    },
+    {
+      "name": "闕又上",
+      "channel_id": "UC3GeULpLgXi1TNDAv0nyN5Q",
+      "url": "https://www.youtube.com/@upright-tw",
+      "publisher": "又上財經學院",
+      "host": "闕又上",
+      "format": "single",
+      "include": "又上財經\\s*#",
+      "require": "闕又上",
+      "note": "僅收錄闕又上主講的【又上財經】系列;生活漫談、其他講師節目不收錄"
     }
   ]
 }
