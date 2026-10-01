@@ -45,7 +45,8 @@
 - 資料來源:Finnhub 免費方案;頁面上方另嵌入 TradingView 官方跑馬燈小工具
 - 一次性設定:到 https://finnhub.io 免費註冊取得 API Key,在 repo → Settings → Secrets → Actions 新增 `FINNHUB_API_KEY`
 - 手動補跑:Actions → Run workflow → mode 選 `prices`
-- 新增追蹤公司:同時修改 `scripts/fetch_us_prices.py` 的 WATCHLIST 與 `usstocks.html` 的 STOCKS、TV_SYMBOLS
+- 財報指標與近期重點:存在 `data/us_stocks.json`,每週一隨週報由 Claude 依本週新聞更新 (只更新有新資訊的公司),放在週報 PR 中一起審閱
+- 新增追蹤公司:同時修改 `scripts/fetch_us_prices.py` 的 WATCHLIST、`data/us_stocks.json` 與 `usstocks.html` 的 TV_SYMBOLS
 
 ## 新聞資料庫
 

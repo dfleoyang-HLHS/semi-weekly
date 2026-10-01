@@ -193,7 +193,7 @@
 
   <div class="us-hero">
     <h2>🇺🇸 美股 AI 供應鏈追蹤表</h2>
-    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof">財報重點更新至 <strong>2026-W33 (8/15)</strong>。</span></p>
+    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof"></span><span id="stocks-asof"></span></p>
   </div>
 
   <!-- TradingView 官方跑馬燈報價小工具 (即時走勢;點選可開啟 TradingView) -->
@@ -225,138 +225,9 @@
 </footer>
 
 <script>
-const STOCKS = [
-  {
-    name: "NVIDIA", ticker: "NVDA", level: "a", category: "chip",
-    metrics: { "市值": "$5.4T", "YoY 營收": "+85%", "ROE": "107%", "P/E": "31x" },
-    news: [
-      "Vera Rubin 5/31 全面量產,150 家台廠參與",
-      "Q1 FY27 資料中心 +92% ($75B),Q2 財測 +95%",
-      "Rubin GPU 因 HBM4 延遲,2026 產量下修至 150 萬",
-      "CoWoS 2026 產能 65 萬片 (+76%)"
-    ],
-    tags: ["AI GPU 龍頭", "Rubin", "CoWoS 51.4%"]
-  },
-  {
-    name: "Broadcom", ticker: "AVGO", level: "b", category: "chip",
-    metrics: { "Q2 營收": "$22.2B", "AI 晶片 YoY": "+143%", "P/E": "60x", "YTD": "+4%" },
-    news: [
-      "Q3 AI 半導體指引 $16B,2027 上看 $100B",
-      "AI 晶片營收暴增 143%,ASIC 客製為主力",
-      "BofA 警告 AI 產業 3,700 億美元債務",
-      "Google TPU、Meta MTIA、xAI 都是客戶"
-    ],
-    tags: ["ASIC 王", "客製晶片", "Google Meta 客戶"]
-  },
-  {
-    name: "AMD", ticker: "AMD", level: "b", category: "chip",
-    metrics: { "Q2 EPS": "$0.66", "Q1 營收": "$10.3B", "YTD": "+135%", "P/E": "171x" },
-    news: [
-      "Meta 6GW MI450 部署合約",
-      "資料中心 +57%,MI350 出貨中、MI450 接棒",
-      "Rosenblatt 目標 $665、UBS $700、Baird $1,250",
-      "P/E 達 171x 明顯高於 NVIDIA (31x)"
-    ],
-    tags: ["MI450", "Meta 6GW", "AI GPU 挑戰者"]
-  },
-  {
-    name: "Super Micro", ticker: "SMCI", level: "b", category: "server",
-    metrics: { "Q4 EPS": "$1.70", "毛利率": "15-17%", "訂單積壓": "$60B+", "YTD": "+6%" },
-    news: [
-      "Q4 FY26 EPS 大超預期 ($1.70 vs $0.62)",
-      "毛利率驚喜:8% → 15-17%,近乎翻倍",
-      "600 億美元訂單積壓,史上最高",
-      "股價落後同業,治理疑慮拖累"
-    ],
-    tags: ["AI 伺服器", "液冷", "NVIDIA 80% 營收"]
-  },
-  {
-    name: "Intel", ticker: "INTC", level: "c", category: "chip",
-    metrics: { "Q2 EPS": "$0.29", "Q2 營收": "$13.6B", "YTD": "+176%", "DC+AI": "+22%" },
-    news: [
-      "CEO Tan:『15 年最強營收成長』",
-      "Q3 財測 $158-168 億,美國政府持股 9.9%",
-      "NVIDIA 投資 50 億美元入股",
-      "外部晶圓代工新增,朝先進封裝發展"
-    ],
-    tags: ["翻身之王", "EMIB", "Foundry 轉型"]
-  },
-  {
-    name: "Applied Materials", ticker: "AMAT", level: "b", category: "equipment",
-    metrics: { "Q3 營收": "$9.12B", "毛利率": "50.4%", "EPS": "$3.50", "YoY": "+25%" },
-    news: [
-      "Q3 營收史上最高,+25% YoY",
-      "半導體設備業務 2026 成長超過 30%",
-      "與 SK Hynix、Micron 深度合作 HBM",
-      "Opta Quad CMP 專攻混合鍵合"
-    ],
-    tags: ["設備龍頭", "HBM 合作", "混合鍵合"]
-  },
-  {
-    name: "Micron", ticker: "MU", level: "b", category: "equipment",
-    metrics: { "毛利率": "81%", "HBM3E": "售罄", "HBM4": "Q1 出貨", "資料中心": "+高雙位數" },
-    news: [
-      "毛利率突破 80%,史上新高",
-      "HBM4 已為 NVIDIA Vera Rubin 出貨",
-      "與客戶簽多年期供應合約 (SCA)",
-      "8 月股價漲 6% 領軍 AI 記憶體反彈"
-    ],
-    tags: ["HBM4", "記憶體", "AI 服務"]
-  },
-  {
-    name: "Amkor", ticker: "AMKR", level: "c", category: "equipment",
-    metrics: { "ROE": "~10%", "資本支出": "$70 億", "產能": "Arizona", "利潤影響": "稀釋" },
-    news: [
-      "Arizona 廠 70 億美元投資稀釋短期利潤",
-      "承接 TSMC Arizona 廠訂單",
-      "Apple、NVIDIA 為主要客戶",
-      "海外封測穩健成長"
-    ],
-    tags: ["海外封測", "Arizona", "TSMC 委外"]
-  },
-  {
-    name: "Dell Technologies", ticker: "DELL", level: "b", category: "server",
-    metrics: { "YTD": "+264%", "股價": "$468", "目標價": "$502", "評等": "5 SB + 14 B" },
-    news: [
-      "YTD +264% 全年最強 AI 伺服器股",
-      "股價創歷史新高 $468.67",
-      "共識目標價 $502.78 (+10.8%)",
-      "AI 伺服器積壓訂單強勁"
-    ],
-    tags: ["AI 伺服器", "冠軍股", "GPU 大客戶"]
-  },
-  {
-    name: "HPE", ticker: "HPE", level: "b", category: "server",
-    metrics: { "YTD": "+124%", "股價": "$55", "目標價": "$66", "評等": "4 SB + 8 B" },
-    news: [
-      "YTD +124%,AI 伺服器同業第二",
-      "共識目標價 $65.56 (+23%)",
-      "受惠 NVIDIA GPU 需求擴散"
-    ],
-    tags: ["AI 伺服器", "NVIDIA 合作", "跟隨者"]
-  },
-  {
-    name: "Apple / Google / Meta", ticker: "AAPL/GOOG/META", level: "a", category: "server",
-    metrics: { "類型": "雲端+終端", "自研晶片": "TPU/MTIA/M系列", "AI 資本支出": "續增", "2027": "更高" },
-    news: [
-      "Meta 與 AMD 簽 6GW MI450 部署合約",
-      "Google TPU 透過 Broadcom 客製",
-      "Apple 續用 TSMC 先進製程 (A20/M系列)",
-      "三巨頭 2026 資本支出全面上修"
-    ],
-    tags: ["雲端巨頭", "自研 ASIC", "TSMC 客戶"]
-  },
-  {
-    name: "Lam Research", ticker: "LRCX", level: "b", category: "equipment",
-    metrics: { "類別": "刻蝕設備", "業務": "先進製程", "客戶": "TSMC/Intel", "AI 受益": "強" },
-    news: [
-      "受惠 2 奈米、GAA 電晶體轉型",
-      "AI HBM 產能擴張帶動設備需求",
-      "與 AMAT、TEL 並列前段設備三強"
-    ],
-    tags: ["刻蝕設備", "前段製程", "GAA"]
-  }
-];
+// 公司卡片資料 (財報指標、近期重點、標籤):data/us_stocks.json,每週一隨週報由 Claude 依新聞更新
+let STOCKS = [];
+let STOCKS_UPDATED = "";
 
 // 安全防護：對 HTML 特殊字元進行轉義
 function escapeHtml(str) {
@@ -401,13 +272,22 @@ function renderQuote(sym) {
     </div>`;
 }
 
+async function loadStocks() {
+  const res = await fetch("data/us_stocks.json", { cache: "no-store" });
+  const data = await res.json();
+  STOCKS = data.stocks || [];
+  STOCKS_UPDATED = data.updated_at || "";
+  document.getElementById("stocks-asof").innerHTML =
+    `財報指標與近期重點更新至 <strong>${escapeHtml(STOCKS_UPDATED)}</strong>。`;
+}
+
 async function loadPrices() {
   try {
     const res = await fetch("data/us_prices.json", { cache: "no-store" });
     if (!res.ok) return;
     PRICES = await res.json();
     document.getElementById("price-asof").innerHTML =
-      `股價為 <strong>${escapeHtml(PRICES.as_of)}</strong> 美股收盤 (資料來源:${escapeHtml(PRICES.source)}),財報重點更新至 2026-W33 (8/15)。`;
+      `股價為 <strong>${escapeHtml(PRICES.as_of)}</strong> 美股收盤 (資料來源:${escapeHtml(PRICES.source)})。`;
   } catch (e) {
     PRICES = null;  // 沒有股價檔時維持原本的手寫內容
   }
@@ -477,12 +357,19 @@ function renderStocks(filter) {
           ${s.tags.map(t => `<span class="us-tag">${escapeHtml(t)}</span>`).join('')}
         </div>
       </div>
-      <div class="us-updated">${hasQuotes(s) ? `股價:${escapeHtml(PRICES.as_of)} 收盤 · ` : ''}重點更新於 2026-08-15</div>
+      <div class="us-updated">${hasQuotes(s) ? `股價:${escapeHtml(PRICES.as_of)} 收盤 · ` : ''}重點更新於 ${escapeHtml(s.updated_on || STOCKS_UPDATED)}</div>
     </div>
   `).join('');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    await loadStocks();
+  } catch (e) {
+    document.getElementById('us-grid').innerHTML = `<div class="us-no-data">無法載入公司資料 (data/us_stocks.json)</div>`;
+    return;
+  }
+
   // 切換深淺色主題時,重新載入 TradingView 小工具以套用配色
   const themeBtn = document.querySelector('.theme-toggle');
   if (themeBtn) themeBtn.addEventListener('click', () => setTimeout(loadTradingViewTape, 0));

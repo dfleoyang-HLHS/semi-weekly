@@ -35,7 +35,8 @@ function renderLatest() {
     el.innerHTML = '<p>尚無報告</p>';
     return;
   }
-  const latest = allArticles[0];
+  // 「本週重點報告」固定顯示最新一期週報;快訊較新時不應取代週報
+  const latest = allArticles.find(a => a.category === '週報') || allArticles[0];
   el.innerHTML = `
     <div class="article-title">${latest.title}</div>
     <div class="meta">📅 ${latest.date} · ${latest.week || ''} · ${(latest.regions || []).join(' / ')}</div>
@@ -53,7 +54,7 @@ function renderCompanyCloud() {
   // 取前 20 名
   const top = allCompanies.slice(0, 20);
   el.innerHTML = top.map(c => `
-    <a href="company.html?name=${encodeURIComponent(c.name)}" class="company-tag">
+    <a href="companies.html?name=${encodeURIComponent(c.name)}" class="company-tag">
       ${c.name} <span class="count">${c.count}</span>
     </a>
   `).join('');

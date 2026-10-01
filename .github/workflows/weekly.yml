@@ -128,6 +128,7 @@ jobs:
           add-paths: |
             posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md
             data/supplychain-${{ steps.draft.outputs.week_tag }}.json
+            data/us_stocks.json
           commit-message: "週報 ${{ steps.draft.outputs.week_tag }} (AI 草稿)"
           title: "📝 ${{ steps.draft.outputs.week_tag }} 週報待審:${{ steps.draft.outputs.title }}"
           body: |
@@ -135,10 +136,12 @@ jobs:
 
             - 週報:`posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md`
             - 供應鏈圖:`data/supplychain-${{ steps.draft.outputs.week_tag }}.json`
+            - 美股追蹤卡片 (財報指標、近期重點):`data/us_stocks.json` (本週無更新則不會出現在變更中)
 
             審閱重點:
             - [ ] 數字與事實是否正確 (對照文末參考來源)
             - [ ] 供應鏈圖新增/刪除的公司與關係是否合理
+            - [ ] 美股卡片的財報數字是否與新聞一致
             - [ ] 需要修改可直接在 PR 的 Files changed 頁面編輯 (… → Edit file)
 
             不要發佈就直接 Close 這個 PR。
