@@ -101,6 +101,22 @@
 .us-metric-value.up { color: #10b981; }
 .us-metric-value.down { color: #ef4444; }
 
+/* 盤後股價列 (data/us_prices.json,每個交易日自動更新) */
+.us-quote { background: var(--bg-elevated); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+.us-quote + .us-quote { margin-top: -6px; }
+.us-quote-main { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.us-quote-sym { font-size: 12px; font-weight: 700; color: var(--text-dim); min-width: 44px; }
+.us-quote-price { font-size: 20px; font-weight: 700; color: var(--text); }
+.us-quote-chg { font-size: 14px; font-weight: 600; }
+.us-quote-rets { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; font-size: 12px; color: var(--text-dim); }
+.us-quote-rets b { font-weight: 600; }
+.us-quote-range { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+.us-quote a { color: inherit; text-decoration: none; }
+.us-quote a:hover .us-quote-sym { color: var(--accent); }
+.q-up { color: #10b981; }
+.q-down { color: #ef4444; }
+.us-tape { margin-bottom: 20px; min-height: 46px; }
+
 .us-news {
   font-size: 13px;
   color: var(--text-dim);
@@ -177,8 +193,11 @@
 
   <div class="us-hero">
     <h2>🇺🇸 美股 AI 供應鏈追蹤表</h2>
-    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。資料更新至 <strong>2026-W33 (8/15)</strong>。</p>
+    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof">財報重點更新至 <strong>2026-W33 (8/15)</strong>。</span></p>
   </div>
+
+  <!-- TradingView 官方跑馬燈報價小工具 (即時走勢;點選可開啟 TradingView) -->
+  <div class="us-tape" id="tv-tape"></div>
 
   <div class="us-filter">
     <button class="us-filter-btn active" data-filter="all" id="btn-all">全部</button>
@@ -349,6 +368,66 @@ function escapeHtml(str) {
     .replace(/'/g, "&#039;");
 }
 
+// ── 盤後股價 (data/us_prices.json,GitHub Actions 每個交易日收盤後由 Finnhub 抓取) ──
+let PRICES = null;
+const STALE_METRICS = ["股價", "YTD"];  // 有自動股價時,隱藏手寫且已過時的欄位
+const SYMBOL_ALIAS = { GOOG: "GOOGL" };
+const TV_SYMBOLS = {
+  NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", AMD: "NASDAQ:AMD", SMCI: "NASDAQ:SMCI",
+  INTC: "NASDAQ:INTC", AMAT: "NASDAQ:AMAT", MU: "NASDAQ:MU", AMKR: "NASDAQ:AMKR",
+  DELL: "NYSE:DELL", HPE: "NYSE:HPE", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL",
+  META: "NASDAQ:META", LRCX: "NASDAQ:LRCX"
+};
+
+const cardSymbols = s => s.ticker.split("/").map(t => SYMBOL_ALIAS[t.trim()] || t.trim());
+const hasQuotes = s => !!PRICES && cardSymbols(s).some(t => PRICES.stocks[t]);
+const fmtPct = v => v == null ? "–" : `${v > 0 ? "+" : ""}${v.toFixed(2)}%`;
+const pctClass = v => v == null || v === 0 ? "" : (v > 0 ? "q-up" : "q-down");
+
+function renderQuote(sym) {
+  const q = PRICES && PRICES.stocks[sym];
+  if (!q) return "";
+  const ret = (label, v) => `<span>${label} <b class="${pctClass(v)}">${fmtPct(v)}</b></span>`;
+  const tvUrl = `https://www.tradingview.com/symbols/${(TV_SYMBOLS[sym] || sym).replace(":", "-")}/`;
+  return `
+    <div class="us-quote">
+      <div class="us-quote-main">
+        <a href="${tvUrl}" target="_blank" rel="noopener noreferrer" title="在 TradingView 開啟 ${escapeHtml(sym)}"><span class="us-quote-sym">${escapeHtml(sym)} ↗</span></a>
+        <span class="us-quote-price">$${q.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+        <span class="us-quote-chg ${pctClass(q.change_pct)}">${q.change != null ? (q.change > 0 ? "+" : "") + q.change.toFixed(2) : ""} (${fmtPct(q.change_pct)})</span>
+      </div>
+      <div class="us-quote-rets">${ret("5日", q.ret_5d)}${ret("本月", q.ret_mtd)}${ret("13週", q.ret_13w)}${ret("今年", q.ret_ytd)}</div>
+      ${q.low_52w != null && q.high_52w != null ? `<div class="us-quote-range">52 週區間 $${q.low_52w} – $${q.high_52w}${q.stale ? " · ⚠️ 本次未更新" : ""}</div>` : ""}
+    </div>`;
+}
+
+async function loadPrices() {
+  try {
+    const res = await fetch("data/us_prices.json", { cache: "no-store" });
+    if (!res.ok) return;
+    PRICES = await res.json();
+    document.getElementById("price-asof").innerHTML =
+      `股價為 <strong>${escapeHtml(PRICES.as_of)}</strong> 美股收盤 (資料來源:${escapeHtml(PRICES.source)}),財報重點更新至 2026-W33 (8/15)。`;
+  } catch (e) {
+    PRICES = null;  // 沒有股價檔時維持原本的手寫內容
+  }
+}
+
+function loadTradingViewTape() {
+  const theme = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+  const box = document.getElementById("tv-tape");
+  box.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
+  const script = document.createElement("script");
+  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
+  script.async = true;
+  script.innerHTML = JSON.stringify({
+    symbols: STOCKS.flatMap(cardSymbols).map(t => ({ proName: TV_SYMBOLS[t] || t, title: t })),
+    showSymbolLogo: true, isTransparent: true, displayMode: "adaptive",
+    colorTheme: theme, locale: "zh_TW"
+  });
+  box.firstChild.appendChild(script);
+}
+
 function renderStocks(filter) {
   const grid = document.getElementById('us-grid');
   
@@ -373,8 +452,9 @@ function renderStocks(filter) {
         </div>
         <span class="us-badge badge-${escapeHtml(s.level)}">${escapeHtml(s.level.toUpperCase())} 級</span>
       </div>
+      ${cardSymbols(s).map(renderQuote).join('')}
       <div class="us-metrics">
-        ${Object.entries(s.metrics).map(([k, v]) => {
+        ${Object.entries(s.metrics).filter(([k]) => !(hasQuotes(s) && STALE_METRICS.includes(k))).map(([k, v]) => {
           // 修正正負號顏色判斷：僅匹配第一個字元為 + 或 -（避免把 15-17% 的連字符誤判為跌）
           let statusClass = '';
           if (v.startsWith('+')) statusClass = 'up';
@@ -397,12 +477,16 @@ function renderStocks(filter) {
           ${s.tags.map(t => `<span class="us-tag">${escapeHtml(t)}</span>`).join('')}
         </div>
       </div>
-      <div class="us-updated">更新於 2026-08-15</div>
+      <div class="us-updated">${hasQuotes(s) ? `股價:${escapeHtml(PRICES.as_of)} 收盤 · ` : ''}重點更新於 2026-08-15</div>
     </div>
   `).join('');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 切換深淺色主題時,重新載入 TradingView 小工具以套用配色
+  const themeBtn = document.querySelector('.theme-toggle');
+  if (themeBtn) themeBtn.addEventListener('click', () => setTimeout(loadTradingViewTape, 0));
+
   // 動態顯示全部資料的數量
   const btnAll = document.getElementById('btn-all');
   if (btnAll) {
@@ -423,8 +507,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 預設渲染全部
-  renderStocks('all');
+  // 預設渲染全部 (先載入盤後股價)
+  loadTradingViewTape();
+  loadPrices().finally(() => renderStocks('all'));
 });
 </script>
 </body>

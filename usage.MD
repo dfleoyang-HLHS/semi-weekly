@@ -39,6 +39,14 @@
 3. 下載 m4a
 4. 上傳到 Spotify for Podcasters
 
+## 美股報價 (每個交易日盤後自動更新)
+
+- 美股收盤後 (台灣時間週二~六 06:30) 自動抓取「美股追蹤」14 檔的收盤價與漲跌,存到 `data/us_prices.json` 並累積每日收盤價
+- 資料來源:Finnhub 免費方案;頁面上方另嵌入 TradingView 官方跑馬燈小工具
+- 一次性設定:到 https://finnhub.io 免費註冊取得 API Key,在 repo → Settings → Secrets → Actions 新增 `FINNHUB_API_KEY`
+- 手動補跑:Actions → Run workflow → mode 選 `prices`
+- 新增追蹤公司:同時修改 `scripts/fetch_us_prices.py` 的 WATCHLIST 與 `usstocks.html` 的 STOCKS、TV_SYMBOLS
+
 ## 新聞資料庫
 
 每次抓新聞 (週一、三、五) 都會自動併入永久資料庫,不會因新聞過期而遺失:

@@ -1,10 +1,12 @@
 name: Semi Weekly and Briefs
 
 # 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
+#              週一~五 22:30 = 美股收盤後 (台灣週二~六 06:30,美股報價)
 on:
   schedule:
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
+    - cron: '30 22 * * 1-5'
   push:
     branches: [main]
   workflow_dispatch:
@@ -12,7 +14,7 @@ on:
       mode:
         description: '執行模式 (auto = 依台灣時間星期幾判斷)'
         type: choice
-        options: [auto, weekly, brief]
+        options: [auto, weekly, brief, prices]
         default: auto
 
 permissions:
@@ -42,6 +44,8 @@ jobs:
             MODE="publish"
           elif [ -n "${{ inputs.mode }}" ] && [ "${{ inputs.mode }}" != "auto" ]; then
             MODE="${{ inputs.mode }}"
+          elif [ "${{ github.event.schedule }}" = "30 22 * * 1-5" ]; then
+            MODE="prices"
           elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
             MODE="weekly"
           elif [ "$(date +%u)" = "1" ]; then
@@ -141,6 +145,33 @@ jobs:
           labels: weekly-report
           delete-branch: true
 
+  # ── 美股收盤後:抓取美股追蹤公司的收盤價與漲跌,直接發佈 ───────────
+  prices:
+    needs: detect
+    if: needs.detect.outputs.mode == 'prices'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch US stock prices
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python scripts/fetch_us_prices.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/us_prices.json
+          if ! git diff --staged --quiet; then
+            git commit -m "美股報價 $(date +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
+
   # ── PR merge (或任何推到 main) 後:重建索引 ───────────────────
   publish:
     needs: detect
@@ -167,10 +198,10 @@ jobs:
           fi
 
   deploy:
-    needs: [detect, brief, publish]
+    needs: [detect, brief, publish, prices]
     if: >-
       always() &&
-      (needs.brief.result == 'success' || needs.publish.result == 'success')
+      (needs.brief.result == 'success' || needs.publish.result == 'success' || needs.prices.result == 'success')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
