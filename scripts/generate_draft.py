@@ -31,6 +31,7 @@ TEMPLATE = ROOT / "scripts" / "weekly_template.md"
 MODEL = "claude-opus-5-5"
 TZ = timezone(timedelta(hours=8))  # 台灣時間 (無日光節約)
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
+MAX_NEWS = 150  # 交給 Claude 的新聞上限 (依發布時間取最新)
 
 
 WEEKLY_SYSTEM = """你是專業的半導體產業分析師,負責每週撰寫一份「半導體 + AI 供應鏈週報」。
@@ -138,7 +139,7 @@ def build_news_block(items):
     return "\n\n".join(
         f"[{i}] {it['title']}\n來源: {it['source']} | 發布: {it['published'][:10]}\n"
         f"摘要: {re.sub(r'<[^>]+>', '', it.get('summary', '')).strip()}\n連結: {it['link']}"
-        for i, it in enumerate(items[:80], 1)  # 限制 80 則
+        for i, it in enumerate(items[:MAX_NEWS], 1)
     )
 
 
@@ -163,7 +164,7 @@ def attach_news(graph, items, prev):
     linked = 0
     for n in graph["nodes"]:
         ref = n.pop("news_ref", 0)
-        if 1 <= ref <= min(len(items), 80):
+        if 1 <= ref <= min(len(items), MAX_NEWS):
             it = items[ref - 1]
             n["news"] = {"title": it["title"], "url": it["link"], "date": it["published"][:10]}
             if aid := archive_ids.get(normalize_url(it["link"])):

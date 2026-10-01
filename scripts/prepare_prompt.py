@@ -64,7 +64,7 @@ def main():
     template_content = TEMPLATE.read_text(encoding="utf-8")
 
     news_block_lines = []
-    for i, item in enumerate(items[:80], 1):
+    for i, item in enumerate(items[:150], 1):
         news_block_lines.append(f"### [{i}] {item['title']}")
         news_block_lines.append(f"- 來源: {item['source']}")
         if item.get("published"):

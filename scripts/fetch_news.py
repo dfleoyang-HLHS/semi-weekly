@@ -6,12 +6,11 @@ fetch_news.py
 
 來源:
   - DigiTimes 中英文 RSS
-  - TrendForce
-  - 鉅亨網科技
+  - TrendForce (feed_v2,加參數避開 CDN 快取)
+  - 鉅亨網 台股 / 美股
   - TechNews 科技新報
-  - Reuters Technology
-  - Semianalysis (Substack)
   - SemiWiki
+每個來源若無文章或最新文章超出抓取期間,會印出 ⚠️ 警示。
 
 依賴: pip install feedparser requests
 """
@@ -31,11 +30,14 @@ DATA_DIR.mkdir(exist_ok=True)
 FEEDS = [
     # 台灣中文媒體
     ("TechNews 科技新報", "https://technews.tw/feed/"),
-    ("鉅亨網 科技", "https://news.cnyes.com/rss/cat/tech"),
+    # 鉅亨網舊網址 /rss/cat/tech 已失效 (404),新版科技分類 RSS 為空,改用台股與美股分類
+    ("鉅亨網 台股", "https://news.cnyes.com/rss/v1/news/category/tw_stock"),
+    ("鉅亨網 美股", "https://news.cnyes.com/rss/v1/news/category/wd_stock"),
     ("DigiTimes 中文", "https://www.digitimes.com.tw/rss/news.xml"),
     # 國際
     ("DigiTimes Asia", "https://www.digitimes.com/rss/daily.xml"),
-    ("TrendForce", "https://www.trendforce.com/news/feed"),
+    # TrendForce 的 CDN 會長期快取舊版 feed (曾停在 2026-07-01),需加參數取得最新內容
+    ("TrendForce", "https://www.trendforce.com/news/feed_v2/", {"bust_cache": True}),
     ("SemiWiki", "https://semiwiki.com/feed/"),
     # 關鍵字篩選用
 ]
@@ -79,8 +81,12 @@ def parse_date(entry):
 def fetch_all(days_back=7):
     cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
     all_items = []
+    seen_links = set()  # 同一則新聞可能出現在多個分類,依連結去重
 
-    for source_name, url in FEEDS:
+    for source_name, url, *opts in FEEDS:
+        opts = opts[0] if opts else {}
+        if opts.get("bust_cache"):
+            url += ("&" if "?" in url else "?") + f"nc={int(time.time())}"
         print(f"抓取: {source_name}")
         try:
             feed = feedparser.parse(url)
@@ -88,12 +94,20 @@ def fetch_all(days_back=7):
             print(f"  ❌ 失敗: {e}")
             continue
 
+        dates = [d for d in (parse_date(e) for e in feed.entries) if d]
+        newest = max(dates) if dates else None
+        kept = 0
         for entry in feed.entries:
             pub_date = parse_date(entry)
             if pub_date and pub_date < cutoff:
                 continue
             if not is_relevant(entry):
                 continue
+            link = entry.get("link", "")
+            if link in seen_links:
+                continue
+            seen_links.add(link)
+            kept += 1
 
             all_items.append({
                 "source": source_name,
@@ -103,7 +117,13 @@ def fetch_all(days_back=7):
                 "published": pub_date.isoformat() if pub_date else "",
             })
 
-        print(f"  ✅ 取得 {len(feed.entries)} 篇,符合關鍵字 {sum(1 for e in feed.entries if is_relevant(e))} 篇")
+        print(f"  ✅ 取得 {len(feed.entries)} 篇,{days_back} 天內符合關鍵字 {kept} 篇"
+              + (f" (最新 {newest:%Y-%m-%d})" if newest else ""))
+        # 來源異常警示:沒有任何文章,或最新一篇已超出抓取期間 (可能停更或被快取)
+        if not feed.entries:
+            print(f"  ⚠️  {source_name} 沒有回傳任何文章,請檢查 RSS 網址 (HTTP {feed.get('status', '?')})")
+        elif newest and newest < cutoff:
+            print(f"  ⚠️  {source_name} 最新文章停在 {newest:%Y-%m-%d},來源可能停更或被快取")
 
     # 依發布時間降冪排序
     all_items.sort(key=lambda x: x["published"], reverse=True)
