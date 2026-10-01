@@ -19,11 +19,14 @@ semi-weekly/
 ├── data/                   # 自動產生的索引檔
 │   ├── db.json             # 主索引
 │   ├── companies.json      # 公司聚合
-│   └── tags.json           # 標籤雲
+│   ├── tags.json           # 標籤雲
+│   ├── news_archive.json   # 新聞資料庫 (永久保存,每次抓取自動累積)
+│   └── news_archive.csv    # 同上,CSV 格式 (可用 Excel 開啟)
 │
 ├── scripts/                # 自動化腳本
 │   ├── build_index.py      # 掃描 posts/ 產生 db.json
 │   ├── fetch_news.py       # 抓取 RSS 與新聞來源
+│   ├── archive_news.py     # 新聞併入永久資料庫
 │   ├── generate_draft.py   # 呼叫 Claude API 生成草稿
 │   ├── new_post.py         # 手動建立新文章模板
 │   └── weekly_template.md  # 週報固定模板

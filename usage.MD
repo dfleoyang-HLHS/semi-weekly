@@ -39,6 +39,16 @@
 3. 下載 m4a
 4. 上傳到 Spotify for Podcasters
 
+## 新聞資料庫
+
+每次抓新聞 (週一、三、五) 都會自動併入永久資料庫,不會因新聞過期而遺失:
+
+- `data/news_archive.json`:主資料庫,一則新聞一行
+- `data/news_archive.csv`:同內容,可直接用 Excel 開啟 (UTF-8)
+- 欄位:id (永久編號)、published、week、source、title、url、summary、companies、regions、first_seen、last_seen
+- 同一網址只存一筆;供應鏈圖的新聞連結也記錄了對應的 id
+- 線上網址:https://dfleoyang-hlhs.github.io/semi-weekly/data/news_archive.json
+
 ## 常見問題
 
 ### 網站沒更新?

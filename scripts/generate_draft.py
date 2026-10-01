@@ -21,6 +21,8 @@ from pathlib import Path
 
 import anthropic
 
+from archive_news import normalize_url, url_to_id
+
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
 POSTS_DIR = ROOT / "posts"
@@ -157,12 +159,15 @@ def strip_fence(text):
 def attach_news(graph, items, prev):
     """把 news_ref 編號換成實際新聞標題與連結;本週無新聞的節點沿用上一期的連結。"""
     prev_news = {n["id"]: n["news"] for n in (prev or {}).get("nodes", []) if n.get("news")}
+    archive_ids = url_to_id()  # 對照新聞資料庫的永久編號
     linked = 0
     for n in graph["nodes"]:
         ref = n.pop("news_ref", 0)
         if 1 <= ref <= min(len(items), 80):
             it = items[ref - 1]
             n["news"] = {"title": it["title"], "url": it["link"], "date": it["published"][:10]}
+            if aid := archive_ids.get(normalize_url(it["link"])):
+                n["news"] = {"id": aid, **n["news"]}
             linked += 1
         elif n["id"] in prev_news:
             n["news"] = prev_news[n["id"]]
