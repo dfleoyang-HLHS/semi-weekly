@@ -26,6 +26,8 @@ archive_news.py
   python scripts/archive_news.py --backfill-trendforce 2026-06-25
                                                  # 從 TrendForce API 補建指定日期之後的文章
   python scripts/archive_news.py --retag         # 重新標記全部新聞的公司與區域
+  python scripts/archive_news.py --rank-supplychain
+                                                 # 重算各週供應鏈圖的公司報導量 (mentions)
 """
 
 import csv
@@ -196,6 +198,48 @@ def trendforce_items(since, until=None):
     return items
 
 
+def node_names(node):
+    """供應鏈節點的比對名稱:label 依「/」與空白拆開,連續英文字視為一個名稱 (如 Applied Materials)。"""
+    names = []
+    for part in node["label"].split("/"):
+        ascii_run = []
+        for tok in part.split():
+            if tok.isascii():
+                ascii_run.append(tok)
+                continue
+            if ascii_run:
+                names.append(" ".join(ascii_run))
+                ascii_run = []
+            names.append(tok)
+        if ascii_run:
+            names.append(" ".join(ascii_run))
+    if node["id"].isascii() and len(node["id"]) > 2:
+        names.append(node["id"])
+    return [n for n in dict.fromkeys(names) if len(n) > 1 and n not in AMBIGUOUS_NAMES]
+
+
+AMBIGUOUS_NAMES = {"創意"}  # 公司簡稱同時是常見詞 (創意電子),比對時略過
+
+
+def name_in(name, text):
+    """英文以完整單字比對 (全大寫名稱區分大小寫,如 SCREEN、TEL);中文以子字串比對。"""
+    if not name.isascii():
+        return name in text
+    flags = 0 if name.isupper() else re.IGNORECASE
+    return re.search(rf"(?<![A-Za-z0-9]){re.escape(name)}(?![A-Za-z0-9])", text, flags) is not None
+
+
+def add_mentions(graph, as_of, days=28, archive=None):
+    """為供應鏈圖每個節點加上 mentions:as_of 之前 days 天內提到該公司的新聞則數。"""
+    archive = archive if archive is not None else load_archive()
+    start = (datetime.fromisoformat(as_of) - timedelta(days=days)).date().isoformat()
+    texts = [f"{a['title']} {a['summary']}" for a in archive if start < a["published"] <= as_of]
+    for n in graph["nodes"]:
+        names = node_names(n)
+        n["mentions"] = sum(1 for t in texts if any(name_in(x, t) for x in names))
+    return graph
+
+
 def url_to_id():
     """網址 → 資料庫編號,供其他腳本 (如供應鏈圖) 對照。"""
     return {normalize_url(a["url"]): a["id"] for a in load_archive()}
@@ -226,6 +270,13 @@ def main():
                 a["companies"], a["regions"] = tags
                 changed += 1
         print(f"  重新標記: {changed} 則的公司/區域有變動")
+
+    if "--rank-supplychain" in sys.argv:  # 重算所有週次供應鏈圖的 mentions (排序同分時使用)
+        for p in sorted(DATA_DIR.glob("supplychain-*-W*.json")):
+            g = json.loads(p.read_text(encoding="utf-8"))
+            add_mentions(g, str(g["date"]), archive=archive)
+            p.write_text(json.dumps(g, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(f"  {p.name}: 已更新 {len(g['nodes'])} 家公司的報導量")
 
     if RAW_PATH.exists():
         raw = json.loads(RAW_PATH.read_text(encoding="utf-8"))

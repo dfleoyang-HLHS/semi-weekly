@@ -315,7 +315,9 @@ function findCoreNodes(tierNodes, connectionCount) {
   const sorted = [...tierNodes].sort((a, b) => {
     if (a.core && !b.core) return -1;
     if (!a.core && b.core) return 1;
-    return (connectionCount[b.id] || 0) - (connectionCount[a.id] || 0);
+    // 連線數多者優先;同分時以近 4 週報導量 (mentions) 決定,再同分則維持資料原始順序
+    return (connectionCount[b.id] || 0) - (connectionCount[a.id] || 0)
+        || (b.mentions || 0) - (a.mentions || 0);
   });
   return sorted;
 }

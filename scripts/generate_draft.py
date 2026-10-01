@@ -21,7 +21,7 @@ from pathlib import Path
 
 import anthropic
 
-from archive_news import normalize_url, url_to_id
+from archive_news import add_mentions, normalize_url, url_to_id
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
@@ -234,6 +234,7 @@ def main():
     )
     graph = attach_news(validate_graph(json.loads(graph_text)), items, prev)
     graph = {"week": week_tag, "date": today.isoformat(), **graph}
+    add_mentions(graph, today.isoformat())  # 近 4 週報導量,頁面排序同分時使用
     sc_path = DATA_DIR / f"supplychain-{week_tag}.json"
     sc_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"   ✅ {sc_path.relative_to(ROOT)} ({len(graph['nodes'])} 節點 / {len(graph['edges'])} 關係)")
