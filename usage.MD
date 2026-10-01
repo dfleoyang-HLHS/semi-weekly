@@ -8,15 +8,24 @@
 - Claude Pro: https://claude.ai
 - NotebookLM (Podcast): https://notebooklm.google.com
 
-## 每週一 — 審閱週報(約 5 分鐘)
+## 每週一 — 週報自動查核與發佈 (通常不需動手)
 
-週一 06:00 Claude 會自動產生「週報 + 供應鏈圖」並開一個 Pull Request,GitHub 會寄通知信。
+週一 06:00 Claude 自動產生「週報 + 供應鏈圖 + 美股/台股卡片」,接著自動查核,並開一個 Pull Request:
 
-1. 開啟 https://github.com/dfleoyang-HLHS/semi-weekly/pulls ,點「📝 2026-WXX 週報待審」
-2. 點 Files changed 檢查週報 (`posts/…-semi-weekly.md`) 與供應鏈圖 (`data/supplychain-….json`)
-3. 要修改:在該檔案右上角「…」→ Edit file,改完 Commit 到同一個分支
-4. 確認無誤 → 按 **Merge pull request** → 約 2 分鐘後網站自動更新 (週報、供應鏈圖、索引一起上線)
-5. 不想發佈 → Close pull request
+| 查核結果 | PR 標籤 | 會發生什麼 |
+|---|---|---|
+| ✅ 全部通過 | `auto-merge-ok` | **週一 20:00 自動 Merge 並發佈**,不需動手 |
+| ⚠️ 有問題 | `needs-review` | **不會自動發佈**;PR 內文列出問題,請修正後手動 Merge 或 Close |
+
+查核項目:週報與供應鏈圖格式、所有新聞連結必須來自已抓取的新聞、Claude 獨立事實查核 (數字與事件需有新聞依據)。
+
+想介入時 (20:00 前):
+- 修改內容:PR → Files changed → 「…」→ Edit file,20:00 會連同修改一起發佈
+- 提早發佈:直接按 **Merge pull request**
+- 暫停自動發佈:在 PR 加上 `hold` 標籤 (之後要發佈再手動 Merge)
+- 不發佈:Close pull request
+
+GitHub 排程常延遲 1~2 小時,自動 Merge 實際約在 20:00~22:00。手動觸發:Actions → Run workflow → mode 選 `automerge`。
 
 ### 一次性設定(只需做一次)
 - 到 https://console.anthropic.com 申請 API Key (Claude Pro 訂閱不能用於 API,需另外儲值)

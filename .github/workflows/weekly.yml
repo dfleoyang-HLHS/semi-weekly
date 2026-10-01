@@ -4,8 +4,10 @@ name: Semi Weekly and Briefs
 #              週一~五 22:30 = 美股收盤後 (台灣週二~六 06:30,美股報價)
 #              週一~五 08:00 = 台股收盤後 (台灣週一~五 16:00,台股報價)
 #              國定假日等非交易日:抓價程式偵測到交易日未更新即略過,不 commit、不部署
+#              週一 12:00 = 台灣週一 20:00 (自動 Merge 查核通過的週報 PR 並部署)
 on:
   schedule:
+    - cron: '0 12 * * 1'
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
     - cron: '30 22 * * 1-5'
@@ -17,7 +19,7 @@ on:
       mode:
         description: '執行模式 (auto = 依台灣時間星期幾判斷)'
         type: choice
-        options: [auto, weekly, brief, prices, twprices]
+        options: [auto, weekly, brief, prices, twprices, automerge]
         default: auto
 
 permissions:
@@ -49,6 +51,8 @@ jobs:
             MODE="${{ inputs.mode }}"
           elif [ "${{ github.event.schedule }}" = "30 22 * * 1-5" ]; then
             MODE="prices"
+          elif [ "${{ github.event.schedule }}" = "0 12 * * 1" ]; then
+            MODE="automerge"
           elif [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
             MODE="twprices"
           elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
@@ -124,35 +128,79 @@ jobs:
         run: python scripts/generate_draft.py
       # 備援:保留可手動貼到 Claude 的提示包
       - run: python scripts/prepare_prompt.py
+      # 自動查核:格式、連結、事實查核;全部通過才標記 auto-merge-ok (週一 20:00 自動 Merge)
+      - name: Verify weekly report
+        id: verify
+        if: steps.draft.outputs.week_tag != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/verify_weekly.py "${{ steps.draft.outputs.week_tag }}" || {
+            echo "查核程式失敗,改為人工審閱"
+            echo "passed=false" >> $GITHUB_OUTPUT
+            echo "### ⚠️ 自動查核程式執行失敗" > pr_body.md
+            echo "請查看 Actions 紀錄,並人工審閱後再 Merge。" >> pr_body.md
+          }
       - name: Create pull request
         if: steps.draft.outputs.week_tag != ''
         uses: peter-evans/create-pull-request@v7
         with:
           branch: weekly/${{ steps.draft.outputs.week_tag }}
-          # 只放內容檔;db.json / supplychain-index.json 等索引在 merge 後由 publish 重建,避免與快訊衝突
+          # 只放內容檔;db.json / supplychain-index.json 等索引在 merge 後重建,避免與快訊衝突
           add-paths: |
             posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md
             data/supplychain-${{ steps.draft.outputs.week_tag }}.json
             data/us_stocks.json
             data/tw_stocks.json
           commit-message: "週報 ${{ steps.draft.outputs.week_tag }} (AI 草稿)"
-          title: "📝 ${{ steps.draft.outputs.week_tag }} 週報待審:${{ steps.draft.outputs.title }}"
-          body: |
-            Claude 已自動產生本週週報與供應鏈圖,請審閱後 **Merge** 即會自動發佈到網站。
-
-            - 週報:`posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md`
-            - 供應鏈圖:`data/supplychain-${{ steps.draft.outputs.week_tag }}.json`
-            - 美股 / 台股追蹤卡片 (指標、近期重點):`data/us_stocks.json`、`data/tw_stocks.json` (本週無更新則不會出現在變更中)
-
-            審閱重點:
-            - [ ] 數字與事實是否正確 (對照文末參考來源)
-            - [ ] 供應鏈圖新增/刪除的公司與關係是否合理
-            - [ ] 美股 / 台股卡片的數字是否與新聞一致
-            - [ ] 需要修改可直接在 PR 的 Files changed 頁面編輯 (… → Edit file)
-
-            不要發佈就直接 Close 這個 PR。
-          labels: weekly-report
+          title: "📝 ${{ steps.draft.outputs.week_tag }} 週報:${{ steps.draft.outputs.title }}"
+          body-path: pr_body.md
+          labels: |
+            weekly-report
+            ${{ steps.verify.outputs.passed == 'true' && 'auto-merge-ok' || 'needs-review' }}
           delete-branch: true
+
+  # ── 週一 20:00 (台灣):自動 Merge 查核通過、且未被保留的週報 PR,並重建索引 ──
+  automerge:
+    needs: detect
+    if: needs.detect.outputs.mode == 'automerge'
+    runs-on: ubuntu-latest
+    outputs:
+      merged: ${{ steps.merge.outputs.merged }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pyyaml
+      - name: Merge approved weekly PRs
+        id: merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # 條件:標有 weekly-report 與 auto-merge-ok;非草稿;沒有 needs-review 或 hold 標籤
+          prs=$(gh pr list --state open --label weekly-report --label auto-merge-ok --json number,isDraft,labels -q '.[] | select(.isDraft | not) | select(any(.labels[]; .name == "needs-review" or .name == "hold") | not) | .number')
+          if [ -z "$prs" ]; then echo "沒有可自動 Merge 的週報 PR"; exit 0; fi
+          for n in $prs; do
+            echo "Merge PR #$n"
+            gh pr merge "$n" --merge --delete-branch && echo "merged=true" >> $GITHUB_OUTPUT
+          done
+      # GITHUB_TOKEN 的 merge 不會觸發 push 事件,在此直接重建索引
+      - name: Rebuild index
+        if: steps.merge.outputs.merged == 'true'
+        run: |
+          git pull origin main
+          python scripts/build_index.py
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "重建索引 (自動 Merge 週報)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
 
   # ── 美股收盤後:抓取美股追蹤公司的收盤價與漲跌,直接發佈 ───────────
   prices:
@@ -240,11 +288,12 @@ jobs:
           fi
 
   deploy:
-    needs: [detect, brief, publish, prices, twprices]
+    needs: [detect, brief, publish, prices, twprices, automerge]
     if: >-
       always() &&
       (needs.brief.result == 'success' || needs.publish.result == 'success' ||
-       needs.prices.outputs.changed == 'true' || needs.twprices.outputs.changed == 'true')
+       needs.prices.outputs.changed == 'true' || needs.twprices.outputs.changed == 'true' ||
+       needs.automerge.outputs.merged == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -30,6 +30,7 @@ semi-weekly/
 │   ├── fetch_us_prices.py  # 美股盤後報價 (Finnhub)
 │   ├── fetch_tw_prices.py  # 台股盤後報價 (證交所、櫃買中心開放資料)
 │   ├── generate_draft.py   # 呼叫 Claude API 生成草稿
+│   ├── verify_weekly.py    # 週報自動查核 (格式、連結、事實)
 │   ├── new_post.py         # 手動建立新文章模板
 │   └── weekly_template.md  # 週報固定模板
 │
@@ -45,8 +46,8 @@ semi-weekly/
 
 | 時間 | 動作 | 是否需人工 |
 |---|---|---|
-| 週一 06:00 | 抓新聞 → Claude 產生週報 + 供應鏈圖 → 開 Pull Request | 審閱後按 Merge |
-| Merge 後 | 重建索引 (含 `supplychain-index.json`) → 部署 GitHub Pages | 否 |
+| 週一 06:00 | 抓新聞 → Claude 產生週報、供應鏈圖、個股卡片 → 自動查核 → 開 Pull Request | 查核未通過時才需處理 |
+| 週一 20:00 | 自動 Merge 查核通過的週報 PR → 重建索引 → 部署 | 否 (可加 `hold` 標籤暫停) |
 | 週三、五 06:00 | 抓新聞 → 產生快訊 → 部署 | 否 |
 | 週二~六 06:30 | 美股收盤後抓取報價 → 部署 | 否 |
 | 週一~五 16:00 | 台股收盤後抓取報價 → 部署 | 否 |
