@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影音觀點 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme.js"></script>
+<style>
+.v-hero {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  border-radius: 12px; padding: 20px 24px; margin-bottom: 20px;
+}
+.v-hero h2 { color: var(--accent); margin-bottom: 8px; font-size: 20px; }
+.v-hero p { color: var(--text-dim); font-size: 14px; line-height: 1.7; margin: 0; }
+.v-block { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; }
+.v-block h3 { font-size: 15px; margin: 0 0 10px; }
+.v-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.v-chip {
+  display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 14px;
+  background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text);
+  font-size: 13px; cursor: pointer; text-decoration: none;
+}
+.v-chip:hover { border-color: var(--accent); }
+.v-chip.active { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.v-chip .n { font-size: 11px; color: var(--text-dim); }
+.v-chip.active .n { color: var(--bg); opacity: .85; }
+.v-chip.tracked::after { content: "↗"; font-size: 11px; color: var(--accent); }
+.v-ep { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 18px; }
+.v-ep-head { display: grid; grid-template-columns: 240px 1fr; gap: 16px; }
+.v-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; background: var(--bg-elevated); display: block; }
+.v-meta { font-size: 12.5px; color: var(--text-dim); margin-bottom: 6px; }
+.v-badge { display: inline-block; padding: 1px 8px; border-radius: 10px; background: rgba(29,158,117,.15); color: var(--accent); font-weight: 600; margin-right: 6px; }
+.v-title { font-size: 16px; font-weight: 700; line-height: 1.5; margin: 0 0 8px; }
+.v-title a { color: var(--text); }
+.v-title a:hover { color: var(--accent); }
+.v-people { font-size: 13px; color: var(--text-dim); margin-bottom: 8px; }
+.v-companies { display: flex; flex-wrap: wrap; gap: 6px; }
+.v-sec { margin-top: 14px; }
+.v-sec h4 { font-size: 13px; color: var(--text-dim); margin: 0 0 6px; font-weight: 600; }
+.v-chapters, .v-list { list-style: none; margin: 0; padding: 0; font-size: 13.5px; line-height: 1.9; }
+.v-chapters a { font-family: ui-monospace, monospace; font-size: 12px; color: var(--accent); margin-right: 8px; }
+.v-list a { color: var(--text); }
+.v-list a:hover { color: var(--accent); }
+.v-list .tag { font-size: 11.5px; color: var(--text-dim); margin-left: 6px; }
+.v-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.v-empty { text-align: center; padding: 40px; color: var(--text-dim); background: var(--bg-card); border: 1px dashed var(--border); border-radius: 12px; }
+.v-note { margin-top: 24px; padding: 14px 18px; background: var(--bg-card); border-left: 3px solid var(--accent-warm); border-radius: 8px; color: var(--text-dim); font-size: 13px; line-height: 1.7; }
+@media (max-width: 720px) {
+  .v-ep-head, .v-cols { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
+      <a href="supplychain.html">供應鏈</a>
+      <a href="usstocks.html">美股追蹤</a>
+      <a href="twstocks.html">台股追蹤</a>
+      <a href="videos.html" class="active">影音觀點</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="v-hero">
+    <h2>🎬 影音觀點</h2>
+    <p>整理財經節目在 YouTube 公開的影片:每集的主題章節、來賓與提到的公司,並連回原影片。<span id="v-asof"></span></p>
+  </div>
+
+  <div class="v-block">
+    <h3>節目</h3>
+    <div class="v-filters" id="channel-filter"></div>
+  </div>
+
+  <div class="v-block">
+    <h3>最常被提到的公司 <span style="font-weight:400;font-size:12px;color:var(--text-dim)">(依提到的集數;點選可篩選,↗ 表示網站有追蹤)</span></h3>
+    <div class="v-filters" id="company-filter"></div>
+  </div>
+
+  <div id="episodes"><div class="v-empty">載入中…</div></div>
+  <div id="extras"></div>
+
+  <div class="v-note">
+    <strong>⚠️ 說明</strong>:本頁內容整理自節目在 YouTube 公開的影片標題、說明欄章節與主題標籤,不含影片內容改寫;觀點屬原節目與講者,僅供產業資訊參考,<strong>非投資建議</strong>。完整內容請至 YouTube 觀看原影片。
+  </div>
+</main>
+
+<footer><div class="container"><p>每日自動更新 · 資料來源:YouTube</p></div></footer>
+
+<script>
+const esc = t => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const ytUrl = (id, t) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}${t ? `&t=${t}s` : ""}`;
+const toSec = t => t.split(":").reduce((a, b) => a * 60 + +b, 0);
+let DATA = null, TRACKED = {}, state = { channel: "all", company: null };
+
+function companyChip(c, active, clickable = true) {
+  const tracked = TRACKED[c.code];
+  const n = c.n != null ? ` <span class="n">${c.n}</span>` : "";
+  if (!clickable && tracked) {
+    return `<a class="v-chip tracked" href="${tracked}" title="前往${esc(c.name)}的股價卡片">${esc(c.name)}</a>`;
+  }
+  return `<span class="v-chip${active ? " active" : ""}${tracked ? " tracked" : ""}" data-code="${esc(c.code)}">${esc(c.name)}${n}</span>`;
+}
+
+function render() {
+  const eps = DATA.episodes.filter(e =>
+    (state.channel === "all" || e.channel === state.channel) &&
+    (!state.company || e.companies.some(c => c.code === state.company)));
+
+  // 公司統計 (目前節目篩選下,依提到的集數)
+  const counts = {};
+  DATA.episodes.filter(e => state.channel === "all" || e.channel === state.channel)
+    .forEach(e => e.companies.forEach(c => { (counts[c.code] ||= { ...c, n: 0 }).n++; }));
+  const top = Object.values(counts).sort((a, b) => b.n - a.n).slice(0, 24);
+  document.getElementById("company-filter").innerHTML = top.length
+    ? top.map(c => companyChip(c, c.code === state.company)).join("") +
+      (state.company ? ` <span class="v-chip" data-code="">✕ 清除</span>` : "")
+    : `<span style="color:var(--text-dim);font-size:13px">尚無資料</span>`;
+
+  document.getElementById("episodes").innerHTML = eps.length ? eps.map(e => {
+    const main = e.full || e.parts[0];
+    const chapters = (e.full && e.full.chapters.length) ? e.full.chapters : [];
+    const people = [e.host && `主持:${esc(e.host)}`, e.guests.length && `來賓:${e.guests.map(esc).join("、")}`].filter(Boolean).join(" · ");
+    return `<article class="v-ep">
+      <div class="v-ep-head">
+        <a href="${ytUrl(main.id)}" target="_blank" rel="noopener noreferrer">
+          <img class="v-thumb" src="https://i.ytimg.com/vi/${encodeURIComponent(main.id)}/mqdefault.jpg" alt="${esc(main.title)}" loading="lazy"></a>
+        <div>
+          <div class="v-meta"><span class="v-badge">${esc(e.channel)}</span>${esc(e.date)}${e.full ? " · 完整版" : ""}</div>
+          <h3 class="v-title"><a href="${ytUrl(main.id)}" target="_blank" rel="noopener noreferrer" title="${esc(e.title)}">${esc(e.title.replace(/｜.*$/, "").replace(/^【[^】]+】/, ""))}</a></h3>
+          <div class="v-people">${people}</div>
+          <div class="v-companies">${e.companies.map(c => companyChip(c, false, false)).join("")}</div>
+        </div>
+      </div>
+      ${chapters.length ? `<div class="v-sec"><h4>📑 節目章節</h4><ul class="v-chapters">${chapters.map(c =>
+        `<li><a href="${ytUrl(main.id, toSec(c.time))}" target="_blank" rel="noopener noreferrer">${esc(c.time)}</a>${esc(c.topic)}</li>`).join("")}</ul></div>` : ""}
+      <div class="v-cols">
+        ${e.parts.length ? `<div class="v-sec"><h4>🎞️ 分段播出</h4><ul class="v-list">${e.parts.map(p =>
+          `<li><a href="${ytUrl(p.id)}" target="_blank" rel="noopener noreferrer">${esc(p.title.replace(/｜.*$/, "").replace("【理財達人秀】", ""))}</a><span class="tag">part${p.part}</span></li>`).join("")}</ul></div>` : ""}
+        ${e.clips.length ? `<div class="v-sec"><h4>⭐ 精華短片</h4><ul class="v-list">${e.clips.map(c =>
+          `<li><a href="${ytUrl(c.id)}" target="_blank" rel="noopener noreferrer">${esc(c.title.replace(/\s*feat\..*$/i, ""))}</a><span class="tag">${esc(c.guests.join("、"))}</span></li>`).join("")}</ul></div>` : ""}
+      </div>
+    </article>`;
+  }).join("") : `<div class="v-empty">沒有符合條件的節目</div>`;
+
+  const ex = (DATA.extras || []).filter(x => state.channel === "all" || x.channel === state.channel);
+  document.getElementById("extras").innerHTML = ex.length && !state.company ? `<div class="v-block"><h3>🎧 其他節目 (Podcast 等)</h3><ul class="v-list">${ex.map(x =>
+    `<li><a href="${ytUrl(x.id)}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a><span class="tag">${esc(x.published)}</span></li>`).join("")}</ul></div>` : "";
+}
+
+async function init() {
+  try {
+    const [d, us, tw] = await Promise.all(["data/youtube.json", "data/us_stocks.json", "data/tw_stocks.json"]
+      .map(u => fetch(u, { cache: "no-store" }).then(r => r.json())));
+    DATA = d;
+    us.stocks.forEach(s => s.ticker.split("/").forEach(t => TRACKED[t.trim()] = "usstocks.html"));
+    tw.stocks.forEach(s => TRACKED[s.ticker] = "twstocks.html");
+  } catch (e) {
+    document.getElementById("episodes").innerHTML = `<div class="v-empty">無法載入影音資料</div>`;
+    return;
+  }
+  document.getElementById("v-asof").textContent =
+    ` 收錄近 ${DATA.days} 天,更新於 ${DATA.updated_at.slice(0, 16).replace("T", " ")} (${DATA.source})。`;
+  const chs = DATA.channels.map(c => c.name);
+  document.getElementById("channel-filter").innerHTML =
+    [`<span class="v-chip active" data-ch="all">全部</span>`].concat(DATA.channels.map(c =>
+      `<span class="v-chip" data-ch="${esc(c.name)}">${esc(c.name)}</span> <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer" style="font-size:12px">YouTube 頻道 ↗</a>`)).join(" ");
+  document.getElementById("channel-filter").addEventListener("click", ev => {
+    const el = ev.target.closest("[data-ch]"); if (!el) return;
+    state.channel = el.dataset.ch; state.company = null;
+    document.querySelectorAll("#channel-filter [data-ch]").forEach(x => x.classList.toggle("active", x === el));
+    render();
+  });
+  document.getElementById("company-filter").addEventListener("click", ev => {
+    const el = ev.target.closest("[data-code]"); if (!el) return;
+    state.company = el.dataset.code && el.dataset.code !== state.company ? el.dataset.code : null;
+    render();
+  });
+  render();
+}
+init();
+</script>
+</body>
+</html>

@@ -5,8 +5,10 @@ name: Semi Weekly and Briefs
 #              週一~五 08:00 = 台股收盤後 (台灣週一~五 16:00,台股報價)
 #              國定假日等非交易日:抓價程式偵測到交易日未更新即略過,不 commit、不部署
 #              週一 12:00 = 台灣週一 20:00 (自動 Merge 查核通過的週報 PR 並部署)
+#              每日 23:30 = 台灣每日 07:30 (影音觀點:整理財經節目 YouTube 影片)
 on:
   schedule:
+    - cron: '30 23 * * *'
     - cron: '0 12 * * 1'
     - cron: '0 22 * * 0'
     - cron: '0 22 * * 2,4'
@@ -19,7 +21,7 @@ on:
       mode:
         description: '執行模式 (auto = 依台灣時間星期幾判斷)'
         type: choice
-        options: [auto, weekly, brief, prices, twprices, automerge]
+        options: [auto, weekly, brief, prices, twprices, automerge, videos]
         default: auto
 
 permissions:
@@ -51,6 +53,8 @@ jobs:
             MODE="${{ inputs.mode }}"
           elif [ "${{ github.event.schedule }}" = "30 22 * * 1-5" ]; then
             MODE="prices"
+          elif [ "${{ github.event.schedule }}" = "30 23 * * *" ]; then
+            MODE="videos"
           elif [ "${{ github.event.schedule }}" = "0 12 * * 1" ]; then
             MODE="automerge"
           elif [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
@@ -262,6 +266,38 @@ jobs:
             done
           fi
 
+  # ── 每日:整理財經節目 YouTube 影片 (有 YOUTUBE_API_KEY 用官方 API,否則用頻道 RSS) ──
+  videos:
+    needs: detect
+    if: needs.detect.outputs.mode == 'videos'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser
+      - name: Fetch YouTube videos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/fetch_youtube.py --days 14
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/youtube.json data/tw_company_names.json
+          if ! git diff --staged --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git commit -m "影音觀點 $(date +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
+
   # ── PR merge (或任何推到 main) 後:重建索引 ───────────────────
   publish:
     needs: detect
@@ -288,12 +324,12 @@ jobs:
           fi
 
   deploy:
-    needs: [detect, brief, publish, prices, twprices, automerge]
+    needs: [detect, brief, publish, prices, twprices, automerge, videos]
     if: >-
       always() &&
       (needs.brief.result == 'success' || needs.publish.result == 'success' ||
        needs.prices.outputs.changed == 'true' || needs.twprices.outputs.changed == 'true' ||
-       needs.automerge.outputs.merged == 'true')
+       needs.automerge.outputs.merged == 'true' || needs.videos.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
