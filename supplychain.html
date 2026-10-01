@@ -106,6 +106,44 @@
 .core-stroke {
   stroke-width: 2px !important;
 }
+/* 供應鏈關係分析 */
+.an-overview {
+  background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 8px; padding: 16px 20px; margin-bottom: 16px;
+  font-size: 14px; line-height: 1.8; color: var(--text);
+}
+.an-overview .an-note { color: var(--text-dim); font-size: 13px; }
+.an-block-title { font-size: 15px; font-weight: 700; margin: 20px 0 10px; color: var(--text); }
+.an-matrix-wrap { overflow-x: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+.an-matrix { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 520px; }
+.an-matrix th, .an-matrix td { padding: 9px 12px; text-align: center; border-bottom: 1px solid var(--border); }
+.an-matrix th { color: var(--text-dim); font-weight: 600; }
+.an-matrix td:first-child, .an-matrix th:first-child { text-align: left; white-space: nowrap; }
+.an-matrix tr:last-child td { border-bottom: none; }
+.an-matrix td.an-zero { color: var(--text-dim); opacity: 0.4; }
+.an-matrix td.an-total { font-weight: 700; }
+.an-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.an-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-left-width: 4px;
+  border-radius: 8px; padding: 14px 16px; cursor: pointer; transition: box-shadow .15s;
+}
+.an-card:hover { box-shadow: 0 2px 10px rgba(0,0,0,.12); }
+.an-card.an-active { box-shadow: 0 0 0 2px var(--accent); }
+.an-card h4 { font-size: 15px; margin: 0 0 6px; display: flex; justify-content: space-between; align-items: baseline; }
+.an-card h4 small { font-size: 12px; color: var(--text-dim); font-weight: 400; }
+.an-card p { font-size: 13.5px; line-height: 1.75; color: var(--text); margin: 0 0 8px; }
+.an-card ul { margin: 0; padding-left: 18px; font-size: 12.5px; line-height: 1.7; color: var(--text-dim); }
+.an-card details summary { font-size: 12.5px; color: var(--accent); cursor: pointer; margin-top: 4px; }
+.an-watch { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent-warm); border-radius: 8px; padding: 14px 20px; }
+.an-watch ol { margin: 0; padding-left: 20px; font-size: 13.5px; line-height: 1.8; color: var(--text); }
+.an-hint { font-size: 12.5px; color: var(--text-dim); margin: -4px 0 10px; }
+/* 點選關係卡片時,圖中只突顯該類連線 */
+#svg-container svg[data-focus] line { transition: opacity .2s; }
+#svg-container svg[data-focus="supply"] line:not(.rel-supply),
+#svg-container svg[data-focus="cooperation"] line:not(.rel-cooperation),
+#svg-container svg[data-focus="alliance"] line:not(.rel-alliance),
+#svg-container svg[data-focus="competition"] line:not(.rel-competition),
+#svg-container svg[data-focus="hostility"] line:not(.rel-hostility) { opacity: 0.06 !important; }
 /* 公司方塊連結到對應新聞:外觀不變,僅游標與滑過時微亮 */
 .sc-node-link { cursor: pointer; }
 .sc-node-link:hover rect, .sc-node-link:focus-visible rect { filter: brightness(1.08); }
@@ -177,6 +215,11 @@
     <div class="sc-svg-wrap">
       <div id="svg-container" class="sc-loading">載入中…</div>
     </div>
+  </section>
+
+  <section class="sc-section">
+    <h2 style="font-size:22px; margin-bottom:12px;">🔍 供應鏈關係分析</h2>
+    <div id="analysis"></div>
   </section>
 
   <section class="sc-section">
@@ -276,12 +319,109 @@ async function loadWeek(filename) {
     document.getElementById("svg-container").innerHTML = '<div class="sc-loading">載入中…</div>';
     const data = await (await fetch("data/" + filename)).json();
     renderHighlights(data);
+    renderAnalysis(data);
     renderInfo(data);
     renderSVG(data);
   } catch (err) {
     document.getElementById("svg-container").innerHTML =
       `<div class="sc-error">載入失敗: ${err.message}</div>`;
   }
+}
+
+// ── 供應鏈關係分析:統計 (所有週次) + Claude 文字分析 (data.analysis,週一自動產生) ──
+const REL_INFO = {
+  supply:      { name: "供應", icon: "🟣" },
+  cooperation: { name: "合作", icon: "🟢" },
+  alliance:    { name: "結盟", icon: "🔵" },
+  competition: { name: "競爭", icon: "🟡" },
+  hostility:   { name: "敵對", icon: "🔴" }
+};
+const TIER_NAME = { up: "上游", mid: "中游", down: "下游" };
+const TIER_ORDER = ["up", "mid", "down"];
+const escHtml = t => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+function relationPairKey(a, b) {
+  if (a === b) return `${TIER_NAME[a]}內部`;
+  const [x, y] = [a, b].sort((p, q) => TIER_ORDER.indexOf(p) - TIER_ORDER.indexOf(q));
+  return `${TIER_NAME[x]} ↔ ${TIER_NAME[y]}`;
+}
+
+function renderAnalysis(data) {
+  const box = document.getElementById("analysis");
+  const nodes = Object.fromEntries(data.nodes.map(n => [n.id, n]));
+  const edges = data.edges.filter(e => nodes[e.from] && nodes[e.to]);
+  const types = Object.keys(REL_INFO);
+  const an = data.analysis || null;
+  const degree = calcConnectionCount(data.nodes, edges);
+  const label = id => escHtml(nodes[id].label);
+
+  // 1. 總覽
+  let html = `<div class="an-overview">`;
+  html += an && an.overview
+    ? escHtml(an.overview)
+    : `<span class="an-note">本週沒有文字分析 (自 2026-W41 起每週由週報自動產生),以下為依關係資料的統計。</span>`;
+  html += `</div>`;
+
+  // 2. 層級 × 關係類型矩陣
+  const pairs = ["上游內部", "上游 ↔ 中游", "中游內部", "中游 ↔ 下游", "下游內部", "上游 ↔ 下游"];
+  const matrix = Object.fromEntries(pairs.map(p => [p, Object.fromEntries(types.map(t => [t, 0]))]));
+  edges.forEach(e => {
+    const k = relationPairKey(nodes[e.from].tier, nodes[e.to].tier);
+    if (matrix[k] && matrix[k][e.type] !== undefined) matrix[k][e.type]++;
+  });
+  const colTotal = t => pairs.reduce((s, p) => s + matrix[p][t], 0);
+  html += `<div class="an-block-title">關係分布:上、中、下游之間</div><div class="an-matrix-wrap"><table class="an-matrix"><thead><tr><th>層級</th>`;
+  types.forEach(t => html += `<th style="color:${REL_COLORS[t].color}">${REL_INFO[t].name}</th>`);
+  html += `<th>合計</th></tr></thead><tbody>`;
+  pairs.forEach(p => {
+    const row = types.map(t => matrix[p][t]);
+    const sum = row.reduce((a, b) => a + b, 0);
+    if (!sum) return;
+    html += `<tr><td>${p}</td>` + row.map(v => `<td class="${v ? "" : "an-zero"}">${v || "–"}</td>`).join("") + `<td class="an-total">${sum}</td></tr>`;
+  });
+  html += `<tr><td class="an-total">合計</td>` + types.map(t => `<td class="an-total">${colTotal(t)}</td>`).join("") + `<td class="an-total">${edges.length}</td></tr>`;
+  html += `</tbody></table></div>`;
+
+  // 3. 五種關係卡片 (依連線較多的公司優先列出)
+  html += `<div class="an-block-title">各類關係解讀</div><div class="an-hint">點選卡片可在上方圖中只突顯該類關係,再點一次恢復。</div><div class="an-cards">`;
+  types.forEach(t => {
+    const list = edges.filter(e => e.type === t)
+      .sort((a, b) => (degree[b.from] + degree[b.to]) - (degree[a.from] + degree[a.to]));
+    if (!list.length) return;
+    const arrow = (t === "competition" || t === "hostility") ? "↔" : "→";
+    const item = e => `<li><strong>${label(e.from)}</strong> ${arrow} <strong>${label(e.to)}</strong>:${escHtml(e.label)}</li>`;
+    html += `<div class="an-card" data-type="${t}" style="border-left-color:${REL_COLORS[t].color}">`;
+    html += `<h4><span style="color:${REL_COLORS[t].color}">${REL_INFO[t].icon} ${REL_INFO[t].name}</span><small>${list.length} 條</small></h4>`;
+    if (an && an[t]) html += `<p>${escHtml(an[t])}</p>`;
+    html += `<ul>${list.slice(0, 4).map(item).join("")}</ul>`;
+    if (list.length > 4) {
+      html += `<details><summary>顯示其餘 ${list.length - 4} 條</summary><ul>${list.slice(4).map(item).join("")}</ul></details>`;
+    }
+    html += `</div>`;
+  });
+  html += `</div>`;
+
+  // 4. 下週觀察
+  if (an && an.watch && an.watch.length) {
+    html += `<div class="an-block-title">下週觀察</div><div class="an-watch"><ol>${an.watch.map(w => `<li>${escHtml(w)}</li>`).join("")}</ol></div>`;
+  }
+
+  box.innerHTML = html;
+
+  // 卡片點選 → 圖中只突顯該類連線
+  box.querySelectorAll(".an-card").forEach(card => {
+    card.addEventListener("click", ev => {
+      if (ev.target.closest("summary")) return;  // 展開清單時不切換
+      const svg = document.querySelector("#svg-container svg");
+      const active = card.classList.contains("an-active");
+      box.querySelectorAll(".an-card").forEach(c => c.classList.remove("an-active"));
+      if (!svg) return;
+      if (active) { svg.removeAttribute("data-focus"); return; }
+      card.classList.add("an-active");
+      svg.setAttribute("data-focus", card.dataset.type);
+      svg.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  });
 }
 
 function renderInfo(data) {
@@ -502,7 +642,7 @@ function renderSVG(data) {
 
     const opacity = (from.isCore || to.isCore) ? "0.85" : "0.55";
     const strokeWidth = (from.isCore || to.isCore) ? "2" : "1.5";
-    svg += `<line x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="${strokeWidth}" ${dashAttr} ${marker} opacity="${opacity}"/>`;
+    svg += `<line class="rel-${e.type}" x1="${x1}" y1="${actualY1}" x2="${x2}" y2="${actualY2}" stroke="${rel.color}" stroke-width="${strokeWidth}" ${dashAttr} ${marker} opacity="${opacity}"/>`;
   });
 
   // 繪製節點與文字:字級依方框寬度自動縮放,文字不超出方框

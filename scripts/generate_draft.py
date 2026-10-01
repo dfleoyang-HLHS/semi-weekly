@@ -66,6 +66,11 @@ SUPPLYCHAIN_SYSTEM = """你負責維護網站上的「半導體 + AI 供應鏈�
 9. 全部使用繁體中文 (公司英文名稱可保留)
 10. 每個節點的 news_ref 填入與該公司最相關、最關鍵的一則新聞編號 (新聞清單中的 [n]);
     本週沒有該公司的相關新聞就填 0,不要勉強對應
+11. analysis 是給讀者看的關係分析,依你產出的 nodes / edges 撰寫,不要寫圖中沒有的關係:
+    - overview:2-3 句,說明本週整體結構 (樞紐公司、關係集中在哪幾層、本週新增的變數)
+    - supply / cooperation / alliance / competition / hostility:各 2-3 句,說明該類關係
+      在上、中、下游之間如何分布、代表的意義;可引用週報中的具體數字
+    - watch:3-4 條下週可追蹤的觀察點
 """
 
 SUPPLYCHAIN_SCHEMA = {
@@ -108,7 +113,17 @@ SUPPLYCHAIN_SCHEMA = {
             },
         },
     },
-    "required": ["title", "summary", "highlights", "nodes", "edges"],
+    "required": ["title", "summary", "highlights", "nodes", "edges", "analysis"],
+    "additionalProperties": False,
+}
+SUPPLYCHAIN_SCHEMA["properties"]["analysis"] = {
+    "type": "object",
+    "properties": {
+        **{k: {"type": "string"} for k in
+           ["overview", "supply", "cooperation", "alliance", "competition", "hostility"]},
+        "watch": {"type": "array", "items": {"type": "string"}},
+    },
+    "required": ["overview", "supply", "cooperation", "alliance", "competition", "hostility", "watch"],
     "additionalProperties": False,
 }
 

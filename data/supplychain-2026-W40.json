@@ -845,5 +845,19 @@
       "type": "competition",
       "label": "Trainium ASIC vs GPU"
     }
-  ]
+  ],
+  "analysis": {
+    "overview": "本週供應鏈呈現「中游雙核心、下游多強」的結構:TSMC 與 NVIDIA 各有 17 條關係,是整張圖的兩個樞紐。上游的材料與設備幾乎全部匯流到 TSMC 與三大記憶體廠;下游則同時出現兩股力量——NVIDIA 透過伺服器廠擴張生態系,而 Google、AWS 的 ASIC 正在與 GPU 正面競爭。本週新增的變數是 Netlist 的 HBM 專利訴訟,一次牽動上、中、下游四家公司。",
+    "supply": "供應關係由上游單向流入中游:Ajinomoto 的 ABF 樹脂經 Ibiden、Shinko、欣興做成載板,再與 ASML、TEL、Lam Research、BESI 的設備一起匯入 TSMC。HBM 是中游通往下游最關鍵的一條線,SK Hynix、Samsung、Micron 三家同時供應 NVIDIA;美光 FQ4 毛利率 86.8%、客戶提前鎖定 2027 年供給,顯示這條線的定價權在供應端。",
+    "cooperation": "合作是數量最多的關係 (28 條),主要分成兩段:一段是 IC 設計公司向中游下單 (NVIDIA、Broadcom、AMD、Apple、Intel、聯發科都委由 TSMC 代工,封測再分給日月光與京元電);另一段發生在下游內部,NVIDIA 把 Rubin / NVL72 平台分送 Dell、HPE、SMCI、聯想與鴻海組裝。本週新增 Vultr 經 HPE 採購 AMD Helios 機櫃、華為 ASIC 委由陸系封測,顯示非 NVIDIA 陣營的出貨管道正在成形。",
+    "alliance": "結盟集中在兩個節點:Applied Materials 以 EPIC Center 綁定三大記憶體廠,並持股 BESI 共同開發混合鍵合;TSMC 則把 CoWoS 後段與測試外包給日月光、Amkor、京元電,形成「台積電主導、封測廠分擔產能」的先進封裝聯盟。",
+    "competition": "競爭有三個戰場:記憶體 (SK Hynix、Samsung、Micron 三方爭奪 HBM 產能與價格)、AI 加速器 (NVIDIA 對 AMD 之外,Google TPU 與 AWS Trainium 的 ASIC 路線預估 2027 年出貨將超越 GPU)、AI 伺服器 (Dell、HPE、SMCI、聯想爭奪市佔)。其中 ASIC 對 GPU 是本週新浮現、影響最長遠的競爭關係。",
+    "hostility": "敵對關係本週由 Netlist 主導:它對 Micron 及下游客戶 NVIDIA、Broadcom、Google 提起 HBM 專利訴訟,是少數從上游 IP 端同時波及中、下游的事件。另一條長期存在的敵對是美國設備管制下 TSMC 與陸系封測 (長電、通富微電、中芯) 的技術隔離。",
+    "watch": [
+      "Netlist 訴訟是否申請禁制令,影響 Micron HBM 對 NVIDIA 等客戶的出貨",
+      "AWS Trainium 3 出貨卡關何時解除,ASIC 對 GPU 的競爭能否如預期在 2027 年翻轉",
+      "HBM 三強的價格與產能:Micron 高毛利能否延續,Samsung HBM4 放量對競爭格局的影響",
+      "非 NVIDIA 陣營 (AMD Helios、華為 ASIC) 的出貨管道是否持續擴大"
+    ]
+  }
 }
