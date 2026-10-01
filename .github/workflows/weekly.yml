@@ -3,6 +3,7 @@ name: Semi Weekly and Briefs
 # 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
 #              週一~五 22:30 = 美股收盤後 (台灣週二~六 06:30,美股報價)
 #              週一~五 08:00 = 台股收盤後 (台灣週一~五 16:00,台股報價)
+#              國定假日等非交易日:抓價程式偵測到交易日未更新即略過,不 commit、不部署
 on:
   schedule:
     - cron: '0 22 * * 0'
@@ -158,6 +159,8 @@ jobs:
     needs: detect
     if: needs.detect.outputs.mode == 'prices'
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -168,11 +171,13 @@ jobs:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python scripts/fetch_us_prices.py
       - name: Commit
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/us_prices.json
           if ! git diff --staged --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
             git commit -m "美股報價 $(date +%F)"
             for i in 1 2 3 4 5; do
               git pull --rebase origin main && git push && break
@@ -185,6 +190,8 @@ jobs:
     needs: detect
     if: needs.detect.outputs.mode == 'twprices'
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -193,11 +200,13 @@ jobs:
       - name: Fetch Taiwan stock prices
         run: python scripts/fetch_tw_prices.py
       - name: Commit
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/tw_prices.json
           if ! git diff --staged --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
             git commit -m "台股報價 $(date +%F)"
             for i in 1 2 3 4 5; do
               git pull --rebase origin main && git push && break
@@ -234,7 +243,8 @@ jobs:
     needs: [detect, brief, publish, prices, twprices]
     if: >-
       always() &&
-      (needs.brief.result == 'success' || needs.publish.result == 'success' || needs.prices.result == 'success' || needs.twprices.result == 'success')
+      (needs.brief.result == 'success' || needs.publish.result == 'success' ||
+       needs.prices.outputs.changed == 'true' || needs.twprices.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages

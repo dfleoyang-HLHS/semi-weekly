@@ -189,6 +189,11 @@ def main():
         if s["trade_date"] != as_of:
             s["stale"] = True
 
+    # 非交易日 (國定假日、颱風假等):最新交易日與上次相同,不寫檔、不 commit、不部署
+    if as_of == old.get("as_of") and "--backfill" not in sys.argv and "--force" not in sys.argv:
+        print(f"ℹ️  最新交易日仍為 {as_of},今日非交易日或資料未更新,略過")
+        return
+
     OUT.write_text(json.dumps({
         "updated_at": datetime.now(TZ).isoformat(timespec="seconds"),
         "as_of": as_of,

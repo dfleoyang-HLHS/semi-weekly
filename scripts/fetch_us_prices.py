@@ -107,6 +107,11 @@ def main():
     if not dates:
         sys.exit("❌ 所有股票都抓取失敗,不更新檔案")
 
+    # 非交易日 (美國國定假日等):最新交易日與上次相同,不寫檔、不 commit、不部署
+    if max(dates) == old.get("as_of") and "--force" not in sys.argv:
+        print(f"ℹ️  最新交易日仍為 {max(dates)},今日非交易日或資料未更新,略過")
+        return
+
     OUT.write_text(json.dumps({
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "as_of": max(dates),
