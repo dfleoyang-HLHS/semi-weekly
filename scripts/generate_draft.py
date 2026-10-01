@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 generate_draft.py
-讀取 data/raw_news.json,呼叫 Claude API 產生本週:
+讀取新聞資料庫 (data/news_archive.json) 中過去 7 天的新聞,呼叫 Claude API 產生本週:
   1. 週報        posts/YYYY-WNN-semi-weekly.md
   2. 供應鏈圖資料 data/supplychain-YYYY-WNN.json (以上一期圖為基礎增修)
   3. 美股 / 台股追蹤卡片 data/us_stocks.json、data/tw_stocks.json (指標、近期重點;本週有新資訊的公司才更新)
@@ -22,7 +22,7 @@ from pathlib import Path
 
 import anthropic
 
-from archive_news import add_mentions, normalize_url, url_to_id
+from archive_news import add_mentions, normalize_url, url_to_id, week_news
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
@@ -32,7 +32,7 @@ TEMPLATE = ROOT / "scripts" / "weekly_template.md"
 MODEL = "claude-opus-5-5"
 TZ = timezone(timedelta(hours=8))  # 台灣時間 (無日光節約)
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
-MAX_NEWS = 150  # 交給 Claude 的新聞上限 (依發布時間取最新)
+MAX_NEWS = 250  # 交給 Claude 的新聞上限 (依發布時間取最新;一週約 200~300 則)
 
 
 WEEKLY_SYSTEM = """你是專業的半導體產業分析師,負責每週撰寫一份「半導體 + AI 供應鏈週報」。
@@ -309,15 +309,14 @@ def main():
     if not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("請設定環境變數 ANTHROPIC_API_KEY (GitHub: Settings → Secrets → Actions)")
 
-    raw_path = DATA_DIR / "raw_news.json"
-    if not raw_path.exists():
-        sys.exit(f"找不到 {raw_path},請先執行 fetch_news.py")
-    items = json.loads(raw_path.read_text(encoding="utf-8"))["items"]
+    # 新聞改用資料庫中過去 7 天的全部新聞 (含週三、五快訊時抓到、週一 RSS 已不存在的新聞)
+    today = datetime.now(TZ).date()
+    items = week_news(7, today)
     if not items:
         print("⚠️  本週無相關新聞,跳過生成")
         return
+    print(f"📰 本週新聞:資料庫過去 7 天共 {len(items)} 則 (交給 Claude 最多 {MAX_NEWS} 則)")
 
-    today = datetime.now(TZ).date()
     year, week, _ = today.isocalendar()
     week_tag = f"{year}-W{week:02d}"
     client = anthropic.Anthropic()

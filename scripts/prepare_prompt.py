@@ -26,12 +26,12 @@ SYSTEM_INSTRUCTION = """你是專業的半導體產業分析師,請依照下方�
 
 
 def main():
-    raw_path = DATA_DIR / "raw_news.json"
-    if not raw_path.exists():
-        raise RuntimeError(f"找不到 {raw_path},請先執行 fetch_news.py")
-
-    raw = json.loads(raw_path.read_text(encoding="utf-8"))
-    items = raw["items"]
+    # 與 generate_draft.py 相同:使用新聞資料庫中過去 7 天的新聞
+    import sys
+    sys.path.insert(0, str(Path(__file__).parent))
+    from archive_news import week_news
+    items = week_news(7)
+    raw = {"fetched_at": f"新聞資料庫過去 7 天 ({len(items)} 則)"}
     today = date.today()
     iso = today.isocalendar()
     year, week = iso[0], iso[1]

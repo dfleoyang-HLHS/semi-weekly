@@ -73,6 +73,7 @@ GitHub 排程常延遲 1~2 小時,自動 Merge 實際約在 20:00~22:00。手動
 - `data/news_archive.csv`:同內容,可直接用 Excel 開啟 (UTF-8)
 - 欄位:id (永久編號)、published、week、source、title、url、summary、companies、regions、first_seen、last_seen
 - 同一網址只存一筆;供應鏈圖的新聞連結也記錄了對應的 id
+- 週一的週報、供應鏈圖、個股卡片與事實查核,都使用資料庫中**過去 7 天**的全部新聞 (含週三、五快訊時抓到的),而非只用週一當次抓取的新聞
 - 線上網址:https://dfleoyang-hlhs.github.io/semi-weekly/data/news_archive.json
 
 ## 常見問題

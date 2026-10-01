@@ -240,6 +240,22 @@ def add_mentions(graph, as_of, days=28, archive=None):
     return graph
 
 
+def week_news(days=7, today=None):
+    """本週可用的新聞:新聞資料庫中過去 days 天 (含今天) 發布的新聞,依發布日期由新到舊。
+    回傳 raw_news 格式 (title / link / source / published / summary),供週報、查核等共用。
+    資料庫不存在或該期間無資料時,改用最近一次抓取的 data/raw_news.json。"""
+    today = today or datetime.now(TZ).date()
+    start = (today - timedelta(days=days)).isoformat()
+    items = [
+        {"title": a["title"], "link": a["url"], "source": a["source"],
+         "published": a["published"], "summary": a["summary"], "archive_id": a["id"]}
+        for a in load_archive() if start <= a["published"] <= today.isoformat()
+    ]
+    if not items and RAW_PATH.exists():
+        return json.loads(RAW_PATH.read_text(encoding="utf-8"))["items"]
+    return sorted(items, key=lambda x: (x["published"], x["archive_id"]), reverse=True)
+
+
 def url_to_id():
     """網址 → 資料庫編號,供其他腳本 (如供應鏈圖) 對照。"""
     return {normalize_url(a["url"]): a["id"] for a in load_archive()}

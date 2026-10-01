@@ -25,7 +25,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent))
-from archive_news import normalize_url  # noqa: E402
+from archive_news import normalize_url, week_news  # noqa: E402
 
 ROOT = Path(__file__).parent.parent
 DATA = ROOT / "data"
@@ -159,7 +159,7 @@ def main():
     week, title = sys.argv[1], (sys.argv[2] if len(sys.argv) > 2 else "")
     post = (ROOT / "posts" / f"{week}-semi-weekly.md").read_text(encoding="utf-8")
     graph = json.loads((DATA / f"supplychain-{week}.json").read_text(encoding="utf-8"))
-    items = json.loads((DATA / "raw_news.json").read_text(encoding="utf-8"))["items"]
+    items = week_news(7)  # 與 generate_draft.py 使用同一份新聞清單
     archive = json.loads((DATA / "news_archive.json").read_text(encoding="utf-8"))["items"]
     allowed = {normalize_url(i["link"]) for i in items} | {normalize_url(a["url"]) for a in archive}
     cards = [("美股", c) for c in changed_cards("data/us_stocks.json")] + \
