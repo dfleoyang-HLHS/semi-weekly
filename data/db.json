@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:09:51.419934",
+  "generated_at": "2026-10-01T10:21:58.536992",
   "total": 56,
   "articles": [
     {
@@ -59,33 +59,31 @@
       "week": "2026-W40",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "日本",
-        "歐洲",
         "台灣",
+        "美國",
+        "韓國",
+        "日本",
         "中國大陸",
-        "韓國"
+        "歐洲"
       ],
       "companies": [
         "Samsung",
         "NVIDIA",
-        "PTI",
         "TSMC",
-        "ASE",
-        "Intel",
         "Micron",
         "Broadcom",
-        "SK Hynix",
-        "Shinko"
+        "Intel",
+        "Shinko",
+        "SK Hynix"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 51 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 51 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 15668
+      "word_count": 15532
     },
     {
       "slug": "2026-09-25-brief",
@@ -95,33 +93,32 @@
       "week": "2026-W39",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
-        "美國",
-        "日本",
         "台灣",
+        "美國",
         "韓國",
-        "中國大陸"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "Intel",
-        "ASE",
         "NVIDIA",
-        "PTI",
         "TSMC",
         "SK Hynix",
+        "Intel",
+        "AMD",
         "ASML",
         "Broadcom",
-        "AMD"
+        "Micron"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 73 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 73 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 23032
+      "word_count": 22821
     },
     {
       "slug": "2026-09-23-brief",
@@ -131,23 +128,23 @@
       "week": "2026-W39",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
         "台灣",
+        "美國",
         "韓國",
-        "歐洲",
-        "美國"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "PTI",
-        "Intel",
-        "ASE",
         "Micron",
         "Samsung",
+        "PTI",
+        "AMD",
         "TSMC",
         "SK Hynix",
-        "AMD",
-        "Amkor"
+        "SMIC",
+        "Amkor",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
@@ -156,7 +153,7 @@
       ],
       "summary": "本日抓取 52 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 16221
+      "word_count": 16042
     },
     {
       "slug": "2026-09-20-brief",
@@ -166,24 +163,24 @@
       "week": "2026-W38",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "歐洲",
         "台灣",
-        "日本",
+        "美國",
         "韓國",
-        "中國大陸"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
         "NVIDIA",
-        "PTI",
         "SK Hynix",
         "TSMC",
-        "Intel",
         "Micron",
+        "ASE",
         "KYEC",
-        "Amkor"
+        "PTI",
+        "Amkor",
+        "JCET"
       ],
       "tags": [
         "新聞快訊",
@@ -192,7 +189,7 @@
       ],
       "summary": "本日抓取 62 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 19170
+      "word_count": 18963
     },
     {
       "slug": "2026-09-17-brief",
@@ -202,33 +199,31 @@
       "week": "2026-W38",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
+        "美國",
+        "韓國",
         "日本",
         "中國大陸",
-        "美國",
-        "歐洲",
-        "台灣",
-        "韓國"
+        "歐洲"
       ],
       "companies": [
         "Samsung",
         "NVIDIA",
-        "Intel",
-        "PTI",
-        "ASE",
         "TSMC",
         "Micron",
+        "Intel",
         "SK Hynix",
-        "ASML",
-        "AMD"
+        "AMD",
+        "ASML"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 57 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 57 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 18390
+      "word_count": 18175
     },
     {
       "slug": "2026-09-16-brief",
@@ -238,21 +233,19 @@
       "week": "2026-W38",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "日本",
-        "韓國",
         "台灣",
+        "美國",
+        "韓國",
+        "日本",
         "中國大陸"
       ],
       "companies": [
         "Samsung",
         "NVIDIA",
-        "ASE",
-        "Intel",
         "TSMC",
-        "PTI",
         "SK Hynix",
         "Micron",
+        "Intel",
         "Broadcom"
       ],
       "tags": [
@@ -260,9 +253,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 59 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 59 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 18160
+      "word_count": 17951
     },
     {
       "slug": "2026-09-15-brief",
@@ -272,24 +265,24 @@
       "week": "2026-W38",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
         "美國",
         "韓國",
-        "歐洲",
         "日本",
         "中國大陸",
-        "台灣"
+        "歐洲"
       ],
       "companies": [
-        "ASE",
-        "Intel",
         "NVIDIA",
-        "PTI",
         "Samsung",
         "TSMC",
         "Micron",
         "SK Hynix",
         "ASML",
-        "Broadcom"
+        "Broadcom",
+        "Intel",
+        "AMD",
+        "PTI"
       ],
       "tags": [
         "新聞快訊",
@@ -298,7 +291,7 @@
       ],
       "summary": "本日抓取 95 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 29788
+      "word_count": 29345
     },
     {
       "slug": "2026-09-13-brief",
@@ -311,17 +304,16 @@
         "台灣",
         "美國",
         "韓國",
-        "中國大陸",
         "日本",
+        "中國大陸",
         "歐洲"
       ],
       "companies": [
         "NVIDIA",
         "Samsung",
-        "ASE",
-        "PTI",
         "TSMC",
         "Broadcom",
+        "ASE",
         "SK Hynix",
         "SMIC",
         "Amkor"
@@ -331,9 +323,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 47 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 47 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 14469
+      "word_count": 14347
     },
     {
       "slug": "2026-09-10-brief",
@@ -343,32 +335,31 @@
       "week": "2026-W37",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
-        "中國大陸",
+        "台灣",
+        "美國",
         "韓國",
         "日本",
-        "美國",
-        "台灣"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "PTI",
         "NVIDIA",
         "TSMC",
-        "Intel",
         "SK Hynix",
-        "ASML",
-        "Shinko"
+        "Intel",
+        "PTI",
+        "ASE",
+        "ASML"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 50 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 50 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 15899
+      "word_count": 15730
     },
     {
       "slug": "2026-09-08-brief",
@@ -378,22 +369,21 @@
       "week": "2026-W37",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
         "台灣",
         "美國",
+        "韓國",
         "日本",
         "中國大陸",
         "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
         "TSMC",
         "ASML",
-        "PTI",
         "NVIDIA",
         "Intel",
         "SK Hynix",
+        "ASE",
         "Micron"
       ],
       "tags": [
@@ -401,9 +391,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 21572
+      "word_count": 21363
     },
     {
       "slug": "2026-09-06-brief",
@@ -413,22 +403,20 @@
       "week": "2026-W36",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
         "美國",
-        "歐洲",
         "韓國",
         "中國大陸",
-        "台灣"
+        "歐洲"
       ],
       "companies": [
         "Samsung",
         "SK Hynix",
-        "Intel",
-        "ASE",
-        "PTI",
         "NVIDIA",
         "TSMC",
         "ASML",
         "Broadcom",
+        "Intel",
         "Micron"
       ],
       "tags": [
@@ -436,9 +424,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 49 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
+      "summary": "本日抓取 49 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 15306
+      "word_count": 15156
     },
     {
       "slug": "2026-09-03-brief",
@@ -448,32 +436,31 @@
       "week": "2026-W36",
       "category": "新聞快訊",
       "regions": [
-        "日本",
         "台灣",
-        "中國大陸",
+        "美國",
         "韓國",
-        "歐洲",
-        "美國"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "Intel",
         "NVIDIA",
-        "PTI",
         "SK Hynix",
         "TSMC",
+        "Intel",
         "Broadcom",
-        "Micron"
+        "Micron",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 76 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 76 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 24294
+      "word_count": 23970
     },
     {
       "slug": "2026-09-01-brief",
@@ -483,24 +470,24 @@
       "week": "2026-W36",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
+        "台灣",
         "美國",
         "韓國",
+        "日本",
         "中國大陸",
-        "台灣",
-        "日本"
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "TSMC",
         "Micron",
         "SK Hynix",
         "NVIDIA",
+        "ASE",
         "Intel",
         "SMIC",
-        "PTI",
-        "AMD"
+        "AMD",
+        "Ajinomoto"
       ],
       "tags": [
         "新聞快訊",
@@ -509,7 +496,7 @@
       ],
       "summary": "本日抓取 57 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 17285
+      "word_count": 17163
     },
     {
       "slug": "2026-08-28-brief",
@@ -519,22 +506,20 @@
       "week": "2026-W35",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
         "台灣",
-        "日本",
-        "中國大陸",
         "美國",
-        "韓國"
+        "韓國",
+        "日本",
+        "中國大陸"
       ],
       "companies": [
         "NVIDIA",
         "Samsung",
-        "ASE",
         "SK Hynix",
-        "Intel",
-        "PTI",
         "TSMC",
+        "Intel",
         "Micron",
+        "ASE",
         "SMIC"
       ],
       "tags": [
@@ -542,9 +527,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 100 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 100 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 29917
+      "word_count": 29644
     },
     {
       "slug": "2026-08-25-brief",
@@ -554,20 +539,18 @@
       "week": "2026-W35",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
-        "日本",
         "台灣",
-        "中國大陸",
         "美國",
-        "韓國"
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "NVIDIA",
-        "Intel",
         "SK Hynix",
-        "PTI",
+        "Intel",
         "TSMC",
         "Broadcom",
         "AMD"
@@ -577,9 +560,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 21502
+      "word_count": 21194
     },
     {
       "slug": "2026-08-23-brief",
@@ -589,22 +572,21 @@
       "week": "2026-W34",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
+        "美國",
         "韓國",
         "日本",
         "中國大陸",
-        "歐洲",
-        "台灣",
-        "美國"
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "SK Hynix",
         "NVIDIA",
-        "PTI",
-        "Intel",
         "TSMC",
         "Broadcom",
+        "Intel",
+        "ASE",
         "Micron",
         "JCET"
       ],
@@ -613,9 +595,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 20335
+      "word_count": 20124
     },
     {
       "slug": "2026-08-20-brief",
@@ -625,31 +607,30 @@
       "week": "2026-W34",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
+        "台灣",
         "美國",
         "韓國",
-        "台灣"
+        "中國大陸"
       ],
       "companies": [
-        "ASE",
         "NVIDIA",
         "Samsung",
-        "Intel",
-        "PTI",
         "SK Hynix",
         "TSMC",
+        "AMD",
+        "Intel",
         "JCET",
-        "KYEC",
-        "Broadcom"
+        "Broadcom",
+        "PTI"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 60 則半導體與 AI 供應鏈相關新聞,涵蓋 4 個區域、10 家主要公司。",
+      "summary": "本日抓取 60 則半導體與 AI 供應鏈相關新聞,涵蓋 4 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 18902
+      "word_count": 18714
     },
     {
       "slug": "2026-08-18-brief",
@@ -659,33 +640,32 @@
       "week": "2026-W34",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "日本",
         "台灣",
-        "歐洲",
+        "美國",
         "韓國",
-        "中國大陸"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "ASE",
-        "Intel",
         "Samsung",
-        "PTI",
         "AMD",
         "Broadcom",
         "TSMC",
         "SK Hynix",
-        "Ajinomoto"
+        "Intel",
+        "Ajinomoto",
+        "Micron"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 69 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 69 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 21713
+      "word_count": 21464
     },
     {
       "slug": "2026-08-16-brief",
@@ -697,22 +677,22 @@
       "regions": [
         "台灣",
         "美國",
-        "中國大陸",
-        "日本",
         "韓國",
+        "日本",
+        "中國大陸",
         "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "NVIDIA",
-        "Intel",
         "TSMC",
         "SK Hynix",
-        "PTI",
         "Micron",
+        "Intel",
         "Broadcom",
-        "SMIC"
+        "SMIC",
+        "AMD",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
@@ -721,7 +701,7 @@
       ],
       "summary": "本日抓取 62 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 19112
+      "word_count": 18918
     },
     {
       "slug": "2026-08-13-brief",
@@ -731,23 +711,23 @@
       "week": "2026-W33",
       "category": "新聞快訊",
       "regions": [
-        "日本",
         "台灣",
-        "韓國",
         "美國",
+        "韓國",
+        "日本",
         "中國大陸"
       ],
       "companies": [
-        "ASE",
-        "Intel",
         "NVIDIA",
-        "PTI",
         "Samsung",
+        "Intel",
         "TSMC",
         "SK Hynix",
         "AMD",
         "Micron",
-        "Broadcom"
+        "PTI",
+        "Broadcom",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
@@ -756,7 +736,7 @@
       ],
       "summary": "本日抓取 88 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 28316
+      "word_count": 27993
     },
     {
       "slug": "2026-08-11-brief",
@@ -766,21 +746,20 @@
       "week": "2026-W33",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
         "美國",
-        "中國大陸",
-        "歐洲",
         "韓國",
         "日本",
-        "台灣"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "PTI",
         "NVIDIA",
-        "Intel",
         "SK Hynix",
         "TSMC",
+        "Intel",
+        "ASE",
         "Micron",
         "Amkor",
         "AMD"
@@ -790,9 +769,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 78 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 78 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 24510
+      "word_count": 24216
     },
     {
       "slug": "2026-08-09-brief",
@@ -802,31 +781,30 @@
       "week": "2026-W32",
       "category": "新聞快訊",
       "regions": [
-        "日本",
-        "韓國",
-        "美國",
         "台灣",
+        "美國",
+        "韓國",
+        "日本",
         "中國大陸"
       ],
       "companies": [
-        "ASE",
-        "PTI",
         "TSMC",
         "NVIDIA",
         "Samsung",
-        "Intel",
         "SK Hynix",
+        "Intel",
         "Micron",
-        "Ajinomoto"
+        "Ajinomoto",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 41 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 41 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 12900
+      "word_count": 12762
     },
     {
       "slug": "2026-08-07-brief",
@@ -836,21 +814,19 @@
       "week": "2026-W32",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
-        "歐洲",
+        "台灣",
+        "美國",
         "韓國",
         "日本",
-        "美國",
-        "台灣"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "PTI",
-        "Intel",
         "NVIDIA",
         "TSMC",
         "SK Hynix",
+        "ASE",
         "SMIC",
         "JCET"
       ],
@@ -859,9 +835,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 48 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 48 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 14827
+      "word_count": 14598
     },
     {
       "slug": "2026-08-04-brief",
@@ -873,29 +849,27 @@
       "regions": [
         "台灣",
         "美國",
+        "韓國",
         "日本",
-        "中國大陸",
-        "韓國"
+        "中國大陸"
       ],
       "companies": [
         "Samsung",
-        "Intel",
         "NVIDIA",
         "SK Hynix",
-        "ASE",
-        "PTI",
         "TSMC",
+        "AMD",
         "Micron",
-        "AMD"
+        "Intel"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 52 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 52 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 16121
+      "word_count": 15969
     },
     {
       "slug": "2026-08-02-brief",
@@ -905,20 +879,20 @@
       "week": "2026-W31",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "歐洲",
         "台灣",
+        "美國",
+        "韓國",
         "日本",
         "中國大陸",
-        "韓國"
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "NVIDIA",
         "Samsung",
-        "PTI",
-        "Intel",
         "TSMC",
+        "ASE",
+        "Intel",
+        "PTI",
         "ASML",
         "SMIC",
         "Micron"
@@ -930,7 +904,7 @@
       ],
       "summary": "本日抓取 48 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 14782
+      "word_count": 14612
     },
     {
       "slug": "2026-07-30-brief",
@@ -940,24 +914,24 @@
       "week": "2026-W31",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
-        "美國",
         "台灣",
+        "美國",
+        "韓國",
         "日本",
         "中國大陸",
-        "韓國"
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
-        "Intel",
         "NVIDIA",
         "TSMC",
-        "PTI",
         "SK Hynix",
+        "ASE",
         "AMD",
+        "Intel",
         "ASML",
-        "Broadcom"
+        "Broadcom",
+        "Amkor"
       ],
       "tags": [
         "新聞快訊",
@@ -966,7 +940,7 @@
       ],
       "summary": "本日抓取 81 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 26391
+      "word_count": 26192
     },
     {
       "slug": "2026-07-28-brief",
@@ -976,24 +950,24 @@
       "week": "2026-W31",
       "category": "新聞快訊",
       "regions": [
-        "日本",
-        "韓國",
-        "美國",
-        "中國大陸",
         "台灣",
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
         "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "ASE",
         "Samsung",
-        "PTI",
-        "Intel",
         "SK Hynix",
+        "Intel",
         "AMD",
         "TSMC",
+        "PTI",
         "Broadcom",
-        "ASML"
+        "ASML",
+        "Micron"
       ],
       "tags": [
         "新聞快訊",
@@ -1002,7 +976,7 @@
       ],
       "summary": "本日抓取 68 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 21921
+      "word_count": 21727
     },
     {
       "slug": "2026-07-26-brief",
@@ -1012,32 +986,31 @@
       "week": "2026-W30",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "歐洲",
-        "日本",
         "台灣",
+        "美國",
         "韓國",
-        "中國大陸"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
         "NVIDIA",
         "Intel",
-        "PTI",
-        "SK Hynix",
         "TSMC",
+        "SK Hynix",
         "AMD",
-        "Micron"
+        "Micron",
+        "PTI"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 20619
+      "word_count": 20397
     },
     {
       "slug": "2026-07-23-brief",
@@ -1047,21 +1020,19 @@
       "week": "2026-W30",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
-        "歐洲",
-        "美國",
         "台灣",
+        "美國",
         "韓國",
-        "日本"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
-        "NVIDIA",
         "AMD",
-        "Intel",
-        "PTI",
+        "NVIDIA",
         "SK Hynix",
+        "Intel",
         "TSMC",
         "ASML"
       ],
@@ -1070,9 +1041,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 20125
+      "word_count": 19915
     },
     {
       "slug": "2026-07-21-brief",
@@ -1082,33 +1053,32 @@
       "week": "2026-W30",
       "category": "新聞快訊",
       "regions": [
-        "日本",
-        "韓國",
-        "中國大陸",
         "台灣",
-        "歐洲",
-        "美國"
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "PTI",
         "NVIDIA",
-        "Intel",
         "SK Hynix",
         "TSMC",
+        "Intel",
         "Micron",
         "ASML",
-        "SMIC"
+        "SMIC",
+        "AMD"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 70 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 70 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 22807
+      "word_count": 22517
     },
     {
       "slug": "2026-07-19-brief",
@@ -1118,22 +1088,21 @@
       "week": "2026-W29",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "日本",
-        "韓國",
-        "歐洲",
         "台灣",
-        "中國大陸"
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "Intel",
         "TSMC",
         "Samsung",
-        "ASE",
         "NVIDIA",
-        "PTI",
+        "Intel",
         "ASML",
         "SK Hynix",
+        "PTI",
         "Micron",
         "Broadcom"
       ],
@@ -1142,9 +1111,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 61 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 61 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 18395
+      "word_count": 18164
     },
     {
       "slug": "2026-07-16-brief",
@@ -1154,24 +1123,24 @@
       "week": "2026-W29",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
-        "日本",
-        "美國",
-        "歐洲",
         "台灣",
-        "韓國"
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "TSMC",
-        "ASE",
         "NVIDIA",
-        "PTI",
-        "Intel",
         "Samsung",
+        "Intel",
         "Broadcom",
         "ASML",
+        "PTI",
         "SK Hynix",
-        "AMD"
+        "AMD",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
@@ -1180,7 +1149,7 @@
       ],
       "summary": "本日抓取 96 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 30717
+      "word_count": 30414
     },
     {
       "slug": "2026-07-14-brief",
@@ -1190,23 +1159,22 @@
       "week": "2026-W29",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "中國大陸",
         "台灣",
-        "日本",
+        "美國",
         "韓國",
-        "歐洲"
+        "日本",
+        "中國大陸"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "Intel",
         "NVIDIA",
-        "PTI",
         "TSMC",
+        "Intel",
         "SK Hynix",
+        "ASE",
         "Ibiden",
         "KYEC",
+        "PTI",
         "Amkor"
       ],
       "tags": [
@@ -1214,9 +1182,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 78 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 78 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 24853
+      "word_count": 24574
     },
     {
       "slug": "2026-07-12-brief",
@@ -1226,33 +1194,32 @@
       "week": "2026-W28",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
         "美國",
-        "中國大陸",
-        "日本",
         "韓國",
-        "歐洲",
-        "台灣"
+        "日本",
+        "中國大陸"
       ],
       "companies": [
         "Samsung",
         "TSMC",
         "Intel",
-        "ASE",
         "SK Hynix",
         "NVIDIA",
-        "PTI",
         "AMD",
         "Micron",
-        "Broadcom"
+        "Broadcom",
+        "KYEC",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 58 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 58 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 17542
+      "word_count": 17419
     },
     {
       "slug": "2026-07-09-brief",
@@ -1263,22 +1230,20 @@
       "category": "新聞快訊",
       "regions": [
         "台灣",
-        "日本",
         "美國",
+        "韓國",
+        "日本",
         "中國大陸",
-        "歐洲",
-        "韓國"
+        "歐洲"
       ],
       "companies": [
         "TSMC",
-        "ASE",
         "Samsung",
         "Micron",
         "NVIDIA",
         "SK Hynix",
-        "PTI",
         "Broadcom",
-        "Intel",
+        "ASE",
         "ASML"
       ],
       "tags": [
@@ -1286,9 +1251,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 46 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 46 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 14201
+      "word_count": 14096
     },
     {
       "slug": "2026-07-07-brief",
@@ -1298,23 +1263,23 @@
       "week": "2026-W28",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
         "台灣",
         "美國",
+        "韓國",
         "日本",
-        "歐洲",
-        "中國大陸"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
-        "Intel",
         "NVIDIA",
-        "PTI",
         "SK Hynix",
         "TSMC",
+        "Intel",
         "Micron",
         "Broadcom",
+        "ASE",
+        "PTI",
         "AMD"
       ],
       "tags": [
@@ -1324,7 +1289,7 @@
       ],
       "summary": "本日抓取 73 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 23925
+      "word_count": 23587
     },
     {
       "slug": "2026-07-05-brief",
@@ -1334,32 +1299,31 @@
       "week": "2026-W27",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
         "美國",
         "韓國",
-        "台灣",
         "中國大陸",
         "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
-        "Intel",
         "SK Hynix",
         "TSMC",
-        "PTI",
+        "Intel",
         "NVIDIA",
         "Micron",
         "AMD",
-        "ASML"
+        "ASML",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
+      "summary": "本日抓取 66 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 23174
+      "word_count": 22939
     },
     {
       "slug": "2026-07-02-brief",
@@ -1369,33 +1333,32 @@
       "week": "2026-W27",
       "category": "新聞快訊",
       "regions": [
-        "美國",
-        "日本",
         "台灣",
+        "美國",
         "韓國",
+        "日本",
         "中國大陸",
         "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "TSMC",
-        "Intel",
         "SK Hynix",
         "NVIDIA",
         "Micron",
-        "PTI",
+        "Intel",
         "Amkor",
-        "Broadcom"
+        "Broadcom",
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 85 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 85 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 28383
+      "word_count": 28076
     },
     {
       "slug": "2026-06-30-brief",
@@ -1405,21 +1368,20 @@
       "week": "2026-W27",
       "category": "新聞快訊",
       "regions": [
-        "美國",
         "台灣",
+        "美國",
         "韓國",
         "日本",
         "中國大陸"
       ],
       "companies": [
         "Samsung",
-        "ASE",
         "NVIDIA",
-        "PTI",
-        "Intel",
         "SK Hynix",
-        "TSMC",
         "AMD",
+        "TSMC",
+        "Intel",
+        "PTI",
         "Micron"
       ],
       "tags": [
@@ -1427,9 +1389,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 75 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 75 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 24007
+      "word_count": 23768
     },
     {
       "slug": "2026-06-28-brief",
@@ -1439,21 +1401,20 @@
       "week": "2026-W26",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
-        "美國",
         "台灣",
+        "美國",
+        "韓國",
         "日本",
         "中國大陸"
       ],
       "companies": [
-        "PTI",
-        "Intel",
         "NVIDIA",
-        "ASE",
         "SK Hynix",
         "Samsung",
         "Micron",
+        "Intel",
         "TSMC",
+        "PTI",
         "JCET",
         "AMD"
       ],
@@ -1462,9 +1423,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 58 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
+      "summary": "本日抓取 58 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 17535
+      "word_count": 17310
     },
     {
       "slug": "2026-06-25-brief",
@@ -1474,33 +1435,32 @@
       "week": "2026-W26",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
-        "日本",
         "台灣",
-        "中國大陸",
         "美國",
+        "韓國",
+        "中國大陸",
         "歐洲"
       ],
       "companies": [
-        "ASE",
         "NVIDIA",
-        "PTI",
-        "Intel",
         "Samsung",
         "Micron",
         "SK Hynix",
         "TSMC",
         "Broadcom",
-        "Amkor"
+        "Intel",
+        "ASE",
+        "Amkor",
+        "JCET"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 73 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 73 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 22996
+      "word_count": 22691
     },
     {
       "slug": "2026-06-23-brief",
@@ -1511,32 +1471,31 @@
       "category": "新聞快訊",
       "regions": [
         "台灣",
+        "美國",
+        "韓國",
         "日本",
         "中國大陸",
-        "韓國",
-        "歐洲",
-        "美國"
+        "歐洲"
       ],
       "companies": [
         "Samsung",
-        "ASE",
         "NVIDIA",
         "SK Hynix",
-        "PTI",
         "TSMC",
         "Intel",
+        "Micron",
+        "AMD",
         "ASML",
-        "SMIC",
-        "Micron"
+        "SMIC"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 51 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 51 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
       "cover_image": "",
-      "word_count": 15357
+      "word_count": 15230
     },
     {
       "slug": "2026-06-21-brief",
@@ -1546,33 +1505,31 @@
       "week": "2026-W25",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
-        "日本",
         "台灣",
-        "韓國",
         "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
         "歐洲"
       ],
       "companies": [
-        "Intel",
         "Samsung",
-        "PTI",
+        "Intel",
         "NVIDIA",
-        "ASE",
         "TSMC",
-        "SK Hynix",
         "ASML",
-        "AMD",
-        "Micron"
+        "SK Hynix",
+        "Micron",
+        "AMD"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 53 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 53 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 16614
+      "word_count": 16445
     },
     {
       "slug": "2026-06-18-brief",
@@ -1583,23 +1540,23 @@
       "category": "新聞快訊",
       "regions": [
         "台灣",
-        "中國大陸",
-        "韓國",
         "美國",
-        "歐洲",
-        "日本"
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
         "Samsung",
         "NVIDIA",
-        "Intel",
         "SK Hynix",
-        "PTI",
         "TSMC",
+        "Intel",
         "ASML",
         "SMIC",
-        "AMD"
+        "PTI",
+        "AMD",
+        "Broadcom"
       ],
       "tags": [
         "新聞快訊",
@@ -1608,7 +1565,7 @@
       ],
       "summary": "本日抓取 93 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 28722
+      "word_count": 28423
     },
     {
       "slug": "2026-06-16-brief",
@@ -1619,23 +1576,23 @@
       "category": "新聞快訊",
       "regions": [
         "台灣",
-        "中國大陸",
-        "歐洲",
+        "美國",
         "韓國",
         "日本",
-        "美國"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "Samsung",
         "NVIDIA",
         "TSMC",
-        "ASE",
         "SK Hynix",
-        "PTI",
         "Intel",
         "ASML",
+        "AMD",
         "Ibiden",
-        "AMD"
+        "Micron",
+        "Broadcom"
       ],
       "tags": [
         "新聞快訊",
@@ -1644,7 +1601,7 @@
       ],
       "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 21837
+      "word_count": 21663
     },
     {
       "slug": "2026-06-14-brief",
@@ -1655,17 +1612,14 @@
       "category": "新聞快訊",
       "regions": [
         "台灣",
-        "中國大陸",
+        "美國",
         "韓國",
-        "歐洲",
-        "美國"
+        "中國大陸"
       ],
       "companies": [
         "Samsung",
-        "PTI",
-        "Intel",
         "SK Hynix",
-        "ASE",
+        "Intel",
         "NVIDIA",
         "Micron",
         "TSMC",
@@ -1676,9 +1630,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 47 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 47 則半導體與 AI 供應鏈相關新聞,涵蓋 4 個區域、7 家主要公司。",
       "cover_image": "",
-      "word_count": 15196
+      "word_count": 14991
     },
     {
       "slug": "2026-06-11-brief",
@@ -1688,24 +1642,24 @@
       "week": "2026-W24",
       "category": "新聞快訊",
       "regions": [
-        "日本",
         "台灣",
         "美國",
-        "歐洲",
         "韓國",
-        "中國大陸"
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
-        "Intel",
         "NVIDIA",
         "Samsung",
         "TSMC",
         "SK Hynix",
-        "PTI",
         "Broadcom",
         "AMD",
-        "KYEC"
+        "ASE",
+        "KYEC",
+        "Micron",
+        "Amkor"
       ],
       "tags": [
         "新聞快訊",
@@ -1714,7 +1668,7 @@
       ],
       "summary": "本日抓取 55 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 16546
+      "word_count": 16327
     },
     {
       "slug": "2026-06-09-brief",
@@ -1724,24 +1678,24 @@
       "week": "2026-W24",
       "category": "新聞快訊",
       "regions": [
+        "台灣",
+        "美國",
         "韓國",
         "日本",
-        "美國",
         "中國大陸",
-        "歐洲",
-        "台灣"
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
         "Samsung",
-        "ASE",
-        "Intel",
-        "PTI",
         "SK Hynix",
-        "TSMC",
         "Broadcom",
+        "AMD",
+        "TSMC",
+        "Intel",
+        "ASE",
         "Micron",
-        "AMD"
+        "ASML"
       ],
       "tags": [
         "新聞快訊",
@@ -1750,7 +1704,7 @@
       ],
       "summary": "本日抓取 89 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 28463
+      "word_count": 28141
     },
     {
       "slug": "2026-06-07-brief",
@@ -1760,24 +1714,24 @@
       "week": "2026-W23",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
-        "中國大陸",
+        "台灣",
         "美國",
-        "歐洲",
+        "韓國",
         "日本",
-        "台灣"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "ASE",
         "Samsung",
-        "Intel",
-        "PTI",
-        "SK Hynix",
-        "Broadcom",
         "AMD",
+        "SK Hynix",
+        "Intel",
+        "Broadcom",
+        "PTI",
+        "TSMC",
         "JCET",
-        "TSMC"
+        "Micron"
       ],
       "tags": [
         "新聞快訊",
@@ -1786,7 +1740,7 @@
       ],
       "summary": "本日抓取 58 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
       "cover_image": "",
-      "word_count": 18169
+      "word_count": 17982
     },
     {
       "slug": "2026-06-04-brief",
@@ -1796,31 +1750,29 @@
       "week": "2026-W23",
       "category": "新聞快訊",
       "regions": [
-        "韓國",
-        "中國大陸",
-        "美國",
         "台灣",
-        "歐洲"
+        "美國",
+        "韓國",
+        "中國大陸"
       ],
       "companies": [
         "NVIDIA",
-        "Intel",
         "TSMC",
-        "ASE",
-        "PTI",
         "Samsung",
         "SK Hynix",
+        "Intel",
         "Broadcom",
-        "AMD"
+        "AMD",
+        "PTI"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 86 則半導體與 AI 供應鏈相關新聞,涵蓋 5 個區域、9 家主要公司。",
+      "summary": "本日抓取 86 則半導體與 AI 供應鏈相關新聞,涵蓋 4 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 26830
+      "word_count": 26548
     },
     {
       "slug": "2026-06-02-brief",
@@ -1830,32 +1782,31 @@
       "week": "2026-W23",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
-        "美國",
-        "歐洲",
-        "韓國",
         "台灣",
-        "日本"
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "Intel",
         "Samsung",
-        "ASE",
+        "Intel",
         "TSMC",
         "SK Hynix",
-        "PTI",
+        "AMD",
         "Micron",
-        "AMD"
+        "ASE"
       ],
       "tags": [
         "新聞快訊",
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 69 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、9 家主要公司。",
+      "summary": "本日抓取 69 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 21153
+      "word_count": 21000
     },
     {
       "slug": "2026-05-31-brief",
@@ -1865,19 +1816,17 @@
       "week": "2026-W22",
       "category": "新聞快訊",
       "regions": [
-        "歐洲",
-        "中國大陸",
-        "美國",
-        "日本",
         "台灣",
-        "韓國"
+        "美國",
+        "韓國",
+        "日本",
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
         "NVIDIA",
-        "ASE",
         "Intel",
         "TSMC",
-        "PTI",
         "Samsung",
         "ASML",
         "SK Hynix",
@@ -1889,9 +1838,9 @@
         "半導體",
         "AI 供應鏈"
       ],
-      "summary": "本日抓取 50 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "summary": "本日抓取 50 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 15566
+      "word_count": 15409
     },
     {
       "slug": "2026-05-28-brief",
@@ -1901,22 +1850,22 @@
       "week": "2026-W22",
       "category": "新聞快訊",
       "regions": [
-        "中國大陸",
         "台灣",
-        "歐洲",
+        "美國",
         "韓國",
         "日本",
-        "美國"
+        "中國大陸",
+        "歐洲"
       ],
       "companies": [
-        "ASE",
-        "Intel",
         "NVIDIA",
         "TSMC",
         "Samsung",
-        "PTI",
         "Broadcom",
-        "SK Hynix"
+        "SK Hynix",
+        "ASE",
+        "PTI",
+        "Intel"
       ],
       "tags": [
         "新聞快訊",
@@ -1925,7 +1874,7 @@
       ],
       "summary": "本日抓取 52 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、8 家主要公司。",
       "cover_image": "",
-      "word_count": 15971
+      "word_count": 15785
     },
     {
       "slug": "2026-W22-semi-weekly",

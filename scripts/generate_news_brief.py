@@ -8,6 +8,7 @@ generate_news_brief.py
 """
 
 import json
+import re
 from datetime import date
 from pathlib import Path
 from collections import defaultdict
@@ -57,26 +58,25 @@ REGION_KEYWORDS = {
 }
 
 
+def keyword_in(kw, text):
+    """英文關鍵字以完整單字比對 (避免 base→ASE、optical→PTI、intelligence→Intel 誤判),
+    中文關鍵字以子字串比對。"""
+    kw = kw.strip()
+    if kw.isascii():
+        return re.search(rf"(?<![A-Za-z0-9]){re.escape(kw)}(?![A-Za-z0-9])", text, re.IGNORECASE) is not None
+    return kw in text
+
+
 def detect_companies(text):
     """從文字偵測涉及的公司"""
-    found = []
-    for company, keywords in COMPANY_KEYWORDS.items():
-        for kw in keywords:
-            if kw.lower() in text.lower():
-                found.append(company)
-                break
-    return found
+    return [company for company, keywords in COMPANY_KEYWORDS.items()
+            if any(keyword_in(kw, text) for kw in keywords)]
 
 
 def detect_regions(text):
     """從文字偵測涉及的區域"""
-    found = []
-    for region, keywords in REGION_KEYWORDS.items():
-        for kw in keywords:
-            if kw.lower() in text.lower():
-                found.append(region)
-                break
-    return found
+    return [region for region, keywords in REGION_KEYWORDS.items()
+            if any(keyword_in(kw, text) for kw in keywords)]
 
 
 def main():

@@ -23,6 +23,9 @@ archive_news.py
 用法:
   python scripts/archive_news.py                 # 併入目前的 data/raw_news.json
   python scripts/archive_news.py --backfill-git  # 從 git 歷史中所有版本的 raw_news.json 補建
+  python scripts/archive_news.py --backfill-trendforce 2026-06-25
+                                                 # 從 TrendForce API 補建指定日期之後的文章
+  python scripts/archive_news.py --retag         # 重新標記全部新聞的公司與區域
 """
 
 import csv
@@ -159,6 +162,40 @@ def snapshots_from_git():
             print(f"  ⚠️  {sha[:7]} 的 raw_news.json 無法解析,略過")
 
 
+TRENDFORCE_API = "https://www.trendforce.com/news/wp-json/wp/v2/posts"
+
+
+def trendforce_items(since, until=None):
+    """從 TrendForce WordPress API 取回指定期間的文章,轉成 raw_news 格式 (已套用關鍵字篩選)。"""
+    import time
+    import urllib.parse
+    import urllib.request
+    from fetch_news import is_relevant
+
+    items, page, total_pages = [], 1, 1
+    while page <= total_pages:
+        params = {"per_page": 100, "page": page, "after": f"{since}T00:00:00",
+                  "orderby": "date", "order": "asc", "_fields": "date_gmt,link,title,excerpt"}
+        if until:
+            params["before"] = f"{until}T23:59:59"
+        req = urllib.request.Request(f"{TRENDFORCE_API}?{urllib.parse.urlencode(params)}",
+                                     headers={"User-Agent": "Mozilla/5.0 (semi-weekly news archive)"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            total_pages = int(resp.headers.get("X-WP-TotalPages", 1))
+            posts = json.load(resp)
+        for p in posts:
+            entry = {"title": clean_text(p["title"]["rendered"]),
+                     "summary": clean_text(p["excerpt"]["rendered"])}
+            if not is_relevant(entry):
+                continue
+            items.append({**entry, "source": "TrendForce", "link": p["link"],
+                          "published": p["date_gmt"] + "+00:00"})
+        print(f"  TrendForce API 第 {page}/{total_pages} 頁: {len(posts)} 篇")
+        page += 1
+        time.sleep(1)  # 對來源網站客氣一點
+    return items
+
+
 def url_to_id():
     """網址 → 資料庫編號,供其他腳本 (如供應鏈圖) 對照。"""
     return {normalize_url(a["url"]): a["id"] for a in load_archive()}
@@ -173,6 +210,22 @@ def main():
             seen_on = to_local_date(raw.get("fetched_at")) or datetime.now(TZ).date().isoformat()
             n = merge(archive, raw.get("items", []), seen_on)
             print(f"  {sha} ({seen_on}): 新增 {n} 則")
+
+    if "--backfill-trendforce" in sys.argv:
+        since = sys.argv[sys.argv.index("--backfill-trendforce") + 1]
+        items = trendforce_items(since)
+        n = merge(archive, items, datetime.now(TZ).date().isoformat())
+        print(f"  TrendForce 補建: 符合關鍵字 {len(items)} 篇,新增 {n} 則")
+
+    if "--retag" in sys.argv:  # 偵測規則更新後,重新標記全部新聞的公司與區域
+        changed = 0
+        for a in archive:
+            text = f"{a['title']} {a['summary']}"
+            tags = (detect_companies(text), detect_regions(text))
+            if tags != (a["companies"], a["regions"]):
+                a["companies"], a["regions"] = tags
+                changed += 1
+        print(f"  重新標記: {changed} 則的公司/區域有變動")
 
     if RAW_PATH.exists():
         raw = json.loads(RAW_PATH.read_text(encoding="utf-8"))
