@@ -39,6 +39,27 @@
       "publisher": "游庭皓的財經皓角",
       "host": "游庭皓",
       "format": "single"
+    },
+    {
+      "name": "錢線百分百",
+      "channel_id": "UC_ObC9O0ZQ2FhW6u9_iFlZA",
+      "url": "https://www.youtube.com/@ustvmoney100",
+      "publisher": "非凡新聞 錢線百分百",
+      "host": "李蜀芳",
+      "date8": true,
+      "part_regex": "完整版\\((上|中|下)集\\)",
+      "part_order": [
+        "上",
+        "中",
+        "下"
+      ],
+      "segment_regex": "】\\d{8}-(\\d+)",
+      "skip_regex": "#shorts",
+      "topic_regex": "《(.+?)》",
+      "guests_from_hashtags": true,
+      "clip_by": "date",
+      "parts_title": "完整版 (上中下集)",
+      "clips_title": "主題片段"
     }
   ]
 }

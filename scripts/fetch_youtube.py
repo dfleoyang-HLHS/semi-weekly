@@ -38,7 +38,13 @@ API = "https://www.googleapis.com/youtube/v3"
 TW_SHORT_OK = set("""聯電 鴻海 廣達 緯創 和碩 華碩 宏碁 友達 群創 彩晶 凌巨 欣興 南電 景碩 力成 技嘉 微星 仁寶 光寶 國巨
 華通 健鼎 奇鋐 雙鴻 精測 穩懋 宏捷 聯詠 瑞昱 信驊 祥碩 譜瑞 旺宏 威剛 群聯 十銓 家登 弘塑 辛耘 萬潤 均豪 志聖
 牧德 尖點 聯茂 台燿 嘉澤 川湖 勤誠 營邦 貿聯 信邦 光聖 上詮 聯亞 眾達 前鼎 合晶 漢磊 嘉晶 鈺創 智原 力旺 神盾 義隆 原相
-敦泰 天鈺 致新 茂達 立積 頎邦 南茂 矽格 欣銓 菱生 超豐 晶技 台郡 定穎 金居 銘異 緯穎 宇隆 致茂 京元 健策 宏達電""".split())
+敦泰 天鈺 致新 茂達 立積 頎邦 南茂 矽格 欣銓 菱生 超豐 晶技 台郡 定穎 金居 銘異 緯穎 宇隆 致茂 京元 健策 宏達電
+漢測 穎崴 旺矽 精材 創惟 台星科 弘塑 環球晶""".split())
+# 上市公司中屬電子相關產業 (半導體、電腦週邊、光電、通信網路、電子零組件、電子通路、資訊服務、其他電子) 的兩字簡稱也採用,
+# 但排除與一般詞彙重疊者
+ELECTRONIC_INDUSTRIES = {"24", "25", "26", "27", "28", "29", "30", "31"}
+COMMON_WORDS = set("""創意 創見 無敵 全新 全台 至上 傳奇 動力 太極 正文 華東 可成 承啟 精英 精誠 資通 光罩 佳能 首利 百一
+同泰 華興 立德 達能 中環 天虹 大毅 國碩 星通 環科 全科 建通 鴻名 華立 興勤 至上 明泰 東訊""".split())
 # 暱稱 / 常用全名 → 官方簡稱
 TW_ALIAS = {"發哥": "聯發科", "台積": "台積電", "日月光": "日月光投控", "世界先進": "世界", "京元電": "京元電子",
             "華邦": "華邦電", "南亞科技": "南亞科", "世芯": "世芯-KY", "矽力": "矽力*-KY",
@@ -66,9 +72,11 @@ def load_tw_names():
     sys.path.insert(0, str(Path(__file__).parent))
     from fetch_tw_prices import get_json, TWSE_DAILY, TPEX_DAILY
     names = {}
+    industry = {r["公司代號"].strip(): r["產業別"].strip()  # 上市公司產業別 (證交所 OpenAPI)
+                for r in get_json("https://openapi.twse.com.tw/v1/opendata/t187ap03_L")}
     for x in get_json(TWSE_DAILY):
         if re.fullmatch(r"\d{4}", x.get("Code", "")):
-            names[x["Name"].strip()] = [x["Code"], "上市"]
+            names[x["Name"].strip()] = [x["Code"], "上市", industry.get(x["Code"], "")]
     for x in get_json(TPEX_DAILY):
         if re.fullmatch(r"\d{4}", x.get("SecuritiesCompanyCode", "")):
             names[x["CompanyName"].strip()] = [x["SecuritiesCompanyCode"], "上櫃"]
@@ -82,13 +90,14 @@ TW_DISPLAY = {"5347": "世界先進"}
 
 def build_matchers(tw_names):
     matchers = []  # (比對文字, 顯示名稱, 代號, 市場)
-    for name, (code, market) in tw_names.items():
+    for name, (code, market, *ind) in tw_names.items():
         base = name.replace("-KY", "").replace("*", "")
-        if len(base) >= 3 or base in TW_SHORT_OK:
+        electronic = bool(ind) and ind[0] in ELECTRONIC_INDUSTRIES and base not in COMMON_WORDS
+        if len(base) >= 3 or base in TW_SHORT_OK or electronic:
             matchers.append((base, TW_DISPLAY.get(code, name), code, market))
     for alias, official in TW_ALIAS.items():
         if official in tw_names:
-            code, market = tw_names[official]
+            code, market = tw_names[official][:2]
             matchers.append((alias, TW_DISPLAY.get(code, official), code, market))
     for code, aliases in US_ALIAS.items():
         for a in aliases:
@@ -159,11 +168,21 @@ def to_local_date(iso):
 def parse_video(v, cfg, matchers):
     title, desc = v["title"].strip(), v.get("description", "")
     published = to_local_date(v["published"])
-    m = re.search(r"(\d{4})\.(\d{2})\.(\d{2})", title)
+    m = re.search(r"(\d{4})\.(\d{2})\.(\d{2})", title) or         (cfg.get("date8") and re.search(r"(20\d{2})(\d{2})(\d{2})", title))  # 錢線百分百:20260930
     show_date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else published
     part = re.search(r"part\s*(\d)", title, re.IGNORECASE)
+    part_no, part_label, segment = (int(part.group(1)) if part else None), "", None
     series = re.search(r"【\s*([^】]+?)\s*】", title)  # 系列名稱可能在開頭或結尾 (如【早晨財經速解讀】)
-    if cfg.get("format") == "single":
+    pm = cfg.get("part_regex") and re.search(cfg["part_regex"], title)
+    sm = cfg.get("segment_regex") and re.search(cfg["segment_regex"], title)
+    if cfg.get("skip_regex") and re.search(cfg["skip_regex"], title):
+        kind = "skip"  # 例:#shorts 等沒有內容的短影音
+    elif pm:  # 例:完整版(上集)/(中集)/(下集)
+        kind, part_label = "part", pm.group(1) + "集"
+        part_no = cfg.get("part_order", []).index(pm.group(1)) + 1 if pm.group(1) in cfg.get("part_order", []) else 0
+    elif sm:  # 例:…【錢線百分百】20260930-5 (當日第 5 段主題)
+        kind, segment = "clip", int(sm.group(1))
+    elif cfg.get("format") == "single":
         kind = "single"
     elif cfg.get("podcast_mark") and cfg["podcast_mark"] in title:
         kind = "podcast"
@@ -184,8 +203,13 @@ def parse_video(v, cfg, matchers):
                 re.findall(r"^\(?(\d{1,2}:\d{2}(?::\d{2})?)\)?\s+(.+)$", desc, re.MULTILINE)]
     hashtags = [h for h in re.findall(r"#([^\s#]+)", desc + " " + title)
                 if h not in cfg.get("ignore_tags", []) and not re.fullmatch(r"\d[\dA-Z]*", h)]  # 去掉 ETF 代號 (如 00416A)
+    if cfg.get("guests_from_hashtags"):  # 錢線百分百:來賓列在說明欄標籤 (#李蜀芳#李其展…)
+        guests += [h for h in hashtags if not re.search(r"\d", h)]
+        hashtags = []
     clean_title = re.sub(r"\s+#[^\s#\d]\S*", "", title).replace("👑", "").strip()  # 去掉主題標籤,保留集數 (如 #380)
     topic = clean_title
+    if cfg.get("topic_regex") and (tq := re.search(cfg["topic_regex"], title)):
+        topic = tq.group(1).strip()
     if cfg.get("format") == "single":
         q = re.search(r"『\s*(.+?)\s*』", clean_title)  # 又上財經:主題在『』內,其餘為課程宣傳
         topic = q.group(1) if q else re.sub(r"【[^】]*】", "", clean_title).split("|")[0].split("｜")[0].strip()
@@ -200,7 +224,7 @@ def parse_video(v, cfg, matchers):
         "guests": [g for g in dict.fromkeys(guests) if g],
         "chapters": chapters, "hashtags": list(dict.fromkeys(hashtags)),
         "companies": find_companies(text, matchers),
-        "part": int(part.group(1)) if part else None,
+        "part": part_no, "part_label": part_label, "segment": segment,
     }
 
 
@@ -233,9 +257,13 @@ def build_episodes(videos, cfg):
             ep["parts"].append(v)
         ep["guests"] = list(dict.fromkeys(ep["guests"] + v["guests"]))
     # 精華短片:來賓 (feat. 標示,或來賓姓名出現在標題中) 屬於某集,且發布日為該集當天或之後 3 天內
+    # (clip_by = date 的頻道,如錢線百分百,依節目日期直接歸集)
     orphans = []
     for v in videos:
         if v["channel"] != cfg["name"] or v["kind"] != "clip":
+            continue
+        if cfg.get("clip_by") == "date":
+            (eps[v["show_date"]]["clips"] if v["show_date"] in eps else orphans).append(v)
             continue
         def match(e):
             names = set(e["guests"]) - {cfg.get("host")}
@@ -249,6 +277,7 @@ def build_episodes(videos, cfg):
     out = []
     for ep in eps.values():
         ep["parts"].sort(key=lambda p: p["part"] or 0)
+        ep["clips"].sort(key=lambda c: (c.get("segment") or 0, c["published"]))
         allv = ([ep["full"]] if ep["full"] else []) + ep["parts"] + ep["clips"]
         comp = {}
         for v in allv:
@@ -257,6 +286,9 @@ def build_episodes(videos, cfg):
         ep["companies"] = sorted(comp.values(), key=lambda c: -c["count"])
         ep["hashtags"] = list(dict.fromkeys(h for v in allv for h in v["hashtags"]))
         ep["title"] = (ep["full"] or ep["parts"][0])["title"]
+        if cfg.get("topic_regex"):  # 標題改由各段主題組成 (如錢線百分百上中下集的《》主題)
+            ep["title"] = " · ".join(dict.fromkeys(p["topic"] for p in ep["parts"] if p["topic"]))
+        ep["parts_title"], ep["clips_title"] = cfg.get("parts_title", ""), cfg.get("clips_title", "")
         host = cfg.get("host")
         ep["guests"] = [g for g in ep["guests"] if g != host]
         ep["host"] = host
