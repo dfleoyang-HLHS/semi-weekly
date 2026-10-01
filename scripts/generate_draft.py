@@ -61,6 +61,8 @@ SUPPLYCHAIN_SYSTEM = """你負責維護網站上的「半導體 + AI 供應鏈�
 7. 每條 edge 的 from / to 必須是 nodes 中存在的 id
 8. highlights 為 6-10 條本週重點 (每條一句,含具體數字);summary 為 2-3 句總結;title 為本週主題 (以「 · 」分隔兩個重點)
 9. 全部使用繁體中文 (公司英文名稱可保留)
+10. 每個節點的 news_ref 填入與該公司最相關、最關鍵的一則新聞編號 (新聞清單中的 [n]);
+    本週沒有該公司的相關新聞就填 0,不要勉強對應
 """
 
 SUPPLYCHAIN_SCHEMA = {
@@ -79,8 +81,9 @@ SUPPLYCHAIN_SCHEMA = {
                     "label": {"type": "string"},
                     "sub": {"type": "string"},
                     "region": {"type": "string", "enum": ["US", "TW", "JP", "KR", "CN", "EU"]},
+                    "news_ref": {"type": "integer"},
                 },
-                "required": ["id", "tier", "label", "sub", "region"],
+                "required": ["id", "tier", "label", "sub", "region", "news_ref"],
                 "additionalProperties": False,
             },
         },
@@ -151,6 +154,23 @@ def strip_fence(text):
     return m.group(1) if m else text
 
 
+def attach_news(graph, items, prev):
+    """把 news_ref 編號換成實際新聞標題與連結;本週無新聞的節點沿用上一期的連結。"""
+    prev_news = {n["id"]: n["news"] for n in (prev or {}).get("nodes", []) if n.get("news")}
+    linked = 0
+    for n in graph["nodes"]:
+        ref = n.pop("news_ref", 0)
+        if 1 <= ref <= min(len(items), 80):
+            it = items[ref - 1]
+            n["news"] = {"title": it["title"], "url": it["link"], "date": it["published"][:10]}
+            linked += 1
+        elif n["id"] in prev_news:
+            n["news"] = prev_news[n["id"]]
+    carried = sum(1 for n in graph["nodes"] if n.get("news")) - linked
+    print(f"   新聞連結: 本週 {linked} 家,沿用上期 {carried} 家")
+    return graph
+
+
 def validate_graph(graph):
     ids = {n["id"] for n in graph["nodes"]}
     if len(ids) != len(graph["nodes"]):
@@ -202,10 +222,11 @@ def main():
         client,
         SUPPLYCHAIN_SYSTEM,
         f"【上一期供應鏈圖】\n{json.dumps(prev, ensure_ascii=False) if prev else '(無,請從頭建立)'}\n\n"
-        f"【本週週報 ({week_tag})】\n{weekly_md}",
+        f"【本週週報 ({week_tag})】\n{weekly_md}\n\n"
+        f"【本週新聞清單 (news_ref 請填這裡的編號)】\n{build_news_block(items)}",
         output_config={"format": {"type": "json_schema", "schema": SUPPLYCHAIN_SCHEMA}},
     )
-    graph = validate_graph(json.loads(graph_text))
+    graph = attach_news(validate_graph(json.loads(graph_text)), items, prev)
     graph = {"week": week_tag, "date": today.isoformat(), **graph}
     sc_path = DATA_DIR / f"supplychain-{week_tag}.json"
     sc_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
