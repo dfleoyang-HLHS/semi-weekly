@@ -285,7 +285,9 @@ def update_us_stocks(client, weekly_md, items, today):
         if len(metrics) < 2 or len(news) < 2:  # 輸出不完整時保留原卡片
             print(f"   ⚠️  {r['ticker']} 輸出不完整,保留原內容")
             continue
-        card["metrics"] = {m["label"].strip(): m["value"].strip() for m in metrics}
+        # 純數字標籤 (如 "2027") 在 JS 物件中會被排到最前面,加上「年」保持原順序
+        card["metrics"] = {(lbl + " 年" if lbl.isdigit() else lbl): m["value"].strip()
+                           for m in metrics for lbl in [m["label"].strip()]}
         card["news"] = news
         card["tags"] = [t.strip() for t in r["tags"] if t.strip()][:3] or card["tags"]
         card["updated_on"] = today
