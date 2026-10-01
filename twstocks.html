@@ -123,6 +123,18 @@
 .q-up { color: #ef4444; }
 .q-down { color: #10b981; }
 .us-tape { margin-bottom: 20px; min-height: 46px; }
+/* 台股跑馬燈:TradingView 小工具不提供證交所上市股報價,改用官方收盤資料自行呈現 */
+.tw-tape { overflow: hidden; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; }
+.tw-tape-track { display: inline-flex; white-space: nowrap; animation: tw-scroll 60s linear infinite; }
+.tw-tape:hover .tw-tape-track { animation-play-state: paused; }
+.tw-tape a { display: inline-flex; align-items: baseline; gap: 6px; padding: 12px 18px; border-right: 1px solid var(--border);
+  color: var(--text); text-decoration: none; font-size: 14px; }
+.tw-tape a:hover .tw-tape-name { color: var(--accent); }
+.tw-tape-name { font-weight: 700; }
+.tw-tape-code { font-size: 11px; color: var(--text-dim); }
+.tw-tape-src { font-size: 11px; color: var(--text-dim); text-align: right; margin: 4px 2px 0; }
+@keyframes tw-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .tw-tape { overflow-x: auto; } .tw-tape-track { animation: none; } }
 
 .us-news {
   font-size: 13px;
@@ -204,7 +216,7 @@
     <p>以週報與新聞中出現的關鍵台灣公司為主,依供應鏈位置分類,含每日收盤行情、營運重點與新聞動態 (漲紅跌綠)。<span id="price-asof"></span><span id="stocks-asof"></span></p>
   </div>
 
-  <!-- TradingView 官方跑馬燈報價小工具 (即時走勢;點選可開啟 TradingView) -->
+  <!-- 台股跑馬燈:證交所、櫃買中心收盤資料;點選以股票代號開啟 TradingView 個股頁 -->
   <div class="us-tape" id="tv-tape"></div>
 
   <div class="us-filter">
@@ -300,18 +312,21 @@ async function loadPrices() {
 }
 
 function loadTradingViewTape() {
-  const theme = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+  // TradingView 免費小工具沒有證交所上市股的報價授權 (TWSE:代號 會顯示無資料),
+  // 因此用 data/tw_prices.json 的官方收盤價自行產生跑馬燈,每檔以代號連到 TradingView 個股頁
   const box = document.getElementById("tv-tape");
-  box.innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>';
-  const script = document.createElement("script");
-  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
-  script.async = true;
-  script.innerHTML = JSON.stringify({
-    symbols: STOCKS.map(s => ({ proName: tvSymbol(s.ticker), title: s.name })),
-    showSymbolLogo: true, isTransparent: true, displayMode: "adaptive",
-    colorTheme: theme, locale: "zh_TW"
-  });
-  box.firstChild.appendChild(script);
+  if (!PRICES) { box.innerHTML = ""; return; }
+  const items = STOCKS.filter(s => PRICES.stocks[s.ticker]).map(s => {
+    const q = PRICES.stocks[s.ticker];
+    const url = `https://www.tradingview.com/symbols/${tvSymbol(s.ticker).replace(":", "-")}/`;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer" title="在 TradingView 開啟 ${escapeHtml(tvSymbol(s.ticker))}">
+      <span class="tw-tape-name">${escapeHtml(s.name)}</span><span class="tw-tape-code">${escapeHtml(s.ticker)}</span>
+      <span>${q.price.toLocaleString("en-US", { maximumFractionDigits: 2 })}</span>
+      <span class="${pctClass(q.change_pct)}">${fmtPct(q.change_pct)}</span></a>`;
+  }).join("");
+  // 內容重複一次,捲動到一半時無縫接回開頭
+  box.innerHTML = `<div class="tw-tape"><div class="tw-tape-track">${items}${items}</div></div>
+    <div class="tw-tape-src">${escapeHtml(PRICES.as_of)} 收盤 · 資料來源:${escapeHtml(PRICES.source)}</div>`;
 }
 
 function renderStocks(filter) {
@@ -375,9 +390,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
-  // 切換深淺色主題時,重新載入 TradingView 小工具以套用配色
-  const themeBtn = document.querySelector('.theme-toggle');
-  if (themeBtn) themeBtn.addEventListener('click', () => setTimeout(loadTradingViewTape, 0));
 
   // 動態顯示全部資料的數量
   const btnAll = document.getElementById('btn-all');
@@ -399,9 +411,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // 預設渲染全部 (先載入盤後股價)
-  loadTradingViewTape();
-  loadPrices().finally(() => renderStocks('all'));
+  // 預設渲染全部 (先載入盤後股價,再產生跑馬燈)
+  loadPrices().finally(() => { loadTradingViewTape(); renderStocks('all'); });
 });
 </script>
 </body>
