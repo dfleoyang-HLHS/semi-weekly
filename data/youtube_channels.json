@@ -47,8 +47,9 @@
       "publisher": "非凡新聞 錢線百分百",
       "host": "李蜀芳",
       "date8": true,
-      "part_regex": "完整版\\((上|中|下)集\\)",
+      "part_regex": "完整版\\((全|上|中|下)集\\)",
       "part_order": [
+        "全",
         "上",
         "中",
         "下"
@@ -58,7 +59,7 @@
       "topic_regex": "《(.+?)》",
       "guests_from_hashtags": true,
       "clip_by": "date",
-      "parts_title": "完整版 (上中下集)",
+      "parts_title": "完整版",
       "clips_title": "主題片段"
     }
   ]
