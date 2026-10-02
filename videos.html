@@ -66,6 +66,26 @@
 .v-techline a:hover { color: var(--accent); }
 .v-more > summary { cursor: pointer; margin-top: 10px; font-size: 13px; color: var(--accent); }
 .v-notes-foot { margin-top: 10px; font-size: 12px; color: var(--text-dim); }
+#v-map { position: relative; }
+#v-map svg { display: block; width: 100%; height: auto; }
+.m-ring { fill: none; stroke: var(--border); stroke-dasharray: 3 5; }
+.m-edge { stroke: var(--text-dim); stroke-linecap: round; transition: opacity .15s; }
+.m-node { cursor: pointer; transition: opacity .15s; }
+.m-node circle { stroke: var(--bg-card); stroke-width: 2; }
+.m-node.tw circle { fill: var(--accent); }
+.m-node.us circle { fill: var(--accent-warm); }
+.m-node.ot circle { fill: var(--text-dim); }
+.m-node text { fill: var(--text); font-size: 12px; paint-order: stroke; stroke: var(--bg-card); stroke-width: 3px; stroke-linejoin: round; }
+.m-node.top text { font-weight: 700; font-size: 14px; }
+.m-node.sel circle { stroke: var(--text); stroke-width: 3; }
+#v-map.focus .m-node:not(.hi), #v-map.focus .m-edge:not(.hi) { opacity: .12; }
+.m-tip { position: absolute; pointer-events: none; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 10px; font-size: 12.5px; line-height: 1.6; max-width: 260px; box-shadow: 0 4px 14px rgba(0,0,0,.18); display: none; z-index: 2; }
+.m-tip b { font-size: 14px; }
+.v-map-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--text-dim); margin-top: 6px; align-items: center; }
+.v-map-legend span { display: inline-flex; align-items: center; gap: 4px; }
+.v-map-legend .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot.tw { background: var(--accent); } .dot.us { background: var(--accent-warm); } .dot.ot { background: var(--text-dim); }
 @media (max-width: 720px) {
   .v-ep-head, .v-cols { grid-template-columns: 1fr; }
 }
@@ -111,6 +131,16 @@
     <div class="v-filters" id="company-filter"></div>
   </div>
 
+  <div class="v-block" id="map-block" hidden>
+    <h3>公司概念圖 <span style="font-weight:400;font-size:12px;color:var(--text-dim)">(依「本集提到的公司」;點公司可篩選節目)</span></h3>
+    <div id="v-map"></div>
+    <div class="v-map-legend">
+      <span><b>越中間</b> = 被提到越多次</span>
+      <span><svg width="34" height="10"><line x1="2" y1="5" x2="32" y2="5" stroke="currentColor" stroke-width="3" opacity=".45"/></svg>在同一個論點中一起被提到 (越粗越常一起出現)</span>
+      <span><i class="dot tw"></i>台股</span><span><i class="dot us"></i>美股</span><span><i class="dot ot"></i>其他</span>
+    </div>
+  </div>
+
   <div id="episodes"><div class="v-empty">載入中…</div></div>
   <div id="extras"></div>
 
@@ -139,7 +169,7 @@ function companyChip(c, active, clickable = true) {
 function renderNotes(e) {
   const main = e.full || e.parts[0];
   const n = NOTES[main.id];
-  if (!n) return "";
+  if (!n || (!n.views.length && !n.technical.length)) return "";  // 沒有談到公司的節目不顯示
   const co = Object.fromEntries(n.companies.map(c => [c.code || c.name, c]));
   const ts = (t, label) => `<a class="v-ts" href="${ytUrl(n.video_id, t)}" target="_blank" rel="noopener noreferrer" title="從這裡開始看">▶${esc(label)}</a>`;
   const nameHtml = c => {
@@ -170,6 +200,150 @@ function renderNotes(e) {
     ${blocks}${tech}
     <div class="v-notes-foot">AI 聽寫整理後經人工審稿 (${esc(n.reviewed_at.slice(0, 10))}),為節目內容的簡短摘要,可能有誤;觀點屬原講者,不代表本站立場,非投資建議。點 ▶ 時間可回到原影片確認。贊助內容不列入。</div>
   </details>`;
+}
+
+// ── 公司概念圖:越常被提到越靠中心;同一論點一起被提到的公司以線相連並互相吸引 ──
+let MAP = null;
+function mapData() {
+  const nodes = {}, edges = {};
+  DATA.episodes.filter(e => state.channel === "all" || e.channel === state.channel).forEach(e => {
+    const n = NOTES[(e.full || e.parts[0] || {}).id];
+    if (!n) return;
+    const co = Object.fromEntries(n.companies.map(c => [c.code || c.name, c]));
+    const add = (k, kind) => {
+      const x = nodes[k] ||= { k, c: co[k], n: 0, views: 0, tech: 0, eps: new Set(), who: new Set() };
+      x.n++; x[kind]++; x.eps.add(n.video_id);
+      return x;
+    };
+    const link = (ks, w) => ks.forEach((a, i) => ks.slice(i + 1).forEach(b => {
+      if (a === b) return;
+      const key = a < b ? `${a}|${b}` : `${b}|${a}`;
+      edges[key] = (edges[key] || 0) + w;
+    }));
+    n.views.forEach(v => {
+      v.companies.forEach(k => add(k, "views").who.add(v.speaker.replace(/\(.*\)/, "")));
+      link(v.companies, 1);
+    });
+    const byT = {};
+    n.technical.forEach(t => { add(t.code, "tech"); (byT[t.t] ||= []).push(t.code); });
+    Object.values(byT).forEach(g => link(g, 0.5));  // 同一句技術面提及的公司:較弱的關聯
+  });
+  return { nodes: Object.values(nodes), edges };
+}
+
+function renderMap() {
+  const box = document.getElementById("v-map"), block = document.getElementById("map-block");
+  const { nodes: all, edges } = mapData();
+  block.hidden = !all.length;
+  if (!all.length) { MAP = null; return; }
+  const W = Math.max(340, Math.min(1000, box.clientWidth || 800)), narrow = W < 600;
+  const H = Math.round(narrow ? W * 1.35 : Math.min(620, W * 0.62));
+  const nodes = all.sort((a, b) => b.n - a.n || b.views - a.views).slice(0, narrow ? 20 : 40);
+  const keep = new Set(nodes.map(x => x.k));
+  const links = Object.entries(edges).map(([k, w]) => { const [a, b] = k.split("|"); return { a, b, w }; })
+    .filter(l => keep.has(l.a) && keep.has(l.b));
+  const max = nodes[0].n;
+  const R = Math.min(W, H) / 2 - 34;
+  const sx = Math.min(1.5, (W / 2 - 50) / R), sy = Math.min(1.5, (H / 2 - 30) / R);  // 依版面拉成橢圓 (寬螢幕橫向、手機直向)
+  const idx = Object.fromEntries(nodes.map((x, i) => [x.k, i]));
+  // 目標半徑:依排名 (提到次數多→少) 由中心往外,用平方根讓各圈的密度接近
+  nodes.forEach((x, i) => {
+    x.r = 7 + 15 * Math.sqrt(x.n / max);
+    x.tr = i === 0 ? 0 : R * (0.2 + 0.8 * Math.sqrt(i / Math.max(1, nodes.length - 1)));
+    const ang = i * 2.39996;  // 黃金角:初始位置平均分散,每次結果相同
+    x.x = Math.cos(ang) * (x.tr || 1); x.y = Math.sin(ang) * (x.tr || 1);
+  });
+  const STEPS = 420;
+  for (let it = 0; it < STEPS; it++) {
+    const cool = 1 - it / STEPS;
+    nodes.forEach(p => { p.fx = 0; p.fy = 0; });
+    for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {  // 互斥,避免重疊
+      const p = nodes[i], q = nodes[j];
+      const dx = (p.x - q.x) * sx, dy = (p.y - q.y) * sy, d2 = dx * dx + dy * dy + 0.01, d = Math.sqrt(d2);
+      const need = p.r + q.r + (narrow ? 46 : 40);
+      const f = d < need ? (need - d) * 0.5 : 900 / d2;
+      p.fx += dx / d * f / sx; p.fy += dy / d * f / sy; q.fx -= dx / d * f / sx; q.fy -= dy / d * f / sy;
+    }
+    links.forEach(l => {  // 一起被提到的互相吸引
+      const p = nodes[idx[l.a]], q = nodes[idx[l.b]];
+      const dx = q.x - p.x, dy = q.y - p.y, d = Math.hypot(dx, dy) || 1, f = 0.02 * Math.min(l.w, 4) * (d - 40);
+      p.fx += dx / d * f; p.fy += dy / d * f; q.fx -= dx / d * f; q.fy -= dy / d * f;
+    });
+    nodes.forEach((p, i) => {  // 拉回目標半徑 (遠近代表次數),中心固定
+      if (i === 0) { p.x = 0; p.y = 0; return; }
+      p.x += p.fx * 0.5 * cool; p.y += p.fy * 0.5 * cool;
+      const d = Math.hypot(p.x, p.y) || 1, k = 1 + (p.tr - d) / d * 0.5;
+      p.x *= k; p.y *= k;
+    });
+  }
+  const cx = W / 2, cy = H / 2, X = p => cx + p.x * sx, Y = p => cy + p.y * sy;
+  const maxW = Math.max(...links.map(l => l.w), 1);
+  const rings = [0.45, 0.75, 1].map(f => `<ellipse class="m-ring" cx="${cx}" cy="${cy}" rx="${R * f * sx}" ry="${R * f * sy}"/>`).join("");
+  const mk = c => c.market === "美股" ? "us" : (c.market === "上市" || c.market === "上櫃") ? "tw" : "ot";
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="公司概念圖">${rings}
+    ${links.map(l => { const p = nodes[idx[l.a]], q = nodes[idx[l.b]];
+      return `<line class="m-edge" data-a="${esc(l.a)}" data-b="${esc(l.b)}" x1="${X(p).toFixed(1)}" y1="${Y(p).toFixed(1)}" x2="${X(q).toFixed(1)}" y2="${Y(q).toFixed(1)}"
+        stroke-width="${(1 + 4 * l.w / maxW).toFixed(1)}" opacity="${(0.2 + 0.4 * l.w / maxW).toFixed(2)}"/>`; }).join("")}
+    ${nodes.map((p, i) => `<g class="m-node ${mk(p.c)}${i < 3 ? " top" : ""}" data-k="${esc(p.k)}" transform="translate(${X(p).toFixed(1)},${Y(p).toFixed(1)})">
+      <circle r="${p.r.toFixed(1)}"/><text text-anchor="middle" y="${(p.r + (i < 3 ? 17 : 14)).toFixed(1)}">${esc(p.c.name)}</text></g>`).join("")}
+  </svg><div class="m-tip"></div>`;
+  MAP = { nodes: Object.fromEntries(nodes.map(x => [x.k, x])), links };
+  highlightMap();
+}
+
+function mapNeighbors(k) {
+  const nb = {};
+  MAP.links.forEach(l => { if (l.a === k) nb[l.b] = l.w; if (l.b === k) nb[l.a] = l.w; });
+  return nb;
+}
+
+function highlightMap(k = state.company) {
+  const box = document.getElementById("v-map");
+  if (!MAP || !box) return;
+  const nb = k && MAP.nodes[k] ? mapNeighbors(k) : null;
+  box.classList.toggle("focus", !!nb);
+  box.querySelectorAll(".m-node").forEach(g => {
+    g.classList.toggle("hi", !!nb && (g.dataset.k === k || g.dataset.k in nb));
+    g.classList.toggle("sel", g.dataset.k === state.company);
+  });
+  box.querySelectorAll(".m-edge").forEach(l => l.classList.toggle("hi", !!nb && (l.dataset.a === k || l.dataset.b === k)));
+}
+
+function initMapEvents() {
+  const box = document.getElementById("v-map");
+  box.addEventListener("mouseover", ev => {
+    const g = ev.target.closest(".m-node"); if (!g || !MAP) return;
+    const x = MAP.nodes[g.dataset.k], nb = mapNeighbors(x.k);
+    const top = Object.entries(nb).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([k]) => esc(MAP.nodes[k].c.name));
+    const tip = box.querySelector(".m-tip");
+    tip.innerHTML = `<b>${esc(x.c.name)}</b>${x.c.code && x.c.market !== "美股" ? ` <span style="color:var(--text-dim)">${esc(x.c.code)}</span>` : ""}<br>
+      提到 ${x.n} 次 (產業觀點 ${x.views}、技術面 ${x.tech}) · ${x.eps.size} 集${x.who.size ? `<br>談到的人:${[...x.who].map(esc).join("、")}` : ""}
+      ${top.length ? `<br>常一起提到:${top.join("、")}` : ""}`;
+    const r = box.getBoundingClientRect(), gr = g.getBoundingClientRect();
+    tip.style.display = "block";
+    tip.style.left = Math.min(r.width - tip.offsetWidth - 4, Math.max(4, gr.left - r.left + gr.width / 2 - tip.offsetWidth / 2)) + "px";
+    const above = gr.top - r.top - tip.offsetHeight - 8;
+    tip.style.top = (above < 0 ? gr.bottom - r.top + 8 : above) + "px";
+    highlightMap(x.k);
+  });
+  box.addEventListener("mouseout", ev => {
+    const to = ev.relatedTarget;
+    if (to && to.closest && to.closest(".m-node")) return;
+    const tip = box.querySelector(".m-tip");
+    if (tip) tip.style.display = "none";
+    highlightMap();
+  });
+  box.addEventListener("click", ev => {
+    const g = ev.target.closest(".m-node"); if (!g) return;
+    state.company = state.company === g.dataset.k ? null : g.dataset.k;
+    render();
+    if (state.company) document.getElementById("episodes").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  let lastW = box.clientWidth;
+  window.addEventListener("resize", () => {
+    clearTimeout(box._t);
+    box._t = setTimeout(() => { if (Math.abs(box.clientWidth - lastW) > 40) { lastW = box.clientWidth; renderMap(); } }, 200);
+  });
 }
 
 function render() {
@@ -222,6 +396,7 @@ function render() {
   document.getElementById("extras").innerHTML =
     exList("⭐ 其他精華短片", exShown.filter(x => x.kind === "clip")) +
     exList("🎧 Podcast", exShown.filter(x => x.kind === "podcast"));
+  highlightMap();
 }
 
 async function init() {
@@ -232,13 +407,13 @@ async function init() {
     try {  // 節目重點 (人工審稿後才有;沒有檔案也不影響頁面)
       NOTES = (await fetch("data/video_notes.json", { cache: "no-store" }).then(r => r.ok ? r.json() : { notes: {} })).notes || {};
     } catch (e) { NOTES = {}; }
-    // 節目重點提到的公司也納入篩選 (未上市櫃公司沒有代號,不納入)
+    // 節目重點提到的公司也納入篩選 (沒有代號的公司以名稱當鍵)
     DATA.episodes.forEach(e => {
       e.allCompanies = [...e.companies];
       const n = NOTES[(e.full || e.parts[0] || {}).id];
       if (!n) return;
       const have = new Set(e.companies.map(c => c.code));
-      n.companies.forEach(c => { if (c.code && !have.has(c.code)) { e.allCompanies.push(c); have.add(c.code); } });
+      n.companies.forEach(c => { const k = c.code || c.name; if (!have.has(k)) { e.allCompanies.push({ ...c, code: k }); have.add(k); } });
     });
     us.stocks.forEach(s => s.ticker.split("/").forEach(t => TRACKED[t.trim()] = "usstocks.html"));
     tw.stocks.forEach(s => TRACKED[s.ticker] = "twstocks.html");
@@ -255,6 +430,7 @@ async function init() {
   document.getElementById("channel-filter").addEventListener("click", ev => {
     const el = ev.target.closest("[data-ch]"); if (!el) return;
     state.channel = el.dataset.ch; state.company = null;
+    renderMap();
     document.querySelectorAll("#channel-filter [data-ch]").forEach(x => x.classList.toggle("active", x === el));
     render();
   });
@@ -264,6 +440,8 @@ async function init() {
     render();
   });
   render();
+  renderMap();
+  initMapEvents();
 }
 init();
 </script>

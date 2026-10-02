@@ -144,13 +144,40 @@ def videos_from_api(channel_id, key, since):
             sn = it["snippet"]
             published = sn.get("publishedAt", "")
             if published and published < since:
+                add_durations(out, key)
                 return out
             vid = sn.get("resourceId", {}).get("videoId")
             if vid and sn.get("title") not in ("Private video", "Deleted video"):
                 out.append({"id": vid, "title": sn["title"], "published": published, "description": sn.get("description", "")})
         token = data.get("nextPageToken")
         if not token:
-            return out
+            break
+    add_durations(out, key)
+    return out
+
+
+def iso_duration(d):
+    """PT1H2M3S → 秒數"""
+    m = re.fullmatch(r"P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", d or "")
+    if not m:
+        return None
+    dd, h, mi, se = (int(x or 0) for x in m.groups())
+    return ((dd * 24 + h) * 60 + mi) * 60 + se
+
+
+def add_durations(videos, key):
+    """影片長度 (videos.list contentDetails,每 50 支 1 單位);逐字稿工具用來為沒有章節的影片分段"""
+    for i in range(0, len(videos), 50):
+        batch = videos[i:i + 50]
+        q = {"part": "contentDetails", "id": ",".join(v["id"] for v in batch), "key": key}
+        try:
+            data = get_json(f"{API}/videos?{urllib.parse.urlencode(q)}")
+        except Exception as e:  # 長度只是輔助資訊,失敗不影響其他資料
+            print(f"  ⚠️ 無法取得影片長度:{e}")
+            return
+        dur = {it["id"]: iso_duration(it["contentDetails"].get("duration")) for it in data.get("items", [])}
+        for v in batch:
+            v["duration"] = dur.get(v["id"])
 
 
 def videos_from_rss(channel_id):
@@ -225,6 +252,7 @@ def parse_video(v, cfg, matchers):
         "chapters": chapters, "hashtags": list(dict.fromkeys(hashtags)),
         "companies": find_companies(text, matchers),
         "part": part_no, "part_label": part_label, "segment": segment,
+        "duration": v.get("duration"),
     }
 
 
@@ -309,7 +337,10 @@ def main():
     for cfg in channels:
         raw = videos_from_api(cfg["channel_id"], key, since) if key else videos_from_rss(cfg["channel_id"])
         for v in raw:
-            store[v["id"]] = parse_video(v, cfg, matchers)
+            pv = parse_video(v, cfg, matchers)
+            if pv["duration"] is None and v["id"] in store:  # RSS 沒有長度:沿用之前 API 取得的值
+                pv["duration"] = store[v["id"]].get("duration")
+            store[v["id"]] = pv
         print(f"  {cfg['name']}: 取得 {len(raw)} 支影片 ({'Data API' if key else 'RSS'})")
 
     keep_from = (datetime.now(TZ).date() - timedelta(days=days)).isoformat()
