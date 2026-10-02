@@ -2,7 +2,8 @@ name: Semi Weekly and Briefs
 
 # 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
 #              週一~五 22:30 = 美股收盤後 (台灣週二~六 06:30,美股報價)
-#              週一~五 08:00 = 台股收盤後 (台灣週一~五 16:00,台股報價)
+#              週一~五 06:00 = 台灣週一~五 14:00 (台股報價);08:00 = 16:00 補抓尚未公布的個股
+#              每日 07:00 = 台灣每日 15:00 (台股重點:依新新聞更新台股卡片,事實查核後發佈)
 #              國定假日等非交易日:抓價程式偵測到交易日未更新即略過,不 commit、不部署
 #              週一 12:00 = 台灣週一 20:00 (自動 Merge 查核通過的週報 PR 並部署)
 #              每日 23:30 = 台灣每日 07:30 (影音觀點:整理財經節目 YouTube 影片)
@@ -14,6 +15,8 @@ on:
     - cron: '0 22 * * 2,4'
     - cron: '30 22 * * 1-5'
     - cron: '0 8 * * 1-5'
+    - cron: '0 6 * * 1-5'
+    - cron: '0 7 * * *'
   push:
     branches: [main]
   workflow_dispatch:
@@ -21,7 +24,7 @@ on:
       mode:
         description: '執行模式 (auto = 依台灣時間星期幾判斷)'
         type: choice
-        options: [auto, weekly, brief, prices, twprices, automerge, videos]
+        options: [auto, weekly, brief, prices, twprices, twcards, automerge, videos]
         default: auto
 
 permissions:
@@ -57,8 +60,10 @@ jobs:
             MODE="videos"
           elif [ "${{ github.event.schedule }}" = "0 12 * * 1" ]; then
             MODE="automerge"
-          elif [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
-            MODE="twprices"
+          elif [ "${{ github.event.schedule }}" = "0 6 * * 1-5" ] || [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
+            MODE="twprices"   # 14:00 收盤價;16:00 補抓尚未公布的個股
+          elif [ "${{ github.event.schedule }}" = "0 7 * * *" ]; then
+            MODE="twcards"
           elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
             MODE="weekly"
           elif [ "$(date +%u)" = "1" ]; then
@@ -155,7 +160,6 @@ jobs:
             posts/${{ steps.draft.outputs.week_tag }}-semi-weekly.md
             data/supplychain-${{ steps.draft.outputs.week_tag }}.json
             data/us_stocks.json
-            data/tw_stocks.json
           commit-message: "週報 ${{ steps.draft.outputs.week_tag }} (AI 草稿)"
           title: "📝 ${{ steps.draft.outputs.week_tag }} 週報:${{ steps.draft.outputs.title }}"
           body-path: pr_body.md
@@ -237,7 +241,7 @@ jobs:
             done
           fi
 
-  # ── 台股收盤後:抓取台股追蹤公司的收盤價 (證交所、櫃買中心開放資料),直接發佈 ──
+  # ── 台股收盤後 (14:00,16:00 補抓):抓取台股追蹤公司的收盤價 (證交所、櫃買中心),直接發佈 ──
   twprices:
     needs: detect
     if: needs.detect.outputs.mode == 'twprices'
@@ -260,6 +264,40 @@ jobs:
           if ! git diff --staged --quiet; then
             echo "changed=true" >> $GITHUB_OUTPUT
             git commit -m "台股報價 $(date +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              echo "Push retry $i/5"; sleep 5
+            done
+          fi
+
+  # ── 每日 15:00:依新收錄的新聞更新台股追蹤卡片 (Claude 更新 + 事實查核,通過者直接發佈) ──
+  twcards:
+    needs: detect
+    if: needs.detect.outputs.mode == 'twcards'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install feedparser pyyaml requests anthropic
+      - run: python scripts/fetch_news.py
+      - run: python scripts/archive_news.py
+      - name: Update Taiwan stock cards
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/update_tw_cards.py
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news_archive.json data/news_archive.csv data/tw_stocks.json
+          if ! git diff --staged --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git commit -m "台股重點 $(date +%F)"
             for i in 1 2 3 4 5; do
               git pull --rebase origin main && git push && break
               echo "Push retry $i/5"; sleep 5
@@ -324,11 +362,12 @@ jobs:
           fi
 
   deploy:
-    needs: [detect, brief, publish, prices, twprices, automerge, videos]
+    needs: [detect, brief, publish, prices, twprices, twcards, automerge, videos]
     if: >-
       always() &&
       (needs.brief.result == 'success' || needs.publish.result == 'success' ||
        needs.prices.outputs.changed == 'true' || needs.twprices.outputs.changed == 'true' ||
+       needs.twcards.outputs.changed == 'true' ||
        needs.automerge.outputs.merged == 'true' || needs.videos.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:

@@ -47,6 +47,9 @@ TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
 TPEX_DAILY = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
 TWSE_MONTH = "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date={d}&stockNo={code}&response=json"
 TPEX_MONTH = "https://www.tpex.org.tw/www/zh-tw/afterTrading/tradingStock?code={code}&date={d}&response=json"
+# 當日行情 (網站版):收盤後約 14:00 起公布;開放資料 API (上面兩個 DAILY) 要到傍晚才更新
+TWSE_TODAY = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date={d}&type=ALLBUT0999&response=json"
+TPEX_TODAY = "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc?date={d}&type=EW&response=json"
 
 
 # 證交所憑證缺少 Subject Key Identifier,Python 3.13+ 預設的 X.509 嚴格模式會拒絕;
@@ -84,6 +87,37 @@ def fetch_latest():
         code = row.get("SecuritiesCompanyCode")
         if code in WATCHLIST and (c := to_float(row.get("Close"))):
             out[code] = (roc_to_iso(row["Date"]), c)
+    return out
+
+
+def fetch_today(day):
+    """抓指定日期的當日收盤 (證交所每日收盤行情、櫃買中心上櫃股票行情):回傳 {代號: (日期, 收盤價)}。
+    尚未公布或休市時回傳空的 (或只有其中一個市場)。"""
+    out = {}
+    try:
+        data = get_json(TWSE_TODAY.format(d=day.strftime("%Y%m%d")))
+        for t in data.get("tables", []) if data.get("stat") == "OK" else []:
+            f = t.get("fields") or []
+            if "證券代號" in f and "收盤價" in f:
+                ci, pi = f.index("證券代號"), f.index("收盤價")
+                for r in t.get("data", []):
+                    if r[ci] in WATCHLIST and (c := to_float(r[pi])):
+                        out[r[ci]] = (day.isoformat(), c)
+    except Exception as e:
+        print(f"  ⚠️  證交所當日行情抓取失敗: {e}", flush=True)
+    try:
+        data = get_json(TPEX_TODAY.format(d=day.strftime("%Y/%m/%d")))
+        for t in data.get("tables", []):
+            if not t.get("date") or roc_to_iso(t["date"]) != day.isoformat():
+                continue  # 尚未公布時會回傳前一交易日,不採用
+            f = [x.strip() for x in t.get("fields") or []]
+            if "代號" in f and "收盤" in f:
+                ci, pi = f.index("代號"), f.index("收盤")
+                for r in t.get("data", []):
+                    if r[ci] in WATCHLIST and (c := to_float(r[pi])):
+                        out[r[ci]] = (day.isoformat(), c)
+    except Exception as e:
+        print(f"  ⚠️  櫃買中心當日行情抓取失敗: {e}", flush=True)
     return out
 
 
@@ -186,6 +220,10 @@ def main():
     except Exception as e:  # 最新收盤抓取失敗時,仍保留已補建的歷史 (不讓補建白做)
         print(f"  ⚠️  最新收盤抓取失敗,僅使用歷史資料:{e}", flush=True)
         latest = {}
+    # 當日行情比開放資料 API 早公布;較新的日期優先
+    for code, (d, c) in fetch_today(datetime.now(TZ).date()).items():
+        if code not in latest or d > latest[code][0]:
+            latest[code] = (d, c)
     for code, (d, c) in latest.items():
         add_history(history, code, [(d, c)])
     # 月資料 API 有時比每日 API 早公布當天收盤;以每日 API 的最新日期為準,避免各檔日期不一致
@@ -204,7 +242,10 @@ def main():
             s["stale"] = True
 
     # 非交易日 (國定假日、颱風假等):最新交易日與上次相同,不寫檔、不 commit、不部署
-    if as_of == old.get("as_of") and "--backfill" not in sys.argv and "--force" not in sys.argv:
+    # 同一交易日再次執行時 (例如 14:00 上櫃尚未公布、16:00 補抓),有原本「未更新」的個股補上才寫檔
+    old_stale = {c for c, s in old.get("stocks", {}).items() if s.get("stale")}
+    filled = old_stale - {c for c, s in stocks.items() if s.get("stale")}
+    if as_of == old.get("as_of") and not filled and "--backfill" not in sys.argv and "--force" not in sys.argv:
         print(f"ℹ️  最新交易日仍為 {as_of},今日非交易日或資料未更新,略過")
         return
 

@@ -4,7 +4,7 @@ generate_draft.py
 讀取新聞資料庫 (data/news_archive.json) 中過去 7 天的新聞,呼叫 Claude API 產生本週:
   1. 週報        posts/YYYY-WNN-semi-weekly.md
   2. 供應鏈圖資料 data/supplychain-YYYY-WNN.json (以上一期圖為基礎增修)
-  3. 美股 / 台股追蹤卡片 data/us_stocks.json、data/tw_stocks.json (指標、近期重點;本週有新資訊的公司才更新)
+  3. 美股追蹤卡片 data/us_stocks.json (指標、近期重點;本週有新資訊的公司才更新;台股卡片見 update_tw_cards.py)
 
 檔案直接以正式檔名輸出;由 GitHub Actions 開成 Pull Request,
 人工審閱後按 Merge 即發佈 (merge 後 build_index.py 會更新 supplychain-index.json)。
@@ -216,8 +216,8 @@ STOCK_CARDS_SYSTEM = """你負責維護網站「{page}」頁面的公司卡片�
 - tags:2-3 個短標籤
 
 規則:
-1. 只能使用本週週報與新聞清單中出現的事實與數字,不可自行補充或推測數字
-2. 本週沒有該公司新資訊時,updated 填 false,並原樣回傳目前的 metrics / news / tags
+1. 只能使用{period}週報與新聞清單中出現的事實與數字,不可自行補充或推測數字 (沒有週報時只看新聞清單)
+2. {period}沒有該公司新資訊時,updated 填 false,並原樣回傳目前的 metrics / news / tags
 3. 有新資訊時,updated 填 true:新事件放在 news 最前面,過時的移除;metrics 以最新財報或財測取代舊值
 4. metrics 不要放股價、漲跌幅、YTD、市值這類行情數字 (頁面已有每日自動更新的股價)
 5. 合併卡片 (如 AAPL/GOOG/META) 視為一張卡片處理
@@ -256,15 +256,17 @@ US_STOCKS_SCHEMA = {
 }
 
 
-def update_stock_cards(client, weekly_md, items, today, cards_path, prices_path, page):
-    """依本週週報與新聞更新個股卡片 (美股 / 台股追蹤) 的指標、近期重點與標籤;回傳更新的公司數。"""
+def update_stock_cards(client, weekly_md, items, today, cards_path, prices_path, page, period="本週", only=None):
+    """依週報與新聞更新個股卡片 (美股 / 台股追蹤) 的指標、近期重點與標籤;回傳更新的公司代號。
+    period:提示中的期間 (本週 / 今日);only:只處理這些代號的卡片 (None = 全部);weekly_md 可為 None。"""
     if not cards_path.exists():
         return 0
     current = json.loads(cards_path.read_text(encoding="utf-8"))
     cards = {c["ticker"]: c for c in current["stocks"]}
     prompt_cards = [{"ticker": c["ticker"], "name": c["name"],
                      "metrics": [{"label": k, "value": v} for k, v in c["metrics"].items()],
-                     "news": c["news"], "tags": c["tags"]} for c in current["stocks"]]
+                     "news": c["news"], "tags": c["tags"]} for c in current["stocks"]
+                    if only is None or c["ticker"] in only]
     price_note = ""
     if prices_path.exists():
         p = json.loads(prices_path.read_text(encoding="utf-8"))
@@ -273,10 +275,10 @@ def update_stock_cards(client, weekly_md, items, today, cards_path, prices_path,
 
     result = json.loads(call_claude(
         client,
-        STOCK_CARDS_SYSTEM.replace("{page}", page),
+        STOCK_CARDS_SYSTEM.replace("{page}", page).replace("{period}", period),
         f"【目前卡片】\n{json.dumps(prompt_cards, ensure_ascii=False)}\n\n"
-        f"【本週週報】\n{weekly_md}\n\n"
-        f"【本週新聞清單】\n{build_news_block(items)}{price_note}",
+        + (f"【{period}週報】\n{weekly_md}\n\n" if weekly_md else "")
+        + f"【{period}新聞清單】\n{build_news_block(items)}{price_note}",
         output_config={"format": {"type": "json_schema", "schema": US_STOCKS_SCHEMA}},
     ))
 
@@ -302,7 +304,7 @@ def update_stock_cards(client, weekly_md, items, today, cards_path, prices_path,
         current["updated_at"] = today
         cards_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"   {page}: 更新 {len(updated)} 家 {updated}")
-    return len(updated)
+    return updated
 
 
 def main():
@@ -355,8 +357,8 @@ def main():
     sc_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"   ✅ {sc_path.relative_to(ROOT)} ({len(graph['nodes'])} 節點 / {len(graph['edges'])} 關係)")
 
-    # 3. 美股 / 台股追蹤卡片 (失敗不影響週報與供應鏈圖)
-    for page, cards_path, prices_path in [("美股追蹤", US_STOCKS, US_PRICES), ("台股追蹤", TW_STOCKS, TW_PRICES)]:
+    # 3. 美股追蹤卡片 (失敗不影響週報與供應鏈圖);台股卡片改由 update_tw_cards.py 每日 15:00 更新,避免與週報 PR 衝突
+    for page, cards_path, prices_path in [("美股追蹤", US_STOCKS, US_PRICES)]:
         print(f"📈 更新{page}卡片...")
         try:
             update_stock_cards(client, weekly_md, items, today.isoformat(), cards_path, prices_path, page)
