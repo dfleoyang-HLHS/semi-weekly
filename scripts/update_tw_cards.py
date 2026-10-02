@@ -10,7 +10,11 @@ update_tw_cards.py
   4. Claude 獨立事實查核:有問題的公司還原為原卡片,其餘直接發佈
 輸出:GITHUB_OUTPUT changed=true|false
 
-用法: python scripts/update_tw_cards.py [--dry-run]
+用法:
+  python scripts/update_tw_cards.py [--dry-run]       雲端 (Claude API) 版,目前只供手動執行
+  python scripts/update_tw_cards.py --prepare 檔案     本機排程版第 1 步:列出有新新聞的公司、目前卡片與新聞 (不呼叫 API)
+  python scripts/update_tw_cards.py --apply 檔案       本機排程版第 3 步:檢查格式後寫入卡片與檢查紀錄
+  (第 2 步由本機的 Claude 依新聞整理並事實查核,寫成 --apply 的輸入檔)
 """
 
 import json
@@ -86,6 +90,57 @@ def fact_check(client, items, before, after):
     ))
 
 
+def prepare(out_path):
+    """本機排程用:輸出待整理的公司 (目前卡片 + 新聞),不呼叫 API、不改檔"""
+    data = json.loads(CARDS.read_text(encoding="utf-8"))
+    by_code, items, max_id = relevant_news(data["stocks"], data.get("news_checked_id"))
+    cards = {c["ticker"]: c for c in data["stocks"]}
+    out = {"news_checked_id": max_id, "today": datetime.now(TZ).date().isoformat(),
+           "companies": {t: {"card": cards[t], "news": [
+               {"id": a["id"], "published": a["published"], "source": a["source"], "title": a["title"],
+                "summary": a["summary"], "url": a["url"]} for a in news]} for t, news in by_code.items()}}
+    Path(out_path).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    names = ", ".join(f"{c} {cards[c]['name']}×{len(v)}" for c, v in by_code.items()) or "無"
+    print(f"📰 新收錄新聞中提到追蹤公司:{len(items)} 則,{len(by_code)} 家 ({names})")
+    print(f"已寫入 {out_path}")
+
+
+def apply(in_path):
+    """本機排程用:輸入 {"news_checked_id": N, "updates": [{"ticker","metrics":[{"label","value"}],"news":[],"tags":[]}]}"""
+    inp = json.loads(Path(in_path).read_text(encoding="utf-8"))
+    data = json.loads(CARDS.read_text(encoding="utf-8"))
+    cards = {c["ticker"]: c for c in data["stocks"]}
+    today = datetime.now(TZ).date().isoformat()
+    errors, done = [], []
+    for u in inp.get("updates", []):
+        t = u.get("ticker")
+        card = cards.get(t)
+        metrics = [m for m in u.get("metrics", []) if m.get("label", "").strip() and m.get("value", "").strip()][:4]
+        news = [n.strip() for n in u.get("news", []) if n.strip()][:4]
+        if not card:
+            errors.append(f"{t}: 不是追蹤中的公司")
+        elif len(metrics) < 2 or len(news) < 2:
+            errors.append(f"{t}: 指標或近期重點少於 2 條")
+        elif any(len(n) > 40 for n in news):
+            errors.append(f"{t}: 近期重點有超過 40 字的句子")
+        else:
+            # 純數字標籤 (如 "2027") 在 JS 物件中會被排到最前面,加上「年」保持原順序
+            card["metrics"] = {(lbl + " 年" if lbl.isdigit() else lbl): m["value"].strip()
+                               for m in metrics for lbl in [m["label"].strip()]}
+            card["news"] = news
+            card["tags"] = [x.strip() for x in u.get("tags", []) if x.strip()][:3] or card["tags"]
+            card["updated_on"] = today
+            done.append(t)
+    if errors:
+        sys.exit("❌ 未寫入,請修正:\n  " + "\n  ".join(errors))
+    if done:
+        data["updated_at"] = today
+    data["news_checked_id"] = max(inp["news_checked_id"], data.get("news_checked_id") or 0)
+    CARDS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    names = ", ".join(f"{t} {cards[t]['name']}" for t in done) or "無"
+    print(f"✅ 已更新 {len(done)} 家:{names};檢查紀錄 → {data['news_checked_id']}")
+
+
 def set_output(changed):
     if gh := os.environ.get("GITHUB_OUTPUT"):
         with open(gh, "a", encoding="utf-8") as f:
@@ -108,8 +163,13 @@ def main():
     client = anthropic.Anthropic()
     today = datetime.now(TZ).date().isoformat()
     before = {c["ticker"]: json.loads(json.dumps(c)) for c in data["stocks"]}
-    updated = update_stock_cards(client, None, items, today, CARDS, PRICES, "台股追蹤",
-                                 period="今日", only=set(by_code))
+    try:
+        updated = update_stock_cards(client, None, items, today, CARDS, PRICES, "台股追蹤",
+                                     period="今日", only=set(by_code))
+    except Exception as e:  # API 失敗 (額度不足、服務異常等):不改卡片、不推進檢查紀錄,下次會重新處理這些新聞
+        print(f"::warning::台股重點更新失敗,卡片維持原內容: {e}")
+        set_output(False)
+        return
 
     data = json.loads(CARDS.read_text(encoding="utf-8"))
     if updated:
@@ -132,4 +192,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--prepare" in sys.argv:
+        prepare(sys.argv[sys.argv.index("--prepare") + 1])
+    elif "--apply" in sys.argv:
+        apply(sys.argv[sys.argv.index("--apply") + 1])
+    else:
+        main()
