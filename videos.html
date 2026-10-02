@@ -47,6 +47,25 @@
 .v-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .v-empty { text-align: center; padding: 40px; color: var(--text-dim); background: var(--bg-card); border: 1px dashed var(--border); border-radius: 12px; }
 .v-note { margin-top: 24px; padding: 14px 18px; background: var(--bg-card); border-left: 3px solid var(--accent-warm); border-radius: 8px; color: var(--text-dim); font-size: 13px; line-height: 1.7; }
+.v-notes { margin-top: 14px; border-top: 1px dashed var(--border); padding-top: 12px; }
+.v-notes > summary { cursor: pointer; font-size: 14px; font-weight: 700; list-style: none; }
+.v-notes > summary::-webkit-details-marker { display: none; }
+.v-notes > summary::before { content: "▸ "; color: var(--accent); }
+.v-notes[open] > summary::before { content: "▾ "; }
+.v-notes .sub { font-weight: 400; font-size: 12px; color: var(--text-dim); margin-left: 6px; }
+.v-co { margin-top: 12px; }
+.v-co-name { font-weight: 700; font-size: 14px; }
+.v-co-name a { color: var(--accent); }
+.v-co-name .code { font-weight: 400; font-size: 12px; color: var(--text-dim); margin-left: 4px; }
+.v-co ul { list-style: none; margin: 4px 0 0; padding: 0 0 0 12px; border-left: 2px solid var(--border); font-size: 13.5px; line-height: 1.8; }
+.v-co .who { color: var(--text-dim); white-space: nowrap; }
+.v-co .also, .v-co .tech { font-size: 12px; color: var(--text-dim); }
+.v-ts { font-family: ui-monospace, monospace; font-size: 12px; color: var(--accent); white-space: nowrap; }
+.v-techline { margin-top: 12px; font-size: 13px; line-height: 1.9; color: var(--text-dim); }
+.v-techline a { color: var(--text); margin-right: 4px; }
+.v-techline a:hover { color: var(--accent); }
+.v-more > summary { cursor: pointer; margin-top: 10px; font-size: 13px; color: var(--accent); }
+.v-notes-foot { margin-top: 10px; font-size: 12px; color: var(--text-dim); }
 @media (max-width: 720px) {
   .v-ep-head, .v-cols { grid-template-columns: 1fr; }
 }
@@ -96,7 +115,7 @@
   <div id="extras"></div>
 
   <div class="v-note">
-    <strong>⚠️ 說明</strong>:本頁內容整理自節目在 YouTube 公開的影片標題、說明欄章節與主題標籤,不含影片內容改寫;觀點屬原節目與講者,僅供產業資訊參考,<strong>非投資建議</strong>。完整內容請至 YouTube 觀看原影片。
+    <strong>⚠️ 說明</strong>:本頁內容整理自節目在 YouTube 公開的影片標題、說明欄章節與主題標籤;部分節目附「本集提到的公司」,為 AI 聽寫後經人工審稿的簡短摘要 (不公開逐字稿),可能有誤;觀點屬原節目與講者,僅供產業資訊參考,<strong>非投資建議</strong>。完整內容請至 YouTube 觀看原影片。
   </div>
 </main>
 
@@ -106,7 +125,7 @@
 const esc = t => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const ytUrl = (id, t) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}${t ? `&t=${t}s` : ""}`;
 const toSec = t => t.split(":").reduce((a, b) => a * 60 + +b, 0);
-let DATA = null, TRACKED = {}, state = { channel: "all", company: null };
+let DATA = null, NOTES = {}, TRACKED = {}, state = { channel: "all", company: null };
 
 function companyChip(c, active, clickable = true) {
   const tracked = TRACKED[c.code];
@@ -117,15 +136,51 @@ function companyChip(c, active, clickable = true) {
   return `<span class="v-chip${active ? " active" : ""}${tracked ? " tracked" : ""}" data-code="${esc(c.code)}">${esc(c.name)}${n}</span>`;
 }
 
+function renderNotes(e) {
+  const main = e.full || e.parts[0];
+  const n = NOTES[main.id];
+  if (!n) return "";
+  const co = Object.fromEntries(n.companies.map(c => [c.code || c.name, c]));
+  const ts = (t, label) => `<a class="v-ts" href="${ytUrl(n.video_id, t)}" target="_blank" rel="noopener noreferrer" title="從這裡開始看">▶${esc(label)}</a>`;
+  const nameHtml = c => {
+    const url = TRACKED[c.code];
+    const code = c.code && c.market !== "美股" ? `<span class="code">${esc(c.code)}</span>` : (c.market === "未上市櫃" ? `<span class="code">未上市櫃</span>` : "");
+    return (url ? `<a href="${url}" title="前往股價卡片">${esc(c.name)} ↗</a>` : esc(c.name)) + code;
+  };
+  // 依公司整理產業觀點:提到次數多的在前,同次數依首次出現時間
+  const groups = {};
+  n.views.forEach(v => v.companies.forEach(k => (groups[k] ||= []).push(v)));
+  const techOf = Object.fromEntries(n.technical.map(x => [x.code, x]));
+  const order = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length || groups[a][0].t - groups[b][0].t);
+  const block = k => `<div class="v-co">
+      <div class="v-co-name">${nameHtml(co[k])} <span class="code">· ${groups[k].length} 則</span></div>
+      <ul>${groups[k].map(v => {
+        const also = v.companies.filter(x => x !== k).map(x => esc(co[x].name));
+        return `<li>${esc(v.text)} <span class="who">—— ${esc(v.speaker)}</span> ${ts(v.t, v.time)}${also.length ? ` <span class="also">(同時提到:${also.join("、")})</span>` : ""}</li>`;
+      }).join("")}${techOf[k] ? `<li class="tech">另有技術面 / 股價提及 ${ts(techOf[k].t, techOf[k].time)}</li>` : ""}</ul>
+    </div>`;
+  const SHOW = 6;  // 先顯示提到最多的幾家,其餘收合
+  const blocks = order.slice(0, SHOW).map(block).join("") + (order.length > SHOW
+    ? `<details class="v-more"><summary>顯示其他 ${order.length - SHOW} 家公司</summary>${order.slice(SHOW).map(block).join("")}</details>` : "");
+  const techOnly = n.technical.filter(x => !groups[x.code]);
+  const tech = techOnly.length ? `<div class="v-techline">📈 <strong>技術面 / 股價提及</strong> (只列公司,不列具體說法):
+      ${techOnly.map(x => `<a href="${ytUrl(n.video_id, x.t)}" target="_blank" rel="noopener noreferrer" title="${esc(x.time)} 開始">${esc(co[x.code].name)}</a>`).join("、")}</div>` : "";
+  return `<details class="v-notes" open>
+    <summary>🗣️ 本集提到的公司<span class="sub">${order.length} 家 · ${n.views.length} 則產業觀點${n.technical.length ? ` · 技術面提及 ${n.technical.length} 家` : ""}</span></summary>
+    ${blocks}${tech}
+    <div class="v-notes-foot">AI 聽寫整理後經人工審稿 (${esc(n.reviewed_at.slice(0, 10))}),為節目內容的簡短摘要,可能有誤;觀點屬原講者,不代表本站立場,非投資建議。點 ▶ 時間可回到原影片確認。贊助內容不列入。</div>
+  </details>`;
+}
+
 function render() {
   const eps = DATA.episodes.filter(e =>
     (state.channel === "all" || e.channel === state.channel) &&
-    (!state.company || e.companies.some(c => c.code === state.company)));
+    (!state.company || e.allCompanies.some(c => c.code === state.company)));
 
   // 公司統計 (目前節目篩選下,依提到的集數)
   const counts = {};
   DATA.episodes.filter(e => state.channel === "all" || e.channel === state.channel)
-    .forEach(e => e.companies.forEach(c => { (counts[c.code] ||= { ...c, n: 0 }).n++; }));
+    .forEach(e => e.allCompanies.forEach(c => { (counts[c.code] ||= { ...c, n: 0 }).n++; }));
   const top = Object.values(counts).sort((a, b) => b.n - a.n).slice(0, 24);
   document.getElementById("company-filter").innerHTML = top.length
     ? top.map(c => companyChip(c, c.code === state.company)).join("") +
@@ -148,6 +203,7 @@ function render() {
           <div class="v-companies">${e.companies.map(c => companyChip(c, false, false)).join("")}</div>
         </div>
       </div>
+      ${renderNotes(e)}
       ${chapters.length ? `<div class="v-sec"><h4>📑 節目章節</h4><ul class="v-chapters">${chapters.map(c =>
         `<li><a href="${ytUrl(main.id, toSec(c.time))}" target="_blank" rel="noopener noreferrer">${esc(c.time)}</a>${esc(c.topic)}</li>`).join("")}</ul></div>` : ""}
       <div class="v-cols">
@@ -173,6 +229,17 @@ async function init() {
     const [d, us, tw] = await Promise.all(["data/youtube.json", "data/us_stocks.json", "data/tw_stocks.json"]
       .map(u => fetch(u, { cache: "no-store" }).then(r => r.json())));
     DATA = d;
+    try {  // 節目重點 (人工審稿後才有;沒有檔案也不影響頁面)
+      NOTES = (await fetch("data/video_notes.json", { cache: "no-store" }).then(r => r.ok ? r.json() : { notes: {} })).notes || {};
+    } catch (e) { NOTES = {}; }
+    // 節目重點提到的公司也納入篩選 (未上市櫃公司沒有代號,不納入)
+    DATA.episodes.forEach(e => {
+      e.allCompanies = [...e.companies];
+      const n = NOTES[(e.full || e.parts[0] || {}).id];
+      if (!n) return;
+      const have = new Set(e.companies.map(c => c.code));
+      n.companies.forEach(c => { if (c.code && !have.has(c.code)) { e.allCompanies.push(c); have.add(c.code); } });
+    });
     us.stocks.forEach(s => s.ticker.split("/").forEach(t => TRACKED[t.trim()] = "usstocks.html"));
     tw.stocks.forEach(s => TRACKED[s.ticker] = "twstocks.html");
   } catch (e) {
