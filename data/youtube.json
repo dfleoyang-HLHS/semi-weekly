@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-02T10:27:40+08:00",
+ "updated_at": "2026-10-03T10:13:46+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -69,6 +69,246 @@
  "episodes": [
   {
    "channel": "理財達人秀",
+   "date": "2026-10-02",
+   "full": {
+    "id": "B-kPRQ9ahw8",
+    "channel": "理財達人秀",
+    "kind": "full",
+    "title": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+    "topic": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+    "raw_title": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+    "series": "理財達人秀",
+    "published": "2026-10-02",
+    "show_date": "2026-10-02",
+    "guests": [
+     "李兆華",
+     "鍾國忠",
+     "黃豐凱",
+     "翁士峻"
+    ],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "中小股噴 反攻不缺火力!接著搶誰 下週更兇?"
+     },
+     {
+      "time": "03:18",
+      "topic": "台積說將登場ADR挑戰新高 台股能攻5萬?"
+     },
+     {
+      "time": "18:25",
+      "topic": "美中搶 光通訊嗨! CPO一片紅怎麼挑?"
+     },
+     {
+      "time": "33:50",
+      "topic": "十月漲率7成攻5萬? 法人.大戶指路?"
+     }
+    ],
+    "hashtags": [
+     "CPO",
+     "AI",
+     "台積電法說"
+    ],
+    "companies": [
+     {
+      "name": "台積電",
+      "code": "2330",
+      "market": "上市"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2981
+   },
+   "parts": [
+    {
+     "id": "Jj8cOVffCJI",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+     "topic": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+     "raw_title": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+     "series": "理財達人秀",
+     "published": "2026-10-03",
+     "show_date": "2026-10-02",
+     "guests": [
+      "李兆華",
+      "鍾國忠"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "CPO",
+      "AI",
+      "台積電法說"
+     ],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": 1,
+     "part_label": "",
+     "segment": null,
+     "duration": 995
+    },
+    {
+     "id": "jc_vu7wZwcc",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+     "topic": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+     "raw_title": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+     "series": "理財達人秀",
+     "published": "2026-10-03",
+     "show_date": "2026-10-02",
+     "guests": [
+      "李兆華",
+      "黃豐凱"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "CPO",
+      "AI",
+      "台積電法說"
+     ],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": 2,
+     "part_label": "",
+     "segment": null,
+     "duration": 858
+    },
+    {
+     "id": "rWSEeN8v9a8",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+     "topic": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+     "raw_title": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+     "series": "理財達人秀",
+     "published": "2026-10-03",
+     "show_date": "2026-10-02",
+     "guests": [
+      "李兆華",
+      "翁士峻"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "CPO",
+      "AI",
+      "台積電法說"
+     ],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": 3,
+     "part_label": "",
+     "segment": null,
+     "duration": 936
+    }
+   ],
+   "clips": [
+    {
+     "id": "BjECY3NBBIA",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻",
+     "topic": "翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻",
+     "raw_title": "👑翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻 #理財達人秀",
+     "series": "",
+     "published": "2026-10-03",
+     "show_date": "2026-10-03",
+     "guests": [
+      "翁士峻"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 86
+    },
+    {
+     "id": "c58jdOpmgNk",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱",
+     "topic": "黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱",
+     "raw_title": "👑黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱 #理財達人秀",
+     "series": "",
+     "published": "2026-10-03",
+     "show_date": "2026-10-03",
+     "guests": [
+      "黃豐凱"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 96
+    },
+    {
+     "id": "ixV0XbQwJ34",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠",
+     "topic": "鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠",
+     "raw_title": "👑鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠 #理財達人秀",
+     "series": "",
+     "published": "2026-10-03",
+     "show_date": "2026-10-03",
+     "guests": [
+      "鍾國忠"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 71
+    }
+   ],
+   "guests": [
+    "鍾國忠",
+    "黃豐凱",
+    "翁士峻"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市",
+     "count": 4
+    }
+   ],
+   "hashtags": [
+    "CPO",
+    "AI",
+    "台積電法說"
+   ],
+   "title": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+   "parts_title": "",
+   "clips_title": "",
+   "host": "李兆華"
+  },
+  {
+   "channel": "理財達人秀",
    "date": "2026-10-01",
    "full": {
     "id": "1-lNHScCLq0",
@@ -121,7 +361,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2932
    },
    "parts": [
     {
@@ -145,7 +386,8 @@
      "companies": [],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1051
     },
     {
      "id": "uKC9BhysGLA",
@@ -174,7 +416,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 797
     },
     {
      "id": "yAiinT3nRqo",
@@ -197,10 +440,75 @@
      "companies": [],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 953
     }
    ],
-   "clips": [],
+   "clips": [
+    {
+     "id": "lluIWQfIRBA",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良",
+     "topic": "陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良",
+     "raw_title": "👑 陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良 #理財達人秀",
+     "series": "",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳威良"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 54
+    },
+    {
+     "id": "sG3oxORwPlA",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥",
+     "topic": "籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥",
+     "raw_title": "👑 籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥 #理財達人秀",
+     "series": "",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "權證小哥"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 58
+    },
+    {
+     "id": "bfCps9jTtSw",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊",
+     "topic": "股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊",
+     "raw_title": "👑 股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊 #理財達人秀",
+     "series": "",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "容逸燊"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 56
+    }
+   ],
    "guests": [
     "容逸燊",
     "權證小哥",
@@ -280,7 +588,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2984
    },
    "parts": [
     {
@@ -302,7 +611,8 @@
      "companies": [],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1041
     },
     {
      "id": "UFYpu886dek",
@@ -323,7 +633,8 @@
      "companies": [],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 836
     },
     {
      "id": "Nv9EH5QRF-M",
@@ -344,7 +655,8 @@
      "companies": [],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 919
     }
    ],
    "clips": [
@@ -372,7 +684,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 69
     },
     {
      "id": "Aq0_1P3b0ik",
@@ -392,7 +705,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 53
     },
     {
      "id": "OTOO2YHwebs",
@@ -418,7 +732,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 61
     }
    ],
    "guests": [
@@ -524,7 +839,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2930
    },
    "parts": [
     {
@@ -566,7 +882,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1047
     },
     {
      "id": "Mrey1bpaQ5A",
@@ -607,7 +924,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 842
     },
     {
      "id": "Kb4OWaNPR-k",
@@ -643,7 +961,8 @@
      ],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 915
     }
    ],
    "clips": [
@@ -676,7 +995,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 60
     },
     {
      "id": "8l83Za7Nhnk",
@@ -707,7 +1027,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 52
     },
     {
      "id": "ApzZ5vXJ70U",
@@ -733,7 +1054,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 70
     }
    ],
    "guests": [
@@ -860,7 +1182,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2929
    },
    "parts": [
     {
@@ -892,7 +1215,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1039
     },
     {
      "id": "SxoFci-7aHQ",
@@ -923,7 +1247,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 837
     },
     {
      "id": "jqMmZ4kQ8t4",
@@ -959,7 +1284,8 @@
      ],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 924
     }
    ],
    "clips": [
@@ -987,7 +1313,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 95
     },
     {
      "id": "SkD3oJmgGZc",
@@ -1013,7 +1340,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 64
     },
     {
      "id": "OQpDYheNkPA",
@@ -1033,7 +1361,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 63
     }
    ],
    "guests": [
@@ -1139,7 +1468,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2979
    },
    "parts": [
     {
@@ -1177,7 +1507,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1295
     },
     {
      "id": "KuRdmLhT_wM",
@@ -1208,7 +1539,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1034
     },
     {
      "id": "Mt0XqGmsud0",
@@ -1246,7 +1578,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1600
     },
     {
      "id": "sW2i-6hu48Y",
@@ -1277,7 +1610,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 800
     },
     {
      "id": "DZycaSMex7g",
@@ -1313,7 +1647,8 @@
      ],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 955
     }
    ],
    "clips": [
@@ -1390,7 +1725,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 2923
     },
     {
      "id": "x1OoP8531EU",
@@ -1418,7 +1754,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 43
     },
     {
      "id": "KriFQuwJleo",
@@ -1444,7 +1781,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 71
     },
     {
      "id": "vytHS1EevsY",
@@ -1462,7 +1800,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 72
     },
     {
      "id": "mbD3uR4TK6Q",
@@ -1480,7 +1819,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 71
     },
     {
      "id": "RceilRou_FI",
@@ -1498,7 +1838,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 59
     }
    ],
    "guests": [
@@ -1629,7 +1970,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2930
    },
    "parts": [
     {
@@ -1667,7 +2009,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1246
     },
     {
      "id": "Lq6Hk2qA7iw",
@@ -1698,7 +2041,8 @@
      ],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1043
     },
     {
      "id": "zdAkvsQkMCk",
@@ -1741,7 +2085,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1644
     },
     {
      "id": "Ugu2W1Db96o",
@@ -1766,7 +2111,8 @@
      "companies": [],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 846
     },
     {
      "id": "puFbS_C219Y",
@@ -1797,7 +2143,8 @@
      ],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 914
     }
    ],
    "clips": [
@@ -1879,7 +2226,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 2928
     },
     {
      "id": "1tgvnOr1Rd4",
@@ -1899,7 +2247,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 60
     },
     {
      "id": "RFuve89cZgI",
@@ -1919,7 +2268,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 57
     },
     {
      "id": "rPdk_Qws1Qw",
@@ -1945,7 +2295,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 56
     },
     {
      "id": "JNnWz8UDKe4",
@@ -1967,7 +2318,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 63
     },
     {
      "id": "2tv4XhFg7bE",
@@ -1989,7 +2341,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 67
     }
    ],
    "guests": [
@@ -2138,7 +2491,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2930
    },
    "parts": [
     {
@@ -2166,7 +2520,8 @@
      "companies": [],
      "part": 1,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 1018
     },
     {
      "id": "UMVdKrV8AdU",
@@ -2199,7 +2554,8 @@
      ],
      "part": 2,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 853
     },
     {
      "id": "iNYt0hkCvyc",
@@ -2232,7 +2588,8 @@
      ],
      "part": 3,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 927
     }
    ],
    "clips": [
@@ -2265,7 +2622,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 73
     },
     {
      "id": "vnXhhUOY23s",
@@ -2291,7 +2649,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 84
     },
     {
      "id": "AwQetpXNFYw",
@@ -2311,7 +2670,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": null
+     "segment": null,
+     "duration": 74
     }
    ],
    "guests": [
@@ -2366,56 +2726,7 @@
   {
    "channel": "理財達人秀",
    "date": "2026-09-18",
-   "full": {
-    "id": "Fhk_er-4Ico",
-    "channel": "理財達人秀",
-    "kind": "full",
-    "title": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-    "topic": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-    "raw_title": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-    "series": "理財達人秀",
-    "published": "2026-09-18",
-    "show_date": "2026-09-18",
-    "guests": [
-     "李兆華",
-     "鍾國忠",
-     "黃豐凱",
-     "權證小哥"
-    ],
-    "chapters": [
-     {
-      "time": "00:00",
-      "topic": "大漲892點收復47K 節前抱或賣?鎖股誰?"
-     },
-     {
-      "time": "03:45",
-      "topic": "美.日升息 台灣凍漲 低利造資金行情?"
-     },
-     {
-      "time": "19:03",
-      "topic": "輝達晶片銷量翻倍! 升息落地誰先衝?"
-     },
-     {
-      "time": "34:14",
-      "topic": "CCL爆降規鬼故事 外資送暖 滿血復活?"
-     }
-    ],
-    "hashtags": [
-     "PCB",
-     "輝達",
-     "黃仁勳"
-    ],
-    "companies": [
-     {
-      "name": "輝達",
-      "code": "NVDA",
-      "market": "美股"
-     }
-    ],
-    "part": null,
-    "part_label": "",
-    "segment": null
-   },
+   "full": null,
    "parts": [
     {
      "id": "7mIdke_oc8c",
@@ -2513,16 +2824,16 @@
    ],
    "clips": [],
    "guests": [
-    "鍾國忠",
+    "權證小哥",
     "黃豐凱",
-    "權證小哥"
+    "鍾國忠"
    ],
    "companies": [
     {
      "name": "輝達",
      "code": "NVDA",
      "market": "美股",
-     "count": 4
+     "count": 3
     }
    ],
    "hashtags": [
@@ -2530,198 +2841,42 @@
     "輝達",
     "黃仁勳"
    ],
-   "title": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
+   "title": "【理財達人秀】央行不升息 大放水行情 鎖！三檔MSCI+連假消費股｜李兆華、鍾國忠 2026.09.18 part1",
    "parts_title": "",
    "clips_title": "",
    "host": "李兆華"
   },
   {
-   "channel": "理財達人秀",
-   "date": "2026-09-17",
-   "full": null,
-   "parts": [
-    {
-     "id": "OHUouezCsyo",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-     "topic": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-     "raw_title": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-     "series": "理財達人秀",
-     "published": "2026-09-18",
-     "show_date": "2026-09-17",
-     "guests": [
-      "李兆華",
-      "林信富"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "基富通",
-      "定期定額",
-      "低檔智動投",
-      "台股基金"
-     ],
-     "companies": [
-      {
-       "name": "華邦電",
-       "code": "2344",
-       "market": "上市"
-      }
-     ],
-     "part": 1,
-     "part_label": "",
-     "segment": null
-    },
-    {
-     "id": "9QvxrDTZYoQ",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-     "topic": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-     "raw_title": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-     "series": "理財達人秀",
-     "published": "2026-09-18",
-     "show_date": "2026-09-17",
-     "guests": [
-      "李兆華",
-      "陳唯泰"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "基富通",
-      "定期定額",
-      "低檔智動投",
-      "台股基金"
-     ],
-     "companies": [],
-     "part": 2,
-     "part_label": "",
-     "segment": null
-    },
-    {
-     "id": "yWakly7VRCc",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-     "topic": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-     "raw_title": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-     "series": "理財達人秀",
-     "published": "2026-09-18",
-     "show_date": "2026-09-17",
-     "guests": [
-      "李兆華",
-      "股魚"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "基富通",
-      "定期定額",
-      "低檔智動投",
-      "台股基金"
-     ],
-     "companies": [],
-     "part": 3,
-     "part_label": "",
-     "segment": null
-    }
-   ],
-   "clips": [
-    {
-     "id": "S2ceMYccQ0E",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚",
-     "topic": "存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚",
-     "raw_title": "👑 存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚 #理財達人秀",
-     "series": "",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "股魚"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null
-    },
-    {
-     "id": "MCubIuJfLpk",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰",
-     "topic": "選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰",
-     "raw_title": "👑 選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰 #理財達人秀",
-     "series": "",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳唯泰"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null
-    },
-    {
-     "id": "7DCLxFqG-hg",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富",
-     "topic": "報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富",
-     "raw_title": "👑 報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富 #理財達人秀",
-     "series": "",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "林信富"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "台積電",
-       "code": "2330",
-       "market": "上市"
-      }
-     ],
-     "part": null,
-     "part_label": "",
-     "segment": null
-    }
-   ],
-   "guests": [
-    "股魚",
-    "陳唯泰",
-    "林信富"
-   ],
-   "companies": [
-    {
-     "name": "華邦電",
-     "code": "2344",
-     "market": "上市",
-     "count": 1
-    },
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市",
-     "count": 1
-    }
-   ],
-   "hashtags": [
-    "基富通",
-    "定期定額",
-    "低檔智動投",
-    "台股基金"
-   ],
-   "title": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-   "parts_title": "",
-   "clips_title": "",
-   "host": "李兆華"
+   "channel": "孫慶龍",
+   "format": "single",
+   "date": "2026-10-02",
+   "full": {
+    "id": "lgULQDXoZ0U",
+    "channel": "孫慶龍",
+    "kind": "single",
+    "title": "恐崩盤72%？不怕不怕我買進這檔成長股",
+    "topic": "恐崩盤72%？不怕不怕我買進這檔成長股",
+    "raw_title": "恐崩盤72%？不怕不怕我買進這檔成長股",
+    "series": "",
+    "published": "2026-10-02",
+    "show_date": "2026-10-02",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1081
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "孫慶龍",
+   "title": "恐崩盤72%？不怕不怕我買進這檔成長股",
+   "series": "",
+   "companies": [],
+   "hashtags": []
   },
   {
    "channel": "孫慶龍",
@@ -2743,7 +2898,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 4531
    },
    "parts": [],
    "clips": [],
@@ -2774,7 +2930,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1278
    },
    "parts": [],
    "clips": [],
@@ -2805,7 +2962,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1204
    },
    "parts": [],
    "clips": [],
@@ -2862,7 +3020,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1475
    },
    "parts": [],
    "clips": [],
@@ -2905,37 +3064,6 @@
    "hashtags": []
   },
   {
-   "channel": "孫慶龍",
-   "format": "single",
-   "date": "2026-09-18",
-   "full": {
-    "id": "GYgYf-IEYpg",
-    "channel": "孫慶龍",
-    "kind": "single",
-    "title": "別再沖來沖去，買「它」等變天",
-    "topic": "別再沖來沖去，買「它」等變天",
-    "raw_title": "別再沖來沖去，買「它」等變天",
-    "series": "",
-    "published": "2026-09-18",
-    "show_date": "2026-09-18",
-    "guests": [],
-    "chapters": [],
-    "hashtags": [],
-    "companies": [],
-    "part": null,
-    "part_label": "",
-    "segment": null
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "孫慶龍",
-   "title": "別再沖來沖去，買「它」等變天",
-   "series": "",
-   "companies": [],
-   "hashtags": []
-  },
-  {
    "channel": "闕又上",
    "format": "single",
    "date": "2026-09-29",
@@ -2955,7 +3083,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1405
    },
    "parts": [],
    "clips": [],
@@ -2986,7 +3115,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1995
    },
    "parts": [],
    "clips": [],
@@ -3066,7 +3196,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2021
    },
    "parts": [],
    "clips": [],
@@ -3152,7 +3283,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1986
    },
    "parts": [],
    "clips": [],
@@ -3243,7 +3375,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1856
    },
    "parts": [],
    "clips": [],
@@ -3319,7 +3452,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2133
    },
    "parts": [],
    "clips": [],
@@ -3350,7 +3484,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1100
    },
    "parts": [],
    "clips": [],
@@ -3418,7 +3553,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 2029
    },
    "parts": [],
    "clips": [],
@@ -3505,7 +3641,8 @@
     ],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1956
    },
    "parts": [],
    "clips": [],
@@ -3586,7 +3723,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1901
    },
    "parts": [],
    "clips": [],
@@ -3662,7 +3800,8 @@
     "companies": [],
     "part": null,
     "part_label": "",
-    "segment": null
+    "segment": null,
+    "duration": 1968
    },
    "parts": [],
    "clips": [],
@@ -3674,84 +3813,441 @@
    "hashtags": []
   },
   {
-   "channel": "游庭皓",
-   "format": "single",
-   "date": "2026-09-18",
-   "full": {
-    "id": "Ulz539c38mw",
-    "channel": "游庭皓",
-    "kind": "single",
-    "title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
-    "topic": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
-    "raw_title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
-    "series": "早晨財經速解讀",
-    "published": "2026-09-18",
-    "show_date": "2026-09-18",
-    "guests": [],
-    "chapters": [
-     {
-      "time": "00:00",
-      "topic": "市場總覽"
-     },
-     {
-      "time": "01:50",
-      "topic": "凍漲利率"
-     },
-     {
-      "time": "05:30",
-      "topic": "通膨低估"
-     },
-     {
-      "time": "08:00",
-      "topic": "通膨外溢"
-     },
-     {
-      "time": "10:30",
-      "topic": "貨幣政策偏緊"
-     },
-     {
-      "time": "15:30",
-      "topic": "房市管制放鬆"
-     },
-     {
-      "time": "18:20",
-      "topic": "房市轉折"
-     },
-     {
-      "time": "23:00",
-      "topic": "央行考量"
-     },
-     {
-      "time": "25:40",
-      "topic": "現實考量"
-     },
-     {
-      "time": "27:45",
-      "topic": "新富時代"
-     },
-     {
-      "time": "30:00",
-      "topic": "楊流來了"
-     },
-     {
-      "time": "31:40",
-      "topic": "世界為什麼越來越分裂"
-     }
-    ],
-    "hashtags": [],
-    "companies": [],
-    "part": null,
-    "part_label": "",
-    "segment": null
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "游庭皓",
-   "title": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
-   "series": "早晨財經速解讀",
-   "companies": [],
-   "hashtags": []
+   "channel": "錢線百分百",
+   "date": "2026-10-02",
+   "full": null,
+   "parts": [
+    {
+     "id": "0pAQwYeercw",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261002完整版(上集)《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?》│非凡財經新聞│",
+     "topic": "台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?",
+     "raw_title": "【錢線百分百】20261002完整版(上集)《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎台股驚漲!漲價股回神 被動.矽晶圓誰有戲?"
+      },
+      {
+       "time": "18:15",
+       "topic": "◎台積電2500元成低消? 搶法說行情誰先噴?"
+      },
+      {
+       "time": "32:24",
+       "topic": "◎台股5萬點後更瘋? 五大買盤接力衝!"
+      }
+     ],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": 2,
+     "part_label": "上集",
+     "segment": null,
+     "duration": 2900
+    },
+    {
+     "id": "QyaWwqUnqyc",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261002完整版(中集)《美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?》│非凡財經新聞│",
+     "topic": "美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?",
+     "raw_title": "【錢線百分百】20261002完整版(中集)《美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎美債飆.科技股也飆? AI獲利打敗高利率!"
+      },
+      {
+       "time": "19:47",
+       "topic": "◎鴻海.記憶體何時醒? 友達能追?發哥可撿?"
+      },
+      {
+       "time": "35:46",
+       "topic": "◎光輝10月上大戲! 追!台股最強連動密碼"
+      }
+     ],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "鴻海",
+       "code": "2317",
+       "market": "上市"
+      },
+      {
+       "name": "友達",
+       "code": "2409",
+       "market": "上市"
+      },
+      {
+       "name": "聯發科",
+       "code": "2454",
+       "market": "上市"
+      }
+     ],
+     "part": 3,
+     "part_label": "中集",
+     "segment": null,
+     "duration": 2920
+    },
+    {
+     "id": "D_ixF3nks7s",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261002完整版(下集)《AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?》│非凡財經新聞│",
+     "topic": "AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?",
+     "raw_title": "【錢線百分百】20261002完整版(下集)《AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎AI掀全球搶銅大戰 CCL誰悶聲發大財?"
+      },
+      {
+       "time": "13:54",
+       "topic": "◎80%個股已修正 債息.美元夾擊釀泡沫?"
+      }
+     ],
+     "hashtags": [],
+     "companies": [],
+     "part": 4,
+     "part_label": "下集",
+     "segment": null,
+     "duration": 1602
+    }
+   ],
+   "clips": [
+    {
+     "id": "6HCich4PJ3w",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?》【錢線百分百】20261002-1│非凡財經新聞│",
+     "topic": "台股驚漲!漲價股回神 被動.矽晶圓誰有戲?",
+     "raw_title": "《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?》【錢線百分百】20261002-1│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 1,
+     "duration": 1129
+    },
+    {
+     "id": "FgW4oLJ9zjI",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台積電2500元成低消? 搶法說行情誰先噴?》【錢線百分百】20261002-2│非凡財經新聞│",
+     "topic": "台積電2500元成低消? 搶法說行情誰先噴?",
+     "raw_title": "《台積電2500元成低消? 搶法說行情誰先噴?》【錢線百分百】20261002-2│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 2,
+     "duration": 888
+    },
+    {
+     "id": "-BGiRxgolCw",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-3│非凡財經新聞│",
+     "topic": "台股5萬點後更瘋? 五大買盤接力衝!",
+     "raw_title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-3│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 3,
+     "duration": 722
+    },
+    {
+     "id": "nA3NQsMfeQc",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-4│非凡財經新聞│",
+     "topic": "台股5萬點後更瘋? 五大買盤接力衝!",
+     "raw_title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-4│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 4,
+     "duration": 268
+    },
+    {
+     "id": "_NYUAdhqc5s",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《美債飆.科技股也飆? AI獲利打敗高利率!》【錢線百分百】20261002-5│非凡財經新聞│",
+     "topic": "美債飆.科技股也飆? AI獲利打敗高利率!",
+     "raw_title": "《美債飆.科技股也飆? AI獲利打敗高利率!》【錢線百分百】20261002-5│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 5,
+     "duration": 1223
+    },
+    {
+     "id": "pztmZoZyYK0",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《鴻海.記憶體何時醒? 友達能追?發哥可撿?》【錢線百分百】20261002-6│非凡財經新聞│",
+     "topic": "鴻海.記憶體何時醒? 友達能追?發哥可撿?",
+     "raw_title": "《鴻海.記憶體何時醒? 友達能追?發哥可撿?》【錢線百分百】20261002-6│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "鴻海",
+       "code": "2317",
+       "market": "上市"
+      },
+      {
+       "name": "友達",
+       "code": "2409",
+       "market": "上市"
+      },
+      {
+       "name": "聯發科",
+       "code": "2454",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 6,
+     "duration": 994
+    },
+    {
+     "id": "Zi5MielfsuA",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-7│非凡財經新聞│",
+     "topic": "光輝10月上大戲! 追!台股最強連動密碼",
+     "raw_title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-7│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 7,
+     "duration": 615
+    },
+    {
+     "id": "vYvUz4eQcvc",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-8│非凡財經新聞│",
+     "topic": "光輝10月上大戲! 追!台股最強連動密碼",
+     "raw_title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-8│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-02",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 8,
+     "duration": 195
+    },
+    {
+     "id": "mGmu-rnIAJU",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《AI掀全球搶銅大戰 CCL誰悶聲發大財?》【錢線百分百】20261002-9│非凡財經新聞│",
+     "topic": "AI掀全球搶銅大戰 CCL誰悶聲發大財?",
+     "raw_title": "《AI掀全球搶銅大戰 CCL誰悶聲發大財?》【錢線百分百】20261002-9│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-03",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 9,
+     "duration": 870
+    },
+    {
+     "id": "8nOg80NFqWg",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《80%個股已修正 債息.美元夾擊釀泡沫?》【錢線百分百】20261002-10│非凡財經新聞│",
+     "topic": "80%個股已修正 債息.美元夾擊釀泡沫?",
+     "raw_title": "《80%個股已修正 債息.美元夾擊釀泡沫?》【錢線百分百】20261002-10│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-03",
+     "show_date": "2026-10-02",
+     "guests": [
+      "陳龍",
+      "許博傑",
+      "陳智霖",
+      "呂漢威"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 10,
+     "duration": 768
+    }
+   ],
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市",
+     "count": 2
+    },
+    {
+     "name": "鴻海",
+     "code": "2317",
+     "market": "上市",
+     "count": 2
+    },
+    {
+     "name": "友達",
+     "code": "2409",
+     "market": "上市",
+     "count": 2
+    },
+    {
+     "name": "聯發科",
+     "code": "2454",
+     "market": "上市",
+     "count": 2
+    }
+   ],
+   "hashtags": [],
+   "title": "台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴? · 美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿? · AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?",
+   "parts_title": "完整版",
+   "clips_title": "主題片段",
+   "host": "李蜀芳"
   },
   {
    "channel": "錢線百分百",
@@ -3792,7 +4288,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2915
     },
     {
      "id": "VBZbbhPiPQs",
@@ -3854,7 +4351,8 @@
      ],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2910
     },
     {
      "id": "El61EmcwPCU",
@@ -3886,7 +4384,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1597
     }
    ],
    "clips": [
@@ -3911,7 +4410,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1424
     },
     {
      "id": "XLa2XVYwVoU",
@@ -3934,7 +4434,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 665
     },
     {
      "id": "V7VRr2SBJ3Q",
@@ -3957,7 +4458,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 214
     },
     {
      "id": "tDop-eD-gCY",
@@ -3980,7 +4482,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 718
     },
     {
      "id": "yaVHeUP-OeM",
@@ -4014,7 +4517,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1168
     },
     {
      "id": "oV0o14PAb_I",
@@ -4053,7 +4557,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 976
     },
     {
      "id": "co1b4wG_GX8",
@@ -4076,7 +4581,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 724
     },
     {
      "id": "xlcuAQxfbTY",
@@ -4099,7 +4605,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 150
     },
     {
      "id": "9eSzW4Wqszc",
@@ -4122,7 +4629,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 823
     },
     {
      "id": "RXar5SuaSMA",
@@ -4145,7 +4653,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 810
     }
    ],
    "guests": [
@@ -4231,7 +4740,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2911
     },
     {
      "id": "41cCl2mso3c",
@@ -4273,7 +4783,8 @@
      ],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2919
     },
     {
      "id": "HdblU3aRgy4",
@@ -4305,7 +4816,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1602
     }
    ],
    "clips": [
@@ -4330,7 +4842,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1277
     },
     {
      "id": "7iUxP_cg5E4",
@@ -4353,7 +4866,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 699
     },
     {
      "id": "z3O0_KxL0JY",
@@ -4376,7 +4890,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 244
     },
     {
      "id": "CHGAehRns0A",
@@ -4399,7 +4914,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 798
     },
     {
      "id": "jJskSLCLdDw",
@@ -4428,7 +4944,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1285
     },
     {
      "id": "PayW02ndvWc",
@@ -4451,7 +4968,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 874
     },
     {
      "id": "T3G5ij09agk",
@@ -4474,7 +4992,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 540
     },
     {
      "id": "2UYQ5OgCuuY",
@@ -4497,7 +5016,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 327
     },
     {
      "id": "1qlRT99RVjs",
@@ -4520,7 +5040,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 883
     },
     {
      "id": "G6W8L5aAlEk",
@@ -4543,7 +5064,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 755
     }
    ],
    "guests": [
@@ -4615,7 +5137,8 @@
      ],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2907
     },
     {
      "id": "ppii2TalbHE",
@@ -4651,7 +5174,8 @@
      "companies": [],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2920
     },
     {
      "id": "ddMeM1rz4ZU",
@@ -4689,7 +5213,8 @@
      ],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1603
     }
    ],
    "clips": [
@@ -4720,7 +5245,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1329
     },
     {
      "id": "w9WMtrhVRcw",
@@ -4743,7 +5269,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 820
     },
     {
      "id": "5Khf8fFE6r4",
@@ -4772,7 +5299,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 620
     },
     {
      "id": "ahNSNeuac9U",
@@ -4796,7 +5324,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 246
     },
     {
      "id": "diXO1c2FMJQ",
@@ -4819,7 +5348,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1121
     },
     {
      "id": "Axmp_fZPVSs",
@@ -4842,7 +5372,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 897
     },
     {
      "id": "WeLK4ZSyDNM",
@@ -4865,7 +5396,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 678
     },
     {
      "id": "5192XkhSOKE",
@@ -4888,7 +5420,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 333
     },
     {
      "id": "MrfWz3sQRWM",
@@ -4917,7 +5450,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 750
     },
     {
      "id": "LyxRnhu1res",
@@ -4940,7 +5474,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 889
     }
    ],
    "guests": [
@@ -5017,7 +5552,8 @@
      "companies": [],
      "part": 1,
      "part_label": "全集",
-     "segment": null
+     "segment": null,
+     "duration": 2975
     }
    ],
    "clips": [
@@ -5041,7 +5577,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1246
     },
     {
      "id": "wlew5o7T7UM",
@@ -5063,7 +5600,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 1016
     },
     {
      "id": "Anhd9Brl6CY",
@@ -5085,7 +5623,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 610
     },
     {
      "id": "Z9cgg1kbi9k",
@@ -5107,7 +5646,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 208
     }
    ],
    "guests": [
@@ -5164,7 +5704,8 @@
      "companies": [],
      "part": 1,
      "part_label": "全集",
-     "segment": null
+     "segment": null,
+     "duration": 2980
     }
    ],
    "clips": [
@@ -5188,7 +5729,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1364
     },
     {
      "id": "AMR_QUMrvog",
@@ -5210,7 +5752,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 924
     },
     {
      "id": "aRXSz853x4c",
@@ -5232,7 +5775,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 652
     },
     {
      "id": "mI4da6T3tDI",
@@ -5254,7 +5798,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 145
     }
    ],
    "guests": [
@@ -5308,7 +5853,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2904
     },
     {
      "id": "i8-QFS8DfQ4",
@@ -5344,7 +5890,8 @@
      "companies": [],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2911
     },
     {
      "id": "5Y81XI8FmeM",
@@ -5376,7 +5923,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1605
     }
    ],
    "clips": [
@@ -5401,7 +5949,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1193
     },
     {
      "id": "c7yt8yJNf1Y",
@@ -5424,7 +5973,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 930
     },
     {
      "id": "10EfYvzwfic",
@@ -5447,7 +5997,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 651
     },
     {
      "id": "hTvyhLfm9BY",
@@ -5470,7 +6021,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 236
     },
     {
      "id": "-dBzG_eTgHs",
@@ -5493,7 +6045,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1275
     },
     {
      "id": "3aJl-QdfP3Y",
@@ -5516,7 +6069,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 860
     },
     {
      "id": "9tv4HBtiQPw",
@@ -5539,7 +6093,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 699
     },
     {
      "id": "17Ii5uAt3Os",
@@ -5562,7 +6117,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 186
     },
     {
      "id": "t99UxWerq-4",
@@ -5585,7 +6141,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 919
     },
     {
      "id": "ia3K2RgACbI",
@@ -5608,7 +6165,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 721
     }
    ],
    "guests": [
@@ -5663,7 +6221,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2899
     },
     {
      "id": "GLMhOg_53gU",
@@ -5699,7 +6258,8 @@
      "companies": [],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2926
     },
     {
      "id": "iQKUQ3-ycBs",
@@ -5731,7 +6291,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1595
     }
    ],
    "clips": [
@@ -5756,7 +6317,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1206
     },
     {
      "id": "cvSK0L91lIs",
@@ -5779,7 +6341,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 969
     },
     {
      "id": "g8YgWI6DeSs",
@@ -5802,7 +6365,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 658
     },
     {
      "id": "XMEMjJ06rqA",
@@ -5825,7 +6389,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 172
     },
     {
      "id": "xfbVCf-vtuQ",
@@ -5848,7 +6413,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1296
     },
     {
      "id": "nHQaa0QIsvI",
@@ -5871,7 +6437,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 888
     },
     {
      "id": "xf-HII36yy4",
@@ -5894,7 +6461,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 649
     },
     {
      "id": "-NKcCQaxRRY",
@@ -5917,7 +6485,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 201
     },
     {
      "id": "PeamR8GbZjY",
@@ -5940,7 +6509,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 741
     },
     {
      "id": "Tz9dd1xUaQ0",
@@ -5963,7 +6533,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 890
     }
    ],
    "guests": [
@@ -6017,7 +6588,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2903
     },
     {
      "id": "o1EEpZCPe6Y",
@@ -6053,7 +6625,8 @@
      "companies": [],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2919
     },
     {
      "id": "qliUS3gF1sk",
@@ -6085,7 +6658,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1594
     }
    ],
    "clips": [
@@ -6110,7 +6684,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1261
     },
     {
      "id": "ZVzqd1APqM8",
@@ -6133,7 +6708,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 795
     },
     {
      "id": "2EQQAkJbAzA",
@@ -6156,7 +6732,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 179
     },
     {
      "id": "xXNYD3UXJdg",
@@ -6179,7 +6756,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 774
     },
     {
      "id": "_hmi4XhD6Cg",
@@ -6202,7 +6780,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1331
     },
     {
      "id": "9CJCtEnu9hY",
@@ -6225,7 +6804,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 932
     },
     {
      "id": "SAmlA2-0Mg8",
@@ -6248,7 +6828,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 595
     },
     {
      "id": "omIgndnSOYU",
@@ -6271,7 +6852,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 170
     },
     {
      "id": "OS63ji3Y9so",
@@ -6294,7 +6876,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 885
     },
     {
      "id": "a659okdZ-GY",
@@ -6317,7 +6900,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 745
     }
    ],
    "guests": [
@@ -6372,7 +6956,8 @@
      "companies": [],
      "part": 2,
      "part_label": "上集",
-     "segment": null
+     "segment": null,
+     "duration": 2903
     },
     {
      "id": "A-Lqlo7-qGU",
@@ -6414,7 +6999,8 @@
      ],
      "part": 3,
      "part_label": "中集",
-     "segment": null
+     "segment": null,
+     "duration": 2917
     },
     {
      "id": "DJQeZBTNaeY",
@@ -6446,7 +7032,8 @@
      "companies": [],
      "part": 4,
      "part_label": "下集",
-     "segment": null
+     "segment": null,
+     "duration": 1598
     }
    ],
    "clips": [
@@ -6471,7 +7058,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 1
+     "segment": 1,
+     "duration": 1328
     },
     {
      "id": "KwiIBqgRqAU",
@@ -6494,7 +7082,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 2
+     "segment": 2,
+     "duration": 854
     },
     {
      "id": "rZug6VSV36Y",
@@ -6517,7 +7106,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 3
+     "segment": 3,
+     "duration": 665
     },
     {
      "id": "pGq4jHGxPqg",
@@ -6540,7 +7130,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 4
+     "segment": 4,
+     "duration": 162
     },
     {
      "id": "b__1gM-BCpw",
@@ -6569,7 +7160,8 @@
      ],
      "part": null,
      "part_label": "",
-     "segment": 5
+     "segment": 5,
+     "duration": 1342
     },
     {
      "id": "Q0lQp1_HAbI",
@@ -6592,7 +7184,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 6
+     "segment": 6,
+     "duration": 935
     },
     {
      "id": "6XArFEuxxbQ",
@@ -6615,7 +7208,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 7
+     "segment": 7,
+     "duration": 615
     },
     {
      "id": "Md8cLqDV3J4",
@@ -6638,7 +7232,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 8
+     "segment": 8,
+     "duration": 133
     },
     {
      "id": "AHDSRyytZz8",
@@ -6661,7 +7256,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 9
+     "segment": 9,
+     "duration": 907
     },
     {
      "id": "ezmIxG1rXN8",
@@ -6684,7 +7280,8 @@
      "companies": [],
      "part": null,
      "part_label": "",
-     "segment": 10
+     "segment": 10,
+     "duration": 727
     }
    ],
    "guests": [
@@ -6703,380 +7300,6 @@
    ],
    "hashtags": [],
    "title": "最後一哩路誰先衝? 中秋前該抱還是跑? AI股Q4接棒金融! 打底股.強勢股誰先噴? · 半導體赴美潮爆發 誰是台積電下一棒? CPO降規.記憶體讓利 真假利空一次破解! · 美國重押太空 台廠新軍火庫曝光!? 17%配息好香? 拆解ETF高配息真相!",
-   "parts_title": "完整版",
-   "clips_title": "主題片段",
-   "host": "李蜀芳"
-  },
-  {
-   "channel": "錢線百分百",
-   "date": "2026-09-18",
-   "full": null,
-   "parts": [
-    {
-     "id": "EG8rIcfyDQU",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20260918完整版(上集)《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》│非凡財經新聞│",
-     "topic": "美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?",
-     "raw_title": "【錢線百分百】20260918完整版(上集)《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!"
-      },
-      {
-       "time": "21:54",
-       "topic": "◎川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?"
-      },
-      {
-       "time": "34:40",
-       "topic": "◎台股\"壓越久噴越高\"? 外資將認錯回補?"
-      }
-     ],
-     "hashtags": [],
-     "companies": [],
-     "part": 2,
-     "part_label": "上集",
-     "segment": null
-    },
-    {
-     "id": "d22r7NxiH3Y",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20260918完整版(中集)《AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》│非凡財經新聞│",
-     "topic": "AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?",
-     "raw_title": "【錢線百分百】20260918完整版(中集)《AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎AI砸錢猛.成長股接棒! 美股續戰新高?"
-      },
-      {
-       "time": "18:10",
-       "topic": "◎台股中秋會變盤嗎? 漢測掛牌誰接棒漲?"
-      },
-      {
-       "time": "35:31",
-       "topic": "◎一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?"
-      }
-     ],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "漢測",
-       "code": "7856",
-       "market": "上櫃"
-      }
-     ],
-     "part": 3,
-     "part_label": "中集",
-     "segment": null
-    },
-    {
-     "id": "gi5cX7glFCk",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20260918完整版(下集)《重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?》│非凡財經新聞│",
-     "topic": "重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?",
-     "raw_title": "【錢線百分百】20260918完整版(下集)《重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎重傷比奪命賠更多? 律師拆解驚人迷思!"
-      },
-      {
-       "time": "10:18",
-       "topic": "◎實體AI大軍出動 工業電腦.功率元件誰吃香?"
-      }
-     ],
-     "hashtags": [],
-     "companies": [],
-     "part": 4,
-     "part_label": "下集",
-     "segment": null
-    }
-   ],
-   "clips": [
-    {
-     "id": "IzbtucOVkaU",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!》【錢線百分百】20260918-1│非凡財經新聞│",
-     "topic": "美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!",
-     "raw_title": "《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!》【錢線百分百】20260918-1│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 1
-    },
-    {
-     "id": "WGqFh9HWkoE",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》【錢線百分百】20260918-2│非凡財經新聞│",
-     "topic": "川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?",
-     "raw_title": "《川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》【錢線百分百】20260918-2│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 2
-    },
-    {
-     "id": "iVy49HUUioI",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-3│非凡財經新聞│",
-     "topic": "台股\"壓越久噴越高\"? 外資將認錯回補?",
-     "raw_title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-3│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 3
-    },
-    {
-     "id": "FuTbna7qwTA",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-4│非凡財經新聞│",
-     "topic": "台股\"壓越久噴越高\"? 外資將認錯回補?",
-     "raw_title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-4│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 4
-    },
-    {
-     "id": "mYbjONKq2-Q",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《AI砸錢猛.成長股接棒! 美股續戰新高?》【錢線百分百】20260918-5│非凡財經新聞│",
-     "topic": "AI砸錢猛.成長股接棒! 美股續戰新高?",
-     "raw_title": "《AI砸錢猛.成長股接棒! 美股續戰新高?》【錢線百分百】20260918-5│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 5
-    },
-    {
-     "id": "9WREO0uu4gI",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》【錢線百分百】20260918-6│非凡財經新聞│",
-     "topic": "台股中秋會變盤嗎? 漢測掛牌誰接棒漲?",
-     "raw_title": "《台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》【錢線百分百】20260918-6│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "漢測",
-       "code": "7856",
-       "market": "上櫃"
-      }
-     ],
-     "part": null,
-     "part_label": "",
-     "segment": 6
-    },
-    {
-     "id": "2tNNF7oskYw",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-7│非凡財經新聞│",
-     "topic": "一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?",
-     "raw_title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-7│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 7
-    },
-    {
-     "id": "7lyCTPBUOes",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-8│非凡財經新聞│",
-     "topic": "一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?",
-     "raw_title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-8│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-18",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 8
-    },
-    {
-     "id": "9daY8tXhLyQ",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《重傷比奪命賠更多? 律師拆解驚人迷思!》【錢線百分百】20260918-9│非凡財經新聞│",
-     "topic": "重傷比奪命賠更多? 律師拆解驚人迷思!",
-     "raw_title": "《重傷比奪命賠更多? 律師拆解驚人迷思!》【錢線百分百】20260918-9│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-19",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 9
-    },
-    {
-     "id": "n9ABNZHKSZw",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《實體AI大軍出動 工業電腦.功率元件誰吃香?》【錢線百分百】20260918-10│非凡財經新聞│",
-     "topic": "實體AI大軍出動 工業電腦.功率元件誰吃香?",
-     "raw_title": "《實體AI大軍出動 工業電腦.功率元件誰吃香?》【錢線百分百】20260918-10│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-09-19",
-     "show_date": "2026-09-18",
-     "guests": [
-      "陳龍",
-      "蔡明翰",
-      "蘇家宏",
-      "呂漢威"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 10
-    }
-   ],
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "companies": [
-    {
-     "name": "漢測",
-     "code": "7856",
-     "market": "上櫃",
-     "count": 2
-    }
-   ],
-   "hashtags": [],
-   "title": "美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強? · AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲? · 重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?",
    "parts_title": "完整版",
    "clips_title": "主題片段",
    "host": "李蜀芳"
@@ -7107,7 +7330,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1196
   },
   {
    "id": "ZwhlZbF1IP4",
@@ -7127,7 +7351,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 110
   },
   {
    "id": "9mAtgClClJs",
@@ -7145,7 +7370,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 52
   },
   {
    "id": "Lm839L7Ts_0",
@@ -7163,7 +7389,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 94
   },
   {
    "id": "0s-cOT4tLp4",
@@ -7181,23 +7408,24 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 136
   },
   {
-   "id": "LqoKC09Ubrw",
+   "id": "9daY8tXhLyQ",
    "channel": "錢線百分百",
    "kind": "clip",
-   "title": "《美伊戰恐拖過大選? 川普期中選舉牌怎打?》【錢線百分百】20260917-9│非凡財經新聞│",
-   "topic": "美伊戰恐拖過大選? 川普期中選舉牌怎打?",
-   "raw_title": "《美伊戰恐拖過大選? 川普期中選舉牌怎打?》【錢線百分百】20260917-9│非凡財經新聞│",
+   "title": "《重傷比奪命賠更多? 律師拆解驚人迷思!》【錢線百分百】20260918-9│非凡財經新聞│",
+   "topic": "重傷比奪命賠更多? 律師拆解驚人迷思!",
+   "raw_title": "《重傷比奪命賠更多? 律師拆解驚人迷思!》【錢線百分百】20260918-9│非凡財經新聞│",
    "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
+   "published": "2026-09-19",
+   "show_date": "2026-09-18",
    "guests": [
-    "李蜀芳",
-    "謝明哲",
-    "吳嘉隆",
-    "錢冠州"
+    "陳龍",
+    "蔡明翰",
+    "蘇家宏",
+    "呂漢威"
    ],
    "chapters": [],
    "hashtags": [],
@@ -7207,20 +7435,20 @@
    "segment": 9
   },
   {
-   "id": "EODGdo_LR7A",
+   "id": "n9ABNZHKSZw",
    "channel": "錢線百分百",
    "kind": "clip",
-   "title": "《總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?》【錢線百分百】20260917-10│非凡財經新聞│",
-   "topic": "總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?",
-   "raw_title": "《總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?》【錢線百分百】20260917-10│非凡財經新聞│",
+   "title": "《實體AI大軍出動 工業電腦.功率元件誰吃香?》【錢線百分百】20260918-10│非凡財經新聞│",
+   "topic": "實體AI大軍出動 工業電腦.功率元件誰吃香?",
+   "raw_title": "《實體AI大軍出動 工業電腦.功率元件誰吃香?》【錢線百分百】20260918-10│非凡財經新聞│",
    "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
+   "published": "2026-09-19",
+   "show_date": "2026-09-18",
    "guests": [
-    "李蜀芳",
-    "謝明哲",
-    "吳嘉隆",
-    "錢冠州"
+    "陳龍",
+    "蔡明翰",
+    "蘇家宏",
+    "呂漢威"
    ],
    "chapters": [],
    "hashtags": [],
@@ -7255,7 +7483,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 69
   },
   {
    "id": "Aq0_1P3b0ik",
@@ -7275,7 +7504,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 53
   },
   {
    "id": "OTOO2YHwebs",
@@ -7301,7 +7531,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 61
   },
   {
    "id": "Nv9EH5QRF-M",
@@ -7322,7 +7553,8 @@
    "companies": [],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 919
   },
   {
    "id": "UFYpu886dek",
@@ -7343,7 +7575,8 @@
    "companies": [],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 836
   },
   {
    "id": "StxfbMZ23bM",
@@ -7364,7 +7597,8 @@
    "companies": [],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1041
   },
   {
    "id": "mEDQabUz_XE",
@@ -7415,7 +7649,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2984
   },
   {
    "id": "Qn3B4QKFA0s",
@@ -7441,7 +7676,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1196
   },
   {
    "id": "LI89MBX7eDQ",
@@ -7472,7 +7708,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 60
   },
   {
    "id": "8l83Za7Nhnk",
@@ -7503,7 +7740,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 52
   },
   {
    "id": "ApzZ5vXJ70U",
@@ -7529,7 +7767,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 70
   },
   {
    "id": "Kb4OWaNPR-k",
@@ -7565,7 +7804,8 @@
    ],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 915
   },
   {
    "id": "Mrey1bpaQ5A",
@@ -7606,7 +7846,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 842
   },
   {
    "id": "HvSD3sB-X1Y",
@@ -7647,7 +7888,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1047
   },
   {
    "id": "AQI_coyazqo",
@@ -7712,7 +7954,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2930
   },
   {
    "id": "lONcHxLbk8E",
@@ -7738,7 +7981,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 95
   },
   {
    "id": "SkD3oJmgGZc",
@@ -7764,7 +8008,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 64
   },
   {
    "id": "OQpDYheNkPA",
@@ -7784,7 +8029,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 63
   },
   {
    "id": "jqMmZ4kQ8t4",
@@ -7820,7 +8066,8 @@
    ],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 924
   },
   {
    "id": "SxoFci-7aHQ",
@@ -7851,7 +8098,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 837
   },
   {
    "id": "vqMcPKmQuzQ",
@@ -7882,7 +8130,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1039
   },
   {
    "id": "nO_b_80e9VU",
@@ -7952,7 +8201,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2929
   },
   {
    "id": "ZwhlZbF1IP4",
@@ -7972,7 +8222,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 110
   },
   {
    "id": "KriFQuwJleo",
@@ -7998,7 +8249,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 71
   },
   {
    "id": "vytHS1EevsY",
@@ -8016,7 +8268,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 72
   },
   {
    "id": "mbD3uR4TK6Q",
@@ -8034,7 +8287,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 71
   },
   {
    "id": "RceilRou_FI",
@@ -8052,7 +8306,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 59
   },
   {
    "id": "Mt0XqGmsud0",
@@ -8090,7 +8345,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1600
   },
   {
    "id": "1zm3RagLnIU",
@@ -8127,7 +8383,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1295
   },
   {
    "id": "DZycaSMex7g",
@@ -8163,7 +8420,8 @@
    ],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 955
   },
   {
    "id": "sW2i-6hu48Y",
@@ -8194,7 +8452,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 800
   },
   {
    "id": "KuRdmLhT_wM",
@@ -8225,7 +8484,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1034
   },
   {
    "id": "yVDXFFDv7sY",
@@ -8300,7 +8560,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2923
   },
   {
    "id": "SMgwD-npq3g",
@@ -8355,7 +8616,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2979
   },
   {
    "id": "1tgvnOr1Rd4",
@@ -8375,7 +8637,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 60
   },
   {
    "id": "RFuve89cZgI",
@@ -8395,7 +8658,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 57
   },
   {
    "id": "rPdk_Qws1Qw",
@@ -8421,7 +8685,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 56
   },
   {
    "id": "JNnWz8UDKe4",
@@ -8443,7 +8708,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 63
   },
   {
    "id": "2tv4XhFg7bE",
@@ -8465,7 +8731,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 67
   },
   {
    "id": "x1OoP8531EU",
@@ -8493,7 +8760,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 43
   },
   {
    "id": "zdAkvsQkMCk",
@@ -8536,7 +8804,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1644
   },
   {
    "id": "5UAkA5cqTyE",
@@ -8573,7 +8842,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1246
   },
   {
    "id": "puFbS_C219Y",
@@ -8604,7 +8874,8 @@
    ],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 914
   },
   {
    "id": "Ugu2W1Db96o",
@@ -8629,7 +8900,8 @@
    "companies": [],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 846
   },
   {
    "id": "Lq6Hk2qA7iw",
@@ -8660,7 +8932,8 @@
    ],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1043
   },
   {
    "id": "SNebDOzkNAA",
@@ -8740,7 +9013,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2928
   },
   {
    "id": "XtRPmHSoh2Y",
@@ -8795,7 +9069,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2930
   },
   {
    "id": "Eq7nJIM_kYI",
@@ -8826,7 +9101,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 73
   },
   {
    "id": "vnXhhUOY23s",
@@ -8852,7 +9128,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 84
   },
   {
    "id": "AwQetpXNFYw",
@@ -8872,7 +9149,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 74
   },
   {
    "id": "iNYt0hkCvyc",
@@ -8905,7 +9183,8 @@
    ],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 927
   },
   {
    "id": "UMVdKrV8AdU",
@@ -8938,7 +9217,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 853
   },
   {
    "id": "ib35BhGfUqk",
@@ -8965,7 +9245,8 @@
    "companies": [],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1018
   },
   {
    "id": "Ub0808onQm8",
@@ -9032,7 +9313,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2930
   },
   {
    "id": "9mAtgClClJs",
@@ -9050,7 +9332,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 52
   },
   {
    "id": "Lm839L7Ts_0",
@@ -9068,7 +9351,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 94
   },
   {
    "id": "0s-cOT4tLp4",
@@ -9086,7 +9370,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 136
   },
   {
    "id": "xM6h4CPc6k8",
@@ -9182,206 +9467,6 @@
    "segment": null
   },
   {
-   "id": "Fhk_er-4Ico",
-   "channel": "理財達人秀",
-   "kind": "full",
-   "title": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-   "topic": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-   "raw_title": "【理財達人秀】輝達給大單 黃仁勳喊銷量翻倍！投信買轉強CPO 主力買封測！止跌？PCB反攻看籌碼！央行大放水 Q4續漲股！｜李兆華、鍾國忠、黃豐凱、權證小哥2026.09.18【電視完整版】",
-   "series": "理財達人秀",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "李兆華",
-    "鍾國忠",
-    "黃豐凱",
-    "權證小哥"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "大漲892點收復47K 節前抱或賣?鎖股誰?"
-    },
-    {
-     "time": "03:45",
-     "topic": "美.日升息 台灣凍漲 低利造資金行情?"
-    },
-    {
-     "time": "19:03",
-     "topic": "輝達晶片銷量翻倍! 升息落地誰先衝?"
-    },
-    {
-     "time": "34:14",
-     "topic": "CCL爆降規鬼故事 外資送暖 滿血復活?"
-    }
-   ],
-   "hashtags": [
-    "PCB",
-    "輝達",
-    "黃仁勳"
-   ],
-   "companies": [
-    {
-     "name": "輝達",
-     "code": "NVDA",
-     "market": "美股"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "yWakly7VRCc",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-   "topic": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-   "raw_title": "【理財達人秀】升息不怕！ 台灣賺強美元 主動基金 比ETF績效更好？｜李兆華、股魚 2026.09.17 part3",
-   "series": "理財達人秀",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
-   "guests": [
-    "李兆華",
-    "股魚"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "基富通",
-    "定期定額",
-    "低檔智動投",
-    "台股基金"
-   ],
-   "companies": [],
-   "part": 3,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "S2ceMYccQ0E",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚",
-   "topic": "存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚",
-   "raw_title": "👑 存股教父股魚親授！買同款股票報酬卻差一大截？曝光主動ETF被黑手「偷狙擊」的暗黑內幕！💥 feat.股魚 #理財達人秀",
-   "series": "",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "股魚"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "MCubIuJfLpk",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰",
-   "topic": "選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰",
-   "raw_title": "👑 選股教練唯泰警告！別被鬼故事騙去割肉！慘跌跌停的熱門股竟藏著大戶偷撿的買點？🩸 feat.陳唯泰 #理財達人秀",
-   "series": "",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳唯泰"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "7DCLxFqG-hg",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富",
-   "topic": "報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富",
-   "raw_title": "👑 報價天王信富爆料！台積電本益比竟不到20倍？這數字算出台股下半年的發財密碼！🔥 feat.林信富 #理財達人秀",
-   "series": "",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "林信富"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "9QvxrDTZYoQ",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-   "topic": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-   "raw_title": "【理財達人秀】M9要降級？ CCL三雄錯殺了 2奈米旺 設備、封測迎主場｜李兆華、陳唯泰 2026.09.17 part2",
-   "series": "理財達人秀",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
-   "guests": [
-    "李兆華",
-    "陳唯泰"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "基富通",
-    "定期定額",
-    "低檔智動投",
-    "台股基金"
-   ],
-   "companies": [],
-   "part": 2,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "OHUouezCsyo",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-   "topic": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-   "raw_title": "【理財達人秀】上影線攻一半 選舉接棒？ 華邦記憶拼圖 CPO看上游｜李兆華、林信富 2026.09.17 part1",
-   "series": "理財達人秀",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
-   "guests": [
-    "李兆華",
-    "林信富"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "基富通",
-    "定期定額",
-    "低檔智動投",
-    "台股基金"
-   ],
-   "companies": [
-    {
-     "name": "華邦電",
-     "code": "2344",
-     "market": "上市"
-    }
-   ],
-   "part": 1,
-   "part_label": "",
-   "segment": null
-  },
-  {
    "id": "yV8LoO4eVBg",
    "channel": "孫慶龍",
    "kind": "single",
@@ -9397,7 +9482,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 4531
   },
   {
    "id": "PY-0jy2dVhs",
@@ -9415,7 +9501,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1278
   },
   {
    "id": "eIdSA5MiItQ",
@@ -9433,7 +9520,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1204
   },
   {
    "id": "wH1pgToVX_I",
@@ -9477,25 +9565,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "GYgYf-IEYpg",
-   "channel": "孫慶龍",
-   "kind": "single",
-   "title": "別再沖來沖去，買「它」等變天",
-   "topic": "別再沖來沖去，買「它」等變天",
-   "raw_title": "別再沖來沖去，買「它」等變天",
-   "series": "",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1475
   },
   {
    "id": "yxJE0aOXh_U",
@@ -9515,7 +9586,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2415
   },
   {
    "id": "Y54ZjcLKijU",
@@ -9533,7 +9605,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1405
   },
   {
    "id": "Z3qpBDnlFUk",
@@ -9551,25 +9624,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "OcffITiTr9w",
-   "channel": "闕又上",
-   "kind": "single",
-   "title": "【又上生活漫談# 312】「生活和生命中的暫停鍵」  |  2026 投資小白 週末班 開放報名   | 會員訂閱  | 闕又上 2026.9.18",
-   "topic": "「生活和生命中的暫停鍵」",
-   "raw_title": "【又上生活漫談# 312】「生活和生命中的暫停鍵」  |  2026 投資小白 週末班 開放報名   | 會員訂閱  | 闕又上 2026.9.18",
-   "series": "又上生活漫談#312",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1995
   },
   {
    "id": "FsIraI_ezPI",
@@ -9642,7 +9698,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1986
   },
   {
    "id": "eHz1_TGAo4I",
@@ -9713,7 +9770,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1856
   },
   {
    "id": "wBb7G4Ifd34",
@@ -9776,7 +9834,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2133
   },
   {
    "id": "dknQKeMAkvU",
@@ -9794,7 +9853,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1100
   },
   {
    "id": "TVKacGhmAm4",
@@ -9849,7 +9909,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2029
   },
   {
    "id": "Xlj2cBFC7_s",
@@ -9923,7 +9984,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1956
   },
   {
    "id": "U4RH_CPe3GQ",
@@ -9978,7 +10040,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1901
   },
   {
    "id": "EJdsmRgakkU",
@@ -10041,74 +10104,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "Ulz539c38mw",
-   "channel": "游庭皓",
-   "kind": "single",
-   "title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
-   "topic": "台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?",
-   "raw_title": "2026/9/18(五)台灣央行 為何不升息?第2戶貸款回7成 房市底部到了?【早晨財經速解讀】",
-   "series": "早晨財經速解讀",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "市場總覽"
-    },
-    {
-     "time": "01:50",
-     "topic": "凍漲利率"
-    },
-    {
-     "time": "05:30",
-     "topic": "通膨低估"
-    },
-    {
-     "time": "08:00",
-     "topic": "通膨外溢"
-    },
-    {
-     "time": "10:30",
-     "topic": "貨幣政策偏緊"
-    },
-    {
-     "time": "15:30",
-     "topic": "房市管制放鬆"
-    },
-    {
-     "time": "18:20",
-     "topic": "房市轉折"
-    },
-    {
-     "time": "23:00",
-     "topic": "央行考量"
-    },
-    {
-     "time": "25:40",
-     "topic": "現實考量"
-    },
-    {
-     "time": "27:45",
-     "topic": "新富時代"
-    },
-    {
-     "time": "30:00",
-     "topic": "楊流來了"
-    },
-    {
-     "time": "31:40",
-     "topic": "世界為什麼越來越分裂"
-    }
-   ],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1968
   },
   {
    "id": "t7QvjPVwlks",
@@ -10128,7 +10125,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 57
   },
   {
    "id": "G6W8L5aAlEk",
@@ -10151,7 +10149,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 755
   },
   {
    "id": "1qlRT99RVjs",
@@ -10174,7 +10173,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 883
   },
   {
    "id": "T3G5ij09agk",
@@ -10197,7 +10197,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 540
   },
   {
    "id": "jJskSLCLdDw",
@@ -10226,7 +10227,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1285
   },
   {
    "id": "PayW02ndvWc",
@@ -10249,7 +10251,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 874
   },
   {
    "id": "2UYQ5OgCuuY",
@@ -10272,7 +10275,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 327
   },
   {
    "id": "7iUxP_cg5E4",
@@ -10295,7 +10299,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 699
   },
   {
    "id": "z3O0_KxL0JY",
@@ -10318,7 +10323,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 244
   },
   {
    "id": "CHGAehRns0A",
@@ -10341,7 +10347,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 798
   },
   {
    "id": "cD1ezFfM1J8",
@@ -10364,7 +10371,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1277
   },
   {
    "id": "HdblU3aRgy4",
@@ -10396,7 +10404,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1602
   },
   {
    "id": "41cCl2mso3c",
@@ -10438,7 +10447,8 @@
    ],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2919
   },
   {
    "id": "rkPZXH_yBdg",
@@ -10474,7 +10484,8 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2911
   },
   {
    "id": "-LV3yL_NN6A",
@@ -10494,7 +10505,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 57
   },
   {
    "id": "MrfWz3sQRWM",
@@ -10523,7 +10535,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 750
   },
   {
    "id": "LyxRnhu1res",
@@ -10546,7 +10559,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 889
   },
   {
    "id": "5192XkhSOKE",
@@ -10569,7 +10583,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 333
   },
   {
    "id": "Axmp_fZPVSs",
@@ -10592,7 +10607,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 897
   },
   {
    "id": "WeLK4ZSyDNM",
@@ -10615,7 +10631,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 678
   },
   {
    "id": "diXO1c2FMJQ",
@@ -10638,7 +10655,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1121
   },
   {
    "id": "w9WMtrhVRcw",
@@ -10661,7 +10679,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 820
   },
   {
    "id": "5Khf8fFE6r4",
@@ -10690,7 +10709,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 620
   },
   {
    "id": "ddMeM1rz4ZU",
@@ -10728,7 +10748,8 @@
    ],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1603
   },
   {
    "id": "ahNSNeuac9U",
@@ -10752,7 +10773,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 246
   },
   {
    "id": "xwpE6bLx54M",
@@ -10781,7 +10803,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1329
   },
   {
    "id": "ppii2TalbHE",
@@ -10817,7 +10840,8 @@
    "companies": [],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2920
   },
   {
    "id": "X4Ap1NN51_U",
@@ -10864,7 +10888,8 @@
    ],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2907
   },
   {
    "id": "rCOP8ln3S3o",
@@ -10884,7 +10909,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 57
   },
   {
    "id": "JfHzqrtOvf8",
@@ -10906,7 +10932,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1246
   },
   {
    "id": "Z9cgg1kbi9k",
@@ -10928,7 +10955,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 208
   },
   {
    "id": "Anhd9Brl6CY",
@@ -10950,7 +10978,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 610
   },
   {
    "id": "wlew5o7T7UM",
@@ -10972,7 +11001,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 1016
   },
   {
    "id": "jwBLRBFD2Ho",
@@ -11011,7 +11041,8 @@
    "companies": [],
    "part": 1,
    "part_label": "全集",
-   "segment": null
+   "segment": null,
+   "duration": 2975
   },
   {
    "id": "aRXSz853x4c",
@@ -11033,7 +11064,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 652
   },
   {
    "id": "-5dtKaS2_DM",
@@ -11055,7 +11087,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1364
   },
   {
    "id": "AMR_QUMrvog",
@@ -11077,7 +11110,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 924
   },
   {
    "id": "mI4da6T3tDI",
@@ -11099,7 +11133,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 145
   },
   {
    "id": "xmOfTYM7R88",
@@ -11138,7 +11173,8 @@
    "companies": [],
    "part": 1,
    "part_label": "全集",
-   "segment": null
+   "segment": null,
+   "duration": 2980
   },
   {
    "id": "ia3K2RgACbI",
@@ -11161,7 +11197,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 721
   },
   {
    "id": "t99UxWerq-4",
@@ -11184,7 +11221,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 919
   },
   {
    "id": "9tv4HBtiQPw",
@@ -11207,7 +11245,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 699
   },
   {
    "id": "17Ii5uAt3Os",
@@ -11230,7 +11269,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 186
   },
   {
    "id": "-dBzG_eTgHs",
@@ -11253,7 +11293,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1275
   },
   {
    "id": "3aJl-QdfP3Y",
@@ -11276,7 +11317,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 860
   },
   {
    "id": "hTvyhLfm9BY",
@@ -11299,7 +11341,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 236
   },
   {
    "id": "10EfYvzwfic",
@@ -11322,7 +11365,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 651
   },
   {
    "id": "5Y81XI8FmeM",
@@ -11354,7 +11398,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1605
   },
   {
    "id": "qqOGW5S52qs",
@@ -11377,7 +11422,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1193
   },
   {
    "id": "c7yt8yJNf1Y",
@@ -11400,7 +11446,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 930
   },
   {
    "id": "i8-QFS8DfQ4",
@@ -11436,7 +11483,8 @@
    "companies": [],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2911
   },
   {
    "id": "6EDXHr9N8Yw",
@@ -11472,7 +11520,8 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2904
   },
   {
    "id": "Kfey5LEQ5cI",
@@ -11492,7 +11541,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 51
   },
   {
    "id": "PeamR8GbZjY",
@@ -11515,7 +11565,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 741
   },
   {
    "id": "Tz9dd1xUaQ0",
@@ -11538,7 +11589,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 890
   },
   {
    "id": "xfbVCf-vtuQ",
@@ -11561,7 +11613,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1296
   },
   {
    "id": "xf-HII36yy4",
@@ -11584,7 +11637,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 649
   },
   {
    "id": "-NKcCQaxRRY",
@@ -11607,7 +11661,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 201
   },
   {
    "id": "nHQaa0QIsvI",
@@ -11630,7 +11685,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 888
   },
   {
    "id": "iQKUQ3-ycBs",
@@ -11662,7 +11718,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1595
   },
   {
    "id": "XfOb72k-W9E",
@@ -11685,7 +11742,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1206
   },
   {
    "id": "g8YgWI6DeSs",
@@ -11708,7 +11766,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 658
   },
   {
    "id": "cvSK0L91lIs",
@@ -11731,7 +11790,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 969
   },
   {
    "id": "XMEMjJ06rqA",
@@ -11754,7 +11814,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 172
   },
   {
    "id": "GLMhOg_53gU",
@@ -11790,7 +11851,8 @@
    "companies": [],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2926
   },
   {
    "id": "eDnA7JzyAhs",
@@ -11826,7 +11888,8 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2899
   },
   {
    "id": "_baGFCpGSao",
@@ -11846,7 +11909,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 54
   },
   {
    "id": "a659okdZ-GY",
@@ -11869,7 +11933,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 745
   },
   {
    "id": "OS63ji3Y9so",
@@ -11892,7 +11957,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 885
   },
   {
    "id": "9CJCtEnu9hY",
@@ -11915,7 +11981,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 932
   },
   {
    "id": "_hmi4XhD6Cg",
@@ -11938,7 +12005,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1331
   },
   {
    "id": "SAmlA2-0Mg8",
@@ -11961,7 +12029,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 595
   },
   {
    "id": "b__1gM-BCpw",
@@ -11990,7 +12059,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1342
   },
   {
    "id": "omIgndnSOYU",
@@ -12013,7 +12083,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 170
   },
   {
    "id": "DGxBJnLVRXk",
@@ -12036,7 +12107,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1261
   },
   {
    "id": "ZVzqd1APqM8",
@@ -12059,7 +12131,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 795
   },
   {
    "id": "qliUS3gF1sk",
@@ -12091,7 +12164,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1594
   },
   {
    "id": "2EQQAkJbAzA",
@@ -12114,7 +12188,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 179
   },
   {
    "id": "xXNYD3UXJdg",
@@ -12137,7 +12212,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 774
   },
   {
    "id": "o1EEpZCPe6Y",
@@ -12173,7 +12249,8 @@
    "companies": [],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2919
   },
   {
    "id": "pWe61ujn804",
@@ -12209,7 +12286,8 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2903
   },
   {
    "id": "ZahF3R8uUp0",
@@ -12229,7 +12307,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 60
   },
   {
    "id": "AHDSRyytZz8",
@@ -12252,7 +12331,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 907
   },
   {
    "id": "ezmIxG1rXN8",
@@ -12275,7 +12355,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 727
   },
   {
    "id": "Q0lQp1_HAbI",
@@ -12298,7 +12379,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 935
   },
   {
    "id": "Md8cLqDV3J4",
@@ -12321,7 +12403,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 133
   },
   {
    "id": "6XArFEuxxbQ",
@@ -12344,7 +12427,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 615
   },
   {
    "id": "rZug6VSV36Y",
@@ -12367,7 +12451,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 665
   },
   {
    "id": "DJQeZBTNaeY",
@@ -12399,7 +12484,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1598
   },
   {
    "id": "MvQN5bFfxRE",
@@ -12422,7 +12508,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1328
   },
   {
    "id": "KwiIBqgRqAU",
@@ -12445,7 +12532,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 854
   },
   {
    "id": "pGq4jHGxPqg",
@@ -12468,7 +12556,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 162
   },
   {
    "id": "A-Lqlo7-qGU",
@@ -12510,7 +12599,8 @@
    ],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2917
   },
   {
    "id": "GIi57l__kss",
@@ -12546,7 +12636,8 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2903
   },
   {
    "id": "HmzHlcG_LiQ",
@@ -12566,7 +12657,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 47
   },
   {
    "id": "9daY8tXhLyQ",
@@ -12615,372 +12707,6 @@
    "segment": 10
   },
   {
-   "id": "2tNNF7oskYw",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-7│非凡財經新聞│",
-   "topic": "一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?",
-   "raw_title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-7│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 7
-  },
-  {
-   "id": "mYbjONKq2-Q",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《AI砸錢猛.成長股接棒! 美股續戰新高?》【錢線百分百】20260918-5│非凡財經新聞│",
-   "topic": "AI砸錢猛.成長股接棒! 美股續戰新高?",
-   "raw_title": "《AI砸錢猛.成長股接棒! 美股續戰新高?》【錢線百分百】20260918-5│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 5
-  },
-  {
-   "id": "7lyCTPBUOes",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-8│非凡財經新聞│",
-   "topic": "一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?",
-   "raw_title": "《一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?》【錢線百分百】20260918-8│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 8
-  },
-  {
-   "id": "9WREO0uu4gI",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》【錢線百分百】20260918-6│非凡財經新聞│",
-   "topic": "台股中秋會變盤嗎? 漢測掛牌誰接棒漲?",
-   "raw_title": "《台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》【錢線百分百】20260918-6│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "漢測",
-     "code": "7856",
-     "market": "上櫃"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": 6
-  },
-  {
-   "id": "iVy49HUUioI",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-3│非凡財經新聞│",
-   "topic": "台股\"壓越久噴越高\"? 外資將認錯回補?",
-   "raw_title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-3│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 3
-  },
-  {
-   "id": "WGqFh9HWkoE",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》【錢線百分百】20260918-2│非凡財經新聞│",
-   "topic": "川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?",
-   "raw_title": "《川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》【錢線百分百】20260918-2│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 2
-  },
-  {
-   "id": "gi5cX7glFCk",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20260918完整版(下集)《重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?》│非凡財經新聞│",
-   "topic": "重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?",
-   "raw_title": "【錢線百分百】20260918完整版(下集)《重傷比奪命賠更多? 律師拆解驚人迷思! 實體AI大軍出動 工業電腦.功率元件誰吃香?》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎重傷比奪命賠更多? 律師拆解驚人迷思!"
-    },
-    {
-     "time": "10:18",
-     "topic": "◎實體AI大軍出動 工業電腦.功率元件誰吃香?"
-    }
-   ],
-   "hashtags": [],
-   "companies": [],
-   "part": 4,
-   "part_label": "下集",
-   "segment": null
-  },
-  {
-   "id": "IzbtucOVkaU",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!》【錢線百分百】20260918-1│非凡財經新聞│",
-   "topic": "美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!",
-   "raw_title": "《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!》【錢線百分百】20260918-1│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 1
-  },
-  {
-   "id": "FuTbna7qwTA",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-4│非凡財經新聞│",
-   "topic": "台股\"壓越久噴越高\"? 外資將認錯回補?",
-   "raw_title": "《台股\"壓越久噴越高\"? 外資將認錯回補?》【錢線百分百】20260918-4│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 4
-  },
-  {
-   "id": "d22r7NxiH3Y",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20260918完整版(中集)《AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》│非凡財經新聞│",
-   "topic": "AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?",
-   "raw_title": "【錢線百分百】20260918完整版(中集)《AI砸錢猛.成長股接棒! 美股續戰新高? 台股中秋會變盤嗎? 漢測掛牌誰接棒漲?》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎AI砸錢猛.成長股接棒! 美股續戰新高?"
-    },
-    {
-     "time": "18:10",
-     "topic": "◎台股中秋會變盤嗎? 漢測掛牌誰接棒漲?"
-    },
-    {
-     "time": "35:31",
-     "topic": "◎一屋4人繼承最怕\"賣不掉\"? \"現金找補\"恐能踩雷?"
-    }
-   ],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "漢測",
-     "code": "7856",
-     "market": "上櫃"
-    }
-   ],
-   "part": 3,
-   "part_label": "中集",
-   "segment": null
-  },
-  {
-   "id": "EG8rIcfyDQU",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20260918完整版(上集)《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》│非凡財經新聞│",
-   "topic": "美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?",
-   "raw_title": "【錢線百分百】20260918完整版(上集)《美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝! 川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "陳龍",
-    "蔡明翰",
-    "蘇家宏",
-    "呂漢威"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎美日升息炸彈變彩蛋? 台股\"撿便宜\"名單曝!"
-    },
-    {
-     "time": "21:54",
-     "topic": "◎川普.黃仁勳喊AI免驚! 資安新戰場誰火力強?"
-    },
-    {
-     "time": "34:40",
-     "topic": "◎台股\"壓越久噴越高\"? 外資將認錯回補?"
-    }
-   ],
-   "hashtags": [],
-   "companies": [],
-   "part": 2,
-   "part_label": "上集",
-   "segment": null
-  },
-  {
-   "id": "DCOlPhcVJj0",
-   "channel": "錢線百分百",
-   "kind": "skip",
-   "title": "錢線百分百0918台股觀盤重點#shorts",
-   "topic": "錢線百分百0918台股觀盤重點#shorts",
-   "raw_title": "錢線百分百0918台股觀盤重點#shorts",
-   "series": "",
-   "published": "2026-09-18",
-   "show_date": "2026-09-18",
-   "guests": [
-    "shorts"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null
-  },
-  {
-   "id": "LqoKC09Ubrw",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《美伊戰恐拖過大選? 川普期中選舉牌怎打?》【錢線百分百】20260917-9│非凡財經新聞│",
-   "topic": "美伊戰恐拖過大選? 川普期中選舉牌怎打?",
-   "raw_title": "《美伊戰恐拖過大選? 川普期中選舉牌怎打?》【錢線百分百】20260917-9│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
-   "guests": [
-    "李蜀芳",
-    "謝明哲",
-    "吳嘉隆",
-    "錢冠州"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 9
-  },
-  {
-   "id": "EODGdo_LR7A",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?》【錢線百分百】20260917-10│非凡財經新聞│",
-   "topic": "總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?",
-   "raw_title": "《總經喊空vs.訂單喊多 台股\"真買點\"藏在哪?》【錢線百分百】20260917-10│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-09-18",
-   "show_date": "2026-09-17",
-   "guests": [
-    "李蜀芳",
-    "謝明哲",
-    "吳嘉隆",
-    "錢冠州"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 10
-  },
-  {
    "id": "yAiinT3nRqo",
    "channel": "理財達人秀",
    "kind": "part",
@@ -13001,7 +12727,8 @@
    "companies": [],
    "part": 3,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 953
   },
   {
    "id": "uKC9BhysGLA",
@@ -13030,7 +12757,8 @@
    ],
    "part": 2,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 797
   },
   {
    "id": "4p3_O0Tt3ic",
@@ -13053,7 +12781,8 @@
    "companies": [],
    "part": 1,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 1051
   },
   {
    "id": "1-lNHScCLq0",
@@ -13106,7 +12835,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2932
   },
   {
    "id": "BTBH4-RZZXg",
@@ -13173,7 +12903,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 2021
   },
   {
    "id": "2febJ857Fuc",
@@ -13193,7 +12924,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": null
+   "segment": null,
+   "duration": 57
   },
   {
    "id": "9eSzW4Wqszc",
@@ -13216,7 +12948,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 9
+   "segment": 9,
+   "duration": 823
   },
   {
    "id": "RXar5SuaSMA",
@@ -13239,7 +12972,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 10
+   "segment": 10,
+   "duration": 810
   },
   {
    "id": "xlcuAQxfbTY",
@@ -13262,7 +12996,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 8
+   "segment": 8,
+   "duration": 150
   },
   {
    "id": "yaVHeUP-OeM",
@@ -13296,7 +13031,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 5
+   "segment": 5,
+   "duration": 1168
   },
   {
    "id": "oV0o14PAb_I",
@@ -13335,7 +13071,8 @@
    ],
    "part": null,
    "part_label": "",
-   "segment": 6
+   "segment": 6,
+   "duration": 976
   },
   {
    "id": "co1b4wG_GX8",
@@ -13358,7 +13095,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 7
+   "segment": 7,
+   "duration": 724
   },
   {
    "id": "V7VRr2SBJ3Q",
@@ -13381,7 +13119,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 3
+   "segment": 3,
+   "duration": 214
   },
   {
    "id": "tDop-eD-gCY",
@@ -13404,7 +13143,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 4
+   "segment": 4,
+   "duration": 718
   },
   {
    "id": "El61EmcwPCU",
@@ -13436,7 +13176,8 @@
    "companies": [],
    "part": 4,
    "part_label": "下集",
-   "segment": null
+   "segment": null,
+   "duration": 1597
   },
   {
    "id": "XLa2XVYwVoU",
@@ -13459,7 +13200,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 2
+   "segment": 2,
+   "duration": 665
   },
   {
    "id": "Qmee3z-kRk4",
@@ -13482,7 +13224,8 @@
    "companies": [],
    "part": null,
    "part_label": "",
-   "segment": 1
+   "segment": 1,
+   "duration": 1424
   },
   {
    "id": "VBZbbhPiPQs",
@@ -13544,7 +13287,8 @@
    ],
    "part": 3,
    "part_label": "中集",
-   "segment": null
+   "segment": null,
+   "duration": 2910
   },
   {
    "id": "y9T9Km00lFs",
@@ -13580,7 +13324,710 @@
    "companies": [],
    "part": 2,
    "part_label": "上集",
-   "segment": null
+   "segment": null,
+   "duration": 2915
+  },
+  {
+   "id": "BjECY3NBBIA",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻",
+   "topic": "翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻",
+   "raw_title": "👑翁士峻親授！十月天花板開啟！💰跟著大戶偷卡位「低價雙題材股」狂賺做夢行情！🔥🚀 feat. 翁士峻 #理財達人秀",
+   "series": "",
+   "published": "2026-10-03",
+   "show_date": "2026-10-03",
+   "guests": [
+    "翁士峻"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 86
+  },
+  {
+   "id": "c58jdOpmgNk",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱",
+   "topic": "黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱",
+   "raw_title": "👑黃豐凱爆料！美禁中國CPO竟然是假議題？🚀這兩檔黑馬準備偷偷賺爛！🔥💸 feat. 黃豐凱 #理財達人秀",
+   "series": "",
+   "published": "2026-10-03",
+   "show_date": "2026-10-03",
+   "guests": [
+    "黃豐凱"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 96
+  },
+  {
+   "id": "ixV0XbQwJ34",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠",
+   "topic": "鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠",
+   "raw_title": "👑鍾國忠警示！台股衝5萬點別亂追！🔥下週這天不賣小心被當韭菜割？！💸🩸 feat. 鍾國忠 #理財達人秀",
+   "series": "",
+   "published": "2026-10-03",
+   "show_date": "2026-10-03",
+   "guests": [
+    "鍾國忠"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 71
+  },
+  {
+   "id": "rWSEeN8v9a8",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+   "topic": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+   "raw_title": "【理財達人秀】光輝十月戰高 兩招選股 法人漲價、大戶買 長短賺｜李兆華、翁士峻 2026.10.02 part3",
+   "series": "理財達人秀",
+   "published": "2026-10-03",
+   "show_date": "2026-10-02",
+   "guests": [
+    "李兆華",
+    "翁士峻"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "CPO",
+    "AI",
+    "台積電法說"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": 3,
+   "part_label": "",
+   "segment": null,
+   "duration": 936
+  },
+  {
+   "id": "jc_vu7wZwcc",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+   "topic": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+   "raw_title": "【理財達人秀】美禁中CPO 台廠又利多？ 投信搶補漲 鎖晶圓、被動｜李兆華、黃豐凱 2026.10.02 part2",
+   "series": "理財達人秀",
+   "published": "2026-10-03",
+   "show_date": "2026-10-02",
+   "guests": [
+    "李兆華",
+    "黃豐凱"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "CPO",
+    "AI",
+    "台積電法說"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": 2,
+   "part_label": "",
+   "segment": null,
+   "duration": 858
+  },
+  {
+   "id": "Jj8cOVffCJI",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+   "topic": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+   "raw_title": "【理財達人秀】再刷收盤高 迎集團作帳 押台積法說 設備暴利王｜李兆華、鍾國忠 2026.10.02 part1",
+   "series": "理財達人秀",
+   "published": "2026-10-03",
+   "show_date": "2026-10-02",
+   "guests": [
+    "李兆華",
+    "鍾國忠"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "CPO",
+    "AI",
+    "台積電法說"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": 1,
+   "part_label": "",
+   "segment": null,
+   "duration": 995
+  },
+  {
+   "id": "B-kPRQ9ahw8",
+   "channel": "理財達人秀",
+   "kind": "full",
+   "title": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+   "topic": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+   "raw_title": "【理財達人秀】矽晶圓.被動 投信長短賺？台積電法說押寶 設備暴利王？美禁中CPO 台廠又利多？台股再刷收盤高 迎集團作帳？｜李兆華、鍾國忠、黃豐凱、翁士峻2026.10.02【電視完整版】",
+   "series": "理財達人秀",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "李兆華",
+    "鍾國忠",
+    "黃豐凱",
+    "翁士峻"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "中小股噴 反攻不缺火力!接著搶誰 下週更兇?"
+    },
+    {
+     "time": "03:18",
+     "topic": "台積說將登場ADR挑戰新高 台股能攻5萬?"
+    },
+    {
+     "time": "18:25",
+     "topic": "美中搶 光通訊嗨! CPO一片紅怎麼挑?"
+    },
+    {
+     "time": "33:50",
+     "topic": "十月漲率7成攻5萬? 法人.大戶指路?"
+    }
+   ],
+   "hashtags": [
+    "CPO",
+    "AI",
+    "台積電法說"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2981
+  },
+  {
+   "id": "lluIWQfIRBA",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良",
+   "topic": "陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良",
+   "raw_title": "👑 陳威良揭密！🚀融資暴增不一定要逃！看錯「聰明錢」反而賣在起漲前 feat.陳威良 #理財達人秀",
+   "series": "",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳威良"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 54
+  },
+  {
+   "id": "sG3oxORwPlA",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥",
+   "topic": "籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥",
+   "raw_title": "👑 籌碼專家權證小哥親授！💸主力到底跑了沒？看懂權證大戶少追一堆高！ feat.權證小哥 #理財達人秀",
+   "series": "",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "權證小哥"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 58
+  },
+  {
+   "id": "bfCps9jTtSw",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊",
+   "topic": "股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊",
+   "raw_title": "👑 股科大夫容逸燊警告！🔥玻璃基板最怕買到假的！3關沒過小心追高被割🩸 feat.容逸燊 #理財達人秀",
+   "series": "",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "容逸燊"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 56
+  },
+  {
+   "id": "lgULQDXoZ0U",
+   "channel": "孫慶龍",
+   "kind": "single",
+   "title": "恐崩盤72%？不怕不怕我買進這檔成長股",
+   "topic": "恐崩盤72%？不怕不怕我買進這檔成長股",
+   "raw_title": "恐崩盤72%？不怕不怕我買進這檔成長股",
+   "series": "",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1081
+  },
+  {
+   "id": "VKJQNf8wGIc",
+   "channel": "闕又上",
+   "kind": "single",
+   "title": "【又上生活漫談# 313】「電影中的人性」  |  2026 投資小白 週末班 開放報名   | 會員訂閱  | 闕又上 2026.10.2",
+   "topic": "「電影中的人性」",
+   "raw_title": "【又上生活漫談# 313】「電影中的人性」  |  2026 投資小白 週末班 開放報名   | 會員訂閱  | 闕又上 2026.10.2",
+   "series": "又上生活漫談#313",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1546
+  },
+  {
+   "id": "8nOg80NFqWg",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《80%個股已修正 債息.美元夾擊釀泡沫?》【錢線百分百】20261002-10│非凡財經新聞│",
+   "topic": "80%個股已修正 債息.美元夾擊釀泡沫?",
+   "raw_title": "《80%個股已修正 債息.美元夾擊釀泡沫?》【錢線百分百】20261002-10│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-03",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 10,
+   "duration": 768
+  },
+  {
+   "id": "mGmu-rnIAJU",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《AI掀全球搶銅大戰 CCL誰悶聲發大財?》【錢線百分百】20261002-9│非凡財經新聞│",
+   "topic": "AI掀全球搶銅大戰 CCL誰悶聲發大財?",
+   "raw_title": "《AI掀全球搶銅大戰 CCL誰悶聲發大財?》【錢線百分百】20261002-9│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-03",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 9,
+   "duration": 870
+  },
+  {
+   "id": "Zi5MielfsuA",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-7│非凡財經新聞│",
+   "topic": "光輝10月上大戲! 追!台股最強連動密碼",
+   "raw_title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-7│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 7,
+   "duration": 615
+  },
+  {
+   "id": "pztmZoZyYK0",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《鴻海.記憶體何時醒? 友達能追?發哥可撿?》【錢線百分百】20261002-6│非凡財經新聞│",
+   "topic": "鴻海.記憶體何時醒? 友達能追?發哥可撿?",
+   "raw_title": "《鴻海.記憶體何時醒? 友達能追?發哥可撿?》【錢線百分百】20261002-6│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "鴻海",
+     "code": "2317",
+     "market": "上市"
+    },
+    {
+     "name": "友達",
+     "code": "2409",
+     "market": "上市"
+    },
+    {
+     "name": "聯發科",
+     "code": "2454",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 6,
+   "duration": 994
+  },
+  {
+   "id": "_NYUAdhqc5s",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《美債飆.科技股也飆? AI獲利打敗高利率!》【錢線百分百】20261002-5│非凡財經新聞│",
+   "topic": "美債飆.科技股也飆? AI獲利打敗高利率!",
+   "raw_title": "《美債飆.科技股也飆? AI獲利打敗高利率!》【錢線百分百】20261002-5│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 5,
+   "duration": 1223
+  },
+  {
+   "id": "vYvUz4eQcvc",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-8│非凡財經新聞│",
+   "topic": "光輝10月上大戲! 追!台股最強連動密碼",
+   "raw_title": "《光輝10月上大戲! 追!台股最強連動密碼》【錢線百分百】20261002-8│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 8,
+   "duration": 195
+  },
+  {
+   "id": "FgW4oLJ9zjI",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台積電2500元成低消? 搶法說行情誰先噴?》【錢線百分百】20261002-2│非凡財經新聞│",
+   "topic": "台積電2500元成低消? 搶法說行情誰先噴?",
+   "raw_title": "《台積電2500元成低消? 搶法說行情誰先噴?》【錢線百分百】20261002-2│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 2,
+   "duration": 888
+  },
+  {
+   "id": "6HCich4PJ3w",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?》【錢線百分百】20261002-1│非凡財經新聞│",
+   "topic": "台股驚漲!漲價股回神 被動.矽晶圓誰有戲?",
+   "raw_title": "《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?》【錢線百分百】20261002-1│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 1,
+   "duration": 1129
+  },
+  {
+   "id": "-BGiRxgolCw",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-3│非凡財經新聞│",
+   "topic": "台股5萬點後更瘋? 五大買盤接力衝!",
+   "raw_title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-3│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 3,
+   "duration": 722
+  },
+  {
+   "id": "nA3NQsMfeQc",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-4│非凡財經新聞│",
+   "topic": "台股5萬點後更瘋? 五大買盤接力衝!",
+   "raw_title": "《台股5萬點後更瘋? 五大買盤接力衝!》【錢線百分百】20261002-4│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 4,
+   "duration": 268
+  },
+  {
+   "id": "D_ixF3nks7s",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261002完整版(下集)《AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?》│非凡財經新聞│",
+   "topic": "AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?",
+   "raw_title": "【錢線百分百】20261002完整版(下集)《AI掀全球搶銅大戰 CCL誰悶聲發大財? 80%個股已修正 債息.美元夾擊釀泡沫?》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎AI掀全球搶銅大戰 CCL誰悶聲發大財?"
+    },
+    {
+     "time": "13:54",
+     "topic": "◎80%個股已修正 債息.美元夾擊釀泡沫?"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": 4,
+   "part_label": "下集",
+   "segment": null,
+   "duration": 1602
+  },
+  {
+   "id": "QyaWwqUnqyc",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261002完整版(中集)《美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?》│非凡財經新聞│",
+   "topic": "美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?",
+   "raw_title": "【錢線百分百】20261002完整版(中集)《美債飆.科技股也飆? AI獲利打敗高利率! 鴻海.記憶體何時醒? 友達能追?發哥可撿?》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎美債飆.科技股也飆? AI獲利打敗高利率!"
+    },
+    {
+     "time": "19:47",
+     "topic": "◎鴻海.記憶體何時醒? 友達能追?發哥可撿?"
+    },
+    {
+     "time": "35:46",
+     "topic": "◎光輝10月上大戲! 追!台股最強連動密碼"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "鴻海",
+     "code": "2317",
+     "market": "上市"
+    },
+    {
+     "name": "友達",
+     "code": "2409",
+     "market": "上市"
+    },
+    {
+     "name": "聯發科",
+     "code": "2454",
+     "market": "上市"
+    }
+   ],
+   "part": 3,
+   "part_label": "中集",
+   "segment": null,
+   "duration": 2920
+  },
+  {
+   "id": "0pAQwYeercw",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261002完整版(上集)《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?》│非凡財經新聞│",
+   "topic": "台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?",
+   "raw_title": "【錢線百分百】20261002完整版(上集)《台股驚漲!漲價股回神 被動.矽晶圓誰有戲?  台積電2500元成低消? 搶法說行情誰先噴?》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-02",
+   "show_date": "2026-10-02",
+   "guests": [
+    "陳龍",
+    "許博傑",
+    "陳智霖",
+    "呂漢威"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎台股驚漲!漲價股回神 被動.矽晶圓誰有戲?"
+    },
+    {
+     "time": "18:15",
+     "topic": "◎台積電2500元成低消? 搶法說行情誰先噴?"
+    },
+    {
+     "time": "32:24",
+     "topic": "◎台股5萬點後更瘋? 五大買盤接力衝!"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": 2,
+   "part_label": "上集",
+   "segment": null,
+   "duration": 2900
   }
  ]
 }
