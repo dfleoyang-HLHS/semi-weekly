@@ -1,6 +1,14 @@
 {
-  "latest": "2026-W40",
+  "latest": "2026-W41",
   "weeks": [
+    {
+      "week": "2026-W41",
+      "date": "2026-10-05",
+      "title": "台積電傳評估德州園區 · HBM4 報價翻三倍",
+      "file": "supplychain-2026-W41.json",
+      "node_count": 40,
+      "edge_count": 77
+    },
     {
       "week": "2026-W40",
       "date": "2026-10-01",

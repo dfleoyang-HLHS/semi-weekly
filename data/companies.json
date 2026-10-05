@@ -1,11 +1,12 @@
 [
   {
     "name": "TSMC",
-    "count": 57,
+    "count": 58,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -64,11 +65,12 @@
   },
   {
     "name": "NVIDIA",
-    "count": 57,
+    "count": 58,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -127,11 +129,12 @@
   },
   {
     "name": "Samsung",
-    "count": 57,
+    "count": 58,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -190,11 +193,12 @@
   },
   {
     "name": "SK Hynix",
-    "count": 55,
+    "count": 56,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -251,10 +255,11 @@
   },
   {
     "name": "Intel",
-    "count": 50,
+    "count": 51,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-05-31-brief",
       "2026-06-02-brief",
@@ -307,10 +312,11 @@
   },
   {
     "name": "Micron",
-    "count": 44,
+    "count": 45,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-31-brief",
       "2026-06-02-brief",
       "2026-06-07-brief",
@@ -357,11 +363,12 @@
   },
   {
     "name": "AMD",
-    "count": 36,
+    "count": 37,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-06-02-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
@@ -399,10 +406,11 @@
   },
   {
     "name": "Broadcom",
-    "count": 33,
+    "count": 34,
     "articles": [
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-06-04-brief",
       "2026-06-07-brief",
@@ -438,11 +446,12 @@
   },
   {
     "name": "ASE",
-    "count": 32,
+    "count": 33,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-28-brief",
       "2026-06-02-brief",
       "2026-06-09-brief",
@@ -476,10 +485,11 @@
   },
   {
     "name": "ASML",
-    "count": 23,
+    "count": 24,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-05-31-brief",
       "2026-06-09-brief",
       "2026-06-16-brief",
@@ -549,11 +559,12 @@
   },
   {
     "name": "JCET",
-    "count": 10,
+    "count": 11,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly",
       "2026-06-07-brief",
       "2026-06-25-brief",
       "2026-06-28-brief",
@@ -615,10 +626,20 @@
   },
   {
     "name": "Shinko",
-    "count": 2,
+    "count": 3,
     "articles": [
       "2026-W21-cowos-weekly",
+      "2026-W41-semi-weekly",
       "2026-09-30-brief"
+    ]
+  },
+  {
+    "name": "BESI",
+    "count": 3,
+    "articles": [
+      "2026-W21-cowos-weekly",
+      "2026-W22-semi-weekly",
+      "2026-W41-semi-weekly"
     ]
   },
   {
@@ -630,11 +651,59 @@
     ]
   },
   {
-    "name": "BESI",
+    "name": "Applied Materials",
     "count": 2,
     "articles": [
-      "2026-W21-cowos-weekly",
-      "2026-W22-semi-weekly"
+      "2026-W22-semi-weekly",
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Google",
+    "count": 2,
+    "articles": [
+      "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Unimicron",
+    "count": 2,
+    "articles": [
+      "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "MediaTek",
+    "count": 2,
+    "articles": [
+      "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Huawei",
+    "count": 2,
+    "articles": [
+      "2026-W40-semi-weekly",
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Meta",
+    "count": 2,
+    "articles": [
+      "2026-W41-semi-weekly",
+      "2026-10-02-brief"
+    ]
+  },
+  {
+    "name": "Tesla",
+    "count": 2,
+    "articles": [
+      "2026-W41-semi-weekly",
+      "2026-10-02-brief"
     ]
   },
   {
@@ -649,41 +718,6 @@
     "count": 1,
     "articles": [
       "2026-W21-cowos-weekly"
-    ]
-  },
-  {
-    "name": "Applied Materials",
-    "count": 1,
-    "articles": [
-      "2026-W22-semi-weekly"
-    ]
-  },
-  {
-    "name": "Google",
-    "count": 1,
-    "articles": [
-      "2026-W40-semi-weekly"
-    ]
-  },
-  {
-    "name": "Unimicron",
-    "count": 1,
-    "articles": [
-      "2026-W40-semi-weekly"
-    ]
-  },
-  {
-    "name": "MediaTek",
-    "count": 1,
-    "articles": [
-      "2026-W40-semi-weekly"
-    ]
-  },
-  {
-    "name": "Huawei",
-    "count": 1,
-    "articles": [
-      "2026-W40-semi-weekly"
     ]
   },
   {
@@ -708,17 +742,45 @@
     ]
   },
   {
-    "name": "Meta",
+    "name": "Terafab",
     "count": 1,
     "articles": [
-      "2026-10-02-brief"
+      "2026-W41-semi-weekly"
     ]
   },
   {
-    "name": "Tesla",
+    "name": "Qualcomm",
     "count": 1,
     "articles": [
-      "2026-10-02-brief"
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Nanya",
+    "count": 1,
+    "articles": [
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Anthropic",
+    "count": 1,
+    "articles": [
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Amazon",
+    "count": 1,
+    "articles": [
+      "2026-W41-semi-weekly"
+    ]
+  },
+  {
+    "name": "Foxconn",
+    "count": 1,
+    "articles": [
+      "2026-W41-semi-weekly"
     ]
   }
 ]
