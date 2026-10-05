@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-04T10:48:37+08:00",
+ "updated_at": "2026-10-05T10:16:03+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -2726,6 +2726,38 @@
   {
    "channel": "孫慶龍",
    "format": "single",
+   "date": "2026-10-04",
+   "full": {
+    "id": "K5cpCUf3qe4",
+    "channel": "孫慶龍",
+    "kind": "single",
+    "title": "這6檔營收大成長，本益比不到10倍",
+    "topic": "這6檔營收大成長，本益比不到10倍",
+    "raw_title": "這6檔營收大成長，本益比不到10倍",
+    "series": "",
+    "published": "2026-10-04",
+    "show_date": "2026-10-04",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1383
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "孫慶龍",
+   "title": "這6檔營收大成長，本益比不到10倍",
+   "series": "",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "孫慶龍",
+   "format": "single",
    "date": "2026-10-02",
    "full": {
     "id": "lgULQDXoZ0U",
@@ -2852,95 +2884,6 @@
    "hashtags": []
   },
   {
-   "channel": "孫慶龍",
-   "format": "single",
-   "date": "2026-09-20",
-   "full": {
-    "id": "wH1pgToVX_I",
-    "channel": "孫慶龍",
-    "kind": "single",
-    "title": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-    "topic": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-    "raw_title": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-    "series": "",
-    "published": "2026-09-20",
-    "show_date": "2026-09-20",
-    "guests": [],
-    "chapters": [],
-    "hashtags": [],
-    "companies": [
-     {
-      "name": "台達電",
-      "code": "2308",
-      "market": "上市"
-     },
-     {
-      "name": "台積電",
-      "code": "2330",
-      "market": "上市"
-     },
-     {
-      "name": "富邦金",
-      "code": "2881",
-      "market": "上市"
-     },
-     {
-      "name": "中信金",
-      "code": "2891",
-      "market": "上市"
-     },
-     {
-      "name": "鴻海",
-      "code": "2317",
-      "market": "上市"
-     }
-    ],
-    "part": null,
-    "part_label": "",
-    "segment": null,
-    "duration": 1475
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "孫慶龍",
-   "title": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-   "series": "",
-   "companies": [
-    {
-     "name": "台達電",
-     "code": "2308",
-     "market": "上市",
-     "count": 1
-    },
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市",
-     "count": 1
-    },
-    {
-     "name": "富邦金",
-     "code": "2881",
-     "market": "上市",
-     "count": 1
-    },
-    {
-     "name": "中信金",
-     "code": "2891",
-     "market": "上市",
-     "count": 1
-    },
-    {
-     "name": "鴻海",
-     "code": "2317",
-     "market": "上市",
-     "count": 1
-    }
-   ],
-   "hashtags": []
-  },
-  {
    "channel": "闕又上",
    "format": "single",
    "date": "2026-09-29",
@@ -3002,6 +2945,104 @@
    "title": "老師，你的投資「創意」不夠喔！",
    "series": "又上財經#379",
    "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-10-05",
+   "full": {
+    "id": "sHnrkgDMHqE",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/10/5(一)非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?【早晨財經速解讀】",
+    "topic": "非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?",
+    "raw_title": "2026/10/5(一)非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-10-05",
+    "show_date": "2026-10-05",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "05:00",
+      "topic": "軋空行情"
+     },
+     {
+      "time": "08:00",
+      "topic": "小型股與台股前瞻"
+     },
+     {
+      "time": "11:00",
+      "topic": "9月非農"
+     },
+     {
+      "time": "14:40",
+      "topic": "宏觀視角"
+     },
+     {
+      "time": "16:00",
+      "topic": "第三視角"
+     },
+     {
+      "time": "20:00",
+      "topic": "5年期美債標售"
+     },
+     {
+      "time": "22:30",
+      "topic": "法債衝擊"
+     },
+     {
+      "time": "25:00",
+      "topic": "歐洲衝擊"
+     },
+     {
+      "time": "26:50",
+      "topic": "英國衝擊"
+     },
+     {
+      "time": "29:00",
+      "topic": "資產績效"
+     },
+     {
+      "time": "31:00",
+      "topic": "底層同構"
+     },
+     {
+      "time": "33:00",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "輝達",
+      "code": "NVDA",
+      "market": "美股"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2125
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?",
+   "series": "早晨財經速解讀",
+   "companies": [
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股",
+     "count": 1
+    }
+   ],
    "hashtags": []
   },
   {
@@ -9148,51 +9189,6 @@
    "duration": 1204
   },
   {
-   "id": "wH1pgToVX_I",
-   "channel": "孫慶龍",
-   "kind": "single",
-   "title": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-   "topic": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-   "raw_title": "買誰較好？台積電、台達電、鴻海、富邦金、中信金",
-   "series": "",
-   "published": "2026-09-20",
-   "show_date": "2026-09-20",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "台達電",
-     "code": "2308",
-     "market": "上市"
-    },
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    },
-    {
-     "name": "富邦金",
-     "code": "2881",
-     "market": "上市"
-    },
-    {
-     "name": "中信金",
-     "code": "2891",
-     "market": "上市"
-    },
-    {
-     "name": "鴻海",
-     "code": "2317",
-     "market": "上市"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 1475
-  },
-  {
    "id": "yxJE0aOXh_U",
    "channel": "闕又上",
    "kind": "single",
@@ -13606,6 +13602,124 @@
    "part_label": "上集",
    "segment": null,
    "duration": 2900
+  },
+  {
+   "id": "K5cpCUf3qe4",
+   "channel": "孫慶龍",
+   "kind": "single",
+   "title": "這6檔營收大成長，本益比不到10倍",
+   "topic": "這6檔營收大成長，本益比不到10倍",
+   "raw_title": "這6檔營收大成長，本益比不到10倍",
+   "series": "",
+   "published": "2026-10-04",
+   "show_date": "2026-10-04",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1383
+  },
+  {
+   "id": "sHnrkgDMHqE",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/10/5(一)非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?【早晨財經速解讀】",
+   "topic": "非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?",
+   "raw_title": "2026/10/5(一)非農降溫 救得了美債?全球國債大逃殺 輝達創新高 科技股準備軋空?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-10-05",
+   "show_date": "2026-10-05",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "05:00",
+     "topic": "軋空行情"
+    },
+    {
+     "time": "08:00",
+     "topic": "小型股與台股前瞻"
+    },
+    {
+     "time": "11:00",
+     "topic": "9月非農"
+    },
+    {
+     "time": "14:40",
+     "topic": "宏觀視角"
+    },
+    {
+     "time": "16:00",
+     "topic": "第三視角"
+    },
+    {
+     "time": "20:00",
+     "topic": "5年期美債標售"
+    },
+    {
+     "time": "22:30",
+     "topic": "法債衝擊"
+    },
+    {
+     "time": "25:00",
+     "topic": "歐洲衝擊"
+    },
+    {
+     "time": "26:50",
+     "topic": "英國衝擊"
+    },
+    {
+     "time": "29:00",
+     "topic": "資產績效"
+    },
+    {
+     "time": "31:00",
+     "topic": "底層同構"
+    },
+    {
+     "time": "33:00",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2125
+  },
+  {
+   "id": "6gs2o3zmLCU",
+   "channel": "錢線百分百",
+   "kind": "skip",
+   "title": "錢線百分百1005台股觀盤重點#shorts",
+   "topic": "錢線百分百1005台股觀盤重點#shorts",
+   "raw_title": "錢線百分百1005台股觀盤重點#shorts",
+   "series": "",
+   "published": "2026-10-05",
+   "show_date": "2026-10-05",
+   "guests": [
+    "shorts"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 52
   }
  ]
 }
