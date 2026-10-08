@@ -1,7 +1,13 @@
 {
- "updated_at": "2026-10-08T01:49:20+00:00",
+ "updated_at": "2026-10-08T02:10:52+00:00",
  "as_of": "2026-10-07",
  "source": "Finnhub",
+ "roe_levels": {
+  "a": 30,
+  "b": 15,
+  "c": 5,
+  "d": null
+ },
  "stocks": {
   "NVDA": {
    "name": "NVIDIA",
@@ -19,7 +25,10 @@
    "ret_ytd": 28.28,
    "high_52w": 243.37,
    "low_52w": 164.27,
-   "market_cap_m": 5733631.0
+   "market_cap_m": 5733631.0,
+   "roe": 110.1,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "AVGO": {
    "name": "Broadcom",
@@ -37,7 +46,10 @@
    "ret_ytd": 8.58,
    "high_52w": 495.0,
    "low_52w": 289.96,
-   "market_cap_m": 1783571.4
+   "market_cap_m": 1783571.4,
+   "roe": 43.9,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "AMD": {
    "name": "AMD",
@@ -55,7 +67,10 @@
    "ret_ytd": 203.24,
    "high_52w": 658.52,
    "low_52w": 188.22,
-   "market_cap_m": 1054301.2
+   "market_cap_m": 1054301.2,
+   "roe": 10.1,
+   "roe_basis": "TTM",
+   "level": "c"
   },
   "SMCI": {
    "name": "Super Micro",
@@ -73,7 +88,10 @@
    "ret_ytd": 48.48,
    "high_52w": 58.78,
    "low_52w": 19.48,
-   "market_cap_m": 29750.68
+   "market_cap_m": 29750.68,
+   "roe": 25.1,
+   "roe_basis": "TTM",
+   "level": "b"
   },
   "INTC": {
    "name": "Intel",
@@ -91,7 +109,10 @@
    "ret_ytd": 204.88,
    "high_52w": 142.35,
    "low_52w": 32.89,
-   "market_cap_m": 601241.6
+   "market_cap_m": 601241.6,
+   "roe": -10.8,
+   "roe_basis": "TTM",
+   "level": "d"
   },
   "AMAT": {
    "name": "Applied Materials",
@@ -109,7 +130,10 @@
    "ret_ytd": 106.34,
    "high_52w": 739.67,
    "low_52w": 203.4,
-   "market_cap_m": 411754.06
+   "market_cap_m": 411754.06,
+   "roe": 40.4,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "MU": {
    "name": "Micron",
@@ -127,7 +151,10 @@
    "ret_ytd": 266.34,
    "high_52w": 1255.0,
    "low_52w": 179.61,
-   "market_cap_m": 1211562.1
+   "market_cap_m": 1211562.1,
+   "roe": 91.8,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "AMKR": {
    "name": "Amkor",
@@ -145,7 +172,10 @@
    "ret_ytd": 35.23,
    "high_52w": 96.68,
    "low_52w": 28.19,
-   "market_cap_m": 12938.16
+   "market_cap_m": 12938.16,
+   "roe": 12.4,
+   "roe_basis": "TTM",
+   "level": "c"
   },
   "DELL": {
    "name": "Dell Technologies",
@@ -163,7 +193,10 @@
    "ret_ytd": 355.99,
    "high_52w": 595.51,
    "low_52w": 110.22,
-   "market_cap_m": 368504.34
+   "market_cap_m": 368504.34,
+   "roe": 130.7,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "HPE": {
    "name": "HPE",
@@ -181,7 +214,10 @@
    "ret_ytd": 193.42,
    "high_52w": 71.22,
    "low_52w": 19.84,
-   "market_cap_m": 96347.39
+   "market_cap_m": 96347.39,
+   "roe": 11.0,
+   "roe_basis": "TTM",
+   "level": "c"
   },
   "AAPL": {
    "name": "Apple",
@@ -199,7 +235,10 @@
    "ret_ytd": 22.72,
    "high_52w": 345.34,
    "low_52w": 243.42,
-   "market_cap_m": 4897223.0
+   "market_cap_m": 4897223.0,
+   "roe": 137.2,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "GOOGL": {
    "name": "Alphabet",
@@ -217,7 +256,10 @@
    "ret_ytd": 11.08,
    "high_52w": 408.61,
    "low_52w": 235.84,
-   "market_cap_m": 4251392.5
+   "market_cap_m": 4251392.5,
+   "roe": 50.8,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "META": {
    "name": "Meta",
@@ -235,7 +277,10 @@
    "ret_ytd": 11.94,
    "high_52w": 779.82,
    "low_52w": 520.26,
-   "market_cap_m": 1882301.4
+   "market_cap_m": 1882301.4,
+   "roe": 29.7,
+   "roe_basis": "TTM",
+   "level": "b"
   },
   "LRCX": {
    "name": "Lam Research",
@@ -253,7 +298,10 @@
    "ret_ytd": 95.05,
    "high_52w": 438.5,
    "low_52w": 131.02,
-   "market_cap_m": 405774.34
+   "market_cap_m": 405774.34,
+   "roe": 67.0,
+   "roe_basis": "TTM",
+   "level": "a"
   },
   "MRVL": {
    "name": "Marvell",
@@ -271,7 +319,10 @@
    "ret_ytd": 237.74,
    "high_52w": 329.88,
    "low_52w": 70.69,
-   "market_cap_m": 249635.9
+   "market_cap_m": 249635.9,
+   "roe": 16.2,
+   "roe_basis": "TTM",
+   "level": "b"
   },
   "TSLA": {
    "name": "Tesla",
@@ -289,7 +340,10 @@
    "ret_ytd": -15.35,
    "high_52w": 498.83,
    "low_52w": 297.38,
-   "market_cap_m": 1492178.5
+   "market_cap_m": 1492178.5,
+   "roe": 4.6,
+   "roe_basis": "TTM",
+   "level": "d"
   }
  },
  "history": {
