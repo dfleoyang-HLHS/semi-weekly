@@ -7,6 +7,7 @@ fetch_us_prices.py
   - as_of:     收盤交易日 (美東日期)
   - stocks:    每檔最新報價與報酬 (當日、5 日、月初至今、13 週、年初至今、52 週高低)
   - history:   每檔每日收盤價紀錄 [[日期, 收盤價], ...],每次執行累積一筆
+  - roe / level: 近四季 ROE 與依 ROE_LEVELS 判定的 A~D 級 (美股追蹤頁的分級來源)
 
 環境變數: FINNHUB_API_KEY (到 https://finnhub.io 免費註冊取得)
 """
@@ -43,6 +44,9 @@ METRIC_FIELDS = {
     "market_cap_m": "marketCapitalization",  # 百萬美元
 }
 
+# ROE 分級 (近四季 ROE,%):由高到低比對門檻,低於 5% 或虧損為 D 級;網頁依此顯示級別與說明
+ROE_LEVELS = [("a", 30), ("b", 15), ("c", 5), ("d", None)]
+
 ET = timezone(timedelta(hours=-4))  # 美東 (夏令);僅用於把報價時間換成交易日期
 
 
@@ -72,7 +76,20 @@ def fetch_symbol(symbol, key):
     }
     for out, field in METRIC_FIELDS.items():
         row[out] = num(m.get(field))
+    row.update(roe_level(m))
     return row
+
+
+def roe_level(m):
+    """近四季 ROE (缺值時用最近年度) → {"roe", "roe_basis", "level"};股東權益為負時 ROE 不具意義,不分級。"""
+    roe, basis = num(m.get("roeTTM"), 1), "TTM"
+    if roe is None:
+        roe, basis = num(m.get("roeRfy"), 1), "年度"
+    bvps = m.get("bookValuePerShareQuarterly")
+    if roe is None or (isinstance(bvps, (int, float)) and bvps <= 0):
+        return {"roe": roe, "roe_basis": "股東權益為負" if roe is not None else "", "level": None}
+    level = next(lv for lv, floor in ROE_LEVELS if floor is None or roe >= floor)
+    return {"roe": roe, "roe_basis": basis, "level": level}
 
 
 def main():
@@ -87,7 +104,8 @@ def main():
         try:
             stocks[symbol] = fetch_symbol(symbol, key)
             s = stocks[symbol]
-            print(f"  {symbol:6} {s['price']:>10}  {s['change_pct']:+.2f}%  ({s['trade_date']})")
+            print(f"  {symbol:6} {s['price']:>10}  {s['change_pct']:+.2f}%  ({s['trade_date']})"
+                  f"  ROE {s['roe']} ({s['roe_basis']}) → {s['level'] or '不分級'}")
         except Exception as e:  # 單檔失敗不影響其他檔;沿用上次資料
             failed.append(symbol)
             print(f"  ❌ {symbol}: {e}")
@@ -109,7 +127,8 @@ def main():
 
     # 非交易日 (美國國定假日等):最新交易日與上次相同,不寫檔、不 commit、不部署
     new_symbols = set(stocks) - set(old.get("stocks", {}))  # 新加入追蹤的股票要立即寫入
-    if max(dates) == old.get("as_of") and not new_symbols and "--force" not in sys.argv:
+    no_roe_yet = any("roe" not in s for s in old.get("stocks", {}).values())  # 首次加入 ROE 分級
+    if max(dates) == old.get("as_of") and not new_symbols and not no_roe_yet and "--force" not in sys.argv:
         print(f"ℹ️  最新交易日仍為 {max(dates)},今日非交易日或資料未更新,略過")
         return
 
@@ -117,6 +136,7 @@ def main():
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "as_of": max(dates),
         "source": "Finnhub",
+        "roe_levels": {lv: floor for lv, floor in ROE_LEVELS},
         "stocks": stocks,
         "history": history,
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

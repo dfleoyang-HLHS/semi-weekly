@@ -116,6 +116,15 @@
 .q-up { color: #10b981; }
 .q-down { color: #ef4444; }
 .us-tape { margin-bottom: 20px; min-height: 46px; }
+.badge-na { background: rgba(100, 116, 139, 0.18); color: #94a3b8; }
+.us-roe-line { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+.us-roe-line b { color: var(--text); }
+.us-roe-note {
+  margin: -8px 0 20px; padding: 10px 14px; font-size: 13px; line-height: 1.7;
+  color: var(--text-dim); background: var(--bg-card);
+  border-left: 3px solid var(--accent); border-radius: 8px;
+}
+:root[data-theme="light"] .badge-na { color: #475569; }
 /* 淺色模式:加深綠、紅、各標籤字色,維持在淺底上的可讀性 (對比 ≥ 4.5) */
 :root[data-theme="light"] .q-up, :root[data-theme="light"] .us-metric-value.up { color: #047857; }
 :root[data-theme="light"] .q-down, :root[data-theme="light"] .us-metric-value.down { color: #dc2626; }
@@ -205,7 +214,7 @@
 
   <div class="us-hero">
     <h2>🇺🇸 美股 AI 供應鏈追蹤表</h2>
-    <p>依 ROE 分級呈現 W22 週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof"></span><span id="stocks-asof"></span></p>
+    <p>依近四季 ROE 自動分級呈現週報核心美國公司,含最新股價動態、財報重點與供應鏈定位。<span id="price-asof"></span><span id="stocks-asof"></span></p>
   </div>
 
   <!-- TradingView 官方跑馬燈報價小工具 (即時走勢;點選可開啟 TradingView) -->
@@ -213,14 +222,16 @@
 
   <div class="us-filter">
     <button class="us-filter-btn active" data-filter="all" id="btn-all">全部</button>
-    <button class="us-filter-btn" data-filter="a">🏆 A 級 龍頭</button>
-    <button class="us-filter-btn" data-filter="b">🥈 B 級 挑戰者</button>
-    <button class="us-filter-btn" data-filter="c">🥉 C 級 穩健</button>
-    <button class="us-filter-btn" data-filter="d">📉 D 級 修復中</button>
+    <button class="us-filter-btn" data-filter="a">🏆 A 級</button>
+    <button class="us-filter-btn" data-filter="b">🥈 B 級</button>
+    <button class="us-filter-btn" data-filter="c">🥉 C 級</button>
+    <button class="us-filter-btn" data-filter="d">📉 D 級</button>
     <button class="us-filter-btn" data-filter="chip">晶片設計</button>
     <button class="us-filter-btn" data-filter="server">系統廠</button>
     <button class="us-filter-btn" data-filter="equipment">設備 · 記憶體</button>
   </div>
+
+  <div class="us-roe-note" id="roe-note"></div>
 
   <div class="us-grid" id="us-grid"></div>
 
@@ -263,6 +274,34 @@ const TV_SYMBOLS = {
 };
 
 const cardSymbols = s => s.ticker.split("/").map(t => SYMBOL_ALIAS[t.trim()] || t.trim());
+
+// ── ROE 分級:由 scripts/fetch_us_prices.py 依 Finnhub 近四季 ROE 判定 (us_prices.json 的 roe / level);
+//    尚無 ROE 資料時退回 us_stocks.json 的人工級別
+const roeQuote = s => PRICES && cardSymbols(s).map(t => PRICES.stocks[t]).find(q => q && "roe" in q);
+const levelOf = s => { const q = roeQuote(s); return q ? (q.level || "na") : s.level; };
+const LEVEL_LABEL = { a: "A 級", b: "B 級", c: "C 級", d: "D 級", na: "未分級" };
+
+function roeLine(s) {
+  const q = roeQuote(s);
+  if (!q) return "";
+  if (q.roe == null) return `<div class="us-roe-line">ROE:暫無資料 → 未分級</div>`;
+  if (!q.level) return `<div class="us-roe-line">ROE ${q.roe}%:股東權益為負,ROE 不具比較意義 → 未分級</div>`;
+  const basis = q.roe_basis === "TTM" ? "近四季" : "最近年度";
+  return `<div class="us-roe-line">ROE (${basis}) <b>${q.roe}%</b> → ${LEVEL_LABEL[q.level]}</div>`;
+}
+
+function renderRoeNote() {
+  const box = document.getElementById("roe-note");
+  const L = PRICES && PRICES.roe_levels;
+  if (!L) {
+    box.innerHTML = "ℹ️ 分級依據:ROE 自動分級尚未產生,暫以人工評估級別顯示。";
+    return;
+  }
+  box.innerHTML = `ℹ️ <strong>分級依據</strong>:程式依 Finnhub 近四季 ROE (股東權益報酬率) 自動判定 —
+    A 級 ≥ ${L.a}%、B 級 ${L.b}~${L.a}%、C 級 ${L.c}~${L.b}%、D 級 &lt; ${L.c}% 或虧損;
+    股東權益為負的公司 ROE 不具比較意義,標示「未分級」。隨每個交易日盤後股價一併更新 (${escapeHtml(PRICES.as_of)})。
+    ROE 只反映獲利效率,不代表股價表現或投資建議。`;
+}
 const hasQuotes = s => !!PRICES && cardSymbols(s).some(t => PRICES.stocks[t]);
 const fmtPct = v => v == null ? "–" : `${v > 0 ? "+" : ""}${v.toFixed(2)}%`;
 const pctClass = v => v == null || v === 0 ? "" : (v > 0 ? "q-up" : "q-down");
@@ -325,7 +364,7 @@ function renderStocks(filter) {
   
   const filtered = STOCKS.filter(s => {
     if (filter === 'all') return true;
-    if (['a','b','c','d'].includes(filter)) return s.level === filter;
+    if (['a','b','c','d'].includes(filter)) return levelOf(s) === filter;
     return s.category === filter;
   });
 
@@ -342,9 +381,10 @@ function renderStocks(filter) {
           <div class="us-name">${escapeHtml(s.name)}</div>
           <div class="us-ticker">${escapeHtml(s.ticker)}</div>
         </div>
-        <span class="us-badge badge-${escapeHtml(s.level)}">${escapeHtml(s.level.toUpperCase())} 級</span>
+        <span class="us-badge badge-${escapeHtml(levelOf(s))}">${LEVEL_LABEL[levelOf(s)] || ''}</span>
       </div>
       ${cardSymbols(s).map(renderQuote).join('')}
+      ${roeLine(s)}
       <div class="us-metrics">
         ${Object.entries(s.metrics).filter(([k]) => !(hasQuotes(s) && STALE_METRICS.includes(k))).map(([k, v]) => {
           // 修正正負號顏色判斷：僅匹配第一個字元為 + 或 -（避免把 15-17% 的連字符誤判為跌）
@@ -408,7 +448,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 預設渲染全部 (先載入盤後股價)
   loadTradingViewTape();
-  loadPrices().finally(() => renderStocks('all'));
+  loadPrices().finally(() => { renderRoeNote(); renderStocks('all'); });
 });
 </script>
 </body>
