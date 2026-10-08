@@ -255,12 +255,16 @@ jobs:
           python-version: '3.11'
       - name: Fetch Taiwan stock prices
         run: python scripts/fetch_tw_prices.py
+      # 財報 ROE 分級 (每季財報公布後才有變動;未變動不寫檔;失敗時沿用上次資料,不影響股價更新)
+      - name: Update Taiwan ROE levels
+        continue-on-error: true
+        run: python scripts/fetch_tw_roe.py
       - name: Commit
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/tw_prices.json
+          git add data/tw_prices.json data/tw_roe.json
           if ! git diff --staged --quiet; then
             echo "changed=true" >> $GITHUB_OUTPUT
             git commit -m "台股報價 $(date +%F)"
