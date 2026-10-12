@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-11T10:03:31+08:00",
+ "updated_at": "2026-10-12T10:35:00+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -2741,6 +2741,38 @@
   {
    "channel": "孫慶龍",
    "format": "single",
+   "date": "2026-10-11",
+   "full": {
+    "id": "pfuBt6DlcWA",
+    "channel": "孫慶龍",
+    "kind": "single",
+    "title": "快跑？10月我賣出股票",
+    "topic": "快跑？10月我賣出股票",
+    "raw_title": "快跑？10月我賣出股票",
+    "series": "",
+    "published": "2026-10-11",
+    "show_date": "2026-10-11",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1054
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "孫慶龍",
+   "title": "快跑？10月我賣出股票",
+   "series": "",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "孫慶龍",
+   "format": "single",
    "date": "2026-10-09",
    "full": {
     "id": "k1Y-MuuorQc",
@@ -2991,6 +3023,79 @@
    "host": "闕又上",
    "title": "道家老子的投資心法",
    "series": "又上財經#380",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-10-12",
+   "full": {
+    "id": "gtxpFAVDySE",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/10/12(一)美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?【早晨財經速解讀】",
+    "topic": "美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?",
+    "raw_title": "2026/10/12(一)美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-10-12",
+    "show_date": "2026-10-12",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "02:00",
+      "topic": "漲幅分化"
+     },
+     {
+      "time": "05:00",
+      "topic": "獲利分化"
+     },
+     {
+      "time": "08:00",
+      "topic": "中東衝擊"
+     },
+     {
+      "time": "11:50",
+      "topic": "經濟影響"
+     },
+     {
+      "time": "15:00",
+      "topic": "原油供給"
+     },
+     {
+      "time": "18:00",
+      "topic": "油價喊話影響"
+     },
+     {
+      "time": "21:00",
+      "topic": "利率與AI"
+     },
+     {
+      "time": "27:00",
+      "topic": "市場信心"
+     },
+     {
+      "time": "28:10",
+      "topic": "美股追蹤"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1828
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?",
+   "series": "早晨財經速解讀",
    "companies": [],
    "hashtags": []
   },
@@ -14010,6 +14115,106 @@
    "part_label": "全集",
    "segment": null,
    "duration": 2983
+  },
+  {
+   "id": "pfuBt6DlcWA",
+   "channel": "孫慶龍",
+   "kind": "single",
+   "title": "快跑？10月我賣出股票",
+   "topic": "快跑？10月我賣出股票",
+   "raw_title": "快跑？10月我賣出股票",
+   "series": "",
+   "published": "2026-10-11",
+   "show_date": "2026-10-11",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1054
+  },
+  {
+   "id": "gtxpFAVDySE",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/10/12(一)美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?【早晨財經速解讀】",
+   "topic": "美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?",
+   "raw_title": "2026/10/12(一)美俄協議 壓得住油價?中東打不垮經濟 卻拖垮債市?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-10-12",
+   "show_date": "2026-10-12",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "02:00",
+     "topic": "漲幅分化"
+    },
+    {
+     "time": "05:00",
+     "topic": "獲利分化"
+    },
+    {
+     "time": "08:00",
+     "topic": "中東衝擊"
+    },
+    {
+     "time": "11:50",
+     "topic": "經濟影響"
+    },
+    {
+     "time": "15:00",
+     "topic": "原油供給"
+    },
+    {
+     "time": "18:00",
+     "topic": "油價喊話影響"
+    },
+    {
+     "time": "21:00",
+     "topic": "利率與AI"
+    },
+    {
+     "time": "27:00",
+     "topic": "市場信心"
+    },
+    {
+     "time": "28:10",
+     "topic": "美股追蹤"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1828
+  },
+  {
+   "id": "NLbOox9cO4Y",
+   "channel": "錢線百分百",
+   "kind": "skip",
+   "title": "錢線百分百1012台股觀盤重點#shorts",
+   "topic": "錢線百分百1012台股觀盤重點#shorts",
+   "raw_title": "錢線百分百1012台股觀盤重點#shorts",
+   "series": "",
+   "published": "2026-10-12",
+   "show_date": "2026-10-12",
+   "guests": [
+    "shorts"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 47
   }
  ]
 }
