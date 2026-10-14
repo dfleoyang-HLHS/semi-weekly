@@ -1,6 +1,6 @@
 name: Semi Weekly and Briefs
 
-# 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (週報);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
+# 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (抓新聞;週報由本機 Claude 排程產生 PR);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
 #              週一~五 21:30 = 美股收盤後 (台灣週二~六 05:30,美股報價)
 #              週一~五 06:00 = 台灣週一~五 14:00 (台股報價);08:00 = 16:00 補抓尚未公布的個股
 #              每日 06:30 = 台灣每日 14:30 (新聞資料庫;台股重點由本機 Claude 排程 15:00 整理)
@@ -65,7 +65,7 @@ jobs:
           elif [ "${{ github.event.schedule }}" = "30 6 * * *" ]; then
             MODE="news"   # 每日抓新聞存入資料庫,供本機排程 15:00 整理台股重點
           elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
-            MODE="weekly"
+            MODE="news"   # 週一 06:00 只抓新聞;週報由本機 Claude 排程 (scripts/weekly_local.py) 產生 PR,API 版 weekly 改為手動備用
           elif [ "$(date +%u)" = "1" ]; then
             MODE="weekly"
           else
