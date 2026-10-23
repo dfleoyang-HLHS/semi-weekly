@@ -1,21 +1,728 @@
 {
-  "fetched_at": "2026-10-21T00:26:31.850456+00:00",
+  "fetched_at": "2026-10-23T00:27:29.899956+00:00",
   "days_back": 7,
-  "total": 113,
+  "total": 107,
   "items": [
     {
+      "source": "鉅亨網 美股",
+      "title": "震撼反轉！SK海力士正式喊停Solidigm赴美IPO計畫  股價重摔逾4%",
+      "link": "https://news.cnyes.com/news/id/6636418",
+      "summary": "SK海力士宣布暫停美國子公司Solidigm的IPO計畫，並擱置Pre-IPO融資評估。&#10;Solidigm原規劃最快2027年赴美掛牌，傳估值最高1500億美元、募資上看150億美元。&#10;SK海力士稱將續評估直接投資、外部融資等方案，因應美國產線建置與NAND擴產需求。",
+      "published": "2026-10-22T16:20:04+00:00"
+    },
+    {
       "source": "TechNews 科技新報",
-      "title": "路透：字節阿里騰訊訂購總值逾 350 億美元輝達晶片",
-      "link": "https://technews.tw/2026/10/21/bytedance-alibaba-tencent-place-over-35-billion-worth-of-nvidia-chip-orders/",
-      "summary": "路透社 20 日報導，字節跳動、阿里巴巴和騰訊 3 家中國科技巨頭已訂購超過 300 萬個、總值逾 350 億 [&#8230;]",
-      "published": "2026-10-20T16:15:36+00:00"
+      "title": "黃仁勳批 AI 毀滅人類論：搏版面的不實廉價說法",
+      "link": "https://technews.tw/2026/10/23/nvidia-boss-criticises-cheap-ai-doomsday-warnings/",
+      "summary": "美國人工智慧（AI）晶片業巨擘輝達（Nvidia）執行長黃仁勳 22 日表示，有關 AI 可能毀滅人類的相關警 [&#8230;]",
+      "published": "2026-10-22T16:15:53+00:00"
     },
     {
       "source": "鉅亨網 美股",
-      "title": "美光震盪收黑 AI投資疑慮升溫、韓國新股慘跌與桃園罷工添壓力",
-      "link": "https://news.cnyes.com/news/id/6634626",
-      "summary": "美光周二收跌0.98%，記憶體股同步走弱，SanDisk跌0.4%、SK海力士美股跌1.5%。&#10;AI熱潮推升估值後，晶片股承壓；市場擔憂企業擴建AI基礎設施所需債務不斷增加。&#10;美光桃園員工工會因獎金爭議擬周四罷工，桃園是美光重要製造據點。",
-      "published": "2026-10-20T16:10:04+00:00"
+      "title": "AI訂單不缺 缺的是錢！黃仁勳揭新雲端業者擴張困境",
+      "link": "https://news.cnyes.com/news/id/6636377",
+      "summary": "黃仁勳指新雲端業者AI需求極旺，但擴建資料中心、採購晶片的主要瓶頸是資金不足。&#10;CoreWeave負債達356億美元，股價半年跌約50%；談話前後盤前跌約4%，輝達跌約2%。&#10;輝達持有CoreWeave、Nebius約一成股權，並於今年1月投資CoreWeave 20億美元，AI產業資金循環受關注。",
+      "published": "2026-10-22T15:50:04+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "輝達前團隊打造新創 Dream Labs 獲 9,000 萬美元融資，推出通用機器人 API",
+      "link": "https://technews.tw/2026/10/23/robot-brain-api-debuts/",
+      "summary": "由輝達前機器人研究團隊成員創立的美國新創 Dream Labs，於 10 月 19 日宣布完成 9,000 萬 [&#8230;]",
+      "published": "2026-10-22T15:40:02+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "SK 海力士取消 Solidigm 美國 IPO 計畫，股東反對與監管疑慮成關鍵",
+      "link": "https://technews.tw/2026/10/23/sk-hynix-cancel-solidigm-us-ipo-shareholder-opposition-regulatory-concerns/",
+      "summary": "根據外電報導，韓國記憶體大廠 SK 海力士原計劃推動旗下快閃記憶體子公司 Solidigm 赴美上市，但因面臨 [&#8230;]",
+      "published": "2026-10-22T15:30:12+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "28億美元擴產計畫曝光！特斯拉、輝達據報聯手投資三星電機",
+      "link": "https://news.cnyes.com/news/id/6636376",
+      "summary": "特斯拉、輝達傳聯手投資三星電機擴大高階封裝基板產能，總額恐達3.7兆韓元，設於韓國世宗市。&#10;特斯拉傳將簽5年FC-BGA供貨合約，2029至2033年供應自駕車與Optimus所需AI晶片基板。&#10;輝達已宣布與三星電機策略合作，預計2026年起供貨，並透過多家供應商擴產AI供應鏈。",
+      "published": "2026-10-22T15:30:03+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "算力成本降 67%，輝達力挺新創 doubleAI 推出首款「程式碼執行模型」",
+      "link": "https://technews.tw/2026/10/23/nvidia-startup-maxwell-cuts-computing-costs/",
+      "summary": "以色列特拉維夫 AI 新創公司 doubleAI 於 19 日宣布推出首款人工智慧模型「Maxwell」，旨在 [&#8230;]",
+      "published": "2026-10-22T15:20:40+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "馬斯克兩大事業有望合體？最大考驗在換股與估值 分析師：難創顯著上漲空間",
+      "link": "https://news.cnyes.com/news/id/6636378",
+      "summary": "特斯拉Q3營收280.46億美元近持平，GAAP淨利年減43%至7.87億，營業利益率降至2.6%&#10;公司下修全年資本支出至約200億美元，仍投資Robotaxi、Optimus、AI與半導體設施&#10;馬斯克傳評估與SpaceX合併，分析師對股東額外價值看法分歧，關鍵在換股比例與溢價",
+      "published": "2026-10-22T14:40:02+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "英特爾大跌8%美光挫逾6% 晶片股重挫3大原因解析",
+      "link": "https://news.cnyes.com/news/id/6636361",
+      "summary": "特斯拉將全年資本支出目標自250億美元下調至200億美元，財務長稱為有效管理資本配置。&#10;消息拖累晶片與光學網路設備股走弱，英特爾、超微、美光、輝達、Coherent、Lumentum等收盤重挫。&#10;市場關注AI投資熱潮與外部融資可持續性；科林研發展望不如預期，Meta則擬創新股類籌資。",
+      "published": "2026-10-22T14:30:04+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "股東反彈奏效！SK海力士傳撤回Solidigm赴美IPO計畫",
+      "link": "https://news.cnyes.com/news/id/6636382",
+      "summary": "SK 海力士據報撤回美國子公司 Solidigm 的那斯達克 IPO，Pre-IPO 作業同步停止，近期將正式宣布。&#10;決策主因是股東反彈、資本市場環境與股價走勢；股東憂重複上市折價、壓抑母公司估值。&#10;SK 海力士 ADR 週四跌約 8%。",
+      "published": "2026-10-22T14:20:54+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "Meta借錢擴張AI基建引爆債市警訊 資料中心債券殖利率飆升 違約保險費創新高",
+      "link": "https://news.cnyes.com/news/id/6636372",
+      "summary": "Meta AI資本支出升至1350億至1450億美元，第三季自由現金流轉負21.2億美元&#10;Meta五年期CDS利差10月22日升至114.79個基點，創歷史新高&#10;市場憂AI投資回報不及支出，Meta股價盤中跌逾7%，融資成本走高",
+      "published": "2026-10-22T14:20:03+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "〈美股盤後〉Meta重燃AI交易恐慌 費半狂瀉近7% 台積電ADR跌超4.5%",
+      "link": "https://news.cnyes.com/news/id/6636334",
+      "summary": "Meta財報後AI交易恐慌升溫，費半跌6.72%、那指跌2.6%，科技股與晶片股遭拋售&#10;中東局勢緊張推升油價至5個月高點，10年期美債殖利率跌破5%，資金湧向避險&#10;Meta上季營收優於預期但首見負自由現金流，CDS利差創高；威騰、科林研發等AI概念股重挫",
+      "published": "2026-10-22T14:06:09+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AMD股價重挫7.6% 晶片股全面遭拋售 AI投資回報疑慮升溫",
+      "link": "https://news.cnyes.com/news/id/6636374",
+      "summary": "AMD跌7.6%，費半重挫約6.7%，AI與半導體股22日遭大規模賣壓。&#10;科林研發財測僅符合預期、特斯拉下修2026年資本支出，市場憂AI硬體需求放緩。&#10;Meta擴大AI投資引發融資疑慮，投資人重新評估AI支出可持續性與晶片高估值。",
+      "published": "2026-10-22T14:00:03+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "DIGITIMES Today：NVIDIA Vera CPU背後藏大變局？| 機器人泡沫能吹多久？ | 傳李在鎔10月底視察三星RX事業室",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772417_3FY37MS82NR2F46KG4NCC",
+      "summary": "神盾集團耕耘特用晶片（ASIC）多年有成，本週與法國處理器設計公司SiPearl正式簽署策略合作，神盾的Mobius100（M100）與SiPearl的CPU計畫，分別代表台灣與法國在國家級CPU發展上的重要布局，雙方將串連技術與商務資源，共同推進高效運算（HPC）發展、服務全球HPC、AI與資料中心市場。NVIDI",
+      "published": "2026-10-22T13:00:00+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "Meta崩跌近7% 自由現金流轉負、CDS利差升至歷史新高",
+      "link": "https://news.cnyes.com/news/id/6636350",
+      "summary": "Meta 週四股價重挫近 7%，第 3 季營收 646 億美元優於預期，但自由現金流轉負 21.2 億美元。&#10;Meta 上調全年資本支出下限至 1,350 億美元，市場憂心 AI 擴支與資金需求升高。&#10;公司 5 年期 CDS 利差創新高，反映投資人對其信用風險疑慮升溫；另將設不具投票權 C 類股。",
+      "published": "2026-10-22T12:53:53+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "AI記憶體擴產競賽  稱重精度成良率分水嶺",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771719_3UU63P5L2VGXIT8TIY48F",
+      "summary": "隨著全球AI算力需求迎來爆發式增長，高頻寬記憶體（HBM）的擴產競賽已進入白熱化階段。然而，在產能全面吃緊的表象之下，真正的決勝關鍵已從「產能規模」轉向「良率穩定度」。全球量測與精密儀器領導品牌梅特勒托利多（METTLER",
+      "published": "2026-10-22T11:40:06+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 台積電ADR(TSM-US)大跌5%，報410.29美元",
+      "link": "https://news.cnyes.com/news/id/6636323",
+      "summary": "台積電ADR(TSM-US)截至台北時間23日03:02股價下跌21.6美元，報410.29美元，跌幅5%，成交量11,058,325（股），盤中最高價421.91美元、最低價410.27美元。美股指數盤中表現道瓊指數：-0.14%S&amp;P 500指數：-1.43%NASDAQ指數：-2.93%費城半",
+      "published": "2026-10-22T11:17:41+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "台積電赴美建廠進入下半場？　德州評估背後有「土地」盤算",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772366_D814801G5OV3LJ7KC9U79",
+      "summary": "台積電赴美國亞利桑那州建置先進製程晶圓廠，歷經6年建廠、人力招募、供應鏈在地化及成本等挑戰後逐步成形。而在推進之際，台積電董事長魏哲家也證實已派團隊前往德州評估擴產機會，且在須掌握營運主導下，與Elon",
+      "published": "2026-10-22T11:00:00+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "Meta AI投資初見回報　真正考驗是算力成本與變現速度？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772348_WYL4QYFO3FCYCX9K9HEOQ",
+      "summary": "Meta Platforms最新營收表現與財測皆優於市場預期，除核心廣告業務維持強勁動能外，更重要的是新推出的AI代理（AI Agent）Muse與新模型Muse",
+      "published": "2026-10-22T10:58:14+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "一筆Modal訂單為何讓英特爾、超微警戒　NVIDIA Vera CPU背後藏AI基建大變局？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772144_H472ZVYZ356U8Y5EK7YWV",
+      "summary": "NVIDIA近期拿下AI新創公司Modal的CPU供應訂單，儘管Modal年營收規模尚不到10億美元，訂單金額及部署規模也未公布，卻可能對英特爾（Intel）、超微（AMD）長期主導的伺服器CPU市場帶來新挑戰。隨著NVIDIA從GPU進一步跨足通用運算領域，AI基礎設施競爭正逐漸從單一晶片性能，轉向全堆疊系統整合能",
+      "published": "2026-10-22T10:52:58+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "聯想展開AI逆襲路　官宣NVIDIA NVL72出貨、擴建美國製造園區",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771862_2597SXWF7JAA451QFM2YW",
+      "summary": "30多年前，聯想（Lenovo）立志把PC帶入每一個家庭；30年後，聯想的新使命是把AI送進千家萬戶、千行百業，這是聯想集團董事長兼執行長楊元慶給這家42歲公司下的新注解。經過十多年深耕，聯想集團正從「消費電子」蛻變為「AI基建者」，進入新一輪黃金週期，當對手大廠戴爾（Dell）快步走向AI基建路，聯想擬同時掌握全球AI",
+      "published": "2026-10-22T10:47:43+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "台積電桃園龍科三期先進封裝先行　接力嘉義與南科聚焦CoPoS",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772370_DEY2QPUD8D82JPL8J2IQE",
+      "summary": "台積電全球建廠、擴產版圖持續擴大，龍潭科學園區三期（龍科三期）歷經近3年波折後重新啟動，2026年9月17日經國發會審議通過籌設計畫，預計開發約104.",
+      "published": "2026-10-22T10:47:14+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "Namuga拓展三星以外商機　相機模組供應人形機器人大廠",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772273_KFJ1L1SE8FIO8V2KKICIY",
+      "summary": "南韓影像感測模組業者Namuga加快實體AI（Physical AI）布局，已確定供應全球人形機器人業者，正進行供貨與量產規劃。公司除以立體相機、時差測距（ToF）感測模組及固態光達拓展機器人與移動載具市場，以2030年營收達1兆韓元為（約7.",
+      "published": "2026-10-22T10:45:40+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "MLCC供不應求客戶得等超過1年　三星電機交期最長達61週",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772371_27X2R3MP8TX4970UEMN8H",
+      "summary": "三星電機（Semco）積層陶瓷電容（MLCC）的交期傳2026年10月已延長至52週，部分通路產品更達61週。分析認為，在稼動率接近滿載、新產能短期內難以到位的情況下，MLCC供需失衡恐將持續。人工智慧（AI）需求急遽攀升，電子零組件產業不再僅限於記憶體半導體，而是整體進入超級景氣週期。不僅高附加價值產品，就連通用型",
+      "published": "2026-10-22T10:44:39+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "搶攻中東AI手機市場　三星攜伊拉克電信商Asiacell推換購、分期方案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772272_JFH1GVRS807XXW1SLZRCT",
+      "summary": "在AI拉動智慧型手機價格的背景下，三星電子（Samsung Electronics）選擇以換購、分期付款搶攻中東新興市場，並與伊拉克最大電信業者Asiacell聯手降低高階手機的門檻，合作範圍亦擴大至B2B資安解決方案、電子商務等，強化三星在伊拉克的ICT市場領導地位。綜合韓媒The",
+      "published": "2026-10-22T10:43:41+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "傳李在鎔10月底視察三星RX事業室　緊盯人形機器人CES備戰進度",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772406_5W75MKPXL47GYP7STLNKY",
+      "summary": "三星電子（Samsung Electronics）會長李在鎔，傳最快將於10月底前往位於首爾牛眠洞的RX（Robotics eXperience）事業推進室，檢視人形機器人研發成果及CES",
+      "published": "2026-10-22T10:41:46+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "諾基亞AI和雲端訂單額年增118%　光纖網路、IP網路業務走強",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772373_XT1459C16J0NRV4S7PEHL",
+      "summary": "芬蘭電信設備商諾基亞（Nokia）最新發布2026年第3季業績報告，獲利遠優於市場預期，凸顯人工智慧（AI）和雲端客戶需求爆發，帶動光纖網路、IP網路及資料中心設備成為新成長引擎。綜合彭博（Bloomberg）、路透",
+      "published": "2026-10-22T10:33:33+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "三星電機攜NVIDIA共同擴產　AI晶片載板長期供貨啟動",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772288_X3C3BEG175IOYQ9SX91I8",
+      "summary": "三星電機（Semco）與NVIDIA日前宣布戰略合作，將共同投資南韓世宗、釜山據點的AI半導體封裝載板專用產線，並自2026年起展開多年長期供貨，進一步擴大三星電機在AI基礎設施供應鏈的布局。根據本次公布資訊，三星電機將於世宗及釜山據點新建專用產線，供應NVIDIA運算晶片組所需載板，以及負責資料中心內晶片間高速連接的網",
+      "published": "2026-10-22T10:27:47+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "工會反彈聲浪未平　美光喊「全球一致」季度獎金與福利全台對齊",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772339_E0D2PJW14QI6VI8LSK7IK",
+      "summary": "美光（Micron）為化解勞資爭議，宣布祭出多項獎酬制度改革，美光台灣董事長盧東暉親上火線，為正面回應工會訴求，將針對全球性員工推行與獲利連動的季度分潤獎金，以及新版年度績效獎金（IPP）制度，台灣員工也再增加福利，包括勞退提撥率拉高至10%",
+      "published": "2026-10-22T10:25:28+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "科技1分鐘：光束放大，灰塵退散——擴束光學（EBO）",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772376_GH74K5XO64WMWM71GVGHF",
+      "summary": "AI資料中心持續擴建，光纖連接的密度與維護效率也成為供應鏈關注焦點。美國材料大廠3M近期宣布與台灣光學元件廠玉晶光合作，推進擴束光學（Expanded Beam Optical；EBO）的開發與製造，並規劃投資取得玉晶光約4.68%",
+      "published": "2026-10-22T10:22:42+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "快過三星蘋果！高更新率OLED開戰　中國手機率先搭載",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772259_L353TVHP4EWIGQL63TK2B",
+      "summary": "搶在三星電子（Samsung Electronics）、蘋果（Apple）之前，中國手機品牌已把高更新率OLED帶進手機，如維信諾、京東方已分別為iQOO Neo 12與紅魔12 Pro+供應185Hz面板，在對功耗相當敏感的手機應用樹立新標準，引發市場關注。根據韓媒ET",
+      "published": "2026-10-22T10:21:25+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "美國國務卿訪印度　信實工業介紹資料中心投資現況",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772413_MPJ3PIPV22JLNQ2WH36C3",
+      "summary": "美國國務卿Marco Rubio訪問印度孟買及賈姆訥格爾（Jamnagar），期間與信實工業（Reliance Industries）代表人物、富豪Mukesh",
+      "published": "2026-10-22T10:20:06+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "評析：機器人泡沫能吹多久？　宇樹估值慘修正、實體AI迎考驗",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772320_W2B26ULS3S5DHXLK3W83C",
+      "summary": "AI泡沫化的討論持續升溫，從大型語言模型、AI資料中心到人形機器人，市場開始追問，龐大的資本投入究竟何時才能轉化為相應的營收與獲利？中國具身智慧（Embodied",
+      "published": "2026-10-22T10:18:02+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "誠美材布局先進封裝　開發新品助玻璃基板抗翹、耐熱",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772353_UJI4R5JX4NG41Z4QL2UGU",
+      "summary": "隨著先進封裝朝向大尺寸玻璃基板發展，翹曲、耐熱及穿孔等製程挑戰，帶動相關材料與技術開發需求。偏光板業者誠美材料持續布局半導體領域，除切割研磨膠帶已進入客戶驗證及小量測試階段外，也積極開發抗翹曲膜與耐熱膠帶等先進封裝配套材料，其中，抗翹曲膜已建立相關專利技術，但目前仍處於開發階段，尚未送樣或實際出貨。先進封裝使用玻璃基板時",
+      "published": "2026-10-22T10:16:19+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "三菱電機配電設備事業引ABB入主　2027完成合資交易",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772196_VCI29CIG889OL77G3P6YE",
+      "summary": "三菱電機（Mitsubishi Electric）宣布將把用於工廠及大樓配電盤的零組件事業，改組為與瑞士重電大廠ABB合資經營的公司。三菱電機將分拆出該事業，轉讓51%股權給ABB。未來將聚焦資料中心用設備，以及更接近輸",
+      "published": "2026-10-22T10:15:50+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "AI資料中心建置模式轉變　機電業者搶進模組化與EPC市場",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772234_HD03L3O02A7Z6J5B9W2Y3",
+      "summary": "隨著AI資料中心建置需求擴大，新一代AI伺服器對電力供應、散熱效率及建置時程的要求持續提高，預製式模組化資料中心因而受到重視，台灣機電設備業者也開始從單一設備供應，朝系統整合及工程設計、採購與施工總承包（EPC）市場發展。傳統資料中心涉及土建、供配電、不斷電系統（UPS）、冷卻及監控等工程，設備多在現場安裝與整合，施工程",
+      "published": "2026-10-22T10:14:52+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "Meta瞄準高毛利AI推論　緯穎、廣達緊盯CPU伺服器動能",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772363_Z9O4MDRH5PYXKZ4WZVW0G",
+      "summary": "在美國4大超大規模雲端業者（Hyperscaler）中，Meta率先公布財報，供應鏈緊盯其資本支出變化與方向。Meta執行長Mark",
+      "published": "2026-10-22T10:13:21+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "【Amy & Dr.Chip】三星竟然點頭讓台積電參與HBM製造？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772248_G0M1SMJ558AQBO7DI1O6W",
+      "summary": "為確保NVIDIA新世代客製化高頻寬記憶體「NVHBM」的訂單，三星電子（Samsung Electronics）傳首次同意讓台積電代工生產HBM基礎裸晶（base",
+      "published": "2026-10-22T10:12:24+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "硬體難再與中國業者拉開差距　三星電視押注平台廣告找獲利新解",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771891_ZA89ORKN8SFUBM2RIL8QF",
+      "summary": "三星電子（Samsung",
+      "published": "2026-10-22T10:11:34+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "【動物農莊】鴿們聊中微想打進南韓　先從功率半導體下手",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772267_WKZ3DBM45F4LCH811L47D",
+      "summary": "中國半導體設備商中微公司（以下簡稱中微）正嘗試從功率半導體切入南韓市場。雖然中微在中國的有機金屬化學氣相沉積磊晶（MOCVD）設備市佔率極高，但受地緣政治與供應鏈敏感性影響，目前仍無法直接向三星電子（Samsung Electronics）、SK海力士（SK hynix）南韓晶圓廠供貨，因此轉而與SK",
+      "published": "2026-10-22T10:10:51+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "AI工廠走向預製交付NVIDIA推DSX POD　供應鏈分工面臨重整",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772302_KTC2EY1U1O3X961GKMR07",
+      "summary": "AI資料中心加速建置，供應鏈競爭正從伺服器與整機櫃，延伸到運算模組與場域工程的整合交付。NVIDIA在GTC Berlin發表以Vera Rubin平台為基礎的DSX POD參考設計，正是由合作夥伴在貨櫃式模組內完成設備安裝、系統整合與驗證，再運往客戶場域組裝運作。DSX",
+      "published": "2026-10-22T10:07:07+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "NVIDIA秀下一代CPO技術原型　光學引擎移師矽中介層、瞄準2028後需求",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772148_H8X2FR433I09CX9EDMRBI",
+      "summary": "NVIDIA日前在SEMICON West 2026大會上，公開展示下一代共同封裝光學（CPO）技術「中介層整合光學」（Optics-on-Interposer；OOI）原型，將光學引擎從傳統有機封裝基板移至搭載運算晶片的矽中介層（Silicon",
+      "published": "2026-10-22T10:02:52+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "神盾M100 CPU目標2028量產　看好加上UCIe串起Chiplet生態系",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772315_ND34UPO80JA2SU6P1FI91",
+      "summary": "神盾集團耕耘特用晶片（ASIC）多年有成，本週與法國處理器設計公司SiPearl正式簽署策略合作，神盾的Mobius100（M100）與SiPearl的CPU計畫，分別代表台灣與法國在國家級CPU發展上的重要布局，雙方將串連技術與商務資源，共同推進高效運算（HPC）發展、服務全球HPC、AI與資料中心市場。神盾集團指出",
+      "published": "2026-10-22T10:02:03+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "美光投資思維該轉變了？分析師：AI記憶體需求是場馬拉松",
+      "link": "https://news.cnyes.com/news/id/6635454",
+      "summary": "分析師稱美光疲弱反映市場再度質疑AI支出持久性，投資人應把AI需求視為長跑而非短跑。&#10;Stifel的Brian Chin估記憶體成長轉折可能在2到3年後；美光本益比約未來EPS的5倍，估值偏低具防禦性。&#10;供應鏈摩擦恐限制供給成長，AI融資風險拖累股價；但供需仍吃緊，預期明年到2028年將更趨緊。",
+      "published": "2026-10-22T09:00:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AI愈砸錢債市愈不安！Meta信用風險指標創新高",
+      "link": "https://news.cnyes.com/news/id/6636229",
+      "summary": "Meta擴大AI資本支出與租賃承諾，引發市場憂慮科技巨頭舉債投入AI建設。&#10;Meta五年期CDS盤中升至約119.3個基點新高，甲骨文、微軟、博通CDS同日走揚。&#10;Meta今年資本支出下限升至1350億美元，第三季自由現金流轉負21.2億美元，債券風險溢價擴大。",
+      "published": "2026-10-22T08:30:06+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 美光科技(MU-US)大跌5.05%，報867.52美元",
+      "link": "https://news.cnyes.com/news/id/6636264",
+      "summary": "美光科技(MU-US)截至台北時間22日23:48股價下跌46.15美元，報867.52美元，跌幅5.05%，成交量12,442,443（股），盤中最高價908.30美元、最低價867.42美元。美股指數盤中表現道瓊指數：-0.15%S&amp;P 500指數：-1.17%NASDAQ指數：-2.27%費城",
+      "published": "2026-10-22T08:03:58+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AI行情選後有變？資料中心惹民怨 投資人緊盯美國期中選舉",
+      "link": "https://news.cnyes.com/news/id/6636143",
+      "summary": "美國期中選舉逼近，資料中心民怨升溫，若民主黨奪下國會兩院，AI行情恐添監管變數。&#10;AI帶動全球資料中心與基建支出明年料破1兆美元，Alphabet、亞馬遜等擴建計畫也使市場更敏感。&#10;即使聯邦立法難重挫擴張，州與地方選舉仍可能影響審批、建設時程與成本。",
+      "published": "2026-10-22T07:30:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 艾司摩爾(ASML-US)大跌5.05%，報1592.06美元",
+      "link": "https://news.cnyes.com/news/id/6636243",
+      "summary": "艾司摩爾(ASML-US)截至台北時間22日22:53股價下跌84.64美元，報1592.06美元，跌幅5.05%，成交量429,354（股），盤中最高價1628.20美元、最低價1592.06美元。美股指數盤中表現道瓊指數：-0.44%S&amp;P 500指數：-1.35%NASDAQ指數：-2.32%",
+      "published": "2026-10-22T07:08:49+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "GPU只能用4年？CoreWeave債務有解？黃仁勳一次回應 再談DeepSeek高毛利",
+      "link": "https://news.cnyes.com/news/id/6635763",
+      "summary": "黃仁勳稱GPU可用7至8年、殘值高於市場認知，輝達甚至為晶片轉售殘值提供擔保。&#10;他指出AI資料中心建設成本高、出貨到營運常需4至6個月，輝達以DSX Pod縮短部署空窗，降低資金閒置成本&#10;DeepSeek推理每小時變現38美元引發高毛利關注，黃仁勳強調AI正轉向實用模式",
+      "published": "2026-10-22T06:50:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AI雲端股跌慘空方賺翻！本月帳面獲利達60億美元",
+      "link": "https://news.cnyes.com/news/id/6636170",
+      "summary": "市場憂雲端、資料中心業者靠舉債擴AI基建難持續，相關股遭拋售。&#10;ORTEX：CoreWeave、IREN、Nebius等5檔空單占流通股20%至26%，總放空市值約170億美元。&#10;10月迄今空方帳面獲利約60億美元；Nebius獲利29.4億美元居首，CoreWeave近17億美元。",
+      "published": "2026-10-22T06:30:03+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - Meta平台(META-US)大跌5.09%，報662.05美元",
+      "link": "https://news.cnyes.com/news/id/6636190",
+      "summary": "Meta平台(META-US)截至台北時間22日21:31股價下跌35.47美元，報662.05美元，跌幅5.09%，成交量3,196,307（股），盤中最高價681.07美元、最低價661.55美元。美股指數盤中表現道瓊指數：-0.24%S&amp;P 500指數：-0.83%NASDAQ指數：-1.48",
+      "published": "2026-10-22T05:46:22+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 邁威爾科技(MRVL-US)大跌5.74%，報230.7美元",
+      "link": "https://news.cnyes.com/news/id/6636184",
+      "summary": "邁威爾科技(MRVL-US)截至台北時間22日21:30股價下跌14.06美元，報230.70美元，跌幅5.74%，成交量1,146,871（股），盤中最高價232.17美元、最低價230.70美元。美股指數盤中表現道瓊指數：-0.25%S&amp;P 500指數：-0.78%NASDAQ指數：-1.49%",
+      "published": "2026-10-22T05:45:21+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 超微半導體(AMD-US)大跌5.3%，報523.45美元",
+      "link": "https://news.cnyes.com/news/id/6636182",
+      "summary": "超微半導體(AMD-US)截至台北時間22日21:30股價下跌29.28美元，報523.45美元，跌幅5.3%，成交量1,294,818（股），盤中最高價526.29美元、最低價523.01美元。美股指數盤中表現道瓊指數：-0.27%S&amp;P 500指數：-0.79%NASDAQ指數：+1.05%費城",
+      "published": "2026-10-22T05:45:19+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "〈美股早盤〉AI疑慮未散油價又漲！Meta與特斯拉走跌 主要指數開低",
+      "link": "https://news.cnyes.com/news/id/6636075",
+      "summary": "美股周四開低，Meta、特斯拉財報未能化解AI投資疑慮，費半跌逾4%，台積電ADR跌2.74%。&#10;中東緊張推高油價，風險偏好降溫，資金轉向美債；10年期殖利率降至5.03%，日圓、黃金走勢分歧。&#10;中國滬深300較6月高點跌20%進熊市，法德10年債利差擴至175基點創2011年來高。",
+      "published": "2026-10-22T05:40:22+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Micron overhauls pay in Taiwan as unions push for profit sharing",
+      "link": "https://www.digitimes.com/news/a20261022VL223/micron-taiwan-labor-staff-samsung.html",
+      "summary": "Micron is overhauling how it pays employees, promising quarterly profit-sharing bonuses and better pay and benefits for its Taiwan staff. The changes follow a labor dispute with the company's unions in Taiwan.",
+      "published": "2026-10-22T04:59:37+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "8250億美元！Meta未來支出承諾曝光 AI算力與能源都要買",
+      "link": "https://news.cnyes.com/news/id/6636137",
+      "summary": "Meta(META-US)揭露，已承諾未來將為各類租賃與合約支出約8250億美元，其中許多涉及人工智慧(AI)運算能力與基礎設施。這筆金額高於公司7月公布的近7000億美元，顯示其長期支出承諾持續擴大。  根據Meta周四(22日)提交的申報文件，尚未納入資產負債表的營業租賃與融資租賃，總額達355",
+      "published": "2026-10-22T04:30:07+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "路透：台積電尋求使用無稀土馬達 擺脫中國稀土壟斷控制",
+      "link": "https://news.cnyes.com/news/id/6635999",
+      "summary": "台積電已經向供應商徵詢在工廠自動化設備中使用無稀土馬達事宜。&#10;中國對稀土的控制已成為全球半導體產業隱憂。&#10;稀土磁鐵常用於工業設備馬達，包括台積電等高度自動化工廠使用的機械設備。",
+      "published": "2026-10-22T04:27:04+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "宇田控制10/23登興櫃每股42.5元 全年營收可望創新高雙位數成長",
+      "link": "https://news.cnyes.com/news/id/6636012",
+      "summary": "宇田控制將以每股42.5元登錄興櫃，2026年前9月營收2.74億元、稅後純益5,322萬元，毛利率47.71%。&#10;AI資料中心液冷與半導體設備雙引擎帶動成長，前9月兩大應用占比升至31.8%，貢獻約75%整體銷貨成長。&#10;宇田控制全年營收力拚雙位數成長、再創歷史新高。",
+      "published": "2026-10-22T02:52:43+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "黃仁勳籲歐洲加快腳步、別過度依賴監管，盼德國以物理 AI 突圍",
+      "link": "https://technews.tw/2026/10/22/jensen-huang-has-a-message-for-europe/",
+      "summary": "NVIDIA 於柏林展開 GTC Berlin 大會之前，執行長黃仁勳過去 7 天內接連造訪法國、瑞典、英國及 [&#8230;]",
+      "published": "2026-10-22T02:39:38+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "PSMC raises mature-node prices again, targets 20% increase in 2027",
+      "link": "https://www.digitimes.com/news/a20261022PD248/psmc-2027-capacity-2026-demand.html",
+      "summary": "Powerchip Semiconductor Manufacturing (PSMC) reported third-quarter 2026 revenue of NT$21.3 billion (US$654.3 million), up 23% quarter-over-quarter, as higher foundry prices, a stronger average selling price (ASP) and improved capacity utilization lifted gross margin from 28% to 48% and drove net profit to NT$6.5 billion. With AI servers fueling demand for memory, power-management ICs and advanced packaging, PSMC expects double-digit revenue growth in the fourth quarter and has indicated that fo",
+      "published": "2026-10-22T02:28:24+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Taiwan-France semiconductor alliance strengthens with CPU pact between SiPearl and Egis Group",
+      "link": "https://www.digitimes.com/news/a20261022VL222/alliance-industrial-taiwan-europe-cpu.html",
+      "summary": "Highlighting the deepening industrial synergies between Europe and Asia, the Egis Group TechDay Taiwan-France Strategic CPU Partnership Signing Ceremony hosted the official signing between Egis Group and SiPearl. The landmark ceremony unveiled a joint initiative to build a Mobius 100 CPU and UCIe chiplet-based marketplace, establishing a cooperative framework for sovereign AI and high-performance computing (HPC) data center infrastructure.",
+      "published": "2026-10-22T02:26:35+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "神盾結盟法國SiPearl展開國家級CPU策略合作 布局HPC、AI及資料中心市場",
+      "link": "https://news.cnyes.com/news/id/6635934",
+      "summary": "神盾與法國SiPearl簽署策略合作，啟動國家級CPU策略合作。&#10;神盾與SiPearl將結合臺灣半導體供應鏈與歐洲高效能運算應用資源，布局HPC、AI及資料中心市場。&#10;神盾2026 Tech Day展示集團以CPU與通用晶片互連技術為基礎打造的Chiplet Marketplace生態系。",
+      "published": "2026-10-22T02:26:15+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "川普恐失國會優勢、台股AI多頭變天？ 鉅亨買基金：選舉未必利空、3類基金分散布局",
+      "link": "https://news.cnyes.com/news/id/6635898",
+      "summary": "美國期中選舉近期進入倒數，國會控制權可能重新洗牌，市場擔憂民主黨若拿下國會多數席次，恐牽制川普政府施政，甚至衝擊AI資料中心建設，讓高度仰賴美國科技巨頭資本支出的台股面臨考驗。  「鉅亨買基金」今(22)日表示，選舉結果確實可能加劇短線震盪，但國會變天不等於AI投資熱潮終結，更不代表台股多頭行情就此",
+      "published": "2026-10-22T02:23:58+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "擁抱 AI 代理購物，沃爾瑪與亞馬遜策略大不同",
+      "link": "https://technews.tw/2026/10/22/walmart-amazon-divergent-approaches-ai-agent-shopping/",
+      "summary": "美國零售巨擘沃爾瑪今天發表一項新工具，允許 Meta 的 Muse 等人工智慧代理代替顧客購物，此一開放做法與 [&#8230;]",
+      "published": "2026-10-22T01:50:08+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "響應臺灣週 國泰投信11/4舉辦「從矽谷到矽島 AI時代的投資地圖」論壇 台韓專家解析最新投資趨勢",
+      "link": "https://news.cnyes.com/news/id/6635925",
+      "summary": "金管會「臺灣週」11月首週登場，國泰投信、大和國泰證券11月4日辦AI投資論壇。&#10;論壇邀韓國半導體分析師SK Kim，聚焦HBM、AI記憶體下一個成長週期與供應鏈趨勢。&#10;國泰投信稱AI已走向應用階段，將解析台韓半導體機會與波動下的投資布局。",
+      "published": "2026-10-22T01:31:40+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "美光勞資協議內容曝光！季分潤、調薪、勞退 10% 再加碼三天有薪假",
+      "link": "https://finance.technews.tw/2026/10/22/microns-labor-agreement-details-revealed/",
+      "summary": "半導體大廠台灣美光於近期與台中工會達成歷史性勞資協議，台灣美光董事長盧東暉於媒體說明會中宣布，在獲得董事會授權 [&#8230;]",
+      "published": "2026-10-22T01:30:07+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "台股失守季線下探46K 外資砍816.56億元期貨同步轉空",
+      "link": "https://news.cnyes.com/news/id/6635866",
+      "summary": "台股終場跌846.34點至46041.43點，失守季線，成交值8792.31億元。&#10;三大法人合計賣超1001.6億元，外資賣超816.56億元；台積電收2385元，外資再賣超12695張、提款304.91億元。&#10;新台幣貶2分收32.508元；分析師指颱風薔琵襲台、停交易疑慮與國際變數，促使市場減碼。",
+      "published": "2026-10-22T01:23:37+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Tesla Reportedly to Invest KRW 1.1T to Secure Samsung Electro-Mechanics Substrate Capacity; NVIDIA Also Commits",
+      "link": "https://www.trendforce.com/news/2026/10/22/news-tesla-reportedly-to-invest-krw-1-1t-to-secure-samsung-electro-mechanics-substrate-capacity-nvidia-also-commits/",
+      "summary": "Samsung Electro-Mechanics is reportedly set to receive a combined KRW 3.7 trillion in investment from Tesla and NVIDIA to expand advanced chip substrate production, as growing AI demand drives capacity expansion across the supply chain. According to Maeil Business Newspaper, &hellip; Continue reading &rarr;",
+      "published": "2026-10-22T01:05:20+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "Vantage 攜手 Heron 簽署逾 1 GW SST 產能協議",
+      "link": "https://technews.tw/2026/10/22/vantage-heron-1gw-sst-capacity-deal/",
+      "summary": "800 VDC 供電架構加速邁向實際部署。全球資料中心業者 Vantage 與電力電子設備商 Heron Po [&#8230;]",
+      "published": "2026-10-21T23:31:15+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "中國客戶棄華為昇騰搶買 RTX PRO 5500，輝達僅能滿足 5%~10% 市場需求",
+      "link": "https://technews.tw/2026/10/22/chinese-customers-are-abandoning-huaweis-ascend-and-rushing-to-buy-rtx-pro-5500/",
+      "summary": "在中國人工智慧（AI）晶片出貨量方面，華為雖正逐漸縮小與輝達（NVIDIA）的市場差距，但包括字節跳動、阿里巴 [&#8230;]",
+      "published": "2026-10-21T23:30:08+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳柏林GTC開講 高盛總結三大重點、看輝達還有近四成漲幅",
+      "link": "https://news.cnyes.com/news/id/6635664",
+      "summary": "黃仁勳柏林GTC演講聚焦供應鏈擴產、資料中心提速與實體AI營收成長，高盛維持輝達買進、目標價300美元。&#10;輝達宣布與多家夥伴擴充基板、封裝、測試與CPO產能，部分產能最高擴至3倍。&#10;DSX POD可將資料中心部署從數月縮至兩週；2027會計年度上半年實體AI營收110億美元，超越前一年全年。",
+      "published": "2026-10-21T23:30:05+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "Muse 使用者破千萬人，祖克柏揭下一步擴張戰略",
+      "link": "https://technews.tw/2026/10/22/muse-agents-reach-over-10-million-users-in-the-us-and-canada/",
+      "summary": "隨著第三季財報公布，Meta 執行長祖克柏（Mark Zuckerberg）表示，短短一個半月內，美國與加拿大 [&#8230;]",
+      "published": "2026-10-21T23:29:11+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Infineon, Nvidia push gallium nitride power for 800-volt AI data centers",
+      "link": "https://www.digitimes.com/news/a20261022VL220/infineon-data-gallium-gan-2025.html",
+      "summary": "Infineon Technologies is expanding its work with Nvidia on 800-volt direct current power architectures for AI data centers, with a focus on gallium nitride (GaN) chips in the intermediate bus converter (IBC), the company said on October 21.",
+      "published": "2026-10-21T23:26:46+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Analysis: Musk's thrusting Roadster takes off, but questions remain up in the air",
+      "link": "https://www.digitimes.com/news/a20261022PD238/tesla-production-vehicle-2028-spacex.html",
+      "summary": "Tesla unveiled its new Roadster, equipped with rocket-style thrusters, on October 15 and announced plans to begin production in 2028, more than a decade after the second-generation prototype was first showcased.",
+      "published": "2026-10-21T23:15:14+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Micron Reportedly Rules Out 4F² DRAM Scaling, Backs 6F² and 3D DRAM in Next-Gen Memory Roadmap",
+      "link": "https://www.trendforce.com/news/2026/10/22/news-micron-reportedly-rules-out-4f%c2%b2-dram-scaling-backs-6f%c2%b2-and-3d-dram-in-next-gen-memory-roadmap/",
+      "summary": "Micron is sticking with its 6F² DRAM architecture rather than adopting 4F², even as Chinese rival CXMT advances the alternative design. According to Nikkei, Scott DeBoer, Micron&#8217;s president and chief technology and products officer, said during a recent technology webinar &hellip; Continue reading &rarr;",
+      "published": "2026-10-21T22:53:18+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Tesla's Megapack boom meets AI power crunch, but margin gains raise questions",
+      "link": "https://www.digitimes.com/news/a20261022VL215/tesla-electricity-infrastructure-transportation-demand-capacity.html",
+      "summary": "While Tesla is expanding its ambitions in autonomous transportation and embodied AI, developments in its energy-storage business are drawing attention following a mixed set of financial results in the company's third-quarter 2026 earnings report.",
+      "published": "2026-10-21T22:20:54+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Texas Instruments posts rising Q3 sales across data centers, cars, industry",
+      "link": "https://www.digitimes.com/news/a20261022VL219/texas-instruments-sales-data-growth-revenue.html",
+      "summary": "Texas Instruments reported strong revenue growth in its third-quarter earnings call due to strong demand across its industrial, automotive, and data center businesses. The company said it is facing a tight supply environment for its chips, but brought up its ramping of production and testing capacity, including through its new Malaysia back-end facility.",
+      "published": "2026-10-21T21:59:17+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung reportedly overhauls DRAM, NAND R&amp;D incentives to retain talent and accelerate next-gen memory chips",
+      "link": "https://www.digitimes.com/news/a20261022VL214/samsung-dram-incentives-nand-talent.html",
+      "summary": "Samsung Electronics is reportedly restructuring its semiconductor research operations and performance-based compensation system to accelerate next-generation DRAM and NAND flash development, bringing researchers and production teams closer together while addressing concerns over incentives and talent retention.",
+      "published": "2026-10-21T21:55:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung DX division postpones meeting amid bonus tensions",
+      "link": "https://www.digitimes.com/news/a20261022PD220/samsung-labor-union-communications-2027.html",
+      "summary": "According to reports from <em>Financial News</em>, <em>ETNews</em>, <em>News1</em> and <em>Yonhap</em>, Samsung Electronics' postponement of an event has intensified scrutiny of internal communications, bonus disparities, and preparations for 2027 wage talks as DX employees challenge compensation arrangements favoring the memory-focused DS division, while unions contest who should represent workers in negotiations expected to begin integrating demands in December.",
+      "published": "2026-10-21T20:07:46+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Why Terafab approached South Korean suppliers first",
+      "link": "https://www.digitimes.com/news/a20261022PD229/elon-musk-equipment-tesla-materials-spacex.html",
+      "summary": "Elon Musk is moving ahead with Terafab, as Tesla and SpaceX reportedly negotiate with about 10 South Korean semiconductor materials, components, and equipment suppliers. The discussions cover process materials, piping and valves, wastewater recycling equipment, and semiconductor testing components, raising questions about whether Taiwan's semiconductor supply chain will benefit from the massive expansion.",
+      "published": "2026-10-21T20:06:20+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Inside Nvidia DSX POD: How a factory-built AI data center could go live in 14 days",
+      "link": "https://www.digitimes.com/news/a20261022PD232/nvidia-data-center-gtc-berlin-production.html",
+      "summary": "Nvidia used its first GTC conference in Berlin to present a factory-style approach to AI, framing AI production as an industrial process. CEO Jensen Huang introduced the DSX full-stack architecture and DSX POD, a modular computing container designed to speed data-center deployment and bring systems online faster across Europe.",
+      "published": "2026-10-21T19:53:05+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "BOS, LG, and HANA Micron team up on Korean automotive chiplets",
+      "link": "https://www.digitimes.com/news/a20261022VL211/micron-automotive-bos-lg-electronics-lg.html",
+      "summary": "BOS Semiconductors is partnering with LG Electronics and HANA Micron to develop and commercialize chiplet-based automotive semiconductors in South Korea, connecting domestic AI chip design with packaging and vehicle testing. <em>ChosunBiz</em> and <em>ZDNet Korea</em> reported the collaboration on October 20.",
+      "published": "2026-10-21T19:50:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Amazon spends US$220B on AI as power delays squeeze cash flow",
+      "link": "https://www.digitimes.com/news/a20261022PD211/amazon-cash-flow-infrastructure-equipment-2026.html",
+      "summary": "Amazon plans about US$220 billion in capital expenditure in 2026, mainly for cloud and AI infrastructure, but delays in data center power and construction are causing server racks to arrive before they can be deployed. The bottleneck is leaving expensive equipment in warehouses, preventing it from immediately generating computing capacity and revenue.",
+      "published": "2026-10-21T19:28:53+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Analysis: Why Tesla needs to manufacture Optimus robots before its humanoid AI is ready",
+      "link": "https://www.digitimes.com/news/a20261022VL212/tesla-optimus-robot-production-training.html",
+      "summary": "Tesla's move into early production of its Optimus humanoid robot has exposed an unusual challenge in scaling embodied artificial intelligence (AI): the company may need to manufacture thousands of robots before it can generate enough training experience to make them commercially useful.",
+      "published": "2026-10-21T19:26:02+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Intel Begins Equipment Installation at Arizona Fab 62, Targeting 2028 Operations; Ohio One Advances",
+      "link": "https://www.trendforce.com/news/2026/10/22/news-intel-begins-equipment-installation-at-arizona-fab-62-targeting-2028-operations-ohio-one-advances/",
+      "summary": "Intel is advancing its U.S. semiconductor manufacturing expansion, with equipment installation underway at Arizona&#8217;s Fab 62 and construction progressing at its Ohio One complex. According to Tom&#8217;s Hardware, Intel announced Wednesday that production equipment installation has begun at Fab 62, &hellip; Continue reading &rarr;",
+      "published": "2026-10-21T19:23:06+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Intel begins Arizona Fab 62 equipment installation, advances Ohio project as AI CPU demand surges",
+      "link": "https://www.digitimes.com/news/a20261022VL216/intel-manufacturing-demand-equipment-arizona.html",
+      "summary": "Intel is accelerating work on its long-delayed US semiconductor manufacturing projects, with equipment installation underway at its Fab 62 facility in Arizona and construction progressing at its Ohio site. The developments come as stronger demand for AI data center processors supports the chipmaker's efforts to expand capacity and strengthen its foundry business.",
+      "published": "2026-10-21T19:22:13+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "SpaceX飆漲近8%！指數權重升至4.88% 00662分割倒數一張變五張",
+      "link": "https://news.cnyes.com/news/id/6635638",
+      "summary": "美股科技股再掀漲勢！隨第三季財報旺季登場，市場焦點重新聚焦科技巨頭獲利表現，SpaceX在強勁財報及潛在合併特斯拉題材激勵下，21日股價大漲7.7%，逼近8%，帶動市場對科技股成長動能的期待。值得注意的是，SpaceX於NASDAQ-100指數中的權重已攀升至4.88%，也讓追蹤該指數的富邦NASD",
+      "published": "2026-10-21T19:09:21+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Hyundai rethinks AAM strategy as Tesla Roadster sparks flying-car buzz",
+      "link": "https://www.digitimes.com/news/a20261022PD208/tesla-hyundai-aircraft-development-automotive.html",
+      "summary": "Tesla's unveiling of a redesigned Roadster with rocket-style thrusters has intensified interest in flying cars, while an internal report calls on Hyundai Motor Group to reconsider its aircraft development direction and advanced air mobility (AAM) strategy.",
+      "published": "2026-10-21T19:09:00+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Meta says compute, not demand, now limits Muse; pushes shared standard for AI shopping agents",
+      "link": "https://www.digitimes.com/news/a20261022VL213/meta-ai-agent-computing-power-cost-capacity.html",
+      "summary": "Meta Platforms is limiting the Muse personal AI agent to the US and Canada for now, saying that compute costs are the main reason it hasn't gone global.",
+      "published": "2026-10-21T19:04:13+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "SDC supplies over 70% of major laptop brands' OLED panels",
+      "link": "https://www.digitimes.com/news/a20261022PD207/sdc-market-supplier-boe-production.html",
+      "summary": "Samsung Display (SDC) currently supplies more than 70% of the OLED panels used by major global laptop brands, intensifying concerns over supply and pricing risks tied to dependence on a single supplier. Laptop makers are therefore gradually adjusting their procurement strategies to build more diversified sources.",
+      "published": "2026-10-21T18:58:34+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "研華參與NVIDIA GTC Berlin 2026展示AI工廠大腦 20條產線已導入運作",
+      "link": "https://news.cnyes.com/news/id/6635592",
+      "summary": "研華參與輝達GTC Berlin 2026，展示AI工廠大腦、實體AI與虛實整合機器人技術。&#10;AI工廠大腦已導入研華自有20條生產線，第三季人均產出較第二季升13.2%。&#10;研華與輝達合作強化工業AI生態系，推動工業場域自動化與智慧化營運。",
+      "published": "2026-10-21T18:52:48+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Tesla's Robotaxi test enters harder phase: turning autonomous miles into transport business",
+      "link": "https://www.digitimes.com/news/a20261022VL206/tesla-robotaxi-business-vehicle-expansion-2026.html",
+      "summary": "Tesla's Robotaxi expansion is entering a new phase as the company increases unsupervised autonomous mileage, deploys its purpose-built Cybercab and works to expand fleet operations. The challenge now is translating those advances into a commercial transportation service capable of operating across more cities while managing vehicle production and operating costs.",
+      "published": "2026-10-21T18:51:48+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[Breaking] Google Reportedly Sticks With Intel EMIB-T Despite 35% Substrate Yields as HumuFish Schedule Tightens",
+      "link": "https://www.trendforce.com/news/2026/10/22/breaking-google-reportedly-sticks-with-intel-emib-t-despite-35-substrate-yields-as-humufish-schedule-tightens/",
+      "summary": "Uncertainty is growing over potential delays to Google’s TPU v9. Industry sources point to the HumuFish variation as a key area of concern: reported yield problems with Intel’s EMIB-T substrates have raised the possibility of a switch to TSMC’s CoWoS-L. &hellip; Continue reading &rarr;",
+      "published": "2026-10-21T18:30:45+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股開盤〉外資翻多激勵大盤開高漲逾400點 CCL、PCB強勢噴出",
+      "link": "https://news.cnyes.com/news/id/6635565",
+      "summary": "台北股市今(22)日早盤在外資在期貨及現貨同步翻多同時，由電子股帶動之下出現強勢反彈，台積電(2330-TW)以2435元開高 ，上漲0.62%，電子類股勁揚1%，並占大盤成交比重達 8%，資深證券分析師指出，台股在站上 5 日線後，後續的量能如能續增，將成有利多方反攻的格局形成。&nbsp;  在",
+      "published": "2026-10-21T17:44:06+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] NVIDIA-Linked Groq Reportedly Eyes Shift From SRAM to 3D-Stacked DRAM for Next-Gen AI Chips",
+      "link": "https://www.trendforce.com/news/2026/10/22/news-nvidia-linked-groq-reportedly-eyes-shift-from-sram-to-3d-stacked-dram-for-next-gen-ai-chips/",
+      "summary": "As AI workloads demand greater memory capacity, chipmakers are exploring alternatives to traditional memory architectures. According to ZDNet, industry sources say Groq, the AI chip company that licensed its inference technology to NVIDIA, is considering 3D-stacked DRAM for its next-generation &hellip; Continue reading &rarr;",
+      "published": "2026-10-21T16:30:12+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "鉅亨速報 - Factset 最新調查：京元電子(2449-TW)EPS預估下修至8.46元，預估目標價為346.5元",
+      "link": "https://news.cnyes.com/news/id/6635510",
+      "summary": "根據FactSet最新調查，共15位分析師，對京元電子(2449-TW)做出2026年EPS預估：中位數由8.51元下修至8.46元，其中最高估值9.35元，最低估值7.62元，預估目標價為346.5元。市場預估EPS預估值2026年(前值)2027年2028年最高值9.35(9.35)16.932",
+      "published": "2026-10-21T16:10:34+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] NVIDIA Unveils Next-Gen CPO Prototype With Optics on Silicon Interposer, Targets Higher Bandwidth Density",
+      "link": "https://www.trendforce.com/news/2026/10/22/news-nvidia-unveils-next-gen-cpo-prototype-with-optics-on-silicon-interposer-targets-higher-bandwidth-density/",
+      "summary": "NVIDIA is advancing its next-generation co-packaged optics (CPO) technology, with prototypes designed to bring optical engines closer to computing chips. According to Wccftech, the company presented its latest optical integration research at SEMICON West 2026 under the theme “Optical Integration &hellip; Continue reading &rarr;",
+      "published": "2026-10-21T15:30:16+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股盤前要聞〉輝達DSX POD AI工廠6台廠入列合作夥伴、外資終止連十賣",
+      "link": "https://news.cnyes.com/news/id/6635367",
+      "summary": "台股盤前要聞&nbsp;  1.輝達(NVIDIA)(NVDA-US)21日宣布推出DSX POD模組化 AI 工廠架構，合作夥伴中包含鴻海(2317-TW)旗下鴻佰(Ingrasys)、台達電(2308-TW)、和碩(4938-TW)、廣達(2382-TW)旗下雲達科技(QCT)、緯創(3231-",
+      "published": "2026-10-21T13:10:02+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "台積電產能太搶手！英特爾擴廠向前 能接住AI商機？",
+      "link": "https://news.cnyes.com/news/id/6635389",
+      "summary": "Fab 62已開始裝機，預計2028年營運；Fab 52將於2025年底量產18A晶片。&#10;俄亥俄州新廠仍在結構施工，首座廠房改目標2030年完工，較原規劃至少落後五年。&#10;英特爾盼AI需求與台積電產能吃緊帶動外部代工訂單，但18A尚未拿下大型客戶。",
+      "published": "2026-10-21T09:00:05+00:00"
+    },
+    {
+      "source": "SemiWiki",
+      "title": "Why America’s Semiconductor Manufacturing Capacity Matters",
+      "link": "https://semiwiki.com/semiconductor-manufacturers/375206-why-americas-semiconductor-manufacturing-capacity-matters/",
+      "summary": "<p>America’s semiconductor future will be shaped by its ability to turn scientific discoveries into chips manufactured at scale. That is why the investments outlined in Intel Foundry’s recent editorial matter beyond the company’s own business. They address a fundamental question: <strong>whether the United States can sustain the research,</strong>&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/semiconductor-manufacturers/375206-why-americas-semiconductor-manufacturing-capacity-matters/\">",
+      "published": "2026-10-21T07:00:07+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Samsung, SK hynix Reportedly Push China NAND Upgrades Beyond 200 Layers as YMTC Competition Heats Up",
+      "link": "https://www.trendforce.com/news/2026/10/21/news-samsung-sk-hynix-reportedly-push-china-nand-upgrades-beyond-200-layers-as-ymtc-competition-heats-up/",
+      "summary": "As AI-driven demand extends from DRAM to NAND, Samsung and SK hynix are upgrading their key Chinese facilities. According to Reuters, Samsung plans to shift its Xi’an plant from roughly 200-layer to 286-layer V9 NAND, while SK hynix, already authorized &hellip; Continue reading &rarr;",
+      "published": "2026-10-20T23:05:21+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Apple Signs Up to US$100M Titanium Deal for Products Including iPhone Duo; TSMC Arizona to Supply 100M+ Chips",
+      "link": "https://www.trendforce.com/news/2026/10/21/news-apple-signs-up-to-us100m-titanium-deal-for-products-including-iphone-duo-tsmc-arizona-to-supply-100m-chips/",
+      "summary": "Apple is expanding its U.S. manufacturing footprint, bringing more domestically sourced components into its latest iPhone lineup and strengthening ties with American suppliers. According to Reuters, Apple announced on October 20 that it has committed to purchasing up to US$100 &hellip; Continue reading &rarr;",
+      "published": "2026-10-20T22:35:38+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] NVIDIA RTX PRO 5500 Reportedly Draws $35B in China Orders, with Supply Seen at Just 5–10%",
+      "link": "https://www.trendforce.com/news/2026/10/21/news-nvidia-rtx-pro-5500-reportedly-draws-35b-in-china-orders-with-supply-seen-at-just-5-10/",
+      "summary": "Despite CEO Jensen Huang&#8217;s warning that NVIDIA&#8217;s share of China&#8217;s AI accelerator market has plunged from over 90% to nearly zero amid U.S. export curbs, demand for its lower-performance GPUs is surging. According to Reuters, ByteDance, Alibaba and Tencent have &hellip; Continue reading &rarr;",
+      "published": "2026-10-20T18:08:40+00:00"
     },
     {
       "source": "TrendForce",
@@ -25,480 +732,11 @@
       "published": "2026-10-20T15:30:13+00:00"
     },
     {
-      "source": "鉅亨網 美股",
-      "title": "提前報喜！美超微初估營收、毛利率雙雙優於預期 盤後大漲近15%",
-      "link": "https://news.cnyes.com/news/id/6634616",
-      "summary": "美超微周二盤後公布初步財報第1季營收預估185-195億美元，優於市場與公司先前預期。&#10;美超微預估第1季毛利率12-12.5%，盤後股價大漲近15%。&#10;同業戴爾、慧與科技及輝達盤後跟漲；美超微11月3日將開電話會，但未說明提前公布原因。",
-      "published": "2026-10-20T15:20:05+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "晶片股高點還在後頭？分析師看好漲勢延續至2027年",
-      "link": "https://news.cnyes.com/news/id/6634628",
-      "summary": "Truist指半導體基本面與股價高點都還在前方，晶片股通常在營收見頂後約一季才觸頂。&#10;Stein估2026年Q4半導體營收年增74%、連15季改善；AI與資料中心需求推動週期延長。&#10;他稱半導體股至少可正報酬至2027年Q1，並重申輝達、超微、博通、MPWR、TTMI買進。",
-      "published": "2026-10-20T14:30:04+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "〈財報〉AI業務成最大金雞母！SpaceX營收暴增161% 馬斯克證實討論與特斯拉合併",
-      "link": "https://news.cnyes.com/news/id/6634615",
-      "summary": "SpaceX第3季營收145.8億美元、淨利44億美元，AI業務營收75.6億美元，年增逾八倍。&#10;星鏈第3季訂戶增至1,360萬戶，連網業務營收52.5億美元、營業利益23.7億美元。&#10;SpaceX預估2027Q1營收330億至370億美元；馬斯克稱已討論SpaceX與特斯拉合併。",
-      "published": "2026-10-20T14:21:14+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "傳陸企下訂逾350億美元晶片大單 輝達股價仍難振作",
-      "link": "https://news.cnyes.com/news/id/6634612",
-      "summary": "傳中國阿里巴巴、騰訊、字節跳動合購逾300萬張輝達RTX PRO 5500，潛在值逾350億美元。&#10;但輝達稱需求遠超產能，部分合作夥伴恐僅拿到5%至10%，2027年全球產量估不逾300萬張。&#10;AI股投資情緒偏弱，市場憂巨額資本支出與融資負擔，輝達股價仍承壓。",
-      "published": "2026-10-20T14:00:04+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "馬斯克證實！SpaceX、特斯拉成立特別委員會 評估「合併」可能性",
-      "link": "https://news.cnyes.com/news/id/6634633",
-      "summary": "馬斯克證實 SpaceX、特斯拉各設獨立董事特別委員會，評估潛在合併案，並稱合併「會是個好主意」。&#10;他因利益衝突未直接參與討論；交易仍須特斯拉股東支持，門檻高，能否成真仍有變數。&#10;消息帶動盤後股價，SpaceX 漲約5%、特斯拉漲約1.1%；巴克萊估合併可能由 SpaceX 收購特斯拉。",
-      "published": "2026-10-20T13:51:08+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "Meta Muse拿下兩場勝利 其中一場擊敗ChatGPT",
-      "link": "https://news.cnyes.com/news/id/6634560",
-      "summary": "Meta(META-US) 新款 AI 代理 Muse 的熱潮是否正在降溫？至少從華爾街緊盯的下載數據來看，完全看不出這種跡象。  根據 Sensor Tower 最新公布的數據，Muse 自 9 月 8 日推出以來，累計下載量已達 1,090 萬次，其中美國下載量超過 1,020 萬次。  相較之",
-      "published": "2026-10-20T13:50:03+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "〈台股盤前要聞〉台灣美光罷工危機升溫、外銷訂單連19紅、股匯雙殺再現",
-      "link": "https://news.cnyes.com/news/id/6634420",
-      "summary": "台股盤前要聞&nbsp;  1.台灣美光(Micron)勞資爭議持續升溫，關鍵的勞資協商將於 22 日正式登場。美光台中工會當天將與資方展開第二次勞資調解；為表達堅定立場，桃園工會同步宣布將於同日發起「聲援式罷工」，要求公司針對員工最核心的「具體分潤制度」提出實質對案。&nbsp;  2.經濟部20",
-      "published": "2026-10-20T13:10:03+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "DIGITIMES Today：英特爾晶圓代工另闢戰場？| 台灣表後儲能獲利算盤被打亂？| 竹科經驗向國際輸出",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772135_T4F292KM24AV156LZTRC4",
-      "summary": "TPCA Show 2026活動正式開跑。開展首日，欣興董事長簡山傑以「異質整合時代下的台灣PCB產業：從供應鏈走向生態系」為題發表演講，探討AI時代下產業發展的關鍵契機，如何從過去各自為戰與接單的供應模式，走向未來上下游共同協作的生態系。經濟部20日發佈2026年9月外銷訂單統計，金額為1,142.",
-      "published": "2026-10-20T13:00:00+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "突破AI晶片「記憶體牆」　黃漢森：HBM、光互連、3D堆疊成關鍵",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772095_L341VUAX8KTKY86OL42DY",
-      "summary": "AI處理器算力持續提高，記憶體頻寬成長卻相對落後，資料供應不足已成為限制AI晶片效能與能源效率的重要因素。如何縮短記憶體與運算單元的距離、提高晶粒間互連密度，成為高頻寬記憶體（HBM）、先進封裝及3D整合的發展動力。曾任台積電研發副總經理、現任史丹佛大學Willard R.與Inez Kerr Bell講座教授的黃漢森（H.-S.",
-      "published": "2026-10-20T11:00:00+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "英飛凌與Wolfspeed轉攻8吋SiC　升級降成本滿足AI供電需求",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772061_V1KLBPIE7ATHU50MZQFBU",
-      "summary": "英飛凌（Infineon）與美系碳化矽（SiC）大廠Wolfspeed於10月15日宣布簽訂全新的多年期8吋SiC晶圓供應協議，將雙方既有的供應合作，由6吋基板技術轉向8吋基板技術，為未來的電動車（EV）、再生能源系統和AI資料中心的電力基礎設施相關需求做好準備。SiC是推動全球低碳化之電氣化與能源效率應用的關鍵，此項協議將",
-      "published": "2026-10-20T10:58:11+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星HBM牽手台積電有代價？　為搶NVIDIA訂單恐臨四大隱憂",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772126_UJQ27TBE1FOB2O7BGH62R",
-      "summary": "三星電子（Samsung Electronics）為打入NVIDIA客製化高頻寬記憶體（NVHBM）供應鏈，傳不惜打破過去堅持的一站式（Turnkey）整合供應模式，將採用一直視為自家晶圓代工最大競爭對手台積電的3奈米製程，生產HBM基礎裸晶（Base",
-      "published": "2026-10-20T10:53:17+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Musk把火箭結合跑車　擴大旗下多事業體技術共生",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772045_TY612EI03DC4XP6E1624V",
-      "summary": "Tesla發表Roadster 2火箭跑車，其焦點不只在單一車輛的性能指標，而是執行長Elon",
-      "published": "2026-10-20T10:52:56+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "超微提實體AI效能新定義　強調系統級瓶頸與端到端即時響應",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772130_1ES2KZG32BX9Y811MWFID",
-      "summary": "人工智慧（AI）逐漸從雲端，轉向能感知、推理並控制機器與人類互動的實體AI（Physical AI）後，超微（AMD）嵌入式運算事業群資深副總裁Salil Raje近日指出，目前代表運算能力的TOPS（每秒兆次運算）在實體AI已難充分衡量，業界必須重新思考效能的定義。綜合超微Salil",
-      "published": "2026-10-20T10:47:22+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "長約從MLCC延伸到基板　三星電機5個月累計簽下4.3兆韓元訂單",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772124_GRG2NDME1GB3CQ5A0DMZ4",
-      "summary": "三星電機（Semco）與一家全球大型企業簽訂記憶體用封裝基板長期供應合約，訂單規模約3,604.87億韓元（約2.6億美元），並將於2027年供貨。三星電機雖未公開客戶名稱與應用產品，但繼積層陶瓷電容（MLCC）、矽電容之後，將長期合約範圍擴大至基板領域。據韓媒iNews24、Chosun",
-      "published": "2026-10-20T10:46:19+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "黃漢森揭AI晶片技術轉折　電晶體微縮走向3D整合、每瓦效能",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772096_1WG17XET8Z9HFS7C41K8Y",
-      "summary": "AI運算需求持續擴大，半導體產業面臨技術發展路線的轉折，過去電晶體微縮推動晶片密度、效能與能源效率提升的主要動力，隨著製程節點持續推進，元件架構、材料、製程整合及晶片設計的複雜度同步提高，技術創新逐步延伸至單一晶片以外的整合層級。曾任台積電研發副總經理、現任史丹佛大學Willard R.與Inez Kerr",
-      "published": "2026-10-20T10:45:58+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "科技1分鐘：AI算力簽了長約，能臨時退出？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771960_SFLLAEDM5XNG6X1OIXCYE",
-      "summary": "AI資料中心投資動輒數十億美元，科技巨頭往往提前簽下5至6年的算力租約，讓業者有足夠保障籌資、購買GPU及興建機房。但簽了約，客戶就得一路付到底嗎？微軟（Microsoft）近日退出雲端業者Nscale位於英國",
-      "published": "2026-10-20T10:45:20+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星加碼量子研發　美、印接連布局瞄準先進半導體",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771766_J1Q6NNC97TX8PF5GSR6N4",
-      "summary": "三星電子（Samsung Electronics）進來似乎持續擴大量子運算研究布局，繼傳出在美國設立量子設計研究機構、啟動人才招募後，如今再攜手印度科學理工學院（Indian Institute of Science；IISc）成立量子研究實驗室，計劃進一步深化量子技術與先進半導體領域的研究。據韓媒Th",
-      "published": "2026-10-20T10:44:30+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "高階ASIC需求推動TGV技術落地　宸鴻考慮在台擴大投資",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772072_ZKM1ZHT06QT62D3Q8LVAQ",
-      "summary": "隨著先進封裝製程發展，傳統銅箔基板（CCL）逐漸面臨訊號傳輸及厚度等限制，玻璃通孔（TGV）具備實現高密度垂直互連、有效克服大面積翹曲等優勢，已備受業界關注。宸鴻攜手台系半導體封裝大廠共同開發，TGV試產線已針對特定規格進行POR（Process of",
-      "published": "2026-10-20T10:44:08+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星S27 Ultra晶片配置再反轉　高通駁斥發熱傳聞、Exynos 2700去留成謎",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772042_TO31A4BV3B7N913GVXFHG",
-      "summary": "三星電子（Samsung Electronics）傳已於近日啟動新一代行動應用處理器（AP）Exynos 2700的晶圓生產。不過，近期圍繞Exynos 2700的搭載規模與產品策略變數頻傳，也反映出在記憶體價格飆漲、成本壓力持續升高之際，三星正面臨自研晶片布局、供貨能力與成本控制之間的多重考驗。據韓媒Chosun",
-      "published": "2026-10-20T10:42:24+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "南韓國防半導體近99%靠進口　2027才首編開發預算拚自主",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771955_1DU8I2RR6T4QF84UX4SO7",
-      "summary": "南韓擁有三星電子（Samsung Electronics）、SK海力士（SK Hynix）等全球半導體大廠，卻在國防半導體領域遲遲未能實現技術自主，有近99%的國產武器半導體仰賴進口。隨著半導體逐漸成為左右武器性能的關鍵，南韓政府也首次將國防半導體相關技術開發預算納入2027年度預算案。據韓媒Chosun",
-      "published": "2026-10-20T10:39:46+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Tesla新Roadster是追求商業價值　還是純粹科技浪漫？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772051_Y4ULVDNC6LW77G07S8FJE",
-      "summary": "Tesla 15日發表睽違多年新一代Roadster，以SpaceX火箭推進技術打造具飛行功能的純電跑車，但市場認為這類展示不具任何商業價值、是毫無意義項目，更沒有為人工智慧（AI）的願景帶來貢獻，反而嗅到Tesla執行長Elon",
-      "published": "2026-10-20T10:38:16+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Vertical Aerospace技術闖關　股價暴跌恐卡住eVTOL認證",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771941_4KHLYXDQ3G0Q2D2OHKTS0",
-      "summary": "就在Tesla展現新版Roadster電動跑車獨家具備的「飛天」新本領時，真正的飛天車關鍵業者，卻面臨監管認證卡關、營運資金緊縮的困境。英國電動垂直起降飛行器（俗稱飛天車）業者Vertical",
-      "published": "2026-10-20T10:37:24+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "中微公司加速布局南韓市場　攜手SK Keyfoundry、美格納測試MOCVD",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771962_8M481MVB7TBTJ911N9LQV",
-      "summary": "在中國有機金屬化學氣相沉積磊晶（MOCVD）中，中微公司（以下簡稱中微）市佔率極高，但仍無法供給三星電子（Samsung Electronics）、SK海力士（SK Hynix）等業者。然而，中微正試圖從功率半導體切入南韓市場，並已與SK",
-      "published": "2026-10-20T10:35:31+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "東元攻AIDC散熱　2027年商空、AIDC佔空調事業近6成",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772078_G6ALN96E871SYK73HNHRG",
-      "summary": "東元電機20日參加2026國際冷凍空調綠能科技展，以AI資料中心（AIDC）熱管理與低GWP冷媒為主軸，展現空調事業從設備製造邁向系統整合的轉型成果。東元電機評估，2027年商業空調加AIDC散熱冷卻方案佔空調科技事業群業績比重，可望接近60%",
-      "published": "2026-10-20T10:34:42+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "台積電等大廠搶買面板舊廠　傳樂金評估跟進LCD廠房淘金潮",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772104_J4Z2MCOVLMJKXI5105KUO",
-      "summary": "AI伺服器、先進封裝與資料中心需求持續擴大，帶動停產LCD廠房重新受到市場關注。部分企業正透過收購與改建，將既有廠區轉為半導體封裝基板、先進封裝或AI運算據點，利用供電、供水與冷卻等基礎設施，加快擴產。綜合韓媒中央日報，以及新光電氣工業（Shinko Electric",
-      "published": "2026-10-20T10:34:34+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "Sony手機銷售寒徹骨　卻有望憑「視聽真本事」在配件市場找到春天",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772090_M49L0GEFLQQF04LHZCFQO",
-      "summary": "Sony手機業務在蘋果（Apple）、三星電子（Samsung Electronics）及中國手機品牌的強勢競爭下，年出貨量僅剩數百萬支。不過，當手機相機功能逐步朝專業電影級影片拍攝發展，Sony或有機會在手機配件市場尋找",
-      "published": "2026-10-20T10:33:55+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "英特爾晶圓代工另闢戰場？　12吋InP技術搶攻光通訊商機",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771998_L1BLMIUJ8BPPUU9SMUXPJ",
-      "summary": "人工智慧（AI）模型規模持續擴大，資料中心對晶片間通訊頻寬與能源效率的要求日益提高。傳統銅互連技術在傳輸距離、頻寬密度及單位能耗等方面逐漸面臨瓶頸，使矽光子技術受到更多關注。然而，雷射晶片與磷化銦（InP）材料長期供應吃緊，也使光通訊成為AI基礎設施發展的新挑戰。InP是雷射晶片的重要材料，但目前業界常規InP基板（Sub",
-      "published": "2026-10-20T10:33:52+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "評析：Tesla飛天車追求刺激　科技走在法律之前行得通嗎？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772067_NHN130YT56HX4V8TVP4DJ",
-      "summary": "科技無所不能，Tesla新一代Roadster電動跑車已經將科幻電影才有的技術，落實到真實的電動車上。只不過Elon",
-      "published": "2026-10-20T10:33:10+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星傳開發24小時運作機器人　CES 2027有望亮相",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772099_NIB17CIK85RRFRLKOXR4H",
-      "summary": "三星電子（Samsung Electronics）傳正開發能夠「24小時不間斷工作」的雙足機器人，並評估於CES 2027亮相的可能性。面對波士頓動力（Boston",
-      "published": "2026-10-20T10:32:06+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "告別金屬光罩？傳SDC雙軌推進MPO與噴墨印刷OLED",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772048_EBX15JM63U43GE9OXKK1K",
-      "summary": "三星顯示器（Samsung Display；SDC）傳同步推進微圖案化OLED（Micro Patterned OLED；MPO）與噴墨印刷OLED開發，擴大不使用精細金屬光罩（FMM）的RGB",
-      "published": "2026-10-20T10:26:14+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "是方中科AIDC預約率破5成　CSP、金融科技客戶先卡位",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772032_JSD1IPJH2EN7CE3WVBZ84",
-      "summary": "IDC業者是方電訊斥資新台幣33億元打造的新中科虎尾AI資料中心正式動土。是方董事長邵泓嘉透露，目前資料中心預約簽約率已破5成，客戶以國際大型雲端服務供應商（CSP）、金融科技等業者為主。受惠於AI算力爆發，是方IDC機房與雲端服務持續放量。繼台北內湖聯雲（LY2）資料中心於兩年前啟用後，是方再投入33億元，於中科虎尾",
-      "published": "2026-10-20T10:10:26+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "CoreWeave違約避險成本飆至近3倍 當心股價「誘空陷阱」",
-      "link": "https://news.cnyes.com/news/id/6634561",
-      "summary": "CoreWeave自10月6日來累跌逾40%，後續買盤令股價回升至59.25美元上方。&#10;其5年期CDS週一近1,090個基點，約隱含未來5年60%違約機率，市場憂其為建資料中心大舉舉債。&#10;信用風險也擴及甲骨文、Meta、亞馬遜、Alphabet與微軟CDS，股價若守住59.25美元可維持空頭陷阱。",
-      "published": "2026-10-20T09:38:33+00:00"
-    },
-    {
-      "source": "SemiWiki",
-      "title": "The Industry Challenge: AI Is Forcing Semiconductor Innovation Beyond the Chip",
-      "link": "https://semiwiki.com/semiconductor-manufacturers/applied-materials/375047-the-industry-challenge-ai-is-forcing-semiconductor-innovation-beyond-the-chip/",
-      "summary": "<p>Applied Materials President and CEO Gary Dickerson with the EPIC Center founding partners on October 12, 2026, in Sunnyvale, CA. (Tomas Ovalle/AP Content Services for Applied Materials, Inc.)<strong>The bottlenecks are becoming interconnected</strong></p>\n<p>Artificial intelligence is changing what the semiconductor industry must deliver. &#8230; <a class=\"read-more\" href=\"https://semiwiki.com/semiconductor-manufacturers/applied-materials/375047-the-industry-challenge-ai-is-forcing-semiconduc",
-      "published": "2026-10-20T09:00:00+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "〈財報前瞻〉AI砸錢能回本嗎？Meta支出估翻倍 Muse變現受考驗",
-      "link": "https://news.cnyes.com/news/id/6634534",
-      "summary": "Meta將於周三(21日)盤後公布第三季財報，市場聚焦龐大AI支出與個人助理Muse採用情況。&#10;預估第三季資本支出年增逾1倍至416.8億美元，自由現金流恐轉為淨流出85.2億美元。&#10;雖短期獲利承壓，分析師仍看好廣告成長與AI產品變現；Meta股價今年漲約7%。",
-      "published": "2026-10-20T08:33:30+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "AI設備商好日子快到頭？巴克萊示警價格、銷量恐雙雙承壓",
-      "link": "https://news.cnyes.com/news/id/6634425",
-      "summary": "巴克萊警告，AI資料中心電力設備商高獲利期恐近尾聲，價格與銷量將承壓。&#10;西門子能源、ABB、施耐德電機受惠擴建潮，但股價已自高點回落22%至31%。&#10;Anthropic、CoreWeave信用與融資疑慮升溫，前沿AI實驗室開始向供應鏈施壓議價。",
-      "published": "2026-10-20T07:40:06+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "美股逆轉秀！企業財報助攻、國際油價跳水 道瓊盤中一度飆逾700點",
-      "link": "https://news.cnyes.com/news/id/6634532",
-      "summary": "美股周二盤中由黑翻紅，道瓊漲近150點，財報優於預期、油價回跌與美債殖利率下滑提振情緒。&#10;3M上調全年財測、股價飆逾4%，諾斯洛普格拉曼與RTX財報也優於預期，帶動道瓊反彈。&#10;AI股疑慮未散，Elice上市首日重挫逾30%，但美光、英特爾、AMD與CoreWeave盤中回升。",
-      "published": "2026-10-20T07:20:05+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "連盈利的AI巨頭都要付10%利息 AI要融資愈來愈難了？",
-      "link": "https://news.cnyes.com/news/id/6634259",
-      "summary": "Anthropic推進600億美元「北極星計畫」，租賃約1.5GW Google TPU算力。&#10;融資含420億美元優先順位債、180億美元次順位債；黑石擬認購90億美元次順位債，票息10%。&#10;AI基建融資成本攀升，Anthropic借貸成本較市場基準高逾300基點。",
-      "published": "2026-10-20T06:20:05+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "先進封裝翹曲問題有解 大銀微系統參展TPCA四大亮點一次看",
-      "link": "https://news.cnyes.com/news/id/6634490",
-      "summary": "台灣電路板產業國際展覽會(TPCA Show 2026)今(20)日盛大登場，面對 AI、高效能運算及先進封裝技術的爆發性成長，高階 PCB、IC 載板與重佈線層(RDL)製程持續朝向微細化、高密度及高速加工演進。精密運動控制廠商大銀微系統(4576-TW)今日發布最新技術成果，整合母集團上銀集團的",
-      "published": "2026-10-20T05:57:04+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "降規版也搶翻！中國科技三巨頭傳下單逾300萬張輝達新卡 供貨仍存變數",
-      "link": "https://news.cnyes.com/news/id/6634400",
-      "summary": "字節跳動、阿里巴巴、騰訊合計訂購逾300萬張RTX PRO 5500，按報價總值逾350億美元&#10;中國客戶訂單總量已逾600萬張，輝達稱2027年全球產量最多300萬張，恐僅能滿足5%至10%&#10;RTX PRO 5500屬可合法出口產品，中國業者多用於AI推論；輝達產能將優先投向Rubin平台",
-      "published": "2026-10-20T05:00:05+00:00"
-    },
-    {
-      "source": "SemiWiki",
-      "title": "Smoothing the Quantum Path: ASML and Xanadu Target Photon Loss",
-      "link": "https://semiwiki.com/lithography/373533-smoothing-the-quantum-path-asml-and-xanadu-target-photon-loss/",
-      "summary": "<p>ASML’s decision to collaborate with Xanadu targets one of photonic quantum computing’s most unforgiving engineering constraints: photon loss. The companies will investigate advanced lithography processes for Xanadu’s photonic quantum hardware, focusing on whether tighter patterning control can suppress loss mechanisms&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/lithography/373533-smoothing-the-quantum-path-asml-and-xanadu-target-photon-loss/\">Read More </a></p>\n<p>The post <a href=",
-      "published": "2026-10-20T05:00:04+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "台積電高雄廠工安事故4人墜落送醫 相關工程已自主停工",
-      "link": "https://news.cnyes.com/news/id/6634455",
-      "summary": "台積電(2330-TW)高雄廠F22 P4新建工程工地今(20)日傍晚發生重大工安事故，4名外包商作業人員墜落送醫，其中2人到院前心肺功能停止（OHCA）。台積電表示，相關工程已自主停工，工地安全團隊正配合相關單位釐清事故原因，並督促及協助下包商處理後續事宜。  台積電表示，高雄廠區工地於鋼構作業施",
-      "published": "2026-10-20T04:33:27+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "台股再探季線 外資續賣795億元連10賣 反手敲進電子代工股",
-      "link": "https://news.cnyes.com/news/id/6634417",
-      "summary": "台股今(20)日下跌529點，再探季線，外資續賣超795.4億元，已連10個交易日賣超，累計賣超8,380.65億元。不過，外資回補台指期空單1,450口，淨空單降至8.97萬口。個股方面，外資大賣ETF，也賣超友達及成熟製程晶圓代工族群，反手則買進多檔電子代工廠。  外資今日大賣ETF，包括主動中",
-      "published": "2026-10-20T03:52:35+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "年度考核後動刀！高通全球裁員 11月起通知員工",
-      "link": "https://news.cnyes.com/news/id/6634398",
-      "summary": "高通將全球績效導向裁員，預計11月通知受影響員工，藉年度考核強化績效文化。&#10;執行長艾蒙稱裁員將依業務優先順序、組織需求與員工技能調整；截至去年9月高通約有5.2萬名員工。&#10;高通受消費電子需求疲弱與蘋果營收下滑衝擊，並押注AI資料中心等非手機業務，盼2027會計年度彌補手機業務流失。",
-      "published": "2026-10-20T03:40:15+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "高雄台積電 F22 廠區工安意外，螺栓斷裂致 4 人墜落送醫後續勒令停工",
-      "link": "https://technews.tw/2026/10/20/industrial-accident-at-tsmc-f22-plant-in-kaohsiung/",
-      "summary": "高雄市楠梓園區台積電 F22 P4 新建工程工地 20 日傍晚發生重大工安意外。事故起因於吊車執行鋼構吊掛安裝 [&#8230;]",
-      "published": "2026-10-20T03:30:53+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Unimicron chairman sees substrate sizes reaching 14x current scale by 2030",
-      "link": "https://www.digitimes.com/news/a20261020PD247/unimicron-substrate-tpca-2026.html",
-      "summary": "TPCA Show 2026 officially opened, with Unimicron Chairman Shan-Chieh Chien saying in his opening address that solving the three major challenges facing AI accelerators in high-performance computing (HPC) will require more than semiconductor process scaling. Advanced packaging and heterogeneous integration technologies must be introduced in parallel, significantly raising the technical requirements for the PCB and substrate industries.",
-      "published": "2026-10-20T02:09:19+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Jensen Huang urges Germany to embrace physical AI at Berlin summit",
-      "link": "https://www.digitimes.com/news/a20261020PD246/nvidia-germany-jensen-huang-berlin-manufacturing.html",
-      "summary": "German Chancellor Friedrich Merz and Nvidia CEO Jensen Huang urged German businesses to embrace AI at an industry summit in Berlin on October 19, aiming to revive the economy and modernize industry. Huang specifically called on Germany's automotive and industrial machinery sectors to adopt physical AI by leveraging the country's extensive manufacturing data and expertise.",
-      "published": "2026-10-20T01:22:16+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "特斯拉飛天是噱頭？楊立昆算只能撐 5 秒，馬斯克不談物理反嗆放屁",
-      "link": "https://technews.tw/2026/10/20/elon-musk-yann-lecun-roadster/",
-      "summary": "近日，特斯拉執行長伊隆·馬斯克（Elon Musk）發布了 Roadster 跑車「飛越」特斯拉卡車的特效影片 [&#8230;]",
-      "published": "2026-10-20T01:10:50+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Samsung eyes six foldables for 2027, including a rollable phone",
-      "link": "https://www.digitimes.com/news/a20261020PD245/samsung-galaxy-2027-foldable-smartphone-foldable.html",
-      "summary": "Samsung Electronics is reportedly planning its largest-ever foldable smartphone lineup in 2027, expanding the Galaxy Z series to as many as six models. The broader portfolio, alongside improvements in battery performance, thickness, and weight, could accelerate foldable adoption beyond its current niche-market status.",
-      "published": "2026-10-20T01:09:11+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Intel requests FCC waiver from US foreign robot ban, citing impact on US chipmaking",
-      "link": "https://www.digitimes.com/news/a20261020VL221/intel-ban-fcc-robot-security.html",
-      "summary": "Intel has asked the Federal Communications Commission (FCC) for a waiver to the US ban on advanced foreign robots, citing worries that its machines will not receive equipment updates, which could hinder its ability to produce semiconductors in the US. The request comes after the US banned imports of foreign-made robots in July.",
-      "published": "2026-10-20T00:58:46+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "是方虎尾 AI 資料中心簽約率達五成，拚 2031 年達獲利目標",
-      "link": "https://finance.technews.tw/2026/10/20/chief-aidc-2/",
-      "summary": "AI 資料中心需求持續升溫，是方電訊今日於虎尾 AI 資料中心動土典禮會後聯訪透露，新資料中心雖尚未完工，不過 [&#8230;]",
-      "published": "2026-10-20T00:55:23+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Chief Telecom starts NT$3.3 billion AI data center in Taiwan",
-      "link": "https://www.digitimes.com/news/a20261020PD243/chief-telecom-data-center-taiwan-infrastructure-capacity.html",
-      "summary": "Chief Telecom broke ground on a new AI data center at the Central Taiwan Science Park on the 20th, committing approximately NT$3.3 billion (US$101.7 million) to a facility expected to begin operations in the second half of 2028. The project is intended to extend the company's data center growth, as its Lianyun AI Intelligent Data Center is projected to reach full capacity in 2027.",
-      "published": "2026-10-20T00:51:04+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "輝達在台首開政府事務總監職缺，深化政策溝通拚新總部布局",
-      "link": "https://technews.tw/2026/10/20/nvidia-director-government-affairs-taiwan/",
-      "summary": "人工智慧（AI）晶片大廠輝達（NVIDIA）積極擴大在台布局，近期首度在台灣開出負責與政府部門溝通的「政府事務 [&#8230;]",
-      "published": "2026-10-20T00:50:50+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "台灣 SMR 發展卡在哪？專家點出政策與法規挑戰",
-      "link": "https://technews.tw/2026/10/20/taiwan-smr-development-hindered-regulations-nuclear-waste-challenges/",
-      "summary": "隨著 AI 資料中心用電需求攀升，全球加速發展小型模組化反應爐（SMR）及微型模組化反應爐（MMR）。中華核能 [&#8230;]",
-      "published": "2026-10-20T00:17:16+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "2027 年全球資料中心新增產能將翻倍，瓶頸再度轉回半導體晶片與記憶體",
-      "link": "https://finance.technews.tw/2026/10/20/global-data-center-capacity-will-double-by-2027/",
-      "summary": "研調機構 SemiAnalysis 最新發布的報告指出，全球人工智慧（AI）基礎設施建設將在 2027 年邁入 [&#8230;]",
-      "published": "2026-10-20T00:10:26+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "記憶體長約越簽越長 Alphabet談到2035年、戴爾惠普鎖到2031年",
-      "link": "https://news.cnyes.com/news/id/6633945",
-      "summary": "HPQ、DELL與美光長約延至2031年，Alphabet也洽談延至2035年，提前鎖定AI記憶體供應。&#10;美光稱已簽26份長約，預計至2030年貢獻約35%營收，部分合約設「價格下限」支撐營運。&#10;KeyBanc估Q4 DRAM漲15%至20%、NAND逾20%，市場關注景氣是否延續至2030年後。",
-      "published": "2026-10-20T00:10:02+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "是方中科虎尾AI資料中心挑戰預約率8至9成 目標2031年獲利",
-      "link": "https://news.cnyes.com/news/id/6634197",
-      "summary": "是方中科虎尾AI資料中心今動土，預計2028年下半年商轉，目標2031年開始獲利。&#10;邵泓嘉稱預約率已逾5成，客戶含國際大型CSP與FinTech，挑戰商轉前達8至9成。&#10;中華電信與是方IDC市占率達78%，並將拓展中南部、台中AIDC與海外布局。",
-      "published": "2026-10-20T00:05:33+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "CoreWeave債券利率飆至15%引發AI泡沫恐慌　三大投行聯手「滅火」：市場選錯晴雨表",
-      "link": "https://news.cnyes.com/news/id/6634120",
-      "summary": "CoreWeave約15億美元無擔保債券殖利率飆至15.6%，CDS利差破1194基點，股價單週跌逾24%。&#10;巴克莱、高盛、摩根大通稱市場錯把不足總債務5%的末端無擔保債當AI資本支出風向球。&#10;高盛上調CoreWeave至買入、目標價106美元；黃仁勳稱其財務改善，無需輝達紓困。",
-      "published": "2026-10-19T23:40:07+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "AUO selects glass substrate specs for semiconductor processes, not size rivalry",
-      "link": "https://www.digitimes.com/news/a20261020PD237/auo-substrate-lcd-packaging-osat.html",
-      "summary": "AUO is tailoring its glass core substrate specifications specifically to semiconductor process requirements rather than competing on panel dimensions with Innolux, according to Chairman and CEO Paul Peng. The company aims to leverage its glass-processing expertise to supply critical components and technologies to outsourced semiconductor assembly and test (OSAT) leaders such as ASE Technology Holding and Powertech Technology.",
-      "published": "2026-10-19T23:38:00+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "基富通 10 週年推好好安養信託！多頭總司令張錫喊台積電 5,000 元",
-      "link": "https://finance.technews.tw/2026/10/20/take-good-care-of-yourself/",
-      "summary": "基富通今日慶祝營運屆滿 10 週年，攜手華南銀行推出「好好安養信託」，藉由基金投資不中斷、信託專款專用、資產保 [&#8230;]",
-      "published": "2026-10-19T23:36:10+00:00"
-    },
-    {
       "source": "TrendForce",
       "title": "[News] Unimicron Warns of IC Substrate Crunch: Up to 30-Month Equipment Lead Times, 20% Material Gap in 2027",
       "link": "https://www.trendforce.com/news/2026/10/20/news-unimicron-warns-of-ic-substrate-crunch-up-to-30-month-equipment-lead-times-20-material-gap-in-2027/",
       "summary": "As AI accelerator demand fuels the rise of advanced packaging technologies such as CoWoS and EMIB, supply bottlenecks are spreading to critical materials and equipment. According to Wealth Magazine and the Economic Daily News, citing leading Taiwanese IC substrate maker &hellip; Continue reading &rarr;",
       "published": "2026-10-19T23:31:50+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "輝達發表矽中介層光學封裝原型晶片，布局 2028 年 Feynman 平台",
-      "link": "https://finance.technews.tw/2026/10/20/nvidia-unveils-prototype-silicon-interposer-optical-packaging-chip/",
-      "summary": "在 SEMICON West 2026 大會上，輝達(NVIDIA) 以「下一代 AI 之光學整合」（Opti [&#8230;]",
-      "published": "2026-10-19T23:30:06+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "Meta豪砸AI代價浮現？Q3財報將揭示獲利壓力",
-      "link": "https://news.cnyes.com/news/id/6633829",
-      "summary": "Meta週三財報前，華爾街估其資本支出與總費用預測將高於市場預期，2027年獲利估值恐下修。&#10;Evercore ISI估2027年總費用年增約40%，資本支出約700億美元。&#10;Meta近一個月股價漲6%，新AI模型Muse Wonder與Muse AI代理獲好評，但市場關注AI基建成本。",
-      "published": "2026-10-19T23:30:05+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "考核未達標！馬斯克去年薪酬1583億美元 卻「實領0元」",
-      "link": "https://news.cnyes.com/news/id/6634125",
-      "summary": "特斯拉揭露馬斯克2025年總薪酬1,583.59億美元，皆為股票獎勵會計估值，實際到手為零。&#10;因2025年市值與營運績效考核未達標，馬斯克未取得現金，也未解鎖任何股權。&#10;該10年績效計畫設12個行權階段、約4.24億股，全部達標最高可拿約1兆美元股票獎勵。",
-      "published": "2026-10-19T23:17:55+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "記憶體下一波商機來了 美光研發EIM搶攻實體AI",
-      "link": "https://news.cnyes.com/news/id/6633944",
-      "summary": "美光副總裁李哲稱正研發實體AI用邊緣推理記憶體EIM，瞄準自駕與人形機器人。&#10;美光正將EIM應用於LPDDR6，與客戶討論新產品。&#10;美光估高效能人形機器人需約200GB DRAM與4TB儲存，Counterpoint料DRAM需求2030年較今年增逾20倍。",
-      "published": "2026-10-19T23:00:04+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "AI賣壓令人想起1987年股災 財經名嘴：股價下跌不代表基本面轉差",
-      "link": "https://news.cnyes.com/news/id/6633851",
-      "summary": "Cramer指1987年黑色星期一教訓可用於看AI股賣壓：股價下跌不一定代表企業出問題。&#10;上周標普500跌近2%、那指跌4.5%，半導體與資料中心股重挫，但基本面未見明顯惡化。&#10;Cramer懷疑賣壓或與避險基金清算有關，可能迫使拋股，令股價與基本面脫節。",
-      "published": "2026-10-19T23:00:03+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Samsung's HBM4 supply lock-in exposes limits of China's CXMT as Apple and Tesla seek DRAM alternatives",
-      "link": "https://www.digitimes.com/news/a20261020VL218/samsung-cxmt-dram-hbm4.html",
-      "summary": "Samsung Electronics is expected to enter 2027 with approximately 80% of its planned memory production secured under long-term contracts, reinforcing its pricing position while China's ChangXin Memory Technologies (CXMT) expands capacity and attracts attention from US tech companies seeking alternative DRAM suppliers.",
-      "published": "2026-10-19T22:40:48+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "馬斯克晶圓夢跨大步，Terafab 傳 2027 年進駐首台 ASML EUV 曝光機",
-      "link": "https://technews.tw/2026/10/20/elon-musk-terafab-first-asml-euv-2027/",
-      "summary": "根據外媒報導，引述知情人士透露，馬斯克（Elon Musk）旗下的 Terafab 預計將於 2027 年年中 [&#8230;]",
-      "published": "2026-10-19T22:40:31+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "是方虎尾AI資料中心動土 投資33億元2028年下半年正式營運",
-      "link": "https://news.cnyes.com/news/id/6634090",
-      "summary": "是方在中科虎尾舉辦AI資料中心動土，總投資33億元，預計2028年下半年正式營運。&#10;虎尾AIDC基地1.56公頃、地上4樓、總樓地板面積約6500坪，規劃16MW、PUE≤1.4，參照Tier 4標準。&#10;公司稱將串聯虎尾、聯雲、宏鼎、麗源與跨國海纜服務，打造台灣西部AI算力走廊與跨國AIDC鏈。",
-      "published": "2026-10-19T22:35:37+00:00"
     },
     {
       "source": "TrendForce",
@@ -508,291 +746,11 @@
       "published": "2026-10-19T22:31:02+00:00"
     },
     {
-      "source": "鉅亨網 台股",
-      "title": "〈台股盤後〉量縮震盪挫529點再度下探季線 電子代工、散熱逆勢抗跌",
-      "link": "https://news.cnyes.com/news/id/6634134",
-      "summary": "台股今(20)日延續量縮震盪格局，開低走高翻紅後再度下殺，收盤前賣壓湧現，再次回測季線支撐，終場下跌529.15點，跌幅1.13%，收在46292.93點，成交量縮減至7587億元。  電子權值股走弱，台積電下跌15元或0.6%，收2405元，聯發科、日月光投控均跌逾1%，聯電跌3%。電子代工族群逆",
-      "published": "2026-10-19T22:30:07+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Hygon's revenue jumps 58% on AI chip demand, but growth slows amid 51% stock slump",
-      "link": "https://www.digitimes.com/news/a20261020VL213/revenue-ai-chip-demand-earnings-growth.html",
-      "summary": "China's Hygon Information Technology reported a 57.58% increase in revenue for the first nine months of 2026, reflecting sustained demand for domestic high-performance processors and AI computing chips. Yet slower quarterly growth, mounting R&amp;D expenditure and a steep share-price correction have highlighted the gap between the company's operating performance and market expectations.",
-      "published": "2026-10-19T22:21:22+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "東元衝刺AIDC散熱與商用空調商機 明年業績比重拚超過6成",
-      "link": "https://news.cnyes.com/news/id/6634109",
-      "summary": "東元參與2026空冷凍空調綠能展，聚焦AI資料中心高效冷卻與低GWP冷媒減碳技術。&#10;蔡尚育：明年AIDC與商用空調業績比重可望逾6成，家用空調降至4成。&#10;東元布局台灣、東南亞及美日，目標打入CSP AI基礎建設專案。",
-      "published": "2026-10-19T22:20:38+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "特斯拉SpaceX聯手xAI搭建晶圓供應鏈  上周密集磋商南韓設備材料商",
-      "link": "https://news.cnyes.com/news/id/6634123",
-      "summary": "特斯拉與SpaceX聯手xAI推進TerraFab，初期投資168億美元，目標十年內建月產100萬片晶圓廠。&#10;SpaceX本月初與德州簽稅收減免協議後動工，首期月產能10萬片，預計2030年前完工。&#10;TerraFab加速供應鏈佈局，於首爾SEMICON WEST 2026接觸約10家韓半導體企業。",
-      "published": "2026-10-19T22:10:04+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "高盛再上調AI伺服器展望 點名鴻海、緯穎等供應鏈受惠",
-      "link": "https://news.cnyes.com/news/id/6634126",
-      "summary": "高盛將2027、2028年全球伺服器整體潛在市場規模分別上修31%、45%。&#10;機架級AI伺服器與雲端業者自研ASIC需求攀升，推升AI晶片與伺服器出貨預估。&#10;記憶體漲價與產品組合升級帶動整機售價，供應鏈多環節受惠。",
-      "published": "2026-10-19T22:06:46+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "微軟砍AI資料中心案 研調仍看好2027年迎50GW擴產潮",
-      "link": "https://news.cnyes.com/news/id/6633936",
-      "summary": "SemiAnalysis估，全球40個資料中心園區逾24GW已進施工後期，2027年中國以外市場將新增50GW容量。&#10;該機構稱今年已簽約約1兆美元多年度租賃，且建商改用燃料電池、氣渦輪機等自備電源加速施工。&#10;預計2027、2028年記憶體與處理器短缺將成新瓶頸，輝達晶片需求仍將大於供給。",
-      "published": "2026-10-19T21:54:14+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "分析師：特斯拉與SpaceX合併「沒有那麼容易」",
-      "link": "https://news.cnyes.com/news/id/6633828",
-      "summary": "華爾街近幾週熱議SpaceX與特斯拉可能合併，推測交易形式與綜效。&#10;RBC分析師Tom Narayan稱可能由SpaceX全股票收購特斯拉，特斯拉股價或需到480美元。&#10;長期焦點或在馬斯克Terafab半導體計畫，目標將晶片製造內部化、成本降最多90%。",
-      "published": "2026-10-19T21:30:06+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "〈星宇直飛布拉格〉搶啖歐洲半導體聚落新商機 成AI趨勢另類受惠者",
-      "link": "https://news.cnyes.com/news/id/6634083",
-      "summary": "星宇直飛布拉格帶動東歐旅遊熱潮，也看好台灣半導體、AI供應鏈帶來商務往來。&#10;星宇加密鳳凰城每周4班增至5班、布拉格增至4班，吉隆坡改派A330因應需求。&#10;i-TRANS Global進駐捷克烏斯季州，將建1.7萬平方公尺倉儲中心，服務德勒斯登Silicon Saxony與台積電歐洲新廠。",
-      "published": "2026-10-19T21:11:41+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "〈焦點股〉磷化銦需求爆發 光環漲逾半根站上所有均線",
-      "link": "https://news.cnyes.com/news/id/6634082",
-      "summary": "AI資料中心規格由800G升級1.6T、3.2T，帶動光環磷化銦CW Laser需求爆發&#10;光環今盤中大漲7.5%至193元，成交逾4,000張，較昨增近2倍&#10;光環第3季營收3.26億，季增66.3%、年增115.9%；年底產能估較第3季翻倍",
-      "published": "2026-10-19T21:05:08+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "DeepSeek-Huawei chip co-design could shift AI training away from Nvidia",
-      "link": "https://www.digitimes.com/news/a20261020VL214/deepseek-huawei-ascend-ai-chip-training.html",
-      "summary": "DeepSeek is reportedly working closely with Huawei to influence the design of its future AI chips, a link reportedly closer than typical supplier-customer relationships. The collaboration shows the growing ties between two of China's largest technology firms to sidestep Nvidia.",
-      "published": "2026-10-19T20:32:55+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "外資法人聯手大賣！KOSPI連彈二日後又跌近5%　資料中心新股Elice上市首日慘崩30%",
-      "link": "https://news.cnyes.com/news/id/6634051",
-      "summary": "KOSPI今再大跌，一度跌4.76%並失守5500點，連兩日反彈後轉弱。&#10;外資淨賣出6367億韓元、法人淨賣超4670億韓元；美債殖利率上升與Elice Group掛牌首日暴跌拖累市場。&#10;Elice Group IPO承銷熱度達388.84倍，但首日股價跌逾30%；分析師稱拋售無差別，市場非常脆弱。",
-      "published": "2026-10-19T20:30:04+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "RBC估SpaceX每股480美元收購特斯拉 合併後估值達3.74兆美元",
-      "link": "https://news.cnyes.com/news/id/6633861",
-      "summary": "RBC稱SpaceX可每股480美元收購特斯拉，合併後估值達3.74兆美元&#10;特斯拉股東持股降至48%，低於7月估算54%；SpaceX股東持股52%&#10;RBC指合併可結合特斯拉機器人製造與SpaceX AI基礎設施，惟目前無實際交易",
-      "published": "2026-10-19T20:30:03+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Nvidia says South Korea has Vera CPU customers, LG robot results ahead",
-      "link": "https://www.digitimes.com/news/a20261020PD223/nvidia-cpu-robot-software-lg-electronics.html",
-      "summary": "Nvidia's South Korea representative said the company's Vera CPU already has customers in South Korea and that collaboration with LG Electronics on humanoid robots is expected to deliver results soon. Speaking at KES 2026, Soyoung Jeong outlined Nvidia's role in the shift toward AI agents and physical AI.",
-      "published": "2026-10-19T20:27:46+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Kioxia targets higher-value AI storage with Nvidia partnership, advanced NAND technology",
-      "link": "https://www.digitimes.com/news/a20261020VL207/kioxia-nand-nvidia-partnership.html",
-      "summary": "Kioxia is prioritising proprietary NAND flash technology and customer-specific development over aggressive capacity expansion, seeking to capitalise on rising AI storage demand while reducing exposure to memory market volatility.",
-      "published": "2026-10-19T20:14:58+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "不只忙AI晶片！輝達用8192顆GPU模擬量子電腦 特定流程可少用90%量子位元",
-      "link": "https://news.cnyes.com/news/id/6633878",
-      "summary": "輝達動用8192顆GH200 GPU，在德國JUPITER超級電腦完成104量子位元容錯運算模擬。&#10;研究結合CUDA-Q與cuQuantum，將特定模擬流程從數周縮短至數天。&#10;輝達稱魔術態培育方法可減少約90%實體量子位元需求，但僅適用特定流程，仍待實體硬體驗證與商業化。",
-      "published": "2026-10-19T20:10:03+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Nscale set to lose Microsoft as anchor tenant over UK power delays, adding uncertainty to IPO",
-      "link": "https://www.digitimes.com/news/a20261020PD225/microsoft-uk-ipo-data-center-competition.html",
-      "summary": "UK neocloud provider Nscale is set to lose Microsoft as the anchor tenant at its Loughton data center in Essex, after delays in power availability disrupted plans to support AI computing services. The UK's National Grid reportedly told Nscale that sufficient electricity for the site may not be available until after 2030.",
-      "published": "2026-10-19T19:59:00+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "SpaceX財報聚焦AI！營收暴增背後燒錢壓力浮現、特斯拉整併傳聞再起",
-      "link": "https://news.cnyes.com/news/id/6633867",
-      "summary": "SpaceX周二收盤後公布第3季財報，FactSet估EPS 0.13美元、營收128億美元年增64%。&#10;AI算力出租帶動成長，德銀估AI營收60億美元；但第3季資本支出恐達190億美元。&#10;公司擬借款400億美元買輝達晶片，分析師指額外融資需求仍壓抑市場情緒。",
-      "published": "2026-10-19T19:50:04+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Micro LED optical interconnect targets AI racks amid unsettled standards",
-      "link": "https://www.digitimes.com/news/a20261020PD220/demand-transmission-communications-copper-technology.html",
-      "summary": "Surging demand for optical interconnects in AI computing centers is pushing Micro LED technology into short-reach optical transmission inside data center racks. Differing views on Micro LED's prospects in optical communications, recently expressed by Largan Precision Chairman En-Ping Lin and AUO Chairman Paul Peng, have sparked significant debate across the industry.",
-      "published": "2026-10-19T19:45:00+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "四年來首度轉向！曾看空英特爾的分析師為何改變立場？",
-      "link": "https://news.cnyes.com/news/id/6633827",
-      "summary": "摩根大通分析師Harlan Sur將英特爾評級由「減碼」上調至中性，結束近四年看空立場。&#10;Sur稱陳立武2025年接任執行長後，英特爾資料中心與AI伺服器業務、客製化晶片及製程節點進展改善。&#10;他仍盼見CPU市佔率回升與資料中心網絡進展；英特爾週一股價漲2.4%，市場僅剩1位分析師看空。",
-      "published": "2026-10-19T19:30:03+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "台灣美光罷工危機升溫！台中桃園兩廠工會同步動員 22日迎關鍵調解",
-      "link": "https://news.cnyes.com/news/id/6634036",
-      "summary": "台灣美光(Micron)勞資爭議持續升溫，關鍵的勞資協商將於 22 日正式登場。美光台中工會當天將與資方展開第二次勞資調解；為表達堅定立場，桃園工會同步宣布將於同日發起「聲援式罷工」，要求公司針對員工最核心的「具體分潤制度」提出實質對案。  美光台中廠約有12,300名員工，其中工會會員高達11,0",
-      "published": "2026-10-19T19:14:48+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "AI下一波不是晶片？永豐全球戰略資源基金鎖定鈾礦、稀土、電網，誰會成為新贏家？",
-      "link": "https://news.cnyes.com/news/id/6634035",
-      "summary": "AI算力需求推升資料中心用電，投資主線延伸至電力、鈾礦與稀土等資源。&#10;永豐全球戰略資源基金聚焦鈾礦、稀土、智慧電網，布局Cameco、Freeport-McMoRan、GE Vernova等龍頭。&#10;基金受惠核能復興與供應鏈重組，但也面臨商品價格、景氣循環與地緣政治風險。",
-      "published": "2026-10-19T19:05:04+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "尖點亮相 TPCA Show 2026 聚焦AI伺服器高階PCB精密鑽孔",
-      "link": "https://news.cnyes.com/news/id/6633986",
-      "summary": "尖點科技(8021-TW)在今(20)日登場的 TPCA Show 2026 台灣電路板產業國際展覽會中，展出多項高階PCB精密鑽孔技術與解決方案，涵蓋AI伺服器高階材料加工、微型深孔鑽孔、特殊刀具設計及高效能鍍膜等八大技術主題，展現公司持續投入精密加工技術研發、因應高階PCB製程升級的成果。  尖",
-      "published": "2026-10-19T18:04:13+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "〈台股開盤〉台積電續挫力守2400元 大盤跌逾400點後V轉翻紅",
-      "link": "https://news.cnyes.com/news/id/6633967",
-      "summary": "台股早盤受國際半導體股走弱、日韓股下跌拖累，一度跌282點；台積電跌0.83%，2400元關卡受關注。&#10;電子股成交比重逾7成、量能萎縮，分析師估台股短線恐陷高檔盤整，季線附近築底。&#10;TPCA2026、IMPACT、NVIDIA GTC柏林登場，PCB、AI題材股可望活絡；外資期空單逾9萬口仍需留意。",
-      "published": "2026-10-19T17:56:55+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "玉晶光拓光通信版圖 攜手美商3M推進擴束光學技術開發生產",
-      "link": "https://news.cnyes.com/news/id/6633917",
-      "summary": "玉晶光攜手美商3M研發、製造EBO光學方案，3M擬以每股869.6元認購5534張私募股，投資48.13億元、取得約4.68%股權。&#10;雙方將結合3M材料科學與全球客戶網絡、玉晶光精密光學製造與量產能力，推進下一代資料中心光互連與CPO解決方案。&#10;玉晶光期盼擴大切入高階光通訊與AI資料中心供應鏈。",
-      "published": "2026-10-19T17:07:01+00:00"
-    },
-    {
       "source": "TrendForce",
       "title": "[News] China’s NAURA Targets Hybrid Bonding With RMB 405M Deal as Domestic Equipment Push Accelerates",
       "link": "https://www.trendforce.com/news/2026/10/20/news-chinas-naura-targets-hybrid-bonding-with-rmb-405m-deal-as-domestic-equipment-push-accelerates/",
       "summary": "China&#8217;s semiconductor equipment makers are stepping up their push into advanced packaging as demand grows for technologies supporting HBM and chiplet integration. According to ETNews and Yicai, China&#8217;s largest semiconductor equipment maker, NAURA, plans to acquire a hybrid bonding specialist &hellip; Continue reading &rarr;",
       "published": "2026-10-19T16:30:46+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "鉅亨速報 - Factset 最新調查：京元電子(2449-TW)EPS預估下修至8.51元，預估目標價為346.5元",
-      "link": "https://news.cnyes.com/news/id/6633901",
-      "summary": "根據FactSet最新調查，共15位分析師，對京元電子(2449-TW)做出2026年EPS預估：中位數由8.64元下修至8.51元，其中最高估值9.35元，最低估值7.62元，預估目標價為346.5元。市場預估EPS預估值2026年(前值)2027年2028年最高值9.35(9.35)16.932",
-      "published": "2026-10-19T16:10:35+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "鉅亨速報 - Factset 最新調查：聯電(2303-TW)目標價調升至145元，幅度約3.57%",
-      "link": "https://news.cnyes.com/news/id/6633897",
-      "summary": "根據FactSet最新調查，共21位分析師，對聯電(2303-TW)提出目標價估值：中位數由140元上修至145元，調升幅度3.57%。其中最高估值258元，最低估值68.2元。綜合評級 - 共有21位分析師給予聯電(2303-TW)評價：積極樂觀17位、保持中立3位、保守悲觀3位。聯電(2303-",
-      "published": "2026-10-19T16:10:19+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Intel Claims Industry’s Only High-Volume 300mm InP Silicon Photonics Capability as CPO Gains Momentum",
-      "link": "https://www.trendforce.com/news/2026/10/20/news-intel-claims-industrys-only-high-volume-300mm-inp-silicon-photonics-capability-as-cpo-gains-momentum/",
-      "summary": "Intel is expanding its silicon photonics capabilities as demand for high-bandwidth optical interconnects grows across AI and high-performance computing (HPC). According to Wccftech, at the 2026 Open Compute Project (OCP) Global Summit, Intel claimed to be the only high-volume foundry &hellip; Continue reading &rarr;",
-      "published": "2026-10-19T15:30:40+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "AI成長股賣壓恐未結束 美債殖利率逾5%、融資成本成雙重壓力",
-      "link": "https://news.cnyes.com/news/id/6633831",
-      "summary": "美債殖利率高於5%，AI成長股估值與融資成本同受壓，市場資金轉向公債與價值股。&#10;路透稱上周費半跌約10%，CoreWeave跌約25%；三星、SK海力士亦回檔16%至29%。&#10;AirTrunk REIT、Firmus、SB Energy上市案受阻；市場更看重現金流、負債與資本支出回收。",
-      "published": "2026-10-19T14:50:06+00:00"
-    },
-    {
-      "source": "SemiWiki",
-      "title": "Moving Beyond AI-Assisted Design – Agentrys Shows the Way with Agentic Loop Engineering",
-      "link": "https://semiwiki.com/eda/agentrys/375112-agentrys-shows-the-way-with-agentic-loop-engineering/",
-      "summary": "<p style=\"font-weight: 400;\">At Hot Chips 2026, OpenAI presented Jalapeño, an inference ASIC built with AI in the design loop. As reported from the session by <a href=\"https://www.servethehome.com/openai-jalapeno-asic-at-hot-chips-2026/\">ServeTheHome</a> and <a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/hot-chips-2026-openais-jalapeno-ai-asic-unpacked-accelerator-developed-using-ai-achieves-efficiency-and-throughput-gains-against-power-hungry-blackwell\">Tom’s Hardwa",
-      "published": "2026-10-19T09:00:27+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Micron Develops Edge Inference Memory, 2H28 Production Seen as HBM Potential Grows in Humanoids",
-      "link": "https://www.trendforce.com/news/2026/10/19/news-micron-develops-edge-inference-memory-2h28-production-seen-as-hbm-potential-grows-in-humanoids/",
-      "summary": "The AI boom is extending beyond high-performance computing (HPC) into physical AI, opening new opportunities for memory makers beyond HBM, particularly in humanoid robotics. According to The Elec, Micron Vice President Lee Cheol revealed at SEDEX 2026 in South Korea &hellip; Continue reading &rarr;",
-      "published": "2026-10-18T23:58:47+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] NVIDIA Chooses Monolithic Die Over Chiplets for Vera CPU, Claims 2× x86 Performance in Agentic AI",
-      "link": "https://www.trendforce.com/news/2026/10/19/news-nvidia-chooses-monolithic-die-over-chiplets-for-vera-cpu-claims-2x-x86-performance-in-agentic-ai/",
-      "summary": "The rise of agentic AI is reshaping CPU design priorities. According to Wccftech, which interviewed NVIDIA&#8217;s Vera team, the company has chosen a monolithic compute die for its Vera CPU over the chiplet architectures used by major x86 competitors. Vera &hellip; Continue reading &rarr;",
-      "published": "2026-10-18T23:13:21+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] MediaTek’s Google TPU v9 Shipments May Slip to 1Q28; ASIC Race Heats Up as Taiwan Firms Eye Opportunities",
-      "link": "https://www.trendforce.com/news/2026/10/19/news-mediateks-google-tpu-v9-shipments-may-slip-to-1q28-asic-race-heats-up-as-taiwan-firms-eye-new-opportunities/",
-      "summary": "Taiwan&#8217;s ASIC design industry is seeing growing opportunities, with MediaTek emerging as a key player in the expanding market. However, according to Commercial Times, citing institutional investors, Google&#8217;s TPU v9 project, involving MediaTek, could see its tape-out delayed until January &hellip; Continue reading &rarr;",
-      "published": "2026-10-18T19:47:16+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] NVIDIA Reportedly Pushes TSMC 3nm NVHBM Base Dies for Samsung, SK hynix, Micron, Uniting Foundry Rivals",
-      "link": "https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up/",
-      "summary": "As previously reported by ZDNet in September, Samsung is pursuing a dual-track strategy for custom HBM, tapping both its own foundry and rival TSMC for base die production. A new report from Seoul Economic Daily lends further weight to this &hellip; Continue reading &rarr;",
-      "published": "2026-10-18T18:35:20+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] After TSMC’s 3Q26 Earnings: Key Brokerage Takeaways as 2028 Capex Forecasts Reach US$105B",
-      "link": "https://www.trendforce.com/news/2026/10/16/news-after-tsmcs-3q26-earnings-key-brokerage-takeaways-as-2028-capex-forecasts-reach-us105b/",
-      "summary": "Following TSMC’s bullish earnings call, which saw the foundry giant raise its 2026 revenue growth outlook to 44% YoY and forecast another record quarter in 4Q26, foreign brokerages have weighed in with a largely upbeat verdict: all looks strong—except margins. &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T23:18:48+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Apple Reportedly Skips High-End M6 Chips for M7 Lineup; Partners With Meta to Run Muse AI on Mac Studio",
-      "link": "https://www.trendforce.com/news/2026/10/16/news-apple-reportedly-skips-high-end-m6-chips-for-m7-lineup-partners-with-meta-to-run-muse-ai-on-mac-studio/",
-      "summary": "Apple is reportedly shifting its focus to the M7 chip lineup, skipping higher-end M6 variants as it prioritizes technologies designed for AI workloads. According to MacRumors, citing Bloomberg&#8217;s Mark Gurman on his podcast, Apple has introduced the base M6 chip &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T22:28:55+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Korean Chip Engineer Accuses Tesla of Pressuring Samsung on AI5/AI6 Pricing, Poaching Talent for Terafab",
-      "link": "https://www.trendforce.com/news/2026/10/16/news-korean-chip-engineer-accuses-tesla-of-pressuring-samsung-on-ai5ai6-pricing-poaching-talent-for-terafab/",
-      "summary": "A South Korean semiconductor engineer has accused Tesla of imposing unfair contract terms on Samsung and Elon Musk&#8217;s Terafab project of poaching talent from the chipmaker&#8217;s Texas facility. According to Wccftech, the engineer, who uses the X handle @TTHUEONE, claimed &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T19:23:40+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] SK hynix Unveils H-TPU SSD Processor That Slashes Power Consumption, Eyes HBF Applications",
-      "link": "https://www.trendforce.com/news/2026/10/16/news-sk-hynix-develops-h-tpu-ssd-processor-using-just-4-of-cpu-core-power-eyes-hbf-applications/",
-      "summary": "As AI workloads place growing demands on storage systems, conventional SSD controllers face increasing pressure to deliver higher performance without excessive power consumption. According to ZDNet, SK hynix has unveiled its ultra-lightweight Hynix Transaction Processing Unit (H-TPU) architecture, designed to &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T16:30:36+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Samsung May End UMC’s Galaxy DDI Exclusivity by Adding GlobalFoundries as Mature-Node Capacity Tightens",
-      "link": "https://www.trendforce.com/news/2026/10/16/news-samsung-may-end-umcs-galaxy-ddi-exclusivity-by-adding-globalfoundries-as-mature-node-capacity-tightens/",
-      "summary": "Tightening mature-node foundry capacity could be prompting Samsung Electronics to explore additional suppliers for its smartphone display chips. According to ZDNet, citing industry sources, Samsung is considering adding GlobalFoundries as a second foundry partner for display driver ICs (DDIs) used &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T15:30:26+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] TSMC Touts Unmatched 5x Reticle-Size Packaging Prowess and High Yields, Ready to Step In if Rivals Fall Short",
-      "link": "https://www.trendforce.com/news/2026/10/15/news-tsmc-touts-unmatched-5x-reticle-size-packaging-prowess-and-high-yields-ready-to-step-in-if-rivals-fall-short/",
-      "summary": "Vowing to “leave no food on the table,” TSMC is doubling down on advanced packaging despite its own CoWoS capacity constraints. According to TechNews, CEO C.C. Wei highlighted TSMC’s ability to mass-produce 5x reticle-size packaging with strong yields—a feat he &hellip; Continue reading &rarr;",
-      "published": "2026-10-15T00:28:07+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] TSMC Sends Team to Assess Texas Fab Expansion, Confirms Terafab Talks but Insists on Operating Control",
-      "link": "https://www.trendforce.com/news/2026/10/15/news-tsmc-sends-team-to-assess-texas-fab-expansion-confirms-terafab-talks-but-insists-on-operating-control/",
-      "summary": "TSMC is considering expanding its U.S. manufacturing footprint into Texas as growing demand from American customers prompts the chipmaker to evaluate additional capacity beyond Arizona. Speaking at TSMC&#8216;s third-quarter 2026 earnings call on October 15, Chairman and CEO C.C. Wei &hellip; Continue reading &rarr;",
-      "published": "2026-10-14T23:57:34+00:00"
     }
   ]
 }
