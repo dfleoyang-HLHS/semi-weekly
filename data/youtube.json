@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22T09:42:12+08:00",
+ "updated_at": "2026-10-23T09:45:18+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -67,6 +67,245 @@
   }
  ],
  "episodes": [
+  {
+   "channel": "理財達人秀",
+   "date": "2026-10-22",
+   "full": {
+    "id": "sckbJJj743o",
+    "channel": "理財達人秀",
+    "kind": "full",
+    "title": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+    "topic": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+    "raw_title": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+    "series": "理財達人秀",
+    "published": "2026-10-22",
+    "show_date": "2026-10-22",
+    "guests": [
+     "李兆華",
+     "容逸燊",
+     "陳唯泰",
+     "張林忠"
+    ],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "狂震1290點 反攻必經考驗?續抱股 安全名單?"
+     },
+     {
+      "time": "03:26",
+      "topic": "財報激勵美科技股 台股為何反跌破季線?"
+     },
+     {
+      "time": "19:08",
+      "topic": "Metal吃到Al紅利 調升資本支出第一槍?"
+     },
+     {
+      "time": "34:25",
+      "topic": "薔琵壓境! 外資空散戶多 多方能續嗨?"
+     }
+    ],
+    "hashtags": [
+     "穩懋",
+     "欣興",
+     "廣達"
+    ],
+    "companies": [
+     {
+      "name": "廣達",
+      "code": "2382",
+      "market": "上市"
+     },
+     {
+      "name": "欣興",
+      "code": "3037",
+      "market": "上市"
+     },
+     {
+      "name": "穩懋",
+      "code": "3105",
+      "market": "上櫃"
+     },
+     {
+      "name": "蘋果",
+      "code": "AAPL",
+      "market": "美股"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2931
+   },
+   "parts": [
+    {
+     "id": "GqFoKu5wMxc",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+     "topic": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+     "raw_title": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+     "series": "理財達人秀",
+     "published": "2026-10-23",
+     "show_date": "2026-10-22",
+     "guests": [
+      "李兆華",
+      "容逸燊"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "穩懋",
+      "欣興",
+      "廣達"
+     ],
+     "companies": [
+      {
+       "name": "廣達",
+       "code": "2382",
+       "market": "上市"
+      },
+      {
+       "name": "欣興",
+       "code": "3037",
+       "market": "上市"
+      },
+      {
+       "name": "穩懋",
+       "code": "3105",
+       "market": "上櫃"
+      }
+     ],
+     "part": 1,
+     "part_label": "",
+     "segment": null,
+     "duration": 1027
+    },
+    {
+     "id": "hE2F2NyLyZI",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+     "topic": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+     "raw_title": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+     "series": "理財達人秀",
+     "published": "2026-10-23",
+     "show_date": "2026-10-22",
+     "guests": [
+      "李兆華",
+      "陳唯泰"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "穩懋",
+      "欣興",
+      "廣達"
+     ],
+     "companies": [
+      {
+       "name": "廣達",
+       "code": "2382",
+       "market": "上市"
+      },
+      {
+       "name": "欣興",
+       "code": "3037",
+       "market": "上市"
+      },
+      {
+       "name": "穩懋",
+       "code": "3105",
+       "market": "上櫃"
+      }
+     ],
+     "part": 2,
+     "part_label": "",
+     "segment": null,
+     "duration": 855
+    },
+    {
+     "id": "edfervmMD70",
+     "channel": "理財達人秀",
+     "kind": "part",
+     "title": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+     "topic": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+     "raw_title": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+     "series": "理財達人秀",
+     "published": "2026-10-23",
+     "show_date": "2026-10-22",
+     "guests": [
+      "李兆華",
+      "張林忠"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "穩懋",
+      "欣興",
+      "廣達"
+     ],
+     "companies": [
+      {
+       "name": "廣達",
+       "code": "2382",
+       "market": "上市"
+      },
+      {
+       "name": "欣興",
+       "code": "3037",
+       "market": "上市"
+      },
+      {
+       "name": "穩懋",
+       "code": "3105",
+       "market": "上櫃"
+      }
+     ],
+     "part": 3,
+     "part_label": "",
+     "segment": null,
+     "duration": 915
+    }
+   ],
+   "clips": [],
+   "guests": [
+    "容逸燊",
+    "陳唯泰",
+    "張林忠"
+   ],
+   "companies": [
+    {
+     "name": "廣達",
+     "code": "2382",
+     "market": "上市",
+     "count": 4
+    },
+    {
+     "name": "欣興",
+     "code": "3037",
+     "market": "上市",
+     "count": 4
+    },
+    {
+     "name": "穩懋",
+     "code": "3105",
+     "market": "上櫃",
+     "count": 4
+    },
+    {
+     "name": "蘋果",
+     "code": "AAPL",
+     "market": "美股",
+     "count": 1
+    }
+   ],
+   "hashtags": [
+    "穩懋",
+    "欣興",
+    "廣達"
+   ],
+   "title": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+   "parts_title": "",
+   "clips_title": "",
+   "host": "李兆華"
+  },
   {
    "channel": "理財達人秀",
    "date": "2026-10-21",
@@ -348,6 +587,171 @@
      "part_label": "",
      "segment": null,
      "duration": 51
+    },
+    {
+     "id": "ShSsygWyOBA",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚",
+     "topic": "ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚",
+     "raw_title": "👑 ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚 #兆華艾綸說",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "股魚"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "兆華艾綸說"
+     ],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 45
+    },
+    {
+     "id": "Ymmay05ut7I",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚",
+     "topic": "ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚",
+     "raw_title": "👑 ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚 #兆華艾綸說",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "股魚"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "兆華艾綸說"
+     ],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 47
+    },
+    {
+     "id": "WPCwkvx65Jg",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸",
+     "topic": "艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸",
+     "raw_title": "👑 艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸 #兆華艾綸說",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "艾綸"
+     ],
+     "chapters": [],
+     "hashtags": [
+      "兆華艾綸說"
+     ],
+     "companies": [
+      {
+       "name": "昇達科",
+       "code": "3491",
+       "market": "上櫃"
+      },
+      {
+       "name": "華通",
+       "code": "2313",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 61
+    },
+    {
+     "id": "bNRYrBiCXkw",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯",
+     "topic": "布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯",
+     "raw_title": "👑 布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯 #理財達人秀",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "不魯"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "大立光",
+       "code": "3008",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 57
+    },
+    {
+     "id": "twd6jWienLI",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容",
+     "topic": "高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容",
+     "raw_title": "👑 高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容 #理財達人秀",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "高憲容"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "美超微",
+       "code": "SMCI",
+       "market": "美股"
+      },
+      {
+       "name": "奇鋐",
+       "code": "3017",
+       "market": "上市"
+      },
+      {
+       "name": "緯創",
+       "code": "3231",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 144
+    },
+    {
+     "id": "mvl3e67BlF4",
+     "channel": "理財達人秀",
+     "kind": "clip",
+     "title": "K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓",
+     "topic": "K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓",
+     "raw_title": "👑 K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓 #理財達人秀",
+     "series": "",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "朱家泓"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": null,
+     "duration": 93
     }
    ],
    "guests": [
@@ -362,13 +766,37 @@
      "name": "華通",
      "code": "2313",
      "market": "上市",
-     "count": 3
+     "count": 4
     },
     {
      "name": "美超微",
      "code": "SMCI",
      "market": "美股",
-     "count": 2
+     "count": 3
+    },
+    {
+     "name": "昇達科",
+     "code": "3491",
+     "market": "上櫃",
+     "count": 1
+    },
+    {
+     "name": "大立光",
+     "code": "3008",
+     "market": "上市",
+     "count": 1
+    },
+    {
+     "name": "奇鋐",
+     "code": "3017",
+     "market": "上市",
+     "count": 1
+    },
+    {
+     "name": "緯創",
+     "code": "3231",
+     "market": "上市",
+     "count": 1
     }
    ],
    "hashtags": [
@@ -2955,62 +3383,7 @@
   {
    "channel": "理財達人秀",
    "date": "2026-10-08",
-   "full": {
-    "id": "-Gw7LLkS1-Q",
-    "channel": "理財達人秀",
-    "kind": "full",
-    "title": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-    "topic": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-    "raw_title": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-    "series": "理財達人秀",
-    "published": "2026-10-08",
-    "show_date": "2026-10-08",
-    "guests": [
-     "李兆華",
-     "黃豐凱",
-     "陳唯泰",
-     "林信富"
-    ],
-    "chapters": [
-     {
-      "time": "00:00",
-      "topic": "外資提款758億 節後撿便宜?搶漲價升級 誰先衝?"
-     },
-     {
-      "time": "03:47",
-      "topic": "美債殖利率洗盤? 台積甩馬斯克包袱?"
-     },
-     {
-      "time": "18:43",
-      "topic": "台塑狂釋利多喊明年更好 拚集團作帳?"
-     },
-     {
-      "time": "34:04",
-      "topic": "手機高峰已過迎接CPO 大立光再發光?"
-     }
-    ],
-    "hashtags": [
-     "PCB",
-     "台塑",
-     "記憶體"
-    ],
-    "companies": [
-     {
-      "name": "台積電",
-      "code": "2330",
-      "market": "上市"
-     },
-     {
-      "name": "大立光",
-      "code": "3008",
-      "market": "上市"
-     }
-    ],
-    "part": null,
-    "part_label": "",
-    "segment": null,
-    "duration": 2931
-   },
+   "full": null,
    "parts": [
     {
      "id": "cONz_LcviEo",
@@ -3105,22 +3478,22 @@
    ],
    "clips": [],
    "guests": [
-    "黃豐凱",
+    "林信富",
     "陳唯泰",
-    "林信富"
+    "黃豐凱"
    ],
    "companies": [
     {
      "name": "台積電",
      "code": "2330",
      "market": "上市",
-     "count": 2
+     "count": 1
     },
     {
      "name": "大立光",
      "code": "3008",
      "market": "上市",
-     "count": 2
+     "count": 1
     }
    ],
    "hashtags": [
@@ -3128,371 +3501,7 @@
     "台塑",
     "記憶體"
    ],
-   "title": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-   "parts_title": "",
-   "clips_title": "",
-   "host": "李兆華"
-  },
-  {
-   "channel": "理財達人秀",
-   "date": "2026-10-07",
-   "full": null,
-   "parts": [
-    {
-     "id": "s__9662rh4w",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-     "topic": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-     "raw_title": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-     "series": "兆華艾綸說",
-     "published": "2026-10-08",
-     "show_date": "2026-10-07",
-     "guests": [
-      "李兆華",
-      "艾綸"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "景碩",
-      "聯亞",
-      "記憶體",
-      "兆華艾綸說"
-     ],
-     "companies": [
-      {
-       "name": "邁威爾",
-       "code": "MRVL",
-       "market": "美股"
-      },
-      {
-       "name": "景碩",
-       "code": "3189",
-       "market": "上市"
-      },
-      {
-       "name": "聯亞",
-       "code": "3081",
-       "market": "上櫃"
-      }
-     ],
-     "part": 1,
-     "part_label": "",
-     "segment": null,
-     "duration": 1274
-    },
-    {
-     "id": "BKgqUk4AlqU",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-     "topic": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-     "raw_title": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-     "series": "理財達人秀",
-     "published": "2026-10-08",
-     "show_date": "2026-10-07",
-     "guests": [
-      "李兆華",
-      "朱家泓"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "晶豪科",
-      "頎邦",
-      "大立光"
-     ],
-     "companies": [
-      {
-       "name": "晶豪科",
-       "code": "3006",
-       "market": "上市"
-      },
-      {
-       "name": "大立光",
-       "code": "3008",
-       "market": "上市"
-      },
-      {
-       "name": "頎邦",
-       "code": "6147",
-       "market": "上櫃"
-      }
-     ],
-     "part": 1,
-     "part_label": "",
-     "segment": null,
-     "duration": 1039
-    },
-    {
-     "id": "z-VFaWYMCvQ",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-     "topic": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-     "raw_title": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-     "series": "兆華艾綸說",
-     "published": "2026-10-08",
-     "show_date": "2026-10-07",
-     "guests": [
-      "李兆華",
-      "艾綸",
-      "鍾國忠"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "景碩",
-      "聯亞",
-      "記憶體",
-      "兆華艾綸說"
-     ],
-     "companies": [
-      {
-       "name": "景碩",
-       "code": "3189",
-       "market": "上市"
-      },
-      {
-       "name": "聯亞",
-       "code": "3081",
-       "market": "上櫃"
-      }
-     ],
-     "part": 2,
-     "part_label": "",
-     "segment": null,
-     "duration": 1605
-    },
-    {
-     "id": "YC8EWzT0bqQ",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-     "topic": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-     "raw_title": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-     "series": "理財達人秀",
-     "published": "2026-10-08",
-     "show_date": "2026-10-07",
-     "guests": [
-      "李兆華",
-      "林漢偉"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "晶豪科",
-      "頎邦",
-      "大立光"
-     ],
-     "companies": [
-      {
-       "name": "晶豪科",
-       "code": "3006",
-       "market": "上市"
-      },
-      {
-       "name": "大立光",
-       "code": "3008",
-       "market": "上市"
-      },
-      {
-       "name": "邁威爾",
-       "code": "MRVL",
-       "market": "美股"
-      },
-      {
-       "name": "頎邦",
-       "code": "6147",
-       "market": "上櫃"
-      }
-     ],
-     "part": 2,
-     "part_label": "",
-     "segment": null,
-     "duration": 866
-    },
-    {
-     "id": "72_NxYWIlZY",
-     "channel": "理財達人秀",
-     "kind": "part",
-     "title": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-     "topic": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-     "raw_title": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-     "series": "理財達人秀",
-     "published": "2026-10-08",
-     "show_date": "2026-10-07",
-     "guests": [
-      "李兆華",
-      "翁士峻"
-     ],
-     "chapters": [],
-     "hashtags": [
-      "晶豪科",
-      "頎邦",
-      "大立光"
-     ],
-     "companies": [
-      {
-       "name": "晶豪科",
-       "code": "3006",
-       "market": "上市"
-      },
-      {
-       "name": "大立光",
-       "code": "3008",
-       "market": "上市"
-      },
-      {
-       "name": "頎邦",
-       "code": "6147",
-       "market": "上櫃"
-      }
-     ],
-     "part": 3,
-     "part_label": "",
-     "segment": null,
-     "duration": 880
-    }
-   ],
-   "clips": [
-    {
-     "id": "Wc-W7n8gcis",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat.",
-     "topic": "艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat.",
-     "raw_title": "👑 艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat. #兆華艾綸說",
-     "series": "",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [],
-     "chapters": [],
-     "hashtags": [
-      "兆華艾綸說"
-     ],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null,
-     "duration": 51
-    },
-    {
-     "id": "tmLnL4kRBH8",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻",
-     "topic": "股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻",
-     "raw_title": "👑 股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻 #理財達人秀",
-     "series": "",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "翁士峻"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null,
-     "duration": 83
-    },
-    {
-     "id": "b8Hkp3aoVtM",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉",
-     "topic": "題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉",
-     "raw_title": "👑 題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉 #理財達人秀",
-     "series": "",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "林漢偉"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null,
-     "duration": 89
-    },
-    {
-     "id": "jFbOaToNfU0",
-     "channel": "理財達人秀",
-     "kind": "clip",
-     "title": "K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓",
-     "topic": "K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓",
-     "raw_title": "👑 K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓 #理財達人秀",
-     "series": "",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "朱家泓"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": null,
-     "duration": 69
-    }
-   ],
-   "guests": [
-    "艾綸",
-    "鍾國忠",
-    "翁士峻",
-    "林漢偉",
-    "朱家泓"
-   ],
-   "companies": [
-    {
-     "name": "晶豪科",
-     "code": "3006",
-     "market": "上市",
-     "count": 3
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市",
-     "count": 3
-    },
-    {
-     "name": "頎邦",
-     "code": "6147",
-     "market": "上櫃",
-     "count": 3
-    },
-    {
-     "name": "邁威爾",
-     "code": "MRVL",
-     "market": "美股",
-     "count": 2
-    },
-    {
-     "name": "景碩",
-     "code": "3189",
-     "market": "上市",
-     "count": 2
-    },
-    {
-     "name": "聯亞",
-     "code": "3081",
-     "market": "上櫃",
-     "count": 2
-    }
-   ],
-   "hashtags": [
-    "景碩",
-    "聯亞",
-    "記憶體",
-    "兆華艾綸說",
-    "晶豪科",
-    "頎邦",
-    "大立光"
-   ],
-   "title": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
+   "title": "【理財達人秀】台積Q3創新高 不怕債息飆 PCB看高買低 搶升級黑馬｜李兆華、黃豐凱 2026.10.08 part1",
    "parts_title": "",
    "clips_title": "",
    "host": "李兆華"
@@ -3818,6 +3827,100 @@
    "title": "投資，要麼犀利，要麼阿甘",
    "series": "又上財經#382",
    "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-10-23",
+   "full": {
+    "id": "kA5f2hc9FW0",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/10/23(五)颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%【早晨財經速解讀】",
+    "topic": "颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%",
+    "raw_title": "2026/10/23(五)颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-10-23",
+    "show_date": "2026-10-23",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "03:00",
+      "topic": "利空凌遲"
+     },
+     {
+      "time": "06:00",
+      "topic": "原油利空"
+     },
+     {
+      "time": "08:30",
+      "topic": "川普危機"
+     },
+     {
+      "time": "11:00",
+      "topic": "政策侷限"
+     },
+     {
+      "time": "14:20",
+      "topic": "美股追蹤"
+     },
+     {
+      "time": "17:35",
+      "topic": "財報解讀"
+     },
+     {
+      "time": "22:00",
+      "topic": "融資擔憂"
+     },
+     {
+      "time": "25:30",
+      "topic": "陸股追蹤"
+     },
+     {
+      "time": "28:00",
+      "topic": "AI用在哪"
+     },
+     {
+      "time": "30:30",
+      "topic": "投資人性"
+     },
+     {
+      "time": "32:10",
+      "topic": "實體AI革命"
+     }
+    ],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "台積電 ADR",
+      "code": "TSM",
+      "market": "美股"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2141
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%",
+   "series": "早晨財經速解讀",
+   "companies": [
+    {
+     "name": "台積電 ADR",
+     "code": "TSM",
+     "market": "美股",
+     "count": 1
+    }
+   ],
    "hashtags": []
   },
   {
@@ -5021,89 +5124,417 @@
    "hashtags": []
   },
   {
-   "channel": "游庭皓",
-   "format": "single",
-   "date": "2026-10-08",
-   "full": {
-    "id": "_dfkO0oKRvg",
-    "channel": "游庭皓",
-    "kind": "single",
-    "title": "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
-    "topic": "全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?",
-    "raw_title": "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
-    "series": "早晨財經速解讀",
-    "published": "2026-10-08",
-    "show_date": "2026-10-08",
-    "guests": [],
-    "chapters": [
-     {
-      "time": "00:00",
-      "topic": "市場總覽"
-     },
-     {
-      "time": "04:30",
-      "topic": "債券風暴"
-     },
-     {
-      "time": "06:40",
-      "topic": "房貸利率"
-     },
-     {
-      "time": "08:00",
-      "topic": "債券標售"
-     },
-     {
-      "time": "09:50",
-      "topic": "公司債攻擊"
-     },
-     {
-      "time": "12:10",
-      "topic": "集體行為"
-     },
-     {
-      "time": "14:40",
-      "topic": "通膨外溢"
-     },
-     {
-      "time": "17:00",
-      "topic": "白宮通膨抑制"
-     },
-     {
-      "time": "20:50",
-      "topic": "日央兩難"
-     },
-     {
-      "time": "23:00",
-      "topic": "日本經濟"
-     },
-     {
-      "time": "26:00",
-      "topic": "民眾無感"
-     },
-     {
-      "time": "28:20",
-      "topic": "歐債衝擊"
-     },
-     {
-      "time": "33:00",
-      "topic": "總結"
-     }
-    ],
-    "hashtags": [],
-    "companies": [],
-    "part": null,
-    "part_label": "",
-    "segment": null,
-    "duration": 2136
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "游庭皓",
-   "title": "全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?",
-   "series": "早晨財經速解讀",
-   "companies": [],
-   "hashtags": []
+   "channel": "錢線百分百",
+   "date": "2026-10-22",
+   "full": null,
+   "parts": [
+    {
+     "id": "r1_wdF2Emu0",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261022完整版(上集)《颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?》│非凡財經新聞│",
+     "topic": "颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?",
+     "raw_title": "【錢線百分百】20261022完整版(上集)《颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎颱風未到台股先跳! 台積電半年線危急?"
+      },
+      {
+       "time": "20:48",
+       "topic": "◎老黃催出新商機 台廠誰火力最強?"
+      },
+      {
+       "time": "34:52",
+       "topic": "◎台積電賺翻.股價太委屈? 含積ETF怎麼挑?"
+      }
+     ],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": 2,
+     "part_label": "上集",
+     "segment": null,
+     "duration": 2914
+    },
+    {
+     "id": "JwPG3h_ySbo",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261022完整版(中集)《封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?》│非凡財經新聞│",
+     "topic": "封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?",
+     "raw_title": "【錢線百分百】20261022完整版(中集)《封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎封測.CCL.ABF誰最猛? 股價先跑還能追?"
+      },
+      {
+       "time": "20:19",
+       "topic": "◎狂買GPU卻沒電開! AI缺電誰賺翻?"
+      }
+     ],
+     "hashtags": [],
+     "companies": [],
+     "part": 3,
+     "part_label": "中集",
+     "segment": null,
+     "duration": 2906
+    },
+    {
+     "id": "qrYo3XVqAP4",
+     "channel": "錢線百分百",
+     "kind": "part",
+     "title": "【錢線百分百】20261022完整版(下集)《蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!》│非凡財經新聞│",
+     "topic": "蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!",
+     "raw_title": "【錢線百分百】20261022完整版(下集)《蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!》│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [
+      {
+       "time": "00:00",
+       "topic": "◎蘋果新品倒數!蘋概股新故事 誰有真訂單?"
+      },
+      {
+       "time": "13:20",
+       "topic": "◎價格變親民.身價沒變! 搶進前先看懂這事!"
+      }
+     ],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "蘋果",
+       "code": "AAPL",
+       "market": "美股"
+      }
+     ],
+     "part": 4,
+     "part_label": "下集",
+     "segment": null,
+     "duration": 1608
+    }
+   ],
+   "clips": [
+    {
+     "id": "Jv6TjeiSnp8",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《颱風未到台股先跳! 台積電半年線危急?》【錢線百分百】20261022-1│非凡財經新聞│",
+     "topic": "颱風未到台股先跳! 台積電半年線危急?",
+     "raw_title": "《颱風未到台股先跳! 台積電半年線危急?》【錢線百分百】20261022-1│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 1,
+     "duration": 1278
+    },
+    {
+     "id": "wHa5F0gLc74",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《老黃催出新商機 台廠誰火力最強?》【錢線百分百】20261022-2│非凡財經新聞│",
+     "topic": "老黃催出新商機 台廠誰火力最強?",
+     "raw_title": "《老黃催出新商機 台廠誰火力最強?》【錢線百分百】20261022-2│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 2,
+     "duration": 878
+    },
+    {
+     "id": "1AVq8pLjA3w",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-3│非凡財經新聞│",
+     "topic": "台積電賺翻.股價太委屈? 含積ETF怎麼挑?",
+     "raw_title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-3│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 3,
+     "duration": 614
+    },
+    {
+     "id": "lmC7QZTcXSs",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-4│非凡財經新聞│",
+     "topic": "台積電賺翻.股價太委屈? 含積ETF怎麼挑?",
+     "raw_title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-4│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "台積電",
+       "code": "2330",
+       "market": "上市"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 4,
+     "duration": 249
+    },
+    {
+     "id": "4xnLiJMKB6Y",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《封測.CCL.ABF誰最猛? 股價先跑還能追?》【錢線百分百】20261022-5│非凡財經新聞│",
+     "topic": "封測.CCL.ABF誰最猛? 股價先跑還能追?",
+     "raw_title": "《封測.CCL.ABF誰最猛? 股價先跑還能追?》【錢線百分百】20261022-5│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 5,
+     "duration": 1256
+    },
+    {
+     "id": "qITa_OsjLzM",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《狂買GPU卻沒電開! AI缺電誰賺翻?》【錢線百分百】20261022-6│非凡財經新聞│",
+     "topic": "狂買GPU卻沒電開! AI缺電誰賺翻?",
+     "raw_title": "《狂買GPU卻沒電開! AI缺電誰賺翻?》【錢線百分百】20261022-6│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 6,
+     "duration": 933
+    },
+    {
+     "id": "DSy_FYvkXXU",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-7│非凡財經新聞│",
+     "topic": "馬斯克版圖再擴張 誰先把故事變獲利?",
+     "raw_title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-7│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 7,
+     "duration": 667
+    },
+    {
+     "id": "PE9C2Wd7cgs",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-8│非凡財經新聞│",
+     "topic": "馬斯克版圖再擴張 誰先把故事變獲利?",
+     "raw_title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-8│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-22",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 8,
+     "duration": 157
+    },
+    {
+     "id": "8FkEDon3nK4",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《蘋果新品倒數!蘋概股新故事 誰有真訂單?》【錢線百分百】20261022-9│非凡財經新聞│",
+     "topic": "蘋果新品倒數!蘋概股新故事 誰有真訂單?",
+     "raw_title": "《蘋果新品倒數!蘋概股新故事 誰有真訂單?》【錢線百分百】20261022-9│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-23",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [
+      {
+       "name": "蘋果",
+       "code": "AAPL",
+       "market": "美股"
+      }
+     ],
+     "part": null,
+     "part_label": "",
+     "segment": 9,
+     "duration": 833
+    },
+    {
+     "id": "ad0ZYcjLuXo",
+     "channel": "錢線百分百",
+     "kind": "clip",
+     "title": "《價格變親民.身價沒變! 搶進前先看懂這事!》【錢線百分百】20261022-10│非凡財經新聞│",
+     "topic": "價格變親民.身價沒變! 搶進前先看懂這事!",
+     "raw_title": "《價格變親民.身價沒變! 搶進前先看懂這事!》【錢線百分百】20261022-10│非凡財經新聞│",
+     "series": "錢線百分百",
+     "published": "2026-10-23",
+     "show_date": "2026-10-22",
+     "guests": [
+      "賴建承",
+      "謝明哲",
+      "林奇芬",
+      "陳奇琛"
+     ],
+     "chapters": [],
+     "hashtags": [],
+     "companies": [],
+     "part": null,
+     "part_label": "",
+     "segment": 10,
+     "duration": 811
+    }
+   ],
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市",
+     "count": 4
+    },
+    {
+     "name": "蘋果",
+     "code": "AAPL",
+     "market": "美股",
+     "count": 2
+    }
+   ],
+   "hashtags": [],
+   "title": "颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強? · 封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻? · 蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!",
+   "parts_title": "完整版",
+   "clips_title": "主題片段",
+   "host": "李蜀芳"
   },
   {
    "channel": "錢線百分百",
@@ -8333,433 +8764,6 @@
    "parts_title": "完整版",
    "clips_title": "主題片段",
    "host": "李蜀芳"
-  },
-  {
-   "channel": "錢線百分百",
-   "date": "2026-10-08",
-   "full": null,
-   "parts": [
-    {
-     "id": "VmjtNdhgupQ",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20261008完整版(上集)《台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?》│非凡財經新聞│",
-     "topic": "台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?",
-     "raw_title": "【錢線百分百】20261008完整版(上集)《台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎台積電9月營收衰! 大立光毛利率13年低"
-      },
-      {
-       "time": "19:05",
-       "topic": "◎若馬斯克聯手台積電! 台股5萬點將成地板?"
-      },
-      {
-       "time": "31:27",
-       "topic": "◎千金難買早知道? \"事件交易法\"提早卡位!"
-      }
-     ],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "台積電",
-       "code": "2330",
-       "market": "上市"
-      },
-      {
-       "name": "大立光",
-       "code": "3008",
-       "market": "上市"
-      }
-     ],
-     "part": 2,
-     "part_label": "上集",
-     "segment": null,
-     "duration": 2910
-    },
-    {
-     "id": "zHZXuGSQyOE",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20261008完整版(中集)《三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?》│非凡財經新聞│",
-     "topic": "三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?",
-     "raw_title": "【錢線百分百】20261008完整版(中集)《三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎三星報喜vs.美光罷工! 利多卡關怎解套?"
-      },
-      {
-       "time": "22:22",
-       "topic": "◎Anthropic拚感恩節前IPO AI巨獸新故事?"
-      },
-      {
-       "time": "35:58",
-       "topic": "◎面板.記憶體.矽晶圓 股價續航力跑多遠?"
-      }
-     ],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "美光",
-       "code": "MU",
-       "market": "美股"
-      }
-     ],
-     "part": 3,
-     "part_label": "中集",
-     "segment": null,
-     "duration": 2924
-    },
-    {
-     "id": "zknJy_QgWY4",
-     "channel": "錢線百分百",
-     "kind": "part",
-     "title": "【錢線百分百】20261008完整版(下集)《活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!》│非凡財經新聞│",
-     "topic": "活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!",
-     "raw_title": "【錢線百分百】20261008完整版(下集)《活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!》│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [
-      {
-       "time": "00:00",
-       "topic": "◎活存16.8%真的甜? 魔鬼藏在?算給你看!"
-      },
-      {
-       "time": "13:54",
-       "topic": "◎熱門股追不下手? 低位階機會在這!"
-      }
-     ],
-     "hashtags": [],
-     "companies": [],
-     "part": 4,
-     "part_label": "下集",
-     "segment": null,
-     "duration": 1606
-    }
-   ],
-   "clips": [
-    {
-     "id": "d08akytIm_E",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《台積電9月營收衰! 大立光毛利率13年低》【錢線百分百】20261008-1│非凡財經新聞│",
-     "topic": "台積電9月營收衰! 大立光毛利率13年低",
-     "raw_title": "《台積電9月營收衰! 大立光毛利率13年低》【錢線百分百】20261008-1│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "台積電",
-       "code": "2330",
-       "market": "上市"
-      },
-      {
-       "name": "大立光",
-       "code": "3008",
-       "market": "上市"
-      }
-     ],
-     "part": null,
-     "part_label": "",
-     "segment": 1,
-     "duration": 1181
-    },
-    {
-     "id": "PRaXQ7zPKxk",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《馬斯克.台積電合作生變? 台股5萬大關怎過?》【錢線百分百】20261008-2│非凡財經新聞│",
-     "topic": "馬斯克.台積電合作生變? 台股5萬大關怎過?",
-     "raw_title": "《馬斯克.台積電合作生變? 台股5萬大關怎過?》【錢線百分百】20261008-2│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "台積電",
-       "code": "2330",
-       "market": "上市"
-      }
-     ],
-     "part": null,
-     "part_label": "",
-     "segment": 2,
-     "duration": 777
-    },
-    {
-     "id": "ScuzrbnEUcc",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-3│非凡財經新聞│",
-     "topic": "千金難買早知道? \"事件交易法\"提早卡位!",
-     "raw_title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-3│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 3,
-     "duration": 795
-    },
-    {
-     "id": "ICs48hWzzZs",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-4│非凡財經新聞│",
-     "topic": "千金難買早知道? \"事件交易法\"提早卡位!",
-     "raw_title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-4│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 4,
-     "duration": 263
-    },
-    {
-     "id": "tkDL6fTLBMg",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《三星報喜vs.美光罷工! 利多卡關怎解套?》【錢線百分百】20261008-5│非凡財經新聞│",
-     "topic": "三星報喜vs.美光罷工! 利多卡關怎解套?",
-     "raw_title": "《三星報喜vs.美光罷工! 利多卡關怎解套?》【錢線百分百】20261008-5│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [
-      {
-       "name": "美光",
-       "code": "MU",
-       "market": "美股"
-      }
-     ],
-     "part": null,
-     "part_label": "",
-     "segment": 5,
-     "duration": 1347
-    },
-    {
-     "id": "GZ0y-ifOkN4",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《Anthropic拚感恩節前IPO AI巨獸新故事?》【錢線百分百】20261008-6│非凡財經新聞│",
-     "topic": "Anthropic拚感恩節前IPO AI巨獸新故事?",
-     "raw_title": "《Anthropic拚感恩節前IPO AI巨獸新故事?》【錢線百分百】20261008-6│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 6,
-     "duration": 851
-    },
-    {
-     "id": "QQCXxkLxRcg",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-7│非凡財經新聞│",
-     "topic": "面板.記憶體.矽晶圓 股價續航力跑多遠?",
-     "raw_title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-7│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 7,
-     "duration": 645
-    },
-    {
-     "id": "ZxgmVVrDQcs",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-8│非凡財經新聞│",
-     "topic": "面板.記憶體.矽晶圓 股價續航力跑多遠?",
-     "raw_title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-8│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-08",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 8,
-     "duration": 187
-    },
-    {
-     "id": "0bVLg853PHs",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《活存16.8%真的甜? 魔鬼藏在?算給你看!》【錢線百分百】20261008-9│非凡財經新聞│",
-     "topic": "活存16.8%真的甜? 魔鬼藏在?算給你看!",
-     "raw_title": "《活存16.8%真的甜? 魔鬼藏在?算給你看!》【錢線百分百】20261008-9│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-09",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 9,
-     "duration": 870
-    },
-    {
-     "id": "RgBMkyQeEsM",
-     "channel": "錢線百分百",
-     "kind": "clip",
-     "title": "《熱門股追不下手? 低位階機會在這!》【錢線百分百】20261008-10│非凡財經新聞│",
-     "topic": "熱門股追不下手? 低位階機會在這!",
-     "raw_title": "《熱門股追不下手? 低位階機會在這!》【錢線百分百】20261008-10│非凡財經新聞│",
-     "series": "錢線百分百",
-     "published": "2026-10-09",
-     "show_date": "2026-10-08",
-     "guests": [
-      "賴建承",
-      "謝明哲",
-      "連乾文",
-      "張志誠"
-     ],
-     "chapters": [],
-     "hashtags": [],
-     "companies": [],
-     "part": null,
-     "part_label": "",
-     "segment": 10,
-     "duration": 771
-    }
-   ],
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市",
-     "count": 3
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市",
-     "count": 2
-    },
-    {
-     "name": "美光",
-     "code": "MU",
-     "market": "美股",
-     "count": 2
-    }
-   ],
-   "hashtags": [],
-   "title": "台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板? · 三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事? · 活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!",
-   "parts_title": "完整版",
-   "clips_title": "主題片段",
-   "host": "李蜀芳"
   }
  ],
  "extras": [
@@ -8808,62 +8812,20 @@
    "duration": 34
   },
   {
-   "id": "PyPNwlOxUaQ",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat.",
-   "topic": "鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat.",
-   "raw_title": "👑 鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat. #兆華艾綸說",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [
-    "兆華艾綸說"
-   ],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 89
-  },
-  {
-   "id": "aJX8Ju35mgM",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat.",
-   "topic": "鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat.",
-   "raw_title": "👑 鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat. #兆華艾綸說",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [
-    "兆華艾綸說"
-   ],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 82
-  },
-  {
-   "id": "Q4ZKGCDnB3U",
+   "id": "RgBMkyQeEsM",
    "channel": "錢線百分百",
    "kind": "clip",
-   "title": "《升息機率降.黃金卻跌! 黃金矛盾訊號全解密》【錢線百分百】20261007-10│非凡財經新聞│",
-   "topic": "升息機率降.黃金卻跌! 黃金矛盾訊號全解密",
-   "raw_title": "《升息機率降.黃金卻跌! 黃金矛盾訊號全解密》【錢線百分百】20261007-10│非凡財經新聞│",
+   "title": "《熱門股追不下手? 低位階機會在這!》【錢線百分百】20261008-10│非凡財經新聞│",
+   "topic": "熱門股追不下手? 低位階機會在這!",
+   "raw_title": "《熱門股追不下手? 低位階機會在這!》【錢線百分百】20261008-10│非凡財經新聞│",
    "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
+   "published": "2026-10-09",
+   "show_date": "2026-10-08",
    "guests": [
-    "李蜀芳",
-    "林聖傑",
-    "林奇芬",
-    "李其展"
+    "賴建承",
+    "謝明哲",
+    "連乾文",
+    "張志誠"
    ],
    "chapters": [],
    "hashtags": [],
@@ -8871,23 +8833,23 @@
    "part": null,
    "part_label": "",
    "segment": 10,
-   "duration": 912
+   "duration": 771
   },
   {
-   "id": "seHq4ENBf9E",
+   "id": "0bVLg853PHs",
    "channel": "錢線百分百",
    "kind": "clip",
-   "title": "《配息創高.財富卻沒增? ETF高息迷思大破解!》【錢線百分百】20261007-9│非凡財經新聞│",
-   "topic": "配息創高.財富卻沒增? ETF高息迷思大破解!",
-   "raw_title": "《配息創高.財富卻沒增? ETF高息迷思大破解!》【錢線百分百】20261007-9│非凡財經新聞│",
+   "title": "《活存16.8%真的甜? 魔鬼藏在?算給你看!》【錢線百分百】20261008-9│非凡財經新聞│",
+   "topic": "活存16.8%真的甜? 魔鬼藏在?算給你看!",
+   "raw_title": "《活存16.8%真的甜? 魔鬼藏在?算給你看!》【錢線百分百】20261008-9│非凡財經新聞│",
    "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
+   "published": "2026-10-09",
+   "show_date": "2026-10-08",
    "guests": [
-    "李蜀芳",
-    "林聖傑",
-    "林奇芬",
-    "李其展"
+    "賴建承",
+    "謝明哲",
+    "連乾文",
+    "張志誠"
    ],
    "chapters": [],
    "hashtags": [],
@@ -8895,364 +8857,10 @@
    "part": null,
    "part_label": "",
    "segment": 9,
-   "duration": 722
+   "duration": 870
   }
  ],
  "videos": [
-  {
-   "id": "z-VFaWYMCvQ",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-   "topic": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-   "raw_title": "【兆華艾綸說】大膽教戰 會買也要會賣 虧30%翻身 解套有撇步｜李兆華、艾綸、鍾國忠 2026.10.07 part2",
-   "series": "兆華艾綸說",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李兆華",
-    "艾綸",
-    "鍾國忠"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "景碩",
-    "聯亞",
-    "記憶體",
-    "兆華艾綸說"
-   ],
-   "companies": [
-    {
-     "name": "景碩",
-     "code": "3189",
-     "market": "上市"
-    },
-    {
-     "name": "聯亞",
-     "code": "3081",
-     "market": "上櫃"
-    }
-   ],
-   "part": 2,
-   "part_label": "",
-   "segment": null,
-   "duration": 1605
-  },
-  {
-   "id": "s__9662rh4w",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-   "topic": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-   "raw_title": "【兆華艾綸說】AI搶電、搶晶片、搶廠房 邁威爾放閃 CPO低轉強｜李兆華、艾綸 2026.10.07 part1",
-   "series": "兆華艾綸說",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李兆華",
-    "艾綸"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "景碩",
-    "聯亞",
-    "記憶體",
-    "兆華艾綸說"
-   ],
-   "companies": [
-    {
-     "name": "邁威爾",
-     "code": "MRVL",
-     "market": "美股"
-    },
-    {
-     "name": "景碩",
-     "code": "3189",
-     "market": "上市"
-    },
-    {
-     "name": "聯亞",
-     "code": "3081",
-     "market": "上櫃"
-    }
-   ],
-   "part": 1,
-   "part_label": "",
-   "segment": null,
-   "duration": 1274
-  },
-  {
-   "id": "72_NxYWIlZY",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-   "topic": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-   "raw_title": "【理財達人秀】PCB、封測 Q4跟投信押寶？ 9月「營」家股 低檔換誰飆？｜李兆華、翁士峻 2026.10.07 part3",
-   "series": "理財達人秀",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李兆華",
-    "翁士峻"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "晶豪科",
-    "頎邦",
-    "大立光"
-   ],
-   "companies": [
-    {
-     "name": "晶豪科",
-     "code": "3006",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    },
-    {
-     "name": "頎邦",
-     "code": "6147",
-     "market": "上櫃"
-    }
-   ],
-   "part": 3,
-   "part_label": "",
-   "segment": null,
-   "duration": 880
-  },
-  {
-   "id": "YC8EWzT0bqQ",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-   "topic": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-   "raw_title": "【理財達人秀】這次創高不一樣 Q4更嗨？ 邁威爾開光 挖光通補漲王｜李兆華、林漢偉 2026.10.07 part2",
-   "series": "理財達人秀",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李兆華",
-    "林漢偉"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "晶豪科",
-    "頎邦",
-    "大立光"
-   ],
-   "companies": [
-    {
-     "name": "晶豪科",
-     "code": "3006",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    },
-    {
-     "name": "邁威爾",
-     "code": "MRVL",
-     "market": "美股"
-    },
-    {
-     "name": "頎邦",
-     "code": "6147",
-     "market": "上櫃"
-    }
-   ],
-   "part": 2,
-   "part_label": "",
-   "segment": null,
-   "duration": 866
-  },
-  {
-   "id": "BKgqUk4AlqU",
-   "channel": "理財達人秀",
-   "kind": "part",
-   "title": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-   "topic": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-   "raw_title": "【理財達人秀】不怕五萬磨 三好找買點 被動低轉強 銅板有好料｜李兆華、朱家泓 2026.10.07 part1",
-   "series": "理財達人秀",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李兆華",
-    "朱家泓"
-   ],
-   "chapters": [],
-   "hashtags": [
-    "晶豪科",
-    "頎邦",
-    "大立光"
-   ],
-   "companies": [
-    {
-     "name": "晶豪科",
-     "code": "3006",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    },
-    {
-     "name": "頎邦",
-     "code": "6147",
-     "market": "上櫃"
-    }
-   ],
-   "part": 1,
-   "part_label": "",
-   "segment": null,
-   "duration": 1039
-  },
-  {
-   "id": "_dfkO0oKRvg",
-   "channel": "游庭皓",
-   "kind": "single",
-   "title": "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
-   "topic": "全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?",
-   "raw_title": "2026/10/8(四)全球政府都缺錢!高利率時代誰來買單?AI時代 企業賺錢、政府缺錢、人民沒錢?【早晨財經速解讀】",
-   "series": "早晨財經速解讀",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "市場總覽"
-    },
-    {
-     "time": "04:30",
-     "topic": "債券風暴"
-    },
-    {
-     "time": "06:40",
-     "topic": "房貸利率"
-    },
-    {
-     "time": "08:00",
-     "topic": "債券標售"
-    },
-    {
-     "time": "09:50",
-     "topic": "公司債攻擊"
-    },
-    {
-     "time": "12:10",
-     "topic": "集體行為"
-    },
-    {
-     "time": "14:40",
-     "topic": "通膨外溢"
-    },
-    {
-     "time": "17:00",
-     "topic": "白宮通膨抑制"
-    },
-    {
-     "time": "20:50",
-     "topic": "日央兩難"
-    },
-    {
-     "time": "23:00",
-     "topic": "日本經濟"
-    },
-    {
-     "time": "26:00",
-     "topic": "民眾無感"
-    },
-    {
-     "time": "28:20",
-     "topic": "歐債衝擊"
-    },
-    {
-     "time": "33:00",
-     "topic": "總結"
-    }
-   ],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 2136
-  },
-  {
-   "id": "E3Yh8PNTFns",
-   "channel": "錢線百分百",
-   "kind": "skip",
-   "title": "錢線百分百1008台股觀盤重點#shorts",
-   "topic": "錢線百分百1008台股觀盤重點#shorts",
-   "raw_title": "錢線百分百1008台股觀盤重點#shorts",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "shorts"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 56
-  },
-  {
-   "id": "Q4ZKGCDnB3U",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《升息機率降.黃金卻跌! 黃金矛盾訊號全解密》【錢線百分百】20261007-10│非凡財經新聞│",
-   "topic": "升息機率降.黃金卻跌! 黃金矛盾訊號全解密",
-   "raw_title": "《升息機率降.黃金卻跌! 黃金矛盾訊號全解密》【錢線百分百】20261007-10│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李蜀芳",
-    "林聖傑",
-    "林奇芬",
-    "李其展"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 10,
-   "duration": 912
-  },
-  {
-   "id": "seHq4ENBf9E",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《配息創高.財富卻沒增? ETF高息迷思大破解!》【錢線百分百】20261007-9│非凡財經新聞│",
-   "topic": "配息創高.財富卻沒增? ETF高息迷思大破解!",
-   "raw_title": "《配息創高.財富卻沒增? ETF高息迷思大破解!》【錢線百分百】20261007-9│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-07",
-   "guests": [
-    "李蜀芳",
-    "林聖傑",
-    "林奇芬",
-    "李其展"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 9,
-   "duration": 722
-  },
   {
    "id": "kf0yIsGPYx8",
    "channel": "理財達人秀",
@@ -9344,188 +8952,6 @@
    "duration": 1026
   },
   {
-   "id": "-Gw7LLkS1-Q",
-   "channel": "理財達人秀",
-   "kind": "full",
-   "title": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-   "topic": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-   "raw_title": "【理財達人秀】台積電Q3創高 大立光變法會？CPO節後搶？PCB鎖黑馬！記憶體.被動元件押寶誰？台塑三大集團作帳仙拚仙？｜李兆華、黃豐凱、陳唯泰、林信富2026.10.08【電視完整版】",
-   "series": "理財達人秀",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "李兆華",
-    "黃豐凱",
-    "陳唯泰",
-    "林信富"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "外資提款758億 節後撿便宜?搶漲價升級 誰先衝?"
-    },
-    {
-     "time": "03:47",
-     "topic": "美債殖利率洗盤? 台積甩馬斯克包袱?"
-    },
-    {
-     "time": "18:43",
-     "topic": "台塑狂釋利多喊明年更好 拚集團作帳?"
-    },
-    {
-     "time": "34:04",
-     "topic": "手機高峰已過迎接CPO 大立光再發光?"
-    }
-   ],
-   "hashtags": [
-    "PCB",
-    "台塑",
-    "記憶體"
-   ],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 2931
-  },
-  {
-   "id": "PyPNwlOxUaQ",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat.",
-   "topic": "鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat.",
-   "raw_title": "👑 鍾大膽親授！傳產股套牢死等沒希望？用「這招」換到「全新」反手暴賺38元解套！🔥🚀 feat. #兆華艾綸說",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [
-    "兆華艾綸說"
-   ],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 89
-  },
-  {
-   "id": "aJX8Ju35mgM",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat.",
-   "topic": "鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat.",
-   "raw_title": "👑 鍾大膽親授！股票套牢30%不敢砍？用「這招」無痛解套再贏回本金！🔥💸 feat. #兆華艾綸說",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [
-    "兆華艾綸說"
-   ],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 82
-  },
-  {
-   "id": "Wc-W7n8gcis",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat.",
-   "topic": "艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat.",
-   "raw_title": "👑 艾綸親授！CPO光通訊概念股怎麼挑？用這招抓出低位階「光盛」再賺飆漲行情！🔥🚀 feat. #兆華艾綸說",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [
-    "兆華艾綸說"
-   ],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 51
-  },
-  {
-   "id": "tmLnL4kRBH8",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻",
-   "topic": "股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻",
-   "raw_title": "👑 股息小王子爆料！散戶贖回投信更要衝績效！用這招抓出這兩檔低檔轉強飆股！🔥🚀 feat.翁士峻 #理財達人秀",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "翁士峻"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 83
-  },
-  {
-   "id": "b8Hkp3aoVtM",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉",
-   "topic": "題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉",
-   "raw_title": "👑 題材獵人警告！大盤會失控嗎？看懂「季線正乖離15%」警戒線 爆賺這兩檔CPO補漲飆股！🔥 feat.林漢偉 #理財達人秀",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "林漢偉"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 89
-  },
-  {
-   "id": "jFbOaToNfU0",
-   "channel": "理財達人秀",
-   "kind": "clip",
-   "title": "K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓",
-   "topic": "K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓",
-   "raw_title": "👑 K線之神親授！大盤衝萬五怕暴跌？用這招精算5萬7千點🔥再用「黑K破五均」保命！🚀 feat.朱家泓 #理財達人秀",
-   "series": "",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "朱家泓"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 69
-  },
-  {
    "id": "RgBMkyQeEsM",
    "channel": "錢線百分百",
    "kind": "clip",
@@ -9572,345 +8998,6 @@
    "part_label": "",
    "segment": 9,
    "duration": 870
-  },
-  {
-   "id": "GZ0y-ifOkN4",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《Anthropic拚感恩節前IPO AI巨獸新故事?》【錢線百分百】20261008-6│非凡財經新聞│",
-   "topic": "Anthropic拚感恩節前IPO AI巨獸新故事?",
-   "raw_title": "《Anthropic拚感恩節前IPO AI巨獸新故事?》【錢線百分百】20261008-6│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 6,
-   "duration": 851
-  },
-  {
-   "id": "QQCXxkLxRcg",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-7│非凡財經新聞│",
-   "topic": "面板.記憶體.矽晶圓 股價續航力跑多遠?",
-   "raw_title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-7│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 7,
-   "duration": 645
-  },
-  {
-   "id": "ZxgmVVrDQcs",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-8│非凡財經新聞│",
-   "topic": "面板.記憶體.矽晶圓 股價續航力跑多遠?",
-   "raw_title": "《面板.記憶體.矽晶圓 股價續航力跑多遠?》【錢線百分百】20261008-8│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 8,
-   "duration": 187
-  },
-  {
-   "id": "tkDL6fTLBMg",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《三星報喜vs.美光罷工! 利多卡關怎解套?》【錢線百分百】20261008-5│非凡財經新聞│",
-   "topic": "三星報喜vs.美光罷工! 利多卡關怎解套?",
-   "raw_title": "《三星報喜vs.美光罷工! 利多卡關怎解套?》【錢線百分百】20261008-5│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "美光",
-     "code": "MU",
-     "market": "美股"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": 5,
-   "duration": 1347
-  },
-  {
-   "id": "ScuzrbnEUcc",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-3│非凡財經新聞│",
-   "topic": "千金難買早知道? \"事件交易法\"提早卡位!",
-   "raw_title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-3│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 3,
-   "duration": 795
-  },
-  {
-   "id": "PRaXQ7zPKxk",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《馬斯克.台積電合作生變? 台股5萬大關怎過?》【錢線百分百】20261008-2│非凡財經新聞│",
-   "topic": "馬斯克.台積電合作生變? 台股5萬大關怎過?",
-   "raw_title": "《馬斯克.台積電合作生變? 台股5萬大關怎過?》【錢線百分百】20261008-2│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": 2,
-   "duration": 777
-  },
-  {
-   "id": "ICs48hWzzZs",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-4│非凡財經新聞│",
-   "topic": "千金難買早知道? \"事件交易法\"提早卡位!",
-   "raw_title": "《千金難買早知道? \"事件交易法\"提早卡位!》【錢線百分百】20261008-4│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": 4,
-   "duration": 263
-  },
-  {
-   "id": "d08akytIm_E",
-   "channel": "錢線百分百",
-   "kind": "clip",
-   "title": "《台積電9月營收衰! 大立光毛利率13年低》【錢線百分百】20261008-1│非凡財經新聞│",
-   "topic": "台積電9月營收衰! 大立光毛利率13年低",
-   "raw_title": "《台積電9月營收衰! 大立光毛利率13年低》【錢線百分百】20261008-1│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    }
-   ],
-   "part": null,
-   "part_label": "",
-   "segment": 1,
-   "duration": 1181
-  },
-  {
-   "id": "zknJy_QgWY4",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20261008完整版(下集)《活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!》│非凡財經新聞│",
-   "topic": "活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!",
-   "raw_title": "【錢線百分百】20261008完整版(下集)《活存16.8%真的甜? 魔鬼藏在?算給你看! 熱門股追不下手? 低位階機會在這!》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎活存16.8%真的甜? 魔鬼藏在?算給你看!"
-    },
-    {
-     "time": "13:54",
-     "topic": "◎熱門股追不下手? 低位階機會在這!"
-    }
-   ],
-   "hashtags": [],
-   "companies": [],
-   "part": 4,
-   "part_label": "下集",
-   "segment": null,
-   "duration": 1606
-  },
-  {
-   "id": "zHZXuGSQyOE",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20261008完整版(中集)《三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?》│非凡財經新聞│",
-   "topic": "三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?",
-   "raw_title": "【錢線百分百】20261008完整版(中集)《三星報喜vs.美光罷工! 利多卡關怎解套? Anthropic拚感恩節前IPO AI巨獸新故事?》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎三星報喜vs.美光罷工! 利多卡關怎解套?"
-    },
-    {
-     "time": "22:22",
-     "topic": "◎Anthropic拚感恩節前IPO AI巨獸新故事?"
-    },
-    {
-     "time": "35:58",
-     "topic": "◎面板.記憶體.矽晶圓 股價續航力跑多遠?"
-    }
-   ],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "美光",
-     "code": "MU",
-     "market": "美股"
-    }
-   ],
-   "part": 3,
-   "part_label": "中集",
-   "segment": null,
-   "duration": 2924
-  },
-  {
-   "id": "VmjtNdhgupQ",
-   "channel": "錢線百分百",
-   "kind": "part",
-   "title": "【錢線百分百】20261008完整版(上集)《台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?》│非凡財經新聞│",
-   "topic": "台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?",
-   "raw_title": "【錢線百分百】20261008完整版(上集)《台積電9月營收衰! 大立光毛利率13年低 若馬斯克聯手台積電! 台股5萬點將成地板?》│非凡財經新聞│",
-   "series": "錢線百分百",
-   "published": "2026-10-08",
-   "show_date": "2026-10-08",
-   "guests": [
-    "賴建承",
-    "謝明哲",
-    "連乾文",
-    "張志誠"
-   ],
-   "chapters": [
-    {
-     "time": "00:00",
-     "topic": "◎台積電9月營收衰! 大立光毛利率13年低"
-    },
-    {
-     "time": "19:05",
-     "topic": "◎若馬斯克聯手台積電! 台股5萬點將成地板?"
-    },
-    {
-     "time": "31:27",
-     "topic": "◎千金難買早知道? \"事件交易法\"提早卡位!"
-    }
-   ],
-   "hashtags": [],
-   "companies": [
-    {
-     "name": "台積電",
-     "code": "2330",
-     "market": "上市"
-    },
-    {
-     "name": "大立光",
-     "code": "3008",
-     "market": "上市"
-    }
-   ],
-   "part": 2,
-   "part_label": "上集",
-   "segment": null,
-   "duration": 2910
   },
   {
    "id": "PMjUHQVslHk",
@@ -16761,6 +15848,855 @@
    "part_label": "上集",
    "segment": null,
    "duration": 2920
+  },
+  {
+   "id": "edfervmMD70",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+   "topic": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+   "raw_title": "【理財達人秀】外資賣出底部 進場鎖2類 卡位！績優落難+法人保底｜李兆華、張林忠 2026.10.22 part3",
+   "series": "理財達人秀",
+   "published": "2026-10-23",
+   "show_date": "2026-10-22",
+   "guests": [
+    "李兆華",
+    "張林忠"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "穩懋",
+    "欣興",
+    "廣達"
+   ],
+   "companies": [
+    {
+     "name": "廣達",
+     "code": "2382",
+     "market": "上市"
+    },
+    {
+     "name": "欣興",
+     "code": "3037",
+     "market": "上市"
+    },
+    {
+     "name": "穩懋",
+     "code": "3105",
+     "market": "上櫃"
+    }
+   ],
+   "part": 3,
+   "part_label": "",
+   "segment": null,
+   "duration": 915
+  },
+  {
+   "id": "hE2F2NyLyZI",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+   "topic": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+   "raw_title": "【理財達人秀】Meta上修支出 得利右下角 被動封測回頭 誰低接不怕｜李兆華、陳唯泰 2026.10.22 part2",
+   "series": "理財達人秀",
+   "published": "2026-10-23",
+   "show_date": "2026-10-22",
+   "guests": [
+    "李兆華",
+    "陳唯泰"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "穩懋",
+    "欣興",
+    "廣達"
+   ],
+   "companies": [
+    {
+     "name": "廣達",
+     "code": "2382",
+     "market": "上市"
+    },
+    {
+     "name": "欣興",
+     "code": "3037",
+     "market": "上市"
+    },
+    {
+     "name": "穩懋",
+     "code": "3105",
+     "market": "上櫃"
+    }
+   ],
+   "part": 2,
+   "part_label": "",
+   "segment": null,
+   "duration": 855
+  },
+  {
+   "id": "GqFoKu5wMxc",
+   "channel": "理財達人秀",
+   "kind": "part",
+   "title": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+   "topic": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+   "raw_title": "【理財達人秀】美財報利多 台股為何跌？ CPO、PCB抱誰 蘋概轉「摺」｜李兆華、容逸燊 2026.10.22 part1",
+   "series": "理財達人秀",
+   "published": "2026-10-23",
+   "show_date": "2026-10-22",
+   "guests": [
+    "李兆華",
+    "容逸燊"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "穩懋",
+    "欣興",
+    "廣達"
+   ],
+   "companies": [
+    {
+     "name": "廣達",
+     "code": "2382",
+     "market": "上市"
+    },
+    {
+     "name": "欣興",
+     "code": "3037",
+     "market": "上市"
+    },
+    {
+     "name": "穩懋",
+     "code": "3105",
+     "market": "上櫃"
+    }
+   ],
+   "part": 1,
+   "part_label": "",
+   "segment": null,
+   "duration": 1027
+  },
+  {
+   "id": "sckbJJj743o",
+   "channel": "理財達人秀",
+   "kind": "full",
+   "title": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+   "topic": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+   "raw_title": "【理財達人秀】美財報利多 台股單純跌連假？蘋果.Meta發功 CPO.PCB抱誰？被動.封測外資殺出真底部 鎖2類!｜李兆華、容逸燊、陳唯泰、張林忠2026.10.22【電視完整版】",
+   "series": "理財達人秀",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "李兆華",
+    "容逸燊",
+    "陳唯泰",
+    "張林忠"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "狂震1290點 反攻必經考驗?續抱股 安全名單?"
+    },
+    {
+     "time": "03:26",
+     "topic": "財報激勵美科技股 台股為何反跌破季線?"
+    },
+    {
+     "time": "19:08",
+     "topic": "Metal吃到Al紅利 調升資本支出第一槍?"
+    },
+    {
+     "time": "34:25",
+     "topic": "薔琵壓境! 外資空散戶多 多方能續嗨?"
+    }
+   ],
+   "hashtags": [
+    "穩懋",
+    "欣興",
+    "廣達"
+   ],
+   "companies": [
+    {
+     "name": "廣達",
+     "code": "2382",
+     "market": "上市"
+    },
+    {
+     "name": "欣興",
+     "code": "3037",
+     "market": "上市"
+    },
+    {
+     "name": "穩懋",
+     "code": "3105",
+     "market": "上櫃"
+    },
+    {
+     "name": "蘋果",
+     "code": "AAPL",
+     "market": "美股"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2931
+  },
+  {
+   "id": "ShSsygWyOBA",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚",
+   "topic": "ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚",
+   "raw_title": "👑 ETF教父股魚親授！ETF大跌不敢加碼？用「這招」階梯加碼法買到跌30%盡頭點！🔥feat.股魚 #兆華艾綸說",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "股魚"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "兆華艾綸說"
+   ],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 45
+  },
+  {
+   "id": "Ymmay05ut7I",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚",
+   "topic": "ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚",
+   "raw_title": "👑 ETF教父股魚警告！個股越攤越貧？這招看懂006208 跌10%斷腿也會爬回來！🔥 feat.股魚 #兆華艾綸說",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "股魚"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "兆華艾綸說"
+   ],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 47
+  },
+  {
+   "id": "WPCwkvx65Jg",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸",
+   "topic": "艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸",
+   "raw_title": "👑 艾綸爆料！SpaceX營收暴增幾百億？抓緊「華通、昇達科」低軌衛星起漲點！🚀feat.艾綸 #兆華艾綸說",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "艾綸"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "兆華艾綸說"
+   ],
+   "companies": [
+    {
+     "name": "昇達科",
+     "code": "3491",
+     "market": "上櫃"
+    },
+    {
+     "name": "華通",
+     "code": "2313",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 61
+  },
+  {
+   "id": "bNRYrBiCXkw",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯",
+   "topic": "布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯",
+   "raw_title": "👑 布魯爆料！高盛喊放空台股半導體？用「這招」看懂報告內幕 鎖定「大立光」上萬夢幻價！🔥🚀feat.不魯 #理財達人秀",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "不魯"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "大立光",
+     "code": "3008",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 57
+  },
+  {
+   "id": "twd6jWienLI",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容",
+   "topic": "高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容",
+   "raw_title": "👑 高憲容爆料！美超微利多救了AI股？用「這招」抓緊「緯創、奇鋐」低本益比甜甜價！🔥💸 feat.高憲容 #理財達人秀",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "高憲容"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "美超微",
+     "code": "SMCI",
+     "market": "美股"
+    },
+    {
+     "name": "奇鋐",
+     "code": "3017",
+     "market": "上市"
+    },
+    {
+     "name": "緯創",
+     "code": "3231",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 144
+  },
+  {
+   "id": "mvl3e67BlF4",
+   "channel": "理財達人秀",
+   "kind": "clip",
+   "title": "K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓",
+   "topic": "K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓",
+   "raw_title": "👑 K線之神朱家泓親授！台股守住季線要V轉？「這招」抓緊這兩檔回後買上漲買點！🔥🚀 feat.朱家泓 #理財達人秀",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "朱家泓"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 93
+  },
+  {
+   "id": "9IGDiD-OGRE",
+   "channel": "闕又上",
+   "kind": "single",
+   "title": "低買高賣人人都懂，為什麼很難做到?  #2330台積電",
+   "topic": "低買高賣人人都懂，為什麼很難做到?  #2330台積電",
+   "raw_title": "低買高賣人人都懂，為什麼很難做到? #shorts  #投資心法  #2330台積電 #闕又上",
+   "series": "",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [
+    "又上財經學院",
+    "投資入門",
+    "理財觀念",
+    "投資小白",
+    "資產配置",
+    "被動投資",
+    "ETF",
+    "投資哲學",
+    "學員心得",
+    "shorts",
+    "投資心法",
+    "2330台積電",
+    "闕又上"
+   ],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 44
+  },
+  {
+   "id": "kA5f2hc9FW0",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/10/23(五)颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%【早晨財經速解讀】",
+   "topic": "颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%",
+   "raw_title": "2026/10/23(五)颱風魔咒!美股出事了?費半狂瀉近7% 台積電ADR跌超4.5%【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-10-23",
+   "show_date": "2026-10-23",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "03:00",
+     "topic": "利空凌遲"
+    },
+    {
+     "time": "06:00",
+     "topic": "原油利空"
+    },
+    {
+     "time": "08:30",
+     "topic": "川普危機"
+    },
+    {
+     "time": "11:00",
+     "topic": "政策侷限"
+    },
+    {
+     "time": "14:20",
+     "topic": "美股追蹤"
+    },
+    {
+     "time": "17:35",
+     "topic": "財報解讀"
+    },
+    {
+     "time": "22:00",
+     "topic": "融資擔憂"
+    },
+    {
+     "time": "25:30",
+     "topic": "陸股追蹤"
+    },
+    {
+     "time": "28:00",
+     "topic": "AI用在哪"
+    },
+    {
+     "time": "30:30",
+     "topic": "投資人性"
+    },
+    {
+     "time": "32:10",
+     "topic": "實體AI革命"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電 ADR",
+     "code": "TSM",
+     "market": "美股"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2141
+  },
+  {
+   "id": "8FkEDon3nK4",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《蘋果新品倒數!蘋概股新故事 誰有真訂單?》【錢線百分百】20261022-9│非凡財經新聞│",
+   "topic": "蘋果新品倒數!蘋概股新故事 誰有真訂單?",
+   "raw_title": "《蘋果新品倒數!蘋概股新故事 誰有真訂單?》【錢線百分百】20261022-9│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-23",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "蘋果",
+     "code": "AAPL",
+     "market": "美股"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 9,
+   "duration": 833
+  },
+  {
+   "id": "ad0ZYcjLuXo",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《價格變親民.身價沒變! 搶進前先看懂這事!》【錢線百分百】20261022-10│非凡財經新聞│",
+   "topic": "價格變親民.身價沒變! 搶進前先看懂這事!",
+   "raw_title": "《價格變親民.身價沒變! 搶進前先看懂這事!》【錢線百分百】20261022-10│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-23",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 10,
+   "duration": 811
+  },
+  {
+   "id": "PE9C2Wd7cgs",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-8│非凡財經新聞│",
+   "topic": "馬斯克版圖再擴張 誰先把故事變獲利?",
+   "raw_title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-8│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 8,
+   "duration": 157
+  },
+  {
+   "id": "DSy_FYvkXXU",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-7│非凡財經新聞│",
+   "topic": "馬斯克版圖再擴張 誰先把故事變獲利?",
+   "raw_title": "《馬斯克版圖再擴張 誰先把故事變獲利?》【錢線百分百】20261022-7│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 7,
+   "duration": 667
+  },
+  {
+   "id": "4xnLiJMKB6Y",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《封測.CCL.ABF誰最猛? 股價先跑還能追?》【錢線百分百】20261022-5│非凡財經新聞│",
+   "topic": "封測.CCL.ABF誰最猛? 股價先跑還能追?",
+   "raw_title": "《封測.CCL.ABF誰最猛? 股價先跑還能追?》【錢線百分百】20261022-5│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 5,
+   "duration": 1256
+  },
+  {
+   "id": "qITa_OsjLzM",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《狂買GPU卻沒電開! AI缺電誰賺翻?》【錢線百分百】20261022-6│非凡財經新聞│",
+   "topic": "狂買GPU卻沒電開! AI缺電誰賺翻?",
+   "raw_title": "《狂買GPU卻沒電開! AI缺電誰賺翻?》【錢線百分百】20261022-6│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 6,
+   "duration": 933
+  },
+  {
+   "id": "1AVq8pLjA3w",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-3│非凡財經新聞│",
+   "topic": "台積電賺翻.股價太委屈? 含積ETF怎麼挑?",
+   "raw_title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-3│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 3,
+   "duration": 614
+  },
+  {
+   "id": "lmC7QZTcXSs",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-4│非凡財經新聞│",
+   "topic": "台積電賺翻.股價太委屈? 含積ETF怎麼挑?",
+   "raw_title": "《台積電賺翻.股價太委屈? 含積ETF怎麼挑?》【錢線百分百】20261022-4│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 4,
+   "duration": 249
+  },
+  {
+   "id": "qrYo3XVqAP4",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261022完整版(下集)《蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!》│非凡財經新聞│",
+   "topic": "蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!",
+   "raw_title": "【錢線百分百】20261022完整版(下集)《蘋果新品倒數!蘋概股新故事 誰有真訂單? 價格變親民.身價沒變! 搶進前先看懂這事!》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎蘋果新品倒數!蘋概股新故事 誰有真訂單?"
+    },
+    {
+     "time": "13:20",
+     "topic": "◎價格變親民.身價沒變! 搶進前先看懂這事!"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "蘋果",
+     "code": "AAPL",
+     "market": "美股"
+    }
+   ],
+   "part": 4,
+   "part_label": "下集",
+   "segment": null,
+   "duration": 1608
+  },
+  {
+   "id": "wHa5F0gLc74",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《老黃催出新商機 台廠誰火力最強?》【錢線百分百】20261022-2│非凡財經新聞│",
+   "topic": "老黃催出新商機 台廠誰火力最強?",
+   "raw_title": "《老黃催出新商機 台廠誰火力最強?》【錢線百分百】20261022-2│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": 2,
+   "duration": 878
+  },
+  {
+   "id": "Jv6TjeiSnp8",
+   "channel": "錢線百分百",
+   "kind": "clip",
+   "title": "《颱風未到台股先跳! 台積電半年線危急?》【錢線百分百】20261022-1│非凡財經新聞│",
+   "topic": "颱風未到台股先跳! 台積電半年線危急?",
+   "raw_title": "《颱風未到台股先跳! 台積電半年線危急?》【錢線百分百】20261022-1│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": 1,
+   "duration": 1278
+  },
+  {
+   "id": "JwPG3h_ySbo",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261022完整版(中集)《封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?》│非凡財經新聞│",
+   "topic": "封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?",
+   "raw_title": "【錢線百分百】20261022完整版(中集)《封測.CCL.ABF誰最猛? 股價先跑還能追? 狂買GPU卻沒電開! AI缺電誰賺翻?》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎封測.CCL.ABF誰最猛? 股價先跑還能追?"
+    },
+    {
+     "time": "20:19",
+     "topic": "◎狂買GPU卻沒電開! AI缺電誰賺翻?"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": 3,
+   "part_label": "中集",
+   "segment": null,
+   "duration": 2906
+  },
+  {
+   "id": "r1_wdF2Emu0",
+   "channel": "錢線百分百",
+   "kind": "part",
+   "title": "【錢線百分百】20261022完整版(上集)《颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?》│非凡財經新聞│",
+   "topic": "颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?",
+   "raw_title": "【錢線百分百】20261022完整版(上集)《颱風未到台股先跳! 台積電半年線危急? 老黃催出新商機 台廠誰火力最強?》│非凡財經新聞│",
+   "series": "錢線百分百",
+   "published": "2026-10-22",
+   "show_date": "2026-10-22",
+   "guests": [
+    "賴建承",
+    "謝明哲",
+    "林奇芬",
+    "陳奇琛"
+   ],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "◎颱風未到台股先跳! 台積電半年線危急?"
+    },
+    {
+     "time": "20:48",
+     "topic": "◎老黃催出新商機 台廠誰火力最強?"
+    },
+    {
+     "time": "34:52",
+     "topic": "◎台積電賺翻.股價太委屈? 含積ETF怎麼挑?"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": 2,
+   "part_label": "上集",
+   "segment": null,
+   "duration": 2914
   }
  ]
 }
