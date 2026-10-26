@@ -1,0 +1,1716 @@
+{
+ "updated_at": "2026-10-26",
+ "title": "CPO 共同封裝光學 · 光纖通訊產業鏈",
+ "intro": "CPO (Co-Packaged Optics) 把光引擎與交換器 / 運算晶片封裝在同一基板上,以光取代長距離銅線,降低 SerDes 功耗並提高頻寬密度。2026 年 NVIDIA Spectrum-X Photonics 進入量產,產業鏈由「可插拔光模組」逐步走向「CPO」,瓶頸則集中在 InP 雷射、PIC 產能、FAU 耦光與光電測試。",
+ "layers": [
+  {
+   "id": "L1",
+   "name": "材料與雷射光源",
+   "desc": "InP 基板、磊晶片、CW / EML 雷射、光偵測器 (PD)。CPO 採外置雷射 (ELS),雷射與 InP 是目前最緊的瓶頸。"
+  },
+  {
+   "id": "L2",
+   "name": "交換器 / 光學晶片設計",
+   "desc": "交換器 ASIC、SerDes、DSP、光學 I/O 晶片與 PIC/EIC 設計,決定 CPO 規格與生態系。"
+  },
+  {
+   "id": "L3",
+   "name": "矽光子晶圓代工",
+   "desc": "PIC (光子積體電路) 與 EIC (電子積體電路) 製造,台積電 COUPE 以 SoIC 將兩者 3D 堆疊。"
+  },
+  {
+   "id": "L4",
+   "name": "光引擎封裝與測試",
+   "desc": "光引擎與交換器晶片共同封裝、晶圓級光電測試 (探針、TIA 測試)、耦光製程。"
+  },
+  {
+   "id": "L5",
+   "name": "光纖連接與被動元件",
+   "desc": "光纖、FAU (光纖陣列單元)、MPO / MT 連接器、V-groove、耦光設備與光學透鏡。"
+  },
+  {
+   "id": "L6",
+   "name": "光收發模組與交換系統",
+   "desc": "800G / 1.6T 可插拔模組、CPO 交換器整機、白牌網通 ODM;是 CPO 的最終出貨端。"
+  }
+ ],
+ "trends": [
+  {
+   "t": "InP 雷射是最大瓶頸",
+   "d": "Lumentum 產能預訂至 2029 年初;Coherent、Google 以預付、長約鎖定 InP 基板;中國出口管制增加不確定性。",
+   "src": {
+    "t": "Lumentum says AI laser capacity is sold out into 2029 as hyperscalers help fund expansion",
+    "url": "https://www.digitimes.com/news/a20261012VL201/capacity-laser-inp-data-center-2028.html",
+    "date": "2026-10-12",
+    "src": "DigiTimes Asia"
+   }
+  },
+  {
+   "t": "CPO 從交換器開始放量",
+   "d": "NVIDIA Spectrum-X 矽光子交換機 2026-08 量產;下一代 OOI 原型把光引擎移到矽中介層,瞄準 2028 年後。",
+   "src": {
+    "t": "Nvidia unveils OOI CPO prototype for post-2028 AI needs",
+    "url": "https://www.digitimes.com/news/a20261023PD240/nvidia-cpo-interposer-technology-2026.html",
+    "date": "2026-10-25",
+    "src": "DigiTimes Asia"
+   }
+  },
+  {
+   "t": "台積電 COUPE 成為標準平台",
+   "d": "法人估 PIC 產能 2028 年達每月 2.5 萬片,NVIDIA、Broadcom、Lightmatter 皆採用。",
+   "src": {
+    "t": "[News] TSMC PIC Capacity Seen Surging to 25K Wafers/Month by 2028; NVIDIA, Broadcom Eyed as Early COUPE Customers",
+    "url": "https://www.trendforce.com/news/2026/07/08/news-tsmc-pic-capacity-seen-surging-to-25k-wafersmonth-by-2028-nvidia-broadcom-eyed-as-early-coupe-customers/",
+    "date": "2026-07-08",
+    "src": "TrendForce"
+   }
+  },
+  {
+   "t": "測試成為量產關鍵",
+   "d": "CPO 測試從 Insertion 1 到 4 都有挑戰,『100% 測試』預期 2027 年加速;旺矽、矽格、京元電受惠。",
+   "src": {
+    "t": "CPO testing faces hurdles from Insertion 1 to 4, with '100% testing' expected to accelerate in 2027",
+    "url": "https://www.digitimes.com/news/a20260908PD215/cpo-testing-optics-2027.html",
+    "date": "2026-09-08",
+    "src": "DigiTimes Asia"
+   }
+  },
+  {
+   "t": "NPO / 可插拔仍並行",
+   "d": "華為推 7.2T NPO 標準;NVIDIA 與 Cisco 另推 USFP 可插拔;Broadcom 認為 CPO 較適合 scale-out。",
+   "src": {
+    "t": "[News] Huawei Unveils 7.2Tbps Near-packaged Optics Module, Challenging NVIDIA and Broadcom’s CPO Push",
+    "url": "https://www.trendforce.com/news/2026/09/11/news-huawei-unveils-7-2tbps-near-packaged-optics-module-challenging-nvidia-and-broadcoms-cpo-push/",
+    "date": "2026-09-11",
+    "src": "TrendForce"
+   }
+  },
+  {
+   "t": "美國 65% 含量規則可能重劃供應鏈",
+   "d": "若銷美 CPO / 3.2T 光模組需 65% 美國含量,將牽動中國光模組廠與台廠的價值鏈分配。",
+   "src": {
+    "t": "評析：「65%美國含量」成銷美CPO門檻？ 恐牽動價值鏈重分配",
+    "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770933_BNTLALHN24DM2K49IVYUU",
+    "date": "2026-10-11",
+    "src": "DigiTimes 中文"
+   }
+  }
+ ],
+ "companies": [
+  {
+   "id": "COHR",
+   "name": "Coherent",
+   "zh": "科希倫",
+   "ticker": "COHR",
+   "region": "US",
+   "layer": "L1",
+   "role": "InP 雷射、6 吋 InP 晶圓、光收發模組垂直整合",
+   "rd": [
+    "垂直整合 InP / GaAs 雷射到 800G、1.6T 光收發模組,是少數同時掌握雷射晶片與模組的廠商",
+    "推進 6 吋 InP 晶圓量產以降低雷射單位成本;與 AXT 簽三年 6 吋 InP 基板產能預付協議 (預付 2,230 萬美元) 鎖定上游",
+    "跨足散熱材料:2026-08 開始送樣 300mm 高導熱 SiC 基板,瞄準次世代 AI 晶片散熱"
+   ],
+   "biz": [
+    "FY26 Q4 (至 2026-06-30) 營收 20.5 億美元,年增 34%;資料中心與通訊部門 16.2 億美元,年增約 59%,佔營收近八成",
+    "FY26 全年營收 71.2 億美元 (年增 22.5%);非 GAAP EPS 1.74 美元 (去年同期 1.00)",
+    "FY27 Q1 財測 22~24 億美元;管理層稱訂單創新高、FY27 產能已大致被預訂,目標 FY27 年底單季營收破 30 億美元"
+   ],
+   "metrics": {
+    "FY26 Q4 營收": "$2.05B (+34%)",
+    "資料中心/通訊": "$1.62B (+59%)",
+    "非 GAAP 毛利率": "40.2%",
+    "FY27 Q1 財測": "$2.2~2.4B"
+   },
+   "risks": [
+    "工業雷射部門年減約 16%,拖累整體成長",
+    "InP 基板供應與中國出口管制"
+   ],
+   "sources": [
+    {
+     "t": "Coherent Corp. Reports Fourth Quarter and Full Year Fiscal 2026 Results",
+     "url": "https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2026-results",
+     "date": "2026-08-12",
+     "src": "Coherent 官網"
+    },
+    {
+     "t": "Coherent Q4 FY 2026 Earnings: 1.6T Transceivers Ramp, CPO Revenue Approaches",
+     "url": "https://futurumgroup.com/insights/coherent-q4-fy-2026-earnings-1-6t-transceivers-ramp-cpo-revenue-approaches/",
+     "date": "2026-08-13",
+     "src": "Futurum"
+    },
+    {
+     "t": "InP supply crunch leaves South Korea exposed",
+     "url": "https://www.digitimes.com/news/a20260710VL216/inp-coherent-substrate-capacity-production.html",
+     "date": "2026-07-12",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "[News] Coherent Samples 300 mm SiC Substrates for Next-Gen AI Cooling",
+     "url": "https://www.trendforce.com/news/2026/08/24/news-coherent-samples-300-mm-sic-substrates-for-next-gen-ai-cooling/",
+     "date": "2026-08-24",
+     "src": "TrendForce"
+    }
+   ]
+  },
+  {
+   "id": "LITE",
+   "name": "Lumentum",
+   "zh": "",
+   "ticker": "LITE",
+   "region": "US",
+   "layer": "L1",
+   "role": "InP EML / CW 雷射龍頭、光電路交換器 (OCS)",
+   "rd": [
+    "InP 雷射 (EML、CW、超高功率 UHP 雷射) 是 CPO 外置光源與 1.6T 模組的關鍵;向 Aixtron 加購 G10-AsP MOCVD 擴充 InP 產能",
+    "光電路交換器 (OCS) 出貨擴大,切入 AI 叢集 scale-out 網路",
+    "立場:NPO 與 CPO 並非零和,非 NVIDIA 客戶的部署也快速增加"
+   ],
+   "biz": [
+    "FY26 Q4 (2026-06) 營收 10.06 億美元,年增 109%;非 GAAP EPS 3.23 美元 (GAAP 因可轉債轉股一次性非現金費用 78 億美元而虧損)",
+    "FY27 Q1 財測 12.25~12.75 億美元,非 GAAP 營益率 39.5%~40.5%",
+    "2026-10 表示 AI 雷射產能已被預訂至 2029 年初,大型雲端客戶開始分攤擴產資金"
+   ],
+   "metrics": {
+    "FY26 Q4 營收": "$1.006B (+109%)",
+    "非 GAAP EPS": "$3.23",
+    "FY27 Q1 財測": "$1.225~1.275B",
+    "產能能見度": "至 2029 年初"
+   },
+   "risks": [
+    "InP 供需缺口 (執行長稱已大於 DRAM/NAND)",
+    "股價評價偏高,財報後曾下跌 5.6%"
+   ],
+   "sources": [
+    {
+     "t": "Lumentum beats quarterly forecasts as AI demand drives stronger outlook",
+     "url": "https://finviz.com/news/380953/lumentum-beats-quarterly-forecasts-as-ai-demand-drives-stronger-outlook",
+     "date": "2026-08-11",
+     "src": "Finviz / Reuters"
+    },
+    {
+     "t": "Lumentum says AI laser capacity is sold out into 2029 as hyperscalers help fund expansion",
+     "url": "https://www.digitimes.com/news/a20261012VL201/capacity-laser-inp-data-center-2028.html",
+     "date": "2026-10-12",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Lumentum：NPO與CPO非零和賽局 非NVIDIA客戶部署已衝高",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765000_UII1YVAPLVVED51MRTIER",
+     "date": "2026-08-14",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Aixtron wins orders from Lumentum for G10-AsP systems to expand InP production",
+     "url": "https://www.digitimes.com/news/a20260527PR201/aixtron-laser-mocvd-demand-production.html",
+     "date": "2026-05-27",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "[News] InP Shortage Emerges as AI Optical Interconnect Bottleneck",
+     "url": "https://www.trendforce.com/news/2026/08/06/news-inp-shortage-emerges-as-ai-optical-interconnect-bottleneck/",
+     "date": "2026-08-06",
+     "src": "TrendForce"
+    }
+   ]
+  },
+  {
+   "id": "AXTI",
+   "name": "AXT",
+   "zh": "",
+   "ticker": "AXTI",
+   "region": "US",
+   "layer": "L1",
+   "role": "InP / GaAs 化合物半導體基板",
+   "rd": [
+    "生產 InP 基板 (主要產能在中國),是雷射與光偵測器的最上游材料",
+    "擴充 6 吋 InP 基板產能,與 Coherent 簽三年產能預付協議"
+   ],
+   "biz": [
+    "InP 基板成為戰略物資,下游以長約與預付方式鎖量",
+    "中國對 InP 相關材料的出口管制是營運最大變數"
+   ],
+   "metrics": {
+    "關鍵產品": "6 吋 InP 基板",
+    "代表合約": "Coherent 預付 $22.3M"
+   },
+   "risks": [
+    "中國出口許可審批延遲",
+    "地緣政治導致客戶分散採購 (Google 等帶頭多元化)"
+   ],
+   "sources": [
+    {
+     "t": "InP supply crunch leaves South Korea exposed",
+     "url": "https://www.digitimes.com/news/a20260710VL216/inp-coherent-substrate-capacity-production.html",
+     "date": "2026-07-12",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Supply security over cost: Google leads CSP charge to diversify InP substrate sourcing",
+     "url": "https://www.digitimes.com/news/a20260616PD215/substrate-google-security-price-communications.html",
+     "date": "2026-06-16",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "中國管制磷化銦出口，恐影響全球 AI 資料中心建設",
+     "url": "https://technews.tw/2026/06/11/china-inp-export-controls-impact-global-data-center-construction/",
+     "date": "2026-06-11",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "NVDA",
+   "name": "NVIDIA",
+   "zh": "輝達",
+   "ticker": "NVDA",
+   "region": "US",
+   "layer": "L2",
+   "role": "Spectrum-X / Quantum-X Photonics CPO 交換器,CPO 最大推手",
+   "rd": [
+    "Spectrum-X 乙太網路矽光子 (CPO) 交換機 2026-08 宣布量產,光引擎採台積電 COUPE,供應鏈含台積電、矽品、鴻海",
+    "2026-10 SEMICON West 展示下一代 OOI (Optics-on-Interposer) 原型:光引擎從有機基板移到矽中介層,瞄準 2028 年後",
+    "與 Cisco 合推 USFP 可插拔光模組標準 (每通道 400Gb/s,頻寬密度 4 倍);投資 Lumentum、Coherent、Marvell 等光通訊夥伴",
+    "Scale-up CPO 路線圖:機櫃頻寬由 Blackwell 約 130 TB/s 提升到 Feynman 世代逾 1 PB/s"
+   ],
+   "biz": [
+    "Q2 FY27 營收 962 億美元 (年增 106%),資料中心 890 億美元;網通 (含 CPO 交換器) 為資料中心內成長最快項目之一",
+    "柏林 GTC 宣布與夥伴擴充基板、封裝、測試與 CPO 產能,部分產能最高擴至 3 倍;報導指矽品 CPO 產能拚增 30 倍"
+   ],
+   "metrics": {
+    "Q2 FY27 營收": "$96.2B (+106%)",
+    "資料中心": "$89B",
+    "CPO 交換器": "Spectrum-X Photonics 量產",
+    "下一代": "OOI 原型 (2028+)"
+   },
+   "risks": [
+    "CPO 良率、維修性與熱管理仍待大規模驗證",
+    "華為等陣營推 NPO 標準分流"
+   ],
+   "sources": [
+    {
+     "t": "台積電、矽品、鴻海等供應鏈加持，輝達宣布 Spectrum-X 乙太網路矽光子交換機量產",
+     "url": "https://technews.tw/2026/08/15/nvidia-announces-mass-production-of-spectrum-x-ethernet-silicon-photonics-switches/",
+     "date": "2026-08-15",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "Nvidia unveils OOI CPO prototype for post-2028 AI needs",
+     "url": "https://www.digitimes.com/news/a20261023PD240/nvidia-cpo-interposer-technology-2026.html",
+     "date": "2026-10-25",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Cisco, Nvidia target high-speed optical interconnects with 4x USFP density",
+     "url": "https://www.digitimes.com/news/a20261014PD205/cisco-nvidia-2026-bandwidth-design.html",
+     "date": "2026-10-14",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Nvidia CPO roadmap positions TSMC COUPE for next AI infrastructure wave",
+     "url": "https://www.digitimes.com/news/a20260625PD213/nvidia-cpo-infrastructure-optics-roadmap-tsmc.html",
+     "date": "2026-06-25",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "黃仁勳柏林GTC開講 高盛總結三大重點、看輝達還有近四成漲幅",
+     "url": "https://news.cnyes.com/news/id/6635664",
+     "date": "2026-10-22",
+     "src": "鉅亨網 台股"
+    },
+    {
+     "t": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
+     "url": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
+     "date": "2026-10-24",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "AVGO",
+   "name": "Broadcom",
+   "zh": "博通",
+   "ticker": "AVGO",
+   "region": "US",
+   "layer": "L2",
+   "role": "Tomahawk 交換器 ASIC + CPO (Bailly / Davisson 世代)",
+   "rd": [
+    "乙太網路交換器 ASIC 龍頭,已推出 51.2T Bailly 與 102.4T Davisson CPO 交換器平台",
+    "觀點:CPO 較適合 scale-out 網路,scale-up 不一定是最佳解 (Semicon Taiwan 2026)",
+    "與力成在新加坡合資 (力成投資 4 億美元) 發展面板級封裝,CPO 項目目標 2028 年量產"
+   ],
+   "biz": [
+    "Q3 FY26 營收 296 億美元 (年增 86%);AI 半導體營收 167 億美元 (年增 221%)",
+    "Q4 財測營收約 348 億美元、AI 半導體 217 億美元;自由現金流 137 億美元創新高"
+   ],
+   "metrics": {
+    "Q3 FY26 營收": "$29.6B (+86%)",
+    "AI 半導體": "$16.7B (+221%)",
+    "Q4 財測": "$34.8B"
+   },
+   "risks": [
+    "客戶集中於少數雲端大廠",
+    "CPO 營收占比仍小,主力仍為客製 ASIC 與交換器晶片"
+   ],
+   "sources": [
+    {
+     "t": "Broadcom Inc. Announces Third Quarter Fiscal Year 2026 Financial Results",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000076/avgo-08022026x8kxex99.htm",
+     "date": "2026-09-03",
+     "src": "SEC 8-K"
+    },
+    {
+     "t": "Broadcom says CPO fits scale-out better than scale-up",
+     "url": "https://www.digitimes.com/news/a20260903PD228/broadcom-cpo-copper-technology-optics.html",
+     "date": "2026-09-03",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "力成攜手博通於新加坡設合資公司，投資 4 億美元力拼 CPO 項目 2028 年量產",
+     "url": "https://finance.technews.tw/2026/07/17/powertech-and-broadcom-establish-joint-venture-in-singapore/",
+     "date": "2026-07-17",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "MRVL",
+   "name": "Marvell",
+   "zh": "邁威爾",
+   "ticker": "MRVL",
+   "region": "US",
+   "layer": "L2",
+   "role": "光通訊 DSP、矽光子光引擎、客製 ASIC",
+   "rd": [
+    "800G / 1.6T 光模組 PAM4 DSP 主要供應商,並發展矽光子光引擎與 CPO",
+    "CTO 指出功耗與密度瓶頸正推動 CPO 導入;CEO 稱銅線瓶頸已移入機櫃內,CPO 是唯一出路",
+    "2026-09-17 擴大與 GlobalFoundries 合作 (矽光子製造)"
+   ],
+   "biz": [
+    "Q2 FY27 營收 27.39 億美元 (年增 37%),資料中心年增 46%;Q3 財測約 31.5 億美元",
+    "2026-10 將 FY28 營收展望上調至約 200 億美元,AI 連接 (光電) 為主要動能"
+   ],
+   "metrics": {
+    "Q2 FY27 營收": "$2.739B (+37%)",
+    "Q3 財測": "$3.15B ±5%",
+    "FY28 展望": "約 $20B"
+   },
+   "risks": [
+    "客製 ASIC 專案得失影響大",
+    "光電產品營收未單獨揭露,市場估算差異大"
+   ],
+   "sources": [
+    {
+     "t": "Marvell Reports Second Quarter of Fiscal Year 2027 Financial Results",
+     "url": "https://investor.marvell.com/news-events/press-releases/detail/1031/mar",
+     "date": "2026-08-28",
+     "src": "Marvell IR"
+    },
+    {
+     "t": "Marvell raises 2028 revenue outlook to US$20 billion as AI connectivity expands",
+     "url": "https://www.digitimes.com/news/a20261007VL201/marvell-revenue-2028-outlook-infrastructure.html",
+     "date": "2026-10-07",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Marvell CTO: power and density bottlenecks are driving CPO adoption in AI data centers",
+     "url": "https://www.digitimes.com/news/a20260901PD231/marvell-cpo-siph-adoption-semicon-taiwan.html",
+     "date": "2026-09-01",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Marvell sees custom chips as a must for CSPs",
+     "url": "https://www.digitimes.com/news/a20261005PD231/marvell-nvidia-ceo-chips-jensen-huang.html",
+     "date": "2026-10-06",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "AYAR",
+   "name": "Ayar Labs",
+   "zh": "",
+   "ticker": "",
+   "region": "US",
+   "layer": "L2",
+   "role": "光學 I/O 晶片 (TeraPHY) 新創",
+   "rd": [
+    "以光學 I/O chiplet 取代 ASIC 的電 SerDes,直接把光拉到運算晶片邊緣",
+    "2026 OCP 與緯穎、創意電子首次實機展示 CPO 運算系統與即時遙測",
+    "執行長認為台灣封裝與整合生態系是 CPO 規模化的骨幹"
+   ],
+   "biz": [
+    "未上市;緯穎已策略投資",
+    "商業化關鍵在與 ASIC 廠 (創意) 與系統廠 (緯穎) 的設計導入"
+   ],
+   "metrics": {
+    "狀態": "未上市新創",
+    "台灣夥伴": "緯穎、創意"
+   },
+   "risks": [
+    "量產時程依賴客戶 ASIC 世代",
+    "與大廠自研方案競爭"
+   ],
+   "sources": [
+    {
+     "t": "緯穎OCP首秀CPO運算系統 攜創意、Ayar Labs驗證光互連",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771509_SXI4BZM119YO7083BF80Z",
+     "date": "2026-10-14",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Taiwan's packaging and integration ecosystem positions it as the backbone of CPO scaling, Ayar Labs says",
+     "url": "https://www.digitimes.com/news/a20260813PD228/cpo-optics-taiwan-packaging-manufacturing.html",
+     "date": "2026-08-13",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "（專訪）緯穎總經理林威遠：呼朋引伴化解AI電力、散熱、光通訊三挑戰",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000758524_E624KRN83HXKLI3YIUREP",
+     "date": "2026-06-15",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "LMTR",
+   "name": "Lightmatter",
+   "zh": "",
+   "ticker": "",
+   "region": "US",
+   "layer": "L2",
+   "role": "3D 光子互連平台 (Passage)、雷射 (Guide)",
+   "rd": [
+    "以台積電 COUPE 開發 3D 堆疊矽光子引擎;2026-05 發表 Guide DR 雷射產品",
+    "加入 NVIDIA NVLink 生態系,並與台灣供應鏈夥伴合作推動光互連規格"
+   ],
+   "biz": [
+    "未上市矽光子獨角獸",
+    "營收依賴 AI 晶片客戶採用其光互連平台"
+   ],
+   "metrics": {
+    "狀態": "未上市",
+    "製程平台": "TSMC COUPE"
+   },
+   "risks": [
+    "客戶採用時程不確定",
+    "大廠自研 CPO 競爭"
+   ],
+   "sources": [
+    {
+     "t": "Lightmatter joins TSMC on COUPE for 3D optical engines",
+     "url": "https://www.digitimes.com/news/a20260525PD235/siph-laser-demand-infrastructure-technology-tsmc.html",
+     "date": "2026-05-26",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Interview: Lightmatter maps CPO future with Nvidia NVLink, Taiwan supply chain",
+     "url": "https://www.digitimes.com/news/a20260807PD228/ocp-cpo-nvidia-taiwan-supply-chain-2026.html",
+     "date": "2026-08-08",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "INTC",
+   "name": "Intel Foundry",
+   "zh": "英特爾",
+   "ticker": "INTC",
+   "region": "US",
+   "layer": "L3",
+   "role": "12 吋 InP 矽光子 (雷射整合) 製造",
+   "rd": [
+    "2026 OCP 宣稱是業界唯一能量產 12 吋 InP 矽光子 (晶圓上整合雷射) 的晶圓廠",
+    "把晶圓代工定位為 AI 資料中心光學的光源供應者,另闢代工新戰場"
+   ],
+   "biz": [
+    "矽光子為 Intel Foundry 差異化業務,對整體營收貢獻仍小",
+    "受惠 InP 雷射短缺,具替代光源供應潛力"
+   ],
+   "metrics": {
+    "技術": "300mm InP 矽光子",
+    "定位": "CPO 光源代工"
+   },
+   "risks": [
+    "晶圓代工整體仍在轉型虧損期",
+    "客戶導入需時間驗證"
+   ],
+   "sources": [
+    {
+     "t": "Intel says it is the only high-volume fab for 12-inch InP silicon photonics as co-packaged optics nears deployment",
+     "url": "https://www.digitimes.com/news/a20261020VL204/intel-12-inch-inp-siph-cpo-ocp.html",
+     "date": "2026-10-20",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "英特爾晶圓代工另闢戰場？ 12吋InP技術搶攻光通訊商機",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771998_L1BLMIUJ8BPPUU9SMUXPJ",
+     "date": "2026-10-20",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "GFS",
+   "name": "GlobalFoundries",
+   "zh": "格羅方德",
+   "ticker": "GFS",
+   "region": "US",
+   "layer": "L3",
+   "role": "矽光子 (PIC) 晶圓代工",
+   "rd": [
+    "矽光子平台為差異化技術主軸之一,2026-09 擴大與 Marvell 合作",
+    "在新加坡與產官學合作先進封裝與矽光子研發"
+   ],
+   "biz": [
+    "2026 Q2 財報優於預期,AI 光通訊快速成長並帶動毛利率改善",
+    "與高塔、聯電在 PIC 代工市場競爭"
+   ],
+   "metrics": {
+    "2026 Q2": "AI 光通訊帶動優於預期",
+    "主要客戶": "Marvell 等"
+   },
+   "risks": [
+    "成熟製程價格競爭",
+    "PIC 代工新進者 (聯電) 加入"
+   ],
+   "sources": [
+    {
+     "t": "GlobalFoundries 2Q analysis 1/2: AI optics power earnings beat and margin gains",
+     "url": "https://www.digitimes.com/news/a20260806VL207/globalfoundries-earnings-growth-revenue-forecast.html",
+     "date": "2026-08-06",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Marvell sees custom chips as a must for CSPs",
+     "url": "https://www.digitimes.com/news/a20261005PD231/marvell-nvidia-ceo-chips-jensen-huang.html",
+     "date": "2026-10-06",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "AI 推升 PIC 代工狂潮，聯電挾 12 吋量產優勢決戰高塔、格羅方德",
+     "url": "https://finance.technews.tw/2026/08/22/umc-joins-battle-competing-tower-globalfoundries/",
+     "date": "2026-08-22",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "FN",
+   "name": "Fabrinet",
+   "zh": "",
+   "ticker": "FN",
+   "region": "US",
+   "layer": "L4",
+   "role": "光學元件 / 模組精密代工 (美股掛牌,主要產能在泰國)",
+   "rd": [
+    "為光通訊大廠代工光收發模組與光學次組件,擴充 1.6T 與 CPO 相關製程",
+    "FY26 資本支出 2.53 億美元,較前一年倍增"
+   ],
+   "biz": [
+    "FY26 Q4 營收 13.16 億美元,年增 45%;資料中心 6.69 億美元 (年增 68%)",
+    "FY26 全年營收 46 億美元 (年增 36%);FY27 Q1 財測 13.75~14.25 億美元"
+   ],
+   "metrics": {
+    "FY26 Q4 營收": "$1.316B (+45%)",
+    "資料中心": "$669M (+68%)",
+    "FY27 Q1 財測": "$1.375~1.425B"
+   },
+   "risks": [
+    "客戶集中 (NVIDIA 等)",
+    "擴產期自由現金流轉負"
+   ],
+   "sources": [
+    {
+     "t": "Fabrinet Announces Fourth Quarter and Fiscal Year 2026 Financial Results",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001408710/000140871026000026/fn-2026811xex991q426.htm",
+     "date": "2026-08-17",
+     "src": "SEC 8-K"
+    }
+   ]
+  },
+  {
+   "id": "GLW",
+   "name": "Corning",
+   "zh": "康寧",
+   "ticker": "GLW",
+   "region": "US",
+   "layer": "L5",
+   "role": "光纖、光纜、連接器與玻璃基板",
+   "rd": [
+    "發展 GlassBridge 光纖到晶片連接概念 (仍屬早期,非立即取代 FAU)",
+    "同時布局 CPO 光學材料與玻璃核心基板 (Glass Core),解決大尺寸封裝翹曲",
+    "2025 年申請近 400 件專利,研發長期投入光纖技術"
+   ],
+   "biz": [
+    "2026 Q2 光通訊營收 20.7 億美元 (年增 32%),企業網路年增 65%;部門淨利 4.38 億美元 (年增 77%)",
+    "與 Amazon 簽數十億美元多年光纖供應協議;與 AT&T 簽逾 30 億美元多年供應協議",
+    "Q3 財測營收 49~50 億美元 (Q3 財報尚待公布)"
+   ],
+   "metrics": {
+    "Q2 光通訊營收": "$2.07B (+32%)",
+    "Q2 部門淨利": "$438M (+77%)",
+    "Q3 財測": "$4.9~5.0B"
+   },
+   "risks": [
+    "Q3 財測低於預期,Q2 後股價曾大跌",
+    "光纖產能擴張與原料成本"
+   ],
+   "sources": [
+    {
+     "t": "Corning's Strong Second-Quarter 2026 Financial Results",
+     "url": "https://www.businesswire.com/news/home/20260727590976/en/Cornings-Strong-Second-Quarter-2026-Financial-Results1-Demonstrate-Progress-on-Recently-Upgraded-Springboard-Plan",
+     "date": "2026-07-28",
+     "src": "Business Wire"
+    },
+    {
+     "t": "Interview: Corning's GlassBridge points to longer-term packaging shifts, not an immediate FAU replacement",
+     "url": "https://www.digitimes.com/news/a20260706PD214/corning-packaging-connector-technology-commercial.html",
+     "date": "2026-07-07",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "Amazon, Corning strike multibillion-dollar deal to expand US fiber optic output",
+     "url": "https://www.digitimes.com/news/a20260609PR204/amazon-corning-manufacturing-infrastructure-data.html",
+     "date": "2026-06-09",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "【動物農莊】AI需求延燒光纖 AT&T攜康寧搶佔產能",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770215_1AC1AWS6273HCY4ASW7YO",
+     "date": "2026-10-04",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Interview: Corning sees CPO, glass core as new semiconductor battlegrounds",
+     "url": "https://www.digitimes.com/news/a20260915PD233/corning-cpo-packaging-demand-auo.html",
+     "date": "2026-09-15",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "AAOI",
+   "name": "Applied Optoelectronics",
+   "zh": "",
+   "ticker": "AAOI",
+   "region": "US",
+   "layer": "L6",
+   "role": "雷射晶片到光收發模組 (美國德州自有晶圓廠)",
+   "rd": [
+    "自製雷射晶片並組裝 800G / 1.6T 模組;向 Trymax 下多年設備訂單擴充德州 Sugar Land 雷射晶圓廠",
+    "目標 2026 年底 800G 與 1.6T 月產能約 65 萬顆"
+   ],
+   "biz": [
+    "2026 Q2 營收 1.919 億美元 (年增 86%),資料中心 1.077 億美元 (年增 140%);非 GAAP 轉盈 (EPS 0.06 美元)",
+    "Q3 財測 2.55~2.90 億美元;需求預期至 2027 年中都大於產能"
+   ],
+   "metrics": {
+    "Q2 營收": "$191.9M (+86%)",
+    "資料中心": "$107.7M (+140%)",
+    "Q3 財測": "$255~290M"
+   },
+   "risks": [
+    "GAAP 仍虧損",
+    "毛利率約 30%,低於同業"
+   ],
+   "sources": [
+    {
+     "t": "Applied Optoelectronics Reports Second Quarter 2026 Results",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001158114/000168316826006055/aaoi_ex9901.htm",
+     "date": "2026-08-06",
+     "src": "SEC 8-K"
+    },
+    {
+     "t": "Trymax lands multi-year AOI order as InP laser capacity race tightens",
+     "url": "https://www.digitimes.com/news/a20260901VL215/inp-laser-dutch-equipment.html",
+     "date": "2026-09-01",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "CSCO",
+   "name": "Cisco",
+   "zh": "思科",
+   "ticker": "CSCO",
+   "region": "US",
+   "layer": "L6",
+   "role": "網通設備、矽光子模組、USFP 標準",
+   "rd": [
+    "與 NVIDIA 合作開發 USFP 超高密度可插拔光模組:單通道 400Gb/s,同尺寸 6.4Tb/s、未來 12.8Tb/s",
+    "聯合 TE Connectivity、安費諾建立開放供應鏈"
+   ],
+   "biz": [
+    "可插拔路線與 CPO 並行,爭取 AI 工廠網路成本與相容性優勢"
+   ],
+   "metrics": {
+    "新標準": "USFP (400G/lane)",
+    "合作": "NVIDIA、TE、Amphenol"
+   },
+   "risks": [
+    "CPO 普及可能壓縮可插拔模組空間"
+   ],
+   "sources": [
+    {
+     "t": "思科攜NVIDIA布局高速光互連 USFP頻寬密度提高至4倍",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771296_V5Z1XHL2LOHZY75R1HO86",
+     "date": "2026-10-13",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "AI傳輸速度大升級！輝達聯手思科推新光模組 頻寬密度飆4倍",
+     "url": "https://news.cnyes.com/news/id/6629028",
+     "date": "2026-10-13",
+     "src": "鉅亨網 美股"
+    }
+   ]
+  },
+  {
+   "id": "ANET",
+   "name": "Arista Networks",
+   "zh": "",
+   "ticker": "ANET",
+   "region": "US",
+   "layer": "L6",
+   "role": "AI 資料中心乙太網路交換器",
+   "rd": [
+    "觀點:目前可插拔仍是主流,409.6T 世代交換器可能推動產業轉向 CPO"
+   ],
+   "biz": [
+    "雲端大廠 AI 叢集 scale-out 網路主要供應商之一"
+   ],
+   "metrics": {
+    "CPO 時點觀點": "409.6T 世代"
+   },
+   "risks": [
+    "CPO 交換器由 NVIDIA / Broadcom 平台主導,系統廠議價力受考驗"
+   ],
+   "sources": [
+    {
+     "t": "409.6T switches could push industry toward CPO, Arista says",
+     "url": "https://www.digitimes.com/news/a20260813PD224/cpo-optics-adoption-photonics-switch.html",
+     "date": "2026-08-13",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "3081",
+   "name": "聯亞",
+   "zh": "LandMark",
+   "ticker": "3081",
+   "region": "TW",
+   "layer": "L1",
+   "role": "InP 磊晶片 (雷射、PD 用)",
+   "rd": [
+    "InP 光通訊磊晶片專業廠,產品用於矽光子 CW 雷射與光偵測器",
+    "與下游代工夥伴同步擴產"
+   ],
+   "biz": [
+    "2026-09 營收約 5.4 億元,年增約 190%,創歷史新高;1~9 月累計約 36.9 億元,年增約 136%",
+    "2026 Q2 營收、毛利率與獲利大幅跳升,公司預估 Q3 營收季增逾 20%"
+   ],
+   "metrics": {
+    "9 月營收": "約 5.4 億 (+190%)",
+    "1~9 月": "約 36.9 億 (+136%)",
+    "主力": "矽光子 CW 雷射磊晶"
+   },
+   "risks": [
+    "InP 基板供應 (日本、中國) 不穩",
+    "股價波動劇烈"
+   ],
+   "sources": [
+    {
+     "t": "LandMark Optoelectronics posts surge in profit on silicon photonics demand",
+     "url": "https://www.digitimes.com/news/a20260813PD205/profit-silicon-revenue-photonics-2026.html",
+     "date": "2026-08-13",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "〈焦點股〉光通訊AIDC需求強勁 聯亞、光環逆勢黑翻紅",
+     "url": "https://news.cnyes.com/news/id/6633333",
+     "date": "2026-10-19",
+     "src": "鉅亨網 台股"
+    },
+    {
+     "t": "聯亞 9 月營收 (Yahoo 股市)",
+     "url": "https://tw.stock.yahoo.com/quote/3081.TWO/revenue",
+     "date": "2026-10-10",
+     "src": "Yahoo 股市"
+    }
+   ]
+  },
+  {
+   "id": "3234",
+   "name": "光環",
+   "zh": "TrueLight",
+   "ticker": "3234",
+   "region": "TW",
+   "layer": "L1",
+   "role": "InP CW 雷射、光通訊主動元件",
+   "rd": [
+    "AI 資料中心由 800G 升級到 1.6T / 3.2T,帶動 InP CW 雷射需求",
+    "年底產能預計較第三季翻倍"
+   ],
+   "biz": [
+    "2026 Q3 營收 3.26 億元,季增 66.3%、年增 115.9%"
+   ],
+   "metrics": {
+    "Q3 營收": "3.26 億 (+115.9% YoY)",
+    "季增": "+66.3%",
+    "產能": "年底較 Q3 翻倍"
+   },
+   "risks": [
+    "規模小、獲利基期低",
+    "擴產良率"
+   ],
+   "sources": [
+    {
+     "t": "〈焦點股〉磷化銦需求爆發 光環漲逾半根站上所有均線",
+     "url": "https://news.cnyes.com/news/id/6634082",
+     "date": "2026-10-20",
+     "src": "鉅亨網 台股"
+    }
+   ]
+  },
+  {
+   "id": "3105",
+   "name": "穩懋",
+   "zh": "WIN Semi",
+   "ticker": "3105",
+   "region": "TW",
+   "layer": "L1",
+   "role": "化合物半導體代工:PD、CW 雷射、Driver IC",
+   "rd": [
+    "推動光通訊 Driver IC、CW 雷射與光偵測器 (PD);兩年擴產計畫鎖定光通訊與低軌衛星"
+   ],
+   "biz": [
+    "2026 Q2 營收 52.6 億元,季增 14.5%、年增 39%,光 PD 量產為主要動能",
+    "AI 相關產品比重朝雙位數目標前進"
+   ],
+   "metrics": {
+    "Q2 營收": "52.6 億 (+39%)",
+    "光通訊產品": "PD 量產、CW 雷射開發"
+   },
+   "risks": [
+    "手機 PA 本業持平",
+    "化學品與上游材料交期拉長"
+   ],
+   "sources": [
+    {
+     "t": "Optical PD volume production lifts WIN Semiconductors' Q2 revenue 39% YoY",
+     "url": "https://www.digitimes.com/news/a20260724PD235/revenue-demand-gaas-2026-shipments.html",
+     "date": "2026-07-26",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "穩懋光通訊產品放量發酵 AI產品比重朝雙位數目標前進",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000762930_4V38HWTU4WWDPTLURA97R",
+     "date": "2026-07-27",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "穩懋提2年擴產計畫 搶光通訊和低軌衛星兩大市場",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756411_SNT5XWHU0GO8KJ2Y5VTUR",
+     "date": "2026-05-26",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "3016",
+   "name": "嘉晶",
+   "zh": "Episil-Precision",
+   "ticker": "3016",
+   "region": "TW",
+   "layer": "L1",
+   "role": "鍺矽 (GeSi) 磊晶 — 矽光子光偵測器材料",
+   "rd": [
+    "矽光子模組帶動鍺矽磊晶需求,公司看好 2027 年鍺矽磊晶出貨 3.5~4 倍成長"
+   ],
+   "biz": [
+    "2026-08 單月營收 5.07 億元,獲利年增 73 倍;2026 年營收目標成長逾 35%,AI 營收占比拚三成、2027 年上看四成"
+   ],
+   "metrics": {
+    "8 月營收": "5.07 億",
+    "AI 營收占比": "2026 約三成"
+   },
+   "risks": [
+    "電源 (PMIC) 與矽光子雙引擎外,本業景氣循環"
+   ],
+   "sources": [
+    {
+     "t": "AI催動嘉晶矽光子、PMIC成長 鍺矽磊晶看好2027年4倍跳",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000769373_4AX234GA8R6BWH2C1CIFG",
+     "date": "2026-09-23",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "AI 電源、矽光子雙引擎發威，嘉晶 8 月獲利年增 73 倍",
+     "url": "https://finance.technews.tw/2026/10/02/episil-august-profit-surges-73x-yoy-ai-power-silicon-photonics-dual-engines/",
+     "date": "2026-10-02",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "嘉晶今年營收拚增逾 35%，AI 營收占比衝三成、明年上看四成",
+     "url": "https://technews.tw/2026/09/22/jasic-revenue-growth-35-ai-share-30-this-year-40-next-year/",
+     "date": "2026-09-22",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "2454",
+   "name": "聯發科",
+   "zh": "MediaTek",
+   "ticker": "2454",
+   "region": "TW",
+   "layer": "L2",
+   "role": "高速 SerDes、ASIC、光通訊晶片布局",
+   "rd": [
+    "有線端與子公司達發合作,從乙太網、光通訊、交換器到 SerDes 完整布局",
+    "投資矽光子設計公司元澄半導體"
+   ],
+   "biz": [
+    "切入雲端 AI ASIC 與高速傳輸,光通訊相關商機預期 2027 年放量"
+   ],
+   "metrics": {
+    "布局": "SerDes / 光通訊 / ASIC"
+   },
+   "risks": [
+    "與 Broadcom、Marvell 正面競爭"
+   ],
+   "sources": [
+    {
+     "t": "NVIDIA、博通與Marvell都在搶 聯發科美國布局左右AI網通成敗",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770630_Y017BMKY25PY0E1T8QUTJ",
+     "date": "2026-10-06",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "左擁超微、右抱聯發科 元澄半導體直攻全光CPO設計、卡位1.6T商機",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757253_C6K3ORP24AS56N4PN7AYN",
+     "date": "2026-06-03",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "3443",
+   "name": "創意",
+   "zh": "GUC",
+   "ticker": "3443",
+   "region": "TW",
+   "layer": "L2",
+   "role": "ASIC 設計服務 + 光學 I/O 整合",
+   "rd": [
+    "與 Ayar Labs、緯穎於 2026 OCP 實機展示整合 ASIC 與光學 I/O 的 CPO 運算系統"
+   ],
+   "biz": [
+    "外資報告指已向台積電預訂明年約 6 萬片 CoWoS 產能,CPO 技術有望深化"
+   ],
+   "metrics": {
+    "CPO 合作": "Ayar Labs、緯穎"
+   },
+   "risks": [
+    "ASIC 專案集中度高"
+   ],
+   "sources": [
+    {
+     "t": "緯穎OCP首秀CPO運算系統 攜創意、Ayar Labs驗證光互連",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771509_SXI4BZM119YO7083BF80Z",
+     "date": "2026-10-14",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "向台積電下訂產能、CPO 技術有望深化，外資改點讚創意",
+     "url": "https://technews.tw/2026/06/25/guc-0625-cpo-and-cowos/",
+     "date": "2026-06-25",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "2330",
+   "name": "台積電",
+   "zh": "TSMC",
+   "ticker": "2330",
+   "region": "TW",
+   "layer": "L3",
+   "role": "COUPE 矽光子引擎 (PIC + EIC 以 SoIC 3D 堆疊)",
+   "rd": [
+    "COUPE (Compact Universal Photonic Engine) 平台:NVIDIA、Broadcom 被視為早期客戶,Lightmatter 也採用",
+    "法人估 PIC 產能由約每月 500 片擴至 2028 年每月 2.5 萬片",
+    "台積電預期矽光子將在 2027 年佔光收發器市場逾 50%;NVIDIA Feynman 世代直上 CPO,結合 A16 助攻 2028 放量"
+   ],
+   "biz": [
+    "3Q26 EPS 29.43 元創新高、毛利率 66.4%;CPO 目前佔比極小,屬 2027~2028 年成長選項"
+   ],
+   "metrics": {
+    "3Q26 EPS": "29.43 元",
+    "PIC 產能 (法人估)": "2028 年 2.5 萬片/月",
+    "平台": "COUPE"
+   },
+   "risks": [
+    "CPO 放量時程取決於 NVIDIA / Broadcom 平台"
+   ],
+   "sources": [
+    {
+     "t": "[News] TSMC PIC Capacity Seen Surging to 25K Wafers/Month by 2028; NVIDIA, Broadcom Eyed as Early COUPE Customers",
+     "url": "https://www.trendforce.com/news/2026/07/08/news-tsmc-pic-capacity-seen-surging-to-25k-wafersmonth-by-2028-nvidia-broadcom-eyed-as-early-coupe-customers/",
+     "date": "2026-07-08",
+     "src": "TrendForce"
+    },
+    {
+     "t": "[News] TSMC: SoIC, CoWoS to Drive 50× Compute by 2029; Silicon Photonics to Top 50% of Transceiver Market by 2027",
+     "url": "https://www.trendforce.com/news/2026/08/31/news-tsmc-soic-cowos-drive-50x-compute-by-2029-silicon-photonics-to-top-50-of-transceiver-market-by-2027/",
+     "date": "2026-08-31",
+     "src": "TrendForce"
+    },
+    {
+     "t": "NVIDIA Feynman直上CPO、A16 台積電加速助攻2028放量",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000765082_N7I1PY4L74XWNB3OWWRU7",
+     "date": "2026-08-14",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Lightmatter joins TSMC on COUPE for 3D optical engines",
+     "url": "https://www.digitimes.com/news/a20260525PD235/siph-laser-demand-infrastructure-technology-tsmc.html",
+     "date": "2026-05-26",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "2303",
+   "name": "聯電",
+   "zh": "UMC",
+   "ticker": "2303",
+   "region": "TW",
+   "layer": "L3",
+   "role": "12 吋矽光子晶圓代工 (新加坡)",
+   "rd": [
+    "2026-07 新加坡 12 吋廠首度量產交貨矽光子晶圓,以 12 吋量產優勢挑戰高塔與格羅方德"
+   ],
+   "biz": [
+    "矽光子為成熟製程轉型新動能;9 月營收 253.5 億元創新高 (年增 27.22%)"
+   ],
+   "metrics": {
+    "里程碑": "2026-07 矽光子晶圓量產交貨",
+    "9 月營收": "253.5 億 (+27%)"
+   },
+   "risks": [
+    "PIC 代工客戶導入期長"
+   ],
+   "sources": [
+    {
+     "t": "[News] UMC Announces First Delivery of Mass-Produced Silicon Photonics Wafers from Singapore 12-Inch Fab",
+     "url": "https://www.trendforce.com/news/2026/07/14/news-umc-announces-first-delivery-of-mass-produced-silicon-photonics-wafers-from-singapore-12-inch-fab/",
+     "date": "2026-07-14",
+     "src": "TrendForce"
+    },
+    {
+     "t": "AI 推升 PIC 代工狂潮，聯電挾 12 吋量產優勢決戰高塔、格羅方德",
+     "url": "https://finance.technews.tw/2026/08/22/umc-joins-battle-competing-tower-globalfoundries/",
+     "date": "2026-08-22",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "聯電宣布矽光子晶圓交貨，外資花旗按讚看好第二季營收攀升",
+     "url": "https://finance.technews.tw/2026/07/15/citigroup-is-bullish-on-umcs-announcement-of-silicon-photonics-wafer-deliveries/",
+     "date": "2026-07-15",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "3711",
+   "name": "日月光投控 (矽品)",
+   "zh": "ASE / SPIL",
+   "ticker": "3711",
+   "region": "TW",
+   "layer": "L4",
+   "role": "CPO 光引擎與交換器封裝",
+   "rd": [
+    "OCP APAC 提出 AI 封裝三部曲:先進封裝、光學互連 (CPO)、垂直供電",
+    "旗下環旭/光創聯推出 UHP ELSFP 外置雷射光源模組"
+   ],
+   "biz": [
+    "矽品為 NVIDIA Spectrum-X 矽光子交換機供應鏈;報導指矽品 CPO 產能拚增 30 倍"
+   ],
+   "metrics": {
+    "角色": "NVIDIA CPO 封裝",
+    "擴產": "CPO 產能拚增 30 倍 (報導)"
+   },
+   "risks": [
+    "CPO 良率與重工成本"
+   ],
+   "sources": [
+    {
+     "t": "日月光OCP揭「AI封裝三部曲」 先進封裝、CPO、垂直供電",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000764750_GII604BW6N0MIJLHZ6H96",
+     "date": "2026-08-12",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
+     "url": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
+     "date": "2026-10-24",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "環旭布局光互連再進一步 光創聯推ELSFP外置雷射光源模組",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766626_K6A7G3TZ1WJFGS7A92RXQ",
+     "date": "2026-08-28",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "6451",
+   "name": "訊芯-KY",
+   "zh": "ShunSin",
+   "ticker": "6451",
+   "region": "TW",
+   "layer": "L4",
+   "role": "光收發模組封裝、CPO (鴻海集團)",
+   "rd": [
+    "證實與台積電 COUPE 合作;資本支出上看 50 億元投入 CPO 與 OCS",
+    "延攬台積電資深人士任獨董,董事長蔣尚義"
+   ],
+   "biz": [
+    "由高速光纖收發模組封裝轉型 CPO,為鴻海「3+3+3」策略一環"
+   ],
+   "metrics": {
+    "資本支出": "上看 50 億元",
+    "合作": "TSMC COUPE"
+   },
+   "risks": [
+    "大額資本支出回收期"
+   ],
+   "sources": [
+    {
+     "t": "訊芯證實台積COUPE合作 資本支出上看50億投入CPO、OCS",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000760049_1331XHL43C3K8DL2JN8HT",
+     "date": "2026-06-29",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "ShunSin sees CPO potential, adds TSMC veterans as independents",
+     "url": "https://www.digitimes.com/news/a20260626PD230/shunsin-cpo-testing-packaging-tsmc.html",
+     "date": "2026-06-27",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "6239",
+   "name": "力成",
+   "zh": "PTI",
+   "ticker": "6239",
+   "region": "TW",
+   "layer": "L4",
+   "role": "面板級封裝 + 博通 CPO 合資",
+   "rd": [
+    "與 Broadcom 在新加坡設面板級先進封裝合資公司 (投資 4 億美元),CPO 項目目標 2028 年量產"
+   ],
+   "biz": [
+    "FOPLP 與 AMD 合作預計 2027 年中量產;光通訊為新動能"
+   ],
+   "metrics": {
+    "合資": "博通新加坡 (US$4 億)",
+    "CPO 量產": "目標 2028"
+   },
+   "risks": [
+    "量產時程較晚,2026~2027 貢獻有限"
+   ],
+   "sources": [
+    {
+     "t": "力成攜手博通於新加坡設合資公司，投資 4 億美元力拼 CPO 項目 2028 年量產",
+     "url": "https://finance.technews.tw/2026/07/17/powertech-and-broadcom-establish-joint-venture-in-singapore/",
+     "date": "2026-07-17",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "力成FOPLP攜超微拚2027年首家量產 偕同博通衝光通訊商機",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000763202_LUN14PVR1CJ4VK1GY0ISK",
+     "date": "2026-07-29",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "2449",
+   "name": "京元電子",
+   "zh": "KYEC",
+   "ticker": "2449",
+   "region": "TW",
+   "layer": "L4",
+   "role": "矽光子 / TIA 測試",
+   "rd": [
+    "與矽格同搶矽光子 TIA (轉阻放大器) 測試,美系大客戶預訂產能"
+   ],
+   "biz": [
+    "受惠 NVIDIA CPO 與 AI 晶片測試擴產"
+   ],
+   "metrics": {
+    "新業務": "SiPh TIA 測試"
+   },
+   "risks": [
+    "測試產能擴充資本密集"
+   ],
+   "sources": [
+    {
+     "t": "Ardentec, Sigurd race into silicon photonics TIA testing as US client books capacity",
+     "url": "https://www.digitimes.com/news/a20260917PD223/sigurd-ardentec-siph-testing-capacity.html",
+     "date": "2026-09-17",
+     "src": "DigiTimes Asia"
+    },
+    {
+     "t": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
+     "url": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
+     "date": "2026-10-24",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "6257",
+   "name": "矽格",
+   "zh": "Sigurd",
+   "ticker": "6257",
+   "region": "TW",
+   "layer": "L4",
+   "role": "矽光子 / AI ASIC 測試",
+   "rd": [
+    "以 21.88 億元購入竹科廠房,聚焦 AI 互連矽光子、AI ASIC 與 CoWoS 測試,量產後產能約增 25%"
+   ],
+   "biz": [
+    "已調漲測試價格,多數客戶簽一年以上產能保障協議;光通訊業績 2027 年拚倍增,不排除再上修資本支出"
+   ],
+   "metrics": {
+    "新廠": "竹科 21.88 億購廠",
+    "光通訊": "2027 拚倍增"
+   },
+   "risks": [
+    "擴產速度與人力"
+   ],
+   "sources": [
+    {
+     "t": "矽格集團斥21.88億元 拿下建漢竹科園區萬坪科技廠房",
+     "url": "https://news.cnyes.com/news/id/6629591",
+     "date": "2026-10-13",
+     "src": "鉅亨網 台股"
+    },
+    {
+     "t": "矽格AI客戶搶簽長約 光通訊業績明年拚倍增",
+     "url": "https://news.cnyes.com/news/id/6622835",
+     "date": "2026-10-06",
+     "src": "鉅亨網 台股"
+    },
+    {
+     "t": "AI客戶加價、簽長約搶產能 矽格不排除再上修2026資本支出",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770609_9VR5ULRL1XQ6008PYZI7P",
+     "date": "2026-10-06",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "6223",
+   "name": "旺矽",
+   "zh": "MPI",
+   "ticker": "6223",
+   "region": "TW",
+   "layer": "L4",
+   "role": "CPO 認證探針台 / 光電晶圓測試",
+   "rd": [
+    "探針台已通過 CPO 認證,為台積電矽光子測試夥伴;三星也選用旺矽與 FormFactor 加速 PIC 晶圓測試"
+   ],
+   "biz": [
+    "光電測試平台被視為 CPO 量產關鍵,測試設備版圖重整"
+   ],
+   "metrics": {
+    "客戶": "台積電、三星 (報導)"
+   },
+   "risks": [
+    "與 FormFactor 等國際大廠競爭"
+   ],
+   "sources": [
+    {
+     "t": "【動物農莊】搭台積電認證便車 三星矽光子測試夥伴也選「這2家」",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000768756_04N6BWVH6XWKKE5O04CDM",
+     "date": "2026-09-21",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "光電測試平台成 CPO 量產關鍵，測試設備供應鏈版圖將迎新變局",
+     "url": "https://technews.tw/2026/10/13/optoelectronic-testing-platforms-crucial-cpo-mass-production-ushering-new-changes-test-equipment-supply-chain-landscape/",
+     "date": "2026-10-13",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "3363",
+   "name": "上詮",
+   "zh": "FOCI",
+   "ticker": "3363",
+   "region": "TW",
+   "layer": "L5",
+   "role": "CPO 用 FAU (光纖陣列單元)、光纖連接",
+   "rd": [
+    "FAU 是光纖與 PIC 耦光的關鍵元件,上詮為台積電 CPO 生態系 FAU 供應商之一"
+   ],
+   "biz": [
+    "外資 (高盛) 以 CPO 交換器 FAU 商機給予買進評等;營收貢獻取決於 NVIDIA CPO 交換器放量"
+   ],
+   "metrics": {
+    "關鍵產品": "CPO FAU"
+   },
+   "risks": [
+    "大立光等新進者送樣競爭",
+    "放量時程延後風險"
+   ],
+   "sources": [
+    {
+     "t": "遠見雜誌 台積電標籤 (上詮 FAU 外資評等)",
+     "url": "https://www.gvm.com.tw/tags/%E5%8F%B0%E7%A9%8D%E9%9B%BB",
+     "date": "2026",
+     "src": "遠見"
+    },
+    {
+     "t": "Taiwan optical firms diverge in CPO push as Corning looms large",
+     "url": "https://www.digitimes.com/news/a20260810PD238/cpo-taiwan-corning-optics-jmo.html",
+     "date": "2026-08-11",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "3163",
+   "name": "波若威",
+   "zh": "Browave",
+   "ticker": "3163",
+   "region": "TW",
+   "layer": "L5",
+   "role": "光被動元件、高密度光纖模組",
+   "rd": [
+    "高密度波分多工器等光被動元件,被市場點名為 NVIDIA CPO 供應鏈之一"
+   ],
+   "biz": [
+    "2026-09 營收 2.42 億元,月增 18.1%、年增 27.4%;1~9 月累計 19.05 億元,年增 18.9%"
+   ],
+   "metrics": {
+    "9 月營收": "2.42 億 (+27.4%)",
+    "1~9 月": "19.05 億 (+18.9%)"
+   },
+   "risks": [
+    "CPO 放量前成長較溫和"
+   ],
+   "sources": [
+    {
+     "t": "波若威每月營收",
+     "url": "https://histock.tw/stock/3163/%E6%AF%8F%E6%9C%88%E7%87%9F%E6%94%B6",
+     "date": "2026-10-10",
+     "src": "HiStock"
+    }
+   ]
+  },
+  {
+   "id": "6442",
+   "name": "光聖",
+   "zh": "Ezconn",
+   "ticker": "6442",
+   "region": "TW",
+   "layer": "L5",
+   "role": "高芯數光纖、光被動元件",
+   "rd": [
+    "轉投資合聖搶攻美系 CPO 商機;高芯數產品 2027 衝放量",
+    "光纖光纜全球缺料,多方布局固樁"
+   ],
+   "biz": [
+    "美系雲端擴建帶動高芯數需求,公司看 AI 成長至少到 2029;9 月營收創新高"
+   ],
+   "metrics": {
+    "主力": "高芯數光纖",
+    "需求能見度": "至 2029 (公司)"
+   },
+   "risks": [
+    "光纖原料漲價壓縮毛利"
+   ],
+   "sources": [
+    {
+     "t": "光聖轉投資合聖搶攻美系CPO商機 「高芯數」再為下半年營運增色",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000756571_0Q64HCG88Z4EQU0XBHBG8",
+     "date": "2026-05-27",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "光聖高芯數2027衝放量 光纖缺料多方布局固樁",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000769054_IF01MF184YL4IV5X6BPVA",
+     "date": "2026-09-21",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Lumentum喊AI光通訊嚴重供不應求 台廠3Q26營收報佳音",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771197_38001XRFLX33BX6FEMIIV",
+     "date": "2026-10-12",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "3008",
+   "name": "大立光",
+   "zh": "Largan",
+   "ticker": "3008",
+   "region": "TW",
+   "layer": "L5",
+   "role": "CPO 光學元件 / FAU 新進者",
+   "rd": [
+    "300 天急行軍切入 CPO,2026-07 送樣 CPO 產品",
+    "執行長表示 FAU 組件即使通過驗證,到量產仍需 1~2 年"
+   ],
+   "biz": [
+    "手機鏡頭本業成長停滯,CPO 為長期第二成長曲線"
+   ],
+   "metrics": {
+    "進度": "2026-07 送樣",
+    "量產": "驗證後 1~2 年"
+   },
+   "risks": [
+    "營收貢獻時點較晚"
+   ],
+   "sources": [
+    {
+     "t": "台積電疑問「明明能做為何不出貨？」讓林恩平下定決心！大立光 300 天急行軍搶攻 CPO 幕後",
+     "url": "https://finance.technews.tw/2026/08/15/largan-cpo/",
+     "date": "2026-08-15",
+     "src": "TechNews 科技新報"
+    },
+    {
+     "t": "Largan samples CPO product in July 2026, eyes GC edge",
+     "url": "https://www.digitimes.com/news/a20260710PD235/largan-precision-cpo-equipment-market-production-2026.html",
+     "date": "2026-07-10",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "4573",
+   "name": "高明鐵",
+   "zh": "",
+   "ticker": "4573",
+   "region": "TW",
+   "layer": "L5",
+   "role": "CPO 耦光自動化設備",
+   "rd": [
+    "由鏡頭組裝轉型光通訊耦光工站;與光循科技展示 120 通道 FAU-PIC 自動化對位平台"
+   ],
+   "biz": [
+    "2026 Q3 營收 6.51 億元創新高,單季即超越 2025 全年"
+   ],
+   "metrics": {
+    "Q3 營收": "6.51 億 (創新高)"
+   },
+   "risks": [
+    "設備訂單隨客戶擴產循環"
+   ],
+   "sources": [
+    {
+     "t": "高明鐵9月、Q3營收創新高 單季營收6.51億元超越去年全年",
+     "url": "https://news.cnyes.com/news/id/6626790",
+     "date": "2026-10-09",
+     "src": "鉅亨網 台股"
+    },
+    {
+     "t": "高明鐵卡位 CPO 封裝量產！攜光循科技展示 120 通道 FAU-PIC 自動化對位平台",
+     "url": "https://technews.tw/2026/08/25/gmt-global-semicon-taiwan-2026/",
+     "date": "2026-08-25",
+     "src": "TechNews 科技新報"
+    }
+   ]
+  },
+  {
+   "id": "2345",
+   "name": "智邦",
+   "zh": "Accton",
+   "ticker": "2345",
+   "region": "TW",
+   "layer": "L6",
+   "role": "白牌交換器 ODM,NVIDIA / Broadcom CPO 交換器",
+   "rd": [
+    "卡位 NVIDIA 與 Broadcom CPO 生態系,CPO 交換器仍在驗證階段",
+    "1.6T 交換器 2026 上半年量產、下半年放量;布局 102.4T"
+   ],
+   "biz": [
+    "2026-09 營收約 404 億元,年增約 66%;Q3 營收約 1,207 億元創單季新高;前三季約 2,864 億元 (年增約 62%)"
+   ],
+   "metrics": {
+    "9 月營收": "約 404 億 (+66%)",
+    "Q3 營收": "約 1,207 億",
+    "CPO": "驗證中"
+   },
+   "risks": [
+    "毛利率能否跟上營收成長",
+    "零組件缺料"
+   ],
+   "sources": [
+    {
+     "t": "智邦 9 月營收 (理財周刊)",
+     "url": "https://www.moneyweekly.com.tw/_Article?AID=256540",
+     "date": "2026-10",
+     "src": "理財周刊"
+    },
+    {
+     "t": "智邦卡位NVIDIA、博通CPO生態系 驗證階段拚轉出貨動能",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000758453_G6J5U3AF4NBP6S4ZPFNYH",
+     "date": "2026-06-12",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "Accton revenue jumps on AI switch demand as 1.6T shipments expand",
+     "url": "https://www.digitimes.com/news/a20260807PD205/demand-revenue-accton-switch-high-end.html",
+     "date": "2026-08-08",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "4979",
+   "name": "華星光",
+   "zh": "Luxnet",
+   "ticker": "4979",
+   "region": "TW",
+   "layer": "L6",
+   "role": "光收發次模組 / 資料中心互連 (DCI)",
+   "rd": [
+    "1.6T 光模組布局,產能陸續開出",
+    "訂單能見度看至 2028"
+   ],
+   "biz": [
+    "2026-09 單月淨利 1.03 億元 (年增 110%),EPS 0.72 元;Q2 EPS 1.29 元;Q3 獲利創新高",
+    "公司預期 2027 年 DCI 營收倍增"
+   ],
+   "metrics": {
+    "9 月 EPS": "0.72 元",
+    "Q2 EPS": "1.29 元",
+    "DCI": "2027 倍增 (公司)"
+   },
+   "risks": [
+    "擴產與上游雷射供應"
+   ],
+   "sources": [
+    {
+     "t": "華星光3Q26獲利創新高 產能擴充迎成長動能",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771585_4ZA68DYH7P9TOU6QXYF1V",
+     "date": "2026-10-15",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "華星光訂單看至2028 DCI營收2027有望倍增",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000766698_WGL73GQ58J46OM96BNOAC",
+     "date": "2026-08-31",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  },
+  {
+   "id": "3450",
+   "name": "聯鈞",
+   "zh": "",
+   "ticker": "3450",
+   "region": "TW",
+   "layer": "L6",
+   "role": "三五族光通訊元件 / 次模組封裝",
+   "rd": [
+    "受惠 AI 資料中心光通訊接單,公司表示供應鏈雖擴產,市場仍供不應求"
+   ],
+   "biz": [
+    "2026-08 單月稅後純益 1.43 億元,年增 258%,EPS 0.98 元"
+   ],
+   "metrics": {
+    "8 月淨利": "1.43 億 (+258%)",
+    "8 月 EPS": "0.98 元"
+   },
+   "risks": [
+    "短期漲幅大、注意交易"
+   ],
+   "sources": [
+    {
+     "t": "聯鈞自結8月獲利年增2.5倍 搭上光通訊商機有望爆發",
+     "url": "https://news.cnyes.com/news/id/6622902",
+     "date": "2026-10-06",
+     "src": "鉅亨網 台股"
+    }
+   ]
+  },
+  {
+   "id": "4977",
+   "name": "眾達-KY",
+   "zh": "PCL",
+   "ticker": "4977",
+   "region": "TW",
+   "layer": "L6",
+   "role": "光收發模組、CPO 高功率雷射封裝",
+   "rd": [
+    "馬來西亞檳城新廠布局高功率雷射封裝 (CPO 外置光源),有望 2026 年底通過客戶認證",
+    "投資美國矽光子公司 Skorpios、收購品固集團;2026 年 CPO 產品小量送樣"
+   ],
+   "biz": [
+    "董事長認為 NVIDIA 推動積極,CPO 最快 2027 年見到進展"
+   ],
+   "metrics": {
+    "新廠": "檳城 2026 年底認證",
+    "CPO": "小量送樣"
+   },
+   "risks": [
+    "CPO 營收貢獻時點不確定"
+   ],
+   "sources": [
+    {
+     "t": "眾達檳城新廠年底完工 押寶CPO「高功率雷射封裝」商機",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000758082_OFG106427BYWKH3QYJH6L",
+     "date": "2026-06-09",
+     "src": "DigiTimes 中文"
+    },
+    {
+     "t": "PCL Technologies targets CPO as Penang plant nears completion",
+     "url": "https://www.digitimes.com/news/a20260609PD238/pcl-technologies-optical-communications-cpo-plant-2026.html",
+     "date": "2026-06-09",
+     "src": "DigiTimes Asia"
+    }
+   ]
+  },
+  {
+   "id": "3665",
+   "name": "貿聯-KY",
+   "zh": "BizLink",
+   "ticker": "3665",
+   "region": "TW",
+   "layer": "L6",
+   "role": "高速線束、CPO 光纖組件",
+   "rd": [
+    "CPO 相關產品已小量出貨;組裝、散熱與可靠度是放量門檻"
+   ],
+   "biz": [
+    "高速銅互連與光通訊同步受惠 AI 伺服器升級"
+   ],
+   "metrics": {
+    "CPO": "小量出貨"
+   },
+   "risks": [
+    "光進銅退可能影響銅纜產品"
+   ],
+   "sources": [
+    {
+     "t": "貿聯CPO已小量出貨 組裝、散熱與可靠度成放量門檻",
+     "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000768580_9336K1GC7BJTSI1Q73C3U",
+     "date": "2026-09-16",
+     "src": "DigiTimes 中文"
+    }
+   ]
+  }
+ ]
+}
