@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPO 光通訊產業鏈 - 半導體週報</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme.js"></script>
+<style>
+.cpo-intro {
+  background: var(--bg-card); border-left: 3px solid var(--accent);
+  padding: 16px 20px; border-radius: 8px; margin-bottom: 20px;
+  color: var(--text); font-size: 14.5px; line-height: 1.8;
+}
+.cpo-intro .cpo-note { display: block; margin-top: 6px; color: var(--text-dim); font-size: 12.5px; }
+.cpo-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+.cpo-controls button {
+  padding: 7px 14px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--bg-card); color: var(--text-dim); font-size: 13.5px; cursor: pointer;
+}
+.cpo-controls button.on { border-color: var(--accent); color: var(--accent); background: var(--tag-bg); }
+.cpo-controls .cpo-count { margin-left: auto; font-size: 13px; color: var(--text-dim); }
+
+/* 產業鏈:每一層一列,左美國、右台灣 */
+.cpo-chain { display: flex; flex-direction: column; gap: 0; margin-bottom: 36px; }
+.cpo-layer {
+  display: grid; grid-template-columns: 210px 1fr 1fr; gap: 12px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px;
+}
+.cpo-arrow { text-align: center; color: var(--text-dim); font-size: 14px; line-height: 22px; }
+.cpo-layer-head .cpo-step { font-size: 12px; color: var(--accent); font-weight: 700; letter-spacing: 1px; }
+.cpo-layer-head h3 { font-size: 16px; margin: 2px 0 6px; }
+.cpo-layer-head p { font-size: 12.5px; color: var(--text-dim); line-height: 1.6; }
+.cpo-cell { border-radius: 8px; padding: 10px; min-height: 60px; background: var(--bg-elevated); }
+.cpo-cell-title { font-size: 12px; font-weight: 700; color: var(--text-dim); margin-bottom: 8px; }
+.cpo-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.cpo-chip {
+  display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+  padding: 7px 11px; border-radius: 8px; border: 1px solid var(--border); border-left-width: 3px;
+  background: var(--bg-card); color: var(--text); cursor: pointer; font-size: 13.5px; font-weight: 600;
+  max-width: 100%; transition: transform .15s, border-color .15s;
+}
+.cpo-chip small { font-weight: 400; font-size: 11.5px; color: var(--text-dim); margin-top: 1px; }
+.cpo-chip:hover, .cpo-chip:focus-visible { transform: translateY(-1px); border-color: var(--accent); outline: none; }
+.cpo-chip.on { box-shadow: 0 0 0 2px var(--accent); }
+.cpo-chip.us { border-left-color: #60a5fa; }
+.cpo-chip.tw { border-left-color: #f59e0b; }
+:root[data-theme="light"] .cpo-chip.us { border-left-color: #2563eb; }
+:root[data-theme="light"] .cpo-chip.tw { border-left-color: #d97706; }
+.cpo-empty { font-size: 12.5px; color: var(--text-dim); opacity: .7; }
+.cpo-layer.hide-us .cpo-cell.us, .cpo-layer.hide-tw .cpo-cell.tw { display: none; }
+.cpo-layer.hide-us, .cpo-layer.hide-tw { grid-template-columns: 210px 1fr; }
+
+/* 公司詳細分析 */
+.cpo-detail {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 22px 24px; margin-bottom: 36px; box-shadow: var(--shadow); scroll-margin-top: 16px;
+}
+.cpo-detail-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.cpo-detail-head h2 { font-size: 22px; border: none; padding: 0; margin: 0; }
+.cpo-badge { font-size: 12px; padding: 2px 9px; border-radius: 4px; background: var(--tag-bg); color: var(--accent); font-weight: 600; }
+.cpo-role { color: var(--text-dim); font-size: 14px; margin-bottom: 14px; }
+.cpo-price { font-size: 13px; color: var(--text-dim); margin-bottom: 14px; }
+.cpo-price b { color: var(--text); }
+.cpo-up { color: #f87171; } .cpo-down { color: #4ade80; }
+:root[data-theme="light"] .cpo-up { color: #dc2626; } :root[data-theme="light"] .cpo-down { color: #16a34a; }
+.cpo-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 18px; }
+.cpo-metric { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.cpo-metric span { display: block; font-size: 12px; color: var(--text-dim); }
+.cpo-metric b { font-size: 15px; }
+.cpo-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 14px; flex-wrap: wrap; }
+.cpo-tabs button {
+  padding: 8px 14px; border: none; background: none; color: var(--text-dim); font-size: 14px; cursor: pointer;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.cpo-tabs button.on { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+.cpo-pane ul { padding-left: 20px; font-size: 14.5px; line-height: 1.85; }
+.cpo-pane li { margin-bottom: 4px; }
+.cpo-pane .cpo-src li { font-size: 13.5px; }
+.cpo-pane .cpo-src small { color: var(--text-dim); }
+.cpo-placeholder { color: var(--text-dim); font-size: 14px; text-align: center; padding: 18px; }
+
+.cpo-trends { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-bottom: 40px; }
+.cpo-trend { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent-warm); border-radius: 8px; padding: 14px 16px; }
+.cpo-trend h4 { font-size: 15px; margin-bottom: 6px; }
+.cpo-trend p { font-size: 13.5px; line-height: 1.75; margin-bottom: 6px; }
+.cpo-trend a { font-size: 12.5px; }
+.cpo-disclaimer { font-size: 12.5px; color: var(--text-dim); line-height: 1.7; margin-bottom: 40px; }
+
+@media (max-width: 760px) {
+  .cpo-layer, .cpo-layer.hide-us, .cpo-layer.hide-tw { grid-template-columns: 1fr; }
+  .cpo-detail { padding: 18px 16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="切換主題">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <h1>半導體 + AI 供應鏈週報</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="companies.html">公司</a>
+      <a href="regions.html">區域</a>
+      <a href="timeline.html">時間軸</a>
+      <a href="briefs.html">快訊</a>
+      <a href="supplychain.html">供應鏈</a>
+      <a href="cpo.html" class="active">CPO 光通訊</a>
+      <a href="usstocks.html">美股追蹤</a>
+      <a href="twstocks.html">台股追蹤</a>
+      <a href="videos.html">影音觀點</a>
+      <a href="search.html">搜尋</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section>
+    <h2 style="font-size:22px;" id="cpo-title">💡 CPO 光纖通訊產業鏈</h2>
+    <div class="cpo-intro" id="cpo-intro">載入中…</div>
+
+    <div class="cpo-controls" role="group" aria-label="區域篩選">
+      <button class="on" data-region="all">全部</button>
+      <button data-region="US">🇺🇸 美國</button>
+      <button data-region="TW">🇹🇼 台灣</button>
+      <span class="cpo-count" id="cpo-count"></span>
+    </div>
+    <p style="font-size:12.5px; color:var(--text-dim); margin:-4px 0 12px;">由上而下為供應流向 (材料 → 晶片 → 製造 → 封測 → 連接 → 系統)。點公司方塊看研發與營業分析。</p>
+
+    <div class="cpo-chain" id="cpo-chain"></div>
+  </section>
+
+  <section>
+    <div class="cpo-detail" id="cpo-detail">
+      <div class="cpo-placeholder">👆 點選上方任一公司,查看「研發分析」與「營業分析」</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-size:20px;">📌 產業關鍵趨勢</h2>
+    <div class="cpo-trends" id="cpo-trends"></div>
+    <p class="cpo-disclaimer" id="cpo-disclaimer"></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>CPO 產業鏈資料:data/cpo_chain.json · 報價沿用每日盤後資料</p>
+  </div>
+</footer>
+
+<script>
+const esc = t => String(t ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const REGION_NAME = { US: "🇺🇸 美國", TW: "🇹🇼 台灣" };
+let DATA = null, PRICES = { US: {}, TW: {} }, region = "all", currentId = null, currentTab = "rd";
+
+async function init() {
+  try {
+    DATA = await (await fetch("data/cpo_chain.json")).json();
+  } catch (err) {
+    document.getElementById("cpo-intro").innerHTML = `<span style="color:var(--danger)">載入失敗: ${esc(err.message)}</span>`;
+    return;
+  }
+  // 報價檔可有可無,失敗時不顯示報價
+  const [us, tw] = await Promise.all([
+    fetch("data/us_prices.json").then(r => r.json()).catch(() => null),
+    fetch("data/tw_prices.json").then(r => r.json()).catch(() => null),
+  ]);
+  if (us) PRICES.US = us.stocks || {};
+  if (tw) PRICES.TW = tw.stocks || {};
+
+  document.getElementById("cpo-intro").innerHTML =
+    `${esc(DATA.intro)}<span class="cpo-note">資料更新:${esc(DATA.updated_at)} · 共 ${DATA.companies.length} 家公司 (美國 ${DATA.companies.filter(c => c.region === "US").length}、台灣 ${DATA.companies.filter(c => c.region === "TW").length})</span>`;
+  renderChain();
+  renderTrends();
+  document.getElementById("cpo-disclaimer").textContent =
+    "說明:營運數字取自公司公告、財報新聞稿及本站新聞資料庫,每則分析皆附來源與日期;標示「法人估」「報導」者為第三方估計,非公司正式揭露。本頁為產業研究整理,不構成投資建議。";
+
+  document.querySelectorAll(".cpo-controls button").forEach(b => b.addEventListener("click", () => {
+    region = b.dataset.region;
+    document.querySelectorAll(".cpo-controls button").forEach(x => x.classList.toggle("on", x === b));
+    renderChain();
+  }));
+
+  const id = new URLSearchParams(location.search).get("id");
+  if (id && DATA.companies.some(c => c.id === id)) showCompany(id, false);
+}
+
+function renderChain() {
+  const box = document.getElementById("cpo-chain");
+  let html = "";
+  DATA.layers.forEach((L, i) => {
+    const list = DATA.companies.filter(c => c.layer === L.id);
+    const cell = r => {
+      const items = list.filter(c => c.region === r);
+      return `<div class="cpo-cell ${r.toLowerCase()}"><div class="cpo-cell-title">${REGION_NAME[r]}</div><div class="cpo-chips">` +
+        (items.length ? items.map(chip).join("") : `<span class="cpo-empty">—</span>`) + `</div></div>`;
+    };
+    const cls = region === "US" ? "hide-tw" : region === "TW" ? "hide-us" : "";
+    if (i) html += `<div class="cpo-arrow" aria-hidden="true">▼</div>`;
+    html += `<div class="cpo-layer ${cls}"><div class="cpo-layer-head"><div class="cpo-step">STEP ${i + 1}</div><h3>${esc(L.name)}</h3><p>${esc(L.desc)}</p></div>${cell("US")}${cell("TW")}</div>`;
+  });
+  box.innerHTML = html;
+  box.querySelectorAll(".cpo-chip").forEach(b => b.addEventListener("click", () => showCompany(b.dataset.id, true)));
+  const n = region === "all" ? DATA.companies.length : DATA.companies.filter(c => c.region === region).length;
+  document.getElementById("cpo-count").textContent = `顯示 ${n} 家`;
+}
+
+function chip(c) {
+  const code = c.ticker ? ` ${c.ticker}` : "";
+  return `<button class="cpo-chip ${c.region.toLowerCase()}${c.id === currentId ? " on" : ""}" data-id="${esc(c.id)}">${esc(c.name)}<small>${esc(code.trim() || "未上市")} · ${esc(c.role)}</small></button>`;
+}
+
+function priceLine(c) {
+  const p = c.ticker && PRICES[c.region][c.ticker];
+  if (!p || p.price == null) return "";
+  const cls = p.change_pct > 0 ? "cpo-up" : p.change_pct < 0 ? "cpo-down" : "";
+  const sign = p.change_pct > 0 ? "+" : "";
+  const ytd = p.ret_ytd != null ? ` · 今年以來 <span class="${p.ret_ytd >= 0 ? "cpo-up" : "cpo-down"}">${p.ret_ytd >= 0 ? "+" : ""}${p.ret_ytd}%</span>` : "";
+  const unit = c.region === "US" ? "US$" : "NT$";
+  return `<div class="cpo-price">📈 收盤 (${esc(p.trade_date)}):<b>${unit}${p.price}</b> <span class="${cls}">${sign}${p.change_pct}%</span>${ytd}</div>`;
+}
+
+function showCompany(id, scroll) {
+  const c = DATA.companies.find(x => x.id === id);
+  if (!c) return;
+  currentId = id;
+  document.querySelectorAll(".cpo-chip").forEach(b => b.classList.toggle("on", b.dataset.id === id));
+  const layer = DATA.layers.find(L => L.id === c.layer);
+  const box = document.getElementById("cpo-detail");
+  box.innerHTML = `
+    <div class="cpo-detail-head">
+      <h2>${esc(c.name)}${c.zh ? ` <span style="font-size:15px;color:var(--text-dim);font-weight:400">${esc(c.zh)}</span>` : ""}</h2>
+      <span class="cpo-badge">${REGION_NAME[c.region]}</span>
+      <span class="cpo-badge">${c.ticker ? esc(c.ticker) : "未上市"}</span>
+      <span class="cpo-badge">${esc(layer.name)}</span>
+    </div>
+    <div class="cpo-role">${esc(c.role)}</div>
+    ${priceLine(c)}
+    <div class="cpo-metrics">${Object.entries(c.metrics || {}).map(([k, v]) => `<div class="cpo-metric"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join("")}</div>
+    <div class="cpo-tabs" role="tablist">
+      <button data-tab="rd">🔬 研發分析</button>
+      <button data-tab="biz">💼 營業分析</button>
+      <button data-tab="risk">⚠️ 風險</button>
+      <button data-tab="src">📰 資料來源 (${c.sources.length})</button>
+    </div>
+    <div class="cpo-pane" id="cpo-pane"></div>`;
+  box.querySelectorAll(".cpo-tabs button").forEach(b => b.addEventListener("click", () => { currentTab = b.dataset.tab; renderPane(c); }));
+  renderPane(c);
+  history.replaceState(null, "", `?id=${encodeURIComponent(id)}`);
+  if (scroll) box.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderPane(c) {
+  document.querySelectorAll(".cpo-tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === currentTab));
+  const ul = arr => `<ul>${arr.map(x => `<li>${esc(x)}</li>`).join("")}</ul>`;
+  let html;
+  if (currentTab === "rd") html = ul(c.rd);
+  else if (currentTab === "biz") html = ul(c.biz);
+  else if (currentTab === "risk") html = ul(c.risks || []);
+  else html = `<ul class="cpo-src">${c.sources.map(s =>
+    `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.t)}</a> <small>— ${esc(s.src)} · ${esc(s.date)}</small></li>`).join("")}</ul>`;
+  document.getElementById("cpo-pane").innerHTML = html;
+}
+
+function renderTrends() {
+  document.getElementById("cpo-trends").innerHTML = DATA.trends.map(t => `
+    <div class="cpo-trend"><h4>${esc(t.t)}</h4><p>${esc(t.d)}</p>
+    <a href="${esc(t.src.url)}" target="_blank" rel="noopener">📰 ${esc(t.src.src)} · ${esc(t.src.date)}</a></div>`).join("");
+}
+
+init();
+</script>
+</body>
+</html>
