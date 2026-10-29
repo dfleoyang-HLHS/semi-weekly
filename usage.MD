@@ -10,11 +10,11 @@
 
 ## 每週一 — 週報自動查核與發佈 (通常不需動手)
 
-週一 06:00 Claude 自動產生「週報 + 供應鏈圖 + 美股/台股卡片」,接著自動查核,並開一個 Pull Request:
+週一上午 (09:34) Claude 雲端排程自動產生「週報 + 供應鏈圖 + 美股卡片」,接著自動查核,並開一個 Pull Request。週一 20:00 若仍找不到本週週報,會自動開 Issue 通知:
 
 | 查核結果 | PR 標籤 | 會發生什麼 |
 |---|---|---|
-| ✅ 全部通過 | `auto-merge-ok` | **週一 20:00 自動 Merge 並發佈**,不需動手 |
+| ✅ 全部通過 | `auto-merge-ok` | **當天 20:00 自動 Merge 並發佈** (每日 20:00 都會檢查),不需動手 |
 | ⚠️ 有問題 | `needs-review` | **不會自動發佈**;PR 內文列出問題,請修正後手動 Merge 或 Close |
 
 查核項目:週報與供應鏈圖格式、所有新聞連結必須來自已抓取的新聞、Claude 獨立事實查核 (數字與事件需有新聞依據)。
@@ -36,7 +36,7 @@ GitHub 排程常延遲 1~2 小時,自動 Merge 實際約在 20:00~22:00。手動
 - Actions → Semi Weekly and Briefs → Run workflow → mode 選 `weekly` 或 `brief`
 - 若 API 失敗,`data/weekly_prompt.md` 仍會產生,可照舊貼到 Claude Pro 手動撰寫
 
-## 每週三、五 — 確認快訊自動產出
+## 每週一、三、五 — 確認快訊自動產出
 
 - 進 posts/news/,看是否有 YYYY-MM-DD-brief.md
 - 不用人工介入
@@ -73,7 +73,7 @@ GitHub 排程常延遲 1~2 小時,自動 Merge 實際約在 20:00~22:00。手動
 - `data/news_archive.csv`:同內容,可直接用 Excel 開啟 (UTF-8)
 - 欄位:id (永久編號)、published、week、source、title、url、summary、companies、regions、first_seen、last_seen
 - 同一網址只存一筆;供應鏈圖的新聞連結也記錄了對應的 id
-- 週一的週報、供應鏈圖、個股卡片與事實查核,都使用資料庫中**過去 7 天**的全部新聞 (含週三、五快訊時抓到的),而非只用週一當次抓取的新聞
+- 週一的週報、供應鏈圖、個股卡片與事實查核,都使用資料庫中**過去 7 天**的全部新聞 (含每日與週一、三、五快訊時抓到的),而非只用週一當次抓取的新聞
 - 線上網址:https://dfleoyang-hlhs.github.io/semi-weekly/data/news_archive.json
 
 ## 常見問題

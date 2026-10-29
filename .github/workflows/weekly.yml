@@ -1,18 +1,17 @@
 name: Semi Weekly and Briefs
 
-# 排程皆為 UTC:週日 22:00 = 台灣週一 06:00 (抓新聞;週報由本機 Claude 排程產生 PR);週二/四 22:00 = 台灣週三/五 06:00 (快訊)
+# 排程皆為 UTC:週日/二/四 22:00 = 台灣週一/三/五 06:00 (快訊);週報由 Claude 雲端排程每週一上午產生 PR
 #              週一~五 21:30 = 美股收盤後 (台灣週二~六 05:30,美股報價)
 #              週一~五 06:00 = 台灣週一~五 14:00 (台股報價);08:00 = 16:00 補抓尚未公布的個股
 #              每日 06:30 = 台灣每日 14:30 (新聞資料庫;台股重點由本機 Claude 排程 15:00 整理)
 #              國定假日等非交易日:抓價程式偵測到交易日未更新即略過,不 commit、不部署
-#              週一 12:00 = 台灣週一 20:00 (自動 Merge 查核通過的週報 PR 並部署)
+#              每日 12:00 = 台灣每日 20:00 (自動 Merge 查核通過的週報 PR 並部署;週一另檢查本週週報是否已產生,沒有則開 Issue 通知)
 #              每日 23:30 = 台灣每日 07:30 (影音觀點:整理財經節目 YouTube 影片)
 on:
   schedule:
     - cron: '30 23 * * *'
-    - cron: '0 12 * * 1'
-    - cron: '0 22 * * 0'
-    - cron: '0 22 * * 2,4'
+    - cron: '0 12 * * *'
+    - cron: '0 22 * * 0,2,4'
     - cron: '30 21 * * 1-5'
     - cron: '0 8 * * 1-5'
     - cron: '0 6 * * 1-5'
@@ -30,6 +29,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
   pages: write
   id-token: write
 
@@ -58,14 +58,14 @@ jobs:
             MODE="prices"
           elif [ "${{ github.event.schedule }}" = "30 23 * * *" ]; then
             MODE="videos"
-          elif [ "${{ github.event.schedule }}" = "0 12 * * 1" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 12 * * *" ]; then
             MODE="automerge"
           elif [ "${{ github.event.schedule }}" = "0 6 * * 1-5" ] || [ "${{ github.event.schedule }}" = "0 8 * * 1-5" ]; then
             MODE="twprices"   # 14:00 收盤價;16:00 補抓尚未公布的個股
           elif [ "${{ github.event.schedule }}" = "30 6 * * *" ]; then
             MODE="news"   # 每日抓新聞存入資料庫,供本機排程 15:00 整理台股重點
-          elif [ "${{ github.event.schedule }}" = "0 22 * * 0" ]; then
-            MODE="news"   # 週一 06:00 只抓新聞;週報由本機 Claude 排程 (scripts/weekly_local.py) 產生 PR,API 版 weekly 改為手動備用
+          elif [ "${{ github.event.schedule }}" = "0 22 * * 0,2,4" ]; then
+            MODE="brief"  # 週一、三、五 06:00 快訊 (週一同時把新聞存入資料庫,供上午的週報使用)
           elif [ "$(date +%u)" = "1" ]; then
             MODE="weekly"
           else
@@ -74,14 +74,14 @@ jobs:
           echo "台灣時間 $(date '+%F %a %T') → mode=$MODE"
           echo "mode=$MODE" >> $GITHUB_OUTPUT
 
-  # ── 週三、五:快訊,直接發佈 ──────────────────────────────
+  # ── 週一、三、五:快訊,直接發佈 ──────────────────────────
   brief:
     needs: detect
     if: needs.detect.outputs.mode == 'brief'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install feedparser pyyaml requests
@@ -110,8 +110,8 @@ jobs:
     if: needs.detect.outputs.mode == 'weekly'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install feedparser pyyaml requests anthropic
@@ -152,7 +152,7 @@ jobs:
           }
       - name: Create pull request
         if: steps.draft.outputs.week_tag != ''
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: weekly/${{ steps.draft.outputs.week_tag }}
           # 只放內容檔;db.json / supplychain-index.json 等索引在 merge 後重建,避免與快訊衝突
@@ -168,7 +168,8 @@ jobs:
             ${{ steps.verify.outputs.passed == 'true' && 'auto-merge-ok' || 'needs-review' }}
           delete-branch: true
 
-  # ── 週一 20:00 (台灣):自動 Merge 查核通過、且未被保留的週報 PR,並重建索引 ──
+  # ── 每日 20:00 (台灣):自動 Merge 查核通過、且未被保留的週報 PR,並重建索引 ──
+  # ── 週一另檢查本週週報:沒有週報檔、也沒有週報 PR 時開 Issue 通知 (GitHub 會寄信) ──
   automerge:
     needs: detect
     if: needs.detect.outputs.mode == 'automerge'
@@ -176,8 +177,8 @@ jobs:
     outputs:
       merged: ${{ steps.merge.outputs.merged }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install pyyaml
@@ -193,6 +194,22 @@ jobs:
             echo "Merge PR #$n"
             gh pr merge "$n" --merge --delete-branch && echo "merged=true" >> $GITHUB_OUTPUT
           done
+      - name: Check this week's weekly report (Monday)
+        if: always() && steps.merge.outcome != 'cancelled'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(date +%u)" = "1" ] || exit 0
+          tag="$(date +%G)-W$(date +%V)"
+          git pull -q origin main
+          if [ -f "posts/${tag}-semi-weekly.md" ]; then echo "✅ ${tag} 週報已發佈"; exit 0; fi
+          if [ -n "$(gh pr list --state all --head "weekly/${tag}" --json number -q '.[].number')" ]; then
+            echo "ℹ️  ${tag} 週報 PR 已存在,請查看 PR 標籤 (needs-review 需人工處理)"; exit 0
+          fi
+          title="⚠️ ${tag} 週報尚未產生"
+          if [ -n "$(gh issue list --state open --search "\"${title}\" in:title" --json number -q '.[].number')" ]; then exit 0; fi
+          gh issue create --title "$title" --body "週一 20:00 檢查時,找不到 posts/${tag}-semi-weekly.md,也沒有 weekly/${tag} 的 Pull Request。
+          請檢查 Claude 雲端排程「Semi Weekly Monday Report」是否執行,或到 Actions → Run workflow 選 mode=weekly 用 API 產生 (需 ANTHROPIC_API_KEY)。"
       # GITHUB_TOKEN 的 merge 不會觸發 push 事件,在此直接重建索引
       - name: Rebuild index
         if: steps.merge.outputs.merged == 'true'
@@ -218,8 +235,8 @@ jobs:
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - name: Fetch US stock prices
@@ -249,8 +266,8 @@ jobs:
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - name: Fetch Taiwan stock prices
@@ -283,8 +300,8 @@ jobs:
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install feedparser pyyaml requests anthropic
@@ -318,8 +335,8 @@ jobs:
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install feedparser
@@ -348,8 +365,8 @@ jobs:
     if: needs.detect.outputs.mode == 'publish'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: pip install pyyaml
@@ -380,12 +397,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
-      - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: '.'
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
