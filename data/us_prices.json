@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-10-28T00:36:19+00:00",
- "as_of": "2026-10-27",
+ "updated_at": "2026-10-29T01:06:14+00:00",
+ "as_of": "2026-10-28",
  "source": "Finnhub",
  "roe_levels": {
   "a": 30,
@@ -11,336 +11,336 @@
  "stocks": {
   "NVDA": {
    "name": "NVIDIA",
-   "price": 217.94,
-   "change": 1.94,
-   "change_pct": 0.9,
-   "prev_close": 216.0,
-   "open": 218.31,
-   "high": 219.19,
-   "low": 215.53,
-   "trade_date": "2026-10-27",
-   "ret_5d": -0.22,
-   "ret_mtd": -5.42,
-   "ret_13w": 9.92,
-   "ret_ytd": 15.82,
+   "price": 215.38,
+   "change": -2.56,
+   "change_pct": -1.17,
+   "prev_close": 217.94,
+   "open": 219.91,
+   "high": 219.99,
+   "low": 214.47,
+   "trade_date": "2026-10-28",
+   "ret_5d": -1.82,
+   "ret_mtd": -4.57,
+   "ret_13w": 10.62,
+   "ret_ytd": 16.86,
    "high_52w": 243.37,
    "low_52w": 164.27,
-   "market_cap_m": 5247534.0,
+   "market_cap_m": 5276936.0,
    "roe": 110.1,
    "roe_basis": "TTM",
    "level": "a"
   },
   "AVGO": {
    "name": "Broadcom",
-   "price": 342.33,
-   "change": 13.16,
-   "change_pct": 4.0,
-   "prev_close": 329.17,
-   "open": 339.87,
-   "high": 345.67,
-   "low": 336.87,
-   "trade_date": "2026-10-27",
-   "ret_5d": -1.56,
-   "ret_mtd": -6.27,
-   "ret_13w": -14.1,
-   "ret_ytd": -4.89,
+   "price": 351.81,
+   "change": 9.48,
+   "change_pct": 2.77,
+   "prev_close": 342.33,
+   "open": 349.22,
+   "high": 352.4,
+   "low": 344.35,
+   "trade_date": "2026-10-28",
+   "ret_5d": 1.34,
+   "ret_mtd": -2.52,
+   "ret_13w": -10.13,
+   "ret_ytd": -1.09,
    "high_52w": 495.0,
    "low_52w": 289.96,
-   "market_cap_m": 1636686.8,
+   "market_cap_m": 1661223.1,
    "roe": 43.9,
    "roe_basis": "TTM",
    "level": "a"
   },
   "AMD": {
    "name": "AMD",
-   "price": 560.26,
-   "change": 28.98,
-   "change_pct": 5.45,
-   "prev_close": 531.28,
-   "open": 539.49,
-   "high": 563.91,
-   "low": 538.5,
-   "trade_date": "2026-10-27",
-   "ret_5d": -0.65,
-   "ret_mtd": -13.16,
-   "ret_13w": 7.34,
-   "ret_ytd": 148.08,
+   "price": 578.44,
+   "change": 18.18,
+   "change_pct": 3.24,
+   "prev_close": 560.26,
+   "open": 573.08,
+   "high": 579.18,
+   "low": 560.52,
+   "trade_date": "2026-10-28",
+   "ret_5d": 1.36,
+   "ret_mtd": -8.42,
+   "ret_13w": 23.24,
+   "ret_ytd": 161.61,
    "high_52w": 658.52,
    "low_52w": 188.22,
-   "market_cap_m": 918006.0,
+   "market_cap_m": 941856.44,
    "roe": 10.1,
    "roe_basis": "TTM",
    "level": "c"
   },
   "SMCI": {
    "name": "Super Micro",
-   "price": 35.09,
-   "change": 2.4,
-   "change_pct": 7.34,
-   "prev_close": 32.69,
-   "open": 33.34,
-   "high": 35.21,
-   "low": 33.23,
-   "trade_date": "2026-10-27",
-   "ret_5d": 0.68,
-   "ret_mtd": -20.4,
-   "ret_13w": 9.66,
-   "ret_ytd": 11.68,
+   "price": 35.81,
+   "change": 0.72,
+   "change_pct": 2.05,
+   "prev_close": 35.09,
+   "open": 35.54,
+   "high": 36.4,
+   "low": 34.63,
+   "trade_date": "2026-10-28",
+   "ret_5d": -1.35,
+   "ret_mtd": -14.56,
+   "ret_13w": 23.34,
+   "ret_ytd": 19.88,
    "high_52w": 54.08,
    "low_52w": 19.48,
-   "market_cap_m": 23085.83,
+   "market_cap_m": 23525.93,
    "roe": 25.1,
    "roe_basis": "TTM",
    "level": "b"
   },
   "INTC": {
    "name": "Intel",
-   "price": 93.74,
-   "change": 3.27,
-   "change_pct": 3.61,
-   "prev_close": 90.47,
-   "open": 92.47,
-   "high": 94.98,
-   "low": 91.86,
-   "trade_date": "2026-10-27",
-   "ret_5d": -1.33,
-   "ret_mtd": -24.75,
-   "ret_13w": -1.31,
-   "ret_ytd": 145.18,
+   "price": 95.53,
+   "change": 1.79,
+   "change_pct": 1.91,
+   "prev_close": 93.74,
+   "open": 95.08,
+   "high": 95.68,
+   "low": 93.0,
+   "trade_date": "2026-10-28",
+   "ret_5d": 0.84,
+   "ret_mtd": -22.03,
+   "ret_13w": 8.62,
+   "ret_ytd": 154.04,
    "high_52w": 142.35,
    "low_52w": 32.89,
-   "market_cap_m": 494832.34,
+   "market_cap_m": 497396.1,
    "roe": -10.8,
    "roe_basis": "TTM",
    "level": "d"
   },
   "AMAT": {
    "name": "Applied Materials",
-   "price": 395.93,
-   "change": 8.34,
-   "change_pct": 2.15,
-   "prev_close": 387.59,
-   "open": 391.43,
-   "high": 398.95,
-   "low": 385.31,
-   "trade_date": "2026-10-27",
-   "ret_5d": -4.29,
-   "ret_mtd": -24.21,
-   "ret_13w": -25.02,
-   "ret_ytd": 50.82,
+   "price": 416.0,
+   "change": 20.07,
+   "change_pct": 5.07,
+   "prev_close": 395.93,
+   "open": 402.67,
+   "high": 421.83,
+   "low": 401.44,
+   "trade_date": "2026-10-28",
+   "ret_5d": -3.18,
+   "ret_mtd": -22.58,
+   "ret_13w": -16.9,
+   "ret_ytd": 54.06,
    "high_52w": 739.67,
    "low_52w": 203.4,
-   "market_cap_m": 309550.6,
+   "market_cap_m": 322216.4,
    "roe": 40.4,
    "roe_basis": "TTM",
    "level": "a"
   },
   "MU": {
    "name": "Micron",
-   "price": 928.76,
-   "change": 25.06,
-   "change_pct": 2.77,
-   "prev_close": 903.7,
-   "open": 920.99,
-   "high": 935.87,
-   "low": 910.67,
-   "trade_date": "2026-10-27",
-   "ret_5d": 0.85,
-   "ret_mtd": -15.15,
-   "ret_13w": 0.39,
-   "ret_ytd": 216.63,
+   "price": 983.23,
+   "change": 54.47,
+   "change_pct": 5.86,
+   "prev_close": 928.76,
+   "open": 961.71,
+   "high": 990.0,
+   "low": 959.34,
+   "trade_date": "2026-10-28",
+   "ret_5d": 1.65,
+   "ret_mtd": -12.8,
+   "ret_13w": 13.19,
+   "ret_ytd": 225.41,
    "high_52w": 1255.0,
    "low_52w": 192.59,
-   "market_cap_m": 1050374.2,
+   "market_cap_m": 1099771.6,
    "roe": 91.8,
    "roe_basis": "TTM",
    "level": "a"
   },
   "AMKR": {
    "name": "Amkor",
-   "price": 39.94,
-   "change": 3.13,
-   "change_pct": 8.5,
-   "prev_close": 36.81,
-   "open": 38.58,
-   "high": 40.06,
-   "low": 37.36,
-   "trade_date": "2026-10-27",
-   "ret_5d": -11.73,
-   "ret_mtd": -29.73,
-   "ret_13w": -39.37,
-   "ret_ytd": -6.76,
+   "price": 42.21,
+   "change": 2.27,
+   "change_pct": 5.68,
+   "prev_close": 39.94,
+   "open": 40.92,
+   "high": 42.37,
+   "low": 39.62,
+   "trade_date": "2026-10-28",
+   "ret_5d": -8.67,
+   "ret_mtd": -23.75,
+   "ret_13w": -12.58,
+   "ret_ytd": 1.17,
    "high_52w": 96.68,
    "low_52w": 29.5,
-   "market_cap_m": 9736.85,
-   "roe": 12.4,
+   "market_cap_m": 10210.15,
+   "roe": 13.4,
    "roe_basis": "TTM",
    "level": "c"
   },
   "DELL": {
    "name": "Dell Technologies",
-   "price": 501.96,
-   "change": 34.87,
-   "change_pct": 7.47,
-   "prev_close": 467.09,
-   "open": 474.0,
-   "high": 507.38,
-   "low": 472.43,
-   "trade_date": "2026-10-27",
-   "ret_5d": 1.2,
-   "ret_mtd": -13.17,
-   "ret_13w": 9.41,
-   "ret_ytd": 271.06,
+   "price": 493.79,
+   "change": -8.17,
+   "change_pct": -1.63,
+   "prev_close": 501.96,
+   "open": 504.08,
+   "high": 507.0,
+   "low": 487.5,
+   "trade_date": "2026-10-28",
+   "ret_5d": 3.31,
+   "ret_mtd": -6.69,
+   "ret_13w": 28.02,
+   "ret_ytd": 298.76,
    "high_52w": 595.51,
    "low_52w": 110.22,
-   "market_cap_m": 319457.5,
+   "market_cap_m": 313748.16,
    "roe": 130.7,
    "roe_basis": "TTM",
    "level": "a"
   },
   "HPE": {
    "name": "HPE",
-   "price": 60.84,
-   "change": 2.12,
-   "change_pct": 3.61,
-   "prev_close": 58.72,
-   "open": 60.27,
-   "high": 61.27,
-   "low": 59.4,
-   "trade_date": "2026-10-27",
-   "ret_5d": 4.69,
-   "ret_mtd": -8.09,
-   "ret_13w": 21.85,
-   "ret_ytd": 144.46,
+   "price": 60.33,
+   "change": -0.51,
+   "change_pct": -0.84,
+   "prev_close": 60.84,
+   "open": 62.01,
+   "high": 62.2,
+   "low": 60.05,
+   "trade_date": "2026-10-28",
+   "ret_5d": 4.59,
+   "ret_mtd": -4.77,
+   "ret_13w": 33.45,
+   "ret_ytd": 153.29,
    "high_52w": 73.56,
    "low_52w": 19.84,
-   "market_cap_m": 80782.87,
+   "market_cap_m": 80032.98,
    "roe": 11.0,
    "roe_basis": "TTM",
    "level": "c"
   },
   "AAPL": {
    "name": "Apple",
-   "price": 347.1,
-   "change": 3.19,
-   "change_pct": 0.93,
-   "prev_close": 343.91,
-   "open": 343.17,
-   "high": 347.78,
-   "low": 342.39,
-   "trade_date": "2026-10-27",
-   "ret_5d": 1.3,
-   "ret_mtd": 3.27,
-   "ret_13w": 2.08,
-   "ret_ytd": 26.5,
+   "price": 343.83,
+   "change": -3.27,
+   "change_pct": -0.94,
+   "prev_close": 347.1,
+   "open": 346.92,
+   "high": 347.18,
+   "low": 343.52,
+   "trade_date": "2026-10-28",
+   "ret_5d": 0.9,
+   "ret_mtd": 4.23,
+   "ret_13w": 2.06,
+   "ret_ytd": 27.68,
    "high_52w": 351.73,
    "low_52w": 243.42,
-   "market_cap_m": 5049805.0,
+   "market_cap_m": 5044916.0,
    "roe": 137.2,
    "roe_basis": "TTM",
    "level": "a"
   },
   "GOOGL": {
    "name": "Alphabet",
-   "price": 320.58,
-   "change": 3.78,
-   "change_pct": 1.19,
-   "prev_close": 316.8,
-   "open": 317.0,
-   "high": 323.88,
-   "low": 316.86,
-   "trade_date": "2026-10-27",
-   "ret_5d": -6.9,
-   "ret_mtd": -7.93,
-   "ret_13w": -2.99,
-   "ret_ytd": 1.21,
+   "price": 324.89,
+   "change": 4.31,
+   "change_pct": 1.34,
+   "prev_close": 320.58,
+   "open": 323.76,
+   "high": 326.4,
+   "low": 322.65,
+   "trade_date": "2026-10-28",
+   "ret_5d": -4.24,
+   "ret_mtd": -6.83,
+   "ret_13w": -3.93,
+   "ret_ytd": 2.42,
    "high_52w": 408.61,
-   "low_52w": 255.32,
-   "market_cap_m": 3938916.0,
+   "low_52w": 264.28,
+   "market_cap_m": 3975850.8,
    "roe": 50.8,
    "roe_basis": "TTM",
    "level": "a"
   },
   "META": {
    "name": "Meta",
-   "price": 620.19,
-   "change": -10.37,
-   "change_pct": -1.64,
-   "prev_close": 630.56,
-   "open": 627.07,
-   "high": 628.46,
-   "low": 619.21,
-   "trade_date": "2026-10-27",
-   "ret_5d": -9.17,
-   "ret_mtd": -13.05,
-   "ret_13w": 6.18,
-   "ret_ytd": -4.47,
+   "price": 612.49,
+   "change": -7.7,
+   "change_pct": -1.24,
+   "prev_close": 620.19,
+   "open": 621.85,
+   "high": 624.42,
+   "low": 609.0,
+   "trade_date": "2026-10-28",
+   "ret_5d": -11.09,
+   "ret_mtd": -14.48,
+   "ret_13w": 4.51,
+   "ret_ytd": -6.04,
    "high_52w": 779.82,
    "low_52w": 520.26,
-   "market_cap_m": 1611863.4,
+   "market_cap_m": 1585355.1,
    "roe": 30.3,
    "roe_basis": "TTM",
    "level": "a"
   },
   "LRCX": {
    "name": "Lam Research",
-   "price": 240.85,
-   "change": 3.35,
-   "change_pct": 1.41,
-   "prev_close": 237.5,
-   "open": 240.93,
-   "high": 241.68,
-   "low": 235.21,
-   "trade_date": "2026-10-27",
-   "ret_5d": -9.85,
-   "ret_mtd": -27.7,
-   "ret_13w": -18.56,
-   "ret_ytd": 38.74,
+   "price": 253.82,
+   "change": 12.97,
+   "change_pct": 5.39,
+   "prev_close": 240.85,
+   "open": 245.01,
+   "high": 257.6,
+   "low": 244.53,
+   "trade_date": "2026-10-28",
+   "ret_5d": -7.65,
+   "ret_mtd": -26.68,
+   "ret_13w": -10.67,
+   "ret_ytd": 40.7,
    "high_52w": 438.5,
    "low_52w": 135.5,
-   "market_cap_m": 297739.9,
+   "market_cap_m": 309931.84,
    "roe": 71.8,
    "roe_basis": "TTM",
    "level": "a"
   },
   "MRVL": {
    "name": "Marvell",
-   "price": 243.57,
-   "change": 9.79,
-   "change_pct": 4.19,
-   "prev_close": 233.78,
-   "open": 237.04,
-   "high": 245.87,
-   "low": 235.23,
-   "trade_date": "2026-10-27",
-   "ret_5d": -2.76,
-   "ret_mtd": -11.52,
-   "ret_13w": 23.58,
-   "ret_ytd": 175.1,
+   "price": 251.65,
+   "change": 8.08,
+   "change_pct": 3.32,
+   "prev_close": 243.57,
+   "open": 247.45,
+   "high": 253.66,
+   "low": 246.22,
+   "trade_date": "2026-10-28",
+   "ret_5d": -0.49,
+   "ret_mtd": -7.81,
+   "ret_13w": 39.61,
+   "ret_ytd": 186.62,
    "high_52w": 329.88,
    "low_52w": 70.69,
-   "market_cap_m": 213586.53,
+   "market_cap_m": 218865.48,
    "roe": 16.2,
    "roe_basis": "TTM",
    "level": "b"
   },
   "TSLA": {
    "name": "Tesla",
-   "price": 407.46,
-   "change": 15.84,
-   "change_pct": 4.04,
-   "prev_close": 391.62,
-   "open": 397.76,
-   "high": 408.45,
-   "low": 395.25,
-   "trade_date": "2026-10-27",
-   "ret_5d": 4.79,
-   "ret_mtd": 10.37,
-   "ret_13w": 26.65,
-   "ret_ytd": -12.92,
+   "price": 404.22,
+   "change": -3.24,
+   "change_pct": -0.8,
+   "prev_close": 407.46,
+   "open": 410.15,
+   "high": 410.85,
+   "low": 397.18,
+   "trade_date": "2026-10-28",
+   "ret_5d": 5.43,
+   "ret_mtd": 14.84,
+   "ret_13w": 32.53,
+   "ret_ytd": -9.4,
    "high_52w": 498.83,
    "low_52w": 297.38,
-   "market_cap_m": 1547979.1,
+   "market_cap_m": 1610590.8,
    "roe": 3.8,
    "roe_basis": "TTM",
    "level": "d"
@@ -427,6 +427,10 @@
    [
     "2026-10-27",
     217.94
+   ],
+   [
+    "2026-10-28",
+    215.38
    ]
   ],
   "AVGO": [
@@ -509,6 +513,10 @@
    [
     "2026-10-27",
     342.33
+   ],
+   [
+    "2026-10-28",
+    351.81
    ]
   ],
   "AMD": [
@@ -591,6 +599,10 @@
    [
     "2026-10-27",
     560.26
+   ],
+   [
+    "2026-10-28",
+    578.44
    ]
   ],
   "SMCI": [
@@ -673,6 +685,10 @@
    [
     "2026-10-27",
     35.09
+   ],
+   [
+    "2026-10-28",
+    35.81
    ]
   ],
   "INTC": [
@@ -755,6 +771,10 @@
    [
     "2026-10-27",
     93.74
+   ],
+   [
+    "2026-10-28",
+    95.53
    ]
   ],
   "AMAT": [
@@ -837,6 +857,10 @@
    [
     "2026-10-27",
     395.93
+   ],
+   [
+    "2026-10-28",
+    416.0
    ]
   ],
   "MU": [
@@ -919,6 +943,10 @@
    [
     "2026-10-27",
     928.76
+   ],
+   [
+    "2026-10-28",
+    983.23
    ]
   ],
   "AMKR": [
@@ -1001,6 +1029,10 @@
    [
     "2026-10-27",
     39.94
+   ],
+   [
+    "2026-10-28",
+    42.21
    ]
   ],
   "DELL": [
@@ -1083,6 +1115,10 @@
    [
     "2026-10-27",
     501.96
+   ],
+   [
+    "2026-10-28",
+    493.79
    ]
   ],
   "HPE": [
@@ -1165,6 +1201,10 @@
    [
     "2026-10-27",
     60.84
+   ],
+   [
+    "2026-10-28",
+    60.33
    ]
   ],
   "AAPL": [
@@ -1247,6 +1287,10 @@
    [
     "2026-10-27",
     347.1
+   ],
+   [
+    "2026-10-28",
+    343.83
    ]
   ],
   "GOOGL": [
@@ -1329,6 +1373,10 @@
    [
     "2026-10-27",
     320.58
+   ],
+   [
+    "2026-10-28",
+    324.89
    ]
   ],
   "META": [
@@ -1411,6 +1459,10 @@
    [
     "2026-10-27",
     620.19
+   ],
+   [
+    "2026-10-28",
+    612.49
    ]
   ],
   "LRCX": [
@@ -1493,6 +1545,10 @@
    [
     "2026-10-27",
     240.85
+   ],
+   [
+    "2026-10-28",
+    253.82
    ]
   ],
   "MRVL": [
@@ -1575,6 +1631,10 @@
    [
     "2026-10-27",
     243.57
+   ],
+   [
+    "2026-10-28",
+    251.65
    ]
   ],
   "TSLA": [
@@ -1657,6 +1717,10 @@
    [
     "2026-10-27",
     407.46
+   ],
+   [
+    "2026-10-28",
+    404.22
    ]
   ]
  }
