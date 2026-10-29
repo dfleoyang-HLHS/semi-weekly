@@ -1,0 +1,1584 @@
+{
+  "week": "2026-W42",
+  "date": "2026-10-12",
+  "title": "Meta 現金流轉負引爆 AI 融資疑慮 · NVIDIA 鎖定載板與封測產能",
+  "summary": "Meta 第三季自由現金流轉負 21.2 億美元、合約承諾升至約 8,250 億美元並擬籌資最高 950 億美元,AI 融資疑慮讓費半 22 日重挫 6.72%,新雲端與 Solidigm IPO 相繼受挫。NVIDIA 則在 GTC 柏林宣布 Vera Rubin 全面量產,聯手 6 家夥伴擴充載板、封裝、測試與光學引擎產能,三星電機傳獲 Tesla 與 NVIDIA 合計 3.7 兆韓元投資。",
+  "highlights": [
+    "Meta 第三季營收 646.01 億美元、年增 26%,但自由現金流轉負 21.2 億美元,全年資本支出上修至 1,350 億至 1,450 億美元",
+    "Meta 擬籌資最多 950 億美元,NVIDIA、AMD、博通有意合計認購最多 50 億美元 A 類普通股",
+    "博通透過 SPV 籌組 630 億美元融資買 AI 設備租給 Anthropic,設備 2027 年起交付",
+    "費半 22 日重挫 6.72%;CoreWeave、Nebius 10 月來跌逾 30%,CoreWeave CDS 利差逾 11%",
+    "NVIDIA 宣布 Vera Rubin 全面量產,DSX POD 可將資料中心部署時間縮短至最快 14 天",
+    "三星電機傳獲 Tesla 與 NVIDIA 合計 3.7 兆韓元 (約 28 億美元) 投資擴建 ABF 載板",
+    "SK 海力士暫停 Solidigm 美國 IPO,原傳估值最高 1,500 億美元",
+    "三星泰勒一廠追加約 6,000 片設備,2027 年下半 2 奈米月產能可望達 2 萬片",
+    "長電科技第三季營收年增 13.53% 至 114.3 億元人民幣,2026 年資本支出上修 73%",
+    "IDC:2026 年上半年 NVIDIA 中國 AI 加速器市占 34%、華為 28%"
+  ],
+  "nodes": [
+    {
+      "id": "Ajinomoto",
+      "tier": "up",
+      "label": "Ajinomoto",
+      "sub": "ABF 樹脂膜材料",
+      "region": "JP",
+      "mentions": 1
+    },
+    {
+      "id": "Ibiden",
+      "tier": "up",
+      "label": "Ibiden",
+      "sub": "ABF 高階載板",
+      "region": "JP",
+      "news": {
+        "id": 3773,
+        "title": "ASIC shipments top GPUs in 2027 as ABF substrate bottlenecks shift",
+        "url": "https://www.digitimes.com/news/a20260930PD237/asic-abf-substrate-cloud-ai-gpu-2027.html",
+        "date": "2026-09-30"
+      },
+      "mentions": 0
+    },
+    {
+      "id": "Shinko",
+      "tier": "up",
+      "label": "Shinko",
+      "sub": "加入 AI 光互連量產鏈",
+      "region": "JP",
+      "news": {
+        "id": 6341,
+        "title": "日本AI光互連一條龍量產鏈雛形現 NTT等5業者拚年產10萬件",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772191_9H72CNDG8XZ7OE2D0QZLL",
+        "date": "2026-10-26"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "ASML",
+      "tier": "up",
+      "label": "ASML",
+      "sub": "越南晶片廠未敲定採購",
+      "region": "EU",
+      "news": {
+        "id": 6318,
+        "title": "路透：越南首座晶片廠難達明年試產目標，未敲定 ASML 設備採購",
+        "url": "https://technews.tw/2026/10/27/vietnams-first-chip-plant-unlikely-to-meet-2027-target/",
+        "date": "2026-10-27"
+      },
+      "mentions": 55
+    },
+    {
+      "id": "BESI",
+      "tier": "up",
+      "label": "BESI",
+      "sub": "加入應材 EPIC 中心",
+      "region": "EU",
+      "news": {
+        "id": 4264,
+        "title": "應材與貝思半導體擴大合作 開發新一代AI晶片封裝技術",
+        "url": "https://news.cnyes.com/news/id/6620234",
+        "date": "2026-10-02"
+      },
+      "mentions": 1
+    },
+    {
+      "id": "AMAT",
+      "tier": "up",
+      "label": "Applied Materials",
+      "sub": "擴大與英特爾封裝合作",
+      "region": "US",
+      "news": {
+        "id": 4837,
+        "title": "Applied Materials, Intel target AI chip bottlenecks with interconnect scaling and Foveros 3D",
+        "url": "https://www.digitimes.com/news/a20261007PD242/applied-materials-intel-ai-chip-manufacturing-development.html",
+        "date": "2026-10-09"
+      },
+      "mentions": 25
+    },
+    {
+      "id": "Unimicron",
+      "tier": "up",
+      "label": "欣興 南電 景碩",
+      "sub": "NVIDIA 預訂產能至 2028",
+      "region": "TW",
+      "news": {
+        "id": 6307,
+        "title": "輝達預訂產能至 2028 滿載，欣興簡山傑揭密：AI 高階載板不能再單打獨鬥",
+        "url": "https://finance.technews.tw/2026/10/26/unimicron-jensen-huang-capacity-rush-jan-shan-jie-new-pcb-game/",
+        "date": "2026-10-26"
+      },
+      "mentions": 26
+    },
+    {
+      "id": "TEL",
+      "tier": "up",
+      "label": "TEL / SCREEN",
+      "sub": "前段塗佈與洗淨設備",
+      "region": "JP",
+      "mentions": 0
+    },
+    {
+      "id": "LamResearch",
+      "tier": "up",
+      "label": "Lam Research",
+      "sub": "財測僅符合預期",
+      "region": "US",
+      "mentions": 0,
+      "news": {
+        "id": 6151,
+        "title": "AMD股價重挫7.6% 晶片股全面遭拋售 AI投資回報疑慮升溫",
+        "url": "https://news.cnyes.com/news/id/6636374",
+        "date": "2026-10-22"
+      }
+    },
+    {
+      "id": "TSMC",
+      "tier": "mid",
+      "label": "TSMC 台積電",
+      "sub": "評估德州 · 尋無稀土馬達",
+      "region": "TW",
+      "news": {
+        "id": 6250,
+        "title": "Why is TSMC suddenly looking at Texas?",
+        "url": "https://www.digitimes.com/news/a20261023PD211/tsmc-texas-expansion-development-supply-chain.html",
+        "date": "2026-10-23"
+      },
+      "mentions": 356
+    },
+    {
+      "id": "ASE",
+      "tier": "mid",
+      "label": "ASE 日月光",
+      "sub": "矽品 CPO 產能拚增 30 倍",
+      "region": "TW",
+      "news": {
+        "id": 6275,
+        "title": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
+        "url": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
+        "date": "2026-10-24"
+      },
+      "mentions": 36
+    },
+    {
+      "id": "Amkor",
+      "tier": "mid",
+      "label": "Amkor 艾姆科",
+      "sub": "毛利率升至 18.3%",
+      "region": "US",
+      "mentions": 4,
+      "news": {
+        "id": 6316,
+        "title": "Amkor gross margin climbs to 18.3% as computing mix offsets consumer weakness",
+        "url": "https://www.digitimes.com/news/a20261027VL200/amkor-packaging-sales-demand-production.html",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "KYEC",
+      "tier": "mid",
+      "label": "京元電 力成",
+      "sub": "京元 EPS 預估 8.46 元",
+      "region": "TW",
+      "news": {
+        "id": 6076,
+        "title": "鉅亨速報 - Factset 最新調查：京元電子(2449-TW)EPS預估下修至8.46元，預估目標價為346.5元",
+        "url": "https://news.cnyes.com/news/id/6635510",
+        "date": "2026-10-22"
+      },
+      "mentions": 26
+    },
+    {
+      "id": "SKHynix",
+      "tier": "mid",
+      "label": "SK Hynix",
+      "sub": "撤回 Solidigm 美國 IPO",
+      "region": "KR",
+      "news": {
+        "id": 6139,
+        "title": "震撼反轉！SK海力士正式喊停Solidigm赴美IPO計畫 股價重摔逾4%",
+        "url": "https://news.cnyes.com/news/id/6636418",
+        "date": "2026-10-23"
+      },
+      "mentions": 78
+    },
+    {
+      "id": "Samsung",
+      "tier": "mid",
+      "label": "Samsung 三星",
+      "sub": "泰勒 2nm 月產 2 萬片",
+      "region": "KR",
+      "news": {
+        "id": 6280,
+        "title": "三星德州廠加碼2奈米設備！2027年下半年月產能可望達2萬片",
+        "url": "https://news.cnyes.com/news/id/6636943",
+        "date": "2026-10-23"
+      },
+      "mentions": 378
+    },
+    {
+      "id": "Micron",
+      "tier": "mid",
+      "label": "Micron 美光",
+      "sub": "vHBM 目標 2028 量產",
+      "region": "US",
+      "news": {
+        "id": 6267,
+        "title": "美光下一代AI記憶體突破面臨散熱難題！vHBM瞄準2028年量產、頻寬升級成關鍵",
+        "url": "https://news.cnyes.com/news/id/6637076",
+        "date": "2026-10-24"
+      },
+      "mentions": 164
+    },
+    {
+      "id": "JCET",
+      "tier": "mid",
+      "label": "長電 / 通富微電 / 中芯",
+      "sub": "Q3 淨利年增 59.99%",
+      "region": "CN",
+      "news": {
+        "id": 6224,
+        "title": "JCET's AI profit surge sets up US$2.73 billion advanced packaging expansion",
+        "url": "https://www.digitimes.com/news/a20261023VL213/jcet-advanced-packaging-expansion-revenue-profit.html",
+        "date": "2026-10-23"
+      },
+      "mentions": 8
+    },
+    {
+      "id": "NVIDIA",
+      "tier": "down",
+      "label": "NVIDIA 輝達",
+      "sub": "Vera Rubin 全面量產",
+      "region": "US",
+      "news": {
+        "id": 6067,
+        "title": "黃仁勳GTC重點一次看 新晶片量產、AI工廠裝箱出貨、搶攻機器人",
+        "url": "https://news.cnyes.com/news/id/6635573",
+        "date": "2026-10-22"
+      },
+      "mentions": 373
+    },
+    {
+      "id": "AMD",
+      "tier": "down",
+      "label": "AMD 超微",
+      "sub": "擬認購 Meta 新股",
+      "region": "US",
+      "news": {
+        "id": 6326,
+        "title": "Meta擬發行350億美元股票 輝達、超微、博通有意掏錢",
+        "url": "https://news.cnyes.com/news/id/6637969",
+        "date": "2026-10-26"
+      },
+      "mentions": 115
+    },
+    {
+      "id": "Broadcom",
+      "tier": "down",
+      "label": "Broadcom 博通",
+      "sub": "630 億美元 SPV 租設備",
+      "region": "US",
+      "news": {
+        "id": 6329,
+        "title": "博通與多家銀行合作進行630億美元AI融資 購置AI設備租予Anthropic",
+        "url": "https://news.cnyes.com/news/id/6637964",
+        "date": "2026-10-26"
+      },
+      "mentions": 49
+    },
+    {
+      "id": "Intel",
+      "tier": "down",
+      "label": "Intel 英特爾",
+      "sub": "收購量子軟體 Classiq",
+      "region": "US",
+      "news": {
+        "id": 6323,
+        "title": "英特爾量子布局再下一城 宣布收購以色列Classiq",
+        "url": "https://news.cnyes.com/news/id/6638020",
+        "date": "2026-10-26"
+      },
+      "mentions": 139
+    },
+    {
+      "id": "Apple",
+      "tier": "down",
+      "label": "Apple 蘋果",
+      "sub": "iPhone Duo 開賣",
+      "region": "US",
+      "mentions": 72,
+      "news": {
+        "id": 6268,
+        "title": "iPhone Duo熱賣！IDC估蘋果明年登摺疊機王 新品與財報接力考驗股價",
+        "url": "https://news.cnyes.com/news/id/6636944",
+        "date": "2026-10-24"
+      }
+    },
+    {
+      "id": "Google",
+      "tier": "down",
+      "label": "Google TPU",
+      "sub": "TorchTPU 挑戰 CUDA",
+      "region": "US",
+      "news": {
+        "id": 6252,
+        "title": "輝達CUDA生態系遇挑戰！Google、亞馬遜從軟體下手 98%模型免大幅改寫",
+        "url": "https://news.cnyes.com/news/id/6636425",
+        "date": "2026-10-23"
+      },
+      "mentions": 59
+    },
+    {
+      "id": "Meta",
+      "tier": "down",
+      "label": "Meta",
+      "sub": "自由現金流轉負 21.2 億",
+      "region": "US",
+      "news": {
+        "id": 6219,
+        "title": "Meta財報亮眼卻遭股債雙殺！8250億美元承諾揭開AI投資真實代價",
+        "url": "https://news.cnyes.com/news/id/6636513",
+        "date": "2026-10-23"
+      },
+      "mentions": 162
+    },
+    {
+      "id": "MTK",
+      "tier": "down",
+      "label": "聯發科 創意 世芯",
+      "sub": "Q3 營收 1,680 億新高",
+      "region": "TW",
+      "news": {
+        "id": 4811,
+        "title": "聯發科第 3 季營收 1,680 億元超財測創新高，ASIC 市場表現受期待",
+        "url": "https://finance.technews.tw/2026/10/09/mediateks-third-quarter-revenue-of-168-billion-yuan-exceeded-financial-forecasts-and-hit-a-new-high/",
+        "date": "2026-10-08"
+      },
+      "mentions": 25
+    },
+    {
+      "id": "Dell",
+      "tier": "down",
+      "label": "Dell 戴爾",
+      "sub": "千葉 400MW 資料中心",
+      "region": "US",
+      "news": {
+        "id": 4265,
+        "title": "JERA攜Dell、Rhaelm建AI資料中心 日本400MW算力基地2028年啟動",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770269_OAF1K9TG7YVXEE8WWNLY5",
+        "date": "2026-10-02"
+      },
+      "mentions": 20
+    },
+    {
+      "id": "HPE",
+      "tier": "down",
+      "label": "HPE 慧與",
+      "sub": "Vultr 12 億 Helios 機櫃單",
+      "region": "US",
+      "news": {
+        "id": 3764,
+        "title": "HPE拿下Vultr機櫃大單　網通財測同步上修",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770113_TQO23OBJ00P90W4G2PNSF",
+        "date": "2026-09-30"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "SMCI",
+      "tier": "down",
+      "label": "美超微 SMCI",
+      "sub": "攜 Nokia 推 Aerial RAN",
+      "region": "US",
+      "news": {
+        "id": 6292,
+        "title": "Supermicro 攜手 Nokia，將 NVIDIA Aerial RAN Computer 解決方案引入網絡邊緣，支援低延遲 AI 服務",
+        "url": "https://technews.tw/2026/10/25/supermicro-nokia-nvidia-aerial-ran-computer/",
+        "date": "2026-10-25"
+      },
+      "mentions": 9
+    },
+    {
+      "id": "Lenovo",
+      "tier": "down",
+      "label": "Lenovo 聯想",
+      "sub": "Vera Rubin NVL72 出貨",
+      "region": "CN",
+      "mentions": 4,
+      "news": {
+        "id": 6201,
+        "title": "Lenovo mounts AI comeback with Nvidia Vera Rubin NVL72 deliveries and US plant expansion",
+        "url": "https://www.digitimes.com/news/a20261023PD225/lenovo-nvidia-infrastructure-rubin-manufacturing.html",
+        "date": "2026-10-23"
+      }
+    },
+    {
+      "id": "Foxconn",
+      "tier": "down",
+      "label": "鴻海 廣達 緯創",
+      "sub": "智造工作量減 50%",
+      "region": "TW",
+      "news": {
+        "id": 6309,
+        "title": "工作量減 50%，鴻海合作 Nvidia 秀智造成果",
+        "url": "https://finance.technews.tw/2026/10/26/foxconn-nvidia-smart-manufacture/",
+        "date": "2026-10-26"
+      },
+      "mentions": 42
+    },
+    {
+      "id": "CoreWeave",
+      "tier": "down",
+      "label": "CoreWeave",
+      "sub": "負債 356 億美元",
+      "region": "US",
+      "news": {
+        "id": 6141,
+        "title": "AI訂單不缺 缺的是錢！黃仁勳揭新雲端業者擴張困境",
+        "url": "https://news.cnyes.com/news/id/6636377",
+        "date": "2026-10-22"
+      },
+      "mentions": 39
+    },
+    {
+      "id": "Netlist",
+      "tier": "up",
+      "label": "Netlist",
+      "sub": "獲美光 6 億美元和解",
+      "region": "US",
+      "news": {
+        "id": 4680,
+        "title": "美光支付6億美元和解訴訟 取得Netlist HBM技術5年授權",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770751_3OU8ML974GGH0L2OEVINK",
+        "date": "2026-10-07"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "Winpac",
+      "tier": "mid",
+      "label": "Winpac",
+      "sub": "韓系記憶體封測",
+      "region": "KR",
+      "news": {
+        "id": 3788,
+        "title": "曾因三星訂單中斷合作　南韓Winpac睽違4年重拿SK海力士訂單",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000769977_G3WL78PC6DJMGL8KWQMYJ",
+        "date": "2026-09-30"
+      },
+      "mentions": 2
+    },
+    {
+      "id": "AWS",
+      "tier": "down",
+      "label": "Amazon AWS",
+      "sub": "TorchNeuron 挑戰 CUDA",
+      "region": "US",
+      "news": {
+        "id": 6351,
+        "title": "AWS、Google聯手挑戰CUDA 超微與英特爾整合AI軟體降低晶片轉換門檻",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772506_G1T4UZBM1WPSMT5A68RDF",
+        "date": "2026-10-26"
+      },
+      "mentions": 14
+    },
+    {
+      "id": "Huawei",
+      "tier": "down",
+      "label": "華為 昇騰",
+      "sub": "中國 AI 加速器市佔 28%",
+      "region": "CN",
+      "news": {
+        "id": 6262,
+        "title": "黃仁勳：美國必須「認真看待」中國 勿低估其AI與晶片製造實力",
+        "url": "https://news.cnyes.com/news/id/6636363",
+        "date": "2026-10-23"
+      },
+      "mentions": 37
+    },
+    {
+      "id": "Vultr",
+      "tier": "down",
+      "label": "Vultr",
+      "sub": "AMD Helios 機櫃採購",
+      "region": "US",
+      "news": {
+        "id": 3764,
+        "title": "HPE拿下Vultr機櫃大單　網通財測同步上修",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770113_TQO23OBJ00P90W4G2PNSF",
+        "date": "2026-09-30"
+      },
+      "mentions": 1
+    },
+    {
+      "id": "Terafab",
+      "tier": "mid",
+      "label": "Terafab",
+      "sub": "目標 2H28 德州量產",
+      "region": "US",
+      "news": {
+        "id": 6342,
+        "title": "【漫圖秒懂】Terafab目標2H28量產 自製先進晶片挑戰仍大",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772397_ZDT21BGFLZNIGH6H7YB5V",
+        "date": "2026-10-26"
+      },
+      "mentions": 71
+    },
+    {
+      "id": "Qualcomm",
+      "tier": "down",
+      "label": "Qualcomm 高通",
+      "sub": "2 款旗艦全採台積電 2nm",
+      "region": "US",
+      "news": {
+        "id": 4369,
+        "title": "【動物農莊】兩款旗艦上台積電 高通轉身把AI塞進手機、手錶與眼鏡",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770059_HJL19FDK4EADWELC7X9DO",
+        "date": "2026-10-04"
+      },
+      "mentions": 31
+    },
+    {
+      "id": "Anthropic",
+      "tier": "down",
+      "label": "Anthropic",
+      "sub": "提交 IPO 申請",
+      "region": "US",
+      "news": {
+        "id": 6369,
+        "title": "〈美股早盤〉Anthropic搶上市點燃AI熱情！晶片股帶頭反彈 主要指數開高",
+        "url": "https://news.cnyes.com/news/id/6637786",
+        "date": "2026-10-26"
+      },
+      "mentions": 57
+    },
+    {
+      "id": "Tesla",
+      "tier": "down",
+      "label": "Tesla 特斯拉",
+      "sub": "資本支出降至 200 億",
+      "region": "US",
+      "news": {
+        "id": 6146,
+        "title": "馬斯克兩大事業有望合體？最大考驗在換股與估值 分析師：難創顯著上漲空間",
+        "url": "https://news.cnyes.com/news/id/6636378",
+        "date": "2026-10-22"
+      },
+      "mentions": 171
+    },
+    {
+      "id": "GF",
+      "tier": "mid",
+      "label": "GlobalFoundries 格芯",
+      "sub": "20 億美元矽中介層協議",
+      "region": "US",
+      "news": {
+        "id": 4832,
+        "title": "GlobalFoundries wins US$2 billion TSMC interposer deal, closing a US packaging gap",
+        "url": "https://www.digitimes.com/news/a20261009VL200/tsmc-globalfoundries-packaging-cowos-silicon.html",
+        "date": "2026-10-09"
+      },
+      "mentions": 19
+    },
+    {
+      "id": "OpenAI",
+      "tier": "down",
+      "label": "OpenAI",
+      "sub": "年化營收近 500 億美元",
+      "region": "US",
+      "news": {
+        "id": 4859,
+        "title": "OpenAI營收疑雲釐清後 AI晶片股仍震盪 輝達、美光收低",
+        "url": "https://news.cnyes.com/news/id/6627119",
+        "date": "2026-10-09"
+      },
+      "mentions": 45
+    },
+    {
+      "id": "SpaceX",
+      "tier": "down",
+      "label": "SpaceX",
+      "sub": "Q3 營收 146 億美元",
+      "region": "US",
+      "news": {
+        "id": 6278,
+        "title": "馬斯克終極野心：打造科技「全棧帝國」從衛星、電力到晶片與機器人 拿下AI產業命脈",
+        "url": "https://news.cnyes.com/news/id/6636969",
+        "date": "2026-10-23"
+      },
+      "mentions": 98
+    },
+    {
+      "id": "Oracle",
+      "tier": "down",
+      "label": "Oracle 甲骨文",
+      "sub": "洽 Apollo 晶片融資",
+      "region": "US",
+      "news": {
+        "id": 4737,
+        "title": "AI boom reportedly drives tech giants toward new debt financing for chips",
+        "url": "https://www.digitimes.com/news/a20261008VL208/financing-technology-chips-infrastructure-broadcom.html",
+        "date": "2026-10-08"
+      },
+      "mentions": 16
+    },
+    {
+      "id": "Marvell",
+      "tier": "down",
+      "label": "Marvell 邁威爾",
+      "sub": "2031 營收目標 700-900 億",
+      "region": "US",
+      "news": {
+        "id": 4855,
+        "title": "AI成長利多齊發 美銀調升Marvell目標價",
+        "url": "https://news.cnyes.com/news/id/6626833",
+        "date": "2026-10-10"
+      },
+      "mentions": 32
+    },
+    {
+      "id": "Microsoft",
+      "tier": "down",
+      "label": "Microsoft 微軟",
+      "sub": "Surface 搭 RTX Spark",
+      "region": "US",
+      "news": {
+        "id": 4748,
+        "title": "微軟攜NVIDIA推新Surface Laptop Ultra 稱AI速度比Mac快2倍",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770909_SFRLIK9SLW5ICKLM6JUCE",
+        "date": "2026-10-08"
+      },
+      "mentions": 63
+    },
+    {
+      "id": "Figure",
+      "tier": "down",
+      "label": "Figure",
+      "sub": "傳獲 NVIDIA 加碼 10 億",
+      "region": "US",
+      "news": {
+        "id": 4733,
+        "title": "黃仁勳焦慮AI需求降溫！傳輝達再砸10億美元加碼人形機器人企業Figure",
+        "url": "https://news.cnyes.com/news/id/6624658",
+        "date": "2026-10-08"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "Vicor",
+      "tier": "up",
+      "label": "Vicor",
+      "sub": "垂直供電 337 提告",
+      "region": "US",
+      "news": {
+        "id": 4884,
+        "title": "DIGITIMES Today：Vicor 再告台廠 鴻海、廣達、台達電入列 | 華為供應東協資料中心設備 |友達轉型邁入新階段",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771083_K5G1O9RQ7T2SFK4PE9G7V",
+        "date": "2026-10-11"
+      },
+      "mentions": 2
+    },
+    {
+      "id": "Delta",
+      "tier": "up",
+      "label": "台達電",
+      "sub": "遭 337 調查 · 稱未受影響",
+      "region": "TW",
+      "news": {
+        "id": 4921,
+        "title": "美國啟動337調查衝擊幾何？ 台達電、鴻海強調客戶合作與供應鏈運作未受影響",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771086_PGALY6QK94YVXT5R04KLG",
+        "date": "2026-10-12"
+      },
+      "mentions": 22
+    },
+    {
+      "id": "Luxshare",
+      "tier": "down",
+      "label": "立訊精密",
+      "sub": "稱涉案產品未量產",
+      "region": "CN",
+      "news": {
+        "id": 4920,
+        "title": "立訊遭美啟動337調查 稱涉及產品未量產不構成營運影響",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000771080_L48L66KJ9T3T4BLXCMNKV",
+        "date": "2026-10-12"
+      },
+      "mentions": 1
+    },
+    {
+      "id": "CXMT",
+      "tier": "mid",
+      "label": "長鑫存儲",
+      "sub": "年底推 4F² DDR5",
+      "region": "CN",
+      "news": {
+        "id": 6245,
+        "title": "長鑫4F²架構突破 美光爲何選擇不跟進？ 分析師：全球存儲市場步入分層博弈",
+        "url": "https://news.cnyes.com/news/id/6636469",
+        "date": "2026-10-23"
+      },
+      "mentions": 30
+    },
+    {
+      "id": "DeepSeek",
+      "tier": "down",
+      "label": "DeepSeek",
+      "sub": "傳部署 16 萬顆昇騰",
+      "region": "CN",
+      "news": {
+        "id": 4718,
+        "title": "騰訊、CATL參投！DeepSeek接近獲得800至1000億人民幣融資，攜手華為昇騰押注國產預訓練",
+        "url": "https://news.cnyes.com/news/id/6624549",
+        "date": "2026-10-08"
+      },
+      "mentions": 9
+    },
+    {
+      "id": "Rapidus",
+      "tier": "mid",
+      "label": "Rapidus",
+      "sub": "2nm 醫療 AI 晶片代工候選",
+      "region": "JP",
+      "news": {
+        "id": 6206,
+        "title": "Japan targets 2nm medical AI chip with IBM design, Rapidus eyed for foundry",
+        "url": "https://www.digitimes.com/news/a20261023PD230/medical-2nm-ibm-rapidus-design.html",
+        "date": "2026-10-23"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "Semco",
+      "tier": "up",
+      "label": "三星電機 Semco",
+      "sub": "傳獲 3.7 兆韓元投資",
+      "region": "KR",
+      "news": {
+        "id": 6227,
+        "title": "Tesla, Nvidia reportedly invest KRW3.7 trillion to secure Samsung Electro-Mechanics ABF capacity",
+        "url": "https://www.digitimes.com/news/a20261023PD226/tesla-nvidia-semco-production-abf-substrate.html",
+        "date": "2026-10-23"
+      },
+      "mentions": 22
+    },
+    {
+      "id": "Hanmi",
+      "tier": "up",
+      "label": "韓美半導體",
+      "sub": "獲 Semco 245 億韓元單",
+      "region": "KR",
+      "news": {
+        "id": 4781,
+        "title": "三星與韓美半導體破冰？ 罕見簽245億韓元大單牽動HBM設備合作",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000770786_1758HK4E77IAWR7V7FNUJ",
+        "date": "2026-10-07"
+      },
+      "mentions": 6
+    },
+    {
+      "id": "Infineon",
+      "tier": "up",
+      "label": "Infineon 英飛凌",
+      "sub": "與 NVIDIA 擴大 GaN 合作",
+      "region": "EU",
+      "news": {
+        "id": 6261,
+        "title": "[News] Infineon and NVIDIA Expand GaN Power Collaboration for AI Data Centers",
+        "url": "https://www.trendforce.com/news/2026/10/23/news-infineon-and-nvidia-expand-gan-power-collaboration-for-ai-data-centers/",
+        "date": "2026-10-23"
+      },
+      "mentions": 7
+    },
+    {
+      "id": "Fujifilm",
+      "tier": "up",
+      "label": "Fujifilm 富士軟片",
+      "sub": "南韓 EUV 光阻擴產",
+      "region": "JP",
+      "news": {
+        "id": 6345,
+        "title": "迎戰AI晶片需求 富士軟片雙向擴充南韓產能",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772460_09D5UWBH57YQJ71S314X5",
+        "date": "2026-10-26"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "NTT",
+      "tier": "mid",
+      "label": "NTT",
+      "sub": "光互連年產 10 萬件",
+      "region": "JP",
+      "news": {
+        "id": 6341,
+        "title": "日本AI光互連一條龍量產鏈雛形現 NTT等5業者拚年產10萬件",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772191_9H72CNDG8XZ7OE2D0QZLL",
+        "date": "2026-10-26"
+      },
+      "mentions": 5
+    },
+    {
+      "id": "Nokia",
+      "tier": "down",
+      "label": "Nokia 諾基亞",
+      "sub": "AI 雲端訂單年增 118%",
+      "region": "EU",
+      "news": {
+        "id": 6165,
+        "title": "諾基亞AI和雲端訂單額年增118% 光纖網路、IP網路業務走強",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772373_XT1459C16J0NRV4S7PEHL",
+        "date": "2026-10-22"
+      },
+      "mentions": 4
+    },
+    {
+      "id": "Modal",
+      "tier": "down",
+      "label": "Modal",
+      "sub": "導入 NVIDIA Vera CPU",
+      "region": "US",
+      "news": {
+        "id": 6365,
+        "title": "【漫圖秒懂】NVIDIA首奪AI雲端新創Modal訂單 直搗英特爾、超微核心地盤",
+        "url": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000772211_TON123JE246XLO0GG3C5D",
+        "date": "2026-10-26"
+      },
+      "mentions": 5
+    }
+  ],
+  "edges": [
+    {
+      "from": "Ajinomoto",
+      "to": "Ibiden",
+      "type": "supply",
+      "label": "ABF 樹脂材料"
+    },
+    {
+      "from": "Ajinomoto",
+      "to": "Shinko",
+      "type": "supply",
+      "label": "ABF 樹脂材料"
+    },
+    {
+      "from": "Ajinomoto",
+      "to": "Unimicron",
+      "type": "supply",
+      "label": "ABF 樹脂膜"
+    },
+    {
+      "from": "Ibiden",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "高階 ABF 載板"
+    },
+    {
+      "from": "Shinko",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "先進封裝載板"
+    },
+    {
+      "from": "Unimicron",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "CoWoS 載板"
+    },
+    {
+      "from": "ASML",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "EUV 光刻設備"
+    },
+    {
+      "from": "ASML",
+      "to": "Samsung",
+      "type": "supply",
+      "label": "EUV 設備 · 備件漲價 10%"
+    },
+    {
+      "from": "ASML",
+      "to": "SKHynix",
+      "type": "supply",
+      "label": "EUV 設備 · 備件漲價 10%"
+    },
+    {
+      "from": "TEL",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "晶圓塗佈與清洗設備"
+    },
+    {
+      "from": "LamResearch",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "薄膜沉積與乾蝕刻"
+    },
+    {
+      "from": "BESI",
+      "to": "SKHynix",
+      "type": "supply",
+      "label": "HBM 混合鍵合機台"
+    },
+    {
+      "from": "BESI",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "3D IC 混合鍵合機"
+    },
+    {
+      "from": "AMAT",
+      "to": "SKHynix",
+      "type": "alliance",
+      "label": "EPIC Center HBM 合作"
+    },
+    {
+      "from": "AMAT",
+      "to": "Micron",
+      "type": "alliance",
+      "label": "EPIC Center DRAM 合作"
+    },
+    {
+      "from": "AMAT",
+      "to": "Samsung",
+      "type": "alliance",
+      "label": "EPIC Center 設備研發"
+    },
+    {
+      "from": "AMAT",
+      "to": "BESI",
+      "type": "alliance",
+      "label": "擴大合作 · 持股 9%"
+    },
+    {
+      "from": "ASML",
+      "to": "BESI",
+      "type": "competition",
+      "label": "混合鍵合技術競合"
+    },
+    {
+      "from": "TSMC",
+      "to": "ASE",
+      "type": "alliance",
+      "label": "CoWoS-S/R 外包合作"
+    },
+    {
+      "from": "TSMC",
+      "to": "Amkor",
+      "type": "alliance",
+      "label": "亞利桑那州封測合作"
+    },
+    {
+      "from": "TSMC",
+      "to": "KYEC",
+      "type": "alliance",
+      "label": "AI 晶片 CP/FT 測試委外"
+    },
+    {
+      "from": "ASE",
+      "to": "Amkor",
+      "type": "competition",
+      "label": "全球先進封測競合"
+    },
+    {
+      "from": "SKHynix",
+      "to": "Samsung",
+      "type": "competition",
+      "label": "HBM4 規格與產能競爭"
+    },
+    {
+      "from": "SKHynix",
+      "to": "Micron",
+      "type": "competition",
+      "label": "HBM 龍頭與產能爭奪"
+    },
+    {
+      "from": "Samsung",
+      "to": "Micron",
+      "type": "competition",
+      "label": "DRAM/HBM 價格競爭"
+    },
+    {
+      "from": "TSMC",
+      "to": "JCET",
+      "type": "hostility",
+      "label": "先進製程美規設備限制"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "Rubin / Blackwell 代工 (CoWoS 51.4%)"
+    },
+    {
+      "from": "Broadcom",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "ASIC 代工 (CoWoS 16.2%)"
+    },
+    {
+      "from": "AMD",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "MI450 / Venice 2nm 代工"
+    },
+    {
+      "from": "Intel",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "夥伴關係 · 外部代工釋單"
+    },
+    {
+      "from": "Apple",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "A20 / M 系列獨家代工"
+    },
+    {
+      "from": "MTK",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "A14 製程測試晶片"
+    },
+    {
+      "from": "AMD",
+      "to": "ASE",
+      "type": "cooperation",
+      "label": "MI450 部分封裝委外"
+    },
+    {
+      "from": "Broadcom",
+      "to": "ASE",
+      "type": "cooperation",
+      "label": "客製化 ASIC 封裝"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "KYEC",
+      "type": "cooperation",
+      "label": "Rubin 晶片最終測試"
+    },
+    {
+      "from": "Intel",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "NVIDIA 投資 50 億美金"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "AMD",
+      "type": "competition",
+      "label": "GPU 與 Vera CPU 雙線競爭"
+    },
+    {
+      "from": "Broadcom",
+      "to": "Intel",
+      "type": "competition",
+      "label": "自研 ASIC vs 通用晶片"
+    },
+    {
+      "from": "SKHynix",
+      "to": "NVIDIA",
+      "type": "supply",
+      "label": "HBM4 驗證首批供應"
+    },
+    {
+      "from": "Samsung",
+      "to": "NVIDIA",
+      "type": "supply",
+      "label": "12 層 HBM4E 傳通過驗證"
+    },
+    {
+      "from": "Micron",
+      "to": "NVIDIA",
+      "type": "supply",
+      "label": "HBM4 高毛利合約出貨"
+    },
+    {
+      "from": "Google",
+      "to": "Broadcom",
+      "type": "cooperation",
+      "label": "TPU 客製化晶片開發"
+    },
+    {
+      "from": "Meta",
+      "to": "AMD",
+      "type": "cooperation",
+      "label": "MI450 6GW · Muse 帶動 EPYC"
+    },
+    {
+      "from": "Meta",
+      "to": "Broadcom",
+      "type": "cooperation",
+      "label": "MTIA 晶片客製化"
+    },
+    {
+      "from": "Meta",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "Rubin 算力集群採購"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Dell",
+      "type": "cooperation",
+      "label": "Rubin / NVL72 伺服器供應"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "HPE",
+      "type": "cooperation",
+      "label": "Enterprise AI 伺服器"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "SMCI",
+      "type": "cooperation",
+      "label": "液冷 AI 伺服器架構"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Lenovo",
+      "type": "cooperation",
+      "label": "Vera Rubin NVL72 出貨"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Foxconn",
+      "type": "cooperation",
+      "label": "NVL72 代工 · AI 智造合作"
+    },
+    {
+      "from": "CoreWeave",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "GPU 雲端算力大採購"
+    },
+    {
+      "from": "CoreWeave",
+      "to": "SMCI",
+      "type": "cooperation",
+      "label": "伺服器硬體整櫃採購"
+    },
+    {
+      "from": "Foxconn",
+      "to": "Dell",
+      "type": "cooperation",
+      "label": "AI 伺服器 L10/L11 組裝"
+    },
+    {
+      "from": "Foxconn",
+      "to": "HPE",
+      "type": "cooperation",
+      "label": "AI 伺服器代工製造"
+    },
+    {
+      "from": "Foxconn",
+      "to": "SMCI",
+      "type": "cooperation",
+      "label": "主板與機殼代工"
+    },
+    {
+      "from": "Dell",
+      "to": "SMCI",
+      "type": "competition",
+      "label": "AI 伺服器市佔率爭奪"
+    },
+    {
+      "from": "Dell",
+      "to": "HPE",
+      "type": "competition",
+      "label": "企業級 AI 伺服器競爭"
+    },
+    {
+      "from": "Lenovo",
+      "to": "Dell",
+      "type": "competition",
+      "label": "全球品牌伺服器競爭"
+    },
+    {
+      "from": "Netlist",
+      "to": "Micron",
+      "type": "cooperation",
+      "label": "6 億美元和解 · HBM 授權 5 年"
+    },
+    {
+      "from": "Netlist",
+      "to": "NVIDIA",
+      "type": "hostility",
+      "label": "HBM 專利訴訟 (下游)"
+    },
+    {
+      "from": "Netlist",
+      "to": "Broadcom",
+      "type": "hostility",
+      "label": "HBM 專利訴訟 (下游)"
+    },
+    {
+      "from": "Netlist",
+      "to": "Google",
+      "type": "hostility",
+      "label": "HBM 專利訴訟 (下游)"
+    },
+    {
+      "from": "SKHynix",
+      "to": "Winpac",
+      "type": "cooperation",
+      "label": "DDR4/DDR5 封裝委外"
+    },
+    {
+      "from": "Google",
+      "to": "MTK",
+      "type": "cooperation",
+      "label": "TPU 設計服務"
+    },
+    {
+      "from": "AMD",
+      "to": "HPE",
+      "type": "supply",
+      "label": "Helios AI 機櫃"
+    },
+    {
+      "from": "Vultr",
+      "to": "HPE",
+      "type": "cooperation",
+      "label": "12 億美元 Helios 機櫃"
+    },
+    {
+      "from": "Huawei",
+      "to": "JCET",
+      "type": "cooperation",
+      "label": "ASIC 加速器封裝"
+    },
+    {
+      "from": "Google",
+      "to": "NVIDIA",
+      "type": "competition",
+      "label": "TorchTPU 挑戰 CUDA"
+    },
+    {
+      "from": "AWS",
+      "to": "NVIDIA",
+      "type": "competition",
+      "label": "TorchNeuron 挑戰 CUDA"
+    },
+    {
+      "from": "Terafab",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "洽合作 · 台積電需掌營運主導"
+    },
+    {
+      "from": "Tesla",
+      "to": "Terafab",
+      "type": "alliance",
+      "label": "SpaceX、Tesla 支持的晶片計畫"
+    },
+    {
+      "from": "Qualcomm",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "2 款旗艦平台 2nm 代工"
+    },
+    {
+      "from": "TSMC",
+      "to": "Samsung",
+      "type": "competition",
+      "label": "高通 2nm 訂單爭奪"
+    },
+    {
+      "from": "Broadcom",
+      "to": "Anthropic",
+      "type": "alliance",
+      "label": "630 億美元 SPV 設備租賃"
+    },
+    {
+      "from": "Micron",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "NVHBM base die 外部代工"
+    },
+    {
+      "from": "Huawei",
+      "to": "NVIDIA",
+      "type": "competition",
+      "label": "中國市佔 28% vs 34%"
+    },
+    {
+      "from": "MTK",
+      "to": "Samsung",
+      "type": "cooperation",
+      "label": "天璣 9500 搭載 Tab S12"
+    },
+    {
+      "from": "GF",
+      "to": "TSMC",
+      "type": "supply",
+      "label": "CoWoS 矽中介層 · 20 億美元"
+    },
+    {
+      "from": "Broadcom",
+      "to": "OpenAI",
+      "type": "alliance",
+      "label": "洽逾 500 億美元晶片融資"
+    },
+    {
+      "from": "OpenAI",
+      "to": "Broadcom",
+      "type": "cooperation",
+      "label": "共同開發客製 AI 晶片"
+    },
+    {
+      "from": "SpaceX",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "下訂 93.6 萬顆 GB300"
+    },
+    {
+      "from": "SpaceX",
+      "to": "Terafab",
+      "type": "alliance",
+      "label": "與 Tesla、英特爾合資"
+    },
+    {
+      "from": "Intel",
+      "to": "Terafab",
+      "type": "alliance",
+      "label": "持續參與 Terafab"
+    },
+    {
+      "from": "Oracle",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "融資採購 AI 晶片"
+    },
+    {
+      "from": "Vicor",
+      "to": "Foxconn",
+      "type": "hostility",
+      "label": "VPD 337 調查"
+    },
+    {
+      "from": "Vicor",
+      "to": "Delta",
+      "type": "hostility",
+      "label": "VPD 337 調查"
+    },
+    {
+      "from": "Vicor",
+      "to": "Luxshare",
+      "type": "hostility",
+      "label": "VPD 337 調查"
+    },
+    {
+      "from": "Samsung",
+      "to": "AMD",
+      "type": "supply",
+      "label": "HBM 供應合作"
+    },
+    {
+      "from": "SKHynix",
+      "to": "AMD",
+      "type": "supply",
+      "label": "HBM 供應合作"
+    },
+    {
+      "from": "AMD",
+      "to": "Samsung",
+      "type": "cooperation",
+      "label": "探索晶圓代工合作"
+    },
+    {
+      "from": "Samsung",
+      "to": "TSMC",
+      "type": "cooperation",
+      "label": "HBM base die 傳採台積電 3nm"
+    },
+    {
+      "from": "CXMT",
+      "to": "Samsung",
+      "type": "competition",
+      "label": "4F² DRAM · 人才流動"
+    },
+    {
+      "from": "Huawei",
+      "to": "DeepSeek",
+      "type": "supply",
+      "label": "傳 16 萬顆昇騰 950DT"
+    },
+    {
+      "from": "Rapidus",
+      "to": "TSMC",
+      "type": "competition",
+      "label": "搶攻先進製程客戶"
+    },
+    {
+      "from": "Microsoft",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "Surface 搭 RTX Spark N1X"
+    },
+    {
+      "from": "AMAT",
+      "to": "Intel",
+      "type": "cooperation",
+      "label": "互連微縮與 Foveros 3D"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Figure",
+      "type": "alliance",
+      "label": "傳追加投資 10 億美元"
+    },
+    {
+      "from": "Google",
+      "to": "Marvell",
+      "type": "cooperation",
+      "label": "TPU 帶動 XPU 商機"
+    },
+    {
+      "from": "AWS",
+      "to": "Marvell",
+      "type": "cooperation",
+      "label": "Trainium 帶動 XPU 商機"
+    },
+    {
+      "from": "Microsoft",
+      "to": "Marvell",
+      "type": "cooperation",
+      "label": "Maia 帶動 XPU 商機"
+    },
+    {
+      "from": "Hanmi",
+      "to": "Semco",
+      "type": "supply",
+      "label": "245 億韓元設備訂單"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Semco",
+      "type": "alliance",
+      "label": "共同投資世宗、釜山載板產線"
+    },
+    {
+      "from": "Tesla",
+      "to": "Semco",
+      "type": "alliance",
+      "label": "傳合投 3.7 兆韓元擴 ABF"
+    },
+    {
+      "from": "Semco",
+      "to": "NVIDIA",
+      "type": "supply",
+      "label": "AI 晶片載板長期供貨"
+    },
+    {
+      "from": "Unimicron",
+      "to": "NVIDIA",
+      "type": "supply",
+      "label": "高階載板 · 產能訂至 2028"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "ASE",
+      "type": "cooperation",
+      "label": "矽品 CPO 產能擴充"
+    },
+    {
+      "from": "Infineon",
+      "to": "NVIDIA",
+      "type": "cooperation",
+      "label": "GaN 高壓 IBC 供電方案"
+    },
+    {
+      "from": "Fujifilm",
+      "to": "Samsung",
+      "type": "supply",
+      "label": "EUV 光阻、CMP 研磨液"
+    },
+    {
+      "from": "NTT",
+      "to": "Shinko",
+      "type": "alliance",
+      "label": "AI 光互連一條龍量產鏈"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Nokia",
+      "type": "cooperation",
+      "label": "GTC 柏林宣布合作"
+    },
+    {
+      "from": "SMCI",
+      "to": "Nokia",
+      "type": "cooperation",
+      "label": "Aerial RAN 邊緣方案"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Modal",
+      "type": "supply",
+      "label": "Vera CPU 訂單"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Intel",
+      "type": "competition",
+      "label": "Vera CPU 搶伺服器 CPU"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Meta",
+      "type": "alliance",
+      "label": "擬認購 Meta A 類普通股"
+    },
+    {
+      "from": "AMD",
+      "to": "Meta",
+      "type": "alliance",
+      "label": "擬認購 Meta A 類普通股"
+    },
+    {
+      "from": "Broadcom",
+      "to": "Meta",
+      "type": "alliance",
+      "label": "擬認購 Meta A 類普通股"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "CoreWeave",
+      "type": "alliance",
+      "label": "持股約一成 · 投資 20 億美元"
+    },
+    {
+      "from": "Google",
+      "to": "Meta",
+      "type": "supply",
+      "label": "TPU 進入 Meta 推論服務"
+    },
+    {
+      "from": "Tesla",
+      "to": "SpaceX",
+      "type": "alliance",
+      "label": "評估合併"
+    },
+    {
+      "from": "CXMT",
+      "to": "Micron",
+      "type": "competition",
+      "label": "4F² vs 3D DRAM 路線"
+    }
+  ],
+  "analysis": {
+    "overview": "本週圖上共 60 家公司、120 條關係,NVIDIA 以 32 條關係超越台積電 (24 條) 成為最大樞紐,三星以 12 條居第三。新增 19 條關係中有 10 條與 NVIDIA 相關,涵蓋載板 (三星電機、欣興)、封裝 (矽品 CPO)、供電 (英飛凌) 與 Meta 新股認購;新加入的英飛凌、富士軟片、NTT、諾基亞與 Modal,反映 AI 供應鏈正往材料、供電、光互連與 CPU 延伸。",
+    "supply": "供應關係 27 條,上游流向中游仍最多 (11 條)。本週新增的重點在載板:三星電機、欣興對 NVIDIA 的長期供貨,欣興產能已被 NVIDIA 預訂至 2028 年;富士軟片則擴充南韓 EUV 光阻與 CMP 研磨液供應三星。下游之間也出現新的供應線:Google TPU 進入 Meta 推論服務,NVIDIA Vera CPU 供應 Modal。",
+    "cooperation": "合作關係 47 條,其中 26 條在下游之間、14 條由下游連向中游,反映晶片商、系統廠與雲端綁定愈來愈緊。本週新增 NVIDIA 與矽品擴充 CPO 產能、與英飛凌開發 GaN 高壓 IBC 供電方案,以及 NVIDIA、美超微分別與諾基亞合作 AI-RAN 與邊緣方案。",
+    "alliance": "結盟 / 入股關係 21 條,本週新增 8 條,是變化最大的一類。資本開始直接流向產能與客戶:NVIDIA 與 Tesla 傳合計投資三星電機 3.7 兆韓元擴產 ABF 載板,NVIDIA、AMD、博通擬合計認購 Meta 最多 50 億美元新股,NVIDIA 持有 CoreWeave 約一成股權;博通則以 630 億美元 SPV 支援 Anthropic。",
+    "competition": "競爭關係 18 條,集中在下游 (9 條) 與中游 (8 條)。下游的戰線從 GPU 延伸到軟體與 CPU:Google TorchTPU 與 AWS TorchNeuron 挑戰 CUDA,NVIDIA Vera CPU 則同時對上英特爾與 AMD;中游方面,長鑫推 4F² DDR5、美光選擇轉向 3D DRAM,華為在中國市佔已追至 28%。",
+    "hostility": "對立關係 7 條,主要仍是 Vicor 的垂直供電 337 調查與 Netlist 的 HBM 專利訴訟,本週沒有新增。不過台積電尋求無稀土馬達、B300 傳出現在中國電信相關網路,顯示地緣風險已延伸到設備零件與出口管制執行面。",
+    "watch": [
+      "SK 海力士 10 月 28 日財報:營益能否達 FnGuide 預估 76.964 兆韓元,以及 Solidigm 美國擴產的替代融資方案",
+      "Meta 950 億美元籌資與 CDS 利差、CoreWeave 債券殖利率,檢驗 AI 融資鏈承受度",
+      "三星電機 3.7 兆韓元載板投資是否正式宣布,以及 NVIDIA 6 家擴產夥伴的後續名單",
+      "微軟週三、蘋果 11 月 2 日財報對 AI 資本支出與雲端需求的說法"
+    ]
+  }
+}
