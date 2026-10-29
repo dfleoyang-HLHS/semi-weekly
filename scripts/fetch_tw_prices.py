@@ -17,6 +17,9 @@ fetch_tw_prices.py
   python scripts/fetch_tw_prices.py                    # 抓最新一個交易日 (每日排程)
   python scripts/fetch_tw_prices.py --backfill 13      # 補建最近 13 個月的歷史收盤價 (首次使用)
   python scripts/fetch_tw_prices.py --backfill 13 --only 4979,8021   # 只補建指定代號 (新增公司時)
+
+每日排程也會以台積電的月資料核對近 14 天的交易日,有個股缺漏 (例如當天抓取中斷) 時自動補抓該月資料。
+最新收盤抓取失敗且資料沒有更新時,程式以錯誤結束,讓 Actions 顯示失敗,不再當成非交易日略過。
 """
 
 import json
@@ -58,10 +61,20 @@ SSL_CTX = ssl.create_default_context()
 SSL_CTX.verify_flags &= ~getattr(ssl, "VERIFY_X509_STRICT", 0)
 
 
+RETRY_WAITS = (5, 15, 30)  # 連線中斷 (IncompleteRead、逾時等) 時的重試間隔 (秒)
+
+
 def get_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (semi-weekly)"})
-    with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as resp:
-        return json.load(resp)
+    for wait in (*RETRY_WAITS, None):
+        try:
+            with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as resp:
+                return json.load(resp)
+        except Exception as e:
+            if wait is None:
+                raise
+            print(f"  ↻ {url.split('?')[0]} 抓取失敗 ({e}),{wait} 秒後重試", flush=True)
+            time.sleep(wait)
 
 
 def roc_to_iso(s):
@@ -136,6 +149,39 @@ def add_history(history, code, rows):
     merged = dict(map(tuple, history.get(code, [])))
     merged.update(rows)
     history[code] = sorted([d, p] for d, p in merged.items())
+
+
+GAP_DAYS = 14  # 每日核對最近幾天的交易日是否有缺漏
+
+
+def fill_gaps(history, cutoff):
+    """以台積電月資料取得近 GAP_DAYS 天的實際交易日,補抓有缺漏的個股。回傳補上的 [(代號, 日期), ...]"""
+    since = (date.fromisoformat(cutoff) - timedelta(days=GAP_DAYS)).isoformat()
+    months = sorted({date.fromisoformat(since).replace(day=1), date.fromisoformat(cutoff).replace(day=1)})
+    try:
+        ref = [r for m in months for r in fetch_month("2330", "上市", m)]
+    except Exception as e:
+        print(f"  ⚠️  交易日核對失敗 (略過補抓): {e}", flush=True)
+        return []
+    trade_days = {d for d, _ in ref if since <= d <= cutoff}
+    filled = []
+    for code, (name, market) in WATCHLIST.items():
+        have = {d for d, _ in history.get(code, [])}
+        lack = trade_days - have
+        if not lack:
+            continue
+        for m in sorted({date.fromisoformat(d).replace(day=1) for d in lack}):
+            time.sleep(3.5)  # 證交所限制請求頻率
+            try:
+                rows = [r for r in fetch_month(code, market, m) if r[0] in lack]
+            except Exception as e:
+                print(f"  ⚠️  {code} {name} {m:%Y-%m} 補抓失敗: {e}", flush=True)
+                continue
+            add_history(history, code, rows)
+            filled += [(code, d) for d, _ in rows]
+    if filled:
+        print(f"  🩹 補上缺漏的交易日:{', '.join(sorted({d for _, d in filled}))} (共 {len(filled)} 筆)", flush=True)
+    return filled
 
 
 LIMIT = 0.105  # 台股漲跌幅限制 10%;單日變動超過此值必為除權、分割或減資
@@ -215,10 +261,12 @@ def main():
                 time.sleep(3.5)  # 證交所限制請求頻率 (約每 5 秒 3 次)
             print(f"  {code} {name}: 補建 {got} 個交易日", flush=True)
 
+    fetch_error = None
     try:
         latest = fetch_latest()
     except Exception as e:  # 最新收盤抓取失敗時,仍保留已補建的歷史 (不讓補建白做)
         print(f"  ⚠️  最新收盤抓取失敗,僅使用歷史資料:{e}", flush=True)
+        fetch_error = e
         latest = {}
     # 當日行情比開放資料 API 早公布;較新的日期優先
     for code, (d, c) in fetch_today(datetime.now(TZ).date()).items():
@@ -232,6 +280,8 @@ def main():
         for code in history:
             history[code] = [r for r in history[code] if r[0] <= cutoff]
     missing = [c for c in WATCHLIST if c not in latest]
+    cutoff = max((d for d, _ in latest.values()), default=old.get("as_of"))
+    gap_filled = fill_gaps(history, cutoff) if cutoff else []
 
     stocks = {code: s for code in WATCHLIST if (s := compute(code, history.get(code, [])))}
     if not stocks:
@@ -245,7 +295,9 @@ def main():
     # 同一交易日再次執行時 (例如 14:00 上櫃尚未公布、16:00 補抓),有原本「未更新」的個股補上才寫檔
     old_stale = {c for c, s in old.get("stocks", {}).items() if s.get("stale")}
     filled = old_stale - {c for c, s in stocks.items() if s.get("stale")}
-    if as_of == old.get("as_of") and not filled and "--backfill" not in sys.argv and "--force" not in sys.argv:
+    if as_of == old.get("as_of") and not filled and not gap_filled and "--backfill" not in sys.argv and "--force" not in sys.argv:
+        if fetch_error and not latest:  # 抓取失敗不能當成非交易日,讓 Actions 顯示失敗以便察覺
+            sys.exit(f"❌ 台股收盤抓取失敗 (已重試 {len(RETRY_WAITS)} 次),資料停在 {as_of}:{fetch_error}")
         print(f"ℹ️  最新交易日仍為 {as_of},今日非交易日或資料未更新,略過")
         return
 
