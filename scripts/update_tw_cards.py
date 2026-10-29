@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 update_tw_cards.py
-每日 15:00 (台灣時間) 更新「台股追蹤」卡片的指標、近期重點與標籤 (data/tw_stocks.json)。
+週一~五 22:13 (台灣時間,Claude 雲端排程) 更新「台股追蹤」卡片的指標、近期重點與標籤 (data/tw_stocks.json)。
 
 流程:
   1. 從新聞資料庫取出「上次檢查之後」新收錄的新聞 (以 archive id 記錄,不重複處理)
@@ -12,9 +12,9 @@ update_tw_cards.py
 
 用法:
   python scripts/update_tw_cards.py [--dry-run]       雲端 (Claude API) 版,目前只供手動執行
-  python scripts/update_tw_cards.py --prepare 檔案     本機排程版第 1 步:列出有新新聞的公司、目前卡片與新聞 (不呼叫 API)
-  python scripts/update_tw_cards.py --apply 檔案       本機排程版第 3 步:檢查格式後寫入卡片與檢查紀錄
-  (第 2 步由本機的 Claude 依新聞整理並事實查核,寫成 --apply 的輸入檔)
+  python scripts/update_tw_cards.py --prepare 檔案     排程版第 1 步:列出有新新聞的公司、目前卡片與新聞 (不呼叫 API)
+  python scripts/update_tw_cards.py --apply 檔案       排程版第 3 步:檢查格式後寫入卡片與檢查紀錄
+  (第 2 步由排程中的 Claude 依新聞整理並事實查核,寫成 --apply 的輸入檔)
 """
 
 import json
