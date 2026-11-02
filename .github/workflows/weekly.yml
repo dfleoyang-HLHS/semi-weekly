@@ -199,8 +199,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          [ "$(date +%u)" = "1" ] || exit 0
-          tag="$(date +%G)-W$(date +%V)"
+          # 排程常延遲數小時:只在台灣週一 12:00 ~ 週二 12:00 檢查 (週日 20:00 的排程延到週一凌晨時不檢查)
+          dow=$(date +%u); hour=$(date +%-H)
+          if [ "$dow" = "1" ] && [ "$hour" -ge 12 ]; then tag="$(date +%G)-W$(date +%V)"
+          elif [ "$dow" = "2" ] && [ "$hour" -lt 12 ]; then tag="$(date -d yesterday +%G)-W$(date -d yesterday +%V)"
+          else exit 0; fi
           git pull -q origin main
           if [ -f "posts/${tag}-semi-weekly.md" ]; then echo "✅ ${tag} 週報已發佈"; exit 0; fi
           if [ -n "$(gh pr list --state all --head "weekly/${tag}" --json number -q '.[].number')" ]; then
