@@ -74,7 +74,7 @@ def finalize(work):
     graph = json.loads((work / "graph.json").read_text(encoding="utf-8"))
     prev = latest_supplychain(tag)
     graph = attach_news(validate_graph(graph), items, prev)
-    graph = {"week": tag, "date": day, **graph}
+    graph = {**{k: v for k, v in graph.items() if k not in ("week", "date")}, "week": tag, "date": day}
     add_mentions(graph, day)
     sc_path = DATA_DIR / f"supplychain-{tag}.json"
     sc_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
