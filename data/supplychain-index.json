@@ -1,6 +1,14 @@
 {
-  "latest": "2026-W42",
+  "latest": "2026-W44",
   "weeks": [
+    {
+      "week": "2026-W44",
+      "date": "2026-10-27",
+      "title": "Meta 現金流轉負引爆 AI 融資疑慮 · NVIDIA 鎖定載板與封測產能",
+      "file": "supplychain-2026-W44.json",
+      "node_count": 60,
+      "edge_count": 120
+    },
     {
       "week": "2026-W42",
       "date": "2026-10-12",
@@ -8,14 +16,6 @@
       "file": "supplychain-2026-W42.json",
       "node_count": 55,
       "edge_count": 101
-    },
-    {
-      "week": "2026-W42",
-      "date": "2026-10-12",
-      "title": "Meta 現金流轉負引爆 AI 融資疑慮 · NVIDIA 鎖定載板與封測產能",
-      "file": "supplychain-2026-W44.json",
-      "node_count": 60,
-      "edge_count": 120
     },
     {
       "week": "2026-W41",
