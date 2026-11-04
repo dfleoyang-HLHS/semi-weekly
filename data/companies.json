@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 70,
+    "count": 71,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -72,12 +72,13 @@
       "2026-10-23-brief",
       "2026-10-28-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 70,
+    "count": 71,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -148,12 +149,13 @@
       "2026-10-23-brief",
       "2026-10-28-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 70,
+    "count": 71,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -224,7 +226,8 @@
       "2026-10-23-brief",
       "2026-10-28-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
@@ -303,7 +306,7 @@
   },
   {
     "name": "Intel",
-    "count": 62,
+    "count": 63,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -366,12 +369,13 @@
       "2026-10-21-brief",
       "2026-10-23-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
     "name": "Micron",
-    "count": 57,
+    "count": 58,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -429,12 +433,13 @@
       "2026-10-23-brief",
       "2026-10-28-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
     "name": "AMD",
-    "count": 48,
+    "count": 49,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -483,7 +488,8 @@
       "2026-10-23-brief",
       "2026-10-28-brief",
       "2026-10-30-brief",
-      "2026-11-02-brief"
+      "2026-11-02-brief",
+      "2026-11-04-brief"
     ]
   },
   {
@@ -638,6 +644,25 @@
     ]
   },
   {
+    "name": "Meta",
+    "count": 13,
+    "articles": [
+      "2026-W41-semi-weekly",
+      "2026-W44-semi-weekly",
+      "2026-W45-semi-weekly",
+      "2026-10-02-brief",
+      "2026-10-07-brief",
+      "2026-10-09-brief",
+      "2026-10-16-brief",
+      "2026-10-21-brief",
+      "2026-10-23-brief",
+      "2026-10-28-brief",
+      "2026-10-30-brief",
+      "2026-11-02-brief",
+      "2026-11-04-brief"
+    ]
+  },
+  {
     "name": "Amkor",
     "count": 12,
     "articles": [
@@ -671,24 +696,6 @@
       "2026-08-20-brief",
       "2026-08-23-brief",
       "2026-09-20-brief"
-    ]
-  },
-  {
-    "name": "Meta",
-    "count": 12,
-    "articles": [
-      "2026-W41-semi-weekly",
-      "2026-W44-semi-weekly",
-      "2026-W45-semi-weekly",
-      "2026-10-02-brief",
-      "2026-10-07-brief",
-      "2026-10-09-brief",
-      "2026-10-16-brief",
-      "2026-10-21-brief",
-      "2026-10-23-brief",
-      "2026-10-28-brief",
-      "2026-10-30-brief",
-      "2026-11-02-brief"
     ]
   },
   {
@@ -751,6 +758,18 @@
     ]
   },
   {
+    "name": "Marvell",
+    "count": 6,
+    "articles": [
+      "2026-W42-semi-weekly",
+      "2026-W45-semi-weekly",
+      "2026-10-07-brief",
+      "2026-10-30-brief",
+      "2026-11-02-brief",
+      "2026-11-04-brief"
+    ]
+  },
+  {
     "name": "Ibiden",
     "count": 5,
     "articles": [
@@ -759,17 +778,6 @@
       "2026-W45-semi-weekly",
       "2026-06-16-brief",
       "2026-07-14-brief"
-    ]
-  },
-  {
-    "name": "Marvell",
-    "count": 5,
-    "articles": [
-      "2026-W42-semi-weekly",
-      "2026-W45-semi-weekly",
-      "2026-10-07-brief",
-      "2026-10-30-brief",
-      "2026-11-02-brief"
     ]
   },
   {
@@ -1276,6 +1284,20 @@
     "count": 1,
     "articles": [
       "2026-W45-semi-weekly"
+    ]
+  },
+  {
+    "name": "LuxNet",
+    "count": 1,
+    "articles": [
+      "2026-11-04-brief"
+    ]
+  },
+  {
+    "name": "Winbond",
+    "count": 1,
+    "articles": [
+      "2026-11-04-brief"
     ]
   }
 ]
