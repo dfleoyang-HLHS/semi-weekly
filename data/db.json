@@ -1,7 +1,43 @@
 {
-  "generated_at": "2026-11-06T22:20:23.306181",
-  "total": 72,
+  "generated_at": "2026-11-09T09:25:30.442250",
+  "total": 73,
   "articles": [
+    {
+      "slug": "2026-11-09-brief",
+      "filename": "news/2026-11-09-brief.md",
+      "title": "新聞快訊 (2026-11-09 週一)",
+      "date": "2026-11-09",
+      "week": "2026-W46",
+      "category": "新聞快訊",
+      "regions": [
+        "韓國",
+        "美國",
+        "台灣",
+        "日本",
+        "中國大陸",
+        "歐洲"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Samsung",
+        "TSMC",
+        "Intel",
+        "SK Hynix",
+        "AMD",
+        "KYEC",
+        "Micron",
+        "LuxNet",
+        "Tesla"
+      ],
+      "tags": [
+        "新聞快訊",
+        "半導體",
+        "AI 供應鏈"
+      ],
+      "summary": "本日抓取 67 則半導體與 AI 供應鏈相關新聞,涵蓋 6 個區域、10 家主要公司。",
+      "cover_image": "",
+      "word_count": 20711
+    },
     {
       "slug": "2026-11-06-brief",
       "filename": "news/2026-11-06-brief.md",

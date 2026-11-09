@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 72,
+    "count": 73,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -74,12 +74,13 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 72,
+    "count": 73,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -152,12 +153,13 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 72,
+    "count": 73,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -230,12 +232,13 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "SK Hynix",
-    "count": 69,
+    "count": 70,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -305,12 +308,13 @@
       "2026-10-28-brief",
       "2026-10-30-brief",
       "2026-11-02-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "Intel",
-    "count": 64,
+    "count": 65,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -375,12 +379,13 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "Micron",
-    "count": 59,
+    "count": 60,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -440,12 +445,13 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
     "name": "AMD",
-    "count": 50,
+    "count": 51,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -496,7 +502,8 @@
       "2026-10-30-brief",
       "2026-11-02-brief",
       "2026-11-04-brief",
-      "2026-11-06-brief"
+      "2026-11-06-brief",
+      "2026-11-09-brief"
     ]
   },
   {
@@ -671,6 +678,25 @@
     ]
   },
   {
+    "name": "Tesla",
+    "count": 13,
+    "articles": [
+      "2026-W41-semi-weekly",
+      "2026-W44-semi-weekly",
+      "2026-W45-semi-weekly",
+      "2026-10-02-brief",
+      "2026-10-07-brief",
+      "2026-10-09-brief",
+      "2026-10-16-brief",
+      "2026-10-21-brief",
+      "2026-10-23-brief",
+      "2026-10-28-brief",
+      "2026-11-02-brief",
+      "2026-11-06-brief",
+      "2026-11-09-brief"
+    ]
+  },
+  {
     "name": "Amkor",
     "count": 12,
     "articles": [
@@ -707,24 +733,6 @@
     ]
   },
   {
-    "name": "Tesla",
-    "count": 12,
-    "articles": [
-      "2026-W41-semi-weekly",
-      "2026-W44-semi-weekly",
-      "2026-W45-semi-weekly",
-      "2026-10-02-brief",
-      "2026-10-07-brief",
-      "2026-10-09-brief",
-      "2026-10-16-brief",
-      "2026-10-21-brief",
-      "2026-10-23-brief",
-      "2026-10-28-brief",
-      "2026-11-02-brief",
-      "2026-11-06-brief"
-    ]
-  },
-  {
     "name": "SMIC",
     "count": 10,
     "articles": [
@@ -742,7 +750,7 @@
   },
   {
     "name": "KYEC",
-    "count": 8,
+    "count": 9,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -751,7 +759,8 @@
       "2026-06-11-brief",
       "2026-07-12-brief",
       "2026-07-14-brief",
-      "2026-09-20-brief"
+      "2026-09-20-brief",
+      "2026-11-09-brief"
     ]
   },
   {
@@ -1013,6 +1022,14 @@
     "articles": [
       "2026-W44-semi-weekly",
       "2026-W45-semi-weekly"
+    ]
+  },
+  {
+    "name": "LuxNet",
+    "count": 2,
+    "articles": [
+      "2026-11-04-brief",
+      "2026-11-09-brief"
     ]
   },
   {
@@ -1293,13 +1310,6 @@
     "count": 1,
     "articles": [
       "2026-W45-semi-weekly"
-    ]
-  },
-  {
-    "name": "LuxNet",
-    "count": 1,
-    "articles": [
-      "2026-11-04-brief"
     ]
   },
   {
