@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T10:56:55+08:00",
+ "updated_at": "2026-11-16T10:56:41+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -3746,6 +3746,62 @@
   {
    "channel": "孫慶龍",
    "format": "single",
+   "date": "2026-11-15",
+   "full": {
+    "id": "ztw-ZwrMgYA",
+    "channel": "孫慶龍",
+    "kind": "single",
+    "title": "台達電（2308）台積電（2330）便宜價是多少？",
+    "topic": "台達電（2308）台積電（2330）便宜價是多少？",
+    "raw_title": "台達電（2308）台積電（2330）便宜價是多少？",
+    "series": "",
+    "published": "2026-11-15",
+    "show_date": "2026-11-15",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "台達電",
+      "code": "2308",
+      "market": "上市"
+     },
+     {
+      "name": "台積電",
+      "code": "2330",
+      "market": "上市"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1042
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "孫慶龍",
+   "title": "台達電（2308）台積電（2330）便宜價是多少？",
+   "series": "",
+   "companies": [
+    {
+     "name": "台達電",
+     "code": "2308",
+     "market": "上市",
+     "count": 1
+    },
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市",
+     "count": 1
+    }
+   ],
+   "hashtags": []
+  },
+  {
+   "channel": "孫慶龍",
+   "format": "single",
    "date": "2026-11-13",
    "full": {
     "id": "LUu5KLsUaW0",
@@ -3904,38 +3960,6 @@
    "hashtags": []
   },
   {
-   "channel": "孫慶龍",
-   "format": "single",
-   "date": "2026-11-01",
-   "full": {
-    "id": "DugxREkUSGA",
-    "channel": "孫慶龍",
-    "kind": "single",
-    "title": "外資將大開殺戒？我買進這檔股票！",
-    "topic": "外資將大開殺戒？我買進這檔股票！",
-    "raw_title": "外資將大開殺戒？我買進這檔股票！",
-    "series": "",
-    "published": "2026-11-01",
-    "show_date": "2026-11-01",
-    "guests": [],
-    "chapters": [],
-    "hashtags": [],
-    "companies": [],
-    "part": null,
-    "part_label": "",
-    "segment": null,
-    "duration": 944
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "孫慶龍",
-   "title": "外資將大開殺戒？我買進這檔股票！",
-   "series": "",
-   "companies": [],
-   "hashtags": []
-  },
-  {
    "channel": "闕又上",
    "format": "single",
    "date": "2026-11-09",
@@ -3997,6 +4021,96 @@
    "title": "晨跑中，街燈下三位投資小白的告白",
    "series": "又上財經#384",
    "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-11-16",
+   "full": {
+    "id": "_h0gpc8s5jM",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/11/16(一)輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?【早晨財經速解讀】",
+    "topic": "輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?",
+    "raw_title": "2026/11/16(一)輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-11-16",
+    "show_date": "2026-11-16",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "02:10",
+      "topic": "股市概況"
+     },
+     {
+      "time": "04:00",
+      "topic": "資產績效"
+     },
+     {
+      "time": "06:00",
+      "topic": "輝達買盤"
+     },
+     {
+      "time": "10:40",
+      "topic": "回歸角力"
+     },
+     {
+      "time": "16:30",
+      "topic": "國安鷹派立場"
+     },
+     {
+      "time": "20:30",
+      "topic": "融資問題"
+     },
+     {
+      "time": "22:50",
+      "topic": "美股追蹤"
+     },
+     {
+      "time": "25:00",
+      "topic": "分散風險"
+     },
+     {
+      "time": "27:00",
+      "topic": "出口管制"
+     },
+     {
+      "time": "33:20",
+      "topic": "總結"
+     }
+    ],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "輝達",
+      "code": "NVDA",
+      "market": "美股"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2095
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?",
+   "series": "早晨財經速解讀",
+   "companies": [
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股",
+     "count": 1
+    }
+   ],
    "hashtags": []
   },
   {
@@ -8904,25 +9018,6 @@
   }
  ],
  "videos": [
-  {
-   "id": "DugxREkUSGA",
-   "channel": "孫慶龍",
-   "kind": "single",
-   "title": "外資將大開殺戒？我買進這檔股票！",
-   "topic": "外資將大開殺戒？我買進這檔股票！",
-   "raw_title": "外資將大開殺戒？我買進這檔股票！",
-   "series": "",
-   "published": "2026-11-01",
-   "show_date": "2026-11-01",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 944
-  },
   {
    "id": "adzWDkxEWMU",
    "channel": "游庭皓",
@@ -16897,6 +16992,127 @@
    "part_label": "上集",
    "segment": null,
    "duration": 2911
+  },
+  {
+   "id": "ztw-ZwrMgYA",
+   "channel": "孫慶龍",
+   "kind": "single",
+   "title": "台達電（2308）台積電（2330）便宜價是多少？",
+   "topic": "台達電（2308）台積電（2330）便宜價是多少？",
+   "raw_title": "台達電（2308）台積電（2330）便宜價是多少？",
+   "series": "",
+   "published": "2026-11-15",
+   "show_date": "2026-11-15",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "台達電",
+     "code": "2308",
+     "market": "上市"
+    },
+    {
+     "name": "台積電",
+     "code": "2330",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1042
+  },
+  {
+   "id": "_h0gpc8s5jM",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/11/16(一)輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?【早晨財經速解讀】",
+   "topic": "輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?",
+   "raw_title": "2026/11/16(一)輝達崩跌 散戶狂抄底 誰是贏家?矽谷對決華府!老黃復甦 華府大封殺?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-11-16",
+   "show_date": "2026-11-16",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "02:10",
+     "topic": "股市概況"
+    },
+    {
+     "time": "04:00",
+     "topic": "資產績效"
+    },
+    {
+     "time": "06:00",
+     "topic": "輝達買盤"
+    },
+    {
+     "time": "10:40",
+     "topic": "回歸角力"
+    },
+    {
+     "time": "16:30",
+     "topic": "國安鷹派立場"
+    },
+    {
+     "time": "20:30",
+     "topic": "融資問題"
+    },
+    {
+     "time": "22:50",
+     "topic": "美股追蹤"
+    },
+    {
+     "time": "25:00",
+     "topic": "分散風險"
+    },
+    {
+     "time": "27:00",
+     "topic": "出口管制"
+    },
+    {
+     "time": "33:20",
+     "topic": "總結"
+    }
+   ],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "輝達",
+     "code": "NVDA",
+     "market": "美股"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2095
+  },
+  {
+   "id": "4j0mgB2qzFI",
+   "channel": "錢線百分百",
+   "kind": "skip",
+   "title": "錢線百分百1116台股觀盤重點#shorts",
+   "topic": "錢線百分百1116台股觀盤重點#shorts",
+   "raw_title": "錢線百分百1116台股觀盤重點#shorts",
+   "series": "",
+   "published": "2026-11-16",
+   "show_date": "2026-11-16",
+   "guests": [
+    "shorts"
+   ],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 57
   }
  ]
 }
