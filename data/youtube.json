@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T11:21:48+08:00",
+ "updated_at": "2026-11-23T11:53:58+08:00",
  "days": 14,
  "source": "YouTube Data API",
  "channels": [
@@ -3644,6 +3644,51 @@
   {
    "channel": "孫慶龍",
    "format": "single",
+   "date": "2026-11-22",
+   "full": {
+    "id": "7ppGlOmYcIg",
+    "channel": "孫慶龍",
+    "kind": "single",
+    "title": "孫慶龍放棄鴻海(2317)了嗎？",
+    "topic": "孫慶龍放棄鴻海(2317)了嗎？",
+    "raw_title": "孫慶龍放棄鴻海(2317)了嗎？",
+    "series": "",
+    "published": "2026-11-22",
+    "show_date": "2026-11-22",
+    "guests": [],
+    "chapters": [],
+    "hashtags": [],
+    "companies": [
+     {
+      "name": "鴻海",
+      "code": "2317",
+      "market": "上市"
+     }
+    ],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 1176
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "孫慶龍",
+   "title": "孫慶龍放棄鴻海(2317)了嗎？",
+   "series": "",
+   "companies": [
+    {
+     "name": "鴻海",
+     "code": "2317",
+     "market": "上市",
+     "count": 1
+    }
+   ],
+   "hashtags": []
+  },
+  {
+   "channel": "孫慶龍",
+   "format": "single",
    "date": "2026-11-18",
    "full": {
     "id": "PlMv9GKXyWI",
@@ -3839,38 +3884,6 @@
    "hashtags": []
   },
   {
-   "channel": "孫慶龍",
-   "format": "single",
-   "date": "2026-11-08",
-   "full": {
-    "id": "lDaPT-jQEbY",
-    "channel": "孫慶龍",
-    "kind": "single",
-    "title": "Ai需求非比尋常，我還是要賣股票！",
-    "topic": "Ai需求非比尋常，我還是要賣股票！",
-    "raw_title": "Ai需求非比尋常，我還是要賣股票！",
-    "series": "",
-    "published": "2026-11-08",
-    "show_date": "2026-11-08",
-    "guests": [],
-    "chapters": [],
-    "hashtags": [],
-    "companies": [],
-    "part": null,
-    "part_label": "",
-    "segment": null,
-    "duration": 1237
-   },
-   "parts": [],
-   "clips": [],
-   "guests": [],
-   "host": "孫慶龍",
-   "title": "Ai需求非比尋常，我還是要賣股票！",
-   "series": "",
-   "companies": [],
-   "hashtags": []
-  },
-  {
    "channel": "闕又上",
    "format": "single",
    "date": "2026-11-16",
@@ -3931,6 +3944,83 @@
    "host": "闕又上",
    "title": "股市的鎮定劑，還是特效藥？",
    "series": "又上財經#385",
+   "companies": [],
+   "hashtags": []
+  },
+  {
+   "channel": "游庭皓",
+   "format": "single",
+   "date": "2026-11-23",
+   "full": {
+    "id": "wUTABzLMekc",
+    "channel": "游庭皓",
+    "kind": "single",
+    "title": "2026/11/23(一)融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?【早晨財經速解讀】",
+    "topic": "融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?",
+    "raw_title": "2026/11/23(一)融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?【早晨財經速解讀】",
+    "series": "早晨財經速解讀",
+    "published": "2026-11-23",
+    "show_date": "2026-11-23",
+    "guests": [],
+    "chapters": [
+     {
+      "time": "00:00",
+      "topic": "市場總覽"
+     },
+     {
+      "time": "02:00",
+      "topic": "市場概況"
+     },
+     {
+      "time": "06:00",
+      "topic": "個股波動"
+     },
+     {
+      "time": "09:30",
+      "topic": "通膨降溫"
+     },
+     {
+      "time": "12:40",
+      "topic": "亞股市況"
+     },
+     {
+      "time": "15:00",
+      "topic": "台股市況"
+     },
+     {
+      "time": "18:00",
+      "topic": "流動性枯竭"
+     },
+     {
+      "time": "22:00",
+      "topic": "金管會出招"
+     },
+     {
+      "time": "24:00",
+      "topic": "流動性問題"
+     },
+     {
+      "time": "28:25",
+      "topic": "國安基金"
+     },
+     {
+      "time": "30:10",
+      "topic": "長多與長空"
+     }
+    ],
+    "hashtags": [],
+    "companies": [],
+    "part": null,
+    "part_label": "",
+    "segment": null,
+    "duration": 2024
+   },
+   "parts": [],
+   "clips": [],
+   "guests": [],
+   "host": "游庭皓",
+   "title": "融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?",
+   "series": "早晨財經速解讀",
    "companies": [],
    "hashtags": []
   },
@@ -8835,25 +8925,6 @@
   }
  ],
  "videos": [
-  {
-   "id": "lDaPT-jQEbY",
-   "channel": "孫慶龍",
-   "kind": "single",
-   "title": "Ai需求非比尋常，我還是要賣股票！",
-   "topic": "Ai需求非比尋常，我還是要賣股票！",
-   "raw_title": "Ai需求非比尋常，我還是要賣股票！",
-   "series": "",
-   "published": "2026-11-08",
-   "show_date": "2026-11-08",
-   "guests": [],
-   "chapters": [],
-   "hashtags": [],
-   "companies": [],
-   "part": null,
-   "part_label": "",
-   "segment": null,
-   "duration": 1237
-  },
   {
    "id": "eet_LPUY8Q0",
    "channel": "游庭皓",
@@ -16744,6 +16815,126 @@
    "part_label": "",
    "segment": null,
    "duration": 55
+  },
+  {
+   "id": "7ppGlOmYcIg",
+   "channel": "孫慶龍",
+   "kind": "single",
+   "title": "孫慶龍放棄鴻海(2317)了嗎？",
+   "topic": "孫慶龍放棄鴻海(2317)了嗎？",
+   "raw_title": "孫慶龍放棄鴻海(2317)了嗎？",
+   "series": "",
+   "published": "2026-11-22",
+   "show_date": "2026-11-22",
+   "guests": [],
+   "chapters": [],
+   "hashtags": [],
+   "companies": [
+    {
+     "name": "鴻海",
+     "code": "2317",
+     "market": "上市"
+    }
+   ],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 1176
+  },
+  {
+   "id": "10CyB2yGH7o",
+   "channel": "闕又上",
+   "kind": "single",
+   "title": "槓桿遇上股災有多可怕？老師用自己的帳戶示範｜#學員真心話",
+   "topic": "槓桿遇上股災有多可怕？老師用自己的帳戶示範",
+   "raw_title": "槓桿遇上股災有多可怕？老師用自己的帳戶示範｜#學員真心話 #shorts #又上財經學院",
+   "series": "",
+   "published": "2026-11-22",
+   "show_date": "2026-11-22",
+   "guests": [
+    "#學員真心話 #shorts #又上財經學院"
+   ],
+   "chapters": [],
+   "hashtags": [
+    "闕又上",
+    "又上財經學院",
+    "論壇大會",
+    "學員見證",
+    "投資理財",
+    "槓桿",
+    "股災",
+    "shorts",
+    "學員真心話"
+   ],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 63
+  },
+  {
+   "id": "wUTABzLMekc",
+   "channel": "游庭皓",
+   "kind": "single",
+   "title": "2026/11/23(一)融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?【早晨財經速解讀】",
+   "topic": "融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?",
+   "raw_title": "2026/11/23(一)融資斷頭大逃殺 政府全面救市!誰能解決 流動性問題?【早晨財經速解讀】",
+   "series": "早晨財經速解讀",
+   "published": "2026-11-23",
+   "show_date": "2026-11-23",
+   "guests": [],
+   "chapters": [
+    {
+     "time": "00:00",
+     "topic": "市場總覽"
+    },
+    {
+     "time": "02:00",
+     "topic": "市場概況"
+    },
+    {
+     "time": "06:00",
+     "topic": "個股波動"
+    },
+    {
+     "time": "09:30",
+     "topic": "通膨降溫"
+    },
+    {
+     "time": "12:40",
+     "topic": "亞股市況"
+    },
+    {
+     "time": "15:00",
+     "topic": "台股市況"
+    },
+    {
+     "time": "18:00",
+     "topic": "流動性枯竭"
+    },
+    {
+     "time": "22:00",
+     "topic": "金管會出招"
+    },
+    {
+     "time": "24:00",
+     "topic": "流動性問題"
+    },
+    {
+     "time": "28:25",
+     "topic": "國安基金"
+    },
+    {
+     "time": "30:10",
+     "topic": "長多與長空"
+    }
+   ],
+   "hashtags": [],
+   "companies": [],
+   "part": null,
+   "part_label": "",
+   "segment": null,
+   "duration": 2024
   }
  ]
 }
