@@ -1,7 +1,7 @@
 [
   {
     "name": "TSMC",
-    "count": 80,
+    "count": 81,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -82,12 +82,13 @@
       "2026-11-13-brief",
       "2026-11-16-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "NVIDIA",
-    "count": 80,
+    "count": 81,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -168,12 +169,13 @@
       "2026-11-13-brief",
       "2026-11-16-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "Samsung",
-    "count": 80,
+    "count": 81,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -254,12 +256,13 @@
       "2026-11-13-brief",
       "2026-11-16-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "SK Hynix",
-    "count": 77,
+    "count": 78,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -337,12 +340,13 @@
       "2026-11-13-brief",
       "2026-11-16-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "Intel",
-    "count": 69,
+    "count": 70,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -412,12 +416,13 @@
       "2026-11-06-brief",
       "2026-11-09-brief",
       "2026-11-11-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "Micron",
-    "count": 64,
+    "count": 65,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W40-semi-weekly",
@@ -482,12 +487,13 @@
       "2026-11-09-brief",
       "2026-11-13-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "AMD",
-    "count": 58,
+    "count": 59,
     "articles": [
       "2026-W21-cowos-weekly",
       "2026-W22-semi-weekly",
@@ -546,12 +552,13 @@
       "2026-11-13-brief",
       "2026-11-16-brief",
       "2026-11-18-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
     "name": "Broadcom",
-    "count": 43,
+    "count": 44,
     "articles": [
       "2026-W22-semi-weekly",
       "2026-W40-semi-weekly",
@@ -595,7 +602,8 @@
       "2026-11-11-brief",
       "2026-11-13-brief",
       "2026-11-16-brief",
-      "2026-11-20-brief"
+      "2026-11-20-brief",
+      "2026-11-23-brief"
     ]
   },
   {
@@ -738,7 +746,7 @@
   },
   {
     "name": "Meta",
-    "count": 16,
+    "count": 17,
     "articles": [
       "2026-W41-semi-weekly",
       "2026-W44-semi-weekly",
@@ -755,7 +763,8 @@
       "2026-11-02-brief",
       "2026-11-04-brief",
       "2026-11-06-brief",
-      "2026-11-18-brief"
+      "2026-11-18-brief",
+      "2026-11-23-brief"
     ]
   },
   {
@@ -879,6 +888,18 @@
     ]
   },
   {
+    "name": "Winbond",
+    "count": 6,
+    "articles": [
+      "2026-W46-semi-weekly",
+      "2026-W47-semi-weekly",
+      "2026-11-04-brief",
+      "2026-11-11-brief",
+      "2026-11-16-brief",
+      "2026-11-23-brief"
+    ]
+  },
+  {
     "name": "Ibiden",
     "count": 5,
     "articles": [
@@ -931,17 +952,6 @@
       "2026-W45-semi-weekly",
       "2026-W46-semi-weekly",
       "2026-W47-semi-weekly"
-    ]
-  },
-  {
-    "name": "Winbond",
-    "count": 5,
-    "articles": [
-      "2026-W46-semi-weekly",
-      "2026-W47-semi-weekly",
-      "2026-11-04-brief",
-      "2026-11-11-brief",
-      "2026-11-16-brief"
     ]
   },
   {
