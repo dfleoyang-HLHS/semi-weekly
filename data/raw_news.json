@@ -1,539 +1,1015 @@
 {
-  "fetched_at": "2026-11-23T02:12:32.859973+00:00",
+  "fetched_at": "2026-11-25T04:46:38.575784+00:00",
   "days_back": 7,
-  "total": 90,
+  "total": 148,
   "items": [
     {
-      "source": "TechNews 科技新報",
-      "title": "金融時報：黃樂背後晶片供應網牽涉太子集團",
-      "link": "https://technews.tw/2026/11/23/alice-huangs-links-to-the-chip-underworld/",
-      "summary": "英國金融時報（Financial Times）一項調查發現，日前爆出與輝達前執行長黃仁勳過從甚密的中國女商人黃 [&#8230;]",
-      "published": "2026-11-22T18:10:51+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "SK 海力士行使 CB 轉換權、將成鎧俠最大股東",
-      "link": "https://finance.technews.tw/2026/11/23/sk-hynix-to-become-top-shareholder-in-rival-kioxia-after-bond-conversion/",
-      "summary": "韓國半導體大廠 SK 海力士（SK Hynix）透過特別目的公司（SPC）對日本 NAND Flash 大廠鎧 [&#8230;]",
-      "published": "2026-11-22T17:55:44+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Microsoft, Google turn to Intel EMIB as CSPs seek alternatives to TSMC CoWoS",
-      "link": "https://www.digitimes.com/news/a20261123PD209/intel-microsoft-cowos-google-tsmc.html",
-      "summary": "Intel and Microsoft jointly announced on November 18, US time, that Microsoft will adopt Intel Foundry's embedded multi-die interconnect bridge (EMIB) advanced packaging technology for its custom Azure chips, becoming the first company to publicly confirm its use of EMIB.",
-      "published": "2026-11-22T17:50:47+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "US chip restrictions offer Taiwan IC designers a market-share opening, but will it last?",
-      "link": "https://www.digitimes.com/news/a20261123PD204/ic-taiwan-chips-ic-design-2026.html",
-      "summary": "The US Department of Commerce's new advanced semiconductor rules took effect following their publication in the Federal Register on November 19, 2026, US Eastern Time. Beyond targeting computing capacity at overseas data centers, the regulations tighten controls on semiconductor foundries and outsourced assembly and test operations. TSMC and Samsung Electronics have reportedly suspended some shipments to Chinese customers.",
-      "published": "2026-11-22T17:50:23+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "美國國家情報總監：正對與黃仁勳有染疑似中國間諜進行調查",
-      "link": "https://technews.tw/2026/11/23/us-probing-alleged-spy-tied-to-ex-nvidia-ceo/",
-      "summary": "美國國家情報總監克雷頓表示，輝達一直是企圖非法取得其高階晶片者鎖定的目標，美方正對一名曾與輝達前執行長有染、疑 [&#8230;]",
-      "published": "2026-11-22T17:50:17+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "美媒：輝達晶片走私幕後操盤者，住處近中國駐新加坡使館",
-      "link": "https://technews.tw/2026/11/23/the-alice-huang-associate-accused-of-funneling-nvidia-chips-to-china/",
-      "summary": "黃仁勳日前辭去輝達公司執行長等職務，他其中一段婚外情對象是涉嫌轉運輝達晶片至中國的新加坡企業 Megaspee [&#8230;]",
-      "published": "2026-11-22T17:45:23+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Treasury Secretary Bessent leaves door open to Huang's return, says Nvidia still owes answers",
-      "link": "https://www.digitimes.com/news/a20261123VL203/nvidia-usa-policy-chips-taiwan.html",
-      "summary": "US Treasury Secretary Scott Bessent's appearance on <em>CBS</em>'s Face the Nation on November 22 suggested the administration sees the Nvidia case less as a matter of Jensen Huang's personal conduct than as a question of who inside the company was responsible for export-control compliance.",
-      "published": "2026-11-22T17:44:03+00:00"
-    },
-    {
-      "source": "鉅亨網 台股",
-      "title": "黃仁勳有望回鍋輝達 大型股順勢群起護盤 台股翻紅",
-      "link": "https://news.cnyes.com/news/id/6669993",
-      "summary": "政策護盤奏效，台股今(23)日翻紅，台積電力守2000元，聯發科、聯電、台達電等大型股穩盤。&#10;美國財長貝森特對黃仁勳回鍋輝達態度急轉彎，市場解讀不排除可能性，並關注黃仁勳12月1日赴美參院聽證會。&#10;上市融資餘額較10月6日高點減31.7%。",
-      "published": "2026-11-22T17:40:58+00:00"
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳回歸這三檔股最受惠 長線投資價值值得關注",
+      "link": "https://news.cnyes.com/news/id/6671189",
+      "summary": "黃仁勳回歸後AI股熱潮降溫，輝達週一飆31.5%，那指漲6.5%，週二市場轉跌。&#10;分析師稱英特爾、邁威爾、戴爾可望受惠；輝達去年底投資英特爾50億美元、今年投資邁威爾20億美元。&#10;英特爾若獲輝達晶圓代工訂單將受肯定；戴爾950億美元AI伺服器積壓訂單也受輝達支撐。",
+      "published": "2026-11-24T20:30:17+00:00"
     },
     {
       "source": "鉅亨網 美股",
-      "title": "川普：美股市值蒸發超過6兆美元　100%怪民主黨",
-      "link": "https://news.cnyes.com/news/id/6669978",
-      "summary": "川普稱民主黨11月3日重掌國會後，美股市值蒸發逾6兆美元，並說國家很快會重新強大。&#10;上周五道瓊跌1.93%、標普500跌3.7%、那指跌5.28%；那指周跌10.02%，晶片股創2001年9月來最差一周。&#10;貝森特稱拋售是多因素疊加，市場憂民主黨AI監管與Fed鷹派言論拖慢資料中心擴張。",
-      "published": "2026-11-22T17:40:02+00:00"
+      "title": "黃仁勳復職改穿棉夾克 Dior中國官網多尺寸被搶光",
+      "link": "https://news.cnyes.com/news/id/6671616",
+      "summary": "「皮衣刀客」黃仁勳回歸沒穿皮衣，改穿棉質夾克。&#10;輝達23日宣布恢復黃仁勳總裁、執行長及董事職務。&#10;黃仁勳重返公司位於聖克拉拉的總部時，受到員工熱烈歡迎。",
+      "published": "2026-11-24T20:28:45+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳重掌NVIDIA餘波盪漾　加州檢察長：調查繼續進行",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775997_Q4ZLR23F8NX9Z28UBOLM5",
+      "summary": "黃仁勳恢復NVIDIA執行長職務，但美國加州檢察長Rob Bonta強調，調查不會因此喊停，仍將追查是否有先進晶片或機密不當流入中國，以及公司是否隱瞞投資人。綜合彭博（Bloomberg）、路透（Reuters）及洛杉磯時",
+      "published": "2026-11-24T20:21:00+00:00"
     },
     {
       "source": "TechNews 科技新報",
-      "title": "美前國安顧問：輝達看似規避晶片管制，難說有法律風險",
-      "link": "https://technews.tw/2026/11/23/former-us-national-security-advisor-nvidia-appears-skirt-chip-controls-legal-risks-uncertain/",
-      "summary": "美國前白宮國安顧問蘇利文今天指出，輝達晶片與疑似中國間諜涉入等事件與其說駭人聽聞，看來更像是大規模規避晶片管制 [&#8230;]",
-      "published": "2026-11-22T17:30:06+00:00"
+      "title": "愛思強遭降評、憂光通訊設備需求放緩  股價崩",
+      "link": "https://finance.technews.tw/2026/11/25/aixtron-downgraded-to-sell-as-shares-plunge/",
+      "summary": "德國半導體設備商愛思強（Aixtron）遭降評至賣出，主因擔憂用於製造 AI 資料中心光通訊雷射晶片的設備需求 [&#8230;]",
+      "published": "2026-11-24T20:20:35+00:00"
     },
     {
-      "source": "DigiTimes Asia",
-      "title": "Diamond cooling market gains traction as AI chip heat rises",
-      "link": "https://www.digitimes.com/news/a20261123PD202/cooling-chips-market-commercial-manufacturing.html",
-      "summary": "Rising power demands from AI chips are drawing interest in diamond-based cooling. However, high costs, manufacturing yields, and integration challenges continue to constrain commercial adoption, according to DIGITIMES analyst Eric Lin.",
-      "published": "2026-11-22T17:26:15+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "輝達永續合約亞洲盤飆 8%  VIX 漲破 40 現落底訊號？",
-      "link": "https://finance.technews.tw/2026/11/23/the-fear-gauge-hit-40/",
-      "summary": "美股近期賣壓加劇，市場恐慌情緒急速升溫，芝加哥選擇權交易所（CBOE）用來衡量市場恐慌氣氛的波動率指數（VIX [&#8230;]",
-      "published": "2026-11-22T17:10:21+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Winbond secures major automotive, industrial memory orders from Europe, Japan, US for 2027",
-      "link": "https://www.digitimes.com/news/a20261123PD203/automotive-winbond-industrial-2027-europe.html",
-      "summary": "As major international memory manufacturers withdraw from niche applications, the automotive and industrial memory markets are undergoing a significant reshuffle, creating opportunities for Taiwanese suppliers to capture redirected orders.",
-      "published": "2026-11-22T17:07:43+00:00"
+      "source": "鉅亨網 美股",
+      "title": "AI需求到底有多強？閃迪投資人交流會：NAND無下行風險 「這地方」足以吸收增加供給",
+      "link": "https://news.cnyes.com/news/id/6671546",
+      "summary": "閃迪重申2030年AI資料中心NAND需求達1.2ZB，KV快取、DAS與Fast Data Lake持續放量，無下行風險&#10;SLC滲透率升溫恐使有效NAND供給減少約4%，推升ASP；閃迪維持高十幾個百分點比特成長目標&#10;BiCS10已認證、明年出貨；HBF可工作矽片將出，明年初送樣，花旗維持閃迪買進",
+      "published": "2026-11-24T20:20:08+00:00"
     },
     {
       "source": "TechNews 科技新報",
-      "title": "黃仁勳去職美嚴控 AI 產業，重大事件和供應鏈看法一次看",
-      "link": "https://technews.tw/2026/11/23/jensen-huang-departure-us-tightening-control-ai-industry-overview-major-events-supply-chain-perspectives/",
-      "summary": "近期人工智慧（AI）產業雜音紛陳，黃仁勳因婚外情牽涉疑似間諜的中國籍女商人而辭去輝達（NVIDIA）要職後，美 [&#8230;]",
-      "published": "2026-11-22T16:45:21+00:00"
+      "title": "SpaceX 有望提前進標普 500  被動買盤效應可期",
+      "link": "https://finance.technews.tw/2026/11/25/possible-tesla-merger-could-aid-spacexs-sp-500-entry/",
+      "summary": "馬斯克（Elon Musk）旗下太空公司 SpaceX 與電動車廠特斯拉傳出正研議合併。摩根大通（J.P. M [&#8230;]",
+      "published": "2026-11-24T20:10:48+00:00"
     },
     {
-      "source": "TechNews 科技新報",
-      "title": "後黃仁勳時代輝達結盟供應鏈，穩主導地位宣示 AI 訂單無虞",
-      "link": "https://technews.tw/2026/11/23/nvidia-allies-supply-chain-post-jensen-huang-era-solidifying-dominant-position-ensuring-ai-orders-secure/",
-      "summary": "輝達（NVIDIA）共同創辦人黃仁勳辭任執行長後，輝達與台積電等 6 家台廠擴大結盟，頗有穩定供應鏈軍心意味。 [&#8230;]",
-      "published": "2026-11-22T16:40:26+00:00"
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳稱復職非因政府要求　強調NVIDIA不涉政治",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775989_V4WLD4BM7FHYSYL06Y3ZE",
+      "summary": "NVIDIA時隔不到一週，於11月24日再次舉行全體員工大會。NVIDIA執行長黃仁勳在會上以沉重語氣向員工道歉，透露他每天都在接受心理治療，以改善導致他短暫下台的行為。知情人士透露，黃仁勳對員工表示，董事會",
+      "published": "2026-11-24T20:10:30+00:00"
     },
     {
-      "source": "TechNews 科技新報",
-      "title": "紐時：輝達醜聞爆發數年前，中國國安部已盯上 AI 晶片",
-      "link": "https://technews.tw/2026/11/23/nyt-china-state-security-targeted-ai-chips-years-before-nvidia-scandal/",
-      "summary": "紐約時報引述多國官員說法報導，中國最高情報機構國家安全部持續推動祕密行動，協助中企取得先進人工智慧（AI）晶片 [&#8230;]",
-      "published": "2026-11-22T16:35:31+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "後黃仁勳時代的台股生存戰：資金逆流傳產，拆解四大抗跌新寵與一類高風險地雷股",
-      "link": "https://finance.technews.tw/2026/11/23/jensen-huang-departure-sparks-ai-chaos-taiwan-stock-hot-money-shifts-cybersecurity-traditional-sectors-avoid-risky-stocks/",
-      "summary": "過去，靠著輝達（Nvidia）共同創辦人黃仁勳這位「史上最強 AI 銷售員」的帶動，全球股市形成一股 AI 獨 [&#8230;]",
-      "published": "2026-11-22T16:20:07+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "傳軟銀曾想砸 1 兆美元買 SK 海力士  計畫已擱置",
-      "link": "https://technews.tw/2026/11/23/softbanks-masayoshi-son-explored-1-trillion-moonshot-buyout-of-sk-hynix/",
-      "summary": "日本軟銀集團（SoftBank Group）執行長孫正義傳出曾考慮斥資高達 1 兆美元，收購韓國記憶體大廠 S [&#8230;]",
-      "published": "2026-11-22T16:15:23+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "Rapidus 2 奈米製程傳瓶頸，SRAM 良率掛零日本半導體復興面臨考驗",
-      "link": "https://finance.technews.tw/2026/11/23/rapiduss-2nm-process-yield-hits-zero/",
-      "summary": "被日本政府寄予厚望、肩負先進半導體自主化使命的晶圓代工廠 Rapidus，旗下 2 奈米製程發展傳出重大挫折。 [&#8230;]",
-      "published": "2026-11-22T16:15:00+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "從用電怪獸變身電網後盾，資料中心擁抱「表後供電」重塑能源架構",
-      "link": "https://technews.tw/2026/11/23/future-data-centers-behind-the-meter-power-generation-technology/",
-      "summary": "在人工智慧（AI）的強勢帶動下，資料中心正迎來關鍵的角色轉換──從過去單純依賴電網的「用電大戶」，轉變為主動參 [&#8230;]",
-      "published": "2026-11-22T16:10:17+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Jensen's exit puts Japan's physical-AI revival to the test",
-      "link": "https://www.digitimes.com/news/a20261120VL215/nvidia-jensen-huang-scandal-infrastructure-manufacturing.html",
-      "summary": "The turmoil surrounding Jensen Huang's abrupt departure from Nvidia has quickly expanded beyond a corporate leadership scandal into a broader test of how deeply the AI industry had come to depend on one executive's influence.",
-      "published": "2026-11-22T15:50:35+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Phison expands space storage business with 2027 orbital data center launch",
-      "link": "https://www.digitimes.com/news/a20261120PD243/phison-data-center-2027-launch-commercial.html",
-      "summary": "Phison Electronics Corp. launched its Pascari Space solid-state drive (SSD) platform for commercial space applications and orbital data center infrastructure, extending its partnership with Lonestar Data Holdings. The companies plan to deploy Lonestar's first commercial space data center node, StarVault-001, in the first half of 2027, with the mission targeting low Earth orbit (LEO).",
-      "published": "2026-11-22T15:48:57+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "GSEO plans to double capex, targets 20% revenue growth in 2027",
-      "link": "https://www.digitimes.com/news/a20261120PD240/gseo-3m-optical-lens-capex-revenue-growth-2027.html",
-      "summary": "Genius Electronic Optical (GSEO) plans to roughly double capital spending in 2027 as the Taiwanese optical lens maker expands into AI data center connectivity through its partnership with 3M. The company is targeting revenue growth of about 20%, supported by optical communications and upgrades to high-end smartphone cameras.",
-      "published": "2026-11-22T15:47:44+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Nvidia leadership shake-up tests AI rack cadence, while Taiwan suppliers eye dual GPU-ASIC opportunities",
-      "link": "https://www.digitimes.com/news/a20261120PD233/nvidia-jensen-huang-president-google-component.html",
-      "summary": "Nvidia co-founder Jensen Huang recently stepped down as president, chief executive, and board director, with chief financial officer Colette Kress stepping in as interim CEO. Because Huang has long been viewed as the primary driving force behind the artificial intelligence boom, his departure has heightened market uncertainty over the industry's next phase. However, component suppliers noted that while Nvidia's annual product cadence may not hold at the same pace without Huang, fundamental techn",
-      "published": "2026-11-22T15:47:01+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Samsung consolidates robotics operations to accelerate AI, robot commercialization",
-      "link": "https://www.digitimes.com/news/a20261120PD210/samsung-personnel-development-2026-business.html",
-      "summary": "Samsung Electronics established its Robotics eXperience (RX) business task force in July 2026 to unify robotics development and support an artificial intelligence transformation (AX) across the company. The Seoul-based organization reports directly to the chief executive officer and is expected to expand during Samsung's year-end personnel reshuffle and organizational restructuring later this year.",
-      "published": "2026-11-22T15:46:13+00:00"
-    },
-    {
-      "source": "DigiTimes Asia",
-      "title": "Samsung Electro-Mechanics reduces Samsung revenue reliance as AI demand accelerates",
-      "link": "https://www.digitimes.com/news/a20261120PD206/semco-revenue-samsung-2026-sales.html",
-      "summary": "Samsung Electro-Mechanics reduced its dependence on Samsung Electronics and its affiliates to a record-low 24% of revenue during the first three quarters of 2026, as sales of AI server components and semiconductor package substrates expanded among global technology customers. The shift was reported in the company's latest business report, cited by South Korean publications including <em>Herald Business</em> and <em>Etoday</em>.",
-      "published": "2026-11-22T15:45:56+00:00"
+      "source": "DigiTimes 中文",
+      "title": "美MATCH法案擬收緊對中晶片設備出口　荷蘭國會也力挺ASML",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775996_UM18WO14LUDOAG5PHSKRJ",
+      "summary": "荷蘭政府反對美國進一步限制ASML對中出口的立場，近日獲國會議員支持。綜合南華早報、路透（Reuters）及Politico報導，荷蘭國會11月24日舉行貿易政策辯論，多名議員表態反對美國的《硬體技術多邊協調管制法",
+      "published": "2026-11-24T20:02:42+00:00"
     },
     {
       "source": "TrendForce",
-      "title": "[News] Beyond Megaspeed: Southeast Asia’s China-Linked AI Compute Network in Spotlight—Key Players at a Glance",
-      "link": "https://www.trendforce.com/news/2026/11/23/news-beyond-megaspeed-u-s-chip-curbs-spotlight-southeast-asias-china-linked-ai-compute-network-key-players-at-a-glance/",
-      "summary": "While Jensen Huang’s abrupt exit as NVIDIA CEO has dominated headlines in recent weeks, another major development has been unfolding as well. Last week, the U.S. Bureau of Industry and Security (BIS) issued an Interim Final Rule (IFR) aimed at &hellip; Continue reading &rarr;",
-      "published": "2026-11-22T15:30:03+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "三星電子至 2029 年記憶體產能幾近售罄，客戶搶簽長約至 2031 年",
-      "link": "https://technews.tw/2026/11/23/samsung-electronics-memory-production-capacity-is-nearly-sold-out-through-2029/",
-      "summary": "隨著全球人工智慧（AI）資料中心建設持續擴大，記憶體半導體需求快速攀升，全球供應緊張的情況正逐步從高頻寬記憶體 [&#8230;]",
-      "published": "2026-11-22T15:00:52+00:00"
-    },
-    {
-      "source": "TechNews 科技新報",
-      "title": "美股重挫引發華府風向改變，財長貝森特改口黃仁勳已是外部人士",
-      "link": "https://technews.tw/2026/11/23/plunge-in-u-s-stocks-prompts-shift-in-washingtons-stance-on-jensen-huangs-return/",
-      "summary": "隨著美國科技股連日重挫、輝達（NVIDIA）股價大幅下跌，華盛頓政壇對黃仁勳去留的態度出現戲劇性轉變。除了日前 [&#8230;]",
-      "published": "2026-11-22T15:00:47+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "5000億美元AI晶片融資陷分歧：輝達擔保比例成焦點",
-      "link": "https://news.cnyes.com/news/id/6669871",
-      "summary": "5000億美元AI晶片融資仍停留籌資目標，MOU僅列目標金額、客戶類型與信用支持方式&#10;黃仁勳8月稱信用支持上限為專案成本25%；部分投資者要求更高殘值擔保，博通案約85%&#10;輝達調整客戶融資政策並趨審慎；高盛估今年晶片及算力融資480億美元，2027年AI專案融資規模上調至5450億美元",
-      "published": "2026-11-22T14:00:03+00:00"
-    },
-    {
-      "source": "鉅亨網 美股",
-      "title": "輝達換帥＋AI融資急凍　華爾街開始重新定價「Fed鷹派邏輯」",
-      "link": "https://news.cnyes.com/news/id/6669878",
-      "summary": "輝達董事會17日表態無意讓黃仁勳回任，已由原財務長克蕾絲暫代並啟動外部遴選&#10;黃仁勳任內促成逾5千億美元AI基建融資，並為OpenAI資料中心提供1050億美元擔保；克蕾絲上任後已將擔保上限自約2500億美元壓至1050億美元&#10;分析師指AI基建新交易將更慢、條件更高，AI熱潮也被視為通膨壓力來源之一",
-      "published": "2026-11-22T13:00:58+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "DIGITIMES Today：中國AI算力競賽「燒錢」加速 | NVIDIA中國團隊「仁勳惶惶」？| 超微資料中心2027佔比衝8成",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775572_ITY6OSNI6Z2BCA31W73QQ",
-      "summary": "上週五台股加權指數重挫 2,393.60 點（6.23%），收在 36,033.29 點，寫下史上第三大單日收盤跌點。台積電盤中跌至新台幣 1,970 元，終場收 2,000 元、下跌 4.76%",
-      "published": "2026-11-22T13:00:00+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "超越半導體：打造台灣下一波AI競爭優勢",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775124_LX608DUT3B9XMU3XGWUT9",
-      "summary": "台灣憑藉半導體與電子製造實力，奠定全球AI發展的重要基礎。隨著人工智慧逐漸從模型研發走向實際部署，下一階段成長機會正從晶片本身，進一步延伸至系統整合與應用落地。AI應用正快速從資料中心擴展至工廠、自主機器人、智慧移動載具、邊緣運算設備及各類實體環境。運算效能依然重要，但已不再是唯一決定因素。電力效率、高速連接、智慧感測、軟硬",
-      "published": "2026-11-22T11:45:27+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "美國商務部新規帶來轉單契機？　台系IC設計關注「三大條件」",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775496_AAB352IALNHNWW5UL49YT",
-      "summary": "美國商務部的先進半導體新規範，已於2026年美東時間11月19日刊登聯邦公報後生效。除了鎖定海外資料中心算力，也收緊晶圓代工與封測環節的管制，台積電與三星電子（Samsung",
-      "published": "2026-11-22T11:00:00+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "車用、工控記憶體重新洗牌！　華邦電2027年歐、日、美系大單在握",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775530_40U6CG9R2ZWCLH1GJK6WX",
-      "summary": "國際記憶體大廠淡出利基型應用，車用、工控版圖面臨重整，台系記憶體廠出現轉單效應。華邦電子看好，車用、工控及半導體測試等訂單陸續湧入，隨客戶LTA長約簽訂，歐洲、日本、美國等三大區域市場2027年起成長強勁。其中，車用領域，將從2026年約新台幣200多億元營收貢獻，估計2027年翻倍成長至500億元以上。受惠於記憶體價格",
-      "published": "2026-11-22T11:00:00+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "美AI資料中心拚加快接電　兩大電網改革送審",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775529_PVC63JJ716H7UNLAMJUTT",
-      "summary": "美國人工智慧（AI）資料中心建置需求持續攀升，但部分地區電網擴建與新增電源上線速度未能跟上，成為業者擴張的重要瓶頸。美國區域電網營運商PJM與加州獨立系統調度機構（CAISO）近日提出大型用電設施併網改",
-      "published": "2026-11-22T10:40:47+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "晶片2027年「續漲」成必然　半導體成長主力日益偏向價格",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775468_1OA5O4IV505KG89UIOP94",
-      "summary": "根據各大IC設計業者近期觀察，晶片漲價趨勢到2027年應該不會改變，上游的晶圓代工確定漲價，封測端雖然尚未有相關通知，但依照過去一年多以來的經驗，封測廠隨時都可能會再漲價，這也使IC設計業者具充分理由在2027年繼續向客戶反應成本，除了少數對成本相對敏感，需求也疲弱的產品，各類晶片都已準備好2027年啟動漲價。半導體供應鏈",
-      "published": "2026-11-22T10:40:27+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "AI技術迭代重塑主權AI　從模型自主走向系統治理",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775227_5003Q0PD1KZHWF8C2PUYY",
-      "summary": "AI產業快速發展，全球AI產業的競爭也一路從大型語言模型（LLM）的資料參數量、準確率、效能與成本等評比，轉向模型調度、資料存取及AI代理（AI Agent）管理等領域，且伴隨Google、微軟（Microsoft）、Meta等業者持續擴大AI技術的布局，也讓主權AI（Sovereign",
-      "published": "2026-11-22T10:39:28+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "NVIDIA代理CEO走鋼索　能保住AI引擎、放下融資循環包袱？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775510_1Q86WP9B0WX2S11966XPJ",
-      "summary": "NVIDIA代理執行長Colette Kress在最新一季財報釋出「需求加速」和「審慎提供融資擔保」的訊號，而NVIDIA仍面臨尋找合適執行長接班人選，以及黃仁勳留下人工智慧（AI）循環經濟運行模式的挑戰。對Kress而",
-      "published": "2026-11-22T10:37:52+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "伺服器CPU轉向類CoWoS　日月光與矽品產能2027首超Amkor",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775524_TGL6AGA51TNQUR5ZD5JVD",
-      "summary": "全球先進封裝市場持續供不應求，隨著台積電CoWoS封裝產能維持滿載，亦優先供應給AI加速器客戶，使伺服器CPU訂單選擇轉向OSAT陣營，逐步由日月光、矽品、Amkor承接，大幅推升「類CoWoS封裝」產能需求。DIGITIMES分析師翁書婷預估，受惠於伺服器CPU訂單加速外溢，2027年類CoWoS封裝需求量",
-      "published": "2026-11-22T10:34:12+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "AI資料中心搶通電　儲能、微電網商機引台重電業者卡位",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775552_PJ04NSOU6MSD1L1ANW3ZD",
-      "summary": "AI資料中心建置熱度不減，即使美國審批趨嚴、部分專案時程遞延，長期擴建趨勢並未改變。同時，隨用電需求攀升，「Time to",
-      "published": "2026-11-22T10:33:18+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "黃仁勳離任NVIDIA中國團隊「仁勳惶惶」？　定位與市場戰略恐遭削弱",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775502_I2S4UN8L1Q64P21FYPWP5",
-      "summary": "NVIDIA中國團隊正面臨成立以來最方向不明的時刻。隨著創辦人兼前執行長黃仁勳離任，加上美國政府持續收緊先進晶片出口管制，過去由黃仁勳一直積極維繫的中國市場布局，面臨新一輪壓力。對中國區逾4",
-      "published": "2026-11-22T10:29:40+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "超微落袋Taalas擁打破CUDA關鍵棋　AI推論轉向GPU ASIC協同",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775352_CAS289JD6WD0N118XQQMQ",
-      "summary": "NVIDIA創辦人黃仁勳風波吸引全球關注之際，超微（AMD）於11月18日宣布完成收購加拿大AI推論晶片公司Taalas。據新聞稿指出，超微擬將Taalas的技術整合到其AI加速器路線圖中，並圍繞超微Instinct GPU共同開發系統級解決方案，同時與其更廣泛的產品組合協同，包括超微EPYC",
-      "published": "2026-11-22T10:28:12+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "美國LFP自製戰不只福特　Tesla與韓系廠各擁底牌",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775542_JOB4LWK15J1MS01Y3R15X",
-      "summary": "美國磷酸鐵鋰（LFP）電池自製賽局中，除了歐、美、日、韓等主流車廠競逐，也因福特自製取得新突破而備受矚目，其他重要自製勢力還包括新創車廠Tesla，及專攻電池製造的韓系電池廠。不過，這兩股勢力在儲能領域多採一條龍服務模式，電芯極少在市場流通；目前對外銷售電芯者以遠景動力（AESC）為代表，只是同樣面臨中資議題。供應鏈業",
-      "published": "2026-11-22T10:26:01+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【漫圖秒懂】美批准近88萬顆AI晶片輸中　逾3成流向軍方關聯企業",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775551_8OU4PBAQ6BVMTQ0Q1U75K",
-      "summary": "美國眾議院外交事務委員會公布資料顯示，川普政府（Trump administration）於2025年12月~2026年5月期間，批准NVIDIA與超微（AMD）向中國企業出口約87.9萬顆人工智慧（AI）晶片，僅佔340萬顆總申請量的26%，主要買家包括騰訊、阿里巴巴、百度及比亞迪。其中，騰訊獲准採購15萬顆、阿里巴巴7.",
-      "published": "2026-11-22T10:25:36+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "蘋果加入矽光子戰局　接連徵才擬將光學封裝導入自研晶片",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775505_FKR4PVAF1GPVWO4EY73BW",
-      "summary": "蘋果（Apple）近期接連招募矽光子及光學封裝人才，引發外界猜測，蘋果是否加速將相關技術導入下一世代資料中心晶片開發。隨著AI資料中心對高速資料傳輸及能源效率的要求持續提高，矽光子與光互連（Optical",
-      "published": "2026-11-22T10:25:29+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "蘇姿丰稱讚黃仁勳也伺機分大餅　超微資料中心2027佔比衝8成",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775354_L6V2STFN65WSU13230ME5",
-      "summary": "近一周來，外界要求黃仁勳復職的呼聲高漲，他本人11月17日也首次公開表示願意回歸，卻遭到董事會堅決拒絕。一個沒有黃仁勳的NVIDIA似乎已成定局，這使得其客戶信心開始動搖，競爭對手也準備伺機而動。11月17日在美國德州奧斯丁舉行的TomorrowX峰會上，超微（AMD）執行長蘇姿丰稱讚黃仁勳是位真正傑出的領導者、NVI",
-      "published": "2026-11-22T10:23:37+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "評析：AI晶片競爭轉向賣系統能力　NVIDIA全生態對決超微系統級",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775351_9QE4IJ8Y4TUWH02CIOPPC",
-      "summary": "黃仁勳風波與新聞撲天蓋地之際，超微（AMD）於美國當地時間11月16日宣布完成收購World Labs，這筆以約82億美元全股票支付，從9月28日簽署協定到完成交割僅用46天，成為超微歷來僅次於賽靈思的第二大購併案。World Labs聯合創辦人李飛飛出任超微執行副總裁兼首席科學家，直接向執行長蘇姿丰彙報；Justin",
-      "published": "2026-11-22T10:22:11+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "高價時尚款先售罄　三星Google智慧眼鏡雙品牌預購冷熱有別",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775324_BAU2ADTM35GQKM3HSF7BH",
-      "summary": "三星電子（Samsung Electronics）與Google攜手推出的AI眼鏡尚未正式上市，便出現品牌預售冷熱差異。南韓時尚眼鏡品牌Gentle Monster旗下16款產品，在韓、美市場開放預訂後迅速售罄。反觀採用相同核心技術的美國眼鏡品牌Warby",
-      "published": "2026-11-22T10:21:58+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【漫圖秒懂】微軟採英特爾EMIB先進封裝！　鎖定新一代Xeon產能",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775415_XTM32U3R2YICOQ4395P4K",
-      "summary": "微軟（Microsoft）擴大與英特爾（Intel）長期合作，成為首家公開採用英特爾EMIB先進封裝技術的客戶，將其導入Azure自研晶片，並簽署多年期Xeon伺服器處理器供應協議，涵蓋新一代Diamond",
-      "published": "2026-11-22T10:21:10+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "不是韓美也不是韓華　SK海力士HBM混合鍵合設備擬敲定Besi",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775533_GAP4NGIK4R6EZB2ECIXAO",
-      "summary": "SK海力士（SK Hynix）傳導入次世代高頻寬記憶體（HBM）混合鍵合（hybrid",
-      "published": "2026-11-22T10:21:09+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "DRAM僅能滿足7成　三星、SK海力士DRAM合約價2027恐漲4成",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775562_156400TO74VT5R188QNZ2",
-      "summary": "近期記憶體晶片現貨價格在短短1個月內最多下跌20%，但三星電子（Samsung Electronics）與SK海力士（SK Hynix）供應主要客戶的合約價格則逆勢走揚。市場預估，南韓兩大廠的記憶體2027年平均售價將較2026年明顯攀升，其中DRAM漲幅可達40%，NAND Flash也將上漲30%",
-      "published": "2026-11-22T10:20:20+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星手機事業改由技術派掌舵　崔元俊首要任務是讓MX恢復獲利",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775563_R2J4ZCP17QN8AM2ARM2ZV",
-      "summary": "三星電子（Samsung Electronics）行動體驗事業部換帥。曾主導Galaxy S系列與折疊式手機開發的崔元俊（音譯）社長正式接掌行動體驗（Mobile eXperience；MX）事業部，2027年上半Galaxy S27系列登場的「Galaxy Unpacked」舞台上，主講人可能換成新面孔。綜合韓媒News",
-      "published": "2026-11-22T10:20:15+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【Amy & Dr. Chip】OLED大戰開打　三星拚擴產、中國雙雄祭新招",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775408_WK33H4K91PGTXJ7NGUIPJ",
-      "summary": "OLED大戰升溫！三星顯示器（Samsung Display；SDC）砸下5.",
-      "published": "2026-11-22T10:19:36+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "【動物農莊】2026年還沒過完　鴿們聊三星設備、研發已砸99兆韓元",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775278_7YL3WL0Z688L7592K2FWE",
-      "summary": "三星電子（Samsung Electronics）2026年前3季投資明顯加速，設備投資約56.94兆韓元、研發支出約41.8兆韓元，合計達98.74兆韓元，已超越2025全年規模。不僅如此，資金高度集中在半導體，其中半導體暨裝置解決方案（Device Solutions；DS）部門設備投資達52.75兆韓元，佔全公司92.6%",
-      "published": "2026-11-22T10:19:27+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "中國客戶成放貸詛咒　雲端新勢力風光恐不再",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775397_9U84NZLL82CPR788IECR9",
-      "summary": "美國祭出最新人工智慧（AI）晶片出口限制措施，目的是防止中國業者藉由東南亞等地的資料中心存取高階算力。而這也讓原本風光的「雲端新勢力」（neoclouds）業者，貸款已不如以往順利。中國科技業者在本土難以取得NVIDIA高階晶片，過去紛紛向位於東南亞資料中心租賃算力。美國智庫Institute for",
-      "published": "2026-11-22T10:18:22+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "美國擬封殺中製光收發器　光通訊韓廠迎轉單契機",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775357_XDB23O0U6DEE7T6O4UZA0",
-      "summary": "川普政府持續推動限制中國製光收發器（Optical Transceiver）進入美國資料中心市場，南韓電子產業可能面臨機會與風險並存局面。南韓光通訊業者有望藉由美國供應鏈去中化爭取新訂單，但若替代供應不足，恐推高資料中心建置成本，進而延緩AI基礎設施擴張。另一方面，三星電子（Samsung",
-      "published": "2026-11-22T10:17:55+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "AI機櫃功耗破100kW　台達電攜羅姆布局日本800VDC",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775522_FKG6CMSG1AZC4Q3TL8V30",
-      "summary": "日本羅姆半導體（Rohm）18日宣布，將與台達電日本法人，就人工智慧（AI）資料中心的供電展開合作。雙方已就於日本市場實現面向AI資料中心的高壓直流供電解決方案，即800伏特直流電（800VDC）解決方案，簽署基本協議。兩家公司將結合電源系統與半導體技術，推動新一代供電方式普及並促成市場形成。根據NHK、讀賣新聞（Yo",
-      "published": "2026-11-22T10:17:03+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "東南亞手機出貨量暴跌36%　小米首度超越三星奪越南市佔王",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775391_02S2XP4DL68X140O1NKND",
-      "summary": "2026年第3季東南亞智慧型手機出貨量年減36%，三星電子（Samsung Electronics）雖然守住出貨量第一的位置，但在越南卻首度遭小米超越，退居第二，中國手機製造商的追擊力道日益強勁。韓媒Theelec、Chosun Biz等援引市調機構Omdia資料，2026年第3季東南亞智慧型手機出貨量為1,650萬支，年減36",
-      "published": "2026-11-22T10:13:30+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "南韓Trinity Fab擬借用SK海力士EUV　製程驗證落差待突破",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775526_RHM48G0A3JQTAO58OPJF5",
-      "summary": "南韓半導體驗證基地Trinity Fab逐步揭露設備配置與營運方式，將透過接近量產線的環境、共用設備及專業工程人力，協助材料、零組件與設備業者縮短商用化時程。但如何滿足先進製程測試需求、降低企業使用負擔，並讓驗證結果有效銜接客戶產線，仍是平台建置的重要課題。針對極紫外光（EUV）光阻等材料的驗證需求，Trinity",
-      "published": "2026-11-22T10:10:08+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "三星半導體人事震撼彈　記憶體、系統LSI與研發同步換帥",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775471_NQZ33YT58V41HW06NK9GZ",
-      "summary": "三星電子（Samsung Electronics）11月20日公布2027年度社長級人事，透過3名副社長晉升社長、3名高層職務調整，重新劃分半導體與行動事業經營責任。原任部門技術長（CTO）宋在赫傳將退休，由製程開發專家李鍾明（音譯）接任，系統LSI（System",
-      "published": "2026-11-22T10:06:14+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "無畏股市連日重挫打擊　金管會宣示打造資本島願景",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775521_QKE6S2DU1AHPBQ2UUICJD",
-      "summary": "台股總市值曾達5.3兆美元，名列全球第4，僅次於美國、中國及日本。不過在NVIDIA執行長黃仁勳請辭、市場擔憂AI泡沫化，及美國政府可能擴大禁止對中國的AI晶片銷售後，台股總市值已退居全球第7。金管會近日祭出",
-      "published": "2026-11-22T10:04:30+00:00"
-    },
-    {
-      "source": "DigiTimes 中文",
-      "title": "ASIC陣營加速擴大封裝來源　Google、微軟接力搶英特爾EMIB",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775469_VK75E2A659GHQDLYOD42O",
-      "summary": "英特爾（Intel）與微軟（Microsoft）於美國時間11月18日共同宣布，微軟將正式導入英特爾晶圓代工的EMIB先進封裝技術，用於Azure自研晶片，成為第一家公開宣布採用EMIB的業者。事實上，過去一年Google、亞馬遜（Amazon）、Meta導入EMIB的消息不斷，但多停留在供應鏈傳聞。只有後來替Google",
-      "published": "2026-11-22T10:01:42+00:00"
+      "title": "[News] NVIDIA B300 Lead Times Reportedly Hit 40 Weeks; RTX 60 May Face Delays as Memory Supply Tightens",
+      "link": "https://www.trendforce.com/news/2026/11/25/news-nvidia-b300-lead-times-reportedly-hit-40-weeks-rtx-60-may-face-delays-as-memory-supply-tightens/",
+      "summary": "NVIDIA is reportedly facing mounting supply pressure as demand for its AI chips continues to outpace supply. According to Commercial Times, Taiwanese ODMs say lead times for new orders of B300 and GB300 products have increased significantly, with workstation-grade products &hellip; Continue reading &rarr;",
+      "published": "2026-11-24T19:47:32+00:00"
     },
     {
       "source": "鉅亨網 台股",
-      "title": "〈台股風向球〉連環套賣壓需時間換空間 長期投資人心態先穩住",
-      "link": "https://news.cnyes.com/news/id/6669881",
-      "summary": "台股一周重挫7641點、跌幅17.5%，金管會全面限空，台積電上周五最後一盤湧入逾1萬張買單護盤&#10;法人指美股重挫與AI資本支出疑慮續壓盤，融資斷頭恐擴大殺出，短期籌碼不易沉澱&#10;元大、永豐都建議降低槓桿與持股，未見轉機前勿攤平或搶反彈；另關注黃仁勳12月1日國會聽證",
-      "published": "2026-11-22T07:34:30+00:00"
+      "title": "工業富聯股東樂了！今年擬分紅132億人民幣  上市迄今累計近900億",
+      "link": "https://news.cnyes.com/news/id/6671493",
+      "summary": "工業富聯今年前三季擬每10股派現6.7元，共派發132.85億元，及回購145.38億元&#10;前三季營收9414.14億元、淨利403.75億元；Q3雲廠、AI-ASIC與GPU機櫃出貨皆大增&#10;員工持股計畫與2027行動方案訂下淨利2400億元、營收1.3兆元以上目標，市場關注AI基建需求與輝達迭代風險",
+      "published": "2026-11-24T19:40:03+00:00"
     },
     {
-      "source": "鉅亨網 美股",
-      "title": "韓股暴跌 散戶已無現金攤平！26兆韓元融資面臨斷頭風暴",
-      "link": "https://news.cnyes.com/news/id/6669840",
-      "summary": "韓股20日重挫，KOSPI跌5.21%失守4,900點，KOSDAQ跌5.71%；三星、SK海力士重挫並觸發Sidecar。&#10;KOFIA統計，截至19日投資人備用資金降至81.5669兆韓元，較12日少10.6678兆韓元。&#10;韓股融資貸款餘額仍達26.0832兆韓元，若股價續跌恐引發斷頭賣壓",
-      "published": "2026-11-22T01:20:02+00:00"
+      "source": "DigiTimes 中文",
+      "title": "戴爾AI伺服器需求爆發　3QFY27營收獲利創高、全年財測再上修",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775992_6NU8QEEFLRBXFB1A9SC1O",
+      "summary": "受惠人工智慧（AI）資料中心建置熱潮，企業、雲端服務供應商及主權雲端業者加速採購AI伺服器，戴爾（Dell）在2027會計年度第3季（3QFY27）營收與獲利雙創歷史新高，公司連續第三度上調全年度財測，預估總營",
+      "published": "2026-11-24T19:34:27+00:00"
     },
     {
       "source": "TechNews 科技新報",
-      "title": "輝達遭勒索組織暗網威脅十天後洩漏資料，但官方稱系統未遭入侵",
-      "link": "https://infosecu.technews.tw/2026/11/22/nvidia-ransom-demand-by-the-gentlemen-leak-timer-under-10-days/",
-      "summary": "勒索軟體組織 The Gentlemen 18 日將輝達（NVIDIA）列入暗網資料外洩網站，聲稱取得公司資料 [&#8230;]",
-      "published": "2026-11-22T01:00:16+00:00"
+      "title": "Meta 把 Muse AI 助理搬進 Instagram 私訊，不必切換 App 就能問貼文、規劃行程",
+      "link": "https://technews.tw/2026/11/25/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "summary": "Meta 11 月 24 日宣布，將把旗下 Muse AI 助理直接帶進 Instagram 私訊，讓使用者不 [&#8230;]",
+      "published": "2026-11-24T19:30:46+00:00"
     },
     {
       "source": "鉅亨網 美股",
-      "title": "馬斯克警告：AI產業2027年將面臨數千億美元資金短缺危機",
-      "link": "https://news.cnyes.com/news/id/6669844",
-      "summary": "馬斯克警告，全球AI產業2027年恐出現數千億美元資金短缺，主因是硬體採購與獲利變現有時間差。&#10;他稱GPU、HBM、DRAM供不應求，且數據中心、電力與冷卻建置拖慢部署，2027年AI晶片至少缺15 GW電力。&#10;高盛估2026年AI資本支出近1兆美元、債務約6,000億美元。",
-      "published": "2026-11-21T23:00:05+00:00"
+      "title": "美光CEO年領13億！安全預算暴增2000%原因曝光",
+      "link": "https://news.cnyes.com/news/id/6671188",
+      "summary": "美光揭露截至8月年度為執行長Mehrotra支付76.5萬美元高階主管安全費，年增約2,000%&#10;公司稱因外部威脅升高，將個人安全視為必要業務支出；另為商務長Sadana支付7.5萬美元&#10;Mehrotra總薪酬達3,970萬美元，含148萬美元薪資、約3,000萬美元股票獎酬與專機、醫療會員等福利",
+      "published": "2026-11-24T19:30:05+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "US Congress advances three AI chip export bills as CEO returns to Nvidia",
+      "link": "https://www.digitimes.com/news/a20261125PD211/ai-chip-nvidia-chips-equipment.html",
+      "summary": "The <em>Financial Times</em> recently reported that the US Congress is preparing to tighten AI chip export controls, with three major bills receiving bipartisan support as lawmakers seek to close loopholes governing exports of advanced AI chips. With a new Democratic-led Congress set to take office in January 2027, the bills could complete the legislative process between late 2026 and the first quarter of 2027.",
+      "published": "2026-11-24T19:25:00+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "韓國擬找退役軍人進工地救火，力解半導體 26 萬施工人力荒",
+      "link": "https://technews.tw/2026/11/25/south-korea-reportedly-meeting-260000-workforce-requirement-through-retired-soldiers/",
+      "summary": "韓國半導體擴產計畫持續推進之際，建築人力不足問題正快速浮現。韓國國土交通部 11 月 24 日召集三星電子（S [&#8230;]",
+      "published": "2026-11-24T19:20:04+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "川普稱必要時願意特赦輝達執行長黃仁勳",
+      "link": "https://technews.tw/2026/11/25/trump-says-he-would-be-willing-to-pardon-nvidia-ceo-jensen-huang-if-necessary/",
+      "summary": "美國總統川普接受紐約郵報（New York Post）專訪時表示，若輝達（Nvidia）執行長黃仁勳（Jens [&#8230;]",
+      "published": "2026-11-24T19:15:18+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "不是V了嗎？台股狂震重挫逾3400點！富坦專家揭科技股長抱與必勝「2招」",
+      "link": "https://news.cnyes.com/news/id/6671604",
+      "summary": "美股受關稅戰與走弱影響，今盤中重挫逾3400點；科技股震盪劇烈，黃仁勳11天內回歸帶動股價V型反轉。&#10;富蘭克林證券投顧稱，此事凸顯關鍵人物風險，AI早期採用者具競爭優勢，基金布局涵蓋Meta、微軟、輝達及台積電ADR。&#10;數據顯示，留在市場與定期定額提高那斯達克報酬率與勝率，長期更能降低錯過反彈風險。",
+      "published": "2026-11-24T19:11:19+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "貝瑞搶在輝達暴漲前減空單、近 200 美元考慮再空",
+      "link": "https://finance.technews.tw/2026/11/25/michael-burry-cuts-nvidia-short-position-ahead-of-stock-surge/",
+      "summary": "電影〈大賣空〉（The Big Short）本尊、知名投資人麥可貝瑞（Michael Burry）透露，他在輝 [&#8230;]",
+      "published": "2026-11-24T19:10:11+00:00"
     },
     {
       "source": "鉅亨網 美股",
-      "title": "美股慘崩 AI產業是泡沫破裂還是價格重估？",
-      "link": "https://news.cnyes.com/news/id/6669832",
-      "summary": "那斯達克本周重挫10%，自高點回撤約18%，標普500與道瓊也進入技術性修正區間&#10;輝達單周跌約23%、市值蒸發2.7兆美元；CoreWeave、AMD、Alphabet等AI供應鏈同步受壓&#10;市場憂慮AI高額資本支出難轉化回報，升息與融資成本上升加劇估值重估",
-      "published": "2026-11-21T20:10:09+00:00"
+      "title": "黃仁勳辭職風波牽出AI媒體資金網！Anthropic早期投資人慈善機構捐款逾470萬美元",
+      "link": "https://news.cnyes.com/news/id/6671220",
+      "summary": "輝達(NVDA-US) 執行長黃仁勳11月12日宣布辭職，董事會於11月23日決定讓他復職，並在監管文件中引用美國政府高層官員說法，稱黃仁勳不構成國家安全風險。隨著事件持續延燒，研究人員Kevin Bass進一步追查相關報導背後的資金來源，發現率先呼籲黃仁勳下台的新聞簡報《Transformer》，",
+      "published": "2026-11-24T19:10:06+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈焦點股〉健策漲停打開後翻黑震盪逾600元 力守紅盤",
+      "link": "https://news.cnyes.com/news/id/6671602",
+      "summary": "健策(3653-TW)受惠均熱片業務營收比重提高、輝達(NVDA-US)Rubin系列產品出貨，法人看好健策第四季營收將持續呈現季對季成長趨勢，激勵健策今(25)日早盤開高後衝上漲停，一度鎖死4455元，不過隨後漲停打開急跌，最低摔至3845元，震盪逾600元，力守紅盤。&nbsp;  健策早盤以4",
+      "published": "2026-11-24T19:01:45+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "「謝謝黃仁勳！」輝達選擇權交易暴賺1984% 神秘買家海撈2380萬美元",
+      "link": "https://news.cnyes.com/news/id/6671192",
+      "summary": "黃仁勳回鍋任輝達執行長，帶動股價周一大漲31%。&#10;有投資人買進明年1月到期、履約價160美元買權，周一賣出一半，鎖定2,380萬美元獲利。&#10;Reddit用戶上周五花1.9萬美元買NVDA買權，周一獲利37.69萬美元，報酬率1984%；市場也出現避險賣權布局。",
+      "published": "2026-11-24T19:00:05+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "Elon Musk revisits Tesla Shanghai factory after 3 years, praises China manufacturing",
-      "link": "https://www.digitimes.com/news/a20261120PD247/tesla-shanghai-elon-musk-manufacturing-ceo.html",
-      "summary": "Tesla CEO Elon Musk made a whirlwind 24-hour visit to China, traveling to Shanghai on November 19 after concluding activities related to the APEC meetings in Shenzhen. He visited Tesla's Shanghai Gigafactory to meet with the Asia-Pacific and China teams, praising their manufacturing and execution capabilities while providing no update on the timeline for expanding Full Self-Driving (FSD) access in China.",
-      "published": "2026-11-21T06:14:51+00:00"
+      "title": "Acerpure targets India, Indonesia for high-double-digit growth in 2027",
+      "link": "https://www.digitimes.com/news/a20261125PD200/growth-2027-subsidiary-acer-sales.html",
+      "summary": "Acerpure, the Acer subsidiary that makes home appliances under the Acerpure brand, will focus on India and Indonesia and is targeting high-double-digit growth in 2027, when it plans to start selling washing machines in India and set up a subsidiary in Indonesia, general manager Kuo-shu Kao said.",
+      "published": "2026-11-24T18:56:28+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈營業氣候調查〉製造業轉保守 服務業降至1年低點反映台股壓力",
+      "link": "https://news.cnyes.com/news/id/6671595",
+      "summary": "台經院10月營業氣候測驗點，製造業98.94點、月減2.85點；服務業90.13點、月減2.09點，連4跌創近一年低點。&#10;紡紗、人纖、汽車、自行車與證券業10月轉壞，且對未來半年也較看壞。&#10;台經院指美期中選舉後資料中心審查不確定，製造業轉保守。",
+      "published": "2026-11-24T18:53:02+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "NVIDIA 釋出 GeForce 621.40 WHQL 認證驅動，正式修復 SSD 背景異常寫入災情",
+      "link": "https://technews.tw/2026/11/25/nvidia-621-40-driver-fixes-ssd-abnormal-writes-excessive-background-log-flushing-risk/",
+      "summary": "NVIDIA 於 24 日正式釋出 GeForce Game Ready 與 Studio 621.40 WH [&#8230;]",
+      "published": "2026-11-24T18:40:48+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "Trump says Jensen Huang should apologize and return to Nvidia",
-      "link": "https://www.digitimes.com/news/a20261121VL200/nvidia-donald-trump-jensen-huang-taiwan-taipei.html",
-      "summary": "U.S. President Donald Trump said Friday that Jensen Huang should apologize and be allowed to return as Nvidia's chief executive. It was the second time this week Trump backed Huang publicly, and it came three days after Nvidia's board said it would not reinstate him.",
-      "published": "2026-11-21T06:14:02+00:00"
+      "title": "Five questions on what Jensen Huang's return means for the AI industry",
+      "link": "https://www.digitimes.com/news/a20261125VL212/jensen-huang-nvidia-ceo-anthropic-financing.html",
+      "summary": "Jensen Huang's reinstatement as Nvidia CEO on November 23, 11 days after he resigned, has reassured the companies that build AI hardware more than those that depend on it. Stocks cheered for a day and then retreated, while credit markets and export policy barely moved in his favor. That split reshuffles the pecking order across the AI industry. Five questions frame what has changed.",
+      "published": "2026-11-24T18:32:15+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "楊立昆怒批 Anthropic 執行長阿莫迪放大開源 AI 風險，直指少數巨頭想掌控主導權",
+      "link": "https://technews.tw/2026/11/25/yann-lecun-torches-anthropic-ceo-over-ai-gatekeeping/",
+      "summary": "Meta 前首席 AI 科學家、AMI Labs 創辦人楊立昆（Yann LeCun）近日再度點燃人工智慧圈內 [&#8230;]",
+      "published": "2026-11-24T18:30:53+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "Micron labor dispute in Taiwan heats up as premier calls for worker protection",
-      "link": "https://www.digitimes.com/news/a20261118PD247/micron-taiwan-labor-investment-government.html",
-      "summary": "Micron Technology's labor dispute in Taiwan has intensified over its incentive-pay system, raising concerns that the standoff could undermine foreign investment confidence as Idaho Governor Brad Little visits the island. Premier Jung-tai Cho called for a settlement that protects workers while ensuring stable operations for the company.",
-      "published": "2026-11-20T20:03:39+00:00"
+      "title": "Jensen faces a trio of tests as US AI chip controls extend to the cloud",
+      "link": "https://www.digitimes.com/news/a20261125PD204/nvidia-jensen-huang-ai-chip-hardware-exports.html",
+      "summary": "Jensen Huang returned to lead Nvidia just 11 days after formally resigning. During his brief absence, Washington extended its AI chip controls beyond hardware exports to cover cross-border cloud computing access. Huang now faces three tests: restoring trust in Washington, containing order cancellations, and reallocating Nvidia's most advanced chips.",
+      "published": "2026-11-24T18:30:43+00:00"
     },
     {
-      "source": "SemiWiki",
-      "title": "TSMC’s Supplier Awards Put Manufacturing Execution in Focus",
-      "link": "https://semiwiki.com/semiconductor-manufacturers/tsmc/376475-tsmcs-supplier-awards-put-manufacturing-execution-in-focus/",
-      "summary": "<p><em>&#8220;Amid macroeconomic uncertainties, TSMC’s confidence in continuous investment and growth stems from the deep trust we share with our supply chain partners,&#8221; said Dr. C.C. Wei, TSMC Chairman and CEO. &#8220;Our goal has always been to unleash our customers&#8217; innovation and enable their success. Only through</em>&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/semiconductor-manufacturers/tsmc/376475-tsmcs-supplier-awards-put-manufacturing-execution-in-focus/\">Read Mo",
-      "published": "2026-11-20T08:00:16+00:00"
+      "source": "DigiTimes 中文",
+      "title": "川普：特赦黃仁勳是選項　曾考慮美國政府入股NVIDIA",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775988_PSFL6GYP74OJK29J9QPG6",
+      "summary": "美國總統川普（Donald Trump）表示，赦免NVIDIA執行長黃仁勳始終是一個選項，但他認為沒有必要採取如此非同尋常的行動。黃仁勳已回任NVIDIA執行長，將於下週赴國會作證。延伸報導火線話題：黃仁勳復職掀美國",
+      "published": "2026-11-24T18:30:34+00:00"
     },
     {
-      "source": "SemiWiki",
-      "title": "Why Intel’s EMIB Matters for Microsoft Azure",
-      "link": "https://semiwiki.com/semiconductor-manufacturers/intel/376571-why-intels-emib-matters-for-microsoft-azure/",
-      "summary": "<p>Microsoft and Intel are expanding their decades-long partnership, and the most consequential part of the multiyear agreement may be how Microsoft puts its future Azure chips together. Microsoft is the first company to announce plans to use Intel Foundry’s Embedded Multi-die Interconnect Bridge, or EMIB, for silicon it designs&#8230; <a class=\"read-more\" href=\"https://semiwiki.com/semiconductor-manufacturers/intel/376571-why-intels-emib-matters-for-microsoft-azure/\">Read More </a></p>\n<p>The p",
-      "published": "2026-11-20T06:00:03+00:00"
+      "source": "TechNews 科技新報",
+      "title": "SpaceX 與特斯拉傳組 5 人小組推進 3.5 兆美元合併案，力拚年底前取得突破",
+      "link": "https://finance.technews.tw/2026/11/25/spacex-tesla-merger-case/",
+      "summary": "據《金融時報》報導，馬斯克（Elon Musk）旗下的 SpaceX 與特斯拉（Tesla）已各自成立特別委員 [&#8230;]",
+      "published": "2026-11-24T18:10:11+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "Anthropic創史上最大IPO紀錄！募資1073億美元 AI估值邏輯轉向獲利與現金流",
+      "link": "https://news.cnyes.com/news/id/6671263",
+      "summary": "Anthropic  19日登陸納斯達克，IPO與私募合計募資約1,073億美元，超越SpaceX成史上最大IPO&#10;公司2026年前三季營收332億美元，但算力與基礎設施支出188億美元、占營收57%，估值仍待獲利支撐&#10;市場關注其PBC治理與AI安全、算力成本及商業化能力，未來須檢驗現金流與續費表現",
+      "published": "2026-11-24T18:10:07+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳回任引兩黨追查　國會擬擴大晶片出口管制",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775986_5EM8CU8I9WPD4359JJJAL",
+      "summary": "NVIDIA執行長黃仁勳在美國總統川普（Donald Trump）介入下復職，引發國會兩黨追查，聚焦晶片輸出中國以及白宮干預企業治理。黃仁勳將於12月1日接受眾議院3個委員會閉門簡報，12月3日再出席參議院銀行委員會",
+      "published": "2026-11-24T18:08:27+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "Taiwan market plunges 6.23% as AI suppliers report steady orders after Huang's exit",
-      "link": "https://www.digitimes.com/news/a20261120VL220/taiwan-nvidia-tsmc-design-ai-server.html",
-      "summary": "Taiwan's benchmark Taiex plunged 2,393.60 points, or 6.23%, on Friday to close at 36,033.29, its third-largest single-day point drop on record. Shares of Taiwan Semiconductor Manufacturing Co. (TSMC) fell as low as NT$1,970(US$59.73) before closing at NT$2,000, down 4.76%. MediaTek and Delta Electronics closed at their daily downside limits.",
-      "published": "2026-11-20T01:18:25+00:00"
+      "title": "Jensen Huang returns to Nvidia with China's enterprise SSD recovery still hostage to GPU shortages",
+      "link": "https://www.digitimes.com/news/a20261125PD203/nvidia-jensen-huang-ssd-production-market.html",
+      "summary": "Jensen Huang's return to lead Nvidia just 11 days after resigning drew a positive market reaction. Supply chain sources expect pressure on China's AI hardware shipments to intensify, with Nvidia's board set to tighten oversight and the US continuing to restrict AI chip exports. Chinese cloud and server companies could find it harder to secure key components, prolonging the inventory correction for enterprise solid-state drives (SSDs).",
+      "published": "2026-11-24T18:07:46+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "TSMC says it will comply with new US rule that strips Chinese chip designers of a key exemption",
-      "link": "https://www.digitimes.com/news/a20261120VL218/tsmc-taiwan-chips-communications-samsung.html",
-      "summary": "Taiwan Semiconductor Manufacturing Co. (TSMC) said it will comply with new US export rules that remove a route Chinese chip designers had used to get advanced chips made at overseas foundries without a license. The rule reaches beyond AI processors.",
-      "published": "2026-11-20T01:00:04+00:00"
+      "title": "Trump floats government stake in Nvidia and leaves pardon option for Huang open",
+      "link": "https://www.digitimes.com/news/a20261125VL213/nvidia-usa-government-donald-trump-intel.html",
+      "summary": "US President Donald Trump has said the government could still take an equity stake in Nvidia and that a pardon for reinstated CEO Jensen Huang remains \"an option.\" An Nvidia stake would extend Washington's run of corporate shareholdings from critical minerals and Intel to the center of the AI chip industry.",
+      "published": "2026-11-24T18:06:44+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "黃仁勳復任國會嚴陣以待，民主黨參院領袖控違反出口管制",
+      "link": "https://technews.tw/2026/11/25/schumer-accuses-nvidia-ceo-of-violating-us-export-control-law/",
+      "summary": "美國民主黨聯邦參議院領袖舒默（Chuck Schumer），今天指控輝達執行長黃仁勳將極先進晶片輸往中國，違反 [&#8230;]",
+      "published": "2026-11-24T18:00:49+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "狂飆 3,310 點後迎震撼教育！費半暴跌 7.88%、外資連 7 賣，台股今日力守 3 萬 5 千點防線",
+      "link": "https://finance.technews.tw/2026/11/25/taiwan-stocks-3310-point-rally-shock-correction-philly-semi-sox-plummets-7-88-foreign-sell-7-days-defend-35000/",
+      "summary": "台股 24 日在輝達執行長黃仁勳強勢回歸的激勵下，爆發歷史性單日漲點，加權指數狂飆 3,310 點（漲幅約 9 [&#8230;]",
+      "published": "2026-11-24T18:00:26+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "美國國會持續施壓 共和黨議員提議給黃仁勳配「保姆」",
+      "link": "https://news.cnyes.com/news/id/6671207",
+      "summary": "美國總統川普力挺黃仁勳復職並未平息國會質疑。&#10;共和黨和民主黨議員24日繼續向輝達及黃仁勳施壓，要求加強對黃仁勳的監督。&#10;共和黨參議員Kevin Cramer說，應對黃仁勳設置更嚴格約束，甚至安排專人跟隨。",
+      "published": "2026-11-24T18:00:19+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "坦承違反輝達行為準則！黃仁勳向員工道歉：犯了糟糕的錯誤",
+      "link": "https://technews.tw/2026/11/25/nvidia-jensen-huang-2/",
+      "summary": "消息人士向路透社透露，重新復職的輝達執行長的黃仁勳週二（24 日）向員工表示，他曾違反公司部分行為準則，並承認 [&#8230;]",
+      "published": "2026-11-24T18:00:18+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "拒絕接班人計畫，黃仁勳：輝達沒有我也能運作",
+      "link": "https://finance.technews.tw/2026/11/25/jensen-huang-rejects-succession-plan-nvidia-can-function-without-me/",
+      "summary": "Nvidia 執行長黃仁勳重返公司後，於 11 月 24 日召開全體員工大會，除了為先前的個人行為向員工道歉， [&#8230;]",
+      "published": "2026-11-24T17:59:11+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "三星記憶體轉向訂單型產業　產能鎖定至2029年",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775990_3XYLOO5K83ZY8412HJU84",
+      "summary": "消息傳出，三星電子（Samsung Electronics）2027~2029年的大部分記憶體晶片產能，目前已透過合約提前鎖定，部分客戶甚至正洽談延續至2031年的合約。據韓媒Newspim、Economy Tribune等引述業界消息，三星",
+      "published": "2026-11-24T17:53:32+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "喝杏仁奶比用 AI 更耗水？研究揭九成耗水來自發電廠",
+      "link": "https://technews.tw/2026/11/25/almond-milk-vs-ai-water-footprint-study-90-percent-power-plants/",
+      "summary": "AI 資料中心快速擴建，除了電力供應，水資源消耗也成為地方居民反對資料中心建設的原因之一。能源研究機構 Env [&#8230;]",
+      "published": "2026-11-24T17:50:51+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "亞馬遜傳斥資75億美元收購Decart技術 強化自研晶片挑戰輝達",
+      "link": "https://news.cnyes.com/news/id/6671219",
+      "summary": "亞馬遜簽約收購以色列AI新創Decart核心技術與團隊，傳交易金額達75億美元，仍待監管核准。&#10;亞馬遜將取得Decart的DOS與執行長Dean Leitersdorf等人，強化自研Trainium晶片運算效能。&#10;外界指此交易有助AWS推廣資料中心服務，但要撼動輝達AI晶片主導地位仍有距離。",
+      "published": "2026-11-24T17:50:04+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "彭博：輝達董事會數小時內決定黃仁勳復職，管理高層不知情",
+      "link": "https://finance.technews.tw/2026/11/25/nvidias-board-was-no-match-for-trump-or-jensen-huangs-backers/",
+      "summary": "知情人士透露，輝達（Nvidia）董事會是在董事面臨來自美國總統川普的壓力下，23 日下午在幾小時內做出讓前執 [&#8230;]",
+      "published": "2026-11-24T17:40:58+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股開盤〉川普再揮關稅大刀 台股一度跌逾2000點失守4萬關回測5日線",
+      "link": "https://news.cnyes.com/news/id/6671273",
+      "summary": "台股昨(24)日在黃仁勳回任輝達執行長消息激勵下，大漲3310點創史上最大漲點，不過行情僅維持1天，美國總統川普擬推新一輪關稅政策，加上輝達(NVDA-US)跌近6%、Anthropic(ANT-US)跌破IPO價格，台積電ADR(TSM-US)跌逾4%，台股今(25)日再度面臨賣壓，早盤以3998",
+      "published": "2026-11-24T17:37:27+00:00"
     },
     {
       "source": "DigiTimes Asia",
-      "title": "Huang's exit tests Nvidia's annual chip cadence and Taiwan suppliers' customer mix",
-      "link": "https://www.digitimes.com/news/a20261120PD225/nvidia-ai-chip-taiwan-jensen-huang-rubin.html",
-      "summary": "Nvidia's decision not to reinstate Jensen Huang as chief executive has raised concerns about a potential slowdown in AI hardware upgrades, putting Taiwanese suppliers' capacity allocation and order mix across major customers under scrutiny.",
-      "published": "2026-11-20T00:20:00+00:00"
+      "title": "Southeast Asian countries move to stop chip diversion as US blacklist hits regional data centers",
+      "link": "https://www.digitimes.com/news/a20261125VL204/data-chips-data-center.html",
+      "summary": "Singapore and Malaysia are moving to show Washington they will not serve as conduits for advanced AI chips bound for China, after the US blacklisted seven entities across the two countries, Indonesia, and Thailand, a shift that puts Southeast Asia's data center boom under a new compliance test.",
+      "published": "2026-11-24T17:27:19+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "美國司法部長稱讚輝達是「良好企業公民」",
+      "link": "https://news.cnyes.com/news/id/6671242",
+      "summary": "美國司法部長布蘭奇說輝達(NVDA-US) 是個「良好企業公民」，同時拒絕直接回答司法部是否正在調查導致輝達執行長黃仁勳短暫下台的原因。  布蘭奇在周二（24日）記者會上被反覆問及當局是否在調查輝達及黃仁勳本人。本月初黃仁勳承認婚外情使輝達陷入前所未有的危機。  「輝達是一個良好企業公民，」 布蘭奇",
+      "published": "2026-11-24T17:24:57+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "台積電向德州申請減稅，評估 226 億美元擴廠計畫",
+      "link": "https://technews.tw/2026/11/25/tsmc-unit-seeks-texas-property-tax-limit-for-proposed-22-6-billion-chip-making-facility/",
+      "summary": "台積電（TSMC）美國子公司向德州主管機關提交文件，表示財產稅減免將是決定是否在德州布拉索斯郡（Brazos  [&#8230;]",
+      "published": "2026-11-24T17:20:11+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳回歸點燃輝達！Dan Ives上調目標價喊300美元 最高看漲近82%",
+      "link": "https://news.cnyes.com/news/id/6671131",
+      "summary": "艾夫斯將輝達目標價上調至250美元，樂觀情境300美元，認為黃仁勳回歸後AI革命進入下一階段。&#10;他稱黃仁勳對輝達價值約1兆美元，並指公司仍領先競爭對手約2至3年。&#10;輝達11月23日收盤漲31.48%至165.05美元，但今年來仍跌11.50%，盤前再跌約5.1%。",
+      "published": "2026-11-24T17:20:03+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "費半崩近8%引爆賣壓！韓股早盤重挫4.9% 三星、SK海力士跌逾6%",
+      "link": "https://news.cnyes.com/news/id/6671218",
+      "summary": "美國半導體股隔夜重挫，韓國KOSPI 25日早盤一度暴跌近5%，上午9時08分觸發賣出Sidecar機制。&#10;三星電子跌6.92%、SK海力士跌6.74%；費半跌7.88%，AI與半導體供應鏈疑慮再起。&#10;市場也擔心美國對韓國等16國新關稅，韓元走弱，外資早盤賣超3,385億韓元。",
+      "published": "2026-11-24T17:10:16+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "川普鬆口考慮美政府入股輝達 「現在或許還不算太晚！」",
+      "link": "https://news.cnyes.com/news/id/6671178",
+      "summary": "川普稱曾考慮讓美國政府入股輝達，但尚未向公司提出，仍屬個人想法。&#10;他指輝達對美國AI領導地位至關重要，若入股，華府對輝達影響恐由出口管制延伸至股權與治理。&#10;市場憂政治介入增估值不確定性；川普也表態支持黃仁勳，稱必要時可考慮赦免。",
+      "published": "2026-11-24T17:00:14+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Analog Devices broadens growth beyond AI as industrial demand recovers",
+      "link": "https://www.digitimes.com/news/a20261125VL202/growth-analog-devices-industrial-demand-2026.html",
+      "summary": "Analog Devices (ADI) closed fiscal 2026 with a record quarter that combined rapid growth in data center products with a wider recovery across its traditional end markets. Management said more than two-thirds of the year's growth came from non-AI markets, suggesting the rebound is reaching beyond the infrastructure spending cycle. The next test is whether that broad demand can continue while the company expands manufacturing capacity to meet customer needs.",
+      "published": "2026-11-24T16:58:56+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳行情只燃了一天！分析師：市場面臨三大現實關卡",
+      "link": "https://news.cnyes.com/news/id/6671217",
+      "summary": "美股週二漲跌互見，道瓊漲0.85%，標普跌0.50%，那指跌1.48%，費半重挫近8%&#10;AI股急漲急跌源於超賣與情緒補漲，輝達回吐5.86%，Anthropic跌破IPO發行價&#10;市場仍關注AI資本開支、Fed緊縮預期與監管；12月PCE、點陣圖、Q4財報待觀察",
+      "published": "2026-11-24T16:51:52+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "川普力促黃仁勳復職引發兩黨議員抨擊，美國國會將擴大調查",
+      "link": "https://technews.tw/2026/11/25/nvidia-under-returning-ceo-jensen-huang-faces-tighter-gpu-sales-restrictions/",
+      "summary": "在美國總統川普強力介入下，涉及多起婚外情的輝達共同創辦人黃仁勳短短 11 天就戲劇性回鍋擔任執行長。美媒指出， [&#8230;]",
+      "published": "2026-11-24T16:50:01+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Dell's AI infrastructure surge reshapes its earnings mix",
+      "link": "https://www.digitimes.com/news/a20261125VL201/dell-infrastructure-revenue-growth-demand.html",
+      "summary": "Dell Technologies' fiscal third-quarter results show its growth engine shifting decisively toward infrastructure. AI-optimized servers and related data center products drove most of the expansion, and operating profit rose faster than revenue. The scale of the increase, along with the company's larger full-year forecast, suggests enterprise demand for AI systems is translating into shipments. It also leaves results increasingly exposed to the pace and economics of server deployments.",
+      "published": "2026-11-24T16:45:15+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "DIGITIMES Insight: Nvidia set to dominate AI robotics chip market with nearly 70% share",
+      "link": "https://www.digitimes.com/news/a20261124PD227/nvidia-robotics-software-development-2026.html",
+      "summary": "Nvidia is expected to account for nearly 70% of the AI robotics computing chip market in 2026, helped by its early lead in high-performance processors and a wide range of software tools for robot development, according to <em>DIGITIMES Intelligence</em>.",
+      "published": "2026-11-24T16:43:20+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Intel 18A yield hits 70%, targets AMD with 14A process",
+      "link": "https://www.digitimes.com/news/a20261124PD228/intel-amd-production-ceo-2027.html",
+      "summary": "Intel CEO Lip-Bu Tan said at the TomorrowX conference that the yield of Intel's 18A process has reached 70%, while customer adoption and production plans for the next-generation Intel 14A process are also advancing. Intel has provided customers with the process design kit (PDK) 0.9 and targets the release of PDK 1.0 in the first quarter of 2027, with 14A risk production expected in the second half of 2027 and mass production beginning in 2028.",
+      "published": "2026-11-24T16:42:33+00:00"
+    },
+    {
+      "source": "TechNews 科技新報",
+      "title": "黃仁勳回歸，ABF 高層：訂單合作與供需缺口一直沒變",
+      "link": "https://technews.tw/2026/11/25/jensen-huang-returns-abf-executives-order-collaborations-supply-demand-gap-unchanged/",
+      "summary": "針對黃仁勳回任輝達（NVIDIA），ABF 載板大廠高層表示，黃仁勳在產業中的領導地位無庸置疑，台灣供應鏈也跟 [&#8230;]",
+      "published": "2026-11-24T16:40:25+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Huang tells Nvidia staff the company does not need a succession plan",
+      "link": "https://www.digitimes.com/news/a20261125VL200/nvidia-jensen-huang-staff-governance.html",
+      "summary": "Jensen Huang used his first all-hands meeting since returning as Nvidia's chief executive to tell employees the chipmaker doesn't need a succession plan, a message that leaves the company's future leadership resting on one person at a moment when investors and governance experts question whether its board can act independently of him.",
+      "published": "2026-11-24T16:38:38+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Samsung, Micron to pay up to US$1.5 billion in patent fees",
+      "link": "https://www.digitimes.com/news/a20261124VL223/samsung-patent-micron-licensing-chipmakers.html",
+      "summary": "Samsung Electronics and Micron Technology have agreed to pay up to a combined US$1.5 billion under separate five-year patent licensing agreements with US memory technology company Netlist, as patent litigation involving memory chipmakers mounts amid booming AI demand.",
+      "published": "2026-11-24T16:37:44+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Rebellions reportedly lands AI server deal with SK Telecom",
+      "link": "https://www.digitimes.com/news/a20261124VL227/sk-telecom-ai-chip-startup-commercial-nvidia.html",
+      "summary": "South Korean AI chip startup Rebellions has reportedly secured an order for 40 servers from SK Telecom, expanding its commercial AI inference business as it pursues customers in the US and Japan.",
+      "published": "2026-11-24T16:37:03+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Apple Reportedly Considers Delaying or Halting OLED iMac, Explores LCD Model for 2029 amid Rising Costs",
+      "link": "https://www.trendforce.com/news/2026/11/25/news-apple-reportedly-considers-delaying-or-halting-oled-imac-explores-lcd-model-for-2029-amid-rising-costs/",
+      "summary": "Apple is reportedly reconsidering its OLED iMac development plans amid rising component costs and concerns over demand for premium displays. According to The Elec, citing industry sources, Apple has recently discussed potential schedule changes with Samsung Display, including delaying or &hellip; Continue reading &rarr;",
+      "published": "2026-11-24T16:30:51+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "川普不排除赦免黃仁勳 敦促他赴國會據實作證",
+      "link": "https://news.cnyes.com/news/id/6671194",
+      "summary": "川普稱若有必要，赦免輝達執行長黃仁勳「是一個選項」，並呼籲黃仁勳下週赴國會據實回答&#10;黃仁勳預定 12/1 接受眾議院外交委員會訪談、12/3 出席參議院銀行委員會聽證，國會聚焦國安威脅與晶片出口管制&#10;川普也透露曾考慮讓美國政府持有輝達股權；輝達週二回落逾5%至155.38美元，市值3.74兆美元",
+      "published": "2026-11-24T16:10:37+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳復職遭要求「配保母」！美國兩黨議員施壓、川普力挺仍難平息爭議",
+      "link": "https://news.cnyes.com/news/id/6671204",
+      "summary": "川普力挺黃仁勳復職輝達執行長，但兩黨議員仍要求加強監督。&#10;克拉默稱應設更嚴格防範機制，甚至安排人員隨行；柯蒂斯要求釐清政府官員對董事會的建議內容。&#10;舒默指控黃仁勳可能違反出口管制法規，兩黨續追查國安風險與輝達決策。",
+      "published": "2026-11-24T16:03:35+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "不是隨便個執行長復職而已！韓券商：黃仁勳回歸是「AI生態信心」先回來了 非AI需求",
+      "link": "https://news.cnyes.com/news/id/6670640",
+      "summary": "KOSPI週二收漲6.32%至5006.03點，盤中漲逾7%觸發Sidecar；三星漲6.7%、SK海力士漲6.73%&#10;券商稱這波反彈是黃仁勳回任後，不確定性折價一次性回補，AI生態簽約節奏與資金循環重接&#10;業界認為半導體股先止跌修復，但調查、出口管制、資料中心資本開支與12月3日參院聽證會仍是變數",
+      "published": "2026-11-24T16:00:57+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "川普邀功促成復職？黃仁勳向員工否認：說法「完全不實」",
+      "link": "https://news.cnyes.com/news/id/6671197",
+      "summary": "黃仁勳24日否認川普直接促成他回鍋，稱相關說法「完全不實」，強調輝達是最不涉政治的公司。&#10;他表示董事會已評估全部情況，並取得政府認定他不構成國安威脅的保證。&#10;黃仁勳11月12日因婚外情辭職，董事會23日宣布他回任；12月1日將赴國會閉門作證。",
+      "published": "2026-11-24T15:50:02+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[Breaking] Samsung Grapples with HBM Base Die Crunch as Internal Demand Seen Doubling to 30K per Month in 2027",
+      "link": "https://www.trendforce.com/news/2026/11/25/breaking-samsung-grapples-with-hbm-base-die-crunch-as-internal-wafer-demand-seen-doubling-to-30k-per-month-in-2027/",
+      "summary": "Samsung’s booming memory business is giving its foundry operations a fresh tailwind. According to industry sources, the chip giant is facing a severe shortage of HBM base die capacity, with its memory division’s wafer requirements projected to double in 2027. &hellip; Continue reading &rarr;",
+      "published": "2026-11-24T15:30:52+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "〈財報〉AI伺服器需求強大 戴爾今年第三度上修全年營收展望 盤後彈逾4%",
+      "link": "https://news.cnyes.com/news/id/6671191",
+      "summary": "戴爾第3季EPS 9.45美元、營收549.4億美元皆優於預期，AI最佳化伺服器營收220億美元，年增291%。&#10;全年營收展望第3度上修至2020億美元，AI伺服器營收估780億美元。&#10;AI資料中心需求推升訂單，季末AI伺服器未完成訂單達1323億美元，董事會授權250億美元庫藏股回購。",
+      "published": "2026-11-24T15:21:20+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "Anthropic跌破IPO發行價是壞兆頭？Meta、亞馬遜歷史經驗揭示答案",
+      "link": "https://news.cnyes.com/news/id/6671175",
+      "summary": "Anthropic 上市不到一週跌破 83 美元 IPO 價，週二收 81.90 美元，連三日收黑&#10;市場憂資料中心投資放緩、利率上升與低成本開放權重模型競爭，壓抑估值&#10;MSCI 11月30日納入全球標準指數，或帶來被動買盤；股價走勢將影響其他AI新創IPO前景",
+      "published": "2026-11-24T15:20:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳復職首場員工大會十大重點：認錯道歉、否認特權、不信接班計畫",
+      "link": "https://news.cnyes.com/news/id/6671182",
+      "summary": "黃仁勳復職後首場員工大會承認違反行為準則，向家人與員工道歉，稱每天接受90分鐘心理治療改善自己。&#10;他強調輝達不容忍違規，但不代表立即開除，並接受每月360度績效評估，讓共事者回饋。&#10;黃仁勳否認靠科技圈特權或政府促成回任；輝達股價週二回吐，收跌逾5%至155.38美元。",
+      "published": "2026-11-24T15:01:15+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "美光暴跌超10% 遭投行降評、腰斬目標價 示警記憶體「供過於求」風險升高",
+      "link": "https://news.cnyes.com/news/id/6671181",
+      "summary": "法國巴黎銀行將美光評等降至中立，目標價由1700降至775美元，稱記憶體需求恐比預期更早觸頂。&#10;分析師指資料中心許可延誤、客戶縮減HBM與PC/手機記憶體配置，恐使供需由短缺轉向過剩。&#10;晨星稱市場已反映AI支出下滑風險，若輝達成長裂痕擴大，可能進一步打擊美光需求。",
+      "published": "2026-11-24T14:50:04+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AI代理購物戰開打！沃爾瑪開放Muse代客下單 亞馬遜封鎖以對",
+      "link": "https://news.cnyes.com/news/id/6671183",
+      "summary": "Meta將Muse整合至Instagram私訊，提供商品搜尋、旅遊規劃及收藏整理功能，並擴大至多國市場。&#10;沃爾瑪準備開放Muse搜尋商品、建立購物車及代客下單，消費者可設定50、100或200美元免核准額度。&#10;亞馬遜則封鎖Muse存取電商網站，AI代理恐改變零售廣告模式，品牌未來須搶入AI推薦清單。",
+      "published": "2026-11-24T14:20:06+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "神減碼！《大賣空》貝瑞搶在輝達飆漲31%前 出售75%賣權",
+      "link": "https://news.cnyes.com/news/id/6671174",
+      "summary": "貝瑞11月20日先後賣出輝達賣權75%，並買少量長天期深度價外買權，調整空頭部位避險。&#10;輝達週一收漲31.48%至165.05美元；貝瑞仍批黃仁勳復職顯示公司治理軟弱，並促美司法部、SEC續查。&#10;他同步減碼SMH、那指100賣權，並調整Zoetis、MercadoLibre、比亞迪與京東等持倉。",
+      "published": "2026-11-24T14:10:09+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "〈美股盤後〉川普關稅風暴恐再起！費半慘跌近8% 輝達摔超5% Anthropic跌破發行價",
+      "link": "https://news.cnyes.com/news/id/6671173",
+      "summary": "美股週二漲跌互見，輝達跌5.86%、美光重挫10.97%，那指跌1.48%，費半暴跌7.88%。&#10;川普政府擬提高中國、歐盟等進口關稅，市場並聚焦週三Fed偏好的通膨指標，以評估12月升息風險。&#10;美國11月消費者信心指數升至103.3、近兩年高點；道瓊逆勢漲423.39點，收復5萬點。",
+      "published": "2026-11-24T14:05:22+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "美股先爆衝又急跌令投資人陷進退兩難　趨勢反轉訊號何時出現？",
+      "link": "https://news.cnyes.com/news/id/6670739",
+      "summary": "輝達董事會周一宣布黃仁勳即日起回任執行長，帶動標普500大漲4.73%、那指飆6.51%，輝達單日漲31.48%&#10;VIX重挫、空頭回補與槓桿ETF尾盤再平衡推升買盤，野村估單日約410億美元，CTA模型亦空翻多&#10;華爾街認為反彈未必確認底部，金融條件緊縮與AI資本開支回報仍待驗證，建議分散配置避免追高",
+      "published": "2026-11-24T14:00:34+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳回來了 2018也回來了！高盛警告：美股暴漲只是熊市反彈",
+      "link": "https://news.cnyes.com/news/id/6671180",
+      "summary": "黃仁勳回任輝達執行長帶動美股強彈、那指100漲約7%，但高盛指這波更像空頭回補的熊市反彈。&#10;高盛稱信用市場落後股市，投資級公司債利差僅擴大約13個基點，2年期通膨交換利率降至2.09%。&#10;花旗拿2026年對照2018年，稱景氣循環股、科技股與醫療保健轉弱，市場壓力恐持續擴散。",
+      "published": "2026-11-24T13:50:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳回歸首場員工大會致歉 稱輝達不需要傳統接班計畫",
+      "link": "https://news.cnyes.com/news/id/6671179",
+      "summary": "黃仁勳復職後首場員工大會表示，輝達各部門已有多位能幹領導人，傳統接班計畫反而會增加不必要管理層級&#10;他向員工坦承自己讓大家失望並道歉，還說正接受心理治療；11月12日辭職後，代理執行長由財務長克瑞斯接手11天&#10;董事會週一讓黃仁勳回任，並稱已就國安風險諮詢美國官員；消息帶動股價週一大漲逾30%，週二再跌",
+      "published": "2026-11-24T13:19:42+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股盤前要聞〉黃仁勳回鍋台股噴漲3310點創紀錄、兆豐金前三季獲利亮眼、工業生產指數連32紅",
+      "link": "https://news.cnyes.com/news/id/6671059",
+      "summary": "台股盤前要聞&nbsp;  1.黃仁勳回鍋輝達CEO，激勵美股、日韓股市大漲，台指期延續夜盤漲勢，24日開盤後漲停鎖住表態，加權指數也跳空開高直接站回4萬點及年線之上，收盤上漲3310.46點，創歷史最大漲點，漲幅近9%，收40122.35點，不過，成交金額僅4194億元，為今年以來最低。&nbsp",
+      "published": "2026-11-24T13:10:02+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "DIGITIMES Today：黃仁勳回歸暫鬆口氣 | 美國會三大AI晶片出口法案磨刀霍霍 | 中國AI別急著歡呼",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775952_MA2LMYY748D6BQ3UDEUK2",
+      "summary": "台積電德州布局再有新進展，目前已提交稅務優惠協議申請書，評估斥資約226.19億美元興建先進半導體製造園區，預計2027年動工、2031年完工。惟相關時程仍屬規劃，尚待政府批准及台積電作出最終投資決定。美國商務部11月23日將除了將新加坡Megaspeed",
+      "published": "2026-11-24T13:00:00+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "資料中心維護安全升級 Bossard整合VeriSafe2.0與緊固件工程解決方案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775307_EOP2YD5I15BWNU62DDQMD",
+      "summary": "隨著人工智慧與高效能運算（HPC）快速發展，資料中心持續朝高功率密度、高運算效能及全天候運作方向演進，也讓設備的電氣安全、散熱管理、結構穩定性與維護效率面臨更高要求。如何在確保設備穩定運作的同時，降低維護作業中的電氣風險，已成為資料中心營運與設備製造商的重要課題。瑞士緊固件供應商Bossard，推薦採用VeriSafe 2.",
+      "published": "2026-11-24T11:53:01+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "舒默控黃仁勳違反出口管制！共和黨議員：恐得派「保母」盯著",
+      "link": "https://news.cnyes.com/news/id/6671169",
+      "summary": "舒默指控黃仁勳違反美國出口管制，將極先進晶片運往中國，並促國會收緊晶片輸中限制。&#10;共和黨參議員克瑞默、眾議員哈里根也批評黃仁勳復職，稱應強化監督，川普曾施壓輝達董事會讓他回任。&#10;黃仁勳將於12月1日、12月3日接受國會問話與作證，國會正調查其與涉中間諜女子的關係。",
+      "published": "2026-11-24T11:30:03+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳復職難消中國AI供應鏈壓力　eSSD庫存調節恐拉長",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775915_RMH81F21204MP94O407N7",
+      "summary": "NVIDIA創辦人暨執行長黃仁勳在短短11天經歷辭職到重回權力核心，戲劇性轉變雖讓市場拍手叫好，但供應鏈認為，未來NVIDIA董事會強化監督機制，以及美國對AI晶片出口管制持續緊縮，這些都對中國AI供應鏈出貨的",
+      "published": "2026-11-24T11:00:00+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳回任穩住AI融資鏈　晶片商「資金厚度」成接單新門檻",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775854_W7B9QHQ34LMIMT5SSKQYJ",
+      "summary": "NVIDIA董事會2026年11月23日一致決議讓黃仁勳即刻回任總裁、執行長與董事，距離正式請辭「僅11天」就大反轉，讓外界擔憂的領導危機暫時落幕。但對AI晶片產業而言，這場風波除了牽動NVIDIA的技術發展策略",
+      "published": "2026-11-24T11:00:00+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "傳三星競標SpaceX通訊設備　盼開拓網路事業新客戶",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775548_58J4E9665DTATX717IMUI",
+      "summary": "三星電子（Samsung Electronics）傳已加入SpaceX通訊設備供應商的競標行列。由於SpaceX正積極擴大手機與衛星直接連線的Starlink Mobile服務，業界因此認為，三星盼藉此開拓新的客戶來源。分析認為，隨著傳",
+      "published": "2026-11-24T10:51:46+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "宏碁陳俊聖慎談記憶體後市　千億庫存待去化",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775905_JXE8ZFUW1WOEOB4A8GIHH",
+      "summary": "宏碁集團董事長暨執行長陳俊聖指出，2027年PC市場根據第三方市調機構統計，出貨量將會衰退，然由於零組件價格上揚，終端產品銷售金額上調，也讓營運表現會優於出貨衰退狀況，2026年宏碁在PC表現優於市場平均，期許2027年也有此亮眼表現。陳俊聖日前曾提及對記憶體價格與供需的看法，表示價格已在高檔，2027年下半可能會反轉",
+      "published": "2026-11-24T10:51:34+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳復職掀美國輿論角力　媒體與產業各有立場",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775910_NGILVEEC0JWFNK1967T1P",
+      "summary": "NVIDIA執行長黃仁勳因私人醜聞與國安疑慮於2026年11月12日辭職，卻在矽谷科技巨頭力挺、美國總統川普（Donald",
+      "published": "2026-11-24T10:46:56+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "【漫圖秒懂】美國用電連3年創高！　核能新創獲准建德州4座SMR",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775269_67S11EGL74SI0L8Q467U3",
+      "summary": "美國AI資料中心快速擴張及住宅、商業與工業電氣化，推升當地用電需求。美國能源資訊署（EIA）預測，美國2025年用電量為4,216 TWh，2026年將增至4,306 TWh，2027年進一步攀升至4,370 TWh，連續3年創歷史新高。因此，核能成為科技業尋求穩定電力的重要選項之一。核能新創X-",
+      "published": "2026-11-24T10:43:19+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳辭職11天戲劇性回鍋　川普強勢介入撼動美國企業治理",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775865_N3D92XD452GLFI6AQETWO",
+      "summary": "NVIDIA執行長黃仁勳因婚外情等風波，從正式請辭到董事會一致通過回任，11月23日在美國總統川普（Donald Trump）強勢關切下，僅11天戲劇性復職。NVIDIA領導層動盪雖暫時平息，董事會卻也遭批受白宮擺布，也引起華府國會對國安風險與企業治理失靈的質疑。執行長大到不能失去",
+      "published": "2026-11-24T10:39:55+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳「王者歸來」中國AI別急著歡呼　中媒：晶片自主才是真硬仗",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775866_KT49MIGW58YKHZ7KG037T",
+      "summary": "黃仁勳這場科技圈人事風暴，劇情反轉之快「連小說都不敢這麼寫」，環球時報前總編輯胡錫進在鳳凰網如此評論，直接以「魔幻大反轉：黃仁勳『王者歸來』」為題，形容這場人事變局之峰迴路轉。從離開NVIDIA到閃電復職，董事會重新恢復其總裁、執行長及董事職務，15天內迎來一波大逆轉。但對中國AI產業而言，黃仁勳是回來了，但真正的算力難",
+      "published": "2026-11-24T10:37:25+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "從AI算力到混動車　歐美同步封鎖第三地灰色轉運站",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775932_BM08W8L141DOG11PSY6IX",
+      "summary": "全球關注NVIDIA執行長黃仁勳回鍋，及美國鎖死第三地灰色算力漏洞的背景下，外媒指出，歐盟將在近日宣布，油電混合車（HEV）與插電式油電混合車（PHEV）年度進口配額，從原本針對中系車限制，擴大至日、韓、英、土等國。近期從AI算力到汽車貿易戰，歐、美兩大陣營正聯手改寫全球化遊戲規則，各形式的第三地轉口套利將被封堵，不",
+      "published": "2026-11-24T10:36:54+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳風波落幕　南韓AI高度依賴單一人物風險浮上檯面",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775929_XUO89ADI3SWBK48RG7FC7",
+      "summary": "NVIDIA執行長黃仁勳宣布辭職11天後閃電回任，南韓人工智慧（AI）業界總算鬆口氣。外界預期，南韓政府推動的26萬顆GPU導入計畫，以及南韓企業與NVIDIA的合作專案都將重回軌道。韓媒韓聯社報導指出，南韓電信業界也預期，與NVIDIA已談定的GPU供貨與大規模投資案可望如期推動。南韓AI業界相關人士則認為，黃仁",
+      "published": "2026-11-24T10:35:45+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "台積電等供應鏈進駐南科　台電砸逾千億強化輸變電",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775913_NLG8S91R280MNW2B2IXS8",
+      "summary": "隨著台積電等大廠進駐南科，為支援半導體供應鏈龐大的電力需求，台電規劃投資逾新台幣千億元，於南科推動輸變電建設，並規劃在南科新增第3座超高壓變電所，強化半導體S廊道供電。台電評估，南科（台南園區、南科特定區、沙崙園區、樹谷園區）既設與未來開發的長期用電需求可達8GW，並規劃投入約新台幣（以下同）1",
+      "published": "2026-11-24T10:34:18+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "界霖Clip導線架切入AI伺服器PSU　6家客戶驗證成關鍵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775912_HJ0LNU9O0G74LF3G83USS",
+      "summary": "功率導線架廠界霖表示，受惠於工控與車用需求回溫，加上AI資料中心訂單出貨規模逐步擴增，帶動稼動率提升、產品組合改善，同時產品漲價效益顯現，帶動2026年第3季營運三率三升，累計2026年前3季營收亦大幅成長約45%",
+      "published": "2026-11-24T10:33:38+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳霸氣回歸　供應鏈更憂心美國AI晶片出口新規是否再變",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775850_B2O7QGG6691QRRL5RN9BG",
+      "summary": "黃仁勳雖然確定回歸NVIDIA擔任執行長職務，但美國商務部產業安全局（BIS）防堵AI晶片轉運的暫行最終規則已於11月19日生效，且美國商務部於11月23日也將Megaspeed等新加坡、馬來西亞、泰國共7個實體列入實體清單（Entity",
+      "published": "2026-11-24T10:33:27+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳回鍋晶片出口限制仍在　星馬仍盼維持對中合作",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775892_WO17RG13LKCY021CREP64",
+      "summary": "黃仁勳重新掌舵NVIDIA，但美國對東南亞晶片出口管制仍在。馬來西亞、新加坡國家領導人近日陸續對外發言，重申自己的國家不應成為走私中轉站，同時仍有信心能與中國保持良好合作關係。美國商務部工業安全局（BIS）於11月16日公布最新規定，除了限制特定受管制地區企業透過海外資料中心遠端取得先進算力，也要求特定先進半導體出口、再出",
+      "published": "2026-11-24T10:29:21+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "【動物農莊】PC零組件漲勢難擋　AI浪潮下的市場新常態",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775925_DH7LVKUO11EHE26Y3YHQY",
+      "summary": "日本業界觀察，PC平均單價高漲的主因非短期缺貨，而是AI排擠消費端產能、過去減產的遞延效應、日圓貶值與物流墊高成本，以及作業系統授權費調漲，這四大結構性因素疊加的結果。由於記憶體原廠將產能與資源優先分配給高毛利的資料中心AI伺服器與高頻寬記憶體（HBM），壓縮一般PC用記憶體與固態硬碟（SSD）的供應。而廠商曾因庫存過",
+      "published": "2026-11-24T10:28:22+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "三星高階主管晉升縮近2成　半導體先進製程、HBM人才為重",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775870_W697614Q87XRZ8LV5DEH8",
+      "summary": "三星電子（Samsung Electronics）11月24日公布2027年度例行高階主管人事，共131人獲晉升選任，較前一年減少近2成。其中，半導體暨裝置解決方案（Device Solutions；DS）部門仍有70人上榜，佔整體53.4%",
+      "published": "2026-11-24T10:26:20+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "澳洲Firmus擬發15億美元債券　黃仁勳回鍋後雲端新勢力吸金力仍受考驗",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775953_8HOLOOHO4PMW3U44RPO4J",
+      "summary": "NVIDIA合作夥伴Firmus正在計劃發行債券。隨著黃仁勳復職，雲端新勢力是否能像以往那麼會吸金，受到外界關注。據彭博（Bloomberg）報導，Firmus與潛在投資者討論了高達40億美元的債務融資方案，其中包括了15億美元的債券發行，以及銀行貸款。本次融資所得資金預計主要用於採購NVIDIA GB300",
+      "published": "2026-11-24T10:22:58+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "ISSCC 2027台灣10篇論文入選　NVIDIA高速LPU將引領風騷",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775863_0XS7DBVS75UTD928UZMN7",
+      "summary": "被譽為晶片設計界奧林匹克的「IEEE",
+      "published": "2026-11-24T10:21:06+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "AI需求轉向推論　HPE看好伺服器與網路雙成長引擎",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775885_YXY7GZBR9F0K3B4UO4F7S",
+      "summary": "人工智慧（AI）基礎設施投資正從大型語言模型（LLM）訓練，進一步擴展至企業推論、代理程式及分散式AI部署，帶動伺服器、儲存與資料中心網路需求同步升溫。慧與科技（HPE）高層預期相關需求將延續至2027年，並將網路業務提升至與AI伺服器同等重要的成長引擎。不過，記憶體及其他零組件短缺、AI伺服器產品組合造成的利潤率壓力",
+      "published": "2026-11-24T10:19:55+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "Megaspeed等7家遭美列黑名單　馬來西亞收緊資料中心監管",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775950_HGP80IQ96IX585LNCS6H6",
+      "summary": "美國商務部將Megaspeed等7家公司列入實體清單（entity list），馬來西亞政府警告當地資料中心業者，切勿與清單上的企業往來。根據The Edge",
+      "published": "2026-11-24T10:18:17+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "低軌衛星、AI上太空助萊德2027動能更旺　擴產備戰訂單加速",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775889_MCL9H20U77U5BHL5YU3TT",
+      "summary": "全球低軌衛星（LEO）發射頻率加速，再加上衛星營運商開始將目光延伸至太空AI資料中心，帶動雷射光通訊終端（LCT）及相關光學元件需求持續升溫。受惠於此波太空基礎建設擴張趨勢，光纖被動元件廠萊德光電2026年第3季衛星雷射通訊營收達新台幣（單位下同）1.91億元，年增94%，佔單季總營收比重高達57%",
+      "published": "2026-11-24T10:14:26+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "重掌NVIDIA帥印迎硬戰　黃仁勳面臨三大地緣拆彈考驗",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775900_GA785GJ116ZG88LHF3I9F",
+      "summary": "外界視為戲劇性的發展，NVIDIA執行長黃仁勳正式辭職11天後又重返掌舵，而這段短暫的權力真空期，美國更已徹底改寫全球AI算力規則，將科技競爭從單純的硬體禁運，推向跨境雲端封鎖的嚴格層面。重掌帥印的黃仁勳，眼前正擺著一個亟待拆彈的地緣政治與合規難題。供應鏈業者分析，這起事件更像一場「政經」形影不離的實地操演。從美國期中選",
+      "published": "2026-11-24T10:11:21+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "從8.6代IT OLED到蘋果折疊面板　SDC新任副社長人事藏布局",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775947_JQG88AGM54RW0Z6G9OV71",
+      "summary": "三星顯示器（Samsung Display；SDC）發布2027年度定期高層人事名單，共晉升16人。5名新任副社長中，有4人分別負責8.6代IT用OLED量產、量子點OLED（QD-OLED）生產力改善、車用OLED製程與折疊面板品質，正好對應SDC的未來成長方向。據韓媒Theelec、ZDNet",
+      "published": "2026-11-24T10:10:26+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "【動物農莊】鴿們聊比亞迪不只拚低價　售後服務也開始追Tesla",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775234_42R3HKIA2KKZMG5GSYD7D",
+      "summary": "比亞迪正快速補強南韓售後服務體系，希望擺脫中國進口車「壞了難修、零件難等」的疑慮。韓媒指出，比亞迪進入南韓市場約1年，官方服務中心已由11處增至21處，超過Tesla目前18處，並規劃2026年底前進一步擴增至26處。同時，比亞迪的南韓零件倉庫由2024年底約300坪，擴大至2026年10月平澤據點約2",
+      "published": "2026-11-24T10:09:18+00:00"
+    },
+    {
+      "source": "DigiTimes 中文",
+      "title": "黃仁勳回歸暫鬆口氣　三星、SK海力士仍須擺脫NVIDIA依賴？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000775943_ZATLC69A3VR6YY4ODU6HG",
+      "summary": "NVIDIA執行長黃仁勳宣布辭職後僅11天後便重返經營第一線，讓先前籠罩在AI半導體供應鏈上的不確定性暫時消散，三星電子（Samsung Electronics）與SK海力士（SK",
+      "published": "2026-11-24T10:05:08+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "輝達GTC新品發表撞期國會問話！黃仁勳回鍋後硬仗接連來",
+      "link": "https://news.cnyes.com/news/id/6671157",
+      "summary": "黃仁勳復職後下周將面對國會雙重問話，12月1日閉門訪談、12月3日參院公開聽證。&#10;輝達華府GTC與國會行程撞期，原定主題演講改由副總裁巴克代打，黃仁勳是否出席未定。&#10;大型客戶加速自研晶片、輝達又遭多機關調查，市場關注其AI布局與GPU優勢是否受壓。",
+      "published": "2026-11-24T09:30:12+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "黃仁勳回歸狂歡退燒！輝達盤中挫逾8% 分析師提醒「慶祝後宿醉」",
+      "link": "https://news.cnyes.com/news/id/6671159",
+      "summary": "黃仁勳復職帶動輝達股價周一大漲約31%，周二盤中又跌近8.4%，報151.39美元&#10;輝達收盤仍較11月6日低逾11%；分析師稱回歸有助提振信心，但政治、公司治理與調查風險仍在&#10;黃仁勳12月1日將赴眾院閉門訪談、12月3日參議院作證；Raymond James維持輝達「強力買進」與350美元目標價",
+      "published": "2026-11-24T09:00:08+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 艾司摩爾(ASML-US)大跌5%，報1314.56美元",
+      "link": "https://news.cnyes.com/news/id/6671151",
+      "summary": "艾司摩爾(ASML-US)截至台北時間25日00:02股價下跌69.22美元，報1314.56美元，跌幅5%，成交量592,429（股），盤中最高價1360.80美元、最低價1314.50美元。美股指數盤中表現道瓊指數：-0.14%S&amp;P 500指數：-1.28%NASDAQ指數：-2.45%費城半",
+      "published": "2026-11-24T08:17:58+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "AI失業潮恐沒想像嚴重！美企明年擬擴大招聘 逾3成看好AI帶動增聘",
+      "link": "https://news.cnyes.com/news/id/6670407",
+      "summary": "ZipRecruiter調查：67%美企計劃明年增招，高於2026年63%，且更願為AI技能人才加薪。&#10;Bachaud稱AI已從科技業擴散至各產業，資料中心、工程與辦公職務都將受影響。&#10;今年前10個月專業職務就業增23.2萬人，顯示AI目前整體偏向創造而非消滅工作。",
+      "published": "2026-11-24T08:00:05+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 台積電ADR(TSM-US)大跌5.02%，報345.36美元",
+      "link": "https://news.cnyes.com/news/id/6671132",
+      "summary": "台積電ADR(TSM-US)截至台北時間24日23:16股價下跌18.24美元，報345.36美元，跌幅5.02%，成交量4,371,733（股），盤中最高價357.20美元、最低價345.36美元。美股指數盤中表現道瓊指數：+0.27%S&amp;P 500指數：-0.76%NASDAQ指數：-1.54%",
+      "published": "2026-11-24T07:32:00+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "〈美股早盤〉狂歡只一天？黃仁勳回歸行情降溫 輝達拖累主要指數開低",
+      "link": "https://news.cnyes.com/news/id/6670998",
+      "summary": "美股周二開低，輝達回歸帶動的AI反彈降溫，費半跌逾5%、台積電ADR跌近4%，HPE盤前重挫、Anthropic跌破IPO價&#10;市場關注Fed周三偏好通膨數據；交易員已完全反映12月升息1碼，押注2027年再升兩次&#10;《華爾街日報》稱美國擬提高對中國及數十國關稅，資金轉向美債避險，美元走低、黃金與銅再跌",
+      "published": "2026-11-24T06:57:13+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 邁威爾科技(MRVL-US)大跌5.03%，報137.47美元",
+      "link": "https://news.cnyes.com/news/id/6671106",
+      "summary": "邁威爾科技(MRVL-US)截至台北時間24日22:32股價下跌7.28美元，報137.47美元，跌幅5.03%，成交量1,414,123（股），盤中最高價140.75美元、最低價137.44美元。美股指數盤中表現道瓊指數：-0.22%S&amp;P 500指數：-1.12%NASDAQ指數：-1.75%費",
+      "published": "2026-11-24T06:47:09+00:00"
+    },
+    {
+      "source": "鉅亨網 美股",
+      "title": "盤中速報 - 輝達(NVDA-US)大跌5.09%，報156.65美元",
+      "link": "https://news.cnyes.com/news/id/6671105",
+      "summary": "輝達(NVDA-US)截至台北時間24日22:32股價下跌8.4美元，報156.65美元，跌幅5.09%，成交量38,300,094（股），盤中最高價159.92美元、最低價156.64美元。美股指數盤中表現道瓊指數：-0.23%S&amp;P 500指數：-1.13%NASDAQ指數：-1.81%費城半導",
+      "published": "2026-11-24T06:47:06+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "輝達升級2.0版台股穩了？野村「老字號」團隊教戰：避開消費電子 改抱緊這些產業",
+      "link": "https://news.cnyes.com/news/id/6671005",
+      "summary": "野村投信估2027年台股企業獲利成長率可望達30%，AI規格升級未變，建議聚焦半導體、電源散熱與高速傳輸供應鏈。&#10;姚郁如稱外資賣超主因為獲利了結與單一持股上限，明年獲利預估未下修，供應鏈產能仍緊俏。&#10;高階ASIC比重至2027年可望超越GPU，帶動先進製程、封裝、800V直流電、液冷與光模組商機。",
+      "published": "2026-11-24T03:49:33+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "台積電226億美元新廠落腳德州？能否減稅成關鍵",
+      "link": "https://news.cnyes.com/news/id/6671000",
+      "summary": "台積電子公司評估在德州布拉索斯郡斥資226億美元建先進晶片廠，選址尚未定案。&#10;規劃占地逾3,200英畝，採2奈米或更先進製程，供AI、HPC及行動裝置晶片。&#10;能否獲財產稅減免是關鍵，計畫估未來40年直創至少2,099個工作機會。",
+      "published": "2026-11-24T03:30:05+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈兆豐金法說〉輝達狂飆36%帶旺台股！企金與海外放款雙位數成長 明年股利配發率站穩7成",
+      "link": "https://news.cnyes.com/news/id/6670993",
+      "summary": "黃仁勳回鍋激勵輝達股價飆逾36%，兆豐金認為有助穩定AI供應鏈信心、帶動科技股估值回升&#10;兆豐金前三季稅後淨利328.48億元、年增16%；前10月343.31億元、EPS 2.31元，股利配發率近3年約7成&#10;兆豐銀前三季放款餘額2.82兆年增19%，企金與海外放款雙位數成長，聯貸管理行及主辦行居冠",
+      "published": "2026-11-24T02:50:39+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台幣〉美元指數強升衝破104大關 台幣終止連3升收在32.939元",
+      "link": "https://news.cnyes.com/news/id/6670979",
+      "summary": "輝達宣布黃仁勳回任執行長激勵台股暴漲3310.46點收40122.35點創史上最大收盤漲點。&#10;新台幣兌美元受美元指數站上104、外資持續匯出影響，終場貶4.4分收32.939元，盤中一度觸及33元。&#10;三大法人合計賣超1230.11億元，外資連7賣累計提款2980億元，自營商賣超810.25億元。",
+      "published": "2026-11-24T02:02:52+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈弘凱法說〉Q3轉虧為盈EPS 0.18元 備援晶圓廠明年4月交貨緩解車用IC缺料",
+      "link": "https://news.cnyes.com/news/id/6670976",
+      "summary": "弘凱第3季稅後淨利1202萬元、EPS 0.18元，終結前兩季虧損轉盈&#10;AI與記憶體排擠晶圓代工產能，車用IC交期延宕；弘凱已在台灣與中國大陸導入備援晶圓廠，預計2027年4月起供料緩解&#10;南通新廠通過客戶審廠並放量出貨，第3季毛利率回升至29.8%；公司預估第4季續獲利，但能否彌補前兩季虧損待觀察",
+      "published": "2026-11-24T01:50:03+00:00"
+    },
+    {
+      "source": "DigiTimes Asia",
+      "title": "Analysis: Jensen&rsquo;s homecoming puts Nvidia under a sharper spotlight",
+      "link": "https://www.digitimes.com/news/a20261124VL225/jensen-huang-nvidia-chips-security-ceo.html",
+      "summary": "Jensen Huang is back at the helm of Nvidia&mdash;the designer of highly advanced AI chips, the world's most valuable company, and a key player underpinning hundreds of billions of US dollars' worth of AI-related financing. Yet with several investigations ongoing and national security concerns unresolved, the story is not over.",
+      "published": "2026-11-24T01:37:23+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] TSMC Reportedly Eyes US$22.6B Fab for 2nm and Beyond in Brazos County, Texas, Targeting 2031 Completion",
+      "link": "https://www.trendforce.com/news/2026/11/24/news-tsmc-reportedly-eyes-us22-6b-fab-for-2nm-and-beyond-in-brazos-county-texas-targeting-2031-completion/",
+      "summary": "TSMC’s potential expansion into Texas is taking more concrete shape after Chairman and CEO C.C. Wei confirmed in October that the company had sent teams to evaluate manufacturing opportunities in the state. According to local broadcaster KBTX, TSMC has now &hellip; Continue reading &rarr;",
+      "published": "2026-11-24T00:56:21+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳回鍋一人救全村！台股史詩級反彈3310點 57檔ETF集體漲停",
+      "link": "https://news.cnyes.com/news/id/6670961",
+      "summary": "黃仁勳「回鍋」輝達執行長的消息一出，激勵輝達&nbsp;23&nbsp;日股價大漲逾30%，更帶動近一月表現疲弱的股市，台灣加權指數今 (24)&nbsp;日單日大漲3310.46點、漲幅達&nbsp;8.99%，反彈力道強勁，57&nbsp;檔台股&nbsp;ETF&nbsp;強勢漲停，「一人救全",
+      "published": "2026-11-23T23:52:21+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "不管台股狂飆！外資續賣503億、自營商暴砍810億 三大法人賣超1230.11億元",
+      "link": "https://news.cnyes.com/news/id/6670956",
+      "summary": "黃仁勳回鍋輝達(NVDA-US) CEO，激勵台股今(24)日跳空開高直接站回4萬點及年線之上，逾600檔個股鎖死漲停，讓股民哀嚎「開盤即收盤」，大盤指數終場上漲3310.46點，創歷史最大漲點，漲幅近9%，收40122.35點，不過成交金額僅4194億元，為今年以來最低；三大法人合計賣超1,230",
+      "published": "2026-11-23T23:01:41+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳回歸，投資人如何卡位新一波漲勢？ 四檔台股ETF，從科技成長到收益策略一次看",
+      "link": "https://news.cnyes.com/news/id/6670952",
+      "summary": "黃仁勳11月23日回任輝達執行長後，全球科技股與台股震盪出現逆轉。&#10;台股修正後AI股估值回落，本文建議依投資目的挑選ETF布局。&#10;野村四檔台股ETF分別主打創新科技、主動選股、大型股與高息成長策略。",
+      "published": "2026-11-23T22:58:31+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈焦點股〉黃仁勳回鍋激勵台股大奇蹟日上演！ 光通訊族群滿血復活超過10檔亮燈衝漲停",
+      "link": "https://news.cnyes.com/news/id/6670891",
+      "summary": "黃仁勳請辭輝達後戲劇性回歸，激勵美科技股強彈，台股今早盤在電子權值股領軍下跳空大漲逾3,300點，創史上最大盤中漲點。&#10;光通訊族群全面噴出，聯亞、波若威、光聖、穩懋等逾10檔亮燈漲停，聯亞更在連5日重挫後跳空漲停至1525元。&#10;法人指輝達事件落幕後，AI產業鏈疑慮暫消，相關光通訊股有望反彈。",
+      "published": "2026-11-23T21:11:53+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "投顧看台灣最悲觀情境解除 明年投資主軸聚焦這些題材",
+      "link": "https://news.cnyes.com/news/id/6670881",
+      "summary": "第一金投顧稱黃仁勳回歸輝達後，AI仍是明年最重要投資主軸，對台最悲觀情境已消除。&#10;美國明年1月新國會恐強化AI安全、資料中心與晶片出口監管，部分東南亞資料中心建置將遞延。&#10;看好台積電、ASIC、先進封裝等；四大CSP資本支出估2027年達1.14兆美元，年增56.2%。",
+      "published": "2026-11-23T20:56:48+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈焦點股〉黃仁勳回鍋CEO 電子五哥同歡三檔高掛紅燈",
+      "link": "https://news.cnyes.com/news/id/6670875",
+      "summary": "輝達(NVDA-US)昨(23)日晚間宣布，黃仁勳恢復總裁、執行長與董事職位，激勵台股今(24)日多頭氣盛，電子五哥廣達(2382-TW)、緯創(3231-TW)、英業達(2356-TW)、和碩(4938-TW)及仁寶(2324-TW)紛紛回神，其中，廣達、緯創與仁寶高掛紅燈。&nbsp;  緯創與",
+      "published": "2026-11-23T20:50:50+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "台股本益比降至17倍 第一金投顧：下一輪多頭起點啟動",
+      "link": "https://news.cnyes.com/news/id/6670864",
+      "summary": "第一金投顧指本波台股下跌非獲利衰退，而是政策衝擊、去槓桿與恐慌，預估今年上市櫃獲利8兆元、2027年上看10兆元。&#10;台股本益比已由25倍降至17倍，認為來到關鍵布局點，看好明年有望在台積電領軍下，再挑戰5萬點歷史高點。",
+      "published": "2026-11-23T20:38:56+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳復任輝達執行長 研調：消除估值折價、穩固AI產品路線圖延續性",
+      "link": "https://news.cnyes.com/news/id/6670142",
+      "summary": "隨著黃仁勳正式復任輝達(NVIDIA)執行長，市場對於這家AI晶片巨頭的領導層不確定性宣告落幕。市場研究機構 Counterpoint Research 首席分析師 Yang Wang 針對此事發表最新評論指出，黃仁勳的回歸不僅消除了輝達因短期人事變動面臨的「估值折價」，更在產品技術路線圖的關鍵時刻",
+      "published": "2026-11-23T20:26:02+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳回鍋引爆全球AI鏈！亞股強彈 韓股漲至熔斷 AI交易下一步怎麼走？",
+      "link": "https://news.cnyes.com/news/id/6670833",
+      "summary": "輝達周一飆漲31.48%，市值回補約9520億美元，創2003年來最大漲幅，黃仁勳復職帶動AI情緒回溫&#10;亞股齊漲慶賀，MSCI亞太漲4.1%；韓股觸發SIDECAR，日股近5%，台股重返4萬點&#10;但政治與監管風險仍在，黃仁勳12月3日將赴參院作證，國會監督、出口管制與資料中心禁令恐壓抑後續資本開支",
+      "published": "2026-11-23T20:20:09+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "「輝黃」回巢掀台股漲停潮！PIMCO：AI資本支出上看10兆美元 曝2027年配置新局",
+      "link": "https://news.cnyes.com/news/id/6670819",
+      "summary": "黃仁勳回任執行長激勵輝達暴漲逾31%，台股今大漲3368點、重返40000點，刷新史上最大漲幅。&#10;PIMCO指AI集中度重塑市場，股票、信用債、基礎建設與不動產已連結同一底層風險，均衡股債組合恐有同質風險。&#10;估未來五年AI產業每年融資需求達2兆美元，建議分散配置高品質債券、5至7年美債與黃金等資產。",
+      "published": "2026-11-23T19:46:57+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "台股史詩級噴漲3300點 國泰證期提醒風險是降低並非消除",
+      "link": "https://news.cnyes.com/news/id/6670812",
+      "summary": "黃仁勳回歸輝達，激勵美股和台股，國泰證期稱有利降低AI長期戰略改變不確定性&#10;回歸可維持CUDA、GPU、CPU、NVLink與網通系統一體化戰略，並穩定與雲端巨頭、供應商合作預期&#10;但出口管制、公司治理調查及融資成本問題未解除",
+      "published": "2026-11-23T19:31:06+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Samsung Reportedly to Complete Xi’an Fab Upgrade for V9 NAND by Late 2027 amid Rising AI SSD Demand",
+      "link": "https://www.trendforce.com/news/2026/11/24/news-samsung-reportedly-to-complete-xian-fab-upgrade-for-v9-nand-by-late-2027-amid-rising-ai-ssd-demand/",
+      "summary": "Samsung Electronics is accelerating the transition to more advanced NAND flash production in China as AI data centers drive demand for enterprise storage. According to Seoul Economic Daily, citing industry sources, Samsung plans to upgrade its facilities in Xi’an, China, &hellip; Continue reading &rarr;",
+      "published": "2026-11-23T19:15:59+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳「熹妃回宮」點火！這5檔ETF最搶手 2檔主動式強勢上榜",
+      "link": "https://news.cnyes.com/news/id/6670808",
+      "summary": "輝達創辦人黃仁勳重掌執行長兵符，宛如「熹妃回宮」，為市場注入強心針，激勵輝達股價單日狂飆31%，帶動美股絕地反攻、終結連日跌勢，也同步提振台股信心。今(24)日台股全面反彈，多檔ETF盤中亮燈漲停。回顧這11天來的修正，不少聰明投資人趁勢低接、彎腰撿鑽石，積極布局台股ETF。  根據CMoney統計",
+      "published": "2026-11-23T19:12:12+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] From “No Return” to “Unanimous Yes”: Huang’s NVIDIA Comeback — Key Dates and a New Playbook?",
+      "link": "https://www.trendforce.com/news/2026/11/24/news-from-no-return-to-unanimous-yes-huang-retakes-nvidias-helm-key-dates-ahead-and-a-potential-new-playbook/",
+      "summary": "In yet another stunning twist for the tech industry, Jensen Huang is back at the helm of NVIDIA. In a statement released on November 23, the chip giant announced that its board had voted unanimously to reinstate Huang, expressing confidence &hellip; Continue reading &rarr;",
+      "published": "2026-11-23T18:30:00+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "空頭一夜血虧122億美元！三倍做空輝達ETF崩92% 淨值幾乎歸零 2019年來最慘",
+      "link": "https://news.cnyes.com/news/id/6670741",
+      "summary": "輝達董事會周一讓黃仁勳復職，股價收漲31.48%，市值單日暴增約9520億美元&#10;ORTEX估算，賣空輝達者以盤中168.5美元計算的話帳面虧損約122億美元，為2019年來最慘損失&#10;GraniteShares兩倍做空ETF 、三倍做空ETP與Leverage Shares重挫，費半則狂漲14%",
+      "published": "2026-11-23T18:22:09+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股開盤〉黃仁勳回歸點火大盤重返4萬 早盤飆3368點創史上最大盤中漲點",
+      "link": "https://news.cnyes.com/news/id/6670720",
+      "summary": "黃仁勳回歸輝達，激勵美股科技股23日強彈，輝達大漲逾31%、費半指數飆升約14%。台股今（24）日以39,148.91點開出，上漲2,337.02點，隨即在電子權值股領軍下擴大漲勢，早盤漲逾3,300點，創史上最大盤中漲點。截至9時54分，加權指數報40,150.86點，大漲3,338.97點、漲幅",
+      "published": "2026-11-23T17:59:33+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈焦點股〉黃仁勳回歸激勵PCB股狂飆！009828暴漲逾30% 無漲停限制注意溢價",
+      "link": "https://news.cnyes.com/news/id/6670652",
+      "summary": "黃仁勳回鍋輝達執行長，帶動AI供應鏈反彈，PCB族群今(24)日強勢上攻。&#10;中信台日韓PCB(009828-TW)開盤漲幅一度逾30%，即時溢價最高達24%，買盤追價須留意。&#10;009828今年9月掛牌，先前受AI估值修正壓力一度跌破6元、單月跌逾3成。",
+      "published": "2026-11-23T17:44:39+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "黃仁勳回歸輝達世紀大翻轉 台股超過600檔開盤漲停歡呼",
+      "link": "https://news.cnyes.com/news/id/6670638",
+      "summary": "輝達宣布恢復黃仁勳總裁、執行長和董事職務，美股與科技股大漲，激勵台股今開盤飆逾3300點，重返4萬點。&#10;台積電漲停貢獻台股1587點。&#10;信驊、旺矽、世芯-KY、精測、群聯、智邦等高價股也同步漲停，盤面逾600檔亮燈。",
+      "published": "2026-11-23T17:28:42+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Samsung Reportedly Skips 2027 Galaxy Watch, Cuts Galaxy A Production by 20% amid Rising Component Costs",
+      "link": "https://www.trendforce.com/news/2026/11/24/news-samsung-reportedly-plans-no-galaxy-watch-in-2027-shifts-to-two-year-launch-cycle-amid-rising-component-costs/",
+      "summary": "Samsung Electronics is reportedly preparing to end its annual Galaxy Watch release cycle as rising component costs put pressure on its MX division. According to ETNews, citing industry sources, the company has decided not to launch a new Galaxy Watch &hellip; Continue reading &rarr;",
+      "published": "2026-11-23T16:30:20+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] SK hynix’s Indiana Plant Clears Nearly Two-Year Rezoning Dispute Ahead of 2029 Production",
+      "link": "https://www.trendforce.com/news/2026/11/24/news-sk-hynixs-indiana-plant-clears-nearly-two-year-rezoning-dispute-ahead-of-2029-production/",
+      "summary": "As SK hynix presses ahead with its U.S. expansion, a key legal hurdle has been cleared. According to Korea Credit News, the West Lafayette City Council in Indiana has approved a settlement with local residents, ending a nearly two-year dispute &hellip; Continue reading &rarr;",
+      "published": "2026-11-23T15:30:31+00:00"
+    },
+    {
+      "source": "鉅亨網 台股",
+      "title": "〈台股盤前要聞〉黃仁勳復職、擔保維持率將至120%、永豐金法說",
+      "link": "https://news.cnyes.com/news/id/6670353",
+      "summary": "台股盤前要聞&nbsp;  1.輝達(NVIDIA)(NVDA-US)宣布，黃仁勳立即恢復擔任總裁兼執行長及董事會成員，消息一出，台積電(2330-TW)期貨及台指期夜盤相繼噴出漲停。截至台北時間23日晚間10點半，台積電期貨暫報2238元、台指期則來到40324點。&nbsp;  2.為因應近期股",
+      "published": "2026-11-23T13:10:10+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Tesla Cuts AI4.5 Memory from 32GB to 24GB amid Soaring Costs; AI5 Reserved for Optimus",
+      "link": "https://www.trendforce.com/news/2026/11/23/news-tesla-cuts-ai4-5-memory-from-32gb-to-24gb-amid-soaring-costs-ai5-reserved-for-optimus/",
+      "summary": "Tesla is reportedly reducing the memory capacity of its upgraded AI4.5 chip as soaring memory prices put pressure on hardware manufacturers. According to IT Home, CEO Elon Musk revealed in a recent exchange with Sawyer Merritt on X that Tesla &hellip; Continue reading &rarr;",
+      "published": "2026-11-22T22:57:36+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] Datasection Slashes Forecast Nearly 90%, Raising Questions Over Taiwanese Suppliers’ B200/B300 Orders",
+      "link": "https://www.trendforce.com/news/2026/11/23/news-datasection-slashes-forecast-nearly-90-raising-questions-over-taiwanese-suppliers-b200b300-orders/",
+      "summary": "Concerns are spreading across the AI infrastructure supply chain. Beyond Southeast Asia, where tighter U.S. export controls are weighing on data center operators, Japan&#8217;s Datasection has slashed its full-year revenue forecast by nearly 90%, raising questions about delivery disruptions for &hellip; Continue reading &rarr;",
+      "published": "2026-11-22T19:20:33+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[News] AI Server Prices Reportedly Rise Up to 45% as Dell, HPE and Others Raise Prices After Deals",
+      "link": "https://www.trendforce.com/news/2026/11/23/news-ai-server-prices-reportedly-rise-up-to-45-as-dell-hpe-and-others-raise-prices-after-deals/",
+      "summary": "Rising AI infrastructure costs are prompting major server suppliers to seek substantial price increases for NVIDIA-powered systems, even months after contracts have been signed. According to Financial Times, citing sources, server vendors are passing higher component costs on to customers, &hellip; Continue reading &rarr;",
+      "published": "2026-11-22T19:13:26+00:00"
+    },
+    {
+      "source": "TrendForce",
+      "title": "[Deep Dive] Beyond Megaspeed: Southeast Asia’s China-Linked AI Compute Network in Spotlight—Key Players at a Glance",
+      "link": "https://www.trendforce.com/news/2026/11/23/news-beyond-megaspeed-u-s-chip-curbs-spotlight-southeast-asias-china-linked-ai-compute-network-key-players-at-a-glance/",
+      "summary": "While Jensen Huang’s abrupt exit as NVIDIA CEO has dominated headlines in recent weeks, another major development has been unfolding as well. Last week, the U.S. Bureau of Industry and Security (BIS) issued an Interim Final Rule (IFR) aimed at &hellip; Continue reading &rarr;",
+      "published": "2026-11-22T15:30:03+00:00"
     },
     {
       "source": "TrendForce",
@@ -562,76 +1038,6 @@
       "link": "https://www.trendforce.com/news/2026/11/20/news-u-s-ai-chip-curbs-hit-southeast-asia-gpu-financing-bytedance-linked-us480m-loan-reportedly-paused/",
       "summary": "The Trump administration has announced new restrictions requiring data center operators in Singapore, Malaysia, Indonesia, and Thailand to obtain licenses to purchase advanced U.S.-made chips. According to Bloomberg, the move is raising concerns among banks and private credit funds financing &hellip; Continue reading &rarr;",
       "published": "2026-11-19T15:30:06+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Micron Reportedly Says All Major Customers Eye 3D DRAM Tie-Ups, Broader Adoption Expected by 2030–31",
-      "link": "https://www.trendforce.com/news/2026/11/20/news-micron-reportedly-says-all-major-customers-eye-3d-dram-tie-ups-broader-adoption-expected-by-2030-31/",
-      "summary": "A month after outlining its technology roadmap, including 3D DRAM and vertical HBM (vHBM), Micron offered a clearer timeline at the November 18 TomorrowX Summit. According to an Investing.com transcript, CEO Sanjay Mehrotra said all major customers are seeking to &hellip; Continue reading &rarr;",
-      "published": "2026-11-19T15:18:15+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Intel Scores Dual Foundry Wins: Microsoft Named First EMIB Customer; Tan Says 18A Secures First External Deal",
-      "link": "https://www.trendforce.com/news/2026/11/19/news-intel-scores-dual-foundry-wins-microsoft-named-first-emib-customer-tan-says-18a-secures-first-external-deal/",
-      "summary": "As AI-driven demand stretches TSMC’s CoWoS capacity, Intel has landed another major deal as hyperscalers seek alternative suppliers. According to Intel, Microsoft has become the first publicly announced customer to adopt Intel Foundry’s Embedded Multi-die Interconnect Bridge (EMIB) technology for &hellip; Continue reading &rarr;",
-      "published": "2026-11-18T17:55:57+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] NVIDIA Highlights Rising GPU Rental Rates: Hopper Up to 2X, B300 Up Over 60%",
-      "link": "https://www.trendforce.com/news/2026/11/19/news-nvidia-highlights-rising-gpu-rental-rates-hopper-up-to-2x-b300-up-over-60/",
-      "summary": "NVIDIA’s GPU rental rates are climbing, underscoring sustained demand beyond its latest Blackwell lineup. According to Wccftech, citing interim CEO Colette Kress during the company’s earnings call, Hopper GPUs have been recontracted at up to twice their original rates under &hellip; Continue reading &rarr;",
-      "published": "2026-11-18T16:30:18+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Intel Reportedly Begins New Round of Global IT Layoffs; Workforce Down 7,300 YoY",
-      "link": "https://www.trendforce.com/news/2026/11/19/news-intel-reportedly-begins-new-round-of-global-it-layoffs-workforce-down-7300-yoy/",
-      "summary": "Intel is reportedly carrying out another round of layoffs targeting its global information technology (IT) organization, as the chipmaker continues to reduce its workforce amid ongoing restructuring. According to CTech, the latest cuts began on November 16, although the number &hellip; Continue reading &rarr;",
-      "published": "2026-11-18T15:30:58+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Google Reportedly Eyes Direct HBM Purchases for TPUs, Reducing Broadcom-Related Costs",
-      "link": "https://www.trendforce.com/news/2026/11/18/news-google-reportedly-eyes-direct-hbm-purchases-for-tpus-reducing-broadcom-related-costs/",
-      "summary": "Google is reportedly moving toward direct purchases of high-bandwidth memory (HBM) for its Tensor Processing Units (TPUs), marking a potential shift away from bundled procurement arrangements with chip design partners. According to Chosun Biz, the move is part of Google&#8217;s &hellip; Continue reading &rarr;",
-      "published": "2026-11-17T23:53:44+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] U.S. Tightens AI Chip Export Rules: What the Changes Mean for TSMC, ASE, and Taiwan’s AI Supply Chain",
-      "link": "https://www.trendforce.com/news/2026/11/18/news-u-s-tightens-ai-chip-export-rules-what-the-changes-mean-for-tsmc-ase-and-taiwans-ai-supply-chain/",
-      "summary": "The U.S. Bureau of Industry and Security (BIS) has tightened restrictions on AI chips and overseas computing access, raising concerns about potential disruptions to semiconductor supply chains. According to Commercial Times, the new rules could affect Taiwanese manufacturers across foundry, &hellip; Continue reading &rarr;",
-      "published": "2026-11-17T19:48:49+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] NVIDIA’s 1st Earnings Without Huang: Comeback Ruled Out; Memory, Packaging Secured as TSMC Helps Ease Supply Gap",
-      "link": "https://www.trendforce.com/news/2026/11/18/news-nvidias-1st-earnings-without-huang-comeback-ruled-out-memory-packaging-secured-as-tsmc-helps-ease-supply-gap/",
-      "summary": "Just hours before NVIDIA’s earnings call, Jensen Huang signaled he would be “honored” to return as CEO, putting the chip giant’s leadership turmoil back in the spotlight. Yet the door appears firmly shut: according to Reuters, Chairman Harvey Jones ruled &hellip; Continue reading &rarr;",
-      "published": "2026-11-17T18:13:39+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] China’s AI Projects Reportedly Worth Over US$3B Specify Restricted NVIDIA GPUs: A Closer Look",
-      "link": "https://www.trendforce.com/news/2026/11/18/news-chinas-ai-projects-reportedly-worth-over-us3b-specify-restricted-nvidia-gpus-a-closer-look/",
-      "summary": "Following Jensen Huang’s departure as NVIDIA CEO, U.S. scrutiny of the chipmaker has intensified, with Washington introducing new restrictions on China’s access to advanced AI computing through overseas data centers. But how much demand for restricted NVIDIA hardware remains in &hellip; Continue reading &rarr;",
-      "published": "2026-11-17T16:30:31+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Samsung, Apple Reportedly Finalizing 4–5-Year DRAM LTA with Minimum Supply Commitment Starting in 1H27",
-      "link": "https://www.trendforce.com/news/2026/11/18/news-samsung-apple-reportedly-finalizing-4-5-year-dram-lta-with-minimum-supply-commitment-starting-in-2027/",
-      "summary": "Samsung Electronics and Apple are reportedly nearing a long-term DRAM supply agreement, signaling a potential shift in Apple&#8217;s procurement strategy amid tightening memory supply. According to Maeil Business News Korea, the two companies are finalizing a long-term agreement (LTA) expected &hellip; Continue reading &rarr;",
-      "published": "2026-11-17T13:48:52+00:00"
-    },
-    {
-      "source": "TrendForce",
-      "title": "[News] Samsung Reportedly Developing Custom HBM4E for Meta, Plans 2nm Base Die Production",
-      "link": "https://www.trendforce.com/news/2026/11/17/news-samsung-reportedly-developing-custom-hbm4e-for-meta-plans-2nm-base-die-production/",
-      "summary": "Samsung Electronics is reportedly developing custom high-bandwidth memory (HBM) for Meta&#8217;s in-house AI chips. According to The Bell, citing industry sources, the product will be based on seventh-generation HBM4E, with Meta-specific functions integrated into the base die. Samsung reportedly plans &hellip; Continue reading &rarr;",
-      "published": "2026-11-16T22:36:49+00:00"
     }
   ]
 }
